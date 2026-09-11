@@ -4,7 +4,7 @@ This module never imports provider clients, reads credentials, or calls a networ
 It does not modify the original benchmark. Utilities are proposed controls, not
 an assertion that the archived experiments used the corrected protocol.
 
-Run: python protocol_audit.py --repo C:/Users/user/zeroshot/zero-shot-detection-benchmark
+From the repository root: python analysis_records/protocol_audit.py --repo .
 An optional --output writes the audit JSON; without it the report goes to stdout.
 
 Fresh inference is required to test shuffled candidate order or a corrected

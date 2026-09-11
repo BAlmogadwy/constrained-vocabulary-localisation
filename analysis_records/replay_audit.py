@@ -1,6 +1,6 @@
 """Offline, read-only source replay for the Neurocomputing revision.
 
-Only this directory receives output. No API clients, credentials, models, or
+Only the separate recomputed directory receives output. No API clients, credentials, models, or
 network calls are used. Run: python replay_audit.py --bootstrap 1000
 """
 from __future__ import annotations
@@ -22,8 +22,7 @@ import numpy as np
 from pycocotools.coco import COCO
 from pycocotools.cocoeval import COCOeval
 
-OUT = Path(__file__).resolve().parent
-ROOT = OUT.parent.parent / "zero-shot-detection-benchmark"
+from review_paths import ROOT, output_path
 MODES = {
     "gemini-3.5-flash": "normalized_1000_yxyx",
     "gemini-3.1-pro": "normalized_1000_yxyx",
@@ -371,7 +370,7 @@ def main():
     result["elapsed_seconds"] = time.perf_counter() - start
     result["input_sha256"] = INPUTS
     result["script_sha256"] = hashlib.sha256(Path(__file__).read_bytes()).hexdigest()
-    output = OUT / "replay_results.json"
+    output = output_path("replay_results.json")
     output.write_text(json.dumps(result, indent=2), encoding="utf-8")
     print(f"Wrote {output}; elapsed {result['elapsed_seconds']:.1f}s", flush=True)
 

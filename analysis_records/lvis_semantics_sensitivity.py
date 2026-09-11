@@ -4,7 +4,7 @@ import sys
 sys.dont_write_bytecode = True
 from pathlib import Path
 OUT = Path(__file__).resolve().parent
-sys.path.insert(0, str(OUT / "_deps"))
+from review_paths import output_path
 import collections
 import copy
 import hashlib
@@ -17,6 +17,7 @@ import numpy as np
 # LVIS 0.5.3 uses the removed np.float alias, whose historical value was float.
 # Restore only that alias in memory; evaluator source and algorithm are unchanged.
 np.float = float
+import lvis
 from lvis import LVIS, LVISResults, LVISEval
 import replay_audit as ra
 logging.getLogger("lvis").setLevel(logging.ERROR)
@@ -103,13 +104,13 @@ def main():
         entry["annotation_semantics_ap_delta_at_compatible_cap"] = entry["compatible_cap_lvis"]["metrics"]["AP"] - coco_metrics["ap"]
         output["models"][model] = entry
         print(model, entry["official_lvis"]["metrics"]["AP"], entry["compatible_cap_lvis"]["metrics"]["AP"], flush=True)
-    for path in sorted((OUT / "_deps/lvis").glob("*.py")):
+    for path in sorted(Path(lvis.__file__).resolve().parent.glob("*.py")):
         ra.digest(path)
     ra.digest(OUT / "replay_audit.py")
     output["input_sha256"] = ra.INPUTS
     output["script_sha256"] = hashlib.sha256(Path(__file__).read_bytes()).hexdigest()
     output["elapsed_seconds"] = time.perf_counter() - started
-    (OUT / "lvis_semantics_sensitivity.json").write_text(json.dumps(output, indent=2), encoding="utf-8")
+    output_path("lvis_semantics_sensitivity.json").write_text(json.dumps(output, indent=2), encoding="utf-8")
     lines = ["# LVIS annotation-semantics sensitivity", "",
              "This separate reevaluation preserves the frozen `replay_results.json`. It uses the official LVIS 0.5.3 API on the same 396-image, 10-category subset and unchanged cached predictions. It is not a full LVIS benchmark result.", "",
              "The subset contains " + str(len(affected)) + " images with selected categories marked not exhaustive. LVIS ignores unmatched detections for those image/category pairs and removes detections in categories whose presence or absence is unverified. COCO-style evaluation does not implement these rules.", "",
@@ -118,10 +119,10 @@ def main():
         lines.append(f'| {model} | {e["reproduced_frozen_coco_style"]["ap"]:.6f} | {e["official_lvis"]["metrics"]["AP"]:.6f} | {e["official_lvis"]["metrics"]["AP50"]:.6f} | {e["compatible_cap_lvis"]["metrics"]["AP"]:.6f} |')
     lines += ["", "Official default: at most 300 detections per image across categories, before federated filtering. The compatible-cap sensitivity first applies a stable top-100 cap per category/image, then disables the LVIS global cap; it isolates annotation semantics relative to frozen COCO-style AP and is not the official LVIS cap. Uniform-score ties retain source order. Detector scores remain native.", "",
               "LVIS 0.5.3 refers to `np.float`; this script restores that removed alias as `float` in memory without changing evaluator source or scoring logic. Source input and evaluator file hashes are recorded in JSON. AP and AP50 are fractions. No bootstrap was added to this bounded sensitivity.", "",
-              "Reproduce from this directory: `python lvis_semantics_sensitivity.py`. Dependency already installed only in `_deps`: `python -m pip install --target _deps --no-deps lvis==0.5.3`.", "",
+              "From the repository root: `python -m pip install -r requirements-review.txt`, then `python analysis_records/lvis_semantics_sensitivity.py`. See REVIEWER_GUIDE.md for input preparation. Outputs are written separately under analysis_records/recomputed/.", "",
               "Official API: https://github.com/lvis-dataset/lvis-api", "",
               "Do not reuse the frozen COCO bootstrap intervals as LVIS intervals. This sensitivity does not resolve ground-truth-conditioned candidate labels, historical model provenance, or pretraining overlap."]
-    (OUT / "LVIS_SEMANTICS_SENSITIVITY.md").write_text("\n".join(lines) + "\n", encoding="utf-8")
+    output_path("LVIS_SEMANTICS_SENSITIVITY.md").write_text("\n".join(lines) + "\n", encoding="utf-8")
     print("Saved separate LVIS sensitivity in", output["elapsed_seconds"], "seconds", flush=True)
 
 

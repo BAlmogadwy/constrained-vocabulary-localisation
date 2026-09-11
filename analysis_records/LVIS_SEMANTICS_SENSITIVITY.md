@@ -17,7 +17,7 @@ Official default: at most 300 detections per image across categories, before fed
 
 LVIS 0.5.3 refers to `np.float`; this script restores that removed alias as `float` in memory without changing evaluator source or scoring logic. Source input and evaluator file hashes are recorded in JSON. AP and AP50 are fractions. No bootstrap was added to this bounded sensitivity.
 
-Reproduce from this directory: `python lvis_semantics_sensitivity.py`. Dependency already installed only in `_deps`: `python -m pip install --target _deps --no-deps lvis==0.5.3`.
+See [REVIEWER_GUIDE.md](../REVIEWER_GUIDE.md) for input preparation. Optional numerical rerun from the repository root: `python analysis_records/lvis_semantics_sensitivity.py`, after installing `requirements-review.txt`. New outputs go to `analysis_records/recomputed/`. The results above remain the original saved analysis.
 
 Official API: https://github.com/lvis-dataset/lvis-api
 

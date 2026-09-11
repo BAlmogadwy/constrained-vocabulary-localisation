@@ -7,8 +7,8 @@ models/*/weights/
 # raw dataset downloads (regenerable via data/download_datasets.py)
 data/raw/
 *.zip
-# near-zero-floor detector outputs too large for GitHub (regenerable via
-# experiments/configs/*_lowthr.yaml + experiments/run_traditional.py --force)
+# Unpacked low-floor detector outputs are supplied in reviewer_detector_outputs.zip.
+# Use analysis_records/prepare_review_inputs.py; no new inference is needed.
 results/raw/traditional_lowthr/*/grounding_dino_*
 results/raw/traditional_lowthr/*/owl_vit_*
 results/raw/traditional_lowthr/*/per_image/grounding_dino/
@@ -24,3 +24,9 @@ paper/
 
 # dataset images are NOT redistributed (obtain via data/download_datasets.py)
 data/subsets/**/images/
+
+# The two retained-evidence archives are intentionally versioned.
+!results/ablation_normalization.zip
+!results/reviewer_detector_outputs.zip
+analysis_records/recomputed/
+.venv-review/

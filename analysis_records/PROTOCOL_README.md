@@ -2,15 +2,14 @@
 
 These files audit retained benchmark artifacts and provide isolated controls for future experiments. They do not alter the original benchmark, load credentials, instantiate models, or call hosted APIs. The numerical replay in `replay_audit.py` uses the historical parser. The stricter parser in `protocol_audit.py` is a proposed correction and is not the parser used for the manuscript's replayed AP.
 
-Run these commands in PowerShell:
+For the main paper, start with [REVIEWER_GUIDE.md](../REVIEWER_GUIDE.md). These optional historical protocol checks are separate from the numerical replay. Run from the repository root:
 
 ```powershell
-Set-Location -LiteralPath 'C:\Users\user\zeroshot\Neurocomputing_submission\verification'
-python -m unittest -v test_protocol_audit.py
-python protocol_audit.py --repo 'C:\Users\user\zeroshot\zero-shot-detection-benchmark' --output 'C:\Users\user\zeroshot\Neurocomputing_submission\verification\protocol_audit_results.json'
+python -m unittest discover -s analysis_records -p test_protocol_audit.py
+python analysis_records/protocol_audit.py --repo .
 ```
 
-The audit and its tests require only Python's standard library. The source repository and retained data must remain at the specified location, or `--repo` must be changed. Omitting `--output` prints JSON instead of writing a report. The report reconstructs the historical crop selector without importing its provider-configuring module.
+The audit and its tests require only Python's standard library. The `--repo .` option selects the current checkout. Omitting `--output` prints JSON instead of writing a report. The report reconstructs the historical crop selector without importing its provider-configuring module.
 
 ## Verified results
 

@@ -4,7 +4,7 @@ import sys
 sys.dont_write_bytecode = True
 from pathlib import Path
 OUT = Path(__file__).resolve().parent
-sys.path.insert(0, str(OUT / "_deps"))
+from review_paths import output_path
 import argparse
 import collections
 import copy
@@ -153,13 +153,13 @@ def main():
                   "paired_delta_percentile_95_ci": np.quantile(difference, [.025, .975]).tolist()},
               "validation": validation, "bootstrap_seconds": time.perf_counter()-bootstrap_start,
               "total_seconds": time.perf_counter()-started}
-    for path in sorted((OUT / "_deps/lvis").glob("*.py")):
+    for path in sorted(Path(ls.lvis.__file__).resolve().parent.glob("*.py")):
         ra.digest(path)
     for name in ["replay_audit.py", "lvis_semantics_sensitivity.py"]:
         ra.digest(OUT / name)
     output["input_sha256"] = ra.INPUTS
     output["script_sha256"] = hashlib.sha256(Path(__file__).read_bytes()).hexdigest()
-    (OUT / "lvis_paired_bootstrap.json").write_text(json.dumps(output, indent=2), encoding="utf-8")
+    output_path("lvis_paired_bootstrap.json").write_text(json.dumps(output, indent=2), encoding="utf-8")
     print(json.dumps({k: output[k] for k in ["B", "models", "flash_minus_pro", "validation", "bootstrap_seconds", "total_seconds"]}, indent=2))
 
 

@@ -1,12 +1,14 @@
 # Offline replay audit for the Neurocomputing revision
 
-Run in PowerShell from the shared workspace:
+For input preparation and installation, start with [REVIEWER_GUIDE.md](../REVIEWER_GUIDE.md). The command below is an optional numerical rerun, not required to read the saved results. Run from the repository root:
 
 ```powershell
-python C:\Users\user\zeroshot\Neurocomputing_submission\verification\replay_audit.py --bootstrap 1000
+python analysis_records/replay_audit.py --bootstrap 1000
 ```
 
-Python needs NumPy and pycocotools. The JSON records the versions used. No provider SDK, API credentials, model download, GPU inference or paid call is involved. The script reads original inputs and writes only `replay_results.json` beside itself. The original experimental files are preserved. Typical runtime on this workstation is approximately one minute, including both 1,000-resample bootstraps.
+Python needs NumPy and pycocotools. The JSON records the versions used. No provider SDK, API credentials, model download, GPU inference or paid call is involved. The script reads original inputs and writes `replay_results.json` under `analysis_records/recomputed/`. The original experimental files are preserved. Typical runtime on this workstation is approximately one minute, including both 1,000-resample bootstraps.
+
+The results and timings below describe the retained analysis. Portable scripts now use checkout-relative paths; original copies are in `historical_scripts/`. No numerical rerun was performed during this packaging repair.
 
 ## Scope and provenance
 

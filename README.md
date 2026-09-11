@@ -1,115 +1,52 @@
-# Constrained-Vocabulary Object Localisation: evaluation-convention study
+# Constrained-Vocabulary Object Localisation
 
-Code, configurations and retained outputs for **"Evaluating Vision-Language Models for Constrained-Vocabulary Object Localisation"** (under review).
+Code and retained evidence for **Evaluating Vision-Language Models for Constrained-Vocabulary Object Localisation**, prepared for submission to Neurocomputing.
 
-The study re-evaluates **saved** model outputs to measure how three evaluation choices change a comparison between generative vision-language models (VLMs) and specialised open-vocabulary detectors:
+The study examines how coordinate decoding, confidence assignment and annotation rules change comparisons between generative vision-language models (VLMs) and specialised detectors. It uses saved model outputs; no new inference was run for the manuscript's re-analysis. The main results were re-evaluated offline. Appendix B's deployment-floor column and Appendix C reproduce retained original aggregate results, and latency comes from recorded execution timings.
 
-1. **Coordinate decoding** — how text coordinates are converted into pixel boxes.
-2. **Confidence assignment** — supplied scores versus a uniform score after parser acceptance.
-3. **Annotation handling** — COCO-style scoring versus the LVIS federated rules.
+## Start here
 
-No model is trained here, and no new inference was run for the analysis. Every number in the manuscript comes from re-scoring retained responses.
+To check the saved evidence and display the main recorded results, run this from the repository root:
 
----
+```bash
+python analysis_records/verify_review.py
+```
 
-## Scope and limitations
+This command needs only Python 3.10 or later. It does not need API keys, a GPU or any third-party Python packages, and it does not recompute AP or run a bootstrap. See **[REVIEWER_GUIDE.md](REVIEWER_GUIDE.md)** for input preparation, the table-to-file map and optional offline rerun commands. Installing the full model environment is unnecessary for this check.
 
-Read this before using any number in this repository.
+## Scope
 
-- The LVIS selection is a **custom** set of 396 images and ten categories. It is **not** an official LVIS unseen split, and category exposure during model pretraining is unknown.
-- Both evaluation sets are **positives-only**: each image contains at least one annotation in the selected categories (396 of the LVIS unseen images; 901 of the 5,000 COCO 2017 validation images). AP on these sets is **not** comparable to full-vocabulary LVIS or COCO-val leaderboard AP.
-- Per-image candidate lists are **partly derived from annotations** and place annotated categories first, followed by sampled categories without a retained annotation. The lists are not independent of ground truth, and categories without annotations are not necessarily absent.
-- Coordinate conventions for the OpenRouter-served models are **assumptions carried over from the original runs**, not independently verified provider behaviour.
-- The main response archives do not retain the actual requests, token limits or image inputs, so historical runs cannot be reconstructed exactly.
-- Confidence intervals are exploratory and are not corrected for model selection or multiple comparisons.
-
-## Superseded claims
-
-An earlier version of this work was prepared for a different journal and was **not published**. Several of its claims did not survive later auditing and are **withdrawn**. Do not cite or reuse them:
-
-| Withdrawn claim | Why |
-|---|---|
-| The 396-image set is an official LVIS "unseen" partition whose categories never appear in training | It is a custom selection; pretraining exposure is unknown |
-| Frontier VLMs significantly exceed the best detector | Under LVIS annotation rules both paired Gemini–YOLO-World intervals include zero |
-| Oracle crop recognition demonstrates a semantic-versus-spatial separation | Always selecting the first candidate scores 55/56, because candidate lists place positives first |
-| Iterative prompting fails to repair grounding | The iterative prompt requested bare coordinates while the parser required labelled objects |
-| COCO was held out from LVIS development | 33 image IDs overlap; the corrected comparison uses 868 images |
-| All VLM boxes were scored 1.0 | The pipeline preserved supplied scores; both policies are now reported separately |
-
-The earlier manuscript source is retained locally but is **not** part of this repository.
-
----
+- The LVIS evaluation is a custom selection of 396 images and ten categories, not an official unseen split or a full-vocabulary benchmark. Category exposure during pretraining is unknown.
+- Each selected image has at least one retained annotation in the selected categories. Candidate lists are partly derived from annotations and place annotated categories first; additional categories are not necessarily absent.
+- The main LVIS-aware comparison includes Gemini 3.5 Flash, Gemini 3.1 Pro, Qwen3-VL-235B, YOLO-World, Grounding DINO and OWL-ViT. A separate COCO-style decoding/score analysis also includes Gemma 3 27B and Mistral Large 3.
+- Gemini decoding follows its documented convention. The Qwen, Gemma and Mistral conventions are assumptions carried over from the original runs, not independently verified provider behaviour.
+- Some actual requests, token limits and image inputs are unavailable. Historical requests cannot all be reconstructed exactly. The image-bootstrap intervals are exploratory and do not cover variation across new hosted calls.
+- The router ran on 901 COCO images. Excluding 33 images shared with LVIS development was post hoc, leaving 868 images. The AP gain is 0.0064 before exclusion and 0.0115 after exclusion. The reported paired interval applies only to the 868-image comparison. LVIS router sweeps are development results.
 
 ## Repository layout
 
-```
-models/
-  traditional/     YOLO-World (Ultralytics), Grounding DINO, OWL-ViT wrappers
-  vlm/             VLM detectors + shared parsing/coordinate normalisation (parsing.py)
-experiments/
-  run_traditional.py         detector runs from a YAML config
-  run_vlm.py                 synchronous VLM runner (OpenRouter / DashScope)
-  run_vlm_batch.py           batch-API runner
-  compute_metrics.py         COCO-style AP / AP@0.5
-  run_live_hybrid.py         detector->VLM router execution
-  hybrid_eval.py             routing and fusion rule
-  bootstrap_ci.py            image-level bootstrap
-  configs/                   per-dataset, per-model YAML configs
-data/                        split preparation and dynamic candidate-label generation
-results/                     retained per-image outputs, metrics and summaries
-```
+| Location | Purpose |
+|---|---|
+| [analysis_records/](analysis_records/) | Offline analysis scripts, frozen result JSON, integrity manifest and supporting records |
+| [results/ablation_normalization.zip](results/ablation_normalization.zip) | Retained raw-response archive used by the five-model sensitivity analysis |
+| [results/reviewer_detector_outputs.zip](results/reviewer_detector_outputs.zip) | 792 retained low-floor Grounding DINO and OWL-ViT output files; unpack with the reviewer helper |
+| `results/raw/` | Other retained per-image detector, VLM and router records |
+| `data/processed/` | Retained annotation subsets and per-image candidate lists |
+| `models/` and `experiments/` | Original model wrappers, configurations and execution code |
+| [LEGACY_NOTES.md](LEGACY_NOTES.md) | Provenance of superseded claims and exploratory material not used by the paper |
 
-Offline re-analysis scripts used for the manuscript (`replay_audit.py`, `lvis_paired_bootstrap.py`,
-`lvis_semantics_sensitivity.py`, `protocol_audit.py`) and their saved outputs are held with the
-manuscript records and are provided alongside this repository.
+The `.json` result records are frozen evidence. Optional reruns write to `analysis_records/recomputed/` by default. Historical script copies and original workstation paths in provenance records are retained for traceability; portable entry points are documented in the reviewer guide.
 
-## Models evaluated
+## Data and access
 
-**Detectors** (run locally, GPU, single-image): `yolov8x-world.pt` via Ultralytics; `grounding-dino-base`
-and `owlvit-base-patch32` via Hugging Face Transformers. Deployment score floors 0.25 / 0.25 / 0.20;
-the reported comparison uses a 0.001 floor.
+Source images are not redistributed. Offline evaluation of the retained boxes does not need images. The COCO router replay does need the original COCO 2017 validation annotation file; the reviewer guide explains where to obtain it and how to verify it. The required LVIS subset, candidate lists and saved predictions are included.
 
-**Hosted VLMs.** Gemini via the batch interface (`gemini-3.5-flash`, `gemini-3.1-pro-preview`);
-`qwen/qwen3-vl-235b-a22b-instruct`, `google/gemma-3-27b-it` and `mistralai/mistral-large-2512`
-via OpenRouter. OpenRouter routed these requests through several upstream providers, so the
-results characterise the recorded routes rather than each vendor's own service.
+This repository is currently private. Its URL alone does not grant reviewer access. The author must arrange authorised access or a reviewer-accessible archive before relying on it in the submission. Post-publication access has not yet been specified.
 
-`results/raw/vlm/` also holds retained per-image records for additional models from earlier
-development rounds (Gemini 2.5 Flash, GPT-5, Qwen3-VL-8B, Llama-3.2-11B-Vision, LLaVA-1.6,
-Gemma 3 12B). Only the five models with complete raw LVIS responses in the retained
-normalisation-ablation archive are used in the manuscript's sensitivity analysis; Qwen3-VL-8B is
-used for the router development sweeps.
+## Original model environment
 
-## Datasets
-
-LVIS and COCO images are distributed by their respective projects under their own terms and are
-**not** redistributed here as a matter of policy. Use `data/download_datasets.py` and
-`data/prepare_zero_shot_splits.py` to obtain and rebuild the splits. Image identifiers and
-per-image candidate mappings are under `data/processed/` and `data/subsets/`.
-
-## Installation
-
-```bash
-python -m venv .venv && source .venv/bin/activate
-pip install -r requirements.txt
-cp .example.env .env   # add API keys; never commit .env
-```
-
-Python 3.10+. Detectors need a CUDA GPU; hosted VLMs need provider credentials.
-
-## Superseded exploratory material
-
-The repository also retains material from earlier exploratory rounds that the manuscript does
-**not** use and does not report:
-
-- `VISUAL_COT_README.md` and `results/visual_cot/` — a visual chain-of-thought prompting trial.
-- `HOW-TO-RUN_LLAVA-BOXREG.md` — notes for a LLaVA box-regression experiment.
-- `YOLO Stuff/` and `results/ablation/` — earlier development scratch and older-generation runs.
-
-These are kept for transparency about what was explored, not as evidence for any claim in the
-paper. Nothing in the manuscript depends on them.
+The original inference code is retained for provenance and future use. It is separate from the offline reviewer workflow. `requirements.txt` contains the larger model environment; hosted inference requires the appropriate provider credentials and may incur charges. Do not run `run_vlm.py`, `run_vlm_batch.py`, `run_live_hybrid.py` or detector runners to inspect the saved results.
 
 ## Licence
 
-Code in this repository is released under the MIT Licence (see `LICENSE`). Model outputs, dataset
-images and annotations remain subject to the terms of their respective providers and projects.
+Source code is covered by the [MIT Licence](LICENSE). Dataset annotations and retained model outputs remain subject to the terms of their respective datasets and providers; the code licence does not replace those terms.
