@@ -97,6 +97,18 @@ cp .example.env .env   # add API keys; never commit .env
 
 Python 3.10+. Detectors need a CUDA GPU; hosted VLMs need provider credentials.
 
+## Superseded exploratory material
+
+The repository also retains material from earlier exploratory rounds that the manuscript does
+**not** use and does not report:
+
+- `VISUAL_COT_README.md` and `results/visual_cot/` — a visual chain-of-thought prompting trial.
+- `HOW-TO-RUN_LLAVA-BOXREG.md` — notes for a LLaVA box-regression experiment.
+- `YOLO Stuff/` and `results/ablation/` — earlier development scratch and older-generation runs.
+
+These are kept for transparency about what was explored, not as evidence for any claim in the
+paper. Nothing in the manuscript depends on them.
+
 ## Licence
 
 Code in this repository is released under the MIT Licence (see `LICENSE`). Model outputs, dataset
