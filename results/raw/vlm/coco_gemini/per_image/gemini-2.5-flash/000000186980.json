@@ -1,0 +1,55 @@
+{
+  "model": "gemini-2.5-flash",
+  "strategy": "single_query",
+  "image": "/home/maxim/PycharmProjects/zero-shot-detection-benchmark/data/raw/coco2017/val2017/000000186980.jpg",
+  "labels": [
+    "microwave",
+    "oven",
+    "refrigerator",
+    "sink",
+    "clock",
+    "hair drier",
+    "scissors",
+    "teddy bear"
+  ],
+  "detections": [
+    {
+      "box_2d": [
+        729,
+        345,
+        803,
+        401
+      ],
+      "label": "microwave"
+    },
+    {
+      "box_2d": [
+        932,
+        400,
+        999,
+        725
+      ],
+      "label": "oven"
+    },
+    {
+      "box_2d": [
+        27,
+        203,
+        303,
+        508
+      ],
+      "label": "refrigerator"
+    },
+    {
+      "box_2d": [
+        590,
+        376,
+        706,
+        442
+      ],
+      "label": "sink"
+    }
+  ],
+  "latency_sec": 3.5715138749801554,
+  "raw_response": "```json\n[\n  {\"box_2d\": [729, 345, 803, 401], \"label\": \"microwave\"},\n  {\"box_2d\": [932, 400, 999, 725], \"label\": \"oven\"},\n  {\"box_2d\": [27, 203, 303, 508], \"label\": \"refrigerator\"},\n  {\"box_2d\": [590, 376, 706, 442], \"label\": \"sink\"}\n]\n```"
+}

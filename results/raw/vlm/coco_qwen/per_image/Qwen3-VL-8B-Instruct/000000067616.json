@@ -1,0 +1,198 @@
+{
+  "model": "Qwen3-VL-8B-Instruct",
+  "strategy": "single_query",
+  "image": "/home/maxim/PycharmProjects/zero-shot-detection-benchmark/data/raw/coco2017/val2017/000000067616.jpg",
+  "labels": [
+    "vase",
+    "book",
+    "clock",
+    "hair drier",
+    "microwave",
+    "oven",
+    "toaster"
+  ],
+  "detections": [
+    {
+      "box_2d": [
+        348.0,
+        821.0,
+        384.0,
+        956.0
+      ],
+      "label": "vase"
+    },
+    {
+      "box_2d": [
+        444.0,
+        788.0,
+        462.0,
+        821.0
+      ],
+      "label": "vase"
+    },
+    {
+      "box_2d": [
+        477.0,
+        792.0,
+        494.0,
+        821.0
+      ],
+      "label": "vase"
+    },
+    {
+      "box_2d": [
+        509.0,
+        792.0,
+        526.0,
+        821.0
+      ],
+      "label": "vase"
+    },
+    {
+      "box_2d": [
+        541.0,
+        792.0,
+        558.0,
+        821.0
+      ],
+      "label": "vase"
+    },
+    {
+      "box_2d": [
+        572.0,
+        792.0,
+        589.0,
+        821.0
+      ],
+      "label": "vase"
+    },
+    {
+      "box_2d": [
+        599.0,
+        792.0,
+        616.0,
+        821.0
+      ],
+      "label": "vase"
+    },
+    {
+      "box_2d": [
+        629.0,
+        792.0,
+        646.0,
+        821.0
+      ],
+      "label": "vase"
+    },
+    {
+      "box_2d": [
+        659.0,
+        792.0,
+        676.0,
+        821.0
+      ],
+      "label": "vase"
+    },
+    {
+      "box_2d": [
+        689.0,
+        792.0,
+        706.0,
+        821.0
+      ],
+      "label": "vase"
+    },
+    {
+      "box_2d": [
+        719.0,
+        792.0,
+        736.0,
+        821.0
+      ],
+      "label": "vase"
+    },
+    {
+      "box_2d": [
+        749.0,
+        792.0,
+        766.0,
+        821.0
+      ],
+      "label": "vase"
+    },
+    {
+      "box_2d": [
+        779.0,
+        792.0,
+        796.0,
+        821.0
+      ],
+      "label": "vase"
+    },
+    {
+      "box_2d": [
+        809.0,
+        792.0,
+        826.0,
+        821.0
+      ],
+      "label": "vase"
+    },
+    {
+      "box_2d": [
+        839.0,
+        792.0,
+        856.0,
+        821.0
+      ],
+      "label": "vase"
+    },
+    {
+      "box_2d": [
+        869.0,
+        792.0,
+        886.0,
+        821.0
+      ],
+      "label": "vase"
+    },
+    {
+      "box_2d": [
+        899.0,
+        792.0,
+        916.0,
+        821.0
+      ],
+      "label": "vase"
+    },
+    {
+      "box_2d": [
+        929.0,
+        792.0,
+        946.0,
+        821.0
+      ],
+      "label": "vase"
+    },
+    {
+      "box_2d": [
+        959.0,
+        792.0,
+        976.0,
+        821.0
+      ],
+      "label": "vase"
+    },
+    {
+      "box_2d": [
+        989.0,
+        792.0,
+        1006.0,
+        821.0
+      ],
+      "label": "vase"
+    }
+  ],
+  "latency_sec": 20.072895555989817,
+  "raw_response": "user\nYou are an object detection assistant. Given the image and the list of target classes, return detections as JSON.\nTarget classes: vase, book, clock, hair drier, microwave, oven, toaster.\nOutput format: [{\"box_2d\":[x1,y1,x2,y2],\"label\":\"class_name\"}...]\nUse pixel coordinates relative to the input image. Return JSON only.\nassistant\n```json\n[\n\t{\"box_2d\": [348, 821, 384, 956],\"label\":\"vase\"},\n\t{\"box_2d\": [444, 788, 462, 821],\"label\":\"vase\"},\n\t{\"box_2d\": [477, 792, 494, 821],\"label\":\"vase\"},\n\t{\"box_2d\": [509, 792, 526, 821],\"label\":\"vase\"},\n\t{\"box_2d\": [541, 792, 558, 821],\"label\":\"vase\"},\n\t{\"box_2d\": [572, 792, 589, 821],\"label\":\"vase\"},\n\t{\"box_2d\": [599, 792, 616, 821],\"label\":\"vase\"},\n\t{\"box_2d\": [629, 792, 646, 821],\"label\":\"vase\"},\n\t{\"box_2d\": [659, 792, 676, 821],\"label\":\"vase\"},\n\t{\"box_2d\": [689, 792, 706, 821],\"label\":\"vase\"},\n\t{\"box_2d\": [719, 792, 736, 821],\"label\":\"vase\"},\n\t{\"box_2d\": [749, 792, 766, 821],\"label\":\"vase\"},\n\t{\"box_2d\": [779, 792, 796, 821],\"label\":\"vase\"},\n\t{\"box_2d\": [809, 792, 826, 821],\"label\":\"vase\"},\n\t{\"box_2d\": [839, 792, 856, 821],\"label\":\"vase\"},\n\t{\"box_2d\": [869, 792, 886, 821],\"label\":\"vase\"},\n\t{\"box_2d\": [899, 792, 916, 821],\"label\":\"vase\"},\n\t{\"box_2d\": [929, 792, 946, 821],\"label\":\"vase\"},\n\t{\"box_2d\": [959, 792, 976, 821],\"label\":\"vase\"},\n\t{\"box_2d\": [989, 792, 1006, 821],\"label\":\"vase\"}\n]\n```"
+}

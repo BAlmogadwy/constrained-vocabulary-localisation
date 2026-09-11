@@ -1,0 +1,36 @@
+{
+  "model": "Llama-3.2-11B-Vision-Instruct",
+  "strategy": "single_query",
+  "image": "/home/maxim/PycharmProjects/zero-shot-detection-benchmark/data/subsets/lvis_v1_val_unseen/images/000000177938.jpg",
+  "labels": [
+    "lawn_mower",
+    "blender",
+    "musical_instrument",
+    "sewing_machine",
+    "snowboard"
+  ],
+  "detections": [
+    {
+      "box_2d": [
+        0,
+        0,
+        240,
+        320
+      ],
+      "label": "None"
+    }
+  ],
+  "latency_sec": 13.915805324912071,
+  "raw_response": {
+    "lawn_mower": "[]",
+    "lawn_mower_norm": "[{\"box_norm\":[0.0,0.0,0.0,0.0],\"label\":\"lawn_mower\"}]",
+    "blender": "[]",
+    "blender_norm": "[{\"box_norm\":[0.0,0.0,0.0,0.0],\"label\":\"blender\"}]",
+    "musical_instrument": "[]",
+    "musical_instrument_norm": "[{\"box_norm\":[0.000,0.000,0.500,0.500],\"label\":\"None\"}]",
+    "sewing_machine": "[]",
+    "sewing_machine_norm": "[{\"box_norm\":[0.0,0.0,0.0,0.0],\"label\":\"sewing_machine\"}]",
+    "snowboard": "[]",
+    "snowboard_norm": "[{\"box_norm\":[0.0,0.0,0.0,0.0],\"label\":\"snowboard\"}]"
+  }
+}

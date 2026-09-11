@@ -1,0 +1,43 @@
+{
+  "image": "/home/maxim/PycharmProjects/zero-shot-detection-benchmark/data/subsets/lvis_v1_val_unseen/images/000000363581.jpg",
+  "image_id": 363581,
+  "file_name": "000000363581.jpg",
+  "num_crops": 1,
+  "crops": [
+    {
+      "annotation_id": 83805,
+      "bbox": [
+        130.21,
+        291.94,
+        266.16,
+        71.8
+      ],
+      "category_id": 993,
+      "gt_label": "spatula",
+      "labels": [
+        "spatula",
+        "hair_dryer",
+        "lawn_mower",
+        "microscope",
+        "musical_instrument"
+      ],
+      "prediction": "spatula",
+      "normalized_prediction": "spatula",
+      "matched_label": "spatula",
+      "correct": true,
+      "latency_sec": 5.453955232980661,
+      "raw_response": {
+        "spatula": "[{\"box_2d\":[0,0,73,73],\"label\":\"spatula\"}]",
+        "hair_dryer": "[]",
+        "hair_dryer_norm": "[{\"box_norm\":[0.0,0.0,0.0,0.0],\"label\":\"hair_dryer\"}]",
+        "lawn_mower": "[]",
+        "lawn_mower_norm": "[{\"box_norm\":[0.0,0.0,0.0,0.0],\"label\":\"lawn_mower\"}]",
+        "microscope": "[]",
+        "microscope_norm": "[{\"box_norm\":[0.0,0.0,0.0,0.0],\"label\":\"microscope\"}]",
+        "musical_instrument": "[]",
+        "musical_instrument_norm": "[{\"box_norm\":[0.0,0.0,0.0,0.0],\"label\":\"musical_instrument\"}]"
+      }
+    }
+  ],
+  "prompt": "You are an object recognition assistant.\n\nYou will see a cropped image that contains exactly one object\nfrom the following LVIS categories (unseen split):\n\n- spatula\n- hair_dryer\n- lawn_mower\n- microscope\n- musical_instrument\n\nYour task:\n- Return ONLY the best matching category name from this list.\n- Do not output explanations or extra text.\n\nAnswer with a single string: \"class_name\"."
+}

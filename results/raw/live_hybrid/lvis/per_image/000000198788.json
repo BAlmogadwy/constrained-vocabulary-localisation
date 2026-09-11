@@ -1,0 +1,190 @@
+{
+ "image": "000000198788.jpg",
+ "labels": [
+  "spatula",
+  "coffee_maker",
+  "hair_dryer",
+  "musical_instrument",
+  "snowboard"
+ ],
+ "tau": 0.4,
+ "detector": {
+  "detections": [
+   {
+    "label": "spatula",
+    "box": [
+     278.5667724609375,
+     232.01495361328125,
+     365.5771484375,
+     266.29095458984375
+    ],
+    "score": 0.16477590799331665
+   },
+   {
+    "label": "spatula",
+    "box": [
+     303.7796630859375,
+     346.1552734375,
+     381.2283935546875,
+     362.829345703125
+    ],
+    "score": 0.10359656065702438
+   },
+   {
+    "label": "spatula",
+    "box": [
+     282.57781982421875,
+     343.7279968261719,
+     329.41851806640625,
+     357.3243713378906
+    ],
+    "score": 0.031188897788524628
+   },
+   {
+    "label": "spatula",
+    "box": [
+     277.970458984375,
+     240.7766571044922,
+     331.43505859375,
+     265.60394287109375
+    ],
+    "score": 0.004963248502463102
+   },
+   {
+    "label": "coffee_maker",
+    "box": [
+     102.00730895996094,
+     277.47613525390625,
+     130.56907653808594,
+     345.31500244140625
+    ],
+    "score": 0.0030528914649039507
+   }
+  ],
+  "latency_sec": 0.03865030000451952
+ },
+ "detector_max_score": 0.16477590799331665,
+ "escalated": true,
+ "vlm": {
+  "model": "qwen/qwen3-vl-235b-a22b-instruct",
+  "detections": [
+   {
+    "label": "spatula",
+    "box": [
+     314.24,
+     346.724,
+     384.0,
+     365.085
+    ],
+    "score": 1.0
+   }
+  ],
+  "latency_sec": 8.246100200005458,
+  "usage": {
+   "prompt_tokens": 353,
+   "completion_tokens": 51,
+   "total_tokens": 404
+  },
+  "raw_response": {
+   "id": "gen-1783406738-1aPpdToKXQN7o0FbcKUx",
+   "object": "chat.completion",
+   "created": 1783406738,
+   "model": "qwen/qwen3-vl-235b-a22b-instruct",
+   "provider": "DeepInfra",
+   "system_fingerprint": null,
+   "service_tier": null,
+   "choices": [
+    {
+     "index": 0,
+     "logprobs": null,
+     "finish_reason": "stop",
+     "native_finish_reason": "stop",
+     "message": {
+      "role": "assistant",
+      "content": "```json\n[\n\t{\"bbox_2d\": [491, 812, 600, 855], \"label\": \"spatula\", \"confidence\": 0.95}\n]\n```",
+      "refusal": null,
+      "reasoning": null
+     }
+    }
+   ],
+   "usage": {
+    "prompt_tokens": 353,
+    "completion_tokens": 51,
+    "total_tokens": 404,
+    "cost": 0.00011548,
+    "is_byok": false,
+    "prompt_tokens_details": {
+     "cached_tokens": 0,
+     "cache_write_tokens": 0,
+     "audio_tokens": 0,
+     "video_tokens": 0
+    },
+    "cost_details": {
+     "upstream_inference_cost": 0.00011548,
+     "upstream_inference_prompt_cost": 7.06e-05,
+     "upstream_inference_completions_cost": 4.488e-05
+    },
+    "completion_tokens_details": {
+     "reasoning_tokens": 0,
+     "image_tokens": 0,
+     "audio_tokens": 0
+    }
+   }
+  }
+ },
+ "fallback": false,
+ "ts": "2026-07-07T06:45:32.873661+00:00",
+ "fused": [
+  {
+   "label": "spatula",
+   "box": [
+    278.5667724609375,
+    232.01495361328125,
+    365.5771484375,
+    266.29095458984375
+   ],
+   "score": 0.16477590799331665
+  },
+  {
+   "label": "spatula",
+   "box": [
+    303.7796630859375,
+    346.1552734375,
+    381.2283935546875,
+    362.829345703125
+   ],
+   "score": 0.4035965606570244
+  },
+  {
+   "label": "spatula",
+   "box": [
+    282.57781982421875,
+    343.7279968261719,
+    329.41851806640625,
+    357.3243713378906
+   ],
+   "score": 0.031188897788524628
+  },
+  {
+   "label": "spatula",
+   "box": [
+    277.970458984375,
+    240.7766571044922,
+    331.43505859375,
+    265.60394287109375
+   ],
+   "score": 0.004963248502463102
+  },
+  {
+   "label": "coffee_maker",
+   "box": [
+    102.00730895996094,
+    277.47613525390625,
+    130.56907653808594,
+    345.31500244140625
+   ],
+   "score": 0.0030528914649039507
+  }
+ ],
+ "latency_total_sec": 8.284770700003719
+}

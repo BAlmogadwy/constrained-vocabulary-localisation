@@ -1,0 +1,88 @@
+{
+ "image": "000000102707.jpg",
+ "model": "qwen/qwen3-vl-235b-a22b-instruct",
+ "labels": [
+  "oven",
+  "book",
+  "clock",
+  "hair drier",
+  "microwave",
+  "sink",
+  "teddy bear"
+ ],
+ "detections": [
+  {
+   "box_2d": [
+    0.0,
+    436.356,
+    314.568,
+    606.492
+   ],
+   "label": "oven",
+   "score": 0.95
+  },
+  {
+   "box_2d": [
+    194.004,
+    463.284,
+    292.536,
+    532.44
+   ],
+   "label": "book",
+   "score": 0.85
+  }
+ ],
+ "latency_sec": 3.5107762000116054,
+ "usage": {
+  "prompt_tokens": 454,
+  "completion_tokens": 89,
+  "total_tokens": 543
+ },
+ "raw_response": {
+  "id": "gen-1783410791-hPYUceIz9NjKNNwh35iP",
+  "object": "chat.completion",
+  "created": 1783410791,
+  "model": "qwen/qwen3-vl-235b-a22b-instruct",
+  "provider": "Alibaba",
+  "system_fingerprint": null,
+  "service_tier": null,
+  "choices": [
+   {
+    "index": 0,
+    "logprobs": null,
+    "finish_reason": "stop",
+    "native_finish_reason": "stop",
+    "message": {
+     "role": "assistant",
+     "content": "```json\n[\n\t{\"bbox_2d\": [0, 713, 514, 991], \"label\": \"oven\", \"confidence\": 0.95},\n\t{\"bbox_2d\": [317, 757, 478, 870], \"label\": \"book\", \"confidence\": 0.85}\n]\n```",
+     "refusal": null,
+     "reasoning": null
+    }
+   }
+  ],
+  "usage": {
+   "prompt_tokens": 454,
+   "completion_tokens": 89,
+   "total_tokens": 543,
+   "cost": 0.0002106,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0002106,
+    "upstream_inference_prompt_cost": 0.00011804,
+    "upstream_inference_completions_cost": 9.256e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   }
+  }
+ },
+ "ts": "2026-07-07T07:53:13.205724+00:00"
+}

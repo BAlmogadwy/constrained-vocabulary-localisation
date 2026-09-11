@@ -1,0 +1,77 @@
+{
+  "model": "Qwen3-VL-8B-Instruct",
+  "strategy": "single_query",
+  "image": "/home/maxim/PycharmProjects/zero-shot-detection-benchmark/data/raw/coco2017/val2017/000000095862.jpg",
+  "labels": [
+    "microwave",
+    "oven",
+    "toaster",
+    "sink",
+    "refrigerator",
+    "book",
+    "clock",
+    "vase",
+    "scissors",
+    "teddy bear",
+    "hair drier",
+    "toothbrush"
+  ],
+  "detections": [
+    {
+      "box_2d": [
+        22.0,
+        704.0,
+        258.0,
+        989.0
+      ],
+      "label": "hair drier"
+    },
+    {
+      "box_2d": [
+        222.0,
+        726.0,
+        573.0,
+        989.0
+      ],
+      "label": "hair drier"
+    },
+    {
+      "box_2d": [
+        532.0,
+        750.0,
+        732.0,
+        989.0
+      ],
+      "label": "hair drier"
+    },
+    {
+      "box_2d": [
+        724.0,
+        776.0,
+        883.0,
+        989.0
+      ],
+      "label": "hair drier"
+    },
+    {
+      "box_2d": [
+        883.0,
+        758.0,
+        1000.0,
+        989.0
+      ],
+      "label": "hair drier"
+    },
+    {
+      "box_2d": [
+        677.0,
+        798.0,
+        744.0,
+        898.0
+      ],
+      "label": "hair drier"
+    }
+  ],
+  "latency_sec": 8.797794573998544,
+  "raw_response": "user\nYou are an object detection assistant. Given the image and the list of target classes, return detections as JSON.\nTarget classes: microwave, oven, toaster, sink, refrigerator, book, clock, vase, scissors, teddy bear, hair drier, toothbrush.\nOutput format: [{\"box_2d\":[x1,y1,x2,y2],\"label\":\"class_name\"}...]\nUse pixel coordinates relative to the input image. Return JSON only.\nassistant\n```json\n[\n\t{\"box_2d\": [22, 704, 258, 989], \"label\": \"hair drier\"},\n\t{\"bbox_2d\": [222, 726, 573, 989], \"label\": \"hair drier\"},\n\t{\"bbox_2d\": [532, 750, 732, 989], \"label\": \"hair drier\"},\n\t{\"bbox_2d\": [724, 776, 883, 989], \"label\": \"hair drier\"},\n\t{\"bbox_2d\": [883, 758, 1000, 989], \"label\": \"hair drier\"},\n\t{\"bbox_2d\": [677, 798, 744, 898], \"label\": \"hair drier\"}\n]\n```"
+}

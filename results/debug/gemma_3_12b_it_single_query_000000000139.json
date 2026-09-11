@@ -1,0 +1,24 @@
+{
+  "model": "gemma-3-12b-it",
+  "strategy": "single_query",
+  "labels": [
+    "microwave",
+    "toaster",
+    "oven",
+    "sink",
+    "refrigerator",
+    "book",
+    "clock",
+    "vase",
+    "scissors",
+    "teddy bear",
+    "hair drier",
+    "toothbrush"
+  ],
+  "image": "/home/maxim/PycharmProjects/zero-shot-detection-benchmark/data/raw/coco2017/val2017/000000000139.jpg",
+  "result": {
+    "detections": [],
+    "latency_sec": 565.268932494102,
+    "raw_response": "user\nYou are an object detection assistant. Return JSON only in the format [{\"box_2d\":[x1,y1,x2,y2],\"label\":\"class_name\"}] using integer pixel coordinates.\n\n\n\n\n\nDetect the following objects in the image: microwave, toaster, oven, sink, refrigerator, book, clock, vase, scissors, teddy bear, hair drier, toothbrush. Return JSON only in the format [{\"box_2d\":[x1,y1,x2,y2],\"label\":\"class_name\"}] using integer pixel coordinates.\nmodel"
+  }
+}

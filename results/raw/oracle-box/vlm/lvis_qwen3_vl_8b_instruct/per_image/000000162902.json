@@ -1,0 +1,129 @@
+{
+  "image": "/home/maxim/PycharmProjects/zero-shot-detection-benchmark/data/subsets/lvis_v1_val_unseen/images/000000162902.jpg",
+  "image_id": 162902,
+  "file_name": "000000162902.jpg",
+  "num_crops": 5,
+  "crops": [
+    {
+      "annotation_id": 56343,
+      "bbox": [
+        320.52,
+        131.97,
+        45.21,
+        187.75
+      ],
+      "category_id": 976,
+      "gt_label": "snowboard",
+      "labels": [
+        "snowboard",
+        "blender",
+        "musical_instrument",
+        "spatula",
+        "stapler_(stapling_machine)"
+      ],
+      "prediction": "snowboard",
+      "normalized_prediction": "snowboard",
+      "matched_label": "snowboard",
+      "correct": true,
+      "latency_sec": 1.3779446170083247,
+      "raw_response": "user\nYou are an object detection assistant. Given the image and the list of target classes, return detections as JSON.\nTarget classes: snowboard, blender, musical_instrument, spatula, stapler_(stapling_machine).\nOutput format: [{\"box_2d\":[x1,y1,x2,y2],\"label\":\"class_name\"}...]\nUse pixel coordinates relative to the input image. Return JSON only.\nassistant\n```json\n[\n\t{\"box_2d\":[10, 0, 980, 980],\"label\":\"snowboard\"}\n]\n```"
+    },
+    {
+      "annotation_id": 56344,
+      "bbox": [
+        257.25,
+        134.42,
+        52.74,
+        182.84
+      ],
+      "category_id": 976,
+      "gt_label": "snowboard",
+      "labels": [
+        "snowboard",
+        "blender",
+        "musical_instrument",
+        "spatula",
+        "stapler_(stapling_machine)"
+      ],
+      "prediction": "snowboard",
+      "normalized_prediction": "snowboard",
+      "matched_label": "snowboard",
+      "correct": true,
+      "latency_sec": 1.4582085799775086,
+      "raw_response": "user\nYou are an object detection assistant. Given the image and the list of target classes, return detections as JSON.\nTarget classes: snowboard, blender, musical_instrument, spatula, stapler_(stapling_machine).\nOutput format: [{\"box_2d\":[x1,y1,x2,y2],\"label\":\"class_name\"}...]\nUse pixel coordinates relative to the input image. Return JSON only.\nassistant\n```json\n[\n\t{\"box_2d\":[31, 0, 927, 987],\"label\":\"snowboard\"}\n]\n```"
+    },
+    {
+      "annotation_id": 56345,
+      "bbox": [
+        175.45,
+        115.38,
+        47.14,
+        191.44
+      ],
+      "category_id": 976,
+      "gt_label": "snowboard",
+      "labels": [
+        "snowboard",
+        "blender",
+        "musical_instrument",
+        "spatula",
+        "stapler_(stapling_machine)"
+      ],
+      "prediction": "snowboard",
+      "normalized_prediction": "snowboard",
+      "matched_label": "snowboard",
+      "correct": true,
+      "latency_sec": 1.3624332289909944,
+      "raw_response": "user\nYou are an object detection assistant. Given the image and the list of target classes, return detections as JSON.\nTarget classes: snowboard, blender, musical_instrument, spatula, stapler_(stapling_machine).\nOutput format: [{\"box_2d\":[x1,y1,x2,y2],\"label\":\"class_name\"}...]\nUse pixel coordinates relative to the input image. Return JSON only.\nassistant\n```json\n[\n\t{\"box_2d\": [0, 0, 984, 984], \"label\": \"snowboard\"}\n]\n```"
+    },
+    {
+      "annotation_id": 56346,
+      "bbox": [
+        92.45,
+        116.46,
+        35.19,
+        181.67
+      ],
+      "category_id": 976,
+      "gt_label": "snowboard",
+      "labels": [
+        "snowboard",
+        "blender",
+        "musical_instrument",
+        "spatula",
+        "stapler_(stapling_machine)"
+      ],
+      "prediction": "snowboard",
+      "normalized_prediction": "snowboard",
+      "matched_label": "snowboard",
+      "correct": true,
+      "latency_sec": 1.4871922789898235,
+      "raw_response": "user\nYou are an object detection assistant. Given the image and the list of target classes, return detections as JSON.\nTarget classes: snowboard, blender, musical_instrument, spatula, stapler_(stapling_machine).\nOutput format: [{\"box_2d\":[x1,y1,x2,y2],\"label\":\"class_name\"}...]\nUse pixel coordinates relative to the input image. Return JSON only.\nassistant\n```json\n[\n\t{\"box_2d\":[196, 0, 930, 987],\"label\":\"snowboard\"}\n]\n```"
+    },
+    {
+      "annotation_id": 56347,
+      "bbox": [
+        383.5,
+        141.64,
+        39.59,
+        57.29
+      ],
+      "category_id": 976,
+      "gt_label": "snowboard",
+      "labels": [
+        "snowboard",
+        "blender",
+        "musical_instrument",
+        "spatula",
+        "stapler_(stapling_machine)"
+      ],
+      "prediction": "snowboard",
+      "normalized_prediction": "snowboard",
+      "matched_label": "snowboard",
+      "correct": true,
+      "latency_sec": 1.4176650019944645,
+      "raw_response": "user\nYou are an object detection assistant. Given the image and the list of target classes, return detections as JSON.\nTarget classes: snowboard, blender, musical_instrument, spatula, stapler_(stapling_machine).\nOutput format: [{\"box_2d\":[x1,y1,x2,y2],\"label\":\"class_name\"}...]\nUse pixel coordinates relative to the input image. Return JSON only.\nassistant\n```json\n[\n\t{\"box_2d\":[22, 12, 980, 980],\"label\":\"snowboard\"}\n]\n```"
+    }
+  ],
+  "prompt": "You are an object recognition assistant.\n\nYou will see a cropped image that contains exactly one object\nfrom the following LVIS categories (unseen split):\n\n- snowboard\n- blender\n- musical_instrument\n- spatula\n- stapler_(stapling_machine)\n\nYour task:\n- Return ONLY the best matching category name from this list.\n- Do not output explanations or extra text.\n\nAnswer with a single string: \"class_name\"."
+}

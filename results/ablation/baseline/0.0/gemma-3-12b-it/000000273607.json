@@ -1,0 +1,61 @@
+{
+  "model": "gemma-3-12b-it",
+  "strategy": "single_query",
+  "image": "/home/maxim/PycharmProjects/zero-shot-detection-benchmark/data/subsets/lvis_v1_val_unseen/images/000000273607.jpg",
+  "labels": [
+    "blender",
+    "coffee_maker",
+    "microscope",
+    "sewing_machine",
+    "snowboard"
+  ],
+  "detections": [
+    {
+      "box_2d": [
+        271,
+        313,
+        438,
+        436
+      ],
+      "label": "blender"
+    },
+    {
+      "box_2d": [
+        173,
+        233,
+        311,
+        381
+      ],
+      "label": "coffee_maker"
+    },
+    {
+      "box_2d": [
+        683,
+        133,
+        888,
+        351
+      ],
+      "label": "microscope"
+    },
+    {
+      "box_2d": [
+        683,
+        355,
+        888,
+        531
+      ],
+      "label": "sewing_machine"
+    },
+    {
+      "box_2d": [
+        0,
+        0,
+        183,
+        161
+      ],
+      "label": "snowboard"
+    }
+  ],
+  "latency_sec": 14.379070204100572,
+  "raw_response": "```json\n[\n  {\"box_2d\":[271,313,438,436],\"label\":\"blender\"},\n  {\"box_2d\":[173,233,311,381],\"label\":\"coffee_maker\"},\n  {\"box_2d\":[683,133,888,351],\"label\":\"microscope\"},\n  {\"box_2d\":[683,355,888,531],\"label\":\"sewing_machine\"},\n  {\"box_2d\":[0,0,183,161],\"label\":\"snowboard\"}\n]\n```"
+}

@@ -1,0 +1,54 @@
+{
+  "model": "Llama-3.2-11B-Vision-Instruct",
+  "strategy": "single_query",
+  "image": "/home/maxim/PycharmProjects/zero-shot-detection-benchmark/data/subsets/lvis_v1_val_unseen/images/000000231153.jpg",
+  "labels": [
+    "snowboard",
+    "microscope",
+    "sewing_machine",
+    "spatula",
+    "stapler_(stapling_machine)"
+  ],
+  "detections": [
+    {
+      "box_2d": [
+        16,
+        117,
+        147,
+        227
+      ],
+      "label": "snowboard"
+    },
+    {
+      "box_2d": [
+        0,
+        0,
+        331,
+        499
+      ],
+      "label": "snowboarder"
+    },
+    {
+      "box_2d": [
+        0,
+        0,
+        331,
+        499
+      ],
+      "label": "snowboard"
+    }
+  ],
+  "latency_sec": 6.3584716450423,
+  "raw_response": {
+    "snowboard": "[{\"box_2d\":[0,0,0,0],\"label\":\"snowboard\"}]",
+    "snowboard_norm": "[{\"box_norm\":[0.047,0.234,0.444,0.454],\"label\":\"snowboard\"}]",
+    "microscope": "[]",
+    "microscope_norm": "[{\"box_norm\":[0.001,0.001,0.998,0.998],\"label\":\"snowboarder\"}]",
+    "sewing_machine": "[]",
+    "sewing_machine_norm": "[{\"box_norm\":[0.0,0.0,0.0,0.0],\"label\":\"sewing_machine\"}]",
+    "spatula": "[]",
+    "spatula_norm": "[{\"box_norm\":[0.001,0.001,0.998,0.998],\"label\":\"snowboard\"}]",
+    "stapler_(stapling_machine)": "[]",
+    "stapler_(stapling_machine)_norm": "[{\"box_norm\":[0.0,0.0,0.0,0.0],\"label\":\"stapler_(stapling_machine)\"}]"
+  }
+}

@@ -1,0 +1,57 @@
+{
+  "model": "gemma-3-12b-it",
+  "strategy": "iterative",
+  "image": "/home/maxim/PycharmProjects/zero-shot-detection-benchmark/data/subsets/lvis_v1_val_unseen/images/000000162902.jpg",
+  "labels": [
+    "snowboard",
+    "blender",
+    "musical_instrument",
+    "spatula",
+    "stapler_(stapling_machine)"
+  ],
+  "detections": [
+    {
+      "box_2d": [
+        321,
+        170,
+        448,
+        314
+      ],
+      "label": "snowboard"
+    },
+    {
+      "box_2d": [
+        533,
+        164,
+        661,
+        310
+      ],
+      "label": "snowboard"
+    },
+    {
+      "box_2d": [
+        753,
+        168,
+        881,
+        312
+      ],
+      "label": "snowboard"
+    },
+    {
+      "box_2d": [
+        978,
+        166,
+        1106,
+        310
+      ],
+      "label": "snowboard"
+    }
+  ],
+  "latency_sec": 18.04673455399461,
+  "raw_response": {
+    "identification": "snowboard",
+    "localization": {
+      "snowboard": "```json\n[\n  {\"box_2d\":[321,170,448,314],\"label\":\"snowboard\"},\n  {\"box_2d\":[533,164,661,310],\"label\":\"snowboard\"},\n  {\"box_2d\":[753,168,881,312],\"label\":\"snowboard\"},\n  {\"box_2d\":[978,166,1106,310],\"label\":\"snowboard\"}\n]\n```"
+    }
+  }
+}

@@ -1,0 +1,54 @@
+{
+  "model": "Llama-3.2-11B-Vision-Instruct",
+  "strategy": "single_query",
+  "image": "/home/maxim/PycharmProjects/zero-shot-detection-benchmark/data/subsets/lvis_v1_val_unseen/images/000000095707.jpg",
+  "labels": [
+    "spatula",
+    "blender",
+    "lawn_mower",
+    "musical_instrument",
+    "stapler_(stapling_machine)"
+  ],
+  "detections": [
+    {
+      "box_2d": [
+        3,
+        88,
+        144,
+        157
+      ],
+      "label": "spatula"
+    },
+    {
+      "box_2d": [
+        164,
+        87,
+        285,
+        156
+      ],
+      "label": "blender"
+    },
+    {
+      "box_2d": [
+        192,
+        108,
+        320,
+        252
+      ],
+      "label": "lawn_mower"
+    }
+  ],
+  "latency_sec": 14.489164291881025,
+  "raw_response": {
+    "spatula": "[]",
+    "spatula_norm": "[{\"box_norm\":[0.005,0.245,0.225,0.435],\"label\":\"spatula\"}]",
+    "blender": "[]",
+    "blender_norm": "[{\"box_norm\":[0.256,0.242,0.446,0.432],\"label\":\"blender\"}]",
+    "lawn_mower": "[]",
+    "lawn_mower_norm": "[{\"box_norm\":[0.3,0.3,0.5,0.7],\"label\":\"lawn_mower\"}]",
+    "musical_instrument": "[]",
+    "musical_instrument_norm": "[{\"box_norm\":[0.000,0.000,0.000,0.000],\"label\":\"musical_instrument\"}]",
+    "stapler_(stapling_machine)": "[]",
+    "stapler_(stapling_machine)_norm": "[{\"box_norm\":[0.000000,0.000000,0.000000,0.000000],\"label\":\"stapler_(stapling_machine)\"}]"
+  }
+}

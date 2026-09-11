@@ -1,0 +1,57 @@
+{
+  "image": "/home/maxim/PycharmProjects/zero-shot-detection-benchmark/data/subsets/lvis_v1_val_unseen/images/000000303520.jpg",
+  "image_id": 303520,
+  "file_name": "000000303520.jpg",
+  "num_crops": 2,
+  "crops": [
+    {
+      "annotation_id": 60578,
+      "bbox": [
+        203.91,
+        41.2,
+        55.05,
+        58.16
+      ],
+      "category_id": 284,
+      "gt_label": "coffee_maker",
+      "labels": [
+        "coffee_maker",
+        "microscope",
+        "musical_instrument",
+        "sewing_machine",
+        "snowboard"
+      ],
+      "prediction": "coffee_maker",
+      "normalized_prediction": "coffee maker",
+      "matched_label": "coffee_maker",
+      "correct": true,
+      "latency_sec": 1.5485012650024146,
+      "raw_response": "user\nYou are an object detection assistant. Given the image and the list of target classes, return detections as JSON.\nTarget classes: coffee_maker, microscope, musical_instrument, sewing_machine, snowboard.\nOutput format: [{\"box_2d\":[x1,y1,x2,y2],\"label\":\"class_name\"}...]\nUse pixel coordinates relative to the input image. Return JSON only.\nassistant\n```json\n[\n\t{\"box_2d\":[100, 150, 750, 850],\"label\":\"coffee_maker\"}\n]\n```"
+    },
+    {
+      "annotation_id": 60579,
+      "bbox": [
+        272.8,
+        10.36,
+        28.92,
+        73.83
+      ],
+      "category_id": 284,
+      "gt_label": "coffee_maker",
+      "labels": [
+        "coffee_maker",
+        "microscope",
+        "musical_instrument",
+        "sewing_machine",
+        "snowboard"
+      ],
+      "prediction": null,
+      "normalized_prediction": "",
+      "matched_label": null,
+      "correct": false,
+      "latency_sec": 1.8769763310265262,
+      "raw_response": "user\nYou are an object detection assistant. Given the image and the list of target classes, return detections as JSON.\nTarget classes: coffee_maker, microscope, musical_instrument, sewing_machine, snowboard.\nOutput format: [{\"box_2d\":[x1,y1,x2,y2],\"label\":\"class_name\"}...]\nUse pixel coordinates relative to the input image. Return JSON only.\nassistant\nThere is no object from the given target classes (coffee_maker, microscope, musical_instrument, sewing_machine, snowboard) visible in the image. The image shows a close-up of a person's face and shoulder, but none of the specified objects are present.\n\n```json\n[]\n```"
+    }
+  ],
+  "prompt": "You are an object recognition assistant.\n\nYou will see a cropped image that contains exactly one object\nfrom the following LVIS categories (unseen split):\n\n- coffee_maker\n- microscope\n- musical_instrument\n- sewing_machine\n- snowboard\n\nYour task:\n- Return ONLY the best matching category name from this list.\n- Do not output explanations or extra text.\n\nAnswer with a single string: \"class_name\"."
+}

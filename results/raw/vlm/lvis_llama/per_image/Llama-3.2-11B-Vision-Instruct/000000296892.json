@@ -1,0 +1,45 @@
+{
+  "model": "Llama-3.2-11B-Vision-Instruct",
+  "strategy": "single_query",
+  "image": "/home/maxim/PycharmProjects/zero-shot-detection-benchmark/data/subsets/lvis_v1_val_unseen/images/000000296892.jpg",
+  "labels": [
+    "blender",
+    "hair_dryer",
+    "musical_instrument",
+    "snowboard",
+    "stapler_(stapling_machine)"
+  ],
+  "detections": [
+    {
+      "box_2d": [
+        20,
+        61,
+        278,
+        190
+      ],
+      "label": "blender"
+    },
+    {
+      "box_2d": [
+        0,
+        0,
+        640,
+        427
+      ],
+      "label": "None"
+    }
+  ],
+  "latency_sec": 11.428384057246149,
+  "raw_response": {
+    "blender": "[]",
+    "blender_norm": "[{\"box_norm\":[0.032,0.142,0.434,0.444],\"label\":\"blender\"}]",
+    "hair_dryer": "[]",
+    "hair_dryer_norm": "[{\"box_norm\":[0.0,0.0,1.0,1.0],\"label\":\"None\"}]",
+    "musical_instrument": "[]",
+    "musical_instrument_norm": "[]",
+    "snowboard": "[]",
+    "snowboard_norm": "[{\"box_norm\":[0.0,0.0,0.0,0.0],\"label\":\"snowboard\"}]",
+    "stapler_(stapling_machine)": "[]",
+    "stapler_(stapling_machine)_norm": "[]"
+  }
+}

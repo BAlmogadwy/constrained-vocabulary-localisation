@@ -1,0 +1,36 @@
+{
+  "model": "Llama-3.2-11B-Vision-Instruct",
+  "strategy": "single_query",
+  "image": "/home/maxim/PycharmProjects/zero-shot-detection-benchmark/data/subsets/lvis_v1_val_unseen/images/000000523981.jpg",
+  "labels": [
+    "spatula",
+    "microscope",
+    "musical_instrument",
+    "snowboard",
+    "stapler_(stapling_machine)"
+  ],
+  "detections": [
+    {
+      "box_2d": [
+        128,
+        162,
+        168,
+        189
+      ],
+      "label": "spatula"
+    }
+  ],
+  "latency_sec": 14.878605538979173,
+  "raw_response": {
+    "spatula": "[{\"box_2d\":[0,0,0,0],\"label\":\"None\"}]",
+    "spatula_norm": "[{\"box_norm\":[0.256,0.432,0.336,0.504],\"label\":\"spatula\"}]",
+    "microscope": "[]",
+    "microscope_norm": "[{\"box_norm\":[0.0,0.0,0.0,0.0],\"label\":\"microscope\"}]",
+    "musical_instrument": "[]",
+    "musical_instrument_norm": "[{\"box_norm\":[0.0,0.0,0.0,0.0],\"label\":\"musical_instrument\"}]",
+    "snowboard": "[]",
+    "snowboard_norm": "[{\"box_norm\":[0.0,0.0,0.0,0.0],\"label\":\"snowboard\"}]",
+    "stapler_(stapling_machine)": "[]",
+    "stapler_(stapling_machine)_norm": "[{\"box_norm\":[0.0,0.0,0.0,0.0],\"label\":\"stapler_(stapling_machine)\"}]"
+  }
+}

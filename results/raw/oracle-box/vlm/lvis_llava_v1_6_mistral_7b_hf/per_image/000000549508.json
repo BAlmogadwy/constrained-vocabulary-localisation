@@ -1,0 +1,111 @@
+{
+  "image": "/home/maxim/PycharmProjects/zero-shot-detection-benchmark/data/subsets/lvis_v1_val_unseen/images/000000549508.jpg",
+  "image_id": 549508,
+  "file_name": "000000549508.jpg",
+  "num_crops": 3,
+  "crops": [
+    {
+      "annotation_id": 61719,
+      "bbox": [
+        600.53,
+        110.03,
+        3.55,
+        2.81
+      ],
+      "category_id": 976,
+      "gt_label": "snowboard",
+      "labels": [
+        "snowboard",
+        "blender",
+        "musical_instrument",
+        "sewing_machine",
+        "spatula"
+      ],
+      "prediction": "class_name\".",
+      "normalized_prediction": "class name",
+      "matched_label": null,
+      "correct": false,
+      "latency_sec": 0.18550912002683617,
+      "raw_response": {
+        "prediction": "class_name\".",
+        "raw_response": "USER:  \nYou are an object recognition assistant.\n\nYou will see a cropped image that contains exactly one object\nfrom the following LVIS categories (unseen split):\n\n- snowboard\n- blender\n- musical_instrument\n- sewing_machine\n- spatula\n\nYour task:\n- Return ONLY the best matching category name from this list.\n- Do not output explanations or extra text.\n\nAnswer with a single string: \"class_name\".\nASSISTANT: \"class_name\". ",
+        "labels": [
+          "snowboard",
+          "blender",
+          "musical_instrument",
+          "sewing_machine",
+          "spatula"
+        ]
+      }
+    },
+    {
+      "annotation_id": 61720,
+      "bbox": [
+        193.12,
+        223.04,
+        71.88,
+        20.58
+      ],
+      "category_id": 976,
+      "gt_label": "snowboard",
+      "labels": [
+        "snowboard",
+        "blender",
+        "musical_instrument",
+        "sewing_machine",
+        "spatula"
+      ],
+      "prediction": "snowboard",
+      "normalized_prediction": "snowboard",
+      "matched_label": "snowboard",
+      "correct": true,
+      "latency_sec": 0.16884561598999426,
+      "raw_response": {
+        "prediction": "snowboard",
+        "raw_response": "USER:  \nYou are an object recognition assistant.\n\nYou will see a cropped image that contains exactly one object\nfrom the following LVIS categories (unseen split):\n\n- snowboard\n- blender\n- musical_instrument\n- sewing_machine\n- spatula\n\nYour task:\n- Return ONLY the best matching category name from this list.\n- Do not output explanations or extra text.\n\nAnswer with a single string: \"class_name\".\nASSISTANT: snowboard ",
+        "labels": [
+          "snowboard",
+          "blender",
+          "musical_instrument",
+          "sewing_machine",
+          "spatula"
+        ]
+      }
+    },
+    {
+      "annotation_id": 61721,
+      "bbox": [
+        472.77,
+        86.88,
+        6.08,
+        0.77
+      ],
+      "category_id": 976,
+      "gt_label": "snowboard",
+      "labels": [
+        "snowboard",
+        "blender",
+        "musical_instrument",
+        "sewing_machine",
+        "spatula"
+      ],
+      "prediction": "class_name\".",
+      "normalized_prediction": "class name",
+      "matched_label": null,
+      "correct": false,
+      "latency_sec": 0.2088663019821979,
+      "raw_response": {
+        "prediction": "class_name\".",
+        "raw_response": "USER:  \nYou are an object recognition assistant.\n\nYou will see a cropped image that contains exactly one object\nfrom the following LVIS categories (unseen split):\n\n- snowboard\n- blender\n- musical_instrument\n- sewing_machine\n- spatula\n\nYour task:\n- Return ONLY the best matching category name from this list.\n- Do not output explanations or extra text.\n\nAnswer with a single string: \"class_name\".\nASSISTANT: \"class_name\". ",
+        "labels": [
+          "snowboard",
+          "blender",
+          "musical_instrument",
+          "sewing_machine",
+          "spatula"
+        ]
+      }
+    }
+  ],
+  "prompt": "You are an object recognition assistant.\n\nYou will see a cropped image that contains exactly one object\nfrom the following LVIS categories (unseen split):\n\n- snowboard\n- blender\n- musical_instrument\n- sewing_machine\n- spatula\n\nYour task:\n- Return ONLY the best matching category name from this list.\n- Do not output explanations or extra text.\n\nAnswer with a single string: \"class_name\"."
+}

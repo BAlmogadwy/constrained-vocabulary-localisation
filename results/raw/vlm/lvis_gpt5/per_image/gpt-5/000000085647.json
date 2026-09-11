@@ -1,0 +1,104 @@
+{
+  "model": "gpt-5",
+  "strategy": "single_query",
+  "image": "/home/maxim/PycharmProjects/zero-shot-detection-benchmark/data/subsets/lvis_v1_val_unseen/images/000000085647.jpg",
+  "labels": [
+    "coffee_maker",
+    "hair_dryer",
+    "microscope",
+    "snowboard",
+    "spatula"
+  ],
+  "detections": [
+    {
+      "box_2d": [
+        210,
+        214,
+        280,
+        312
+      ],
+      "label": "coffee_maker",
+      "confidence": 0.83
+    }
+  ],
+  "latency_sec": 22.892582634463906,
+  "raw_response": {
+    "id": "resp_018ab3cce046bc0600690b9c41bc68819aaba23bc74a707065",
+    "created_at": 1762368577.0,
+    "error": null,
+    "incomplete_details": null,
+    "instructions": null,
+    "metadata": {},
+    "model": "gpt-5-2025-08-07",
+    "object": "response",
+    "output": [
+      {
+        "id": "rs_018ab3cce046bc0600690b9c43c860819a813d3aaa52351157",
+        "summary": [],
+        "type": "reasoning",
+        "content": null,
+        "encrypted_content": null,
+        "status": null
+      },
+      {
+        "id": "msg_018ab3cce046bc0600690b9c56edbc819aa803dedee5c115a4",
+        "content": [
+          {
+            "annotations": [],
+            "text": "[{\"box_2d\": [210, 214, 280, 312], \"label\": \"coffee_maker\", \"confidence\": 0.83}]",
+            "type": "output_text",
+            "logprobs": []
+          }
+        ],
+        "role": "assistant",
+        "status": "completed",
+        "type": "message"
+      }
+    ],
+    "parallel_tool_calls": true,
+    "temperature": 1.0,
+    "tool_choice": "auto",
+    "tools": [],
+    "top_p": 1.0,
+    "background": false,
+    "conversation": null,
+    "max_output_tokens": 16192,
+    "max_tool_calls": null,
+    "previous_response_id": null,
+    "prompt": null,
+    "prompt_cache_key": null,
+    "reasoning": {
+      "effort": "medium",
+      "generate_summary": null,
+      "summary": null
+    },
+    "safety_identifier": null,
+    "service_tier": "default",
+    "status": "completed",
+    "text": {
+      "format": {
+        "type": "text"
+      },
+      "verbosity": "medium"
+    },
+    "top_logprobs": 0,
+    "truncation": "disabled",
+    "usage": {
+      "input_tokens": 431,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 1065,
+      "output_tokens_details": {
+        "reasoning_tokens": 1024
+      },
+      "total_tokens": 1496
+    },
+    "user": null,
+    "billing": {
+      "payer": "developer"
+    },
+    "prompt_cache_retention": null,
+    "store": true
+  }
+}

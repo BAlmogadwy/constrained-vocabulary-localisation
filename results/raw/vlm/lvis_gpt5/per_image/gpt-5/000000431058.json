@@ -1,0 +1,104 @@
+{
+  "model": "gpt-5",
+  "strategy": "single_query",
+  "image": "/home/maxim/PycharmProjects/zero-shot-detection-benchmark/data/subsets/lvis_v1_val_unseen/images/000000431058.jpg",
+  "labels": [
+    "snowboard",
+    "blender",
+    "hair_dryer",
+    "microscope",
+    "stapler_(stapling_machine)"
+  ],
+  "detections": [
+    {
+      "box_2d": [
+        305,
+        20,
+        492,
+        168
+      ],
+      "label": "snowboard",
+      "confidence": 0.92
+    }
+  ],
+  "latency_sec": 14.85634851269424,
+  "raw_response": {
+    "id": "resp_0de03086575dd3e500690bad4c29488196bfc293371a09143a",
+    "created_at": 1762372940.0,
+    "error": null,
+    "incomplete_details": null,
+    "instructions": null,
+    "metadata": {},
+    "model": "gpt-5-2025-08-07",
+    "object": "response",
+    "output": [
+      {
+        "id": "rs_0de03086575dd3e500690bad4d66a88196967c18292133f3d1",
+        "summary": [],
+        "type": "reasoning",
+        "content": null,
+        "encrypted_content": null,
+        "status": null
+      },
+      {
+        "id": "msg_0de03086575dd3e500690bad594a00819687808915a11411ca",
+        "content": [
+          {
+            "annotations": [],
+            "text": "[\n  {\"box_2d\": [305, 20, 492, 168], \"label\": \"snowboard\", \"confidence\": 0.92}\n]",
+            "type": "output_text",
+            "logprobs": []
+          }
+        ],
+        "role": "assistant",
+        "status": "completed",
+        "type": "message"
+      }
+    ],
+    "parallel_tool_calls": true,
+    "temperature": 1.0,
+    "tool_choice": "auto",
+    "tools": [],
+    "top_p": 1.0,
+    "background": false,
+    "conversation": null,
+    "max_output_tokens": 16192,
+    "max_tool_calls": null,
+    "previous_response_id": null,
+    "prompt": null,
+    "prompt_cache_key": null,
+    "reasoning": {
+      "effort": "medium",
+      "generate_summary": null,
+      "summary": null
+    },
+    "safety_identifier": null,
+    "service_tier": "default",
+    "status": "completed",
+    "text": {
+      "format": {
+        "type": "text"
+      },
+      "verbosity": "medium"
+    },
+    "top_logprobs": 0,
+    "truncation": "disabled",
+    "usage": {
+      "input_tokens": 294,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 490,
+      "output_tokens_details": {
+        "reasoning_tokens": 448
+      },
+      "total_tokens": 784
+    },
+    "user": null,
+    "billing": {
+      "payer": "developer"
+    },
+    "prompt_cache_retention": null,
+    "store": true
+  }
+}

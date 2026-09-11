@@ -1,0 +1,43 @@
+{
+  "image": "/home/maxim/PycharmProjects/zero-shot-detection-benchmark/data/subsets/lvis_v1_val_unseen/images/000000144534.jpg",
+  "image_id": 144534,
+  "file_name": "000000144534.jpg",
+  "num_crops": 1,
+  "crops": [
+    {
+      "annotation_id": 60842,
+      "bbox": [
+        0.0,
+        0.0,
+        252.28,
+        137.51
+      ],
+      "category_id": 284,
+      "gt_label": "coffee_maker",
+      "labels": [
+        "coffee_maker",
+        "microscope",
+        "musical_instrument",
+        "snowboard",
+        "spatula"
+      ],
+      "prediction": "coffee_maker",
+      "normalized_prediction": "coffee maker",
+      "matched_label": "coffee_maker",
+      "correct": true,
+      "latency_sec": 0.20706560101825744,
+      "raw_response": {
+        "prediction": "coffee_maker",
+        "raw_response": "USER:  \nYou are an object recognition assistant.\n\nYou will see a cropped image that contains exactly one object\nfrom the following LVIS categories (unseen split):\n\n- coffee_maker\n- microscope\n- musical_instrument\n- snowboard\n- spatula\n\nYour task:\n- Return ONLY the best matching category name from this list.\n- Do not output explanations or extra text.\n\nAnswer with a single string: \"class_name\".\nASSISTANT: coffee_maker ",
+        "labels": [
+          "coffee_maker",
+          "microscope",
+          "musical_instrument",
+          "snowboard",
+          "spatula"
+        ]
+      }
+    }
+  ],
+  "prompt": "You are an object recognition assistant.\n\nYou will see a cropped image that contains exactly one object\nfrom the following LVIS categories (unseen split):\n\n- coffee_maker\n- microscope\n- musical_instrument\n- snowboard\n- spatula\n\nYour task:\n- Return ONLY the best matching category name from this list.\n- Do not output explanations or extra text.\n\nAnswer with a single string: \"class_name\"."
+}

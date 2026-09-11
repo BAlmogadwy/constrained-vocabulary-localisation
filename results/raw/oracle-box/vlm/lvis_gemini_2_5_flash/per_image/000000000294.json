@@ -1,0 +1,57 @@
+{
+  "image": "/home/maxim/PycharmProjects/zero-shot-detection-benchmark/data/subsets/lvis_v1_val_unseen/images/000000000294.jpg",
+  "image_id": 294,
+  "file_name": "000000000294.jpg",
+  "num_crops": 2,
+  "crops": [
+    {
+      "annotation_id": 92201,
+      "bbox": [
+        347.53,
+        343.62,
+        39.2,
+        63.68
+      ],
+      "category_id": 993,
+      "gt_label": "spatula",
+      "labels": [
+        "spatula",
+        "blender",
+        "musical_instrument",
+        "sewing_machine",
+        "stapler_(stapling_machine)"
+      ],
+      "prediction": null,
+      "normalized_prediction": "",
+      "matched_label": null,
+      "correct": false,
+      "latency_sec": 2.4969632049906068,
+      "raw_response": "[]"
+    },
+    {
+      "annotation_id": 92202,
+      "bbox": [
+        422.78,
+        253.09,
+        25.79,
+        105.78
+      ],
+      "category_id": 993,
+      "gt_label": "spatula",
+      "labels": [
+        "spatula",
+        "blender",
+        "musical_instrument",
+        "sewing_machine",
+        "stapler_(stapling_machine)"
+      ],
+      "prediction": null,
+      "normalized_prediction": "",
+      "matched_label": null,
+      "correct": false,
+      "latency_sec": 2.447445431986125,
+      "raw_response": "[]"
+    }
+  ],
+  "prompt": "You are an object recognition assistant.\n\nYou will see a cropped image that contains exactly one object\nfrom the following LVIS categories (unseen split):\n\n- spatula\n- blender\n- musical_instrument\n- sewing_machine\n- stapler_(stapling_machine)\n\nYour task:\n- Return ONLY the best matching category name from this list.\n- Do not output explanations or extra text.\n\nAnswer with a single string: \"class_name\"."
+}

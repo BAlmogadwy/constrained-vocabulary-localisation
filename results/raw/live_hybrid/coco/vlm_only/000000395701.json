@@ -1,0 +1,128 @@
+{
+ "image": "000000395701.jpg",
+ "model": "qwen/qwen3-vl-235b-a22b-instruct",
+ "labels": [
+  "book",
+  "microwave",
+  "oven",
+  "refrigerator",
+  "scissors",
+  "sink",
+  "vase"
+ ],
+ "detections": [
+  {
+   "box_2d": [
+    337.92,
+    211.2,
+    501.12,
+    252.96
+   ],
+   "label": "book",
+   "score": 0.98
+  },
+  {
+   "box_2d": [
+    337.92,
+    260.16,
+    380.8,
+    293.76
+   ],
+   "label": "book",
+   "score": 0.98
+  },
+  {
+   "box_2d": [
+    337.92,
+    305.76,
+    432.0,
+    352.8
+   ],
+   "label": "book",
+   "score": 0.98
+  },
+  {
+   "box_2d": [
+    451.84,
+    260.16,
+    499.84,
+    312.0
+   ],
+   "label": "book",
+   "score": 0.98
+  },
+  {
+   "box_2d": [
+    119.68,
+    113.76,
+    151.68,
+    264.0
+   ],
+   "label": "book",
+   "score": 0.98
+  },
+  {
+   "box_2d": [
+    167.68,
+    119.04,
+    198.4,
+    264.0
+   ],
+   "label": "book",
+   "score": 0.98
+  }
+ ],
+ "latency_sec": 6.114305999988574,
+ "usage": {
+  "prompt_tokens": 389,
+  "completion_tokens": 302,
+  "total_tokens": 691
+ },
+ "raw_response": {
+  "id": "gen-1783413491-OOtaHvFZBzb50EDDbnNH",
+  "object": "chat.completion",
+  "created": 1783413491,
+  "model": "qwen/qwen3-vl-235b-a22b-instruct",
+  "provider": "Venice",
+  "system_fingerprint": null,
+  "service_tier": null,
+  "choices": [
+   {
+    "index": 0,
+    "logprobs": null,
+    "finish_reason": "stop",
+    "native_finish_reason": "stop",
+    "message": {
+     "role": "assistant",
+     "content": "```json\n[\n\t{\"box_2d\": [528, 440, 783, 527], \"label\": \"book\", \"confidence\": 0.98},\n\t{\"box_2d\": [528, 542, 595, 612], \"label\": \"book\", \"confidence\": 0.98},\n\t{\"box_2d\": [528, 637, 675, 735], \"label\": \"book\", \"confidence\": 0.98},\n\t{\"box_2d\": [706, 542, 781, 650], \"label\": \"book\", \"confidence\": 0.98},\n\t{\"box_2d\": [187, 237, 237, 550], \"label\": \"book\", \"confidence\": 0.98},\n\t{\"box_2d\": [262, 248, 310, 550], \"label\": \"book\", \"confidence\": 0.98},\n\t{\"box_2d\": [157, 625, 297, 808], \"label\": \"television\", \"confidence\": 0.98}\n]\n```",
+     "refusal": null,
+     "reasoning": null
+    }
+   }
+  ],
+  "usage": {
+   "prompt_tokens": 389,
+   "completion_tokens": 302,
+   "total_tokens": 691,
+   "cost": 0.00065549,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00065549,
+    "upstream_inference_prompt_cost": 8.169e-05,
+    "upstream_inference_completions_cost": 0.0005738
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   }
+  }
+ },
+ "ts": "2026-07-07T08:38:15.807246+00:00"
+}

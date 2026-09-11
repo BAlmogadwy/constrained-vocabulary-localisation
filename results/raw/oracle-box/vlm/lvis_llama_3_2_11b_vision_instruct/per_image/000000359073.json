@@ -1,0 +1,141 @@
+{
+  "image": "/home/maxim/PycharmProjects/zero-shot-detection-benchmark/data/subsets/lvis_v1_val_unseen/images/000000359073.jpg",
+  "image_id": 359073,
+  "file_name": "000000359073.jpg",
+  "num_crops": 4,
+  "crops": [
+    {
+      "annotation_id": 226722,
+      "bbox": [
+        41.36,
+        391.4,
+        44.22,
+        14.56
+      ],
+      "category_id": 976,
+      "gt_label": "snowboard",
+      "labels": [
+        "snowboard",
+        "lawn_mower",
+        "musical_instrument",
+        "sewing_machine",
+        "stapler_(stapling_machine)"
+      ],
+      "prediction": "snowboard",
+      "normalized_prediction": "snowboard",
+      "matched_label": "snowboard",
+      "correct": true,
+      "latency_sec": 4.700858361000428,
+      "raw_response": {
+        "snowboard": "[{\"box_2d\":[0,0,45,15],\"label\":\"snowboard\"}]",
+        "lawn_mower": "[{\"box_2d\":[0,0,15,14],\"label\":\"lawn_mower\"}]",
+        "musical_instrument": "[{\"box_2d\":[0,0,15,14],\"label\":\"musical_instrument\"}]",
+        "sewing_machine": "[]",
+        "sewing_machine_norm": "[{\"box_norm\":[0.0,0.0,0.0,0.0],\"label\":\"sewing_machine\"}]",
+        "stapler_(stapling_machine)": "[]",
+        "stapler_(stapling_machine)_norm": "[{\"box_norm\":[0.0,0.0,0.4,0.4],\"label\":\"stapler_(stapling_machine)\"}]"
+      }
+    },
+    {
+      "annotation_id": 226723,
+      "bbox": [
+        280.98,
+        339.37,
+        12.02,
+        1.03
+      ],
+      "category_id": 976,
+      "gt_label": "snowboard",
+      "labels": [
+        "snowboard",
+        "lawn_mower",
+        "musical_instrument",
+        "sewing_machine",
+        "stapler_(stapling_machine)"
+      ],
+      "prediction": "snowboard",
+      "normalized_prediction": "snowboard",
+      "matched_label": "snowboard",
+      "correct": true,
+      "latency_sec": 5.986697162996279,
+      "raw_response": {
+        "snowboard": "[]",
+        "snowboard_norm": "[{\"box_norm\":[0.0,0.0,0.5,0.5],\"label\":\"snowboard\"}]",
+        "lawn_mower": "[]",
+        "lawn_mower_norm": "[{\"box_norm\":[0.0,0.0,0.5,0.5],\"label\":\"lawn_mower\"}]",
+        "musical_instrument": "[]",
+        "musical_instrument_norm": "[{\"box_norm\":[0.0,0.0,0.5,0.5],\"label\":\"musical_instrument\"}]",
+        "sewing_machine": "[]",
+        "sewing_machine_norm": "[{\"box_norm\":[0.0,0.0,0.5,0.5],\"label\":\"sewing_machine\"}]",
+        "stapler_(stapling_machine)": "[]",
+        "stapler_(stapling_machine)_norm": "[{\"box_norm\":[0.0,0.0,0.5,0.5],\"label\":\"stapler_(stapling_machine)\"}]"
+      }
+    },
+    {
+      "annotation_id": 226724,
+      "bbox": [
+        82.2,
+        384.69,
+        40.59,
+        20.71
+      ],
+      "category_id": 976,
+      "gt_label": "snowboard",
+      "labels": [
+        "snowboard",
+        "lawn_mower",
+        "musical_instrument",
+        "sewing_machine",
+        "stapler_(stapling_machine)"
+      ],
+      "prediction": "snowboard",
+      "normalized_prediction": "snowboard",
+      "matched_label": "snowboard",
+      "correct": true,
+      "latency_sec": 3.844226205983432,
+      "raw_response": {
+        "snowboard": "[{\"box_2d\":[0,0,22,14],\"label\":\"snowboard\"}]",
+        "lawn_mower": "[{\"box_2d\":[0,0,22,14],\"label\":\"lawn_mower\"}]",
+        "musical_instrument": "[{\"box_2d\":[0,0,22,14],\"label\":\"musical_instrument\"}]",
+        "sewing_machine": "[{\"box_2d\":[0,0,22,14],\"label\":\"sewing_machine\"}]",
+        "stapler_(stapling_machine)": "[{\"box_2d\":[0,0,22,14],\"label\":\"stapler_(stapling_machine)\"}]"
+      }
+    },
+    {
+      "annotation_id": 226725,
+      "bbox": [
+        336.12,
+        343.59,
+        5.58,
+        1.03
+      ],
+      "category_id": 976,
+      "gt_label": "snowboard",
+      "labels": [
+        "snowboard",
+        "lawn_mower",
+        "musical_instrument",
+        "sewing_machine",
+        "stapler_(stapling_machine)"
+      ],
+      "prediction": "snowboard",
+      "normalized_prediction": "snowboard",
+      "matched_label": "snowboard",
+      "correct": true,
+      "latency_sec": 6.227908261003904,
+      "raw_response": {
+        "snowboard": "[]",
+        "snowboard_norm": "[{\"box_norm\":[0.5,0.5,0.8,0.8],\"label\":\"snowboard\"}]",
+        "lawn_mower": "[]",
+        "lawn_mower_norm": "[{\"box_norm\":[0.0,0.0,0.5,0.5],\"label\":\"lawn_mower\"}]",
+        "musical_instrument": "[]",
+        "musical_instrument_norm": "[{\"box_norm\":[0.0,0.0,0.5,0.5],\"label\":\"musical_instrument\"}]",
+        "sewing_machine": "[]",
+        "sewing_machine_norm": "[{\"box_norm\":[0.0,0.0,0.5,0.5],\"label\":\"sewing_machine\"}]",
+        "stapler_(stapling_machine)": "[]",
+        "stapler_(stapling_machine)_norm": "[\n  {\n    \"box_norm\": [0.5, 0.5, 0.8, 0.8],\n    \"label\": \"stapler_(stapling_machine)\"\n  }\n]"
+      }
+    }
+  ],
+  "prompt": "You are an object recognition assistant.\n\nYou will see a cropped image that contains exactly one object\nfrom the following LVIS categories (unseen split):\n\n- snowboard\n- lawn_mower\n- musical_instrument\n- sewing_machine\n- stapler_(stapling_machine)\n\nYour task:\n- Return ONLY the best matching category name from this list.\n- Do not output explanations or extra text.\n\nAnswer with a single string: \"class_name\"."
+}

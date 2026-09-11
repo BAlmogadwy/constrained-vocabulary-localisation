@@ -1,0 +1,220 @@
+{
+ "image": "000000293133.jpg",
+ "labels": [
+  "hair_dryer",
+  "coffee_maker",
+  "lawn_mower",
+  "sewing_machine",
+  "spatula"
+ ],
+ "tau": 0.4,
+ "detector": {
+  "detections": [
+   {
+    "label": "coffee_maker",
+    "box": [
+     207.7939453125,
+     190.57879638671875,
+     293.53851318359375,
+     282.86517333984375
+    ],
+    "score": 0.03302425146102905
+   },
+   {
+    "label": "hair_dryer",
+    "box": [
+     204.01966857910156,
+     147.0552978515625,
+     450.1363525390625,
+     463.26519775390625
+    ],
+    "score": 0.032926131039857864
+   },
+   {
+    "label": "hair_dryer",
+    "box": [
+     0.0,
+     153.16497802734375,
+     10.107610702514648,
+     254.64794921875
+    ],
+    "score": 0.009306464344263077
+   },
+   {
+    "label": "coffee_maker",
+    "box": [
+     206.22328186035156,
+     180.48033142089844,
+     450.1041259765625,
+     465.50537109375
+    ],
+    "score": 0.0024234047159552574
+   },
+   {
+    "label": "spatula",
+    "box": [
+     350.00640869140625,
+     300.243408203125,
+     449.24957275390625,
+     459.15008544921875
+    ],
+    "score": 0.0016120878281071782
+   },
+   {
+    "label": "hair_dryer",
+    "box": [
+     0.0036163330078125,
+     0.8839111328125,
+     24.319753646850586,
+     113.28292846679688
+    ],
+    "score": 0.0012855057138949633
+   }
+  ],
+  "latency_sec": 0.30377450000378303
+ },
+ "detector_max_score": 0.03302425146102905,
+ "escalated": true,
+ "vlm": {
+  "model": "qwen/qwen3-vl-235b-a22b-instruct",
+  "detections": [
+   {
+    "label": "hair_dryer",
+    "box": [
+     208.64,
+     190.72,
+     304.0,
+     289.28
+    ],
+    "score": 1.0
+   }
+  ],
+  "latency_sec": 4.77520309999818,
+  "usage": {
+   "prompt_tokens": 493,
+   "completion_tokens": 52,
+   "total_tokens": 545
+  },
+  "raw_response": {
+   "id": "gen-1783406797-zRh70yZzLhMsUR3f4OSQ",
+   "object": "chat.completion",
+   "created": 1783406797,
+   "model": "qwen/qwen3-vl-235b-a22b-instruct",
+   "provider": "Alibaba",
+   "system_fingerprint": null,
+   "service_tier": null,
+   "choices": [
+    {
+     "index": 0,
+     "logprobs": null,
+     "finish_reason": "stop",
+     "native_finish_reason": "stop",
+     "message": {
+      "role": "assistant",
+      "content": "```json\n[\n\t{\"box_2d\": [326, 298, 475, 452], \"label\": \"hair_dryer\", \"confidence\": 0.95}\n]\n```",
+      "refusal": null,
+      "reasoning": null
+     }
+    }
+   ],
+   "usage": {
+    "prompt_tokens": 493,
+    "completion_tokens": 52,
+    "total_tokens": 545,
+    "cost": 0.00018226,
+    "is_byok": false,
+    "prompt_tokens_details": {
+     "cached_tokens": 0,
+     "cache_write_tokens": 0,
+     "audio_tokens": 0,
+     "video_tokens": 0
+    },
+    "cost_details": {
+     "upstream_inference_cost": 0.00018226,
+     "upstream_inference_prompt_cost": 0.00012818,
+     "upstream_inference_completions_cost": 5.408e-05
+    },
+    "completion_tokens_details": {
+     "reasoning_tokens": 0,
+     "image_tokens": 0,
+     "audio_tokens": 0
+    }
+   }
+  }
+ },
+ "fallback": false,
+ "ts": "2026-07-07T06:46:34.618375+00:00",
+ "fused": [
+  {
+   "label": "coffee_maker",
+   "box": [
+    207.7939453125,
+    190.57879638671875,
+    293.53851318359375,
+    282.86517333984375
+   ],
+   "score": 0.03302425146102905
+  },
+  {
+   "label": "hair_dryer",
+   "box": [
+    204.01966857910156,
+    147.0552978515625,
+    450.1363525390625,
+    463.26519775390625
+   ],
+   "score": 0.032926131039857864
+  },
+  {
+   "label": "hair_dryer",
+   "box": [
+    0.0,
+    153.16497802734375,
+    10.107610702514648,
+    254.64794921875
+   ],
+   "score": 0.009306464344263077
+  },
+  {
+   "label": "coffee_maker",
+   "box": [
+    206.22328186035156,
+    180.48033142089844,
+    450.1041259765625,
+    465.50537109375
+   ],
+   "score": 0.0024234047159552574
+  },
+  {
+   "label": "spatula",
+   "box": [
+    350.00640869140625,
+    300.243408203125,
+    449.24957275390625,
+    459.15008544921875
+   ],
+   "score": 0.0016120878281071782
+  },
+  {
+   "label": "hair_dryer",
+   "box": [
+    0.0036163330078125,
+    0.8839111328125,
+    24.319753646850586,
+    113.28292846679688
+   ],
+   "score": 0.0012855057138949633
+  },
+  {
+   "label": "hair_dryer",
+   "box": [
+    208.64,
+    190.72,
+    304.0,
+    289.28
+   ],
+   "score": 0.4
+  }
+ ],
+ "latency_total_sec": 5.079084099997999
+}

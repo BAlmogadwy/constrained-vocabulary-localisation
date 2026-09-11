@@ -1,0 +1,88 @@
+{
+ "image": "000000414676.jpg",
+ "model": "qwen/qwen3-vl-235b-a22b-instruct",
+ "labels": [
+  "clock",
+  "book",
+  "hair drier",
+  "oven",
+  "scissors",
+  "teddy bear",
+  "vase"
+ ],
+ "detections": [
+  {
+   "box_2d": [
+    97.713,
+    156.16,
+    142.974,
+    185.6
+   ],
+   "label": "clock",
+   "score": 0.98
+  },
+  {
+   "box_2d": [
+    188.235,
+    173.44,
+    209.385,
+    219.52
+   ],
+   "label": "clock",
+   "score": 0.97
+  }
+ ],
+ "latency_sec": 6.050433299998986,
+ "usage": {
+  "prompt_tokens": 353,
+  "completion_tokens": 91,
+  "total_tokens": 444
+ },
+ "raw_response": {
+  "id": "gen-1783413678-xrV9ltwGCe4wXDRFINDL",
+  "object": "chat.completion",
+  "created": 1783413678,
+  "model": "qwen/qwen3-vl-235b-a22b-instruct",
+  "provider": "Parasail",
+  "system_fingerprint": null,
+  "service_tier": null,
+  "choices": [
+   {
+    "index": 0,
+    "logprobs": null,
+    "finish_reason": "stop",
+    "native_finish_reason": "stop",
+    "message": {
+     "role": "assistant",
+     "content": "```json\n[\n\t{\"box_2d\": [231, 244, 338, 290], \"label\": \"clock\", \"confidence\": 0.98},\n\t{\"box_2d\": [445, 271, 495, 343], \"label\": \"clock\", \"confidence\": 0.97}\n]\n```",
+     "refusal": null,
+     "reasoning": null
+    }
+   }
+  ],
+  "usage": {
+   "prompt_tokens": 353,
+   "completion_tokens": 91,
+   "total_tokens": 444,
+   "cost": 0.00024703,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00024703,
+    "upstream_inference_prompt_cost": 7.413e-05,
+    "upstream_inference_completions_cost": 0.0001729
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   }
+  }
+ },
+ "ts": "2026-07-07T08:41:21.560162+00:00"
+}

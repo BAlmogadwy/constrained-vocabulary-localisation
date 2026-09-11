@@ -1,0 +1,45 @@
+{
+  "model": "Qwen3-VL-8B-Instruct",
+  "strategy": "single_query",
+  "image": "/home/maxim/PycharmProjects/zero-shot-detection-benchmark/data/raw/coco2017/val2017/000000207585.jpg",
+  "labels": [
+    "teddy bear",
+    "clock",
+    "hair drier",
+    "oven",
+    "refrigerator",
+    "sink",
+    "toaster"
+  ],
+  "detections": [
+    {
+      "box_2d": [
+        630.0,
+        238.0,
+        938.0,
+        672.0
+      ],
+      "label": "teddy bear"
+    },
+    {
+      "box_2d": [
+        283.0,
+        92.0,
+        817.0,
+        933.0
+      ],
+      "label": "teddy bear"
+    },
+    {
+      "box_2d": [
+        92.0,
+        312.0,
+        398.0,
+        897.0
+      ],
+      "label": "teddy bear"
+    }
+  ],
+  "latency_sec": 5.974115189004806,
+  "raw_response": "user\nYou are an object detection assistant. Given the image and the list of target classes, return detections as JSON.\nTarget classes: teddy bear, clock, hair drier, oven, refrigerator, sink, toaster.\nOutput format: [{\"box_2d\":[x1,y1,x2,y2],\"label\":\"class_name\"}...]\nUse pixel coordinates relative to the input image. Return JSON only.\nassistant\n```json\n[\n\t{\"box_2d\": [630, 238, 938, 672], \"label\": \"teddy bear\"},\n\t{\"bbox_2d\": [283, 92, 817, 933], \"label\": \"teddy bear\"},\n\t{\"bbox_2d\": [92, 312, 398, 897], \"label\": \"teddy bear\"}\n]\n```"
+}

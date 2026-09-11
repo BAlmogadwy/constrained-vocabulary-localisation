@@ -1,0 +1,104 @@
+{
+  "model": "gpt-5",
+  "strategy": "single_query",
+  "image": "/home/maxim/PycharmProjects/zero-shot-detection-benchmark/data/subsets/lvis_v1_val_unseen/images/000000243204.jpg",
+  "labels": [
+    "spatula",
+    "coffee_maker",
+    "hair_dryer",
+    "musical_instrument",
+    "snowboard"
+  ],
+  "detections": [
+    {
+      "box_2d": [
+        15,
+        330,
+        230,
+        535
+      ],
+      "label": "spatula",
+      "confidence": 0.9
+    }
+  ],
+  "latency_sec": 21.366332734003663,
+  "raw_response": {
+    "id": "resp_0723e8ee1870181500690ba4d4e6b8819a9825bee518636597",
+    "created_at": 1762370772.0,
+    "error": null,
+    "incomplete_details": null,
+    "instructions": null,
+    "metadata": {},
+    "model": "gpt-5-2025-08-07",
+    "object": "response",
+    "output": [
+      {
+        "id": "rs_0723e8ee1870181500690ba4d5dd94819a81566803e8e633ae",
+        "summary": [],
+        "type": "reasoning",
+        "content": null,
+        "encrypted_content": null,
+        "status": null
+      },
+      {
+        "id": "msg_0723e8ee1870181500690ba4e822c8819a8426d06b6dab946e",
+        "content": [
+          {
+            "annotations": [],
+            "text": "[\n  {\"box_2d\": [15, 330, 230, 535], \"label\": \"spatula\", \"confidence\": 0.90}\n]",
+            "type": "output_text",
+            "logprobs": []
+          }
+        ],
+        "role": "assistant",
+        "status": "completed",
+        "type": "message"
+      }
+    ],
+    "parallel_tool_calls": true,
+    "temperature": 1.0,
+    "tool_choice": "auto",
+    "tools": [],
+    "top_p": 1.0,
+    "background": false,
+    "conversation": null,
+    "max_output_tokens": 16192,
+    "max_tool_calls": null,
+    "previous_response_id": null,
+    "prompt": null,
+    "prompt_cache_key": null,
+    "reasoning": {
+      "effort": "medium",
+      "generate_summary": null,
+      "summary": null
+    },
+    "safety_identifier": null,
+    "service_tier": "default",
+    "status": "completed",
+    "text": {
+      "format": {
+        "type": "text"
+      },
+      "verbosity": "medium"
+    },
+    "top_logprobs": 0,
+    "truncation": "disabled",
+    "usage": {
+      "input_tokens": 433,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 747,
+      "output_tokens_details": {
+        "reasoning_tokens": 704
+      },
+      "total_tokens": 1180
+    },
+    "user": null,
+    "billing": {
+      "payer": "developer"
+    },
+    "prompt_cache_retention": null,
+    "store": true
+  }
+}

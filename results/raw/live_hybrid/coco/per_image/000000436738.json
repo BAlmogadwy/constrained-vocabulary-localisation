@@ -1,0 +1,121 @@
+{
+ "image": "000000436738.jpg",
+ "labels": [
+  "book",
+  "hair drier",
+  "microwave",
+  "oven",
+  "scissors",
+  "teddy bear",
+  "toothbrush"
+ ],
+ "tau": 0.4,
+ "detector": {
+  "detections": [
+   {
+    "label": "book",
+    "box": [
+     153.47142028808594,
+     297.2426452636719,
+     390.0635681152344,
+     403.6717529296875
+    ],
+    "score": 0.001910268678329885
+   },
+   {
+    "label": "microwave",
+    "box": [
+     154.24618530273438,
+     297.0848693847656,
+     389.91070556640625,
+     403.6263427734375
+    ],
+    "score": 0.0012746916618198156
+   }
+  ],
+  "latency_sec": 0.049347199994372204
+ },
+ "detector_max_score": 0.001910268678329885,
+ "escalated": true,
+ "vlm": {
+  "model": "qwen/qwen3-vl-235b-a22b-instruct",
+  "detections": [],
+  "latency_sec": 3.8793248000001768,
+  "usage": {
+   "prompt_tokens": 334,
+   "completion_tokens": 2,
+   "total_tokens": 336
+  },
+  "raw_response": {
+   "id": "gen-1783409669-bdsuHelDsmRL6YVXmkBl",
+   "object": "chat.completion",
+   "created": 1783409669,
+   "model": "qwen/qwen3-vl-235b-a22b-instruct",
+   "provider": "Parasail",
+   "system_fingerprint": null,
+   "service_tier": null,
+   "choices": [
+    {
+     "index": 0,
+     "logprobs": null,
+     "finish_reason": "stop",
+     "native_finish_reason": "stop",
+     "message": {
+      "role": "assistant",
+      "content": "[]",
+      "refusal": null,
+      "reasoning": null
+     }
+    }
+   ],
+   "usage": {
+    "prompt_tokens": 334,
+    "completion_tokens": 2,
+    "total_tokens": 336,
+    "cost": 7.394e-05,
+    "is_byok": false,
+    "prompt_tokens_details": {
+     "cached_tokens": 0,
+     "cache_write_tokens": 0,
+     "audio_tokens": 0,
+     "video_tokens": 0
+    },
+    "cost_details": {
+     "upstream_inference_cost": 7.394e-05,
+     "upstream_inference_prompt_cost": 7.014e-05,
+     "upstream_inference_completions_cost": 3.8e-06
+    },
+    "completion_tokens_details": {
+     "reasoning_tokens": 0,
+     "image_tokens": 0,
+     "audio_tokens": 0
+    }
+   }
+  }
+ },
+ "fallback": false,
+ "ts": "2026-07-07T07:34:26.573096+00:00",
+ "fused": [
+  {
+   "label": "book",
+   "box": [
+    153.47142028808594,
+    297.2426452636719,
+    390.0635681152344,
+    403.6717529296875
+   ],
+   "score": 0.001910268678329885
+  },
+  {
+   "label": "microwave",
+   "box": [
+    154.24618530273438,
+    297.0848693847656,
+    389.91070556640625,
+    403.6263427734375
+   ],
+   "score": 0.0012746916618198156
+  }
+ ],
+ "latency_total_sec": 3.928692499990575
+}

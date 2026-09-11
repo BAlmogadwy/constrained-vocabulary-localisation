@@ -1,0 +1,59 @@
+{
+  "image": "/home/maxim/PycharmProjects/zero-shot-detection-benchmark/data/subsets/lvis_v1_val_unseen/images/000000538092.jpg",
+  "image_id": 538092,
+  "file_name": "000000538092.jpg",
+  "num_crops": 2,
+  "crops": [
+    {
+      "annotation_id": 77065,
+      "bbox": [
+        11.11,
+        235.41,
+        45.02,
+        78.02
+      ],
+      "category_id": 284,
+      "gt_label": "coffee_maker",
+      "labels": [
+        "coffee_maker",
+        "hair_dryer",
+        "musical_instrument",
+        "sewing_machine",
+        "snowboard"
+      ],
+      "error": "inference_failed: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}",
+      "prediction": null,
+      "normalized_prediction": "",
+      "matched_label": null,
+      "correct": false,
+      "latency_sec": 8.510600887006149,
+      "raw_response": null
+    },
+    {
+      "annotation_id": 77066,
+      "bbox": [
+        0.0,
+        139.57,
+        19.67,
+        81.92
+      ],
+      "category_id": 284,
+      "gt_label": "coffee_maker",
+      "labels": [
+        "coffee_maker",
+        "hair_dryer",
+        "musical_instrument",
+        "sewing_machine",
+        "snowboard"
+      ],
+      "error": "inference_failed: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}",
+      "prediction": null,
+      "normalized_prediction": "",
+      "matched_label": null,
+      "correct": false,
+      "latency_sec": 8.474619612010429,
+      "raw_response": null
+    }
+  ],
+  "prompt": "You are an object recognition assistant.\n\nYou will see a cropped image that contains exactly one object\nfrom the following LVIS categories (unseen split):\n\n- coffee_maker\n- hair_dryer\n- musical_instrument\n- sewing_machine\n- snowboard\n\nYour task:\n- Return ONLY the best matching category name from this list.\n- Do not output explanations or extra text.\n\nAnswer with a single string: \"class_name\"."
+}

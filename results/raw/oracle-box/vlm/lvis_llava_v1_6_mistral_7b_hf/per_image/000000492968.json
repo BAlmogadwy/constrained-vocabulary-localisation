@@ -1,0 +1,43 @@
+{
+  "image": "/home/maxim/PycharmProjects/zero-shot-detection-benchmark/data/raw/coco2017/val2017/000000492968.jpg",
+  "image_id": 492968,
+  "file_name": "000000492968.jpg",
+  "num_crops": 1,
+  "crops": [
+    {
+      "annotation_id": 41863,
+      "bbox": [
+        235.01,
+        311.34,
+        139.14,
+        70.99
+      ],
+      "category_id": 976,
+      "gt_label": "snowboard",
+      "labels": [
+        "snowboard",
+        "coffee_maker",
+        "musical_instrument",
+        "sewing_machine",
+        "stapler_(stapling_machine)"
+      ],
+      "prediction": "snowboard",
+      "normalized_prediction": "snowboard",
+      "matched_label": "snowboard",
+      "correct": true,
+      "latency_sec": 0.2013127579994034,
+      "raw_response": {
+        "prediction": "snowboard",
+        "raw_response": "USER:  \nYou are an object recognition assistant.\n\nYou will see a cropped image that contains exactly one object\nfrom the following LVIS categories (unseen split):\n\n- snowboard\n- coffee_maker\n- musical_instrument\n- sewing_machine\n- stapler_(stapling_machine)\n\nYour task:\n- Return ONLY the best matching category name from this list.\n- Do not output explanations or extra text.\n\nAnswer with a single string: \"class_name\".\nASSISTANT: snowboard ",
+        "labels": [
+          "snowboard",
+          "coffee_maker",
+          "musical_instrument",
+          "sewing_machine",
+          "stapler_(stapling_machine)"
+        ]
+      }
+    }
+  ],
+  "prompt": "You are an object recognition assistant.\n\nYou will see a cropped image that contains exactly one object\nfrom the following LVIS categories (unseen split):\n\n- snowboard\n- coffee_maker\n- musical_instrument\n- sewing_machine\n- stapler_(stapling_machine)\n\nYour task:\n- Return ONLY the best matching category name from this list.\n- Do not output explanations or extra text.\n\nAnswer with a single string: \"class_name\"."
+}

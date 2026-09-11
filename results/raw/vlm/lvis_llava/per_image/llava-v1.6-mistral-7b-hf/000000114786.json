@@ -1,0 +1,76 @@
+{
+  "model": "llava-v1.6-mistral-7b-hf",
+  "strategy": "single_query",
+  "image": "/home/maxim/PycharmProjects/zero-shot-detection-benchmark/data/subsets/lvis_v1_val_unseen/images/000000114786.jpg",
+  "labels": [
+    "spatula",
+    "coffee_maker",
+    "hair_dryer",
+    "lawn_mower",
+    "musical_instrument"
+  ],
+  "detections": [
+    {
+      "box_2d": [
+        0.0,
+        0.359,
+        0.5,
+        0.988
+      ],
+      "label": "cake"
+    },
+    {
+      "box_2d": [
+        0.308,
+        0.0,
+        0.5,
+        0.283
+      ],
+      "label": "person"
+    },
+    {
+      "box_2d": [
+        0.308,
+        0.0,
+        0.5,
+        0.283
+      ],
+      "label": "person holding a knife"
+    },
+    {
+      "box_2d": [
+        0.308,
+        0.0,
+        0.5,
+        0.283
+      ],
+      "label": "person holding a knife in their right hand"
+    },
+    {
+      "box_2d": [
+        0.0,
+        0.108,
+        0.35,
+        0.5
+      ],
+      "label": "person"
+    },
+    {
+      "box_2d": [
+        0.0,
+        0.108,
+        0.35,
+        0.5
+      ],
+      "label": "person wearing a pink dress"
+    },
+    {
+      "box_2d": [
+        0.308
+      ],
+      "label": "knife"
+    }
+  ],
+  "latency_sec": 13.91861660964787,
+  "raw_response": "USER:  \nDetect the following objects in the image: spatula, coffee_maker, hair_dryer, lawn_mower, musical_instrument. For each detected object, provide JSON entries in the form [{\"box_2d\": [x1, y1, x2, y2], \"label\": \"class_name\"}]. Return only JSON. ASSISTANT: ```json\n[\n  {\n    \"box_2d\": [\n     0.000,\n     0.359,\n     0.500,\n     0.988\n    ],\n    \"label\": \"cake\"\n  },\n  {\n    \"box_2d\": [\n     0.308,\n     0.000,\n     0.500,\n     0.283\n    ],\n    \"label\": \"person\"\n  },\n  {\n    \"box_2d\": [\n     0.308,\n     0.000,\n     0.500,\n     0.283\n    ],\n    \"label\": \"person holding a knife\"\n  },\n  {\n    \"box_2d\": [\n     0.308,\n     0.000,\n     0.500,\n     0.283\n    ],\n    \"label\": \"person holding a knife in their right hand\"\n  },\n  {\n    \"box_2d\": [\n     0.000,\n     0.108,\n     0.350,\n     0.500\n    ],\n    \"label\": \"person\"\n  },\n  {\n    \"box_2d\": [\n     0.000,\n     0.108,\n     0.350,\n     0.500\n    ],\n    \"label\": \"person wearing a pink dress\"\n  },\n  {\n    \"box_2d\": [\n     0.308,\n    ],\n    \"label\": \"knife\"\n  }\n]\n``` "
+}

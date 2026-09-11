@@ -1,0 +1,76 @@
+{
+ "image": "000000144534.jpg",
+ "model": "qwen/qwen3-vl-235b-a22b-instruct",
+ "labels": [
+  "coffee_maker",
+  "microscope",
+  "musical_instrument",
+  "snowboard",
+  "spatula"
+ ],
+ "detections": [
+  {
+   "box_2d": [
+    0.0,
+    0.0,
+    254.72,
+    138.7
+   ],
+   "label": "coffee_maker",
+   "score": 0.95
+  }
+ ],
+ "latency_sec": 3.3656750000081956,
+ "usage": {
+  "prompt_tokens": 390,
+  "completion_tokens": 40,
+  "total_tokens": 430
+ },
+ "raw_response": {
+  "id": "gen-1783407474-274pxIEHKMZjYieJzmPG",
+  "object": "chat.completion",
+  "created": 1783407474,
+  "model": "qwen/qwen3-vl-235b-a22b-instruct",
+  "provider": "DeepInfra",
+  "system_fingerprint": null,
+  "service_tier": null,
+  "choices": [
+   {
+    "index": 0,
+    "logprobs": null,
+    "finish_reason": "stop",
+    "native_finish_reason": "stop",
+    "message": {
+     "role": "assistant",
+     "content": "[{\"box_2d\": [0, 0, 398, 292], \"label\": \"coffee_maker\", \"confidence\": 0.95}]",
+     "refusal": null,
+     "reasoning": null
+    }
+   }
+  ],
+  "usage": {
+   "prompt_tokens": 390,
+   "completion_tokens": 40,
+   "total_tokens": 430,
+   "cost": 0.0001132,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0001132,
+    "upstream_inference_prompt_cost": 7.8e-05,
+    "upstream_inference_completions_cost": 3.52e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   }
+  }
+ },
+ "ts": "2026-07-07T06:57:55.808184+00:00"
+}

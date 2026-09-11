@@ -1,0 +1,250 @@
+{
+ "image": "000000095707.jpg",
+ "labels": [
+  "spatula",
+  "blender",
+  "lawn_mower",
+  "musical_instrument",
+  "stapler_(stapling_machine)"
+ ],
+ "tau": 0.4,
+ "detector": {
+  "detections": [
+   {
+    "label": "spatula",
+    "box": [
+     564.2042846679688,
+     99.9946060180664,
+     603.2860717773438,
+     306.1916198730469
+    ],
+    "score": 0.2961302101612091
+   },
+   {
+    "label": "spatula",
+    "box": [
+     535.3585205078125,
+     159.15560913085938,
+     640.0,
+     309.43212890625
+    ],
+    "score": 0.21396876871585846
+   },
+   {
+    "label": "spatula",
+    "box": [
+     486.2611389160156,
+     184.16061401367188,
+     540.2200927734375,
+     359.9000549316406
+    ],
+    "score": 0.055333077907562256
+   },
+   {
+    "label": "stapler_(stapling_machine)",
+    "box": [
+     0.0,
+     298.68463134765625,
+     55.629268646240234,
+     359.59210205078125
+    ],
+    "score": 0.010416657663881779
+   },
+   {
+    "label": "spatula",
+    "box": [
+     0.0,
+     0.5826301574707031,
+     131.86874389648438,
+     103.75645446777344
+    ],
+    "score": 0.009862132370471954
+   },
+   {
+    "label": "blender",
+    "box": [
+     511.0968017578125,
+     159.82044982910156,
+     640.0,
+     340.59521484375
+    ],
+    "score": 0.008993878029286861
+   },
+   {
+    "label": "spatula",
+    "box": [
+     498.0579833984375,
+     292.4923095703125,
+     539.5543212890625,
+     359.853515625
+    ],
+    "score": 0.0027117119170725346
+   },
+   {
+    "label": "stapler_(stapling_machine)",
+    "box": [
+     44.134552001953125,
+     0.8845739364624023,
+     120.02980041503906,
+     24.673751831054688
+    ],
+    "score": 0.0012489811051636934
+   }
+  ],
+  "latency_sec": 0.19661610000184737
+ },
+ "detector_max_score": 0.2961302101612091,
+ "escalated": true,
+ "vlm": {
+  "model": "qwen/qwen3-vl-235b-a22b-instruct",
+  "detections": [
+   {
+    "label": "spatula",
+    "box": [
+     565.12,
+     101.16,
+     601.6,
+     300.6
+    ],
+    "score": 1.0
+   }
+  ],
+  "latency_sec": 13.017854899997474,
+  "usage": {
+   "prompt_tokens": 316,
+   "completion_tokens": 51,
+   "total_tokens": 367
+  },
+  "raw_response": {
+   "id": "gen-1783406631-ZF8VowpKEejvx58xQeps",
+   "object": "chat.completion",
+   "created": 1783406631,
+   "model": "qwen/qwen3-vl-235b-a22b-instruct",
+   "provider": "DeepInfra",
+   "system_fingerprint": null,
+   "service_tier": null,
+   "choices": [
+    {
+     "index": 0,
+     "logprobs": null,
+     "finish_reason": "stop",
+     "native_finish_reason": "stop",
+     "message": {
+      "role": "assistant",
+      "content": "```json\n[\n\t{\"bbox_2d\": [883, 281, 940, 835], \"label\": \"spatula\", \"confidence\": 0.95}\n]\n```",
+      "refusal": null,
+      "reasoning": null
+     }
+    }
+   ],
+   "usage": {
+    "prompt_tokens": 316,
+    "completion_tokens": 51,
+    "total_tokens": 367,
+    "cost": 0.00010808,
+    "is_byok": false,
+    "prompt_tokens_details": {
+     "cached_tokens": 0,
+     "cache_write_tokens": 0,
+     "audio_tokens": 0,
+     "video_tokens": 0
+    },
+    "cost_details": {
+     "upstream_inference_cost": 0.00010808,
+     "upstream_inference_prompt_cost": 6.32e-05,
+     "upstream_inference_completions_cost": 4.488e-05
+    },
+    "completion_tokens_details": {
+     "reasoning_tokens": 0,
+     "image_tokens": 0,
+     "audio_tokens": 0
+    }
+   }
+  }
+ },
+ "fallback": false,
+ "ts": "2026-07-07T06:43:40.782966+00:00",
+ "fused": [
+  {
+   "label": "spatula",
+   "box": [
+    564.2042846679688,
+    99.9946060180664,
+    603.2860717773438,
+    306.1916198730469
+   ],
+   "score": 0.5961302101612092
+  },
+  {
+   "label": "spatula",
+   "box": [
+    535.3585205078125,
+    159.15560913085938,
+    640.0,
+    309.43212890625
+   ],
+   "score": 0.21396876871585846
+  },
+  {
+   "label": "spatula",
+   "box": [
+    486.2611389160156,
+    184.16061401367188,
+    540.2200927734375,
+    359.9000549316406
+   ],
+   "score": 0.055333077907562256
+  },
+  {
+   "label": "stapler_(stapling_machine)",
+   "box": [
+    0.0,
+    298.68463134765625,
+    55.629268646240234,
+    359.59210205078125
+   ],
+   "score": 0.010416657663881779
+  },
+  {
+   "label": "spatula",
+   "box": [
+    0.0,
+    0.5826301574707031,
+    131.86874389648438,
+    103.75645446777344
+   ],
+   "score": 0.009862132370471954
+  },
+  {
+   "label": "blender",
+   "box": [
+    511.0968017578125,
+    159.82044982910156,
+    640.0,
+    340.59521484375
+   ],
+   "score": 0.008993878029286861
+  },
+  {
+   "label": "spatula",
+   "box": [
+    498.0579833984375,
+    292.4923095703125,
+    539.5543212890625,
+    359.853515625
+   ],
+   "score": 0.0027117119170725346
+  },
+  {
+   "label": "stapler_(stapling_machine)",
+   "box": [
+    44.134552001953125,
+    0.8845739364624023,
+    120.02980041503906,
+    24.673751831054688
+   ],
+   "score": 0.0012489811051636934
+  }
+ ],
+ "latency_total_sec": 13.214491199993063
+}

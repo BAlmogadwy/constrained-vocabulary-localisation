@@ -1,0 +1,43 @@
+{
+  "image": "/home/maxim/PycharmProjects/zero-shot-detection-benchmark/data/subsets/lvis_v1_val_unseen/images/000000065329.jpg",
+  "image_id": 65329,
+  "file_name": "000000065329.jpg",
+  "num_crops": 1,
+  "crops": [
+    {
+      "annotation_id": 130542,
+      "bbox": [
+        17.35,
+        165.82,
+        41.91,
+        21.95
+      ],
+      "category_id": 1006,
+      "gt_label": "stapler_(stapling_machine)",
+      "labels": [
+        "stapler_(stapling_machine)",
+        "blender",
+        "lawn_mower",
+        "sewing_machine",
+        "snowboard"
+      ],
+      "prediction": "stapler_(stapling_machine)",
+      "normalized_prediction": "stapler (stapling machine)",
+      "matched_label": "stapler_(stapling_machine)",
+      "correct": true,
+      "latency_sec": 5.6122793210088275,
+      "raw_response": {
+        "stapler_(stapling_machine)": "[]",
+        "stapler_(stapling_machine)_norm": "[{\"box_norm\":[0.000000,0.000000,0.500000,0.500000],\"label\":\"stapler_(stapling_machine)\"}]",
+        "blender": "[{\"box_2d\":[0,0,43,23],\"label\":\"blender\"}]",
+        "lawn_mower": "[]",
+        "lawn_mower_norm": "[{\"box_norm\":[0.0,0.0,0.5,0.5],\"label\":\"lawn_mower\"}]",
+        "sewing_machine": "[]",
+        "sewing_machine_norm": "[{\"box_norm\":[0.0,0.0,0.0,0.0],\"label\":\"sewing_machine\"}]",
+        "snowboard": "[]",
+        "snowboard_norm": "[{\"box_norm\":[0.0,0.0,0.5,0.5],\"label\":\"snowboard\"}]"
+      }
+    }
+  ],
+  "prompt": "You are an object recognition assistant.\n\nYou will see a cropped image that contains exactly one object\nfrom the following LVIS categories (unseen split):\n\n- stapler_(stapling_machine)\n- blender\n- lawn_mower\n- sewing_machine\n- snowboard\n\nYour task:\n- Return ONLY the best matching category name from this list.\n- Do not output explanations or extra text.\n\nAnswer with a single string: \"class_name\"."
+}

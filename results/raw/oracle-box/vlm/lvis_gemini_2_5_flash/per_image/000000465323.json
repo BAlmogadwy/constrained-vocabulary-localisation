@@ -1,0 +1,57 @@
+{
+  "image": "/home/maxim/PycharmProjects/zero-shot-detection-benchmark/data/subsets/lvis_v1_val_unseen/images/000000465323.jpg",
+  "image_id": 465323,
+  "file_name": "000000465323.jpg",
+  "num_crops": 2,
+  "crops": [
+    {
+      "annotation_id": 90163,
+      "bbox": [
+        489.54,
+        326.66,
+        60.85,
+        119.94
+      ],
+      "category_id": 976,
+      "gt_label": "snowboard",
+      "labels": [
+        "snowboard",
+        "hair_dryer",
+        "musical_instrument",
+        "sewing_machine",
+        "spatula"
+      ],
+      "prediction": "snowboard",
+      "normalized_prediction": "snowboard",
+      "matched_label": "snowboard",
+      "correct": true,
+      "latency_sec": 1.238971090002451,
+      "raw_response": "[{\"box_2d\": [18, 0, 895, 999], \"label\": \"snowboard\"}]"
+    },
+    {
+      "annotation_id": 90164,
+      "bbox": [
+        37.94,
+        423.63,
+        368.09,
+        56.37
+      ],
+      "category_id": 976,
+      "gt_label": "snowboard",
+      "labels": [
+        "snowboard",
+        "hair_dryer",
+        "musical_instrument",
+        "sewing_machine",
+        "spatula"
+      ],
+      "prediction": null,
+      "normalized_prediction": "",
+      "matched_label": null,
+      "correct": false,
+      "latency_sec": 12.102708193997387,
+      "raw_response": "[]"
+    }
+  ],
+  "prompt": "You are an object recognition assistant.\n\nYou will see a cropped image that contains exactly one object\nfrom the following LVIS categories (unseen split):\n\n- snowboard\n- hair_dryer\n- musical_instrument\n- sewing_machine\n- spatula\n\nYour task:\n- Return ONLY the best matching category name from this list.\n- Do not output explanations or extra text.\n\nAnswer with a single string: \"class_name\"."
+}

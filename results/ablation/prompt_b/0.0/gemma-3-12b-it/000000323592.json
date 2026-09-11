@@ -1,0 +1,30 @@
+{
+  "model": "gemma-3-12b-it",
+  "strategy": "iterative",
+  "image": "/home/maxim/PycharmProjects/zero-shot-detection-benchmark/data/subsets/lvis_v1_val_unseen/images/000000323592.jpg",
+  "labels": [
+    "spatula",
+    "lawn_mower",
+    "sewing_machine",
+    "snowboard",
+    "stapler_(stapling_machine)"
+  ],
+  "detections": [
+    {
+      "box_2d": [
+        131,
+        150,
+        188,
+        253
+      ],
+      "label": "spatula"
+    }
+  ],
+  "latency_sec": 18.061229113023728,
+  "raw_response": {
+    "identification": "Here's a list of the target classes visible in the image, separated by commas:\n\nspatula",
+    "localization": {
+      "spatula": "```json\n[{\"box_2d\":[131,150,188,253],\"label\":\"spatula\"}]\n```"
+    }
+  }
+}

@@ -1,0 +1,78 @@
+{
+ "image": "000000569976.jpg",
+ "model": "qwen/qwen3-vl-235b-a22b-instruct",
+ "labels": [
+  "hair drier",
+  "clock",
+  "refrigerator",
+  "sink",
+  "toaster",
+  "toothbrush",
+  "vase"
+ ],
+ "detections": [
+  {
+   "box_2d": [
+    194.88,
+    210.56,
+    338.88,
+    405.12
+   ],
+   "label": "hair drier",
+   "score": 0.98
+  }
+ ],
+ "latency_sec": 3.046851400009473,
+ "usage": {
+  "prompt_tokens": 392,
+  "completion_tokens": 51,
+  "total_tokens": 443
+ },
+ "raw_response": {
+  "id": "gen-1783415324-obkPlBX8YxOKrEbpUdpI",
+  "object": "chat.completion",
+  "created": 1783415324,
+  "model": "qwen/qwen3-vl-235b-a22b-instruct",
+  "provider": "Venice",
+  "system_fingerprint": null,
+  "service_tier": null,
+  "choices": [
+   {
+    "index": 0,
+    "logprobs": null,
+    "finish_reason": "stop",
+    "native_finish_reason": "stop",
+    "message": {
+     "role": "assistant",
+     "content": "```json\n[\n\t{\"box_2d\": [406, 329, 706, 633], \"label\": \"hair drier\", \"confidence\": 0.98}\n]\n```",
+     "refusal": null,
+     "reasoning": null
+    }
+   }
+  ],
+  "usage": {
+   "prompt_tokens": 392,
+   "completion_tokens": 51,
+   "total_tokens": 443,
+   "cost": 0.00017922,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00017922,
+    "upstream_inference_prompt_cost": 8.232e-05,
+    "upstream_inference_completions_cost": 9.69e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   }
+  }
+ },
+ "ts": "2026-07-07T09:08:45.276228+00:00"
+}

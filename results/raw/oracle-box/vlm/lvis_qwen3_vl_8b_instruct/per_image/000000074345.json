@@ -1,0 +1,33 @@
+{
+  "image": "/home/maxim/PycharmProjects/zero-shot-detection-benchmark/data/subsets/lvis_v1_val_unseen/images/000000074345.jpg",
+  "image_id": 74345,
+  "file_name": "000000074345.jpg",
+  "num_crops": 1,
+  "crops": [
+    {
+      "annotation_id": 106260,
+      "bbox": [
+        375.49,
+        9.46,
+        33.35,
+        256.28
+      ],
+      "category_id": 976,
+      "gt_label": "snowboard",
+      "labels": [
+        "snowboard",
+        "hair_dryer",
+        "lawn_mower",
+        "microscope",
+        "sewing_machine"
+      ],
+      "prediction": "snowboard",
+      "normalized_prediction": "snowboard",
+      "matched_label": "snowboard",
+      "correct": true,
+      "latency_sec": 1.3855248780164402,
+      "raw_response": "user\nYou are an object detection assistant. Given the image and the list of target classes, return detections as JSON.\nTarget classes: snowboard, hair_dryer, lawn_mower, microscope, sewing_machine.\nOutput format: [{\"box_2d\":[x1,y1,x2,y2],\"label\":\"class_name\"}...]\nUse pixel coordinates relative to the input image. Return JSON only.\nassistant\n```json\n[\n\t{\"box_2d\": [0, 0, 997, 987], \"label\": \"snowboard\"}\n]\n```"
+    }
+  ],
+  "prompt": "You are an object recognition assistant.\n\nYou will see a cropped image that contains exactly one object\nfrom the following LVIS categories (unseen split):\n\n- snowboard\n- hair_dryer\n- lawn_mower\n- microscope\n- sewing_machine\n\nYour task:\n- Return ONLY the best matching category name from this list.\n- Do not output explanations or extra text.\n\nAnswer with a single string: \"class_name\"."
+}

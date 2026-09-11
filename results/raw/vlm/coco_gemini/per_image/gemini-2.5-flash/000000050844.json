@@ -1,0 +1,36 @@
+{
+  "model": "gemini-2.5-flash",
+  "strategy": "single_query",
+  "image": "/home/maxim/PycharmProjects/zero-shot-detection-benchmark/data/raw/coco2017/val2017/000000050844.jpg",
+  "labels": [
+    "teddy bear",
+    "book",
+    "microwave",
+    "oven",
+    "toaster",
+    "toothbrush",
+    "vase"
+  ],
+  "detections": [
+    {
+      "box_2d": [
+        107,
+        39,
+        762,
+        642
+      ],
+      "label": "teddy bear"
+    },
+    {
+      "box_2d": [
+        287,
+        313,
+        963,
+        983
+      ],
+      "label": "teddy bear"
+    }
+  ],
+  "latency_sec": 2.0668874040129595,
+  "raw_response": "```json\n[\n  {\"box_2d\": [107, 39, 762, 642], \"label\": \"teddy bear\"},\n  {\"box_2d\": [287, 313, 963, 983], \"label\": \"teddy bear\"}\n]\n```"
+}

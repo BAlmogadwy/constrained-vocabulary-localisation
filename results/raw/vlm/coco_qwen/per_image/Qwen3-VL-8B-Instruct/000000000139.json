@@ -1,0 +1,101 @@
+{
+  "model": "Qwen3-VL-8B-Instruct",
+  "strategy": "single_query",
+  "image": "/home/maxim/PycharmProjects/zero-shot-detection-benchmark/data/raw/coco2017/val2017/000000000139.jpg",
+  "labels": [
+    "book",
+    "clock",
+    "microwave",
+    "refrigerator",
+    "vase",
+    "oven",
+    "scissors",
+    "sink",
+    "teddy bear"
+  ],
+  "detections": [
+    {
+      "box_2d": [
+        702.0,
+        283.0,
+        723.0,
+        331.0
+      ],
+      "label": "clock"
+    },
+    {
+      "box_2d": [
+        789.0,
+        331.0,
+        817.0,
+        398.0
+      ],
+      "label": "microwave"
+    },
+    {
+      "box_2d": [
+        733.0,
+        398.0,
+        800.0,
+        672.0
+      ],
+      "label": "refrigerator"
+    },
+    {
+      "box_2d": [
+        859.0,
+        698.0,
+        914.0,
+        938.0
+      ],
+      "label": "vase"
+    },
+    {
+      "box_2d": [
+        377.0,
+        467.0,
+        398.0,
+        502.0
+      ],
+      "label": "vase"
+    },
+    {
+      "box_2d": [
+        557.0,
+        502.0,
+        576.0,
+        538.0
+      ],
+      "label": "vase"
+    },
+    {
+      "box_2d": [
+        576.0,
+        502.0,
+        593.0,
+        538.0
+      ],
+      "label": "vase"
+    },
+    {
+      "box_2d": [
+        262.0,
+        550.0,
+        293.0,
+        631.0
+      ],
+      "label": "vase"
+    },
+    {
+      "box_2d": [
+        871.0,
+        495.0,
+        1000.0,
+        683.0
+      ],
+      "label": "oven"
+    }
+  ],
+  "latency_sec": 11.129712715002825,
+  "raw_response": "user\nYou are an object detection assistant. Given the image and the list of target classes, return detections as JSON.\nTarget classes: book, clock, microwave, refrigerator, vase, oven, scissors, sink, teddy bear.\nOutput format: [{\"box_2d\":[x1,y1,x2,y2],\"label\":\"class_name\"}...]\nUse pixel coordinates relative to the input image. Return JSON only.\nassistant\n```json\n[\n\t{\"box_2d\": [702, 283, 723, 331],\"label\":\"clock\"},\n\t{\"bbox_2d\": [789, 331, 817, 398],\"label\":\"microwave\"},\n\t{\"bbox_2d\": [733, 398, 800, 672],\"label\":\"refrigerator\"},\n\t{\"bbox_2d\": [859, 698, 914, 938],\"label\":\"vase\"},\n\t{\"bbox_2d\": [377, 467, 398, 502],\"label\":\"vase\"},\n\t{\"bbox_2d\": [557, 502, 576, 538],\"label\":\"vase\"},\n\t{\"bbox_2d\": [576, 502, 593, 538],\"label\":\"vase\"},\n\t{\"bbox_2d\": [262, 550, 293, 631],\"label\":\"vase\"},\n\t{\"bbox_2d\": [871, 495, 1000, 683],\"label\":\"oven\"}\n]\n```"
+}

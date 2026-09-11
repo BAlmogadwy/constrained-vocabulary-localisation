@@ -1,0 +1,54 @@
+{
+  "model": "Llama-3.2-11B-Vision-Instruct",
+  "strategy": "single_query",
+  "image": "/home/maxim/PycharmProjects/zero-shot-detection-benchmark/data/subsets/lvis_v1_val_unseen/images/000000062937.jpg",
+  "labels": [
+    "spatula",
+    "blender",
+    "coffee_maker",
+    "hair_dryer",
+    "sewing_machine"
+  ],
+  "detections": [
+    {
+      "box_2d": [
+        82,
+        222,
+        91,
+        278
+      ],
+      "label": "spatula"
+    },
+    {
+      "box_2d": [
+        8,
+        192,
+        35,
+        222
+      ],
+      "label": "blender"
+    },
+    {
+      "box_2d": [
+        14,
+        221,
+        48,
+        261
+      ],
+      "label": "coffee_maker"
+    }
+  ],
+  "latency_sec": 5.84025033202488,
+  "raw_response": {
+    "spatula": "[]",
+    "spatula_norm": "[{\"box_norm\":[0.245,0.444,0.273,0.555],\"label\":\"spatula\"}]",
+    "blender": "[]",
+    "blender_norm": "[{\"box_norm\":[0.024,0.384,0.104,0.444],\"label\":\"blender\"}]",
+    "coffee_maker": "[]",
+    "coffee_maker_norm": "[{\"box_norm\":[0.042,0.442,0.143,0.522],\"label\":\"coffee_maker\"}]",
+    "hair_dryer": "[]",
+    "hair_dryer_norm": "[{\"box_norm\":[0.000,0.000,0.000,0.000],\"label\":\"hair_dryer\"}]",
+    "sewing_machine": "[]",
+    "sewing_machine_norm": "[{\"box_norm\":[0.000,0.000,0.000,0.000],\"label\":\"sewing_machine\"}]"
+  }
+}

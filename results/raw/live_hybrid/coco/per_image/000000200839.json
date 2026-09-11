@@ -1,0 +1,221 @@
+{
+ "image": "000000200839.jpg",
+ "labels": [
+  "book",
+  "microwave",
+  "oven",
+  "scissors",
+  "sink",
+  "toaster",
+  "toothbrush"
+ ],
+ "tau": 0.4,
+ "detector": {
+  "detections": [
+   {
+    "label": "book",
+    "box": [
+     254.6282958984375,
+     208.73056030273438,
+     278.87347412109375,
+     259.12542724609375
+    ],
+    "score": 0.0549963153898716
+   },
+   {
+    "label": "book",
+    "box": [
+     196.8765869140625,
+     233.83529663085938,
+     233.6544189453125,
+     272.8494567871094
+    ],
+    "score": 0.05453088879585266
+   },
+   {
+    "label": "book",
+    "box": [
+     143.36880493164062,
+     240.03311157226562,
+     176.56057739257812,
+     269.2603454589844
+    ],
+    "score": 0.01504562422633171
+   },
+   {
+    "label": "book",
+    "box": [
+     305.2298583984375,
+     194.0914306640625,
+     337.784912109375,
+     241.10516357421875
+    ],
+    "score": 0.006428848952054977
+   },
+   {
+    "label": "book",
+    "box": [
+     88.67657470703125,
+     174.8870849609375,
+     462.3984375,
+     314.37579345703125
+    ],
+    "score": 0.004377404227852821
+   },
+   {
+    "label": "book",
+    "box": [
+     231.82058715820312,
+     201.8001251220703,
+     262.9401550292969,
+     246.04566955566406
+    ],
+    "score": 0.0029456024058163166
+   },
+   {
+    "label": "book",
+    "box": [
+     208.66665649414062,
+     259.7551574707031,
+     228.99923706054688,
+     273.1822204589844
+    ],
+    "score": 0.002039988525211811
+   }
+  ],
+  "latency_sec": 0.15591489999496844
+ },
+ "detector_max_score": 0.0549963153898716,
+ "escalated": true,
+ "vlm": {
+  "model": "qwen/qwen3-vl-235b-a22b-instruct",
+  "detections": [],
+  "latency_sec": 3.545697099994868,
+  "usage": {
+   "prompt_tokens": 390,
+   "completion_tokens": 6,
+   "total_tokens": 396
+  },
+  "raw_response": {
+   "id": "gen-1783409049-KyYoWd6sL5kMYTaFfySP",
+   "object": "chat.completion",
+   "created": 1783409049,
+   "model": "qwen/qwen3-vl-235b-a22b-instruct",
+   "provider": "Alibaba",
+   "system_fingerprint": null,
+   "service_tier": null,
+   "choices": [
+    {
+     "index": 0,
+     "logprobs": null,
+     "finish_reason": "stop",
+     "native_finish_reason": "stop",
+     "message": {
+      "role": "assistant",
+      "content": "```json\n[]\n```",
+      "refusal": null,
+      "reasoning": null
+     }
+    }
+   ],
+   "usage": {
+    "prompt_tokens": 390,
+    "completion_tokens": 6,
+    "total_tokens": 396,
+    "cost": 0.00010764,
+    "is_byok": false,
+    "prompt_tokens_details": {
+     "cached_tokens": 0,
+     "cache_write_tokens": 0,
+     "audio_tokens": 0,
+     "video_tokens": 0
+    },
+    "cost_details": {
+     "upstream_inference_cost": 0.00010764,
+     "upstream_inference_prompt_cost": 0.0001014,
+     "upstream_inference_completions_cost": 6.24e-06
+    },
+    "completion_tokens_details": {
+     "reasoning_tokens": 0,
+     "image_tokens": 0,
+     "audio_tokens": 0
+    }
+   }
+  }
+ },
+ "fallback": false,
+ "ts": "2026-07-07T07:24:06.125597+00:00",
+ "fused": [
+  {
+   "label": "book",
+   "box": [
+    254.6282958984375,
+    208.73056030273438,
+    278.87347412109375,
+    259.12542724609375
+   ],
+   "score": 0.0549963153898716
+  },
+  {
+   "label": "book",
+   "box": [
+    196.8765869140625,
+    233.83529663085938,
+    233.6544189453125,
+    272.8494567871094
+   ],
+   "score": 0.05453088879585266
+  },
+  {
+   "label": "book",
+   "box": [
+    143.36880493164062,
+    240.03311157226562,
+    176.56057739257812,
+    269.2603454589844
+   ],
+   "score": 0.01504562422633171
+  },
+  {
+   "label": "book",
+   "box": [
+    305.2298583984375,
+    194.0914306640625,
+    337.784912109375,
+    241.10516357421875
+   ],
+   "score": 0.006428848952054977
+  },
+  {
+   "label": "book",
+   "box": [
+    88.67657470703125,
+    174.8870849609375,
+    462.3984375,
+    314.37579345703125
+   ],
+   "score": 0.004377404227852821
+  },
+  {
+   "label": "book",
+   "box": [
+    231.82058715820312,
+    201.8001251220703,
+    262.9401550292969,
+    246.04566955566406
+   ],
+   "score": 0.0029456024058163166
+  },
+  {
+   "label": "book",
+   "box": [
+    208.66665649414062,
+    259.7551574707031,
+    228.99923706054688,
+    273.1822204589844
+   ],
+   "score": 0.002039988525211811
+  }
+ ],
+ "latency_total_sec": 3.701624199995422
+}

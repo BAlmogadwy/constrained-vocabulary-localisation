@@ -1,0 +1,158 @@
+{
+ "image": "000000459954.jpg",
+ "model": "qwen/qwen3-vl-235b-a22b-instruct",
+ "labels": [
+  "refrigerator",
+  "book",
+  "hair drier",
+  "oven",
+  "scissors",
+  "toaster",
+  "vase"
+ ],
+ "detections": [
+  {
+   "box_2d": [
+    220.0,
+    139.5,
+    370.5,
+    278.25
+   ],
+   "label": "refrigerator",
+   "score": 0.98
+  },
+  {
+   "box_2d": [
+    0.0,
+    115.875,
+    200.5,
+    331.125
+   ],
+   "label": "refrigerator",
+   "score": 0.97
+  },
+  {
+   "box_2d": [
+    362.5,
+    44.625,
+    499.5,
+    298.125
+   ],
+   "label": "refrigerator",
+   "score": 0.96
+  },
+  {
+   "box_2d": [
+    156.5,
+    127.125,
+    243.5,
+    321.375
+   ],
+   "label": "refrigerator",
+   "score": 0.95
+  },
+  {
+   "box_2d": [
+    265.5,
+    264.375,
+    382.5,
+    374.625
+   ],
+   "label": "refrigerator",
+   "score": 0.94
+  },
+  {
+   "box_2d": [
+    330.5,
+    96.0,
+    379.5,
+    118.875
+   ],
+   "label": "refrigerator",
+   "score": 0.93
+  },
+  {
+   "box_2d": [
+    262.5,
+    96.0,
+    322.5,
+    127.125
+   ],
+   "label": "refrigerator",
+   "score": 0.92
+  },
+  {
+   "box_2d": [
+    197.0,
+    99.0,
+    262.5,
+    130.125
+   ],
+   "label": "refrigerator",
+   "score": 0.91
+  },
+  {
+   "box_2d": [
+    156.5,
+    108.0,
+    197.0,
+    130.125
+   ],
+   "label": "refrigerator",
+   "score": 0.9
+  }
+ ],
+ "latency_sec": 11.62288389999594,
+ "usage": {
+  "prompt_tokens": 283,
+  "completion_tokens": 401,
+  "total_tokens": 684
+ },
+ "raw_response": {
+  "id": "gen-1783414208-5AJG6H0XjuVef6zEnhRf",
+  "object": "chat.completion",
+  "created": 1783414208,
+  "model": "qwen/qwen3-vl-235b-a22b-instruct",
+  "provider": "Alibaba",
+  "system_fingerprint": null,
+  "service_tier": null,
+  "choices": [
+   {
+    "index": 0,
+    "logprobs": null,
+    "finish_reason": "stop",
+    "native_finish_reason": "stop",
+    "message": {
+     "role": "assistant",
+     "content": "```json\n[\n\t{\"bbox_2d\": [440, 372, 741, 742], \"label\": \"refrigerator\", \"confidence\": 0.98},\n\t{\"bbox_2d\": [0, 309, 401, 883], \"label\": \"refrigerator\", \"confidence\": 0.97},\n\t{\"bbox_2d\": [725, 119, 999, 795], \"label\": \"refrigerator\", \"confidence\": 0.96},\n\t{\"bbox_2d\": [313, 339, 487, 857], \"label\": \"refrigerator\", \"confidence\": 0.95},\n\t{\"bbox_2d\": [531, 705, 765, 999], \"label\": \"refrigerator\", \"confidence\": 0.94},\n\t{\"bbox_2d\": [661, 256, 759, 317], \"label\": \"refrigerator\", \"confidence\": 0.93},\n\t{\"bbox_2d\": [525, 256, 645, 339], \"label\": \"refrigerator\", \"confidence\": 0.92},\n\t{\"bbox_2d\": [394, 264, 525, 347], \"label\": \"refrigerator\", \"confidence\": 0.91},\n\t{\"bbox_2d\": [313, 288, 394, 347], \"label\": \"refrigerator\", \"confidence\": 0.90}\n]\n```",
+     "refusal": null,
+     "reasoning": null
+    }
+   }
+  ],
+  "usage": {
+   "prompt_tokens": 283,
+   "completion_tokens": 401,
+   "total_tokens": 684,
+   "cost": 0.00049062,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00049062,
+    "upstream_inference_prompt_cost": 7.358e-05,
+    "upstream_inference_completions_cost": 0.00041704
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   }
+  }
+ },
+ "ts": "2026-07-07T08:50:18.400696+00:00"
+}

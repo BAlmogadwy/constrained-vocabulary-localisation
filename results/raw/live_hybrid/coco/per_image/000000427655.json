@@ -1,0 +1,121 @@
+{
+ "image": "000000427655.jpg",
+ "labels": [
+  "book",
+  "hair drier",
+  "refrigerator",
+  "scissors",
+  "sink",
+  "toaster",
+  "vase"
+ ],
+ "tau": 0.4,
+ "detector": {
+  "detections": [
+   {
+    "label": "refrigerator",
+    "box": [
+     261.39886474609375,
+     175.96139526367188,
+     327.7613525390625,
+     261.17822265625
+    ],
+    "score": 0.00419154018163681
+   },
+   {
+    "label": "refrigerator",
+    "box": [
+     388.1881408691406,
+     167.14663696289062,
+     426.9041442871094,
+     259.9195861816406
+    ],
+    "score": 0.0017727308440953493
+   }
+  ],
+  "latency_sec": 0.039482699998188764
+ },
+ "detector_max_score": 0.00419154018163681,
+ "escalated": true,
+ "vlm": {
+  "model": "qwen/qwen3-vl-235b-a22b-instruct",
+  "detections": [],
+  "latency_sec": 2.6126180999999633,
+  "usage": {
+   "prompt_tokens": 351,
+   "completion_tokens": 6,
+   "total_tokens": 357
+  },
+  "raw_response": {
+   "id": "gen-1783409653-SM3hB9s9FzggbaaVKODu",
+   "object": "chat.completion",
+   "created": 1783409653,
+   "model": "qwen/qwen3-vl-235b-a22b-instruct",
+   "provider": "Alibaba",
+   "system_fingerprint": null,
+   "service_tier": null,
+   "choices": [
+    {
+     "index": 0,
+     "logprobs": null,
+     "finish_reason": "stop",
+     "native_finish_reason": "stop",
+     "message": {
+      "role": "assistant",
+      "content": "```json\n[]\n```",
+      "refusal": null,
+      "reasoning": null
+     }
+    }
+   ],
+   "usage": {
+    "prompt_tokens": 351,
+    "completion_tokens": 6,
+    "total_tokens": 357,
+    "cost": 9.75e-05,
+    "is_byok": false,
+    "prompt_tokens_details": {
+     "cached_tokens": 0,
+     "cache_write_tokens": 0,
+     "audio_tokens": 0,
+     "video_tokens": 0
+    },
+    "cost_details": {
+     "upstream_inference_cost": 9.75e-05,
+     "upstream_inference_prompt_cost": 9.126e-05,
+     "upstream_inference_completions_cost": 6.24e-06
+    },
+    "completion_tokens_details": {
+     "reasoning_tokens": 0,
+     "image_tokens": 0,
+     "audio_tokens": 0
+    }
+   }
+  }
+ },
+ "fallback": false,
+ "ts": "2026-07-07T07:34:10.881513+00:00",
+ "fused": [
+  {
+   "label": "refrigerator",
+   "box": [
+    261.39886474609375,
+    175.96139526367188,
+    327.7613525390625,
+    261.17822265625
+   ],
+   "score": 0.00419154018163681
+  },
+  {
+   "label": "refrigerator",
+   "box": [
+    388.1881408691406,
+    167.14663696289062,
+    426.9041442871094,
+    259.9195861816406
+   ],
+   "score": 0.0017727308440953493
+  }
+ ],
+ "latency_total_sec": 2.6521051000017906
+}

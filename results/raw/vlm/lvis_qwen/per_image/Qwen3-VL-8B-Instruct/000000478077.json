@@ -1,0 +1,115 @@
+{
+  "model": "Qwen3-VL-8B-Instruct",
+  "strategy": "single_query",
+  "image": "/home/maxim/PycharmProjects/zero-shot-detection-benchmark/data/subsets/lvis_v1_val_unseen/images/000000478077.jpg",
+  "labels": [
+    "spatula",
+    "hair_dryer",
+    "lawn_mower",
+    "sewing_machine",
+    "snowboard"
+  ],
+  "detections": [
+    {
+      "box_2d": [
+        163.0,
+        183.0,
+        191.0,
+        245.0
+      ],
+      "label": "spatula"
+    },
+    {
+      "box_2d": [
+        137.0,
+        183.0,
+        163.0,
+        271.0
+      ],
+      "label": "spatula"
+    },
+    {
+      "box_2d": [
+        112.0,
+        183.0,
+        137.0,
+        264.0
+      ],
+      "label": "spatula"
+    },
+    {
+      "box_2d": [
+        101.0,
+        183.0,
+        112.0,
+        250.0
+      ],
+      "label": "spatula"
+    },
+    {
+      "box_2d": [
+        87.0,
+        183.0,
+        101.0,
+        250.0
+      ],
+      "label": "spatula"
+    },
+    {
+      "box_2d": [
+        71.0,
+        183.0,
+        87.0,
+        250.0
+      ],
+      "label": "spatula"
+    },
+    {
+      "box_2d": [
+        57.0,
+        183.0,
+        71.0,
+        250.0
+      ],
+      "label": "spatula"
+    },
+    {
+      "box_2d": [
+        43.0,
+        183.0,
+        57.0,
+        250.0
+      ],
+      "label": "spatula"
+    },
+    {
+      "box_2d": [
+        29.0,
+        183.0,
+        43.0,
+        250.0
+      ],
+      "label": "spatula"
+    },
+    {
+      "box_2d": [
+        15.0,
+        183.0,
+        29.0,
+        250.0
+      ],
+      "label": "spatula"
+    },
+    {
+      "box_2d": [
+        1.0,
+        183.0,
+        15.0,
+        250.0
+      ],
+      "label": "spatula"
+    }
+  ],
+  "latency_sec": 27.58728746511042,
+  "raw_response": "user\nYou are an object detection assistant. Given the image and the list of target classes, return detections as JSON.\nTarget classes: spatula, hair_dryer, lawn_mower, sewing_machine, snowboard.\nOutput format: [{\"box_2d\":[x1,y1,x2,y2],\"label\":\"class_name\"}...]\nUse pixel coordinates relative to the input image. Return JSON only.\nassistant\n```json\n[\n\t{\"box_2d\": [163, 183, 191, 245], \"label\": \"spatula\"},\n\t{\"box_2d\": [137, 183, 163, 271], \"label\": \"spatula\"},\n\t{\"box_2d\": [112, 183, 137, 264], \"label\": \"spatula\"},\n\t{\"box_2d\": [101, 183, 112, 250], \"label\": \"spatula\"},\n\t{\"box_2d\": [87, 183, 101, 250], \"label\": \"spatula\"},\n\t{\"box_2d\": [71, 183, 87, 250], \"label\": \"spatula\"},\n\t{\"box_2d\": [57, 183, 71, 250], \"label\": \"spatula\"},\n\t{\"box_2d\": [43, 183, 57, 250], \"label\": \"spatula\"},\n\t{\"box_2d\": [29, 183, 43, 250], \"label\": \"spatula\"},\n\t{\"box_2d\": [15, 183, 29, 250], \"label\": \"spatula\"},\n\t{\"box_2d\": [1, 183, 15, 250], \"label\": \"spatula\"}\n]\n```"
+}

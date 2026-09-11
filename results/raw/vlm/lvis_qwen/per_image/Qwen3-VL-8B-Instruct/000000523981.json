@@ -1,0 +1,196 @@
+{
+  "model": "Qwen3-VL-8B-Instruct",
+  "strategy": "single_query",
+  "image": "/home/maxim/PycharmProjects/zero-shot-detection-benchmark/data/subsets/lvis_v1_val_unseen/images/000000523981.jpg",
+  "labels": [
+    "spatula",
+    "microscope",
+    "musical_instrument",
+    "snowboard",
+    "stapler_(stapling_machine)"
+  ],
+  "detections": [
+    {
+      "box_2d": [
+        373.0,
+        448.0,
+        433.0,
+        583.0
+      ],
+      "label": "spatula"
+    },
+    {
+      "box_2d": [
+        523.0,
+        424.0,
+        552.0,
+        583.0
+      ],
+      "label": "spatula"
+    },
+    {
+      "box_2d": [
+        552.0,
+        424.0,
+        575.0,
+        583.0
+      ],
+      "label": "spatula"
+    },
+    {
+      "box_2d": [
+        575.0,
+        424.0,
+        602.0,
+        583.0
+      ],
+      "label": "spatula"
+    },
+    {
+      "box_2d": [
+        602.0,
+        424.0,
+        625.0,
+        583.0
+      ],
+      "label": "spatula"
+    },
+    {
+      "box_2d": [
+        625.0,
+        424.0,
+        652.0,
+        583.0
+      ],
+      "label": "spatula"
+    },
+    {
+      "box_2d": [
+        652.0,
+        424.0,
+        675.0,
+        583.0
+      ],
+      "label": "spatula"
+    },
+    {
+      "box_2d": [
+        675.0,
+        424.0,
+        702.0,
+        583.0
+      ],
+      "label": "spatula"
+    },
+    {
+      "box_2d": [
+        702.0,
+        424.0,
+        725.0,
+        583.0
+      ],
+      "label": "spatula"
+    },
+    {
+      "box_2d": [
+        725.0,
+        424.0,
+        752.0,
+        583.0
+      ],
+      "label": "spatula"
+    },
+    {
+      "box_2d": [
+        752.0,
+        424.0,
+        775.0,
+        583.0
+      ],
+      "label": "spatula"
+    },
+    {
+      "box_2d": [
+        775.0,
+        424.0,
+        802.0,
+        583.0
+      ],
+      "label": "spatula"
+    },
+    {
+      "box_2d": [
+        802.0,
+        424.0,
+        825.0,
+        583.0
+      ],
+      "label": "spatula"
+    },
+    {
+      "box_2d": [
+        825.0,
+        424.0,
+        852.0,
+        583.0
+      ],
+      "label": "spatula"
+    },
+    {
+      "box_2d": [
+        852.0,
+        424.0,
+        875.0,
+        583.0
+      ],
+      "label": "spatula"
+    },
+    {
+      "box_2d": [
+        875.0,
+        424.0,
+        902.0,
+        583.0
+      ],
+      "label": "spatula"
+    },
+    {
+      "box_2d": [
+        902.0,
+        424.0,
+        925.0,
+        583.0
+      ],
+      "label": "spatula"
+    },
+    {
+      "box_2d": [
+        925.0,
+        424.0,
+        952.0,
+        583.0
+      ],
+      "label": "spatula"
+    },
+    {
+      "box_2d": [
+        952.0,
+        424.0,
+        975.0,
+        583.0
+      ],
+      "label": "spatula"
+    },
+    {
+      "box_2d": [
+        975.0,
+        424.0,
+        1000.0,
+        583.0
+      ],
+      "label": "spatula"
+    }
+  ],
+  "latency_sec": 38.81496379803866,
+  "raw_response": "user\nYou are an object detection assistant. Given the image and the list of target classes, return detections as JSON.\nTarget classes: spatula, microscope, musical_instrument, snowboard, stapler_(stapling_machine).\nOutput format: [{\"box_2d\":[x1,y1,x2,y2],\"label\":\"class_name\"}...]\nUse pixel coordinates relative to the input image. Return JSON only.\nassistant\n```json\n[\n\t{\"box_2d\": [373, 448, 433, 583],\"label\":\"spatula\"},\n\t{\"box_2d\": [523, 424, 552, 583],\"label\":\"spatula\"},\n\t{\"box_2d\": [552, 424, 575, 583],\"label\":\"spatula\"},\n\t{\"box_2d\": [575, 424, 602, 583],\"label\":\"spatula\"},\n\t{\"box_2d\": [602, 424, 625, 583],\"label\":\"spatula\"},\n\t{\"box_2d\": [625, 424, 652, 583],\"label\":\"spatula\"},\n\t{\"box_2d\": [652, 424, 675, 583],\"label\":\"spatula\"},\n\t{\"box_2d\": [675, 424, 702, 583],\"label\":\"spatula\"},\n\t{\"box_2d\": [702, 424, 725, 583],\"label\":\"spatula\"},\n\t{\"box_2d\": [725, 424, 752, 583],\"label\":\"spatula\"},\n\t{\"box_2d\": [752, 424, 775, 583],\"label\":\"spatula\"},\n\t{\"box_2d\": [775, 424, 802, 583],\"label\":\"spatula\"},\n\t{\"box_2d\": [802, 424, 825, 583],\"label\":\"spatula\"},\n\t{\"box_2d\": [825, 424, 852, 583],\"label\":\"spatula\"},\n\t{\"box_2d\": [852, 424, 875, 583],\"label\":\"spatula\"},\n\t{\"box_2d\": [875, 424, 902, 583],\"label\":\"spatula\"},\n\t{\"box_2d\": [902, 424, 925, 583],\"label\":\"spatula\"},\n\t{\"box_2d\": [925, 424, 952, 583],\"label\":\"spatula\"},\n\t{\"box_2d\": [952, 424, 975, 583],\"label\":\"spatula\"},\n\t{\"box_2d\": [975, 424, 1000, 583],\"label\":\"spatula\"}\n]\n```"
+}

@@ -1,0 +1,250 @@
+{
+ "image": "000000550481.jpg",
+ "labels": [
+  "microscope",
+  "lawn_mower",
+  "snowboard",
+  "spatula",
+  "stapler_(stapling_machine)"
+ ],
+ "tau": 0.4,
+ "detector": {
+  "detections": [
+   {
+    "label": "microscope",
+    "box": [
+     226.60031127929688,
+     185.82528686523438,
+     273.7127380371094,
+     248.37213134765625
+    ],
+    "score": 0.01799428090453148
+   },
+   {
+    "label": "stapler_(stapling_machine)",
+    "box": [
+     226.27804565429688,
+     185.88739013671875,
+     273.78271484375,
+     248.5251922607422
+    ],
+    "score": 0.012243817560374737
+   },
+   {
+    "label": "spatula",
+    "box": [
+     86.68067169189453,
+     333.5768737792969,
+     128.638671875,
+     346.0
+    ],
+    "score": 0.008942077867686749
+   },
+   {
+    "label": "spatula",
+    "box": [
+     13.417720794677734,
+     327.5063171386719,
+     129.43373107910156,
+     346.0
+    ],
+    "score": 0.004168679937720299
+   },
+   {
+    "label": "spatula",
+    "box": [
+     264.0831604003906,
+     288.0576477050781,
+     410.4240417480469,
+     346.0
+    ],
+    "score": 0.004127871245145798
+   },
+   {
+    "label": "spatula",
+    "box": [
+     0.0,
+     239.83859252929688,
+     60.89891052246094,
+     272.2813720703125
+    ],
+    "score": 0.0015933552058413625
+   },
+   {
+    "label": "spatula",
+    "box": [
+     0.09688138961791992,
+     290.940185546875,
+     98.60216522216797,
+     346.0
+    ],
+    "score": 0.0012204470112919807
+   },
+   {
+    "label": "spatula",
+    "box": [
+     0.014138221740722656,
+     238.08323669433594,
+     61.74884033203125,
+     321.01446533203125
+    ],
+    "score": 0.0010347457136958838
+   }
+  ],
+  "latency_sec": 0.03962169999431353
+ },
+ "detector_max_score": 0.01799428090453148,
+ "escalated": true,
+ "vlm": {
+  "model": "qwen/qwen3-vl-235b-a22b-instruct",
+  "detections": [
+   {
+    "label": "microscope",
+    "box": [
+     224.0,
+     182.688,
+     275.0,
+     248.774
+    ],
+    "score": 1.0
+   }
+  ],
+  "latency_sec": 2.820069900000817,
+  "usage": {
+   "prompt_tokens": 271,
+   "completion_tokens": 50,
+   "total_tokens": 321
+  },
+  "raw_response": {
+   "id": "gen-1783406996-xgoRLyFePwjypg4fBuRT",
+   "object": "chat.completion",
+   "created": 1783406996,
+   "model": "qwen/qwen3-vl-235b-a22b-instruct",
+   "provider": "Alibaba",
+   "system_fingerprint": null,
+   "service_tier": null,
+   "choices": [
+    {
+     "index": 0,
+     "logprobs": null,
+     "finish_reason": "stop",
+     "native_finish_reason": "stop",
+     "message": {
+      "role": "assistant",
+      "content": "```json\n[\n\t{\"box_2d\": [448, 528, 550, 719], \"label\": \"microscope\", \"confidence\": 0.99}\n]\n```",
+      "refusal": null,
+      "reasoning": null
+     }
+    }
+   ],
+   "usage": {
+    "prompt_tokens": 271,
+    "completion_tokens": 50,
+    "total_tokens": 321,
+    "cost": 0.00012246,
+    "is_byok": false,
+    "prompt_tokens_details": {
+     "cached_tokens": 0,
+     "cache_write_tokens": 0,
+     "audio_tokens": 0,
+     "video_tokens": 0
+    },
+    "cost_details": {
+     "upstream_inference_cost": 0.00012246,
+     "upstream_inference_prompt_cost": 7.046e-05,
+     "upstream_inference_completions_cost": 5.2e-05
+    },
+    "completion_tokens_details": {
+     "reasoning_tokens": 0,
+     "image_tokens": 0,
+     "audio_tokens": 0
+    }
+   }
+  }
+ },
+ "fallback": false,
+ "ts": "2026-07-07T06:49:55.210440+00:00",
+ "fused": [
+  {
+   "label": "microscope",
+   "box": [
+    226.60031127929688,
+    185.82528686523438,
+    273.7127380371094,
+    248.37213134765625
+   ],
+   "score": 0.31799428090453147
+  },
+  {
+   "label": "stapler_(stapling_machine)",
+   "box": [
+    226.27804565429688,
+    185.88739013671875,
+    273.78271484375,
+    248.5251922607422
+   ],
+   "score": 0.012243817560374737
+  },
+  {
+   "label": "spatula",
+   "box": [
+    86.68067169189453,
+    333.5768737792969,
+    128.638671875,
+    346.0
+   ],
+   "score": 0.008942077867686749
+  },
+  {
+   "label": "spatula",
+   "box": [
+    13.417720794677734,
+    327.5063171386719,
+    129.43373107910156,
+    346.0
+   ],
+   "score": 0.004168679937720299
+  },
+  {
+   "label": "spatula",
+   "box": [
+    264.0831604003906,
+    288.0576477050781,
+    410.4240417480469,
+    346.0
+   ],
+   "score": 0.004127871245145798
+  },
+  {
+   "label": "spatula",
+   "box": [
+    0.0,
+    239.83859252929688,
+    60.89891052246094,
+    272.2813720703125
+   ],
+   "score": 0.0015933552058413625
+  },
+  {
+   "label": "spatula",
+   "box": [
+    0.09688138961791992,
+    290.940185546875,
+    98.60216522216797,
+    346.0
+   ],
+   "score": 0.0012204470112919807
+  },
+  {
+   "label": "spatula",
+   "box": [
+    0.014138221740722656,
+    238.08323669433594,
+    61.74884033203125,
+    321.01446533203125
+   ],
+   "score": 0.0010347457136958838
+  }
+ ],
+ "latency_total_sec": 2.8597067999944557
+}

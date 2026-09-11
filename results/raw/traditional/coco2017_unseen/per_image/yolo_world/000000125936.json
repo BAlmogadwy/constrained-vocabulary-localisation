@@ -1,0 +1,41 @@
+{
+  "model": "yolo_world",
+  "strategy": "default",
+  "image": "/home/maxim/PycharmProjects/zero-shot-detection-benchmark/data/raw/coco2017/val2017/000000125936.jpg",
+  "labels": [
+    "microwave",
+    "oven",
+    "toaster",
+    "sink",
+    "refrigerator",
+    "book",
+    "clock",
+    "vase",
+    "scissors",
+    "teddy bear",
+    "hair drier",
+    "toothbrush"
+  ],
+  "result": {
+    "detections": [
+      {
+        "label": "refrigerator",
+        "score": 0.29170870780944824,
+        "box_2d": [
+          311.2089538574219,
+          39.4057502746582,
+          424.9319152832031,
+          208.2357940673828
+        ],
+        "box": [
+          311.2089538574219,
+          39.4057502746582,
+          424.9319152832031,
+          208.2357940673828
+        ]
+      }
+    ],
+    "latency_sec": 0.015685735999795725,
+    "raw_response": null
+  }
+}

@@ -1,0 +1,290 @@
+{
+ "image": "000000375004.jpg",
+ "labels": [
+  "sewing_machine",
+  "blender",
+  "coffee_maker",
+  "hair_dryer",
+  "musical_instrument"
+ ],
+ "tau": 0.4,
+ "detector": {
+  "detections": [
+   {
+    "label": "sewing_machine",
+    "box": [
+     72.856689453125,
+     324.73516845703125,
+     187.00936889648438,
+     417.2740478515625
+    ],
+    "score": 0.11017142981290817
+   },
+   {
+    "label": "coffee_maker",
+    "box": [
+     125.69994354248047,
+     217.61383056640625,
+     142.6479949951172,
+     240.08384704589844
+    ],
+    "score": 0.01106804609298706
+   },
+   {
+    "label": "coffee_maker",
+    "box": [
+     64.83786010742188,
+     411.17608642578125,
+     89.49569702148438,
+     449.3015441894531
+    ],
+    "score": 0.008051945827901363
+   },
+   {
+    "label": "musical_instrument",
+    "box": [
+     44.93226623535156,
+     265.32366943359375,
+     66.47576904296875,
+     308.8885498046875
+    ],
+    "score": 0.007672363426536322
+   },
+   {
+    "label": "musical_instrument",
+    "box": [
+     250.04611206054688,
+     60.91517639160156,
+     361.12921142578125,
+     232.71864318847656
+    ],
+    "score": 0.004349048249423504
+   },
+   {
+    "label": "musical_instrument",
+    "box": [
+     537.3033447265625,
+     81.6181869506836,
+     565.2828369140625,
+     150.2240753173828
+    ],
+    "score": 0.004130924586206675
+   },
+   {
+    "label": "hair_dryer",
+    "box": [
+     191.42041015625,
+     242.7964324951172,
+     248.51187133789062,
+     274.6138610839844
+    ],
+    "score": 0.004040123894810677
+   },
+   {
+    "label": "musical_instrument",
+    "box": [
+     84.3332290649414,
+     256.3706359863281,
+     106.3680419921875,
+     295.3990478515625
+    ],
+    "score": 0.0026626393664628267
+   },
+   {
+    "label": "musical_instrument",
+    "box": [
+     171.1182861328125,
+     560.9943237304688,
+     253.3087921142578,
+     591.0242309570312
+    ],
+    "score": 0.0010999856749549508
+   },
+   {
+    "label": "musical_instrument",
+    "box": [
+     8.419197082519531,
+     246.928466796875,
+     47.294002532958984,
+     314.9257507324219
+    ],
+    "score": 0.0010518708731979132
+   }
+  ],
+  "latency_sec": 0.3426051999995252
+ },
+ "detector_max_score": 0.11017142981290817,
+ "escalated": true,
+ "vlm": {
+  "model": "qwen/qwen3-vl-235b-a22b-instruct",
+  "detections": [
+   {
+    "label": "sewing_machine",
+    "box": [
+     72.828,
+     323.136,
+     186.66,
+     423.504
+    ],
+    "score": 1.0
+   }
+  ],
+  "latency_sec": 5.2815516000118805,
+  "usage": {
+   "prompt_tokens": 453,
+   "completion_tokens": 51,
+   "total_tokens": 504
+  },
+  "raw_response": {
+   "id": "gen-1783406864-2jLWAxNIEoFURGl0jcBz",
+   "object": "chat.completion",
+   "created": 1783406864,
+   "model": "qwen/qwen3-vl-235b-a22b-instruct",
+   "provider": "Novita",
+   "system_fingerprint": null,
+   "service_tier": null,
+   "choices": [
+    {
+     "index": 0,
+     "logprobs": null,
+     "finish_reason": "stop",
+     "native_finish_reason": "stop",
+     "message": {
+      "role": "assistant",
+      "content": "```json\n[\n\t{\"box_2d\": [119, 528, 305, 692], \"label\": \"sewing_machine\", \"confidence\": 0.95}\n]\n```",
+      "refusal": null,
+      "reasoning": null
+     }
+    }
+   ],
+   "usage": {
+    "prompt_tokens": 453,
+    "completion_tokens": 51,
+    "total_tokens": 504,
+    "cost": 0.0002124,
+    "is_byok": false,
+    "prompt_tokens_details": {
+     "cached_tokens": 0,
+     "cache_write_tokens": 0,
+     "audio_tokens": 0,
+     "video_tokens": 0
+    },
+    "cost_details": {
+     "upstream_inference_cost": 0.0002124,
+     "upstream_inference_prompt_cost": 0.0001359,
+     "upstream_inference_completions_cost": 7.65e-05
+    },
+    "completion_tokens_details": {
+     "reasoning_tokens": 0,
+     "image_tokens": 0,
+     "audio_tokens": 0
+    }
+   }
+  }
+ },
+ "fallback": false,
+ "ts": "2026-07-07T06:47:41.673280+00:00",
+ "fused": [
+  {
+   "label": "sewing_machine",
+   "box": [
+    72.856689453125,
+    324.73516845703125,
+    187.00936889648438,
+    417.2740478515625
+   ],
+   "score": 0.41017142981290816
+  },
+  {
+   "label": "coffee_maker",
+   "box": [
+    125.69994354248047,
+    217.61383056640625,
+    142.6479949951172,
+    240.08384704589844
+   ],
+   "score": 0.01106804609298706
+  },
+  {
+   "label": "coffee_maker",
+   "box": [
+    64.83786010742188,
+    411.17608642578125,
+    89.49569702148438,
+    449.3015441894531
+   ],
+   "score": 0.008051945827901363
+  },
+  {
+   "label": "musical_instrument",
+   "box": [
+    44.93226623535156,
+    265.32366943359375,
+    66.47576904296875,
+    308.8885498046875
+   ],
+   "score": 0.007672363426536322
+  },
+  {
+   "label": "musical_instrument",
+   "box": [
+    250.04611206054688,
+    60.91517639160156,
+    361.12921142578125,
+    232.71864318847656
+   ],
+   "score": 0.004349048249423504
+  },
+  {
+   "label": "musical_instrument",
+   "box": [
+    537.3033447265625,
+    81.6181869506836,
+    565.2828369140625,
+    150.2240753173828
+   ],
+   "score": 0.004130924586206675
+  },
+  {
+   "label": "hair_dryer",
+   "box": [
+    191.42041015625,
+    242.7964324951172,
+    248.51187133789062,
+    274.6138610839844
+   ],
+   "score": 0.004040123894810677
+  },
+  {
+   "label": "musical_instrument",
+   "box": [
+    84.3332290649414,
+    256.3706359863281,
+    106.3680419921875,
+    295.3990478515625
+   ],
+   "score": 0.0026626393664628267
+  },
+  {
+   "label": "musical_instrument",
+   "box": [
+    171.1182861328125,
+    560.9943237304688,
+    253.3087921142578,
+    591.0242309570312
+   ],
+   "score": 0.0010999856749549508
+  },
+  {
+   "label": "musical_instrument",
+   "box": [
+    8.419197082519531,
+    246.928466796875,
+    47.294002532958984,
+    314.9257507324219
+   ],
+   "score": 0.0010518708731979132
+  }
+ ],
+ "latency_total_sec": 5.624171200004639
+}

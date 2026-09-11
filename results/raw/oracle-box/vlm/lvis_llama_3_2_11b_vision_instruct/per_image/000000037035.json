@@ -1,0 +1,44 @@
+{
+  "image": "/home/maxim/PycharmProjects/zero-shot-detection-benchmark/data/subsets/lvis_v1_val_unseen/images/000000037035.jpg",
+  "image_id": 37035,
+  "file_name": "000000037035.jpg",
+  "num_crops": 1,
+  "crops": [
+    {
+      "annotation_id": 210823,
+      "bbox": [
+        516.91,
+        205.77,
+        48.78,
+        74.7
+      ],
+      "category_id": 112,
+      "gt_label": "blender",
+      "labels": [
+        "blender",
+        "hair_dryer",
+        "microscope",
+        "snowboard",
+        "stapler_(stapling_machine)"
+      ],
+      "prediction": "blender",
+      "normalized_prediction": "blender",
+      "matched_label": "blender",
+      "correct": true,
+      "latency_sec": 5.954192117002094,
+      "raw_response": {
+        "blender": "[]",
+        "blender_norm": "[{\"box_norm\":[0.05,0.05,0.45,0.45],\"label\":\"blender\"}]",
+        "hair_dryer": "[]",
+        "hair_dryer_norm": "[{\"box_norm\":[0.0,0.0,0.5,0.5],\"label\":\"hair_dryer\"}]",
+        "microscope": "[]",
+        "microscope_norm": "[{\"box_norm\":[0.05,0.03,0.45,0.43],\"label\":\"microscope\"}]",
+        "snowboard": "[]",
+        "snowboard_norm": "[{\"box_norm\":[0.0,0.0,0.0,0.0],\"label\":\"snowboard\"}]",
+        "stapler_(stapling_machine)": "[]",
+        "stapler_(stapling_machine)_norm": "[{\"box_norm\":[0.05,0.05,0.55,0.45],\"label\":\"stapler_(stapling_machine)\"}]"
+      }
+    }
+  ],
+  "prompt": "You are an object recognition assistant.\n\nYou will see a cropped image that contains exactly one object\nfrom the following LVIS categories (unseen split):\n\n- blender\n- hair_dryer\n- microscope\n- snowboard\n- stapler_(stapling_machine)\n\nYour task:\n- Return ONLY the best matching category name from this list.\n- Do not output explanations or extra text.\n\nAnswer with a single string: \"class_name\"."
+}

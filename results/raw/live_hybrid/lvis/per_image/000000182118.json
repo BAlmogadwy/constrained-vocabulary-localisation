@@ -1,0 +1,150 @@
+{
+ "image": "000000182118.jpg",
+ "labels": [
+  "stapler_(stapling_machine)",
+  "lawn_mower",
+  "microscope",
+  "musical_instrument",
+  "spatula"
+ ],
+ "tau": 0.4,
+ "detector": {
+  "detections": [
+   {
+    "label": "stapler_(stapling_machine)",
+    "box": [
+     92.81780242919922,
+     244.7837371826172,
+     137.34109497070312,
+     263.72369384765625
+    ],
+    "score": 0.006216665264219046
+   },
+   {
+    "label": "stapler_(stapling_machine)",
+    "box": [
+     0.00826716423034668,
+     241.2688446044922,
+     16.490936279296875,
+     270.99395751953125
+    ],
+    "score": 0.003927519544959068
+   },
+   {
+    "label": "musical_instrument",
+    "box": [
+     355.6618957519531,
+     377.0818786621094,
+     375.0,
+     495.1602783203125
+    ],
+    "score": 0.0018051500665023923
+   }
+  ],
+  "latency_sec": 0.04625909999595024
+ },
+ "detector_max_score": 0.006216665264219046,
+ "escalated": true,
+ "vlm": {
+  "model": "qwen/qwen3-vl-235b-a22b-instruct",
+  "detections": [
+   {
+    "label": "stapler_(stapling_machine)",
+    "box": [
+     90.0,
+     249.0,
+     136.875,
+     265.5
+    ],
+    "score": 1.0
+   }
+  ],
+  "latency_sec": 3.0973730999976397,
+  "usage": {
+   "prompt_tokens": 288,
+   "completion_tokens": 56,
+   "total_tokens": 344
+  },
+  "raw_response": {
+   "id": "gen-1783406702-TWJS5fU29eVEO4UaSwLX",
+   "object": "chat.completion",
+   "created": 1783406702,
+   "model": "qwen/qwen3-vl-235b-a22b-instruct",
+   "provider": "Novita",
+   "system_fingerprint": null,
+   "service_tier": null,
+   "choices": [
+    {
+     "index": 0,
+     "logprobs": null,
+     "finish_reason": "stop",
+     "native_finish_reason": "stop",
+     "message": {
+      "role": "assistant",
+      "content": "```json\n[\n\t{\"bbox_2d\": [240, 498, 365, 531], \"label\": \"stapler_(stapling_machine)\", \"confidence\": 0.95}\n]\n```",
+      "refusal": null,
+      "reasoning": null
+     }
+    }
+   ],
+   "usage": {
+    "prompt_tokens": 288,
+    "completion_tokens": 56,
+    "total_tokens": 344,
+    "cost": 0.0001704,
+    "is_byok": false,
+    "prompt_tokens_details": {
+     "cached_tokens": 0,
+     "cache_write_tokens": 0,
+     "audio_tokens": 0,
+     "video_tokens": 0
+    },
+    "cost_details": {
+     "upstream_inference_cost": 0.0001704,
+     "upstream_inference_prompt_cost": 8.64e-05,
+     "upstream_inference_completions_cost": 8.4e-05
+    },
+    "completion_tokens_details": {
+     "reasoning_tokens": 0,
+     "image_tokens": 0,
+     "audio_tokens": 0
+    }
+   }
+  }
+ },
+ "fallback": false,
+ "ts": "2026-07-07T06:45:00.202218+00:00",
+ "fused": [
+  {
+   "label": "stapler_(stapling_machine)",
+   "box": [
+    92.81780242919922,
+    244.7837371826172,
+    137.34109497070312,
+    263.72369384765625
+   ],
+   "score": 0.30621666526421903
+  },
+  {
+   "label": "stapler_(stapling_machine)",
+   "box": [
+    0.00826716423034668,
+    241.2688446044922,
+    16.490936279296875,
+    270.99395751953125
+   ],
+   "score": 0.003927519544959068
+  },
+  {
+   "label": "musical_instrument",
+   "box": [
+    355.6618957519531,
+    377.0818786621094,
+    375.0,
+    495.1602783203125
+   ],
+   "score": 0.0018051500665023923
+  }
+ ],
+ "latency_total_sec": 3.1436688999965554
+}

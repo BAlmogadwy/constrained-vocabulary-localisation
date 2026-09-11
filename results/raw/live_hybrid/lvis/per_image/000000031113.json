@@ -1,0 +1,130 @@
+{
+ "image": "000000031113.jpg",
+ "labels": [
+  "hair_dryer",
+  "coffee_maker",
+  "lawn_mower",
+  "microscope",
+  "sewing_machine"
+ ],
+ "tau": 0.4,
+ "detector": {
+  "detections": [
+   {
+    "label": "hair_dryer",
+    "box": [
+     141.6700897216797,
+     182.69679260253906,
+     172.43270874023438,
+     253.101806640625
+    ],
+    "score": 0.012834703549742699
+   },
+   {
+    "label": "microscope",
+    "box": [
+     141.12879943847656,
+     182.83828735351562,
+     173.0073699951172,
+     253.64088439941406
+    ],
+    "score": 0.001110575278289616
+   }
+  ],
+  "latency_sec": 0.04452609999862034
+ },
+ "detector_max_score": 0.012834703549742699,
+ "escalated": true,
+ "vlm": {
+  "model": "qwen/qwen3-vl-235b-a22b-instruct",
+  "detections": [
+   {
+    "label": "hair_dryer",
+    "box": [
+     141.0,
+     181.5,
+     172.125,
+     251.0
+    ],
+    "score": 1.0
+   }
+  ],
+  "latency_sec": 10.197883300003014,
+  "usage": {
+   "prompt_tokens": 284,
+   "completion_tokens": 52,
+   "total_tokens": 336
+  },
+  "raw_response": {
+   "id": "gen-1783406502-G9ADqxAMZtJO6Rmxvdku",
+   "object": "chat.completion",
+   "created": 1783406502,
+   "model": "qwen/qwen3-vl-235b-a22b-instruct",
+   "provider": "Novita",
+   "system_fingerprint": null,
+   "service_tier": null,
+   "choices": [
+    {
+     "index": 0,
+     "logprobs": null,
+     "finish_reason": "stop",
+     "native_finish_reason": "stop",
+     "message": {
+      "role": "assistant",
+      "content": "```json\n[\n\t{\"box_2d\": [376, 363, 459, 502], \"label\": \"hair_dryer\", \"confidence\": 0.95}\n]\n```",
+      "refusal": null,
+      "reasoning": null
+     }
+    }
+   ],
+   "usage": {
+    "prompt_tokens": 284,
+    "completion_tokens": 52,
+    "total_tokens": 336,
+    "cost": 0.0001632,
+    "is_byok": false,
+    "prompt_tokens_details": {
+     "cached_tokens": 0,
+     "cache_write_tokens": 0,
+     "audio_tokens": 0,
+     "video_tokens": 0
+    },
+    "cost_details": {
+     "upstream_inference_cost": 0.0001632,
+     "upstream_inference_prompt_cost": 8.52e-05,
+     "upstream_inference_completions_cost": 7.8e-05
+    },
+    "completion_tokens_details": {
+     "reasoning_tokens": 0,
+     "image_tokens": 0,
+     "audio_tokens": 0
+    }
+   }
+  }
+ },
+ "fallback": false,
+ "ts": "2026-07-07T06:41:33.469077+00:00",
+ "fused": [
+  {
+   "label": "hair_dryer",
+   "box": [
+    141.6700897216797,
+    182.69679260253906,
+    172.43270874023438,
+    253.101806640625
+   ],
+   "score": 0.3128347035497427
+  },
+  {
+   "label": "microscope",
+   "box": [
+    141.12879943847656,
+    182.83828735351562,
+    173.0073699951172,
+    253.64088439941406
+   ],
+   "score": 0.001110575278289616
+  }
+ ],
+ "latency_total_sec": 10.242424099997152
+}

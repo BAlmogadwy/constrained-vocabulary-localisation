@@ -1,0 +1,52 @@
+{
+  "model": "owl_vit",
+  "strategy": "default",
+  "image": "/home/maxim/PycharmProjects/zero-shot-detection-benchmark/data/raw/coco2017/val2017/000000287714.jpg",
+  "labels": [
+    "sink",
+    "clock",
+    "hair drier",
+    "microwave",
+    "scissors",
+    "teddy bear",
+    "toothbrush"
+  ],
+  "result": {
+    "detections": [
+      {
+        "label": "toothbrush",
+        "score": 0.20560523867607117,
+        "box_2d": [
+          418.17041015625,
+          210.101806640625,
+          440.185302734375,
+          286.14825439453125
+        ],
+        "box": [
+          418.17041015625,
+          210.101806640625,
+          440.185302734375,
+          286.14825439453125
+        ]
+      },
+      {
+        "label": "sink",
+        "score": 0.6678561568260193,
+        "box_2d": [
+          414.84185791015625,
+          327.07952880859375,
+          587.2689208984375,
+          402.85333251953125
+        ],
+        "box": [
+          414.84185791015625,
+          327.07952880859375,
+          587.2689208984375,
+          402.85333251953125
+        ]
+      }
+    ],
+    "latency_sec": 0.039832156000557006,
+    "raw_response": null
+  }
+}

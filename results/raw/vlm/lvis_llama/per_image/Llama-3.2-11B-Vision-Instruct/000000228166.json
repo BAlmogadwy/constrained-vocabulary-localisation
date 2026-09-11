@@ -1,0 +1,63 @@
+{
+  "model": "Llama-3.2-11B-Vision-Instruct",
+  "strategy": "single_query",
+  "image": "/home/maxim/PycharmProjects/zero-shot-detection-benchmark/data/subsets/lvis_v1_val_unseen/images/000000228166.jpg",
+  "labels": [
+    "snowboard",
+    "hair_dryer",
+    "musical_instrument",
+    "spatula",
+    "stapler_(stapling_machine)"
+  ],
+  "detections": [
+    {
+      "box_2d": [
+        67,
+        81,
+        222,
+        166
+      ],
+      "label": "snowboard"
+    },
+    {
+      "box_2d": [
+        0,
+        0,
+        500,
+        375
+      ],
+      "label": "snowboard"
+    },
+    {
+      "box_2d": [
+        0,
+        0,
+        500,
+        375
+      ],
+      "label": "None"
+    },
+    {
+      "box_2d": [
+        2,
+        81,
+        118,
+        156
+      ],
+      "label": "snowboard"
+    }
+  ],
+  "latency_sec": 14.8439806625247,
+  "raw_response": {
+    "snowboard": "[{\"box_2d\":[0,0,0,0],\"label\":\"snowboard\"}]",
+    "snowboard_norm": "[{\"box_norm\":[0.134,0.217,0.444,0.444],\"label\":\"snowboard\"}]",
+    "hair_dryer": "[]",
+    "hair_dryer_norm": "[{\"box_norm\":[0.000,0.000,0.999,0.999],\"label\":\"snowboard\"}]",
+    "musical_instrument": "[]",
+    "musical_instrument_norm": "[{\"box_norm\":[0.000,0.000,0.999,0.999],\"label\":\"None\"}]",
+    "spatula": "[]",
+    "spatula_norm": "[{\"box_norm\":[0.005,0.215,0.235,0.415],\"label\":\"snowboard\"}]",
+    "stapler_(stapling_machine)": "[]",
+    "stapler_(stapling_machine)_norm": "[{\"box_norm\":[0.0,0.0,0.0,0.0],\"label\":\"stapler_(stapling_machine)\"}]"
+  }
+}

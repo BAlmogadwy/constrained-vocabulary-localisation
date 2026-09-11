@@ -1,0 +1,34 @@
+{
+  "model": "gemini-2.5-flash",
+  "strategy": "single_query",
+  "image": "/home/maxim/PycharmProjects/zero-shot-detection-benchmark/data/subsets/lvis_v1_val_unseen/images/000000284817.jpg",
+  "labels": [
+    "spatula",
+    "hair_dryer",
+    "microscope",
+    "musical_instrument",
+    "stapler_(stapling_machine)"
+  ],
+  "detections": [
+    {
+      "box_2d": [
+        498,
+        516,
+        576,
+        574
+      ],
+      "label": "spatula"
+    },
+    {
+      "box_2d": [
+        734,
+        786,
+        843,
+        856
+      ],
+      "label": "spatula"
+    }
+  ],
+  "latency_sec": 4.372560677002184,
+  "raw_response": "```json\n[\n  {\"box_2d\": [498, 516, 576, 574], \"label\": \"spatula\"},\n  {\"box_2d\": [734, 786, 843, 856], \"label\": \"spatula\"}\n]\n```"
+}

@@ -1,0 +1,25 @@
+{
+  "model": "gemini-2.5-flash",
+  "strategy": "single_query",
+  "image": "/home/maxim/PycharmProjects/zero-shot-detection-benchmark/data/subsets/lvis_v1_val_unseen/images/000000284282.jpg",
+  "labels": [
+    "blender",
+    "coffee_maker",
+    "sewing_machine",
+    "spatula",
+    "stapler_(stapling_machine)"
+  ],
+  "detections": [
+    {
+      "box_2d": [
+        0,
+        185,
+        712,
+        497
+      ],
+      "label": "blender"
+    }
+  ],
+  "latency_sec": 2.0903370548039675,
+  "raw_response": "[{\"box_2d\": [0, 185, 712, 497], \"label\": \"blender\"}]"
+}

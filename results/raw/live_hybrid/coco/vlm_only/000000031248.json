@@ -1,0 +1,148 @@
+{
+ "image": "000000031248.jpg",
+ "model": "qwen/qwen3-vl-235b-a22b-instruct",
+ "labels": [
+  "book",
+  "microwave",
+  "oven",
+  "refrigerator",
+  "sink",
+  "toaster",
+  "toothbrush"
+ ],
+ "detections": [
+  {
+   "box_2d": [
+    52.5,
+    30.969,
+    147.0,
+    64.269
+   ],
+   "label": "book",
+   "score": 0.98
+  },
+  {
+   "box_2d": [
+    52.5,
+    68.265,
+    147.0,
+    101.565
+   ],
+   "label": "book",
+   "score": 0.98
+  },
+  {
+   "box_2d": [
+    52.5,
+    111.222,
+    147.0,
+    144.522
+   ],
+   "label": "book",
+   "score": 0.98
+  },
+  {
+   "box_2d": [
+    375.5,
+    47.619,
+    451.5,
+    78.921
+   ],
+   "label": "book",
+   "score": 0.98
+  },
+  {
+   "box_2d": [
+    375.5,
+    84.915,
+    451.5,
+    116.217
+   ],
+   "label": "book",
+   "score": 0.98
+  },
+  {
+   "box_2d": [
+    375.5,
+    122.211,
+    451.5,
+    153.513
+   ],
+   "label": "book",
+   "score": 0.98
+  },
+  {
+   "box_2d": [
+    413.5,
+    167.166,
+    438.5,
+    191.142
+   ],
+   "label": "book",
+   "score": 0.98
+  },
+  {
+   "box_2d": [
+    52.5,
+    191.142,
+    147.0,
+    211.122
+   ],
+   "label": "book",
+   "score": 0.98
+  }
+ ],
+ "latency_sec": 14.97943479999958,
+ "usage": {
+  "prompt_tokens": 250,
+  "completion_tokens": 342,
+  "total_tokens": 592
+ },
+ "raw_response": {
+  "id": "gen-1783410277-5arjVOgRyMP5EQEPP8VG",
+  "object": "chat.completion",
+  "created": 1783410277,
+  "model": "qwen/qwen3-vl-235b-a22b-instruct",
+  "provider": "Novita",
+  "system_fingerprint": null,
+  "service_tier": null,
+  "choices": [
+   {
+    "index": 0,
+    "logprobs": null,
+    "finish_reason": "stop",
+    "native_finish_reason": "stop",
+    "message": {
+     "role": "assistant",
+     "content": "```json\n[\n\t{\"box_2d\": [105, 93, 294, 193], \"label\": \"book\", \"confidence\": 0.98},\n\t{\"box_2d\": [105, 205, 294, 305], \"label\": \"book\", \"confidence\": 0.98},\n\t{\"box_2d\": [105, 334, 294, 434], \"label\": \"book\", \"confidence\": 0.98},\n\t{\"box_2d\": [751, 143, 903, 237], \"label\": \"book\", \"confidence\": 0.98},\n\t{\"box_2d\": [751, 255, 903, 349], \"label\": \"book\", \"confidence\": 0.98},\n\t{\"box_2d\": [751, 367, 903, 461], \"label\": \"book\", \"confidence\": 0.98},\n\t{\"box_2d\": [827, 502, 877, 574], \"label\": \"book\", \"confidence\": 0.98},\n\t{\"box_2d\": [105, 574, 294, 634], \"label\": \"book\", \"confidence\": 0.98}\n]\n```",
+     "refusal": null,
+     "reasoning": null
+    }
+   }
+  ],
+  "usage": {
+   "prompt_tokens": 250,
+   "completion_tokens": 342,
+   "total_tokens": 592,
+   "cost": 0.000588,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.000588,
+    "upstream_inference_prompt_cost": 7.5e-05,
+    "upstream_inference_completions_cost": 0.000513
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   }
+  }
+ },
+ "ts": "2026-07-07T07:44:48.515216+00:00"
+}

@@ -1,0 +1,112 @@
+{
+  "image": "/home/maxim/PycharmProjects/zero-shot-detection-benchmark/data/subsets/lvis_v1_val_unseen/images/000000038652.jpg",
+  "image_id": 38652,
+  "file_name": "000000038652.jpg",
+  "num_crops": 3,
+  "crops": [
+    {
+      "annotation_id": 131922,
+      "bbox": [
+        573.47,
+        248.74,
+        38.46,
+        223.07
+      ],
+      "category_id": 993,
+      "gt_label": "spatula",
+      "labels": [
+        "spatula",
+        "blender",
+        "coffee_maker",
+        "sewing_machine",
+        "stapler_(stapling_machine)"
+      ],
+      "prediction": "spatula",
+      "normalized_prediction": "spatula",
+      "matched_label": "spatula",
+      "correct": true,
+      "latency_sec": 5.589375410985667,
+      "raw_response": {
+        "spatula": "[{\"box_2d\":[0,0,39,224],\"label\":\"spatula\"}]",
+        "blender": "[]",
+        "blender_norm": "[{\"box_norm\":[0.000,0.000,0.000,0.000],\"label\":\"blender\"}]",
+        "coffee_maker": "[]",
+        "coffee_maker_norm": "[{\"box_norm\":[0.000,0.000,0.500,0.500],\"label\":\"coffee_maker\"}]",
+        "sewing_machine": "[]",
+        "sewing_machine_norm": "[{\"box_norm\":[0.0,0.0,0.0,0.0],\"label\":\"sewing_machine\"}]",
+        "stapler_(stapling_machine)": "[]",
+        "stapler_(stapling_machine)_norm": "[{\"box_norm\":[0.000000,0.000000,0.000000,0.000000],\"label\":\"stapler_(stapling_machine)\"}]"
+      }
+    },
+    {
+      "annotation_id": 131923,
+      "bbox": [
+        532.01,
+        232.66,
+        46.41,
+        238.47
+      ],
+      "category_id": 993,
+      "gt_label": "spatula",
+      "labels": [
+        "spatula",
+        "blender",
+        "coffee_maker",
+        "sewing_machine",
+        "stapler_(stapling_machine)"
+      ],
+      "prediction": "blender",
+      "normalized_prediction": "blender",
+      "matched_label": "blender",
+      "correct": false,
+      "latency_sec": 5.896744029014371,
+      "raw_response": {
+        "spatula": "[]",
+        "spatula_norm": "[{\"box_norm\":[0.0,0.0,0.0,0.0],\"label\":\"None\"}]",
+        "blender": "[]",
+        "blender_norm": "[{\"box_norm\":[0.0,0.0,0.5,0.5],\"label\":\"blender\"}]",
+        "coffee_maker": "[]",
+        "coffee_maker_norm": "[{\"box_norm\":[0.04,0.21,0.26,0.44],\"label\":\"coffee_maker\"}]",
+        "sewing_machine": "[]",
+        "sewing_machine_norm": "[{\"box_norm\":[0.01,0.03,0.31,0.48],\"label\":\"sewing_machine\"}]",
+        "stapler_(stapling_machine)": "[]",
+        "stapler_(stapling_machine)_norm": "[{\"box_norm\":[0.06,0.04,0.45,0.45],\"label\":\"stapler_(stapling_machine)\"}]"
+      }
+    },
+    {
+      "annotation_id": 131924,
+      "bbox": [
+        591.5,
+        274.7,
+        47.22,
+        195.9
+      ],
+      "category_id": 993,
+      "gt_label": "spatula",
+      "labels": [
+        "spatula",
+        "blender",
+        "coffee_maker",
+        "sewing_machine",
+        "stapler_(stapling_machine)"
+      ],
+      "prediction": "spatula",
+      "normalized_prediction": "spatula",
+      "matched_label": "spatula",
+      "correct": true,
+      "latency_sec": 5.499588473001495,
+      "raw_response": {
+        "spatula": "[{\"box_2d\":[0,0,48,197],\"label\":\"spatula\"}]",
+        "blender": "[]",
+        "blender_norm": "[{\"box_norm\":[0.0,0.0,0.5,0.5],\"label\":\"blender\"}]",
+        "coffee_maker": "[]",
+        "coffee_maker_norm": "[{\"box_norm\":[0.01,0.01,0.43,0.43],\"label\":\"coffee_maker\"}]",
+        "sewing_machine": "[]",
+        "sewing_machine_norm": "[{\"box_norm\":[0.05,0.05,0.55,0.45],\"label\":\"sewing_machine\"}]",
+        "stapler_(stapling_machine)": "[]",
+        "stapler_(stapling_machine)_norm": "[{\"box_norm\":[0.01,0.06,0.34,0.44],\"label\":\"stapler_(stapling_machine)\"}]"
+      }
+    }
+  ],
+  "prompt": "You are an object recognition assistant.\n\nYou will see a cropped image that contains exactly one object\nfrom the following LVIS categories (unseen split):\n\n- spatula\n- blender\n- coffee_maker\n- sewing_machine\n- stapler_(stapling_machine)\n\nYour task:\n- Return ONLY the best matching category name from this list.\n- Do not output explanations or extra text.\n\nAnswer with a single string: \"class_name\"."
+}

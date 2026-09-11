@@ -1,0 +1,50 @@
+{
+  "model": "grounding_dino",
+  "strategy": "default",
+  "image": "/home/maxim/PycharmProjects/zero-shot-detection-benchmark/data/subsets/lvis_v1_val_unseen/images/000000397354.jpg",
+  "labels": [
+    "blender",
+    "microscope",
+    "sewing_machine",
+    "snowboard",
+    "spatula"
+  ],
+  "result": {
+    "detections": [
+      {
+        "label": "blender",
+        "score": 0.4394235908985138,
+        "box_2d": [
+          83.63819122314453,
+          269.1778869628906,
+          132.67091369628906,
+          374.4947204589844
+        ],
+        "box": [
+          83.63819122314453,
+          269.1778869628906,
+          132.67091369628906,
+          374.4947204589844
+        ]
+      },
+      {
+        "label": "blender",
+        "score": 0.3128322958946228,
+        "box_2d": [
+          128.38232421875,
+          210.9365997314453,
+          155.91419982910156,
+          284.52178955078125
+        ],
+        "box": [
+          128.38232421875,
+          210.9365997314453,
+          155.91419982910156,
+          284.52178955078125
+        ]
+      }
+    ],
+    "latency_sec": 0.2704550363123417,
+    "raw_response": null
+  }
+}

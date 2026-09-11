@@ -1,0 +1,126 @@
+{
+  "model": "Qwen3-VL-8B-Instruct",
+  "strategy": "single_query",
+  "image": "/home/maxim/PycharmProjects/zero-shot-detection-benchmark/data/raw/coco2017/val2017/000000255165.jpg",
+  "labels": [
+    "book",
+    "clock",
+    "hair drier",
+    "microwave",
+    "refrigerator",
+    "scissors",
+    "toothbrush"
+  ],
+  "detections": [
+    {
+      "box_2d": [
+        214.0,
+        395.0,
+        233.0,
+        542.0
+      ],
+      "label": "book"
+    },
+    {
+      "box_2d": [
+        233.0,
+        395.0,
+        250.0,
+        542.0
+      ],
+      "label": "book"
+    },
+    {
+      "box_2d": [
+        250.0,
+        370.0,
+        270.0,
+        542.0
+      ],
+      "label": "book"
+    },
+    {
+      "box_2d": [
+        270.0,
+        370.0,
+        296.0,
+        542.0
+      ],
+      "label": "book"
+    },
+    {
+      "box_2d": [
+        214.0,
+        605.0,
+        242.0,
+        702.0
+      ],
+      "label": "book"
+    },
+    {
+      "box_2d": [
+        242.0,
+        605.0,
+        267.0,
+        702.0
+      ],
+      "label": "book"
+    },
+    {
+      "box_2d": [
+        267.0,
+        605.0,
+        296.0,
+        702.0
+      ],
+      "label": "book"
+    },
+    {
+      "box_2d": [
+        296.0,
+        605.0,
+        317.0,
+        702.0
+      ],
+      "label": "book"
+    },
+    {
+      "box_2d": [
+        214.0,
+        592.0,
+        242.0,
+        605.0
+      ],
+      "label": "book"
+    },
+    {
+      "box_2d": [
+        242.0,
+        592.0,
+        267.0,
+        605.0
+      ],
+      "label": "book"
+    },
+    {
+      "box_2d": [
+        267.0,
+        592.0,
+        296.0,
+        605.0
+      ],
+      "label": "book"
+    },
+    {
+      "box_2d": [
+        296.0,
+        592.0,
+        317.0,
+        605.0
+      ],
+      "label": "book"
+    }
+  ],
+  "latency_sec": 15.170116808003513,
+  "raw_response": "user\nYou are an object detection assistant. Given the image and the list of target classes, return detections as JSON.\nTarget classes: book, clock, hair drier, microwave, refrigerator, scissors, toothbrush.\nOutput format: [{\"box_2d\":[x1,y1,x2,y2],\"label\":\"class_name\"}...]\nUse pixel coordinates relative to the input image. Return JSON only.\nassistant\n```json\n[\n\t{\"box_2d\": [214, 395, 233, 542], \"label\": \"book\"},\n\t{\"box_2d\": [233, 395, 250, 542], \"label\": \"book\"},\n\t{\"box_2d\": [250, 370, 270, 542], \"label\": \"book\"},\n\t{\"box_2d\": [270, 370, 296, 542], \"label\": \"book\"},\n\t{\"box_2d\": [214, 605, 242, 702], \"label\": \"book\"},\n\t{\"box_2d\": [242, 605, 267, 702], \"label\": \"book\"},\n\t{\"box_2d\": [267, 605, 296, 702], \"label\": \"book\"},\n\t{\"box_2d\": [296, 605, 317, 702], \"label\": \"book\"},\n\t{\"box_2d\": [214, 592, 242, 605], \"label\": \"book\"},\n\t{\"box_2d\": [242, 592, 267, 605], \"label\": \"book\"},\n\t{\"box_2d\": [267, 592, 296, 605], \"label\": \"book\"},\n\t{\"box_2d\": [296, 592, 317, 605], \"label\": \"book\"},\n\t{\"box_2d\": [214, 605, 242, 702], \"label\": \"book\"},\n\t{\"box_2d\": [242, 605, 267, 702], \"label\": \"book\"},\n\t{\"box_2d\": [267, 605, 296, 702], \"label\": \"book\"},\n\t{\"box_2d\": [296, 605, 317, 702], \"label\": \"book\"},\n\t{\"box_2d\": [214, 592, 242, 605], \"label\": \"book\"},\n\t{\"box_2d\": [242, 592, 267, 605], \"label\": \"book\"},\n\t{\"box_2d\": [267, 592, 296, 605], \"label\": \"book\"},\n\t{\"box_2d\": [296, 592, 317, 605], \"label\": \"book\"}\n]\n```"
+}

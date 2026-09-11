@@ -1,0 +1,70 @@
+{
+  "model": "gemini-2.5-flash",
+  "strategy": "single_query",
+  "image": "/home/maxim/PycharmProjects/zero-shot-detection-benchmark/data/subsets/lvis_v1_val_unseen/images/000000228659.jpg",
+  "labels": [
+    "snowboard",
+    "musical_instrument",
+    "sewing_machine",
+    "spatula",
+    "stapler_(stapling_machine)"
+  ],
+  "detections": [
+    {
+      "box_2d": [
+        124,
+        720,
+        399,
+        977
+      ],
+      "label": "snowboard"
+    },
+    {
+      "box_2d": [
+        116,
+        49,
+        395,
+        303
+      ],
+      "label": "snowboard"
+    },
+    {
+      "box_2d": [
+        136,
+        175,
+        401,
+        350
+      ],
+      "label": "snowboard"
+    },
+    {
+      "box_2d": [
+        722,
+        127,
+        792,
+        401
+      ],
+      "label": "snowboard"
+    },
+    {
+      "box_2d": [
+        665,
+        516,
+        705,
+        743
+      ],
+      "label": "snowboard"
+    },
+    {
+      "box_2d": [
+        732,
+        650,
+        769,
+        983
+      ],
+      "label": "snowboard"
+    }
+  ],
+  "latency_sec": 3.255948149599135,
+  "raw_response": "```json\n[\n  {\"box_2d\": [124, 720, 399, 977], \"label\": \"snowboard\"},\n  {\"box_2d\": [116, 49, 395, 303], \"label\": \"snowboard\"},\n  {\"box_2d\": [136, 175, 401, 350], \"label\": \"snowboard\"},\n  {\"box_2d\": [722, 127, 792, 401], \"label\": \"snowboard\"},\n  {\"box_2d\": [665, 516, 705, 743], \"label\": \"snowboard\"},\n  {\"box_2d\": [732, 650, 769, 983], \"label\": \"snowboard\"}\n]\n```"
+}

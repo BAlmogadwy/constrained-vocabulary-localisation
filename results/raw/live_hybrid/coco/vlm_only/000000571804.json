@@ -1,0 +1,138 @@
+{
+ "image": "000000571804.jpg",
+ "model": "qwen/qwen3-vl-235b-a22b-instruct",
+ "labels": [
+  "sink",
+  "vase",
+  "book",
+  "clock",
+  "microwave",
+  "scissors",
+  "toaster"
+ ],
+ "detections": [
+  {
+   "box_2d": [
+    151.04,
+    98.406,
+    289.28,
+    178.494
+   ],
+   "label": "sink",
+   "score": 0.95
+  },
+  {
+   "box_2d": [
+    355.2,
+    117.576,
+    565.12,
+    262.842
+   ],
+   "label": "sink",
+   "score": 0.94
+  },
+  {
+   "box_2d": [
+    9.6,
+    66.882,
+    100.48,
+    218.112
+   ],
+   "label": "sink",
+   "score": 0.93
+  },
+  {
+   "box_2d": [
+    100.48,
+    218.964,
+    157.44,
+    284.142
+   ],
+   "label": "vase",
+   "score": 0.92
+  },
+  {
+   "box_2d": [
+    219.52,
+    227.058,
+    249.6,
+    276.048
+   ],
+   "label": "vase",
+   "score": 0.91
+  },
+  {
+   "box_2d": [
+    271.36,
+    188.718,
+    359.68,
+    311.406
+   ],
+   "label": "vase",
+   "score": 0.93
+  },
+  {
+   "box_2d": [
+    151.04,
+    287.976,
+    199.68,
+    332.706
+   ],
+   "label": "vase",
+   "score": 0.89
+  }
+ ],
+ "latency_sec": 17.64485290000448,
+ "usage": {
+  "prompt_tokens": 349,
+  "completion_tokens": 304,
+  "total_tokens": 653
+ },
+ "raw_response": {
+  "id": "gen-1783415339-IBU9VRb3hDGDVdfEZRnU",
+  "object": "chat.completion",
+  "created": 1783415339,
+  "model": "qwen/qwen3-vl-235b-a22b-instruct",
+  "provider": "DeepInfra",
+  "system_fingerprint": null,
+  "service_tier": null,
+  "choices": [
+   {
+    "index": 0,
+    "logprobs": null,
+    "finish_reason": "stop",
+    "native_finish_reason": "stop",
+    "message": {
+     "role": "assistant",
+     "content": "```json\n[\n\t{\"box_2d\": [236, 231, 452, 419], \"label\": \"sink\", \"confidence\": 0.95},\n\t{\"box_2d\": [555, 276, 883, 617], \"label\": \"sink\", \"confidence\": 0.94},\n\t{\"bbox_2d\": [15, 157, 157, 512], \"label\": \"sink\", \"confidence\": 0.93},\n\t{\"bbox_2d\": [157, 514, 246, 667], \"label\": \"vase\", \"confidence\": 0.92},\n\t{\"bbox_2d\": [343, 533, 390, 648], \"label\": \"vase\", \"confidence\": 0.91},\n\t{\"bbox_2d\": [424, 443, 562, 731], \"label\": \"vase\", \"confidence\": 0.93},\n\t{\"bbox_2d\": [236, 676, 312, 781], \"label\": \"vase\", \"confidence\": 0.89}\n]\n```",
+     "refusal": null,
+     "reasoning": null
+    }
+   }
+  ],
+  "usage": {
+   "prompt_tokens": 349,
+   "completion_tokens": 304,
+   "total_tokens": 653,
+   "cost": 0.00033732,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00033732,
+    "upstream_inference_prompt_cost": 6.98e-05,
+    "upstream_inference_completions_cost": 0.00026752
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   }
+  }
+ },
+ "ts": "2026-07-07T09:09:15.425579+00:00"
+}

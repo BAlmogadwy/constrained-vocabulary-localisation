@@ -1,0 +1,82 @@
+{
+  "model": "Llama-3.2-11B-Vision-Instruct",
+  "strategy": "single_query",
+  "image": "/home/maxim/PycharmProjects/zero-shot-detection-benchmark/data/subsets/lvis_v1_val_unseen/images/000000409403.jpg",
+  "labels": [
+    "blender",
+    "coffee_maker",
+    "lawn_mower",
+    "microscope",
+    "snowboard",
+    "spatula"
+  ],
+  "detections": [
+    {
+      "box_2d": [
+        123,
+        173,
+        304,
+        345
+      ],
+      "label": "blender"
+    },
+    {
+      "box_2d": [
+        123,
+        173,
+        255,
+        292
+      ],
+      "label": "coffee_maker"
+    },
+    {
+      "box_2d": [
+        18,
+        74,
+        98,
+        139
+      ],
+      "label": "lawn_mower"
+    },
+    {
+      "box_2d": [
+        0,
+        0,
+        200,
+        154
+      ],
+      "label": "microscope"
+    },
+    {
+      "box_2d": [
+        19,
+        76,
+        98,
+        133
+      ],
+      "label": "snowboard"
+    },
+    {
+      "box_2d": [
+        20,
+        44,
+        109,
+        137
+      ],
+      "label": "spatula"
+    }
+  ],
+  "latency_sec": 6.651735789957456,
+  "raw_response": {
+    "blender": "[{\"box_2d\":[123, 173, 304, 345],\"label\":\"blender\"}]",
+    "coffee_maker": "[{\"box_2d\":[123, 173, 255, 292],\"label\":\"coffee_maker\"}]",
+    "lawn_mower": "[]",
+    "lawn_mower_norm": "[{\"box_norm\":[0.045,0.240,0.245,0.450],\"label\":\"lawn_mower\"}]",
+    "microscope": "[]",
+    "microscope_norm": "[{\"box_norm\":[0.000,0.000,0.500,0.500],\"label\":\"microscope\"}]",
+    "snowboard": "[]",
+    "snowboard_norm": "[{\"box_norm\":[0.047,0.247,0.245,0.433],\"label\":\"snowboard\"}]",
+    "spatula": "[{\"box_2d\":[0,0,0,0],\"label\":\"spatula\"}]",
+    "spatula_norm": "[{\"box_norm\":[0.051,0.144,0.273,0.444],\"label\":\"spatula\"}]"
+  }
+}

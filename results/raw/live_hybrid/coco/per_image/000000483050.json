@@ -1,0 +1,152 @@
+{
+ "image": "000000483050.jpg",
+ "labels": [
+  "clock",
+  "hair drier",
+  "microwave",
+  "scissors",
+  "sink",
+  "teddy bear",
+  "toaster"
+ ],
+ "tau": 0.4,
+ "detector": {
+  "detections": [
+   {
+    "label": "clock",
+    "box": [
+     625.7149658203125,
+     267.29541015625,
+     640.0,
+     291.61962890625
+    ],
+    "score": 0.27865803241729736
+   },
+   {
+    "label": "clock",
+    "box": [
+     76.6234130859375,
+     273.79193115234375,
+     115.05574035644531,
+     291.94927978515625
+    ],
+    "score": 0.04422405734658241
+   },
+   {
+    "label": "clock",
+    "box": [
+     551.3556518554688,
+     259.04754638671875,
+     600.3298950195312,
+     282.26971435546875
+    ],
+    "score": 0.0016887231031432748
+   }
+  ],
+  "latency_sec": 0.0375002999935532
+ },
+ "detector_max_score": 0.27865803241729736,
+ "escalated": true,
+ "vlm": {
+  "model": "qwen/qwen3-vl-235b-a22b-instruct",
+  "detections": [
+   {
+    "label": "clock",
+    "box": [
+     76.16,
+     272.938,
+     114.56,
+     290.624
+    ],
+    "score": 1.0
+   }
+  ],
+  "latency_sec": 3.006496700007119,
+  "usage": {
+   "prompt_tokens": 393,
+   "completion_tokens": 49,
+   "total_tokens": 442
+  },
+  "raw_response": {
+   "id": "gen-1783409776-Qm5V1Q6wchKg24mq2dzW",
+   "object": "chat.completion",
+   "created": 1783409776,
+   "model": "qwen/qwen3-vl-235b-a22b-instruct",
+   "provider": "Parasail",
+   "system_fingerprint": null,
+   "service_tier": null,
+   "choices": [
+    {
+     "index": 0,
+     "logprobs": null,
+     "finish_reason": "stop",
+     "native_finish_reason": "stop",
+     "message": {
+      "role": "assistant",
+      "content": "```json\n[\n\t{\"box_2d\": [119, 571, 179, 608], \"label\": \"clock\", \"confidence\": 0.95}\n]\n```",
+      "refusal": null,
+      "reasoning": null
+     }
+    }
+   ],
+   "usage": {
+    "prompt_tokens": 393,
+    "completion_tokens": 49,
+    "total_tokens": 442,
+    "cost": 0.00017563,
+    "is_byok": false,
+    "prompt_tokens_details": {
+     "cached_tokens": 0,
+     "cache_write_tokens": 0,
+     "audio_tokens": 0,
+     "video_tokens": 0
+    },
+    "cost_details": {
+     "upstream_inference_cost": 0.00017563,
+     "upstream_inference_prompt_cost": 8.253e-05,
+     "upstream_inference_completions_cost": 9.31e-05
+    },
+    "completion_tokens_details": {
+     "reasoning_tokens": 0,
+     "image_tokens": 0,
+     "audio_tokens": 0
+    }
+   }
+  }
+ },
+ "fallback": false,
+ "ts": "2026-07-07T07:36:14.160866+00:00",
+ "fused": [
+  {
+   "label": "clock",
+   "box": [
+    625.7149658203125,
+    267.29541015625,
+    640.0,
+    291.61962890625
+   ],
+   "score": 0.27865803241729736
+  },
+  {
+   "label": "clock",
+   "box": [
+    76.6234130859375,
+    273.79193115234375,
+    115.05574035644531,
+    291.94927978515625
+   ],
+   "score": 0.3442240573465824
+  },
+  {
+   "label": "clock",
+   "box": [
+    551.3556518554688,
+    259.04754638671875,
+    600.3298950195312,
+    282.26971435546875
+   ],
+   "score": 0.0016887231031432748
+  }
+ ],
+ "latency_total_sec": 3.0440125000022817
+}

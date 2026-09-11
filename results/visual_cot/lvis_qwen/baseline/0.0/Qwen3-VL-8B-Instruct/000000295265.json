@@ -1,0 +1,258 @@
+{
+  "model": "Qwen3-VL-8B-Instruct",
+  "strategy": "single_query",
+  "experiment": "visual_cot",
+  "prompt_variant": "baseline",
+  "temperature": 0.0,
+  "image": "/home/maxim/PycharmProjects/zero-shot-detection-benchmark/data/subsets/lvis_v1_val_unseen/images/000000295265.jpg",
+  "image_relative": "000000295265.jpg",
+  "labels": [
+    "snowboard",
+    "hair_dryer",
+    "musical_instrument",
+    "spatula",
+    "stapler_(stapling_machine)"
+  ],
+  "metadata": {
+    "image": "/home/maxim/PycharmProjects/zero-shot-detection-benchmark/data/subsets/lvis_v1_val_unseen/images/000000295265.jpg",
+    "image_relative": "000000295265.jpg",
+    "image_size": {
+      "width": 640,
+      "height": 427
+    },
+    "labels": [
+      "snowboard",
+      "hair_dryer",
+      "musical_instrument",
+      "spatula",
+      "stapler_(stapling_machine)"
+    ],
+    "ground_truth_labels": [
+      "snowboard",
+      "hair_dryer",
+      "musical_instrument",
+      "spatula",
+      "stapler_(stapling_machine)"
+    ]
+  },
+  "detections": [
+    {
+      "box_2d": [
+        627.0,
+        583.0,
+        683.0,
+        645.0
+      ],
+      "label": "snowboard"
+    }
+  ],
+  "latency_sec": 18.93197765375953,
+  "final_detections": [
+    {
+      "box_2d": [
+        627.0,
+        583.0,
+        683.0,
+        645.0
+      ],
+      "label": "snowboard"
+    }
+  ],
+  "final_latency_sec": 18.93197765375953,
+  "refinement_chain": [
+    {
+      "step": 0,
+      "stage": "baseline",
+      "prompt": "Baseline inference using the configured prompt strategy.",
+      "labels_sent": [
+        "snowboard",
+        "hair_dryer",
+        "musical_instrument",
+        "spatula",
+        "stapler_(stapling_machine)"
+      ],
+      "input_images": [
+        "/home/maxim/PycharmProjects/zero-shot-detection-benchmark/data/subsets/lvis_v1_val_unseen/images/000000295265.jpg"
+      ],
+      "annotated_image": "/home/maxim/PycharmProjects/zero-shot-detection-benchmark/data/subsets/lvis_v1_val_unseen/images/000000295265.jpg",
+      "detections": [
+        {
+          "box_2d": [
+            627.0,
+            583.0,
+            683.0,
+            645.0
+          ],
+          "label": "snowboard"
+        }
+      ],
+      "latency_sec": 3.7654637480154634,
+      "raw_response": "user\nYou are an object detection assistant. Given the image and the list of target classes, return detections as JSON.\nTarget classes: snowboard, hair_dryer, musical_instrument, spatula, stapler_(stapling_machine).\nOutput format: [{\"box_2d\":[x1,y1,x2,y2],\"label\":\"class_name\"}...]\nUse pixel coordinates relative to the input image. Return JSON only.\nassistant\n```json\n[\n\t{\"box_2d\": [627, 583, 683, 645],\"label\":\"snowboard\"}\n]\n```",
+      "status": "ok",
+      "normalized_boxes": [
+        [
+          1.0,
+          0.9796875,
+          1.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "step": 1,
+      "stage": "refinement",
+      "prompt": "I have drawn your predictions from the previous step in red. Visually inspect the alignment. Are the boxes accurate? If not, provide corrected coordinates for: snowboard, hair_dryer, musical_instrument, spatula, stapler_(stapling_machine). Return JSON only.",
+      "labels_sent": [
+        "snowboard",
+        "hair_dryer",
+        "musical_instrument",
+        "spatula",
+        "stapler_(stapling_machine)",
+        "INSTRUCTION: I have drawn your predictions from the previous step in red. Visually inspect the alignment. Are the boxes accurate? If not, provide corrected coordinates for: snowboard, hair_dryer, musical_instrument, spatula, stapler_(stapling_machine). Return JSON only."
+      ],
+      "input_images": [
+        "/home/maxim/PycharmProjects/zero-shot-detection-benchmark/results/visual_cot/lvis_qwen/baseline/0.0/Qwen3-VL-8B-Instruct/debug_images/000000295265/step_1.png"
+      ],
+      "annotated_image": "/home/maxim/PycharmProjects/zero-shot-detection-benchmark/results/visual_cot/lvis_qwen/baseline/0.0/Qwen3-VL-8B-Instruct/debug_images/000000295265/step_1.png",
+      "detections": [
+        {
+          "box_2d": [
+            627.0,
+            583.0,
+            683.0,
+            645.0
+          ],
+          "label": "snowboard"
+        }
+      ],
+      "latency_sec": 3.8488732709083706,
+      "raw_response": "user\nYou are an object detection assistant. Given the image and the list of target classes, return detections as JSON.\nTarget classes: snowboard, hair_dryer, musical_instrument, spatula, stapler_(stapling_machine), INSTRUCTION: I have drawn your predictions from the previous step in red. Visually inspect the alignment. Are the boxes accurate? If not, provide corrected coordinates for: snowboard, hair_dryer, musical_instrument, spatula, stapler_(stapling_machine). Return JSON only..\nOutput format: [{\"box_2d\":[x1,y1,x2,y2],\"label\":\"class_name\"}...]\nUse pixel coordinates relative to the input image. Return JSON only.\nassistant\n```json\n[\n\t{\"box_2d\": [627, 583, 683, 645],\"label\":\"snowboard\"}\n]\n```",
+      "status": "ok",
+      "normalized_boxes": [
+        [
+          1.0,
+          0.9796875,
+          1.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "step": 2,
+      "stage": "refinement",
+      "prompt": "I have drawn your predictions from the previous step in red. Visually inspect the alignment. Are the boxes accurate? If not, provide corrected coordinates for: snowboard, hair_dryer, musical_instrument, spatula, stapler_(stapling_machine). Return JSON only.",
+      "labels_sent": [
+        "snowboard",
+        "hair_dryer",
+        "musical_instrument",
+        "spatula",
+        "stapler_(stapling_machine)",
+        "INSTRUCTION: I have drawn your predictions from the previous step in red. Visually inspect the alignment. Are the boxes accurate? If not, provide corrected coordinates for: snowboard, hair_dryer, musical_instrument, spatula, stapler_(stapling_machine). Return JSON only."
+      ],
+      "input_images": [
+        "/home/maxim/PycharmProjects/zero-shot-detection-benchmark/results/visual_cot/lvis_qwen/baseline/0.0/Qwen3-VL-8B-Instruct/debug_images/000000295265/step_2.png"
+      ],
+      "annotated_image": "/home/maxim/PycharmProjects/zero-shot-detection-benchmark/results/visual_cot/lvis_qwen/baseline/0.0/Qwen3-VL-8B-Instruct/debug_images/000000295265/step_2.png",
+      "detections": [
+        {
+          "box_2d": [
+            627.0,
+            583.0,
+            683.0,
+            645.0
+          ],
+          "label": "snowboard"
+        }
+      ],
+      "latency_sec": 3.8294563519302756,
+      "raw_response": "user\nYou are an object detection assistant. Given the image and the list of target classes, return detections as JSON.\nTarget classes: snowboard, hair_dryer, musical_instrument, spatula, stapler_(stapling_machine), INSTRUCTION: I have drawn your predictions from the previous step in red. Visually inspect the alignment. Are the boxes accurate? If not, provide corrected coordinates for: snowboard, hair_dryer, musical_instrument, spatula, stapler_(stapling_machine). Return JSON only..\nOutput format: [{\"box_2d\":[x1,y1,x2,y2],\"label\":\"class_name\"}...]\nUse pixel coordinates relative to the input image. Return JSON only.\nassistant\n```json\n[\n\t{\"box_2d\": [627, 583, 683, 645],\"label\":\"snowboard\"}\n]\n```",
+      "status": "ok",
+      "normalized_boxes": [
+        [
+          1.0,
+          0.9796875,
+          1.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "step": 3,
+      "stage": "refinement",
+      "prompt": "I have drawn your predictions from the previous step in red. Visually inspect the alignment. Are the boxes accurate? If not, provide corrected coordinates for: snowboard, hair_dryer, musical_instrument, spatula, stapler_(stapling_machine). Return JSON only.",
+      "labels_sent": [
+        "snowboard",
+        "hair_dryer",
+        "musical_instrument",
+        "spatula",
+        "stapler_(stapling_machine)",
+        "INSTRUCTION: I have drawn your predictions from the previous step in red. Visually inspect the alignment. Are the boxes accurate? If not, provide corrected coordinates for: snowboard, hair_dryer, musical_instrument, spatula, stapler_(stapling_machine). Return JSON only."
+      ],
+      "input_images": [
+        "/home/maxim/PycharmProjects/zero-shot-detection-benchmark/results/visual_cot/lvis_qwen/baseline/0.0/Qwen3-VL-8B-Instruct/debug_images/000000295265/step_3.png"
+      ],
+      "annotated_image": "/home/maxim/PycharmProjects/zero-shot-detection-benchmark/results/visual_cot/lvis_qwen/baseline/0.0/Qwen3-VL-8B-Instruct/debug_images/000000295265/step_3.png",
+      "detections": [
+        {
+          "box_2d": [
+            627.0,
+            583.0,
+            683.0,
+            645.0
+          ],
+          "label": "snowboard"
+        }
+      ],
+      "latency_sec": 3.7433632439933717,
+      "raw_response": "user\nYou are an object detection assistant. Given the image and the list of target classes, return detections as JSON.\nTarget classes: snowboard, hair_dryer, musical_instrument, spatula, stapler_(stapling_machine), INSTRUCTION: I have drawn your predictions from the previous step in red. Visually inspect the alignment. Are the boxes accurate? If not, provide corrected coordinates for: snowboard, hair_dryer, musical_instrument, spatula, stapler_(stapling_machine). Return JSON only..\nOutput format: [{\"box_2d\":[x1,y1,x2,y2],\"label\":\"class_name\"}...]\nUse pixel coordinates relative to the input image. Return JSON only.\nassistant\n```json\n[\n\t{\"box_2d\": [627, 583, 683, 645],\"label\":\"snowboard\"}\n]\n```",
+      "status": "ok",
+      "normalized_boxes": [
+        [
+          1.0,
+          0.9796875,
+          1.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "step": 4,
+      "stage": "refinement",
+      "prompt": "I have drawn your predictions from the previous step in red. Visually inspect the alignment. Are the boxes accurate? If not, provide corrected coordinates for: snowboard, hair_dryer, musical_instrument, spatula, stapler_(stapling_machine). Return JSON only.",
+      "labels_sent": [
+        "snowboard",
+        "hair_dryer",
+        "musical_instrument",
+        "spatula",
+        "stapler_(stapling_machine)",
+        "INSTRUCTION: I have drawn your predictions from the previous step in red. Visually inspect the alignment. Are the boxes accurate? If not, provide corrected coordinates for: snowboard, hair_dryer, musical_instrument, spatula, stapler_(stapling_machine). Return JSON only."
+      ],
+      "input_images": [
+        "/home/maxim/PycharmProjects/zero-shot-detection-benchmark/results/visual_cot/lvis_qwen/baseline/0.0/Qwen3-VL-8B-Instruct/debug_images/000000295265/step_4.png"
+      ],
+      "annotated_image": "/home/maxim/PycharmProjects/zero-shot-detection-benchmark/results/visual_cot/lvis_qwen/baseline/0.0/Qwen3-VL-8B-Instruct/debug_images/000000295265/step_4.png",
+      "detections": [
+        {
+          "box_2d": [
+            627.0,
+            583.0,
+            683.0,
+            645.0
+          ],
+          "label": "snowboard"
+        }
+      ],
+      "latency_sec": 3.7448210389120504,
+      "raw_response": "user\nYou are an object detection assistant. Given the image and the list of target classes, return detections as JSON.\nTarget classes: snowboard, hair_dryer, musical_instrument, spatula, stapler_(stapling_machine), INSTRUCTION: I have drawn your predictions from the previous step in red. Visually inspect the alignment. Are the boxes accurate? If not, provide corrected coordinates for: snowboard, hair_dryer, musical_instrument, spatula, stapler_(stapling_machine). Return JSON only..\nOutput format: [{\"box_2d\":[x1,y1,x2,y2],\"label\":\"class_name\"}...]\nUse pixel coordinates relative to the input image. Return JSON only.\nassistant\n```json\n[\n\t{\"box_2d\": [627, 583, 683, 645],\"label\":\"snowboard\"}\n]\n```",
+      "status": "ok",
+      "normalized_boxes": [
+        [
+          1.0,
+          0.9796875,
+          1.0,
+          1.0
+        ]
+      ]
+    }
+  ]
+}

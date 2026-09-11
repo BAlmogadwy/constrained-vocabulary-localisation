@@ -1,0 +1,258 @@
+{
+  "model": "Qwen3-VL-8B-Instruct",
+  "strategy": "single_query",
+  "experiment": "visual_cot",
+  "prompt_variant": "baseline",
+  "temperature": 0.0,
+  "image": "/home/maxim/PycharmProjects/zero-shot-detection-benchmark/data/subsets/lvis_v1_val_unseen/images/000000539920.jpg",
+  "image_relative": "000000539920.jpg",
+  "labels": [
+    "spatula",
+    "blender",
+    "hair_dryer",
+    "sewing_machine",
+    "stapler_(stapling_machine)"
+  ],
+  "metadata": {
+    "image": "/home/maxim/PycharmProjects/zero-shot-detection-benchmark/data/subsets/lvis_v1_val_unseen/images/000000539920.jpg",
+    "image_relative": "000000539920.jpg",
+    "image_size": {
+      "width": 480,
+      "height": 640
+    },
+    "labels": [
+      "spatula",
+      "blender",
+      "hair_dryer",
+      "sewing_machine",
+      "stapler_(stapling_machine)"
+    ],
+    "ground_truth_labels": [
+      "spatula",
+      "blender",
+      "hair_dryer",
+      "sewing_machine",
+      "stapler_(stapling_machine)"
+    ]
+  },
+  "detections": [
+    {
+      "box_2d": [
+        576.0,
+        587.0,
+        687.0,
+        652.0
+      ],
+      "label": "spatula"
+    }
+  ],
+  "latency_sec": 21.683158882078715,
+  "final_detections": [
+    {
+      "box_2d": [
+        576.0,
+        587.0,
+        687.0,
+        652.0
+      ],
+      "label": "spatula"
+    }
+  ],
+  "final_latency_sec": 21.683158882078715,
+  "refinement_chain": [
+    {
+      "step": 0,
+      "stage": "baseline",
+      "prompt": "Baseline inference using the configured prompt strategy.",
+      "labels_sent": [
+        "spatula",
+        "blender",
+        "hair_dryer",
+        "sewing_machine",
+        "stapler_(stapling_machine)"
+      ],
+      "input_images": [
+        "/home/maxim/PycharmProjects/zero-shot-detection-benchmark/data/subsets/lvis_v1_val_unseen/images/000000539920.jpg"
+      ],
+      "annotated_image": "/home/maxim/PycharmProjects/zero-shot-detection-benchmark/data/subsets/lvis_v1_val_unseen/images/000000539920.jpg",
+      "detections": [
+        {
+          "box_2d": [
+            576.0,
+            587.0,
+            683.0,
+            654.0
+          ],
+          "label": "spatula"
+        }
+      ],
+      "latency_sec": 4.319521883036941,
+      "raw_response": "user\nYou are an object detection assistant. Given the image and the list of target classes, return detections as JSON.\nTarget classes: spatula, blender, hair_dryer, sewing_machine, stapler_(stapling_machine).\nOutput format: [{\"box_2d\":[x1,y1,x2,y2],\"label\":\"class_name\"}...]\nUse pixel coordinates relative to the input image. Return JSON only.\nassistant\n```json\n[\n\t{\"box_2d\": [576, 587, 683, 654],\"label\":\"spatula\"}\n]\n```",
+      "status": "ok",
+      "normalized_boxes": [
+        [
+          0.9171875,
+          1.0,
+          1.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "step": 1,
+      "stage": "refinement",
+      "prompt": "I have drawn your predictions from the previous step in red. Visually inspect the alignment. Are the boxes accurate? If not, provide corrected coordinates for: spatula, blender, hair_dryer, sewing_machine, stapler_(stapling_machine). Return JSON only.",
+      "labels_sent": [
+        "spatula",
+        "blender",
+        "hair_dryer",
+        "sewing_machine",
+        "stapler_(stapling_machine)",
+        "INSTRUCTION: I have drawn your predictions from the previous step in red. Visually inspect the alignment. Are the boxes accurate? If not, provide corrected coordinates for: spatula, blender, hair_dryer, sewing_machine, stapler_(stapling_machine). Return JSON only."
+      ],
+      "input_images": [
+        "/home/maxim/PycharmProjects/zero-shot-detection-benchmark/results/visual_cot/lvis_qwen/baseline/0.0/Qwen3-VL-8B-Instruct/debug_images/000000539920/step_1.png"
+      ],
+      "annotated_image": "/home/maxim/PycharmProjects/zero-shot-detection-benchmark/results/visual_cot/lvis_qwen/baseline/0.0/Qwen3-VL-8B-Instruct/debug_images/000000539920/step_1.png",
+      "detections": [
+        {
+          "box_2d": [
+            576.0,
+            587.0,
+            687.0,
+            652.0
+          ],
+          "label": "spatula"
+        }
+      ],
+      "latency_sec": 4.355768532026559,
+      "raw_response": "user\nYou are an object detection assistant. Given the image and the list of target classes, return detections as JSON.\nTarget classes: spatula, blender, hair_dryer, sewing_machine, stapler_(stapling_machine), INSTRUCTION: I have drawn your predictions from the previous step in red. Visually inspect the alignment. Are the boxes accurate? If not, provide corrected coordinates for: spatula, blender, hair_dryer, sewing_machine, stapler_(stapling_machine). Return JSON only..\nOutput format: [{\"box_2d\":[x1,y1,x2,y2],\"label\":\"class_name\"}...]\nUse pixel coordinates relative to the input image. Return JSON only.\nassistant\n```json\n[\n\t{\"box_2d\": [576, 587, 687, 652], \"label\": \"spatula\"}\n]\n```",
+      "status": "ok",
+      "normalized_boxes": [
+        [
+          0.9171875,
+          1.0,
+          1.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "step": 2,
+      "stage": "refinement",
+      "prompt": "I have drawn your predictions from the previous step in red. Visually inspect the alignment. Are the boxes accurate? If not, provide corrected coordinates for: spatula, blender, hair_dryer, sewing_machine, stapler_(stapling_machine). Return JSON only.",
+      "labels_sent": [
+        "spatula",
+        "blender",
+        "hair_dryer",
+        "sewing_machine",
+        "stapler_(stapling_machine)",
+        "INSTRUCTION: I have drawn your predictions from the previous step in red. Visually inspect the alignment. Are the boxes accurate? If not, provide corrected coordinates for: spatula, blender, hair_dryer, sewing_machine, stapler_(stapling_machine). Return JSON only."
+      ],
+      "input_images": [
+        "/home/maxim/PycharmProjects/zero-shot-detection-benchmark/results/visual_cot/lvis_qwen/baseline/0.0/Qwen3-VL-8B-Instruct/debug_images/000000539920/step_2.png"
+      ],
+      "annotated_image": "/home/maxim/PycharmProjects/zero-shot-detection-benchmark/results/visual_cot/lvis_qwen/baseline/0.0/Qwen3-VL-8B-Instruct/debug_images/000000539920/step_2.png",
+      "detections": [
+        {
+          "box_2d": [
+            576.0,
+            587.0,
+            687.0,
+            652.0
+          ],
+          "label": "spatula"
+        }
+      ],
+      "latency_sec": 4.333412159001455,
+      "raw_response": "user\nYou are an object detection assistant. Given the image and the list of target classes, return detections as JSON.\nTarget classes: spatula, blender, hair_dryer, sewing_machine, stapler_(stapling_machine), INSTRUCTION: I have drawn your predictions from the previous step in red. Visually inspect the alignment. Are the boxes accurate? If not, provide corrected coordinates for: spatula, blender, hair_dryer, sewing_machine, stapler_(stapling_machine). Return JSON only..\nOutput format: [{\"box_2d\":[x1,y1,x2,y2],\"label\":\"class_name\"}...]\nUse pixel coordinates relative to the input image. Return JSON only.\nassistant\n```json\n[\n\t{\"box_2d\": [576, 587, 687, 652], \"label\": \"spatula\"}\n]\n```",
+      "status": "ok",
+      "normalized_boxes": [
+        [
+          0.9171875,
+          1.0,
+          1.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "step": 3,
+      "stage": "refinement",
+      "prompt": "I have drawn your predictions from the previous step in red. Visually inspect the alignment. Are the boxes accurate? If not, provide corrected coordinates for: spatula, blender, hair_dryer, sewing_machine, stapler_(stapling_machine). Return JSON only.",
+      "labels_sent": [
+        "spatula",
+        "blender",
+        "hair_dryer",
+        "sewing_machine",
+        "stapler_(stapling_machine)",
+        "INSTRUCTION: I have drawn your predictions from the previous step in red. Visually inspect the alignment. Are the boxes accurate? If not, provide corrected coordinates for: spatula, blender, hair_dryer, sewing_machine, stapler_(stapling_machine). Return JSON only."
+      ],
+      "input_images": [
+        "/home/maxim/PycharmProjects/zero-shot-detection-benchmark/results/visual_cot/lvis_qwen/baseline/0.0/Qwen3-VL-8B-Instruct/debug_images/000000539920/step_3.png"
+      ],
+      "annotated_image": "/home/maxim/PycharmProjects/zero-shot-detection-benchmark/results/visual_cot/lvis_qwen/baseline/0.0/Qwen3-VL-8B-Instruct/debug_images/000000539920/step_3.png",
+      "detections": [
+        {
+          "box_2d": [
+            576.0,
+            587.0,
+            687.0,
+            652.0
+          ],
+          "label": "spatula"
+        }
+      ],
+      "latency_sec": 4.288906592992134,
+      "raw_response": "user\nYou are an object detection assistant. Given the image and the list of target classes, return detections as JSON.\nTarget classes: spatula, blender, hair_dryer, sewing_machine, stapler_(stapling_machine), INSTRUCTION: I have drawn your predictions from the previous step in red. Visually inspect the alignment. Are the boxes accurate? If not, provide corrected coordinates for: spatula, blender, hair_dryer, sewing_machine, stapler_(stapling_machine). Return JSON only..\nOutput format: [{\"box_2d\":[x1,y1,x2,y2],\"label\":\"class_name\"}...]\nUse pixel coordinates relative to the input image. Return JSON only.\nassistant\n```json\n[\n\t{\"box_2d\": [576, 587, 687, 652], \"label\": \"spatula\"}\n]\n```",
+      "status": "ok",
+      "normalized_boxes": [
+        [
+          0.9171875,
+          1.0,
+          1.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "step": 4,
+      "stage": "refinement",
+      "prompt": "I have drawn your predictions from the previous step in red. Visually inspect the alignment. Are the boxes accurate? If not, provide corrected coordinates for: spatula, blender, hair_dryer, sewing_machine, stapler_(stapling_machine). Return JSON only.",
+      "labels_sent": [
+        "spatula",
+        "blender",
+        "hair_dryer",
+        "sewing_machine",
+        "stapler_(stapling_machine)",
+        "INSTRUCTION: I have drawn your predictions from the previous step in red. Visually inspect the alignment. Are the boxes accurate? If not, provide corrected coordinates for: spatula, blender, hair_dryer, sewing_machine, stapler_(stapling_machine). Return JSON only."
+      ],
+      "input_images": [
+        "/home/maxim/PycharmProjects/zero-shot-detection-benchmark/results/visual_cot/lvis_qwen/baseline/0.0/Qwen3-VL-8B-Instruct/debug_images/000000539920/step_4.png"
+      ],
+      "annotated_image": "/home/maxim/PycharmProjects/zero-shot-detection-benchmark/results/visual_cot/lvis_qwen/baseline/0.0/Qwen3-VL-8B-Instruct/debug_images/000000539920/step_4.png",
+      "detections": [
+        {
+          "box_2d": [
+            576.0,
+            587.0,
+            687.0,
+            652.0
+          ],
+          "label": "spatula"
+        }
+      ],
+      "latency_sec": 4.385549715021625,
+      "raw_response": "user\nYou are an object detection assistant. Given the image and the list of target classes, return detections as JSON.\nTarget classes: spatula, blender, hair_dryer, sewing_machine, stapler_(stapling_machine), INSTRUCTION: I have drawn your predictions from the previous step in red. Visually inspect the alignment. Are the boxes accurate? If not, provide corrected coordinates for: spatula, blender, hair_dryer, sewing_machine, stapler_(stapling_machine). Return JSON only..\nOutput format: [{\"box_2d\":[x1,y1,x2,y2],\"label\":\"class_name\"}...]\nUse pixel coordinates relative to the input image. Return JSON only.\nassistant\n```json\n[\n\t{\"box_2d\": [576, 587, 687, 652], \"label\": \"spatula\"}\n]\n```",
+      "status": "ok",
+      "normalized_boxes": [
+        [
+          0.9171875,
+          1.0,
+          1.0,
+          1.0
+        ]
+      ]
+    }
+  ]
+}

@@ -1,0 +1,79 @@
+{
+  "image": "/home/maxim/PycharmProjects/zero-shot-detection-benchmark/data/subsets/lvis_v1_val_unseen/images/000000211905.jpg",
+  "image_id": 211905,
+  "file_name": "000000211905.jpg",
+  "num_crops": 2,
+  "crops": [
+    {
+      "annotation_id": 236575,
+      "bbox": [
+        491.29,
+        56.93,
+        73.82,
+        31.86
+      ],
+      "category_id": 1006,
+      "gt_label": "stapler_(stapling_machine)",
+      "labels": [
+        "microscope",
+        "stapler_(stapling_machine)",
+        "blender",
+        "hair_dryer",
+        "musical_instrument",
+        "sewing_machine"
+      ],
+      "prediction": "microscope",
+      "normalized_prediction": "microscope",
+      "matched_label": "microscope",
+      "correct": false,
+      "latency_sec": 7.144814001017949,
+      "raw_response": {
+        "microscope": "[]",
+        "microscope_norm": "[{\"box_norm\":[0.03,0.03,0.45,0.45],\"label\":\"microscope\"}]",
+        "stapler_(stapling_machine)": "[]",
+        "stapler_(stapling_machine)_norm": "[{\"box_norm\":[0.0,0.0,0.4,0.4],\"label\":\"stapler_(stapling_machine)\"}]",
+        "blender": "[]",
+        "blender_norm": "[{\"box_norm\":[0.0,0.0,0.4,0.4],\"label\":\"blender\"}]",
+        "hair_dryer": "[]",
+        "hair_dryer_norm": "[{\"box_norm\":[0.0,0.0,0.0,0.0],\"label\":\"hair_dryer\"}]",
+        "musical_instrument": "[]",
+        "musical_instrument_norm": "[{\"box_norm\":[0.0,0.0,0.0,0.0],\"label\":\"musical_instrument\"}]",
+        "sewing_machine": "[]",
+        "sewing_machine_norm": "[{\"box_norm\":[0.0,0.0,0.2,0.4],\"label\":\"sewing_machine\"}]"
+      }
+    },
+    {
+      "annotation_id": 236576,
+      "bbox": [
+        71.7,
+        0.0,
+        99.23,
+        220.07
+      ],
+      "category_id": 686,
+      "gt_label": "microscope",
+      "labels": [
+        "microscope",
+        "stapler_(stapling_machine)",
+        "blender",
+        "hair_dryer",
+        "musical_instrument",
+        "sewing_machine"
+      ],
+      "prediction": "microscope",
+      "normalized_prediction": "microscope",
+      "matched_label": "microscope",
+      "correct": true,
+      "latency_sec": 4.552876981004374,
+      "raw_response": {
+        "microscope": "[{\"box_2d\":[0,0,100,221],\"label\":\"microscope\"}]",
+        "stapler_(stapling_machine)": "[{\"box_2d\":[0,0,100,221],\"label\":\"stapler_(stapling_machine)\"}]",
+        "blender": "[{\"box_2d\":[0,0,100,221],\"label\":\"blender\"}]",
+        "hair_dryer": "[{\"box_2d\":[0,0,100,221],\"label\":\"hair_dryer\"}]",
+        "musical_instrument": "[{\"box_2d\":[0,0,100,221],\"label\":\"musical_instrument\"}]",
+        "sewing_machine": "[{\"box_2d\":[0,0,100,221],\"label\":\"sewing_machine\"}]"
+      }
+    }
+  ],
+  "prompt": "You are an object recognition assistant.\n\nYou will see a cropped image that contains exactly one object\nfrom the following LVIS categories (unseen split):\n\n- microscope\n- stapler_(stapling_machine)\n- blender\n- hair_dryer\n- musical_instrument\n- sewing_machine\n\nYour task:\n- Return ONLY the best matching category name from this list.\n- Do not output explanations or extra text.\n\nAnswer with a single string: \"class_name\"."
+}

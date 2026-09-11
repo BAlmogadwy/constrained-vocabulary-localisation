@@ -1,0 +1,63 @@
+{
+  "model": "Llama-3.2-11B-Vision-Instruct",
+  "strategy": "single_query",
+  "image": "/home/maxim/PycharmProjects/zero-shot-detection-benchmark/data/subsets/lvis_v1_val_unseen/images/000000435894.jpg",
+  "labels": [
+    "snowboard",
+    "blender",
+    "coffee_maker",
+    "lawn_mower",
+    "stapler_(stapling_machine)"
+  ],
+  "detections": [
+    {
+      "box_2d": [
+        227,
+        105,
+        355,
+        321
+      ],
+      "label": "snowboard"
+    },
+    {
+      "box_2d": [
+        231,
+        190,
+        355,
+        315
+      ],
+      "label": "snowboard"
+    },
+    {
+      "box_2d": [
+        0,
+        0,
+        639,
+        427
+      ],
+      "label": "snowboard"
+    },
+    {
+      "box_2d": [
+        221,
+        109,
+        355,
+        318
+      ],
+      "label": "snowboard"
+    }
+  ],
+  "latency_sec": 16.60944631509483,
+  "raw_response": {
+    "snowboard": "[{\"box_2d\":[0,0,0,0],\"label\":\"snowboard\"}]",
+    "snowboard_norm": "[{\"box_norm\":[0.354,0.245,0.555,0.751],\"label\":\"snowboard\"}]",
+    "blender": "[{\"box_2d\":[0,0,0,0],\"label\":\"blender\"}]",
+    "blender_norm": "[{\"box_norm\":[0.361,0.444,0.555,0.737],\"label\":\"snowboard\"}]",
+    "coffee_maker": "[]",
+    "coffee_maker_norm": "[{\"box_norm\":[0.000,0.000,0.999,0.999],\"label\":\"snowboard\"}]",
+    "lawn_mower": "[{\"box_2d\":[0,0,0,0],\"label\":\"lawn_mower\"}]",
+    "lawn_mower_norm": "[{\"box_norm\":[0.345,0.256,0.555,0.744],\"label\":\"snowboard\"}]",
+    "stapler_(stapling_machine)": "[]",
+    "stapler_(stapling_machine)_norm": "[{\"box_norm\":[0.000,0.000,0.000,0.000],\"label\":\"stapler_(stapling_machine)\"}]"
+  }
+}

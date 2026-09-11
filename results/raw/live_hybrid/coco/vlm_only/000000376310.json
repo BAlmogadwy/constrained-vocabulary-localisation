@@ -1,0 +1,98 @@
+{
+ "image": "000000376310.jpg",
+ "model": "qwen/qwen3-vl-235b-a22b-instruct",
+ "labels": [
+  "sink",
+  "book",
+  "hair drier",
+  "oven",
+  "refrigerator",
+  "teddy bear",
+  "toothbrush"
+ ],
+ "detections": [
+  {
+   "box_2d": [
+    355.84,
+    365.76,
+    442.24,
+    404.16
+   ],
+   "label": "sink",
+   "score": 0.98
+  },
+  {
+   "box_2d": [
+    458.24,
+    374.88,
+    554.24,
+    418.08
+   ],
+   "label": "sink",
+   "score": 0.98
+  },
+  {
+   "box_2d": [
+    576.0,
+    387.84,
+    640.0,
+    431.52
+   ],
+   "label": "sink",
+   "score": 0.98
+  }
+ ],
+ "latency_sec": 9.539217600002303,
+ "usage": {
+  "prompt_tokens": 394,
+  "completion_tokens": 134,
+  "total_tokens": 528
+ },
+ "raw_response": {
+  "id": "gen-1783413264-F0sLzQ2WMWCbsPdIu78d",
+  "object": "chat.completion",
+  "created": 1783413264,
+  "model": "qwen/qwen3-vl-235b-a22b-instruct",
+  "provider": "Alibaba",
+  "system_fingerprint": null,
+  "service_tier": null,
+  "choices": [
+   {
+    "index": 0,
+    "logprobs": null,
+    "finish_reason": "stop",
+    "native_finish_reason": "stop",
+    "message": {
+     "role": "assistant",
+     "content": "```json\n[\n\t{\"bbox_2d\": [556, 762, 691, 842], \"label\": \"sink\", \"confidence\": 0.98},\n\t{\"bbox_2d\": [716, 781, 866, 871], \"label\": \"sink\", \"confidence\": 0.98},\n\t{\"bbox_2d\": [900, 808, 1000, 899], \"label\": \"sink\", \"confidence\": 0.98}\n]\n```",
+     "refusal": null,
+     "reasoning": null
+    }
+   }
+  ],
+  "usage": {
+   "prompt_tokens": 394,
+   "completion_tokens": 134,
+   "total_tokens": 528,
+   "cost": 0.0002418,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0002418,
+    "upstream_inference_prompt_cost": 0.00010244,
+    "upstream_inference_completions_cost": 0.00013936
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   }
+  }
+ },
+ "ts": "2026-07-07T08:34:27.959876+00:00"
+}

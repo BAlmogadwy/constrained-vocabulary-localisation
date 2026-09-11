@@ -1,0 +1,63 @@
+{
+  "model": "Llama-3.2-11B-Vision-Instruct",
+  "strategy": "single_query",
+  "image": "/home/maxim/PycharmProjects/zero-shot-detection-benchmark/data/subsets/lvis_v1_val_unseen/images/000000016344.jpg",
+  "labels": [
+    "snowboard",
+    "blender",
+    "lawn_mower",
+    "musical_instrument",
+    "stapler_(stapling_machine)"
+  ],
+  "detections": [
+    {
+      "box_2d": [
+        17,
+        103,
+        287,
+        188
+      ],
+      "label": "snowboard"
+    },
+    {
+      "box_2d": [
+        156,
+        102,
+        284,
+        185
+      ],
+      "label": "snowboard"
+    },
+    {
+      "box_2d": [
+        0,
+        0,
+        639,
+        426
+      ],
+      "label": "lawn_mower"
+    },
+    {
+      "box_2d": [
+        0,
+        0,
+        639,
+        426
+      ],
+      "label": "None"
+    }
+  ],
+  "latency_sec": 6.388996257912368,
+  "raw_response": {
+    "snowboard": "[{\"box_2d\":[0,0,0,0],\"label\":\"snowboard\"}]",
+    "snowboard_norm": "[{\"box_norm\":[0.027,0.241,0.449,0.442],\"label\":\"snowboard\"}]",
+    "blender": "[]",
+    "blender_norm": "[{\"box_norm\":[0.244,0.240,0.444,0.434],\"label\":\"snowboard\"}]",
+    "lawn_mower": "[]",
+    "lawn_mower_norm": "[{\"box_norm\":[0.000,0.000,0.999,0.999],\"label\":\"lawn_mower\"}]",
+    "musical_instrument": "[]",
+    "musical_instrument_norm": "[{\"box_norm\":[0.000,0.000,0.999,0.999],\"label\":\"None\"}]",
+    "stapler_(stapling_machine)": "[]",
+    "stapler_(stapling_machine)_norm": "[{\"box_norm\":[0.0,0.0,0.0,0.0],\"label\":\"stapler_(stapling_machine)\"}]"
+  }
+}

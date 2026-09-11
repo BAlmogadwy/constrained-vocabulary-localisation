@@ -1,0 +1,43 @@
+{
+  "image": "/home/maxim/PycharmProjects/zero-shot-detection-benchmark/data/subsets/lvis_v1_val_unseen/images/000000408989.jpg",
+  "image_id": 408989,
+  "file_name": "000000408989.jpg",
+  "num_crops": 1,
+  "crops": [
+    {
+      "annotation_id": 97462,
+      "bbox": [
+        384.12,
+        178.89,
+        130.04,
+        157.02
+      ],
+      "category_id": 112,
+      "gt_label": "blender",
+      "labels": [
+        "blender",
+        "lawn_mower",
+        "musical_instrument",
+        "snowboard",
+        "stapler_(stapling_machine)"
+      ],
+      "prediction": "blender",
+      "normalized_prediction": "blender",
+      "matched_label": "blender",
+      "correct": true,
+      "latency_sec": 5.708600354002556,
+      "raw_response": {
+        "blender": "[{\"box_2d\":[0,0,131,158],\"label\":\"blender\"}]",
+        "lawn_mower": "[]",
+        "lawn_mower_norm": "[{\"box_norm\":[0.000000,0.000000,0.999999,0.999999],\"label\":\"lawn_mower\"}]",
+        "musical_instrument": "[]",
+        "musical_instrument_norm": "[{\"box_norm\":[0.05,0.13,0.43,0.45],\"label\":\"musical_instrument\"}]",
+        "snowboard": "[]",
+        "snowboard_norm": "[{\"box_norm\":[0.000000,0.000000,0.999999,0.999999],\"label\":\"snowboard\"}]",
+        "stapler_(stapling_machine)": "[]",
+        "stapler_(stapling_machine)_norm": "[{\"box_norm\":[0.05,0.19,0.42,0.55],\"label\":\"stapler_(stapling_machine)\"}]"
+      }
+    }
+  ],
+  "prompt": "You are an object recognition assistant.\n\nYou will see a cropped image that contains exactly one object\nfrom the following LVIS categories (unseen split):\n\n- blender\n- lawn_mower\n- musical_instrument\n- snowboard\n- stapler_(stapling_machine)\n\nYour task:\n- Return ONLY the best matching category name from this list.\n- Do not output explanations or extra text.\n\nAnswer with a single string: \"class_name\"."
+}

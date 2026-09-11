@@ -1,0 +1,36 @@
+{
+  "model": "Llama-3.2-11B-Vision-Instruct",
+  "strategy": "single_query",
+  "image": "/home/maxim/PycharmProjects/zero-shot-detection-benchmark/data/subsets/lvis_v1_val_unseen/images/000000037035.jpg",
+  "labels": [
+    "blender",
+    "hair_dryer",
+    "microscope",
+    "snowboard",
+    "stapler_(stapling_machine)"
+  ],
+  "detections": [
+    {
+      "box_2d": [
+        170,
+        207,
+        221,
+        236
+      ],
+      "label": "blender"
+    }
+  ],
+  "latency_sec": 6.361332371016033,
+  "raw_response": {
+    "blender": "[{\"box_2d\":[0,0,0,0],\"label\":\"blender\"}]",
+    "blender_norm": "[{\"box_norm\":[0.265,0.432,0.345,0.492],\"label\":\"blender\"}]",
+    "hair_dryer": "[]",
+    "hair_dryer_norm": "[{\"box_norm\":[0.0,0.0,0.0,0.0],\"label\":\"hair_dryer\"}]",
+    "microscope": "[]",
+    "microscope_norm": "[{\"box_norm\":[0.0,0.0,0.0,0.0],\"label\":\"microscope\"}]",
+    "snowboard": "[]",
+    "snowboard_norm": "[{\"box_norm\":[0.0,0.0,0.0,0.0],\"label\":\"snowboard\"}]",
+    "stapler_(stapling_machine)": "[]",
+    "stapler_(stapling_machine)_norm": "[{\"box_norm\":[0.0,0.0,0.0,0.0],\"label\":\"stapler_(stapling_machine)\"}]"
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "image": "/home/maxim/PycharmProjects/zero-shot-detection-benchmark/data/subsets/lvis_v1_val_unseen/images/000000273607.jpg",
+  "image_id": 273607,
+  "file_name": "000000273607.jpg",
+  "num_crops": 1,
+  "crops": [
+    {
+      "annotation_id": 199517,
+      "bbox": [
+        43.87,
+        59.84,
+        70.8,
+        98.63
+      ],
+      "category_id": 112,
+      "gt_label": "blender",
+      "labels": [
+        "blender",
+        "coffee_maker",
+        "microscope",
+        "sewing_machine",
+        "snowboard"
+      ],
+      "prediction": "blender",
+      "normalized_prediction": "blender",
+      "matched_label": "blender",
+      "correct": true,
+      "latency_sec": 5.7615516369987745,
+      "raw_response": {
+        "blender": "[]",
+        "blender_norm": "[{\"box_norm\":[0.1,0.1,0.4,0.4],\"label\":\"blender\"}]",
+        "coffee_maker": "[]",
+        "coffee_maker_norm": "[{\"box_norm\":[0.04,0.04,0.98,0.98],\"label\":\"coffee_maker\"}]",
+        "microscope": "[]",
+        "microscope_norm": "[{\"box_norm\":[0.05,0.07,0.45,0.55],\"label\":\"microscope\"}]",
+        "sewing_machine": "[]",
+        "sewing_machine_norm": "[{\"box_norm\":[0.0,0.0,0.5,0.5],\"label\":\"sewing_machine\"}]",
+        "snowboard": "[]",
+        "snowboard_norm": "[{\"box_norm\":[0.0,0.0,0.0,0.0],\"label\":\"snowboard\"}]"
+      }
+    }
+  ],
+  "prompt": "You are an object recognition assistant.\n\nYou will see a cropped image that contains exactly one object\nfrom the following LVIS categories (unseen split):\n\n- blender\n- coffee_maker\n- microscope\n- sewing_machine\n- snowboard\n\nYour task:\n- Return ONLY the best matching category name from this list.\n- Do not output explanations or extra text.\n\nAnswer with a single string: \"class_name\"."
+}

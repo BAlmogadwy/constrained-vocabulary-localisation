@@ -1,0 +1,36 @@
+{
+  "model": "Llama-3.2-11B-Vision-Instruct",
+  "strategy": "single_query",
+  "image": "/home/maxim/PycharmProjects/zero-shot-detection-benchmark/data/subsets/lvis_v1_val_unseen/images/000000039477.jpg",
+  "labels": [
+    "sewing_machine",
+    "blender",
+    "microscope",
+    "musical_instrument",
+    "snowboard"
+  ],
+  "detections": [
+    {
+      "box_2d": [
+        17,
+        176,
+        174,
+        272
+      ],
+      "label": "sewing_machine"
+    }
+  ],
+  "latency_sec": 18.30084534548223,
+  "raw_response": {
+    "sewing_machine": "[{\"box_2d\":[0,0,0,0],\"label\":\"sewing_machine\"}]",
+    "sewing_machine_norm": "[{\"box_norm\":[0.027,0.419,0.272,0.646],\"label\":\"sewing_machine\"}]",
+    "blender": "[{\"box_2d\":[0,0,0,0],\"label\":\"blender\"}]",
+    "blender_norm": "[{\"box_norm\":[0.000,0.000,0.000,0.000],\"label\":\"blender\"}]",
+    "microscope": "[{\"box_2d\":[0,0,0,0],\"label\":\"microscope\"}]",
+    "microscope_norm": "[{\"box_norm\":[0.000,0.000,0.000,0.000],\"label\":\"microscope\"}]",
+    "musical_instrument": "[{\"box_2d\":[0,0,0,0],\"label\":\"musical_instrument\"}]",
+    "musical_instrument_norm": "[{\"box_norm\":[0.000,0.000,0.000,0.000],\"label\":\"musical_instrument\"}]",
+    "snowboard": "[{\"box_2d\":[0,0,0,0],\"label\":\"snowboard\"}]",
+    "snowboard_norm": "[{\"box_norm\":[0.0,0.0,0.0,0.0],\"label\":\"snowboard\"}]"
+  }
+}

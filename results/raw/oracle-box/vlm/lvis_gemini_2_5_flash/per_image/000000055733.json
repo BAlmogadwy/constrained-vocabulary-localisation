@@ -1,0 +1,81 @@
+{
+  "image": "/home/maxim/PycharmProjects/zero-shot-detection-benchmark/data/subsets/lvis_v1_val_unseen/images/000000055733.jpg",
+  "image_id": 55733,
+  "file_name": "000000055733.jpg",
+  "num_crops": 3,
+  "crops": [
+    {
+      "annotation_id": 229163,
+      "bbox": [
+        413.12,
+        244.8,
+        126.0,
+        235.2
+      ],
+      "category_id": 976,
+      "gt_label": "snowboard",
+      "labels": [
+        "snowboard",
+        "coffee_maker",
+        "hair_dryer",
+        "spatula",
+        "stapler_(stapling_machine)"
+      ],
+      "prediction": "snowboard",
+      "normalized_prediction": "snowboard",
+      "matched_label": "snowboard",
+      "correct": true,
+      "latency_sec": 4.782301241997629,
+      "raw_response": "```json\n[\n  {\"box_2d\": [130, 0, 749, 810], \"label\": \"snowboard\"}\n]\n```"
+    },
+    {
+      "annotation_id": 229164,
+      "bbox": [
+        0.0,
+        280.85,
+        221.24,
+        199.15
+      ],
+      "category_id": 976,
+      "gt_label": "snowboard",
+      "labels": [
+        "snowboard",
+        "coffee_maker",
+        "hair_dryer",
+        "spatula",
+        "stapler_(stapling_machine)"
+      ],
+      "prediction": "snowboard",
+      "normalized_prediction": "snowboard",
+      "matched_label": "snowboard",
+      "correct": true,
+      "latency_sec": 1.3603941329929512,
+      "raw_response": "[{\"box_2d\": [0, 0, 997, 988], \"label\": \"snowboard\"}]"
+    },
+    {
+      "annotation_id": 229165,
+      "bbox": [
+        72.18,
+        230.16,
+        157.07,
+        249.84
+      ],
+      "category_id": 976,
+      "gt_label": "snowboard",
+      "labels": [
+        "snowboard",
+        "coffee_maker",
+        "hair_dryer",
+        "spatula",
+        "stapler_(stapling_machine)"
+      ],
+      "prediction": "snowboard",
+      "normalized_prediction": "snowboard",
+      "matched_label": "snowboard",
+      "correct": true,
+      "latency_sec": 1.1741916579776444,
+      "raw_response": "[\n  {\"box_2d\": [0, 0, 998, 977], \"label\": \"snowboard\"}\n]"
+    }
+  ],
+  "prompt": "You are an object recognition assistant.\n\nYou will see a cropped image that contains exactly one object\nfrom the following LVIS categories (unseen split):\n\n- snowboard\n- coffee_maker\n- hair_dryer\n- spatula\n- stapler_(stapling_machine)\n\nYour task:\n- Return ONLY the best matching category name from this list.\n- Do not output explanations or extra text.\n\nAnswer with a single string: \"class_name\"."
+}

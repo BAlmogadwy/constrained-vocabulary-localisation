@@ -1,0 +1,88 @@
+{
+ "image": "000000130465.jpg",
+ "model": "qwen/qwen3-vl-235b-a22b-instruct",
+ "labels": [
+  "clock",
+  "book",
+  "microwave",
+  "oven",
+  "refrigerator",
+  "toaster",
+  "vase"
+ ],
+ "detections": [
+  {
+   "box_2d": [
+    458.24,
+    112.136,
+    531.84,
+    163.924
+   ],
+   "label": "clock",
+   "score": 0.98
+  },
+  {
+   "box_2d": [
+    125.44,
+    214.0,
+    179.2,
+    261.936
+   ],
+   "label": "clock",
+   "score": 0.97
+  }
+ ],
+ "latency_sec": 3.6471078999893507,
+ "usage": {
+  "prompt_tokens": 349,
+  "completion_tokens": 91,
+  "total_tokens": 440
+ },
+ "raw_response": {
+  "id": "gen-1783411052-QGI8Hp3QCY2V2N4c4tTz",
+  "object": "chat.completion",
+  "created": 1783411052,
+  "model": "qwen/qwen3-vl-235b-a22b-instruct",
+  "provider": "Novita",
+  "system_fingerprint": null,
+  "service_tier": null,
+  "choices": [
+   {
+    "index": 0,
+    "logprobs": null,
+    "finish_reason": "stop",
+    "native_finish_reason": "stop",
+    "message": {
+     "role": "assistant",
+     "content": "```json\n[\n\t{\"bbox_2d\": [716, 262, 831, 383], \"label\": \"clock\", \"confidence\": 0.98},\n\t{\"bbox_2d\": [196, 500, 280, 612], \"label\": \"clock\", \"confidence\": 0.97}\n]\n```",
+     "refusal": null,
+     "reasoning": null
+    }
+   }
+  ],
+  "usage": {
+   "prompt_tokens": 349,
+   "completion_tokens": 91,
+   "total_tokens": 440,
+   "cost": 0.0002412,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0002412,
+    "upstream_inference_prompt_cost": 0.0001047,
+    "upstream_inference_completions_cost": 0.0001365
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   }
+  }
+ },
+ "ts": "2026-07-07T07:57:33.788412+00:00"
+}

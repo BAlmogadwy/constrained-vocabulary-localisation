@@ -1,0 +1,72 @@
+{
+  "model": "gemini-2.5-flash",
+  "strategy": "single_query",
+  "image": "/home/maxim/PycharmProjects/zero-shot-detection-benchmark/data/raw/coco2017/val2017/000000172617.jpg",
+  "labels": [
+    "book",
+    "clock",
+    "oven",
+    "refrigerator",
+    "scissors",
+    "sink",
+    "vase"
+  ],
+  "detections": [
+    {
+      "box_2d": [
+        404,
+        104,
+        556,
+        314
+      ],
+      "label": "book"
+    },
+    {
+      "box_2d": [
+        404,
+        1,
+        591,
+        203
+      ],
+      "label": "book"
+    },
+    {
+      "box_2d": [
+        316,
+        0,
+        477,
+        147
+      ],
+      "label": "book"
+    },
+    {
+      "box_2d": [
+        248,
+        113,
+        399,
+        392
+      ],
+      "label": "book"
+    },
+    {
+      "box_2d": [
+        101,
+        563,
+        172,
+        725
+      ],
+      "label": "book"
+    },
+    {
+      "box_2d": [
+        316,
+        0,
+        584,
+        168
+      ],
+      "label": "book"
+    }
+  ],
+  "latency_sec": 7.886837195954286,
+  "raw_response": "```json\n[\n  {\"box_2d\": [404, 104, 556, 314], \"label\": \"book\"},\n  {\"box_2d\": [404, 1, 591, 203], \"label\": \"book\"},\n  {\"box_2d\": [316, 0, 477, 147], \"label\": \"book\"},\n  {\"box_2d\": [248, 113, 399, 392], \"label\": \"book\"},\n  {\"box_2d\": [101, 563, 172, 725], \"label\": \"book\"},\n  {\"box_2d\": [316, 0, 584, 168], \"label\": \"book\"}\n]\n```"
+}

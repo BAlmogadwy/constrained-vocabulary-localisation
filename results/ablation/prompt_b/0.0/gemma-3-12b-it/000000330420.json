@@ -1,0 +1,30 @@
+{
+  "model": "gemma-3-12b-it",
+  "strategy": "iterative",
+  "image": "/home/maxim/PycharmProjects/zero-shot-detection-benchmark/data/subsets/lvis_v1_val_unseen/images/000000330420.jpg",
+  "labels": [
+    "blender",
+    "lawn_mower",
+    "microscope",
+    "musical_instrument",
+    "stapler_(stapling_machine)"
+  ],
+  "detections": [
+    {
+      "box_2d": [
+        270,
+        230,
+        683,
+        666
+      ],
+      "label": "blender"
+    }
+  ],
+  "latency_sec": 18.06963562895544,
+  "raw_response": {
+    "identification": "blender",
+    "localization": {
+      "blender": "```json\n[{\"box_2d\":[270,230,683,666],\"label\":\"blender\"}]\n```"
+    }
+  }
+}

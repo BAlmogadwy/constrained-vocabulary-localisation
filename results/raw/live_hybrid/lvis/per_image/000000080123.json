@@ -1,0 +1,250 @@
+{
+ "image": "000000080123.jpg",
+ "labels": [
+  "spatula",
+  "blender",
+  "coffee_maker",
+  "snowboard",
+  "stapler_(stapling_machine)"
+ ],
+ "tau": 0.4,
+ "detector": {
+  "detections": [
+   {
+    "label": "spatula",
+    "box": [
+     334.7005920410156,
+     285.6145935058594,
+     448.968505859375,
+     411.8670654296875
+    ],
+    "score": 0.23277410864830017
+   },
+   {
+    "label": "spatula",
+    "box": [
+     0.006144046317785978,
+     326.40185546875,
+     69.00728607177734,
+     541.2817993164062
+    ],
+    "score": 0.17336636781692505
+   },
+   {
+    "label": "spatula",
+    "box": [
+     141.30384826660156,
+     414.65716552734375,
+     263.6350402832031,
+     600.0
+    ],
+    "score": 0.10162871330976486
+   },
+   {
+    "label": "coffee_maker",
+    "box": [
+     372.0928649902344,
+     199.76968383789062,
+     448.86846923828125,
+     354.4194641113281
+    ],
+    "score": 0.0038447200786322355
+   },
+   {
+    "label": "coffee_maker",
+    "box": [
+     1.5051840543746948,
+     44.96211624145508,
+     447.9141845703125,
+     599.9464111328125
+    ],
+    "score": 0.0026681823655962944
+   },
+   {
+    "label": "spatula",
+    "box": [
+     123.65582275390625,
+     371.2878723144531,
+     404.0954284667969,
+     600.0
+    ],
+    "score": 0.0018158219754695892
+   },
+   {
+    "label": "coffee_maker",
+    "box": [
+     410.3659973144531,
+     199.92251586914062,
+     449.0,
+     327.42279052734375
+    ],
+    "score": 0.0015671290457248688
+   },
+   {
+    "label": "spatula",
+    "box": [
+     0.0,
+     357.72381591796875,
+     23.560422897338867,
+     451.4529113769531
+    ],
+    "score": 0.001250762608833611
+   }
+  ],
+  "latency_sec": 0.08928529999684542
+ },
+ "detector_max_score": 0.23277410864830017,
+ "escalated": true,
+ "vlm": {
+  "model": "qwen/qwen3-vl-235b-a22b-instruct",
+  "detections": [
+   {
+    "label": "spatula",
+    "box": [
+     334.954,
+     292.8,
+     448.102,
+     409.2
+    ],
+    "score": 1.0
+   }
+  ],
+  "latency_sec": 3.3260483000049135,
+  "usage": {
+   "prompt_tokens": 360,
+   "completion_tokens": 51,
+   "total_tokens": 411
+  },
+  "raw_response": {
+   "id": "gen-1783406604-pNxNz3l5MwXOcWlBdf3e",
+   "object": "chat.completion",
+   "created": 1783406604,
+   "model": "qwen/qwen3-vl-235b-a22b-instruct",
+   "provider": "Alibaba",
+   "system_fingerprint": null,
+   "service_tier": null,
+   "choices": [
+    {
+     "index": 0,
+     "logprobs": null,
+     "finish_reason": "stop",
+     "native_finish_reason": "stop",
+     "message": {
+      "role": "assistant",
+      "content": "```json\n[\n\t{\"bbox_2d\": [746, 488, 998, 682], \"label\": \"spatula\", \"confidence\": 0.95}\n]\n```",
+      "refusal": null,
+      "reasoning": null
+     }
+    }
+   ],
+   "usage": {
+    "prompt_tokens": 360,
+    "completion_tokens": 51,
+    "total_tokens": 411,
+    "cost": 0.00014664,
+    "is_byok": false,
+    "prompt_tokens_details": {
+     "cached_tokens": 0,
+     "cache_write_tokens": 0,
+     "audio_tokens": 0,
+     "video_tokens": 0
+    },
+    "cost_details": {
+     "upstream_inference_cost": 0.00014664,
+     "upstream_inference_prompt_cost": 9.36e-05,
+     "upstream_inference_completions_cost": 5.304e-05
+    },
+    "completion_tokens_details": {
+     "reasoning_tokens": 0,
+     "image_tokens": 0,
+     "audio_tokens": 0
+    }
+   }
+  }
+ },
+ "fallback": false,
+ "ts": "2026-07-07T06:43:21.622911+00:00",
+ "fused": [
+  {
+   "label": "spatula",
+   "box": [
+    334.7005920410156,
+    285.6145935058594,
+    448.968505859375,
+    411.8670654296875
+   ],
+   "score": 0.5327741086483002
+  },
+  {
+   "label": "spatula",
+   "box": [
+    0.006144046317785978,
+    326.40185546875,
+    69.00728607177734,
+    541.2817993164062
+   ],
+   "score": 0.17336636781692505
+  },
+  {
+   "label": "spatula",
+   "box": [
+    141.30384826660156,
+    414.65716552734375,
+    263.6350402832031,
+    600.0
+   ],
+   "score": 0.10162871330976486
+  },
+  {
+   "label": "coffee_maker",
+   "box": [
+    372.0928649902344,
+    199.76968383789062,
+    448.86846923828125,
+    354.4194641113281
+   ],
+   "score": 0.0038447200786322355
+  },
+  {
+   "label": "coffee_maker",
+   "box": [
+    1.5051840543746948,
+    44.96211624145508,
+    447.9141845703125,
+    599.9464111328125
+   ],
+   "score": 0.0026681823655962944
+  },
+  {
+   "label": "spatula",
+   "box": [
+    123.65582275390625,
+    371.2878723144531,
+    404.0954284667969,
+    600.0
+   ],
+   "score": 0.0018158219754695892
+  },
+  {
+   "label": "coffee_maker",
+   "box": [
+    410.3659973144531,
+    199.92251586914062,
+    449.0,
+    327.42279052734375
+   ],
+   "score": 0.0015671290457248688
+  },
+  {
+   "label": "spatula",
+   "box": [
+    0.0,
+    357.72381591796875,
+    23.560422897338867,
+    451.4529113769531
+   ],
+   "score": 0.001250762608833611
+  }
+ ],
+ "latency_total_sec": 3.415350600000238
+}

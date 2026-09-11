@@ -1,0 +1,95 @@
+{
+  "model": "Qwen3-VL-8B-Instruct",
+  "strategy": "single_query",
+  "image": "/home/maxim/PycharmProjects/zero-shot-detection-benchmark/data/raw/coco2017/val2017/000000222559.jpg",
+  "labels": [
+    "microwave",
+    "oven",
+    "toaster",
+    "sink",
+    "refrigerator",
+    "book",
+    "clock",
+    "vase",
+    "scissors",
+    "teddy bear",
+    "hair drier",
+    "toothbrush"
+  ],
+  "detections": [
+    {
+      "box_2d": [
+        273.0,
+        838.0,
+        300.0,
+        924.0
+      ],
+      "label": "person"
+    },
+    {
+      "box_2d": [
+        380.0,
+        886.0,
+        405.0,
+        952.0
+      ],
+      "label": "person"
+    },
+    {
+      "box_2d": [
+        528.0,
+        807.0,
+        564.0,
+        907.0
+      ],
+      "label": "person"
+    },
+    {
+      "box_2d": [
+        630.0,
+        824.0,
+        654.0,
+        924.0
+      ],
+      "label": "person"
+    },
+    {
+      "box_2d": [
+        902.0,
+        707.0,
+        916.0,
+        764.0
+      ],
+      "label": "person"
+    },
+    {
+      "box_2d": [
+        952.0,
+        724.0,
+        977.0,
+        783.0
+      ],
+      "label": "person"
+    },
+    {
+      "box_2d": [
+        17.0,
+        788.0,
+        45.0,
+        838.0
+      ],
+      "label": "person"
+    },
+    {
+      "box_2d": [
+        641.0,
+        545.0,
+        648.0,
+        571.0
+      ],
+      "label": "person"
+    }
+  ],
+  "latency_sec": 10.18388108999352,
+  "raw_response": "user\nYou are an object detection assistant. Given the image and the list of target classes, return detections as JSON.\nTarget classes: microwave, oven, toaster, sink, refrigerator, book, clock, vase, scissors, teddy bear, hair drier, toothbrush.\nOutput format: [{\"box_2d\":[x1,y1,x2,y2],\"label\":\"class_name\"}...]\nUse pixel coordinates relative to the input image. Return JSON only.\nassistant\n```json\n[\n\t{\"box_2d\": [273, 838, 300, 924],\"label\":\"person\"},\n\t{\"box_2d\": [380, 886, 405, 952],\"label\":\"person\"},\n\t{\"box_2d\": [528, 807, 564, 907],\"label\":\"person\"},\n\t{\"box_2d\": [630, 824, 654, 924],\"label\":\"person\"},\n\t{\"box_2d\": [902, 707, 916, 764],\"label\":\"person\"},\n\t{\"box_2d\": [952, 724, 977, 783],\"label\":\"person\"},\n\t{\"box_2d\": [17, 788, 45, 838],\"label\":\"person\"},\n\t{\"bbox_2d\": [641, 545, 648, 571],\"label\":\"person\"}\n]\n```"
+}

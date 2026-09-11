@@ -1,0 +1,57 @@
+{
+  "image": "/home/maxim/PycharmProjects/zero-shot-detection-benchmark/data/raw/coco2017/val2017/000000094944.jpg",
+  "image_id": 94944,
+  "file_name": "000000094944.jpg",
+  "num_crops": 2,
+  "crops": [
+    {
+      "annotation_id": 42770,
+      "bbox": [
+        337.28,
+        332.51,
+        186.07,
+        55.18
+      ],
+      "category_id": 976,
+      "gt_label": "snowboard",
+      "labels": [
+        "snowboard",
+        "hair_dryer",
+        "musical_instrument",
+        "spatula",
+        "stapler_(stapling_machine)"
+      ],
+      "prediction": "snowboard",
+      "normalized_prediction": "snowboard",
+      "matched_label": "snowboard",
+      "correct": true,
+      "latency_sec": 1.925613567000255,
+      "raw_response": "[\n  {\"box_2d\": [18, 0, 488, 959], \"label\": \"snowboard\"}\n]"
+    },
+    {
+      "annotation_id": 42771,
+      "bbox": [
+        564.29,
+        262.71,
+        62.78,
+        14.55
+      ],
+      "category_id": 976,
+      "gt_label": "snowboard",
+      "labels": [
+        "snowboard",
+        "hair_dryer",
+        "musical_instrument",
+        "spatula",
+        "stapler_(stapling_machine)"
+      ],
+      "prediction": null,
+      "normalized_prediction": "",
+      "matched_label": null,
+      "correct": false,
+      "latency_sec": 2.0784906659973785,
+      "raw_response": "I'm sorry, but I cannot detect any of the requested objects in the provided image. The image is extremely blurry and lacks sufficient detail to identify \"snowboard\", \"hair_dryer\", \"musical_instrument\", \"spatula\", or \"stapler_(stapling_machine)\"."
+    }
+  ],
+  "prompt": "You are an object recognition assistant.\n\nYou will see a cropped image that contains exactly one object\nfrom the following LVIS categories (unseen split):\n\n- snowboard\n- hair_dryer\n- musical_instrument\n- spatula\n- stapler_(stapling_machine)\n\nYour task:\n- Return ONLY the best matching category name from this list.\n- Do not output explanations or extra text.\n\nAnswer with a single string: \"class_name\"."
+}

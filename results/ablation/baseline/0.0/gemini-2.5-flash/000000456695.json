@@ -1,0 +1,25 @@
+{
+  "model": "gemini-2.5-flash",
+  "strategy": "single_query",
+  "image": "/home/maxim/PycharmProjects/zero-shot-detection-benchmark/data/subsets/lvis_v1_val_unseen/images/000000456695.jpg",
+  "labels": [
+    "blender",
+    "lawn_mower",
+    "snowboard",
+    "spatula",
+    "stapler_(stapling_machine)"
+  ],
+  "detections": [
+    {
+      "box_2d": [
+        146,
+        319,
+        597,
+        520
+      ],
+      "label": "blender"
+    }
+  ],
+  "latency_sec": 1.9740141850197688,
+  "raw_response": "```json\n[\n  {\"box_2d\": [146, 319, 597, 520], \"label\": \"blender\"}\n]\n```"
+}

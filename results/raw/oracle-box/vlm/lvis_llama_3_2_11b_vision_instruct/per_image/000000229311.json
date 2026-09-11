@@ -1,0 +1,44 @@
+{
+  "image": "/home/maxim/PycharmProjects/zero-shot-detection-benchmark/data/raw/coco2017/val2017/000000229311.jpg",
+  "image_id": 229311,
+  "file_name": "000000229311.jpg",
+  "num_crops": 1,
+  "crops": [
+    {
+      "annotation_id": 15274,
+      "bbox": [
+        69.81,
+        138.22,
+        46.1,
+        57.04
+      ],
+      "category_id": 284,
+      "gt_label": "coffee_maker",
+      "labels": [
+        "coffee_maker",
+        "lawn_mower",
+        "microscope",
+        "snowboard",
+        "spatula"
+      ],
+      "prediction": "coffee_maker",
+      "normalized_prediction": "coffee maker",
+      "matched_label": "coffee_maker",
+      "correct": true,
+      "latency_sec": 5.802557613991667,
+      "raw_response": {
+        "coffee_maker": "[]",
+        "coffee_maker_norm": "[{\"box_norm\":[0.0,0.0,0.5,0.5],\"label\":\"coffee_maker\"}]",
+        "lawn_mower": "[]",
+        "lawn_mower_norm": "[{\"box_norm\":[0.0,0.0,0.0,0.0],\"label\":\"lawn_mower\"}]",
+        "microscope": "[]",
+        "microscope_norm": "[{\"box_norm\":[0.0,0.0,0.5,0.5],\"label\":\"microscope\"}]",
+        "snowboard": "[]",
+        "snowboard_norm": "[{\"box_norm\":[0.0,0.0,0.0,0.0],\"label\":\"snowboard\"}]",
+        "spatula": "[]",
+        "spatula_norm": "[{\"box_norm\":[0.0,0.0,0.5,0.5],\"label\":\"spatula\"}]"
+      }
+    }
+  ],
+  "prompt": "You are an object recognition assistant.\n\nYou will see a cropped image that contains exactly one object\nfrom the following LVIS categories (unseen split):\n\n- coffee_maker\n- lawn_mower\n- microscope\n- snowboard\n- spatula\n\nYour task:\n- Return ONLY the best matching category name from this list.\n- Do not output explanations or extra text.\n\nAnswer with a single string: \"class_name\"."
+}

@@ -1,0 +1,86 @@
+{
+  "model": "Qwen3-VL-8B-Instruct",
+  "strategy": "single_query",
+  "image": "/home/maxim/PycharmProjects/zero-shot-detection-benchmark/data/raw/coco2017/val2017/000000239773.jpg",
+  "labels": [
+    "microwave",
+    "oven",
+    "toaster",
+    "sink",
+    "refrigerator",
+    "book",
+    "clock",
+    "vase",
+    "scissors",
+    "teddy bear",
+    "hair drier",
+    "toothbrush"
+  ],
+  "detections": [
+    {
+      "box_2d": [
+        224.0,
+        207.0,
+        585.0,
+        988.0
+      ],
+      "label": "person"
+    },
+    {
+      "box_2d": [
+        825.0,
+        413.0,
+        1000.0,
+        988.0
+      ],
+      "label": "person"
+    },
+    {
+      "box_2d": [
+        319.0,
+        14.0,
+        508.0,
+        357.0
+      ],
+      "label": "baseball bat"
+    },
+    {
+      "box_2d": [
+        177.0,
+        503.0,
+        216.0,
+        543.0
+      ],
+      "label": "baseball"
+    },
+    {
+      "box_2d": [
+        813.0,
+        701.0,
+        927.0,
+        883.0
+      ],
+      "label": "glove"
+    },
+    {
+      "box_2d": [
+        488.0,
+        357.0,
+        585.0,
+        483.0
+      ],
+      "label": "glove"
+    },
+    {
+      "box_2d": [
+        974.0,
+        413.0,
+        1000.0,
+        535.0
+      ],
+      "label": "mask"
+    }
+  ],
+  "latency_sec": 6.549611763999565,
+  "raw_response": "user\nYou are an object detection assistant. Given the image and the list of target classes, return detections as JSON.\nTarget classes: microwave, oven, toaster, sink, refrigerator, book, clock, vase, scissors, teddy bear, hair drier, toothbrush.\nOutput format: [{\"box_2d\":[x1,y1,x2,y2],\"label\":\"class_name\"}...]\nUse pixel coordinates relative to the input image. Return JSON only.\nassistant\n```json\n[\n    {\"box_2d\": [224, 207, 585, 988],\"label\":\"person\"},\n    {\"bbox_2d\": [825, 413, 1000, 988],\"label\":\"person\"},\n    {\"box_2d\": [319, 14, 508, 357],\"label\":\"baseball bat\"},\n    {\"box_2d\": [177, 503, 216, 543],\"label\":\"baseball\"},\n    {\"box_2d\": [813, 701, 927, 883],\"label\":\"glove\"},\n    {\"box_2d\": [488, 357, 585, 483],\"label\":\"glove\"},\n    {\"bbox_2d\": [974, 413, 1000, 535],\"label\":\"mask\"}\n]\n```"
+}

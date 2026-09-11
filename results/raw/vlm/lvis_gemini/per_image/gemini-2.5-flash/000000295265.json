@@ -1,0 +1,52 @@
+{
+  "model": "gemini-2.5-flash",
+  "strategy": "single_query",
+  "image": "/home/maxim/PycharmProjects/zero-shot-detection-benchmark/data/subsets/lvis_v1_val_unseen/images/000000295265.jpg",
+  "labels": [
+    "snowboard",
+    "hair_dryer",
+    "musical_instrument",
+    "spatula",
+    "stapler_(stapling_machine)"
+  ],
+  "detections": [
+    {
+      "box_2d": [
+        188,
+        203,
+        222,
+        235
+      ],
+      "label": "snowboard"
+    },
+    {
+      "box_2d": [
+        304,
+        404,
+        335,
+        437
+      ],
+      "label": "snowboard"
+    },
+    {
+      "box_2d": [
+        363,
+        513,
+        386,
+        529
+      ],
+      "label": "snowboard"
+    },
+    {
+      "box_2d": [
+        516,
+        621,
+        642,
+        706
+      ],
+      "label": "snowboard"
+    }
+  ],
+  "latency_sec": 2.1830337876453996,
+  "raw_response": "[{\"box_2d\": [188, 203, 222, 235], \"label\": \"snowboard\"}, {\"box_2d\": [304, 404, 335, 437], \"label\": \"snowboard\"}, {\"box_2d\": [363, 513, 386, 529], \"label\": \"snowboard\"}, {\"box_2d\": [516, 621, 642, 706], \"label\": \"snowboard\"}]"
+}

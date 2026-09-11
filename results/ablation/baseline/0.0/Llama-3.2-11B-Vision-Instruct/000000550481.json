@@ -1,0 +1,45 @@
+{
+  "model": "Llama-3.2-11B-Vision-Instruct",
+  "strategy": "single_query",
+  "image": "/home/maxim/PycharmProjects/zero-shot-detection-benchmark/data/subsets/lvis_v1_val_unseen/images/000000550481.jpg",
+  "labels": [
+    "microscope",
+    "lawn_mower",
+    "snowboard",
+    "spatula",
+    "stapler_(stapling_machine)"
+  ],
+  "detections": [
+    {
+      "box_2d": [
+        28,
+        85,
+        122,
+        192
+      ],
+      "label": "microscope"
+    },
+    {
+      "box_2d": [
+        29,
+        89,
+        79,
+        122
+      ],
+      "label": "spatula"
+    }
+  ],
+  "latency_sec": 6.459419975988567,
+  "raw_response": {
+    "microscope": "[{\"box_2d\":[0,0,0,0],\"label\":\"microscope\"}]",
+    "microscope_norm": "[{\"box_norm\":[0.055,0.247,0.245,0.555],\"label\":\"microscope\"}]",
+    "lawn_mower": "[]",
+    "lawn_mower_norm": "[{\"box_norm\":[0.000,0.000,0.000,0.000],\"label\":\"lawn_mower\"}]",
+    "snowboard": "[]",
+    "snowboard_norm": "[{\"box_norm\":[0.000,0.000,0.000,0.000],\"label\":\"snowboard\"}]",
+    "spatula": "[]",
+    "spatula_norm": "[{\"box_norm\":[0.058,0.256,0.158,0.354],\"label\":\"spatula\"}]",
+    "stapler_(stapling_machine)": "[]",
+    "stapler_(stapling_machine)_norm": "[{\"box_norm\":[0.000000,0.000000,0.000000,0.000000],\"label\":\"stapler_(stapling_machine)\"}]"
+  }
+}

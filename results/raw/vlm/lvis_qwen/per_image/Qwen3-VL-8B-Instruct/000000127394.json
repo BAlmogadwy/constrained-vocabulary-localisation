@@ -1,0 +1,43 @@
+{
+  "model": "Qwen3-VL-8B-Instruct",
+  "strategy": "single_query",
+  "image": "/home/maxim/PycharmProjects/zero-shot-detection-benchmark/data/subsets/lvis_v1_val_unseen/images/000000127394.jpg",
+  "labels": [
+    "spatula",
+    "hair_dryer",
+    "musical_instrument",
+    "snowboard",
+    "stapler_(stapling_machine)"
+  ],
+  "detections": [
+    {
+      "box_2d": [
+        121.0,
+        470.0,
+        250.0,
+        512.0
+      ],
+      "label": "spatula"
+    },
+    {
+      "box_2d": [
+        312.0,
+        530.0,
+        421.0,
+        773.0
+      ],
+      "label": "spatula"
+    },
+    {
+      "box_2d": [
+        517.0,
+        641.0,
+        788.0,
+        812.0
+      ],
+      "label": "spatula"
+    }
+  ],
+  "latency_sec": 14.512477135285735,
+  "raw_response": "user\nYou are an object detection assistant. Given the image and the list of target classes, return detections as JSON.\nTarget classes: spatula, hair_dryer, musical_instrument, snowboard, stapler_(stapling_machine).\nOutput format: [{\"box_2d\":[x1,y1,x2,y2],\"label\":\"class_name\"}...]\nUse pixel coordinates relative to the input image. Return JSON only.\nassistant\n```json\n[\n\t{\"box_2d\": [121, 470, 250, 512],\"label\":\"spatula\"},\n\t{\"box_2d\": [312, 530, 421, 773],\"label\":\"spatula\"},\n\t{\"box_2d\": [517, 641, 788, 812],\"label\":\"spatula\"}\n]\n```"
+}

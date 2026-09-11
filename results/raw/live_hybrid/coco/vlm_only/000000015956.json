@@ -1,0 +1,88 @@
+{
+ "image": "000000015956.jpg",
+ "model": "qwen/qwen3-vl-235b-a22b-instruct",
+ "labels": [
+  "clock",
+  "book",
+  "hair drier",
+  "scissors",
+  "teddy bear",
+  "toaster",
+  "vase"
+ ],
+ "detections": [
+  {
+   "box_2d": [
+    495.36,
+    126.72,
+    515.2,
+    147.84
+   ],
+   "label": "clock",
+   "score": 0.98
+  },
+  {
+   "box_2d": [
+    42.88,
+    84.0,
+    68.48,
+    107.04
+   ],
+   "label": "clock",
+   "score": 0.97
+  }
+ ],
+ "latency_sec": 3.554060999987996,
+ "usage": {
+  "prompt_tokens": 393,
+  "completion_tokens": 83,
+  "total_tokens": 476
+ },
+ "raw_response": {
+  "id": "gen-1783410168-OXEp6KMSxg3DAEE4JvTU",
+  "object": "chat.completion",
+  "created": 1783410168,
+  "model": "qwen/qwen3-vl-235b-a22b-instruct",
+  "provider": "DeepInfra",
+  "system_fingerprint": null,
+  "service_tier": null,
+  "choices": [
+   {
+    "index": 0,
+    "logprobs": null,
+    "finish_reason": "stop",
+    "native_finish_reason": "stop",
+    "message": {
+     "role": "assistant",
+     "content": "[{\"box_2d\": [774, 264, 805, 308], \"label\": \"clock\", \"confidence\": 0.98}, {\"box_2d\": [67, 175, 107, 223], \"label\": \"clock\", \"confidence\": 0.97}]",
+     "refusal": null,
+     "reasoning": null
+    }
+   }
+  ],
+  "usage": {
+   "prompt_tokens": 393,
+   "completion_tokens": 83,
+   "total_tokens": 476,
+   "cost": 0.00015164,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00015164,
+    "upstream_inference_prompt_cost": 7.86e-05,
+    "upstream_inference_completions_cost": 7.304e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   }
+  }
+ },
+ "ts": "2026-07-07T07:42:50.240760+00:00"
+}

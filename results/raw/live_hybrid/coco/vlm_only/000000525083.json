@@ -1,0 +1,128 @@
+{
+ "image": "000000525083.jpg",
+ "model": "qwen/qwen3-vl-235b-a22b-instruct",
+ "labels": [
+  "microwave",
+  "refrigerator",
+  "sink",
+  "oven",
+  "scissors",
+  "teddy bear",
+  "toothbrush"
+ ],
+ "detections": [
+  {
+   "box_2d": [
+    93.44,
+    221.276,
+    150.4,
+    259.796
+   ],
+   "label": "microwave",
+   "score": 0.99
+  },
+  {
+   "box_2d": [
+    183.04,
+    168.204,
+    226.56,
+    344.54
+   ],
+   "label": "refrigerator",
+   "score": 0.99
+  },
+  {
+   "box_2d": [
+    0.0,
+    288.472,
+    43.52,
+    313.724
+   ],
+   "label": "sink",
+   "score": 0.99
+  },
+  {
+   "box_2d": [
+    83.2,
+    287.188,
+    129.28,
+    427.144
+   ],
+   "label": "oven",
+   "score": 0.99
+  },
+  {
+   "box_2d": [
+    7.68,
+    235.4,
+    38.4,
+    289.328
+   ],
+   "label": "scissors",
+   "score": 0.99
+  },
+  {
+   "box_2d": [
+    308.48,
+    233.26,
+    342.4,
+    254.66
+   ],
+   "label": "teddy bear",
+   "score": 0.99
+  }
+ ],
+ "latency_sec": 8.795829099995899,
+ "usage": {
+  "prompt_tokens": 352,
+  "completion_tokens": 260,
+  "total_tokens": 612
+ },
+ "raw_response": {
+  "id": "gen-1783414883-5JD9BBFsYOyLeZRFKVrc",
+  "object": "chat.completion",
+  "created": 1783414883,
+  "model": "qwen/qwen3-vl-235b-a22b-instruct",
+  "provider": "Novita",
+  "system_fingerprint": null,
+  "service_tier": null,
+  "choices": [
+   {
+    "index": 0,
+    "logprobs": null,
+    "finish_reason": "stop",
+    "native_finish_reason": "stop",
+    "message": {
+     "role": "assistant",
+     "content": "```json\n[\n\t{\"bbox_2d\": [146, 517, 235, 607], \"label\": \"microwave\", \"confidence\": 0.99},\n\t{\"bbox_2d\": [286, 393, 354, 805], \"label\": \"refrigerator\", \"confidence\": 0.99},\n\t{\"bbox_2d\": [0, 674, 68, 733], \"label\": \"sink\", \"confidence\": 0.99},\n\t{\"bbox_2d\": [130, 671, 202, 998], \"label\": \"oven\", \"confidence\": 0.99},\n\t{\"bbox_2d\": [12, 550, 60, 676], \"label\": \"scissors\", \"confidence\": 0.99},\n\t{\"bbox_2d\": [482, 545, 535, 595], \"label\": \"teddy bear\", \"confidence\": 0.99}\n]\n```",
+     "refusal": null,
+     "reasoning": null
+    }
+   }
+  ],
+  "usage": {
+   "prompt_tokens": 352,
+   "completion_tokens": 260,
+   "total_tokens": 612,
+   "cost": 0.0004956,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0004956,
+    "upstream_inference_prompt_cost": 0.0001056,
+    "upstream_inference_completions_cost": 0.00039
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   }
+  }
+ },
+ "ts": "2026-07-07T09:01:29.596602+00:00"
+}

@@ -1,0 +1,106 @@
+{
+  "model": "gpt-5",
+  "strategy": "single_query",
+  "image": "/home/maxim/PycharmProjects/zero-shot-detection-benchmark/data/raw/coco2017/val2017/000000348012.jpg",
+  "labels": [
+    "scissors",
+    "clock",
+    "hair drier",
+    "microwave",
+    "oven",
+    "refrigerator",
+    "vase"
+  ],
+  "detections": [
+    {
+      "box_2d": [
+        80,
+        25,
+        635,
+        215
+      ],
+      "label": "scissors",
+      "confidence": 0.97
+    }
+  ],
+  "latency_sec": 18.921120179991703,
+  "raw_response": {
+    "id": "resp_044bfa331ca1eee700691c386daf848198ab1572d7859a3f34",
+    "created_at": 1763457133.0,
+    "error": null,
+    "incomplete_details": null,
+    "instructions": null,
+    "metadata": {},
+    "model": "gpt-5-2025-08-07",
+    "object": "response",
+    "output": [
+      {
+        "id": "rs_044bfa331ca1eee700691c386e61dc819893b2ab2e99be0110",
+        "summary": [],
+        "type": "reasoning",
+        "content": null,
+        "encrypted_content": null,
+        "status": null
+      },
+      {
+        "id": "msg_044bfa331ca1eee700691c387ef4e08198ae07696a9823b7b8",
+        "content": [
+          {
+            "annotations": [],
+            "text": "[\n  {\"box_2d\": [80, 25, 635, 215], \"label\": \"scissors\", \"confidence\": 0.97}\n]",
+            "type": "output_text",
+            "logprobs": []
+          }
+        ],
+        "role": "assistant",
+        "status": "completed",
+        "type": "message"
+      }
+    ],
+    "parallel_tool_calls": true,
+    "temperature": 1.0,
+    "tool_choice": "auto",
+    "tools": [],
+    "top_p": 1.0,
+    "background": false,
+    "conversation": null,
+    "max_output_tokens": 16192,
+    "max_tool_calls": null,
+    "previous_response_id": null,
+    "prompt": null,
+    "prompt_cache_key": null,
+    "prompt_cache_retention": null,
+    "reasoning": {
+      "effort": "medium",
+      "generate_summary": null,
+      "summary": null
+    },
+    "safety_identifier": null,
+    "service_tier": "default",
+    "status": "completed",
+    "text": {
+      "format": {
+        "type": "text"
+      },
+      "verbosity": "medium"
+    },
+    "top_logprobs": 0,
+    "truncation": "disabled",
+    "usage": {
+      "input_tokens": 432,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 682,
+      "output_tokens_details": {
+        "reasoning_tokens": 640
+      },
+      "total_tokens": 1114
+    },
+    "user": null,
+    "billing": {
+      "payer": "developer"
+    },
+    "store": true
+  }
+}

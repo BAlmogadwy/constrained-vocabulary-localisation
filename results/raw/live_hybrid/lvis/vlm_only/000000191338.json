@@ -1,0 +1,76 @@
+{
+ "image": "000000191338.jpg",
+ "model": "qwen/qwen3-vl-235b-a22b-instruct",
+ "labels": [
+  "coffee_maker",
+  "hair_dryer",
+  "musical_instrument",
+  "sewing_machine",
+  "stapler_(stapling_machine)"
+ ],
+ "detections": [
+  {
+   "box_2d": [
+    485.76,
+    63.048,
+    622.08,
+    245.376
+   ],
+   "label": "coffee_maker",
+   "score": 0.98
+  }
+ ],
+ "latency_sec": 2.9577991999976803,
+ "usage": {
+  "prompt_tokens": 358,
+  "completion_tokens": 44,
+  "total_tokens": 402
+ },
+ "raw_response": {
+  "id": "gen-1783407617-HMbibyTLFhzghVV2hfct",
+  "object": "chat.completion",
+  "created": 1783407617,
+  "model": "qwen/qwen3-vl-235b-a22b-instruct",
+  "provider": "Venice",
+  "system_fingerprint": null,
+  "service_tier": null,
+  "choices": [
+   {
+    "index": 0,
+    "logprobs": null,
+    "finish_reason": "stop",
+    "native_finish_reason": "stop",
+    "message": {
+     "role": "assistant",
+     "content": "[{\"box_2d\": [759, 148, 972, 576], \"label\": \"coffee_maker\", \"confidence\": 0.98}]",
+     "refusal": null,
+     "reasoning": null
+    }
+   }
+  ],
+  "usage": {
+   "prompt_tokens": 358,
+   "completion_tokens": 44,
+   "total_tokens": 402,
+   "cost": 0.00015702,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 16,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00015702,
+    "upstream_inference_prompt_cost": 7.342e-05,
+    "upstream_inference_completions_cost": 8.36e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   }
+  }
+ },
+ "ts": "2026-07-07T07:00:18.357171+00:00"
+}

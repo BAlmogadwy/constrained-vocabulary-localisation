@@ -1,0 +1,73 @@
+{
+  "image": "/home/maxim/PycharmProjects/zero-shot-detection-benchmark/data/subsets/lvis_v1_val_unseen/images/000000224242.jpg",
+  "image_id": 224242,
+  "file_name": "000000224242.jpg",
+  "num_crops": 2,
+  "crops": [
+    {
+      "annotation_id": 196190,
+      "bbox": [
+        257.9,
+        392.84,
+        157.17,
+        29.97
+      ],
+      "category_id": 976,
+      "gt_label": "snowboard",
+      "labels": [
+        "snowboard",
+        "lawn_mower",
+        "microscope",
+        "sewing_machine",
+        "stapler_(stapling_machine)"
+      ],
+      "prediction": "snowboard",
+      "normalized_prediction": "snowboard",
+      "matched_label": "snowboard",
+      "correct": true,
+      "latency_sec": 5.079412313993089,
+      "raw_response": {
+        "snowboard": "[{\"box_2d\":[0,0,159,31],\"label\":\"snowboard\"}]",
+        "lawn_mower": "[]",
+        "lawn_mower_norm": "[{\"box_norm\":[0.0,0.0,0.0,0.0],\"label\":\"lawn_mower\"}]",
+        "microscope": "[{\"box_2d\":[0,0,159,31],\"label\":\"microscope\"}]",
+        "sewing_machine": "[]",
+        "sewing_machine_norm": "[{\"box_norm\":[0.0,0.0,0.0,0.0],\"label\":\"sewing_machine\"}]",
+        "stapler_(stapling_machine)": "[]",
+        "stapler_(stapling_machine)_norm": "[{\"box_norm\":[0.0,0.0,0.5,0.5],\"label\":\"stapler_(stapling_machine)\"}]"
+      }
+    },
+    {
+      "annotation_id": 196191,
+      "bbox": [
+        405.0,
+        380.6,
+        177.72,
+        19.43
+      ],
+      "category_id": 976,
+      "gt_label": "snowboard",
+      "labels": [
+        "snowboard",
+        "lawn_mower",
+        "microscope",
+        "sewing_machine",
+        "stapler_(stapling_machine)"
+      ],
+      "prediction": "snowboard",
+      "normalized_prediction": "snowboard",
+      "matched_label": "snowboard",
+      "correct": true,
+      "latency_sec": 4.2197795739921276,
+      "raw_response": {
+        "snowboard": "[{\"box_2d\":[0,0,178,21],\"label\":\"snowboard\"}]",
+        "lawn_mower": "[{\"box_2d\":[0,0,178,21],\"label\":\"lawn_mower\"}]",
+        "microscope": "[{\"box_2d\":[0,0,178,21],\"label\":\"microscope\"}]",
+        "sewing_machine": "[]",
+        "sewing_machine_norm": "[{\"box_norm\":[0.0,0.0,0.0,0.0],\"label\":\"sewing_machine\"}]",
+        "stapler_(stapling_machine)": "[{\"box_2d\":[0,0,178,21],\"label\":\"stapler_(stapling_machine)\"}]"
+      }
+    }
+  ],
+  "prompt": "You are an object recognition assistant.\n\nYou will see a cropped image that contains exactly one object\nfrom the following LVIS categories (unseen split):\n\n- snowboard\n- lawn_mower\n- microscope\n- sewing_machine\n- stapler_(stapling_machine)\n\nYour task:\n- Return ONLY the best matching category name from this list.\n- Do not output explanations or extra text.\n\nAnswer with a single string: \"class_name\"."
+}

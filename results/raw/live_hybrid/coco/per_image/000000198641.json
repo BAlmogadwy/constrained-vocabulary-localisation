@@ -1,0 +1,232 @@
+{
+ "image": "000000198641.jpg",
+ "labels": [
+  "clock",
+  "microwave",
+  "scissors",
+  "sink",
+  "teddy bear",
+  "toothbrush",
+  "vase"
+ ],
+ "tau": 0.4,
+ "detector": {
+  "detections": [
+   {
+    "label": "teddy bear",
+    "box": [
+     187.7388916015625,
+     190.5753173828125,
+     496.33221435546875,
+     422.931884765625
+    ],
+    "score": 0.04428898170590401
+   },
+   {
+    "label": "microwave",
+    "box": [
+     0.0,
+     111.37908935546875,
+     109.72169494628906,
+     395.8351135253906
+    ],
+    "score": 0.016575368121266365
+   },
+   {
+    "label": "microwave",
+    "box": [
+     410.28759765625,
+     180.40374755859375,
+     598.4212646484375,
+     370.71759033203125
+    ],
+    "score": 0.012112115509808064
+   },
+   {
+    "label": "clock",
+    "box": [
+     571.74072265625,
+     268.89990234375,
+     607.3594970703125,
+     308.3570556640625
+    ],
+    "score": 0.005748684052377939
+   },
+   {
+    "label": "clock",
+    "box": [
+     303.02197265625,
+     71.97205352783203,
+     337.267822265625,
+     115.65108489990234
+    ],
+    "score": 0.0032755781430751085
+   },
+   {
+    "label": "microwave",
+    "box": [
+     95.31207275390625,
+     110.58504486083984,
+     383.3354187011719,
+     322.4332580566406
+    ],
+    "score": 0.0015313209732994437
+   },
+   {
+    "label": "teddy bear",
+    "box": [
+     302.79742431640625,
+     71.99925231933594,
+     337.11358642578125,
+     116.38566589355469
+    ],
+    "score": 0.0010377709986642003
+   }
+  ],
+  "latency_sec": 0.07719459998770617
+ },
+ "detector_max_score": 0.04428898170590401,
+ "escalated": true,
+ "vlm": {
+  "model": "qwen/qwen3-vl-235b-a22b-instruct",
+  "detections": [
+   {
+    "label": "clock",
+    "box": [
+     569.6,
+     271.593,
+     608.0,
+     307.039
+    ],
+    "score": 1.0
+   }
+  ],
+  "latency_sec": 3.821994199999608,
+  "usage": {
+   "prompt_tokens": 392,
+   "completion_tokens": 49,
+   "total_tokens": 441
+  },
+  "raw_response": {
+   "id": "gen-1783409040-E9eCiEsJtQ4CkKO6tCEZ",
+   "object": "chat.completion",
+   "created": 1783409040,
+   "model": "qwen/qwen3-vl-235b-a22b-instruct",
+   "provider": "Alibaba",
+   "system_fingerprint": null,
+   "service_tier": null,
+   "choices": [
+    {
+     "index": 0,
+     "logprobs": null,
+     "finish_reason": "stop",
+     "native_finish_reason": "stop",
+     "message": {
+      "role": "assistant",
+      "content": "```json\n[\n\t{\"bbox_2d\": [890, 567, 950, 641], \"label\": \"clock\", \"confidence\": 0.95}\n]\n```",
+      "refusal": null,
+      "reasoning": null
+     }
+    }
+   ],
+   "usage": {
+    "prompt_tokens": 392,
+    "completion_tokens": 49,
+    "total_tokens": 441,
+    "cost": 0.00015288,
+    "is_byok": false,
+    "prompt_tokens_details": {
+     "cached_tokens": 0,
+     "cache_write_tokens": 0,
+     "audio_tokens": 0,
+     "video_tokens": 0
+    },
+    "cost_details": {
+     "upstream_inference_cost": 0.00015288,
+     "upstream_inference_prompt_cost": 0.00010192,
+     "upstream_inference_completions_cost": 5.096e-05
+    },
+    "completion_tokens_details": {
+     "reasoning_tokens": 0,
+     "image_tokens": 0,
+     "audio_tokens": 0
+    }
+   }
+  }
+ },
+ "fallback": false,
+ "ts": "2026-07-07T07:23:58.821584+00:00",
+ "fused": [
+  {
+   "label": "teddy bear",
+   "box": [
+    187.7388916015625,
+    190.5753173828125,
+    496.33221435546875,
+    422.931884765625
+   ],
+   "score": 0.04428898170590401
+  },
+  {
+   "label": "microwave",
+   "box": [
+    0.0,
+    111.37908935546875,
+    109.72169494628906,
+    395.8351135253906
+   ],
+   "score": 0.016575368121266365
+  },
+  {
+   "label": "microwave",
+   "box": [
+    410.28759765625,
+    180.40374755859375,
+    598.4212646484375,
+    370.71759033203125
+   ],
+   "score": 0.012112115509808064
+  },
+  {
+   "label": "clock",
+   "box": [
+    571.74072265625,
+    268.89990234375,
+    607.3594970703125,
+    308.3570556640625
+   ],
+   "score": 0.30574868405237793
+  },
+  {
+   "label": "clock",
+   "box": [
+    303.02197265625,
+    71.97205352783203,
+    337.267822265625,
+    115.65108489990234
+   ],
+   "score": 0.0032755781430751085
+  },
+  {
+   "label": "microwave",
+   "box": [
+    95.31207275390625,
+    110.58504486083984,
+    383.3354187011719,
+    322.4332580566406
+   ],
+   "score": 0.0015313209732994437
+  },
+  {
+   "label": "teddy bear",
+   "box": [
+    302.79742431640625,
+    71.99925231933594,
+    337.11358642578125,
+    116.38566589355469
+   ],
+   "score": 0.0010377709986642003
+  }
+ ],
+ "latency_total_sec": 3.899216299992986
+}

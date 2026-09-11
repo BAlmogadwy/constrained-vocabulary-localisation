@@ -1,0 +1,33 @@
+{
+  "image": "/home/maxim/PycharmProjects/zero-shot-detection-benchmark/data/subsets/lvis_v1_val_unseen/images/000000171622.jpg",
+  "image_id": 171622,
+  "file_name": "000000171622.jpg",
+  "num_crops": 1,
+  "crops": [
+    {
+      "annotation_id": 74451,
+      "bbox": [
+        79.82,
+        354.98,
+        197.58,
+        21.38
+      ],
+      "category_id": 976,
+      "gt_label": "snowboard",
+      "labels": [
+        "snowboard",
+        "hair_dryer",
+        "microscope",
+        "sewing_machine",
+        "spatula"
+      ],
+      "prediction": null,
+      "normalized_prediction": "",
+      "matched_label": null,
+      "correct": false,
+      "latency_sec": 5.458602800004883,
+      "raw_response": "```json\n[\n  {\"box_2d\": [0, 0, 49, 99], \"snowboard\"}\n]\n```"
+    }
+  ],
+  "prompt": "You are an object recognition assistant.\n\nYou will see a cropped image that contains exactly one object\nfrom the following LVIS categories (unseen split):\n\n- snowboard\n- hair_dryer\n- microscope\n- sewing_machine\n- spatula\n\nYour task:\n- Return ONLY the best matching category name from this list.\n- Do not output explanations or extra text.\n\nAnswer with a single string: \"class_name\"."
+}

@@ -1,0 +1,126 @@
+{
+ "image": "000000134703.jpg",
+ "model": "qwen/qwen3-vl-235b-a22b-instruct",
+ "labels": [
+  "snowboard",
+  "hair_dryer",
+  "microscope",
+  "musical_instrument",
+  "stapler_(stapling_machine)"
+ ],
+ "detections": [
+  {
+   "box_2d": [
+    0.0,
+    218.88,
+    39.68,
+    225.12
+   ],
+   "label": "snowboard",
+   "score": 0.99
+  },
+  {
+   "box_2d": [
+    76.16,
+    218.88,
+    96.64,
+    225.12
+   ],
+   "label": "snowboard",
+   "score": 0.99
+  },
+  {
+   "box_2d": [
+    152.32,
+    223.2,
+    174.72,
+    228.0
+   ],
+   "label": "snowboard",
+   "score": 0.99
+  },
+  {
+   "box_2d": [
+    199.68,
+    216.96,
+    211.2,
+    220.8
+   ],
+   "label": "snowboard",
+   "score": 0.99
+  },
+  {
+   "box_2d": [
+    227.84,
+    207.84,
+    238.72,
+    210.72
+   ],
+   "label": "snowboard",
+   "score": 0.99
+  },
+  {
+   "box_2d": [
+    270.08,
+    276.0,
+    288.0,
+    280.8
+   ],
+   "label": "snowboard",
+   "score": 0.99
+  }
+ ],
+ "latency_sec": 7.740057100003469,
+ "usage": {
+  "prompt_tokens": 397,
+  "completion_tokens": 262,
+  "total_tokens": 659
+ },
+ "raw_response": {
+  "id": "gen-1783407439-ESEOOn8Xo0GabT1jHXZM",
+  "object": "chat.completion",
+  "created": 1783407439,
+  "model": "qwen/qwen3-vl-235b-a22b-instruct",
+  "provider": "Parasail",
+  "system_fingerprint": null,
+  "service_tier": null,
+  "choices": [
+   {
+    "index": 0,
+    "logprobs": null,
+    "finish_reason": "stop",
+    "native_finish_reason": "stop",
+    "message": {
+     "role": "assistant",
+     "content": "```json\n[\n\t{\"bbox_2d\": [0, 456, 62, 469], \"label\": \"snowboard\", \"confidence\": 0.99},\n\t{\"bbox_2d\": [119, 456, 151, 469], \"label\": \"snowboard\", \"confidence\": 0.99},\n\t{\"bbox_2d\": [238, 465, 273, 475], \"label\": \"snowboard\", \"confidence\": 0.99},\n\t{\"bbox_2d\": [312, 452, 330, 460], \"label\": \"snowboard\", \"confidence\": 0.99},\n\t{\"bbox_2d\": [356, 433, 373, 439], \"label\": \"snowboard\", \"confidence\": 0.99},\n\t{\"bbox_2d\": [422, 575, 450, 585], \"label\": \"snowboard\", \"confidence\": 0.99}\n]\n```",
+     "refusal": null,
+     "reasoning": null
+    }
+   }
+  ],
+  "usage": {
+   "prompt_tokens": 397,
+   "completion_tokens": 262,
+   "total_tokens": 659,
+   "cost": 0.00058117,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00058117,
+    "upstream_inference_prompt_cost": 8.337e-05,
+    "upstream_inference_completions_cost": 0.0004978
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   }
+  }
+ },
+ "ts": "2026-07-07T06:57:25.032563+00:00"
+}

@@ -1,0 +1,77 @@
+{
+  "image": "/home/maxim/PycharmProjects/zero-shot-detection-benchmark/data/subsets/lvis_v1_val_unseen/images/000000463715.jpg",
+  "image_id": 463715,
+  "file_name": "000000463715.jpg",
+  "num_crops": 2,
+  "crops": [
+    {
+      "annotation_id": 148483,
+      "bbox": [
+        101.44,
+        309.45,
+        273.07,
+        46.25
+      ],
+      "category_id": 976,
+      "gt_label": "snowboard",
+      "labels": [
+        "snowboard",
+        "hair_dryer",
+        "lawn_mower",
+        "microscope",
+        "musical_instrument"
+      ],
+      "prediction": "snowboard",
+      "normalized_prediction": "snowboard",
+      "matched_label": "snowboard",
+      "correct": true,
+      "latency_sec": 0.14423079701373354,
+      "raw_response": {
+        "prediction": "snowboard",
+        "raw_response": "USER:  \nYou are an object recognition assistant.\n\nYou will see a cropped image that contains exactly one object\nfrom the following LVIS categories (unseen split):\n\n- snowboard\n- hair_dryer\n- lawn_mower\n- microscope\n- musical_instrument\n\nYour task:\n- Return ONLY the best matching category name from this list.\n- Do not output explanations or extra text.\n\nAnswer with a single string: \"class_name\".\nASSISTANT: snowboard ",
+        "labels": [
+          "snowboard",
+          "hair_dryer",
+          "lawn_mower",
+          "microscope",
+          "musical_instrument"
+        ]
+      }
+    },
+    {
+      "annotation_id": 148484,
+      "bbox": [
+        549.11,
+        380.14,
+        47.42,
+        43.99
+      ],
+      "category_id": 976,
+      "gt_label": "snowboard",
+      "labels": [
+        "snowboard",
+        "hair_dryer",
+        "lawn_mower",
+        "microscope",
+        "musical_instrument"
+      ],
+      "prediction": "class_name\".",
+      "normalized_prediction": "class name",
+      "matched_label": null,
+      "correct": false,
+      "latency_sec": 0.19989124001585878,
+      "raw_response": {
+        "prediction": "class_name\".",
+        "raw_response": "USER:  \nYou are an object recognition assistant.\n\nYou will see a cropped image that contains exactly one object\nfrom the following LVIS categories (unseen split):\n\n- snowboard\n- hair_dryer\n- lawn_mower\n- microscope\n- musical_instrument\n\nYour task:\n- Return ONLY the best matching category name from this list.\n- Do not output explanations or extra text.\n\nAnswer with a single string: \"class_name\".\nASSISTANT: \"class_name\". ",
+        "labels": [
+          "snowboard",
+          "hair_dryer",
+          "lawn_mower",
+          "microscope",
+          "musical_instrument"
+        ]
+      }
+    }
+  ],
+  "prompt": "You are an object recognition assistant.\n\nYou will see a cropped image that contains exactly one object\nfrom the following LVIS categories (unseen split):\n\n- snowboard\n- hair_dryer\n- lawn_mower\n- microscope\n- musical_instrument\n\nYour task:\n- Return ONLY the best matching category name from this list.\n- Do not output explanations or extra text.\n\nAnswer with a single string: \"class_name\"."
+}

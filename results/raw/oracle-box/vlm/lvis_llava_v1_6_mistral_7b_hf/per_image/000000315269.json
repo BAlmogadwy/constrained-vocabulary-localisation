@@ -1,0 +1,77 @@
+{
+  "image": "/home/maxim/PycharmProjects/zero-shot-detection-benchmark/data/subsets/lvis_v1_val_unseen/images/000000315269.jpg",
+  "image_id": 315269,
+  "file_name": "000000315269.jpg",
+  "num_crops": 2,
+  "crops": [
+    {
+      "annotation_id": 128280,
+      "bbox": [
+        164.07,
+        16.07,
+        69.7,
+        56.66
+      ],
+      "category_id": 976,
+      "gt_label": "snowboard",
+      "labels": [
+        "snowboard",
+        "blender",
+        "coffee_maker",
+        "sewing_machine",
+        "spatula"
+      ],
+      "prediction": "snowboard",
+      "normalized_prediction": "snowboard",
+      "matched_label": "snowboard",
+      "correct": true,
+      "latency_sec": 0.17242512499797158,
+      "raw_response": {
+        "prediction": "snowboard",
+        "raw_response": "USER:  \nYou are an object recognition assistant.\n\nYou will see a cropped image that contains exactly one object\nfrom the following LVIS categories (unseen split):\n\n- snowboard\n- blender\n- coffee_maker\n- sewing_machine\n- spatula\n\nYour task:\n- Return ONLY the best matching category name from this list.\n- Do not output explanations or extra text.\n\nAnswer with a single string: \"class_name\".\nASSISTANT: snowboard ",
+        "labels": [
+          "snowboard",
+          "blender",
+          "coffee_maker",
+          "sewing_machine",
+          "spatula"
+        ]
+      }
+    },
+    {
+      "annotation_id": 128281,
+      "bbox": [
+        100.89,
+        134.67,
+        131.81,
+        18.63
+      ],
+      "category_id": 976,
+      "gt_label": "snowboard",
+      "labels": [
+        "snowboard",
+        "blender",
+        "coffee_maker",
+        "sewing_machine",
+        "spatula"
+      ],
+      "prediction": "coffee_maker",
+      "normalized_prediction": "coffee maker",
+      "matched_label": "coffee_maker",
+      "correct": false,
+      "latency_sec": 0.20990623100078665,
+      "raw_response": {
+        "prediction": "coffee_maker",
+        "raw_response": "USER:  \nYou are an object recognition assistant.\n\nYou will see a cropped image that contains exactly one object\nfrom the following LVIS categories (unseen split):\n\n- snowboard\n- blender\n- coffee_maker\n- sewing_machine\n- spatula\n\nYour task:\n- Return ONLY the best matching category name from this list.\n- Do not output explanations or extra text.\n\nAnswer with a single string: \"class_name\".\nASSISTANT: \"coffee_maker\" ",
+        "labels": [
+          "snowboard",
+          "blender",
+          "coffee_maker",
+          "sewing_machine",
+          "spatula"
+        ]
+      }
+    }
+  ],
+  "prompt": "You are an object recognition assistant.\n\nYou will see a cropped image that contains exactly one object\nfrom the following LVIS categories (unseen split):\n\n- snowboard\n- blender\n- coffee_maker\n- sewing_machine\n- spatula\n\nYour task:\n- Return ONLY the best matching category name from this list.\n- Do not output explanations or extra text.\n\nAnswer with a single string: \"class_name\"."
+}

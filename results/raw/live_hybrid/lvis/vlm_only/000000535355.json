@@ -1,0 +1,86 @@
+{
+ "image": "000000535355.jpg",
+ "model": "qwen/qwen3-vl-235b-a22b-instruct",
+ "labels": [
+  "spatula",
+  "lawn_mower",
+  "musical_instrument",
+  "sewing_machine",
+  "stapler_(stapling_machine)"
+ ],
+ "detections": [
+  {
+   "box_2d": [
+    108.8,
+    74.624,
+    313.6,
+    153.488
+   ],
+   "label": "spatula",
+   "score": 0.98
+  },
+  {
+   "box_2d": [
+    0.0,
+    74.624,
+    90.88,
+    206.064
+   ],
+   "label": "spatula",
+   "score": 0.97
+  }
+ ],
+ "latency_sec": 4.364161999998032,
+ "usage": {
+  "prompt_tokens": 357,
+  "completion_tokens": 93,
+  "total_tokens": 450
+ },
+ "raw_response": {
+  "id": "gen-1783408528-UFL7N5pQkH9jdpAny3S5",
+  "object": "chat.completion",
+  "created": 1783408528,
+  "model": "qwen/qwen3-vl-235b-a22b-instruct",
+  "provider": "Novita",
+  "system_fingerprint": null,
+  "service_tier": null,
+  "choices": [
+   {
+    "index": 0,
+    "logprobs": null,
+    "finish_reason": "stop",
+    "native_finish_reason": "stop",
+    "message": {
+     "role": "assistant",
+     "content": "```json\n[\n\t{\"bbox_2d\": [170, 176, 490, 362], \"label\": \"spatula\", \"confidence\": 0.98},\n\t{\"bbox_2d\": [0, 176, 142, 486], \"label\": \"spatula\", \"confidence\": 0.97}\n]\n```",
+     "refusal": null,
+     "reasoning": null
+    }
+   }
+  ],
+  "usage": {
+   "prompt_tokens": 357,
+   "completion_tokens": 93,
+   "total_tokens": 450,
+   "cost": 0.0002466,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0002466,
+    "upstream_inference_prompt_cost": 0.0001071,
+    "upstream_inference_completions_cost": 0.0001395
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   }
+  }
+ },
+ "ts": "2026-07-07T07:15:29.545816+00:00"
+}

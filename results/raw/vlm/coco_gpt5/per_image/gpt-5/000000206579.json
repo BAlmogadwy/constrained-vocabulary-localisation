@@ -1,0 +1,116 @@
+{
+  "model": "gpt-5",
+  "strategy": "single_query",
+  "image": "/home/maxim/PycharmProjects/zero-shot-detection-benchmark/data/raw/coco2017/val2017/000000206579.jpg",
+  "labels": [
+    "book",
+    "clock",
+    "hair drier",
+    "oven",
+    "refrigerator",
+    "scissors",
+    "toaster"
+  ],
+  "detections": [
+    {
+      "box_2d": [
+        560,
+        255,
+        635,
+        325
+      ],
+      "label": "book",
+      "confidence": 0.55
+    },
+    {
+      "box_2d": [
+        10,
+        10,
+        170,
+        260
+      ],
+      "label": "refrigerator",
+      "confidence": 0.62
+    }
+  ],
+  "latency_sec": 25.299217961000977,
+  "raw_response": {
+    "id": "resp_09faf16fa853ef6200691c00e3e39081988f5f1e72f0cc8a1a",
+    "created_at": 1763442915.0,
+    "error": null,
+    "incomplete_details": null,
+    "instructions": null,
+    "metadata": {},
+    "model": "gpt-5-2025-08-07",
+    "object": "response",
+    "output": [
+      {
+        "id": "rs_09faf16fa853ef6200691c00e442708198a7b2ea6e3151e9a9",
+        "summary": [],
+        "type": "reasoning",
+        "content": null,
+        "encrypted_content": null,
+        "status": null
+      },
+      {
+        "id": "msg_09faf16fa853ef6200691c00f9ebe48198bad10e9f3283f863",
+        "content": [
+          {
+            "annotations": [],
+            "text": "[\n  {\"box_2d\": [560, 255, 635, 325], \"label\": \"book\", \"confidence\": 0.55},\n  {\"box_2d\": [10, 10, 170, 260], \"label\": \"refrigerator\", \"confidence\": 0.62}\n]",
+            "type": "output_text",
+            "logprobs": []
+          }
+        ],
+        "role": "assistant",
+        "status": "completed",
+        "type": "message"
+      }
+    ],
+    "parallel_tool_calls": true,
+    "temperature": 1.0,
+    "tool_choice": "auto",
+    "tools": [],
+    "top_p": 1.0,
+    "background": false,
+    "conversation": null,
+    "max_output_tokens": 16192,
+    "max_tool_calls": null,
+    "previous_response_id": null,
+    "prompt": null,
+    "prompt_cache_key": null,
+    "prompt_cache_retention": null,
+    "reasoning": {
+      "effort": "medium",
+      "generate_summary": null,
+      "summary": null
+    },
+    "safety_identifier": null,
+    "service_tier": "default",
+    "status": "completed",
+    "text": {
+      "format": {
+        "type": "text"
+      },
+      "verbosity": "medium"
+    },
+    "top_logprobs": 0,
+    "truncation": "disabled",
+    "usage": {
+      "input_tokens": 432,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 716,
+      "output_tokens_details": {
+        "reasoning_tokens": 640
+      },
+      "total_tokens": 1148
+    },
+    "user": null,
+    "billing": {
+      "payer": "developer"
+    },
+    "store": true
+  }
+}

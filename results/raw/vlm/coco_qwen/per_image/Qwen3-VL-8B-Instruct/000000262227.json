@@ -1,0 +1,54 @@
+{
+  "model": "Qwen3-VL-8B-Instruct",
+  "strategy": "single_query",
+  "image": "/home/maxim/PycharmProjects/zero-shot-detection-benchmark/data/raw/coco2017/val2017/000000262227.jpg",
+  "labels": [
+    "book",
+    "oven",
+    "sink",
+    "teddy bear",
+    "toaster",
+    "toothbrush",
+    "vase"
+  ],
+  "detections": [
+    {
+      "box_2d": [
+        805.0,
+        238.0,
+        855.0,
+        330.0
+      ],
+      "label": "book"
+    },
+    {
+      "box_2d": [
+        884.0,
+        231.0,
+        998.0,
+        328.0
+      ],
+      "label": "book"
+    },
+    {
+      "box_2d": [
+        862.0,
+        388.0,
+        927.0,
+        472.0
+      ],
+      "label": "book"
+    },
+    {
+      "box_2d": [
+        952.0,
+        388.0,
+        1000.0,
+        472.0
+      ],
+      "label": "book"
+    }
+  ],
+  "latency_sec": 9.458103233002475,
+  "raw_response": "user\nYou are an object detection assistant. Given the image and the list of target classes, return detections as JSON.\nTarget classes: book, oven, sink, teddy bear, toaster, toothbrush, vase.\nOutput format: [{\"box_2d\":[x1,y1,x2,y2],\"label\":\"class_name\"}...]\nUse pixel coordinates relative to the input image. Return JSON only.\nassistant\n```json\n[\n\t{\"box_2d\": [805, 238, 855, 330],\"label\":\"book\"},\n\t{\"box_2d\": [884, 231, 998, 328],\"label\":\"book\"},\n\t{\"box_2d\": [862, 388, 927, 472],\"label\":\"book\"},\n\t{\"box_2d\": [952, 388, 1000, 472],\"label\":\"book\"}\n]\n```"
+}

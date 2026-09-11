@@ -1,0 +1,43 @@
+{
+  "model": "Qwen3-VL-8B-Instruct",
+  "strategy": "single_query",
+  "image": "/home/maxim/PycharmProjects/zero-shot-detection-benchmark/data/subsets/lvis_v1_val_unseen/images/000000167486.jpg",
+  "labels": [
+    "blender",
+    "hair_dryer",
+    "musical_instrument",
+    "snowboard",
+    "spatula"
+  ],
+  "detections": [
+    {
+      "box_2d": [
+        2.0,
+        395.0,
+        335.0,
+        989.0
+      ],
+      "label": "blender"
+    },
+    {
+      "box_2d": [
+        717.0,
+        502.0,
+        758.0,
+        602.0
+      ],
+      "label": "musical_instrument"
+    },
+    {
+      "box_2d": [
+        700.0,
+        538.0,
+        744.0,
+        602.0
+      ],
+      "label": "musical_instrument"
+    }
+  ],
+  "latency_sec": 16.231941238045692,
+  "raw_response": "user\nYou are an object detection assistant. Given the image and the list of target classes, return detections as JSON.\nTarget classes: blender, hair_dryer, musical_instrument, snowboard, spatula.\nOutput format: [{\"box_2d\":[x1,y1,x2,y2],\"label\":\"class_name\"}...]\nUse pixel coordinates relative to the input image. Return JSON only.\nassistant\n```json\n[\n\t{\"box_2d\": [2, 395, 335, 989], \"label\": \"blender\"},\n\t{\"box_2d\": [717, 502, 758, 602], \"label\": \"musical_instrument\"},\n\t{\"box_2d\": [700, 538, 744, 602], \"label\": \"musical_instrument\"}\n]\n```"
+}

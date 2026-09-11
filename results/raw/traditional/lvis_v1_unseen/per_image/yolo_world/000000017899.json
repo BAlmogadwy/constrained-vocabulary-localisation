@@ -1,0 +1,50 @@
+{
+  "model": "yolo_world",
+  "strategy": "default",
+  "image": "/home/maxim/PycharmProjects/zero-shot-detection-benchmark/data/subsets/lvis_v1_val_unseen/images/000000017899.jpg",
+  "labels": [
+    "spatula",
+    "blender",
+    "coffee_maker",
+    "sewing_machine",
+    "snowboard"
+  ],
+  "result": {
+    "detections": [
+      {
+        "label": "coffee_maker",
+        "score": 0.5317128300666809,
+        "box_2d": [
+          442.77471923828125,
+          306.8309631347656,
+          480.0,
+          406.1210021972656
+        ],
+        "box": [
+          442.77471923828125,
+          306.8309631347656,
+          480.0,
+          406.1210021972656
+        ]
+      },
+      {
+        "label": "spatula",
+        "score": 0.34173887968063354,
+        "box_2d": [
+          167.68939208984375,
+          361.97222900390625,
+          220.8497314453125,
+          396.22723388671875
+        ],
+        "box": [
+          167.68939208984375,
+          361.97222900390625,
+          220.8497314453125,
+          396.22723388671875
+        ]
+      }
+    ],
+    "latency_sec": 0.03732434753328562,
+    "raw_response": null
+  }
+}

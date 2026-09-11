@@ -1,0 +1,96 @@
+{
+ "image": "000000228659.jpg",
+ "model": "qwen/qwen3-vl-235b-a22b-instruct",
+ "labels": [
+  "snowboard",
+  "musical_instrument",
+  "sewing_machine",
+  "spatula",
+  "stapler_(stapling_machine)"
+ ],
+ "detections": [
+  {
+   "box_2d": [
+    83.84,
+    268.92,
+    259.2,
+    286.92
+   ],
+   "label": "snowboard",
+   "score": 0.95
+  },
+  {
+   "box_2d": [
+    330.24,
+    237.96,
+    474.88,
+    254.16
+   ],
+   "label": "snowboard",
+   "score": 0.95
+  },
+  {
+   "box_2d": [
+    421.12,
+    262.08,
+    629.76,
+    277.92
+   ],
+   "label": "snowboard",
+   "score": 0.95
+  }
+ ],
+ "latency_sec": 10.428250799988746,
+ "usage": {
+  "prompt_tokens": 316,
+  "completion_tokens": 136,
+  "total_tokens": 452
+ },
+ "raw_response": {
+  "id": "gen-1783407737-81B2JIJM05HPWobvNhkh",
+  "object": "chat.completion",
+  "created": 1783407737,
+  "model": "qwen/qwen3-vl-235b-a22b-instruct",
+  "provider": "DeepInfra",
+  "system_fingerprint": null,
+  "service_tier": null,
+  "choices": [
+   {
+    "index": 0,
+    "logprobs": null,
+    "finish_reason": "stop",
+    "native_finish_reason": "stop",
+    "message": {
+     "role": "assistant",
+     "content": "```json\n[\n\t{\"bbox_2d\": [131, 747, 405, 797], \"label\": \"snowboard\", \"confidence\": 0.95},\n\t{\"bbox_2d\": [516, 661, 742, 706], \"label\": \"snowboard\", \"confidence\": 0.95},\n\t{\"bbox_2d\": [658, 728, 984, 772], \"label\": \"snowboard\", \"confidence\": 0.95}\n]\n```",
+     "refusal": null,
+     "reasoning": null
+    }
+   }
+  ],
+  "usage": {
+   "prompt_tokens": 316,
+   "completion_tokens": 136,
+   "total_tokens": 452,
+   "cost": 0.00018288,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00018288,
+    "upstream_inference_prompt_cost": 6.32e-05,
+    "upstream_inference_completions_cost": 0.00011968
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   }
+  }
+ },
+ "ts": "2026-07-07T07:02:25.784129+00:00"
+}

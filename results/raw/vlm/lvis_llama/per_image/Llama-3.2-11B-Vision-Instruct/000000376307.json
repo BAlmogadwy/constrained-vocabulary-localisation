@@ -1,0 +1,53 @@
+{
+  "model": "Llama-3.2-11B-Vision-Instruct",
+  "strategy": "single_query",
+  "image": "/home/maxim/PycharmProjects/zero-shot-detection-benchmark/data/subsets/lvis_v1_val_unseen/images/000000376307.jpg",
+  "labels": [
+    "blender",
+    "hair_dryer",
+    "lawn_mower",
+    "musical_instrument",
+    "sewing_machine"
+  ],
+  "detections": [
+    {
+      "box_2d": [
+        123,
+        245,
+        342,
+        384
+      ],
+      "label": "blender"
+    },
+    {
+      "box_2d": [
+        0,
+        0,
+        374,
+        499
+      ],
+      "label": "None"
+    },
+    {
+      "box_2d": [
+        0,
+        0,
+        375,
+        500
+      ],
+      "label": "none"
+    }
+  ],
+  "latency_sec": 13.05713705252856,
+  "raw_response": {
+    "blender": "[{\"box_2d\":[123, 245, 342, 384],\"label\":\"blender\"}]",
+    "hair_dryer": "[]",
+    "hair_dryer_norm": "[{\"box_norm\":[0.000,0.000,0.000,0.000],\"label\":\"hair_dryer\"}]",
+    "lawn_mower": "[]",
+    "lawn_mower_norm": "[{\"box_norm\":[0.000,0.000,0.000,0.000],\"label\":\"lawn_mower\"}]",
+    "musical_instrument": "[]",
+    "musical_instrument_norm": "[{\"box_norm\":[0.000,0.000,0.998,0.998],\"label\":\"None\"}]",
+    "sewing_machine": "[]",
+    "sewing_machine_norm": "[{\"box_norm\":[0.000,0.000,0.999,0.999],\"label\":\"none\"}]"
+  }
+}

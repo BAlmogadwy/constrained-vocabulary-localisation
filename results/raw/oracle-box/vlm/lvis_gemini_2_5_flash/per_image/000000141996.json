@@ -1,0 +1,129 @@
+{
+  "image": "/home/maxim/PycharmProjects/zero-shot-detection-benchmark/data/subsets/lvis_v1_val_unseen/images/000000141996.jpg",
+  "image_id": 141996,
+  "file_name": "000000141996.jpg",
+  "num_crops": 5,
+  "crops": [
+    {
+      "annotation_id": 136475,
+      "bbox": [
+        371.0,
+        344.17,
+        57.03,
+        25.04
+      ],
+      "category_id": 976,
+      "gt_label": "snowboard",
+      "labels": [
+        "snowboard",
+        "blender",
+        "lawn_mower",
+        "microscope",
+        "sewing_machine"
+      ],
+      "prediction": null,
+      "normalized_prediction": "",
+      "matched_label": null,
+      "correct": false,
+      "latency_sec": 1.1288060469960328,
+      "raw_response": "```json\n[]\n```"
+    },
+    {
+      "annotation_id": 136476,
+      "bbox": [
+        481.66,
+        337.5,
+        7.61,
+        1.2
+      ],
+      "category_id": 976,
+      "gt_label": "snowboard",
+      "labels": [
+        "snowboard",
+        "blender",
+        "lawn_mower",
+        "microscope",
+        "sewing_machine"
+      ],
+      "prediction": null,
+      "normalized_prediction": "",
+      "matched_label": null,
+      "correct": false,
+      "latency_sec": 1.2841763580217957,
+      "raw_response": "[]"
+    },
+    {
+      "annotation_id": 136477,
+      "bbox": [
+        342.78,
+        340.75,
+        58.65,
+        28.64
+      ],
+      "category_id": 976,
+      "gt_label": "snowboard",
+      "labels": [
+        "snowboard",
+        "blender",
+        "lawn_mower",
+        "microscope",
+        "sewing_machine"
+      ],
+      "prediction": null,
+      "normalized_prediction": "",
+      "matched_label": null,
+      "correct": false,
+      "latency_sec": 1.354418678994989,
+      "raw_response": "[]"
+    },
+    {
+      "annotation_id": 136478,
+      "bbox": [
+        293.16,
+        307.23,
+        5.4,
+        0.94
+      ],
+      "category_id": 976,
+      "gt_label": "snowboard",
+      "labels": [
+        "snowboard",
+        "blender",
+        "lawn_mower",
+        "microscope",
+        "sewing_machine"
+      ],
+      "prediction": null,
+      "normalized_prediction": "",
+      "matched_label": null,
+      "correct": false,
+      "latency_sec": 1.337944475992117,
+      "raw_response": "[]"
+    },
+    {
+      "annotation_id": 136479,
+      "bbox": [
+        272.16,
+        316.03,
+        6.48,
+        0.53
+      ],
+      "category_id": 976,
+      "gt_label": "snowboard",
+      "labels": [
+        "snowboard",
+        "blender",
+        "lawn_mower",
+        "microscope",
+        "sewing_machine"
+      ],
+      "prediction": null,
+      "normalized_prediction": "",
+      "matched_label": null,
+      "correct": false,
+      "latency_sec": 1.4985925749933813,
+      "raw_response": "[]"
+    }
+  ],
+  "prompt": "You are an object recognition assistant.\n\nYou will see a cropped image that contains exactly one object\nfrom the following LVIS categories (unseen split):\n\n- snowboard\n- blender\n- lawn_mower\n- microscope\n- sewing_machine\n\nYour task:\n- Return ONLY the best matching category name from this list.\n- Do not output explanations or extra text.\n\nAnswer with a single string: \"class_name\"."
+}

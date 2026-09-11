@@ -1,0 +1,81 @@
+{
+  "image": "/home/maxim/PycharmProjects/zero-shot-detection-benchmark/data/subsets/lvis_v1_val_unseen/images/000000192320.jpg",
+  "image_id": 192320,
+  "file_name": "000000192320.jpg",
+  "num_crops": 3,
+  "crops": [
+    {
+      "annotation_id": 222366,
+      "bbox": [
+        1.01,
+        234.81,
+        53.32,
+        60.07
+      ],
+      "category_id": 993,
+      "gt_label": "spatula",
+      "labels": [
+        "spatula",
+        "blender",
+        "lawn_mower",
+        "musical_instrument",
+        "snowboard"
+      ],
+      "prediction": "spatula",
+      "normalized_prediction": "spatula",
+      "matched_label": "spatula",
+      "correct": true,
+      "latency_sec": 1.5770279119897168,
+      "raw_response": "user\nYou are an object detection assistant. Given the image and the list of target classes, return detections as JSON.\nTarget classes: spatula, blender, lawn_mower, musical_instrument, snowboard.\nOutput format: [{\"box_2d\":[x1,y1,x2,y2],\"label\":\"class_name\"}...]\nUse pixel coordinates relative to the input image. Return JSON only.\nassistant\n```json\n[\n\t{\"box_2d\": [0, 437, 375, 987], \"label\": \"spatula\"}\n]\n```"
+    },
+    {
+      "annotation_id": 222367,
+      "bbox": [
+        12.69,
+        176.47,
+        73.29,
+        117.15
+      ],
+      "category_id": 993,
+      "gt_label": "spatula",
+      "labels": [
+        "spatula",
+        "blender",
+        "lawn_mower",
+        "musical_instrument",
+        "snowboard"
+      ],
+      "prediction": "spatula",
+      "normalized_prediction": "spatula",
+      "matched_label": "spatula",
+      "correct": true,
+      "latency_sec": 2.0236417860141955,
+      "raw_response": "user\nYou are an object detection assistant. Given the image and the list of target classes, return detections as JSON.\nTarget classes: spatula, blender, lawn_mower, musical_instrument, snowboard.\nOutput format: [{\"box_2d\":[x1,y1,x2,y2],\"label\":\"class_name\"}...]\nUse pixel coordinates relative to the input image. Return JSON only.\nassistant\n```json\n[\n\t{\"box_2d\":[0, 500, 600, 987],\"label\":\"spatula\"},\n\t{\"box_2d\":[600, 225, 999, 987],\"label\":\"spatula\"}\n]\n```"
+    },
+    {
+      "annotation_id": 222368,
+      "bbox": [
+        65.6,
+        148.73,
+        52.07,
+        61.23
+      ],
+      "category_id": 993,
+      "gt_label": "spatula",
+      "labels": [
+        "spatula",
+        "blender",
+        "lawn_mower",
+        "musical_instrument",
+        "snowboard"
+      ],
+      "prediction": "spatula",
+      "normalized_prediction": "spatula",
+      "matched_label": "spatula",
+      "correct": true,
+      "latency_sec": 1.4872866210062057,
+      "raw_response": "user\nYou are an object detection assistant. Given the image and the list of target classes, return detections as JSON.\nTarget classes: spatula, blender, lawn_mower, musical_instrument, snowboard.\nOutput format: [{\"box_2d\":[x1,y1,x2,y2],\"label\":\"class_name\"}...]\nUse pixel coordinates relative to the input image. Return JSON only.\nassistant\n```json\n[\n\t{\"box_2d\":[280, 580, 997, 997],\"label\":\"spatula\"}\n]\n```"
+    }
+  ],
+  "prompt": "You are an object recognition assistant.\n\nYou will see a cropped image that contains exactly one object\nfrom the following LVIS categories (unseen split):\n\n- spatula\n- blender\n- lawn_mower\n- musical_instrument\n- snowboard\n\nYour task:\n- Return ONLY the best matching category name from this list.\n- Do not output explanations or extra text.\n\nAnswer with a single string: \"class_name\"."
+}

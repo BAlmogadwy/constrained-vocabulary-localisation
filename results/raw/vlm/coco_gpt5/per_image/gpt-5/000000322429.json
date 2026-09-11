@@ -1,0 +1,146 @@
+{
+  "model": "gpt-5",
+  "strategy": "single_query",
+  "image": "/home/maxim/PycharmProjects/zero-shot-detection-benchmark/data/raw/coco2017/val2017/000000322429.jpg",
+  "labels": [
+    "vase",
+    "book",
+    "clock",
+    "microwave",
+    "scissors",
+    "sink",
+    "teddy bear"
+  ],
+  "detections": [
+    {
+      "box_2d": [
+        22,
+        515,
+        115,
+        630
+      ],
+      "label": "vase",
+      "confidence": 0.88
+    },
+    {
+      "box_2d": [
+        125,
+        565,
+        185,
+        620
+      ],
+      "label": "vase",
+      "confidence": 0.7
+    },
+    {
+      "box_2d": [
+        205,
+        505,
+        262,
+        610
+      ],
+      "label": "vase",
+      "confidence": 0.83
+    },
+    {
+      "box_2d": [
+        285,
+        560,
+        340,
+        620
+      ],
+      "label": "vase",
+      "confidence": 0.86
+    },
+    {
+      "box_2d": [
+        323,
+        165,
+        392,
+        222
+      ],
+      "label": "vase",
+      "confidence": 0.72
+    }
+  ],
+  "latency_sec": 68.44608262000838,
+  "raw_response": {
+    "id": "resp_02f7565172c3196f00691c2f5fe9d48199b6d7f04280a95cc9",
+    "created_at": 1763454815.0,
+    "error": null,
+    "incomplete_details": null,
+    "instructions": null,
+    "metadata": {},
+    "model": "gpt-5-2025-08-07",
+    "object": "response",
+    "output": [
+      {
+        "id": "rs_02f7565172c3196f00691c2f604d0881998c6b6ddfbe9f80e0",
+        "summary": [],
+        "type": "reasoning",
+        "content": null,
+        "encrypted_content": null,
+        "status": null
+      },
+      {
+        "id": "msg_02f7565172c3196f00691c2f9dde508199b0cbfb2cc4934632",
+        "content": [
+          {
+            "annotations": [],
+            "text": "[\n  {\"box_2d\": [22, 515, 115, 630], \"label\": \"vase\", \"confidence\": 0.88},\n  {\"box_2d\": [125, 565, 185, 620], \"label\": \"vase\", \"confidence\": 0.70},\n  {\"box_2d\": [205, 505, 262, 610], \"label\": \"vase\", \"confidence\": 0.83},\n  {\"box_2d\": [285, 560, 340, 620], \"label\": \"vase\", \"confidence\": 0.86},\n  {\"box_2d\": [323, 165, 392, 222], \"label\": \"vase\", \"confidence\": 0.72}\n]",
+            "type": "output_text",
+            "logprobs": []
+          }
+        ],
+        "role": "assistant",
+        "status": "completed",
+        "type": "message"
+      }
+    ],
+    "parallel_tool_calls": true,
+    "temperature": 1.0,
+    "tool_choice": "auto",
+    "tools": [],
+    "top_p": 1.0,
+    "background": false,
+    "conversation": null,
+    "max_output_tokens": 16192,
+    "max_tool_calls": null,
+    "previous_response_id": null,
+    "prompt": null,
+    "prompt_cache_key": null,
+    "prompt_cache_retention": null,
+    "reasoning": {
+      "effort": "medium",
+      "generate_summary": null,
+      "summary": null
+    },
+    "safety_identifier": null,
+    "service_tier": "default",
+    "status": "completed",
+    "text": {
+      "format": {
+        "type": "text"
+      },
+      "verbosity": "medium"
+    },
+    "top_logprobs": 0,
+    "truncation": "disabled",
+    "usage": {
+      "input_tokens": 431,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 2226,
+      "output_tokens_details": {
+        "reasoning_tokens": 2048
+      },
+      "total_tokens": 2657
+    },
+    "user": null,
+    "billing": {
+      "payer": "developer"
+    },
+    "store": true
+  }
+}

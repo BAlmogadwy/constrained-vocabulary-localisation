@@ -1,0 +1,104 @@
+{
+  "model": "llava-v1.6-mistral-7b-hf",
+  "strategy": "single_query",
+  "image": "/home/maxim/PycharmProjects/zero-shot-detection-benchmark/data/raw/coco2017/val2017/000000009483.jpg",
+  "labels": [
+    "microwave",
+    "oven",
+    "toaster",
+    "sink",
+    "refrigerator",
+    "book",
+    "clock",
+    "vase",
+    "scissors",
+    "teddy bear",
+    "hair drier",
+    "toothbrush"
+  ],
+  "detections": [
+    {
+      "box_2d": [
+        0.064,
+        0.108,
+        0.303,
+        0.988
+      ],
+      "label": "person"
+    },
+    {
+      "box_2d": [
+        0.453,
+        0.423,
+        0.653,
+        0.621
+      ],
+      "label": "chair"
+    },
+    {
+      "box_2d": [
+        0.453,
+        0.423,
+        0.653,
+        0.621
+      ],
+      "label": "green chair"
+    },
+    {
+      "box_2d": [
+        0.453,
+        0.423,
+        0.653,
+        0.621
+      ],
+      "label": "office chair"
+    },
+    {
+      "box_2d": [
+        0.453,
+        0.423,
+        0.653,
+        0.621
+      ],
+      "label": "office green chair"
+    },
+    {
+      "box_2d": [
+        0.453,
+        0.423,
+        0.653,
+        0.621
+      ],
+      "label": "office chair with green seat"
+    },
+    {
+      "box_2d": [
+        0.453,
+        0.423,
+        0.653,
+        0.621
+      ],
+      "label": "office green chair with green seat"
+    },
+    {
+      "box_2d": [
+        0.453,
+        0.423,
+        0.653,
+        0.621
+      ],
+      "label": "office chair with green seat and black frame"
+    },
+    {
+      "box_2d": [
+        0.453,
+        0.423,
+        0.653,
+        0.621
+      ],
+      "label": "office green chair with black frame"
+    }
+  ],
+  "latency_sec": 5.712112359000457,
+  "raw_response": "USER:  \nDetect the following objects in the image: microwave, oven, toaster, sink, refrigerator, book, clock, vase, scissors, teddy bear, hair drier, toothbrush. For each detected object, provide JSON entries in the form [{\"box_2d\": [x1, y1, x2, y2], \"label\": \"class_name\"}]. Return only JSON. ASSISTANT: ```json\n[\n  {\"box_2d\": [0.064,0.108,0.303,0.988], \"label\": \"person\"},\n  {\"box_2d\": [0.453,0.423,0.653,0.621], \"label\": \"chair\"},\n  {\"box_2d\": [0.453,0.423,0.653,0.621], \"label\": \"green chair\"},\n  {\"box_2d\": [0.453,0.423,0.653,0.621], \"label\": \"office chair\"},\n  {\"box_2d\": [0.453,0.423,0.653,0.621], \"label\": \"office green chair\"},\n  {\"box_2d\": [0.453,0.423,0.653,0.621], \"label\": \"office chair with green seat\"},\n  {\"box_2d\": [0.453,0.423,0.653,0.621], \"label\": \"office green chair with green seat\"},\n  {\"box_2d\": [0.453,0.423,0.653,0.621], \"label\": \"office chair with green seat and black frame\"},\n  {\"box_2d\": [0.453,0.423,0.653,0.621], \"label\": \"office green chair with black frame\"}\n]\n``` "
+}

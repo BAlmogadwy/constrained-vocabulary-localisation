@@ -1,0 +1,24 @@
+{
+  "model": "paligemma2-10b-mix-448",
+  "strategy": "iterative",
+  "image": "/home/maxim/PycharmProjects/zero-shot-detection-benchmark/data/subsets/lvis_v1_val_unseen/images/000000031113.jpg",
+  "labels": [
+    "hair_dryer",
+    "coffee_maker",
+    "lawn_mower",
+    "microscope",
+    "sewing_machine"
+  ],
+  "detections": [],
+  "latency_sec": 2.520018666051328,
+  "raw_response": {
+    "identification": "<start_of_turn>system\nYou are an object detection assistant. Return JSON only in the format [{\"box_2d\":[x1,y1,x2,y2],\"label\":\"class_name\"}] using integer pixel coordinates.\n<end_of_turn>\n<start_of_turn>user\n\nFrom the provided list of target classes, respond with the subset that appears in the image.\nTarget classes: hair_dryer, coffee_maker, lawn_mower, microscope, sewing_machine.\nUse comma-separated class names and keep the original spelling.\n<end_of_turn>\n<start_of_turn>model\n\nhair_dryer",
+    "localization": {
+      "coffee_maker": "<start_of_turn>system\nYou are an object detection assistant. Return JSON only in the format [{\"box_2d\":[x1,y1,x2,y2],\"label\":\"class_name\"}] using integer pixel coordinates.\n<end_of_turn>\n<start_of_turn>user\n\nProvide bounding boxes for 'coffee_maker'. Return JSON only in the form [{\"box_2d\":[x1,y1,x2,y2],\"label\":\"coffee_maker\"}...] using integer pixel coordinates. Return [] if the class is not present.\n<end_of_turn>\n<start_of_turn>model\n\nSorry, as a base VLM I am not trained to answer this question.",
+      "lawn_mower": "<start_of_turn>system\nYou are an object detection assistant. Return JSON only in the format [{\"box_2d\":[x1,y1,x2,y2],\"label\":\"class_name\"}] using integer pixel coordinates.\n<end_of_turn>\n<start_of_turn>user\n\nProvide bounding boxes for 'lawn_mower'. Return JSON only in the form [{\"box_2d\":[x1,y1,x2,y2],\"label\":\"lawn_mower\"}...] using integer pixel coordinates. Return [] if the class is not present.\n<end_of_turn>\n<start_of_turn>model\n\nSorry, as a base VLM I am not trained to answer this question.",
+      "microscope": "<start_of_turn>system\nYou are an object detection assistant. Return JSON only in the format [{\"box_2d\":[x1,y1,x2,y2],\"label\":\"class_name\"}] using integer pixel coordinates.\n<end_of_turn>\n<start_of_turn>user\n\nProvide bounding boxes for 'microscope'. Return JSON only in the form [{\"box_2d\":[x1,y1,x2,y2],\"label\":\"microscope\"}...] using integer pixel coordinates. Return [] if the class is not present.\n<end_of_turn>\n<start_of_turn>model\n\nSorry, as a base VLM I am not trained to answer this question.",
+      "sewing_machine": "<start_of_turn>system\nYou are an object detection assistant. Return JSON only in the format [{\"box_2d\":[x1,y1,x2,y2],\"label\":\"class_name\"}] using integer pixel coordinates.\n<end_of_turn>\n<start_of_turn>user\n\nProvide bounding boxes for 'sewing_machine'. Return JSON only in the form [{\"box_2d\":[x1,y1,x2,y2],\"label\":\"sewing_machine\"}...] using integer pixel coordinates. Return [] if the class is not present.\n<end_of_turn>\n<start_of_turn>model\n\nSorry, as a base VLM I am not trained to answer this question.",
+      "hair_dryer": "<start_of_turn>system\nYou are an object detection assistant. Return JSON only in the format [{\"box_2d\":[x1,y1,x2,y2],\"label\":\"class_name\"}] using integer pixel coordinates.\n<end_of_turn>\n<start_of_turn>user\n\nProvide bounding boxes for 'hair_dryer'. Return JSON only in the form [{\"box_2d\":[x1,y1,x2,y2],\"label\":\"hair_dryer\"}...] using integer pixel coordinates. Return [] if the class is not present.\n<end_of_turn>\n<start_of_turn>model\n\n idyllic"
+    }
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "model": "llava-v1.6-mistral-7b-hf",
+  "strategy": "single_query",
+  "image": "/home/maxim/PycharmProjects/zero-shot-detection-benchmark/data/subsets/lvis_v1_val_unseen/images/000000254599.jpg",
+  "labels": [
+    "snowboard",
+    "blender",
+    "coffee_maker",
+    "hair_dryer",
+    "spatula"
+  ],
+  "detections": [
+    {
+      "box_2d": [
+        0.188,
+        0.298,
+        0.33,
+        0.502
+      ],
+      "label": "class_name"
+    },
+    {
+      "box_2d": [
+        0.53,
+        0.342,
+        0.688,
+        0.892
+      ],
+      "label": "class_name"
+    }
+  ],
+  "latency_sec": 3.7863114960491657,
+  "raw_response": "USER:  \nDetect the following objects in the image: snowboard, blender, coffee_maker, hair_dryer, spatula. For each detected object, provide JSON entries in the form [{\"box_2d\": [x1, y1, x2, y2], \"label\": \"class_name\"}]. Return only JSON. ASSISTANT: ```json\n[\n  {\"box_2d\": [0.188,0.298,0.330,0.502], \"label\": \"class_name\"},\n  {\"box_2d\": [0.530,0.342,0.688,0.892], \"label\": \"class_name\"}\n]\n``` "
+}

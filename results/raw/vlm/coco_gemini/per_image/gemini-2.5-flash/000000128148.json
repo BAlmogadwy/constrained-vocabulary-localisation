@@ -1,0 +1,99 @@
+{
+  "model": "gemini-2.5-flash",
+  "strategy": "single_query",
+  "image": "/home/maxim/PycharmProjects/zero-shot-detection-benchmark/data/raw/coco2017/val2017/000000128148.jpg",
+  "labels": [
+    "book",
+    "hair drier",
+    "oven",
+    "refrigerator",
+    "teddy bear",
+    "toaster",
+    "vase"
+  ],
+  "detections": [
+    {
+      "box_2d": [
+        384,
+        153,
+        477,
+        237
+      ],
+      "label": "book"
+    },
+    {
+      "box_2d": [
+        447,
+        156,
+        513,
+        239
+      ],
+      "label": "book"
+    },
+    {
+      "box_2d": [
+        273,
+        149,
+        340,
+        232
+      ],
+      "label": "book"
+    },
+    {
+      "box_2d": [
+        332,
+        154,
+        396,
+        232
+      ],
+      "label": "book"
+    },
+    {
+      "box_2d": [
+        530,
+        313,
+        545,
+        346
+      ],
+      "label": "book"
+    },
+    {
+      "box_2d": [
+        566,
+        483,
+        597,
+        532
+      ],
+      "label": "book"
+    },
+    {
+      "box_2d": [
+        471,
+        307,
+        548,
+        386
+      ],
+      "label": "book"
+    },
+    {
+      "box_2d": [
+        566,
+        483,
+        597,
+        532
+      ],
+      "label": "vase"
+    },
+    {
+      "box_2d": [
+        390,
+        329,
+        471,
+        385
+      ],
+      "label": "oven"
+    }
+  ],
+  "latency_sec": 4.927114485006314,
+  "raw_response": "```json\n[\n  {\"box_2d\": [384, 153, 477, 237], \"label\": \"book\"},\n  {\"box_2d\": [447, 156, 513, 239], \"label\": \"book\"},\n  {\"box_2d\": [273, 149, 340, 232], \"label\": \"book\"},\n  {\"box_2d\": [332, 154, 396, 232], \"label\": \"book\"},\n  {\"box_2d\": [530, 313, 545, 346], \"label\": \"book\"},\n  {\"box_2d\": [566, 483, 597, 532], \"label\": \"book\"},\n  {\"box_2d\": [471, 307, 548, 386], \"label\": \"book\"},\n  {\"box_2d\": [566, 483, 597, 532], \"label\": \"vase\"},\n  {\"box_2d\": [390, 329, 471, 385], \"label\": \"oven\"}\n]\n```"
+}

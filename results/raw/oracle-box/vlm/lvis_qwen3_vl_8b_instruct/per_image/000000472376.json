@@ -1,0 +1,81 @@
+{
+  "image": "/home/maxim/PycharmProjects/zero-shot-detection-benchmark/data/subsets/lvis_v1_val_unseen/images/000000472376.jpg",
+  "image_id": 472376,
+  "file_name": "000000472376.jpg",
+  "num_crops": 3,
+  "crops": [
+    {
+      "annotation_id": 54325,
+      "bbox": [
+        535.54,
+        232.88,
+        19.06,
+        21.79
+      ],
+      "category_id": 711,
+      "gt_label": "musical_instrument",
+      "labels": [
+        "musical_instrument",
+        "blender",
+        "hair_dryer",
+        "sewing_machine",
+        "stapler_(stapling_machine)"
+      ],
+      "prediction": "blender",
+      "normalized_prediction": "blender",
+      "matched_label": "blender",
+      "correct": false,
+      "latency_sec": 1.4621753620158415,
+      "raw_response": "user\nYou are an object detection assistant. Given the image and the list of target classes, return detections as JSON.\nTarget classes: musical_instrument, blender, hair_dryer, sewing_machine, stapler_(stapling_machine).\nOutput format: [{\"box_2d\":[x1,y1,x2,y2],\"label\":\"class_name\"}...]\nUse pixel coordinates relative to the input image. Return JSON only.\nassistant\n```json\n[\n\t{\"box_2d\": [0, 0, 997, 997], \"label\": \"blender\"}\n]\n```"
+    },
+    {
+      "annotation_id": 54326,
+      "bbox": [
+        348.3,
+        386.6,
+        151.73,
+        93.4
+      ],
+      "category_id": 711,
+      "gt_label": "musical_instrument",
+      "labels": [
+        "musical_instrument",
+        "blender",
+        "hair_dryer",
+        "sewing_machine",
+        "stapler_(stapling_machine)"
+      ],
+      "prediction": "blender",
+      "normalized_prediction": "blender",
+      "matched_label": "blender",
+      "correct": false,
+      "latency_sec": 1.585483781003859,
+      "raw_response": "user\nYou are an object detection assistant. Given the image and the list of target classes, return detections as JSON.\nTarget classes: musical_instrument, blender, hair_dryer, sewing_machine, stapler_(stapling_machine).\nOutput format: [{\"box_2d\":[x1,y1,x2,y2],\"label\":\"class_name\"}...]\nUse pixel coordinates relative to the input image. Return JSON only.\nassistant\n```json\n[\n    {\"box_2d\": [0, 0, 580, 987], \"label\": \"blender\"}\n]\n```"
+    },
+    {
+      "annotation_id": 54327,
+      "bbox": [
+        236.49,
+        160.98,
+        71.52,
+        157.06
+      ],
+      "category_id": 711,
+      "gt_label": "musical_instrument",
+      "labels": [
+        "musical_instrument",
+        "blender",
+        "hair_dryer",
+        "sewing_machine",
+        "stapler_(stapling_machine)"
+      ],
+      "prediction": "musical_instrument",
+      "normalized_prediction": "musical instrument",
+      "matched_label": "musical_instrument",
+      "correct": true,
+      "latency_sec": 1.4828240770148113,
+      "raw_response": "user\nYou are an object detection assistant. Given the image and the list of target classes, return detections as JSON.\nTarget classes: musical_instrument, blender, hair_dryer, sewing_machine, stapler_(stapling_machine).\nOutput format: [{\"box_2d\":[x1,y1,x2,y2],\"label\":\"class_name\"}...]\nUse pixel coordinates relative to the input image. Return JSON only.\nassistant\n```json\n[\n\t{\"box_2d\":[10, 0, 850, 987],\"label\":\"musical_instrument\"}\n]\n```"
+    }
+  ],
+  "prompt": "You are an object recognition assistant.\n\nYou will see a cropped image that contains exactly one object\nfrom the following LVIS categories (unseen split):\n\n- musical_instrument\n- blender\n- hair_dryer\n- sewing_machine\n- stapler_(stapling_machine)\n\nYour task:\n- Return ONLY the best matching category name from this list.\n- Do not output explanations or extra text.\n\nAnswer with a single string: \"class_name\"."
+}

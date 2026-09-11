@@ -1,0 +1,43 @@
+{
+  "image": "/home/maxim/PycharmProjects/zero-shot-detection-benchmark/data/raw/coco2017/val2017/000000442323.jpg",
+  "image_id": 442323,
+  "file_name": "000000442323.jpg",
+  "num_crops": 1,
+  "crops": [
+    {
+      "annotation_id": 33120,
+      "bbox": [
+        401.54,
+        181.36,
+        28.74,
+        39.22
+      ],
+      "category_id": 284,
+      "gt_label": "coffee_maker",
+      "labels": [
+        "coffee_maker",
+        "blender",
+        "microscope",
+        "spatula",
+        "stapler_(stapling_machine)"
+      ],
+      "prediction": "stapler_(stapling_machine)",
+      "normalized_prediction": "stapler (stapling machine)",
+      "matched_label": "stapler_(stapling_machine)",
+      "correct": false,
+      "latency_sec": 0.25178508600220084,
+      "raw_response": {
+        "prediction": "stapler_(stapling_machine)",
+        "raw_response": "USER:  \nYou are an object recognition assistant.\n\nYou will see a cropped image that contains exactly one object\nfrom the following LVIS categories (unseen split):\n\n- coffee_maker\n- blender\n- microscope\n- spatula\n- stapler_(stapling_machine)\n\nYour task:\n- Return ONLY the best matching category name from this list.\n- Do not output explanations or extra text.\n\nAnswer with a single string: \"class_name\".\nASSISTANT: stapler_(stapling_machine) ",
+        "labels": [
+          "coffee_maker",
+          "blender",
+          "microscope",
+          "spatula",
+          "stapler_(stapling_machine)"
+        ]
+      }
+    }
+  ],
+  "prompt": "You are an object recognition assistant.\n\nYou will see a cropped image that contains exactly one object\nfrom the following LVIS categories (unseen split):\n\n- coffee_maker\n- blender\n- microscope\n- spatula\n- stapler_(stapling_machine)\n\nYour task:\n- Return ONLY the best matching category name from this list.\n- Do not output explanations or extra text.\n\nAnswer with a single string: \"class_name\"."
+}

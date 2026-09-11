@@ -1,0 +1,33 @@
+{
+  "image": "/home/maxim/PycharmProjects/zero-shot-detection-benchmark/data/raw/coco2017/val2017/000000039477.jpg",
+  "image_id": 39477,
+  "file_name": "000000039477.jpg",
+  "num_crops": 1,
+  "crops": [
+    {
+      "annotation_id": 46861,
+      "bbox": [
+        151.37,
+        266.25,
+        60.66,
+        88.0
+      ],
+      "category_id": 933,
+      "gt_label": "sewing_machine",
+      "labels": [
+        "sewing_machine",
+        "blender",
+        "microscope",
+        "musical_instrument",
+        "snowboard"
+      ],
+      "prediction": "sewing_machine",
+      "normalized_prediction": "sewing machine",
+      "matched_label": "sewing_machine",
+      "correct": true,
+      "latency_sec": 1.4483364810002968,
+      "raw_response": "user\nYou are an object detection assistant. Given the image and the list of target classes, return detections as JSON.\nTarget classes: sewing_machine, blender, microscope, musical_instrument, snowboard.\nOutput format: [{\"box_2d\":[x1,y1,x2,y2],\"label\":\"class_name\"}...]\nUse pixel coordinates relative to the input image. Return JSON only.\nassistant\n```json\n[\n\t{\"box_2d\":[36, 12, 980, 936],\"label\":\"sewing_machine\"}\n]\n```"
+    }
+  ],
+  "prompt": "You are an object recognition assistant.\n\nYou will see a cropped image that contains exactly one object\nfrom the following LVIS categories (unseen split):\n\n- sewing_machine\n- blender\n- microscope\n- musical_instrument\n- snowboard\n\nYour task:\n- Return ONLY the best matching category name from this list.\n- Do not output explanations or extra text.\n\nAnswer with a single string: \"class_name\"."
+}

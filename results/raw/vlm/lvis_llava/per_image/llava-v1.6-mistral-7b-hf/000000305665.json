@@ -1,0 +1,61 @@
+{
+  "model": "llava-v1.6-mistral-7b-hf",
+  "strategy": "single_query",
+  "image": "/home/maxim/PycharmProjects/zero-shot-detection-benchmark/data/subsets/lvis_v1_val_unseen/images/000000305665.jpg",
+  "labels": [
+    "blender",
+    "musical_instrument",
+    "snowboard",
+    "spatula",
+    "stapler_(stapling_machine)"
+  ],
+  "detections": [
+    {
+      "box_2d": [
+        0.338,
+        0.042,
+        0.756,
+        0.93
+      ],
+      "label": "blender"
+    },
+    {
+      "box_2d": [
+        0.0,
+        0.0,
+        0.998,
+        0.988
+      ],
+      "label": "musical_instrument"
+    },
+    {
+      "box_2d": [
+        0.0,
+        0.0,
+        0.998,
+        0.988
+      ],
+      "label": "snowboard"
+    },
+    {
+      "box_2d": [
+        0.0,
+        0.0,
+        0.998,
+        0.988
+      ],
+      "label": "spatula"
+    },
+    {
+      "box_2d": [
+        0.0,
+        0.0,
+        0.998,
+        0.988
+      ],
+      "label": "stapler_(stapling_machine)"
+    }
+  ],
+  "latency_sec": 11.412056338973343,
+  "raw_response": "USER:  \nDetect the following objects in the image: blender, musical_instrument, snowboard, spatula, stapler_(stapling_machine). For each detected object, provide JSON entries in the form [{\"box_2d\": [x1, y1, x2, y2], \"label\": \"class_name\"}]. Return only JSON. ASSISTANT: ```json\n[\n  {\n    \"box_2d\": [\n     0.338,\n     0.042,\n     0.756,\n     0.930\n    ],\n    \"label\": \"blender\"\n  },\n  {\n    \"box_2d\": [\n     0.000,\n     0.000,\n     0.998,\n     0.988\n    ],\n    \"label\": \"musical_instrument\"\n  },\n  {\n    \"box_2d\": [\n     0.000,\n     0.000,\n     0.998,\n     0.988\n    ],\n    \"label\": \"snowboard\"\n  },\n  {\n    \"box_2d\": [\n     0.000,\n     0.000,\n     0.998,\n     0.988\n    ],\n    \"label\": \"spatula\"\n  },\n  {\n    \"box_2d\": [\n     0.000,\n     0.000,\n     0.998,\n     0.988\n    ],\n    \"label\": \"stapler_(stapling_machine)\"\n  }\n]\n``` "
+}

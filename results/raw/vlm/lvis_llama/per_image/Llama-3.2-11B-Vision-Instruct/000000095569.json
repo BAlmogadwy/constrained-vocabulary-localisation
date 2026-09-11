@@ -1,0 +1,45 @@
+{
+  "model": "Llama-3.2-11B-Vision-Instruct",
+  "strategy": "single_query",
+  "image": "/home/maxim/PycharmProjects/zero-shot-detection-benchmark/data/subsets/lvis_v1_val_unseen/images/000000095569.jpg",
+  "labels": [
+    "spatula",
+    "coffee_maker",
+    "musical_instrument",
+    "snowboard",
+    "stapler_(stapling_machine)"
+  ],
+  "detections": [
+    {
+      "box_2d": [
+        28,
+        170,
+        64,
+        190
+      ],
+      "label": "spatula"
+    },
+    {
+      "box_2d": [
+        112,
+        285,
+        164,
+        326
+      ],
+      "label": "coffee_maker"
+    }
+  ],
+  "latency_sec": 14.407160856761038,
+  "raw_response": {
+    "spatula": "[]",
+    "spatula_norm": "[{\"box_norm\":[0.059,0.266,0.133,0.297],\"label\":\"spatula\"}]",
+    "coffee_maker": "[]",
+    "coffee_maker_norm": "[{\"box_norm\":[0.234,0.445,0.342,0.509],\"label\":\"coffee_maker\"}]",
+    "musical_instrument": "[]",
+    "musical_instrument_norm": "[{\"box_norm\":[0.000,0.000,0.000,0.000],\"label\":\"musical_instrument\"}]",
+    "snowboard": "[]",
+    "snowboard_norm": "[{\"box_norm\":[0.0,0.0,0.0,0.0],\"label\":\"snowboard\"}]",
+    "stapler_(stapling_machine)": "[]",
+    "stapler_(stapling_machine)_norm": "[{\"box_norm\":[0.0,0.0,0.0,0.0],\"label\":\"stapler_(stapling_machine)\"}]"
+  }
+}

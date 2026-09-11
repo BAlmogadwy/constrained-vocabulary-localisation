@@ -1,0 +1,86 @@
+{
+ "image": "000000454203.jpg",
+ "model": "qwen/qwen3-vl-235b-a22b-instruct",
+ "labels": [
+  "blender",
+  "coffee_maker",
+  "hair_dryer",
+  "microscope",
+  "musical_instrument"
+ ],
+ "detections": [
+  {
+   "box_2d": [
+    128.0,
+    236.16,
+    156.8,
+    309.6
+   ],
+   "label": "blender",
+   "score": 0.98
+  },
+  {
+   "box_2d": [
+    156.8,
+    263.04,
+    190.08,
+    293.76
+   ],
+   "label": "coffee_maker",
+   "score": 0.95
+  }
+ ],
+ "latency_sec": 4.285091800004011,
+ "usage": {
+  "prompt_tokens": 391,
+  "completion_tokens": 93,
+  "total_tokens": 484
+ },
+ "raw_response": {
+  "id": "gen-1783408294-zSyGVv8fLjDoRXU81oBP",
+  "object": "chat.completion",
+  "created": 1783408294,
+  "model": "qwen/qwen3-vl-235b-a22b-instruct",
+  "provider": "Alibaba",
+  "system_fingerprint": null,
+  "service_tier": null,
+  "choices": [
+   {
+    "index": 0,
+    "logprobs": null,
+    "finish_reason": "stop",
+    "native_finish_reason": "stop",
+    "message": {
+     "role": "assistant",
+     "content": "```json\n[\n\t{\"bbox_2d\": [200, 492, 245, 645], \"label\": \"blender\", \"confidence\": 0.98},\n\t{\"bbox_2d\": [245, 548, 297, 612], \"label\": \"coffee_maker\", \"confidence\": 0.95}\n]\n```",
+     "refusal": null,
+     "reasoning": null
+    }
+   }
+  ],
+  "usage": {
+   "prompt_tokens": 391,
+   "completion_tokens": 93,
+   "total_tokens": 484,
+   "cost": 0.00019838,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00019838,
+    "upstream_inference_prompt_cost": 0.00010166,
+    "upstream_inference_completions_cost": 9.672e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   }
+  }
+ },
+ "ts": "2026-07-07T07:11:36.403345+00:00"
+}

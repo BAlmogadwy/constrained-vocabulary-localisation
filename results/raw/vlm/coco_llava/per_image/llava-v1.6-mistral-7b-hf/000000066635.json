@@ -1,0 +1,77 @@
+{
+  "model": "llava-v1.6-mistral-7b-hf",
+  "strategy": "single_query",
+  "image": "/home/maxim/PycharmProjects/zero-shot-detection-benchmark/data/raw/coco2017/val2017/000000066635.jpg",
+  "labels": [
+    "microwave",
+    "oven",
+    "toaster",
+    "sink",
+    "refrigerator",
+    "book",
+    "clock",
+    "vase",
+    "scissors",
+    "teddy bear",
+    "hair drier",
+    "toothbrush"
+  ],
+  "detections": [
+    {
+      "box_2d": [
+        0.2,
+        0.121,
+        0.65,
+        0.608
+      ],
+      "label": "monitor"
+    },
+    {
+      "box_2d": [
+        0.484,
+        0.608,
+        0.998,
+        0.988
+      ],
+      "label": "desk"
+    },
+    {
+      "box_2d": [
+        0.484,
+        0.608,
+        0.998,
+        0.988
+      ],
+      "label": "wooden desk"
+    },
+    {
+      "box_2d": [
+        0.484,
+        0.608,
+        0.998,
+        0.988
+      ],
+      "label": "brown wooden desk"
+    },
+    {
+      "box_2d": [
+        0.484,
+        0.608,
+        0.998,
+        0.988
+      ],
+      "label": "wooden desk with keyboard and mouse"
+    },
+    {
+      "box_2d": [
+        0.484,
+        0.608,
+        0.998,
+        0.988
+      ],
+      "label": "brown wooden desk with keyboard and mouse"
+    }
+  ],
+  "latency_sec": 3.889024807998794,
+  "raw_response": "USER:  \nDetect the following objects in the image: microwave, oven, toaster, sink, refrigerator, book, clock, vase, scissors, teddy bear, hair drier, toothbrush. For each detected object, provide JSON entries in the form [{\"box_2d\": [x1, y1, x2, y2], \"label\": \"class_name\"}]. Return only JSON. ASSISTANT: ```json\n[\n  {\"box_2d\": [0.200,0.121,0.650,0.608], \"label\": \"monitor\"},\n  {\"box_2d\": [0.484,0.608,0.998,0.988], \"label\": \"desk\"},\n  {\"box_2d\": [0.484,0.608,0.998,0.988], \"label\": \"wooden desk\"},\n  {\"box_2d\": [0.484,0.608,0.998,0.988], \"label\": \"brown wooden desk\"},\n  {\"box_2d\": [0.484,0.608,0.998,0.988], \"label\": \"wooden desk with keyboard and mouse\"},\n  {\"box_2d\": [0.484,0.608,0.998,0.988], \"label\": \"brown wooden desk with keyboard and mouse\"}\n]\n``` "
+}

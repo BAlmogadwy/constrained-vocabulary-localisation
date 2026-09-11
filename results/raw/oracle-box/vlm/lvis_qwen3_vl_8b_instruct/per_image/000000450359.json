@@ -1,0 +1,57 @@
+{
+  "image": "/home/maxim/PycharmProjects/zero-shot-detection-benchmark/data/subsets/lvis_v1_val_unseen/images/000000450359.jpg",
+  "image_id": 450359,
+  "file_name": "000000450359.jpg",
+  "num_crops": 2,
+  "crops": [
+    {
+      "annotation_id": 58249,
+      "bbox": [
+        346.24,
+        247.06,
+        39.48,
+        70.36
+      ],
+      "category_id": 112,
+      "gt_label": "blender",
+      "labels": [
+        "blender",
+        "hair_dryer",
+        "lawn_mower",
+        "microscope",
+        "stapler_(stapling_machine)"
+      ],
+      "prediction": "blender",
+      "normalized_prediction": "blender",
+      "matched_label": "blender",
+      "correct": true,
+      "latency_sec": 1.550521634024335,
+      "raw_response": "user\nYou are an object detection assistant. Given the image and the list of target classes, return detections as JSON.\nTarget classes: blender, hair_dryer, lawn_mower, microscope, stapler_(stapling_machine).\nOutput format: [{\"box_2d\":[x1,y1,x2,y2],\"label\":\"class_name\"}...]\nUse pixel coordinates relative to the input image. Return JSON only.\nassistant\n```json\n[\n\t{\"box_2d\": [0, 0, 625, 987], \"label\": \"blender\"}\n]\n```"
+    },
+    {
+      "annotation_id": 58250,
+      "bbox": [
+        310.35,
+        256.73,
+        46.7,
+        60.12
+      ],
+      "category_id": 112,
+      "gt_label": "blender",
+      "labels": [
+        "blender",
+        "hair_dryer",
+        "lawn_mower",
+        "microscope",
+        "stapler_(stapling_machine)"
+      ],
+      "prediction": "blender",
+      "normalized_prediction": "blender",
+      "matched_label": "blender",
+      "correct": true,
+      "latency_sec": 1.5859036399924662,
+      "raw_response": "user\nYou are an object detection assistant. Given the image and the list of target classes, return detections as JSON.\nTarget classes: blender, hair_dryer, lawn_mower, microscope, stapler_(stapling_machine).\nOutput format: [{\"box_2d\":[x1,y1,x2,y2],\"label\":\"class_name\"}...]\nUse pixel coordinates relative to the input image. Return JSON only.\nassistant\n```json\n[\n\t{\"box_2d\": [0, 0, 997, 947], \"label\": \"blender\"}\n]\n```"
+    }
+  ],
+  "prompt": "You are an object recognition assistant.\n\nYou will see a cropped image that contains exactly one object\nfrom the following LVIS categories (unseen split):\n\n- blender\n- hair_dryer\n- lawn_mower\n- microscope\n- stapler_(stapling_machine)\n\nYour task:\n- Return ONLY the best matching category name from this list.\n- Do not output explanations or extra text.\n\nAnswer with a single string: \"class_name\"."
+}

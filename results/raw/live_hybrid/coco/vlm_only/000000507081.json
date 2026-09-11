@@ -1,0 +1,148 @@
+{
+ "image": "000000507081.jpg",
+ "model": "qwen/qwen3-vl-235b-a22b-instruct",
+ "labels": [
+  "oven",
+  "refrigerator",
+  "clock",
+  "microwave",
+  "sink",
+  "toothbrush",
+  "vase"
+ ],
+ "detections": [
+  {
+   "box_2d": [
+    362.88,
+    428.16,
+    423.68,
+    638.72
+   ],
+   "label": "oven",
+   "score": 0.95
+  },
+  {
+   "box_2d": [
+    0.0,
+    0.0,
+    63.36,
+    638.72
+   ],
+   "label": "refrigerator",
+   "score": 0.92
+  },
+  {
+   "box_2d": [
+    99.84,
+    64.0,
+    241.28,
+    128.0
+   ],
+   "label": "clock",
+   "score": 0.88
+  },
+  {
+   "box_2d": [
+    434.56,
+    300.8,
+    492.8,
+    359.68
+   ],
+   "label": "microwave",
+   "score": 0.91
+  },
+  {
+   "box_2d": [
+    318.08,
+    353.92,
+    355.2,
+    384.0
+   ],
+   "label": "sink",
+   "score": 0.89
+  },
+  {
+   "box_2d": [
+    320.0,
+    353.92,
+    355.2,
+    384.0
+   ],
+   "label": "sink",
+   "score": 0.89
+  },
+  {
+   "box_2d": [
+    53.76,
+    320.0,
+    80.0,
+    364.8
+   ],
+   "label": "toothbrush",
+   "score": 0.75
+  },
+  {
+   "box_2d": [
+    53.76,
+    320.0,
+    80.0,
+    364.8
+   ],
+   "label": "vase",
+   "score": 0.75
+  }
+ ],
+ "latency_sec": 8.760711700000684,
+ "usage": {
+  "prompt_tokens": 490,
+  "completion_tokens": 342,
+  "total_tokens": 832
+ },
+ "raw_response": {
+  "id": "gen-1783414679-E1e5iYJkb8JagUB0u4cK",
+  "object": "chat.completion",
+  "created": 1783414679,
+  "model": "qwen/qwen3-vl-235b-a22b-instruct",
+  "provider": "Parasail",
+  "system_fingerprint": null,
+  "service_tier": null,
+  "choices": [
+   {
+    "index": 0,
+    "logprobs": null,
+    "finish_reason": "stop",
+    "native_finish_reason": "stop",
+    "message": {
+     "role": "assistant",
+     "content": "```json\n[\n\t{\"bbox_2d\": [567, 669, 662, 998], \"label\": \"oven\", \"confidence\": 0.95},\n\t{\"bbox_2d\": [0, 0, 99, 998], \"label\": \"refrigerator\", \"confidence\": 0.92},\n\t{\"bbox_2d\": [156, 100, 377, 200], \"label\": \"clock\", \"confidence\": 0.88},\n\t{\"bbox_2d\": [679, 470, 770, 562], \"label\": \"microwave\", \"confidence\": 0.91},\n\t{\"bbox_2d\": [497, 553, 555, 600], \"label\": \"sink\", \"confidence\": 0.89},\n\t{\"bbox_2d\": [500, 553, 555, 600], \"label\": \"sink\", \"confidence\": 0.89},\n\t{\"bbox_2d\": [84, 500, 125, 570], \"label\": \"toothbrush\", \"confidence\": 0.75},\n\t{\"bbox_2d\": [84, 500, 125, 570], \"label\": \"vase\", \"confidence\": 0.75}\n]\n```",
+     "refusal": null,
+     "reasoning": null
+    }
+   }
+  ],
+  "usage": {
+   "prompt_tokens": 490,
+   "completion_tokens": 342,
+   "total_tokens": 832,
+   "cost": 0.0007527,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0007527,
+    "upstream_inference_prompt_cost": 0.0001029,
+    "upstream_inference_completions_cost": 0.0006498
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   }
+  }
+ },
+ "ts": "2026-07-07T08:58:05.258104+00:00"
+}

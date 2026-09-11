@@ -1,0 +1,210 @@
+{
+ "image": "000000117645.jpg",
+ "labels": [
+  "snowboard",
+  "blender",
+  "coffee_maker",
+  "microscope",
+  "musical_instrument"
+ ],
+ "tau": 0.4,
+ "detector": {
+  "detections": [
+   {
+    "label": "snowboard",
+    "box": [
+     402.2732849121094,
+     204.12850952148438,
+     428.7363586425781,
+     233.5430908203125
+    ],
+    "score": 0.22066406905651093
+   },
+   {
+    "label": "snowboard",
+    "box": [
+     414.56976318359375,
+     203.85398864746094,
+     428.27606201171875,
+     228.62657165527344
+    ],
+    "score": 0.018516503274440765
+   },
+   {
+    "label": "snowboard",
+    "box": [
+     542.6199951171875,
+     404.5618896484375,
+     604.601318359375,
+     479.9912109375
+    ],
+    "score": 0.012618983164429665
+   },
+   {
+    "label": "microscope",
+    "box": [
+     546.5145263671875,
+     409.46832275390625,
+     604.306396484375,
+     454.92510986328125
+    ],
+    "score": 0.00678239157423377
+   },
+   {
+    "label": "snowboard",
+    "box": [
+     472.1467590332031,
+     402.19036865234375,
+     614.91796875,
+     480.0
+    ],
+    "score": 0.006331843789666891
+   },
+   {
+    "label": "snowboard",
+    "box": [
+     395.3436279296875,
+     166.19180297851562,
+     427.82513427734375,
+     226.21383666992188
+    ],
+    "score": 0.0026446168776601553
+   }
+  ],
+  "latency_sec": 0.21325030000298284
+ },
+ "detector_max_score": 0.22066406905651093,
+ "escalated": true,
+ "vlm": {
+  "model": "qwen/qwen3-vl-235b-a22b-instruct",
+  "detections": [
+   {
+    "label": "snowboard",
+    "box": [
+     413.44,
+     204.0,
+     429.44,
+     226.08
+    ],
+    "score": 1.0
+   }
+  ],
+  "latency_sec": 2.663172000000486,
+  "usage": {
+   "prompt_tokens": 389,
+   "completion_tokens": 50,
+   "total_tokens": 439
+  },
+  "raw_response": {
+   "id": "gen-1783406648-4flG0MmbrVkrOjbes2Fz",
+   "object": "chat.completion",
+   "created": 1783406648,
+   "model": "qwen/qwen3-vl-235b-a22b-instruct",
+   "provider": "Novita",
+   "system_fingerprint": null,
+   "service_tier": null,
+   "choices": [
+    {
+     "index": 0,
+     "logprobs": null,
+     "finish_reason": "stop",
+     "native_finish_reason": "stop",
+     "message": {
+      "role": "assistant",
+      "content": "```json\n[\n\t{\"box_2d\": [646, 425, 671, 471], \"label\": \"snowboard\", \"confidence\": 0.95}\n]\n```",
+      "refusal": null,
+      "reasoning": null
+     }
+    }
+   ],
+   "usage": {
+    "prompt_tokens": 389,
+    "completion_tokens": 50,
+    "total_tokens": 439,
+    "cost": 0.0001917,
+    "is_byok": false,
+    "prompt_tokens_details": {
+     "cached_tokens": 0,
+     "cache_write_tokens": 0,
+     "audio_tokens": 0,
+     "video_tokens": 0
+    },
+    "cost_details": {
+     "upstream_inference_cost": 0.0001917,
+     "upstream_inference_prompt_cost": 0.0001167,
+     "upstream_inference_completions_cost": 7.5e-05
+    },
+    "completion_tokens_details": {
+     "reasoning_tokens": 0,
+     "image_tokens": 0,
+     "audio_tokens": 0
+    }
+   }
+  }
+ },
+ "fallback": false,
+ "ts": "2026-07-07T06:44:06.754202+00:00",
+ "fused": [
+  {
+   "label": "snowboard",
+   "box": [
+    402.2732849121094,
+    204.12850952148438,
+    428.7363586425781,
+    233.5430908203125
+   ],
+   "score": 0.22066406905651093
+  },
+  {
+   "label": "snowboard",
+   "box": [
+    414.56976318359375,
+    203.85398864746094,
+    428.27606201171875,
+    228.62657165527344
+   ],
+   "score": 0.31851650327444075
+  },
+  {
+   "label": "snowboard",
+   "box": [
+    542.6199951171875,
+    404.5618896484375,
+    604.601318359375,
+    479.9912109375
+   ],
+   "score": 0.012618983164429665
+  },
+  {
+   "label": "microscope",
+   "box": [
+    546.5145263671875,
+    409.46832275390625,
+    604.306396484375,
+    454.92510986328125
+   ],
+   "score": 0.00678239157423377
+  },
+  {
+   "label": "snowboard",
+   "box": [
+    472.1467590332031,
+    402.19036865234375,
+    614.91796875,
+    480.0
+   ],
+   "score": 0.006331843789666891
+  },
+  {
+   "label": "snowboard",
+   "box": [
+    395.3436279296875,
+    166.19180297851562,
+    427.82513427734375,
+    226.21383666992188
+   ],
+   "score": 0.0026446168776601553
+  }
+ ],
+ "latency_total_sec": 2.8764433000033023
+}

@@ -1,0 +1,84 @@
+{
+  "image": "/home/maxim/PycharmProjects/zero-shot-detection-benchmark/data/subsets/lvis_v1_val_unseen/images/000000170687.jpg",
+  "image_id": 170687,
+  "file_name": "000000170687.jpg",
+  "num_crops": 3,
+  "crops": [
+    {
+      "annotation_id": 139113,
+      "bbox": [
+        71.66,
+        301.97,
+        324.54,
+        65.64
+      ],
+      "category_id": 976,
+      "gt_label": "snowboard",
+      "labels": [
+        "snowboard",
+        "blender",
+        "microscope",
+        "musical_instrument",
+        "stapler_(stapling_machine)"
+      ],
+      "error": "inference_failed: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}",
+      "prediction": null,
+      "normalized_prediction": "",
+      "matched_label": null,
+      "correct": false,
+      "latency_sec": 8.53097573199193,
+      "raw_response": null
+    },
+    {
+      "annotation_id": 139114,
+      "bbox": [
+        235.25,
+        264.73,
+        264.75,
+        90.31
+      ],
+      "category_id": 976,
+      "gt_label": "snowboard",
+      "labels": [
+        "snowboard",
+        "blender",
+        "microscope",
+        "musical_instrument",
+        "stapler_(stapling_machine)"
+      ],
+      "error": "inference_failed: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}",
+      "prediction": null,
+      "normalized_prediction": "",
+      "matched_label": null,
+      "correct": false,
+      "latency_sec": 9.018160333973356,
+      "raw_response": null
+    },
+    {
+      "annotation_id": 139115,
+      "bbox": [
+        0.0,
+        313.45,
+        93.43,
+        54.21
+      ],
+      "category_id": 976,
+      "gt_label": "snowboard",
+      "labels": [
+        "snowboard",
+        "blender",
+        "microscope",
+        "musical_instrument",
+        "stapler_(stapling_machine)"
+      ],
+      "error": "inference_failed: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}",
+      "prediction": null,
+      "normalized_prediction": "",
+      "matched_label": null,
+      "correct": false,
+      "latency_sec": 9.41705328100943,
+      "raw_response": null
+    }
+  ],
+  "prompt": "You are an object recognition assistant.\n\nYou will see a cropped image that contains exactly one object\nfrom the following LVIS categories (unseen split):\n\n- snowboard\n- blender\n- microscope\n- musical_instrument\n- stapler_(stapling_machine)\n\nYour task:\n- Return ONLY the best matching category name from this list.\n- Do not output explanations or extra text.\n\nAnswer with a single string: \"class_name\"."
+}

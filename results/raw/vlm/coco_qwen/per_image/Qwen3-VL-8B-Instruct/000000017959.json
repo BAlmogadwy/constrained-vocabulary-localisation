@@ -1,0 +1,122 @@
+{
+  "model": "Qwen3-VL-8B-Instruct",
+  "strategy": "single_query",
+  "image": "/home/maxim/PycharmProjects/zero-shot-detection-benchmark/data/raw/coco2017/val2017/000000017959.jpg",
+  "labels": [
+    "microwave",
+    "oven",
+    "toaster",
+    "sink",
+    "refrigerator",
+    "book",
+    "clock",
+    "vase",
+    "scissors",
+    "teddy bear",
+    "hair drier",
+    "toothbrush"
+  ],
+  "detections": [
+    {
+      "box_2d": [
+        293.0,
+        638.0,
+        512.0,
+        938.0
+      ],
+      "label": "kite"
+    },
+    {
+      "box_2d": [
+        424.0,
+        367.0,
+        657.0,
+        612.0
+      ],
+      "label": "kite"
+    },
+    {
+      "box_2d": [
+        697.0,
+        464.0,
+        935.0,
+        714.0
+      ],
+      "label": "kite"
+    },
+    {
+      "box_2d": [
+        200.0,
+        512.0,
+        318.0,
+        955.0
+      ],
+      "label": "kite"
+    },
+    {
+      "box_2d": [
+        37.0,
+        476.0,
+        160.0,
+        945.0
+      ],
+      "label": "kite"
+    },
+    {
+      "box_2d": [
+        259.0,
+        333.0,
+        402.0,
+        602.0
+      ],
+      "label": "kite"
+    },
+    {
+      "box_2d": [
+        374.0,
+        281.0,
+        500.0,
+        402.0
+      ],
+      "label": "kite"
+    },
+    {
+      "box_2d": [
+        457.0,
+        271.0,
+        573.0,
+        402.0
+      ],
+      "label": "kite"
+    },
+    {
+      "box_2d": [
+        557.0,
+        236.0,
+        733.0,
+        424.0
+      ],
+      "label": "kite"
+    },
+    {
+      "box_2d": [
+        517.0,
+        567.0,
+        602.0,
+        955.0
+      ],
+      "label": "kite"
+    },
+    {
+      "box_2d": [
+        427.0,
+        538.0,
+        517.0,
+        802.0
+      ],
+      "label": "kite"
+    }
+  ],
+  "latency_sec": 9.509582929007593,
+  "raw_response": "user\nYou are an object detection assistant. Given the image and the list of target classes, return detections as JSON.\nTarget classes: microwave, oven, toaster, sink, refrigerator, book, clock, vase, scissors, teddy bear, hair drier, toothbrush.\nOutput format: [{\"box_2d\":[x1,y1,x2,y2],\"label\":\"class_name\"}...]\nUse pixel coordinates relative to the input image. Return JSON only.\nassistant\n```json\n[\n\t{\"box_2d\": [293, 638, 512, 938],\"label\":\"kite\"},\n\t{\"box_2d\": [424, 367, 657, 612],\"label\":\"kite\"},\n\t{\"box_2d\": [697, 464, 935, 714],\"label\":\"kite\"},\n\t{\"box_2d\": [200, 512, 318, 955],\"label\":\"kite\"},\n\t{\"box_2d\": [37, 476, 160, 945],\"label\":\"kite\"},\n\t{\"box_2d\": [259, 333, 402, 602],\"label\":\"kite\"},\n\t{\"box_2d\": [374, 281, 500, 402],\"label\":\"kite\"},\n\t{\"box_2d\": [457, 271, 573, 402],\"label\":\"kite\"},\n\t{\"box_2d\": [557, 236, 733, 424],\"label\":\"kite\"},\n\t{\"box_2d\": [517, 567, 602, 955],\"label\":\"kite\"},\n\t{\"box_2d\": [427, 538, 517, 802],\"label\":\"kite\"}\n]\n```"
+}

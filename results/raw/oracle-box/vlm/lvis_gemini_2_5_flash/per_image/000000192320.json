@@ -1,0 +1,81 @@
+{
+  "image": "/home/maxim/PycharmProjects/zero-shot-detection-benchmark/data/subsets/lvis_v1_val_unseen/images/000000192320.jpg",
+  "image_id": 192320,
+  "file_name": "000000192320.jpg",
+  "num_crops": 3,
+  "crops": [
+    {
+      "annotation_id": 222366,
+      "bbox": [
+        1.01,
+        234.81,
+        53.32,
+        60.07
+      ],
+      "category_id": 993,
+      "gt_label": "spatula",
+      "labels": [
+        "spatula",
+        "blender",
+        "lawn_mower",
+        "musical_instrument",
+        "snowboard"
+      ],
+      "prediction": null,
+      "normalized_prediction": "",
+      "matched_label": null,
+      "correct": false,
+      "latency_sec": 1.0737583080190234,
+      "raw_response": "I cannot detect any objects in the provided image as it appears to be completely blank or corrupted. Please provide a valid image for object detection."
+    },
+    {
+      "annotation_id": 222367,
+      "bbox": [
+        12.69,
+        176.47,
+        73.29,
+        117.15
+      ],
+      "category_id": 993,
+      "gt_label": "spatula",
+      "labels": [
+        "spatula",
+        "blender",
+        "lawn_mower",
+        "musical_instrument",
+        "snowboard"
+      ],
+      "prediction": null,
+      "normalized_prediction": "",
+      "matched_label": null,
+      "correct": false,
+      "latency_sec": 1.6523748619947582,
+      "raw_response": "[]"
+    },
+    {
+      "annotation_id": 222368,
+      "bbox": [
+        65.6,
+        148.73,
+        52.07,
+        61.23
+      ],
+      "category_id": 993,
+      "gt_label": "spatula",
+      "labels": [
+        "spatula",
+        "blender",
+        "lawn_mower",
+        "musical_instrument",
+        "snowboard"
+      ],
+      "prediction": null,
+      "normalized_prediction": "",
+      "matched_label": null,
+      "correct": false,
+      "latency_sec": 1.3034632579947356,
+      "raw_response": "I'm sorry, but I cannot detect any objects in the provided image. The image appears to be a solid black or extremely dark, undifferentiated field, making it impossible to identify any visual features for object detection."
+    }
+  ],
+  "prompt": "You are an object recognition assistant.\n\nYou will see a cropped image that contains exactly one object\nfrom the following LVIS categories (unseen split):\n\n- spatula\n- blender\n- lawn_mower\n- musical_instrument\n- snowboard\n\nYour task:\n- Return ONLY the best matching category name from this list.\n- Do not output explanations or extra text.\n\nAnswer with a single string: \"class_name\"."
+}

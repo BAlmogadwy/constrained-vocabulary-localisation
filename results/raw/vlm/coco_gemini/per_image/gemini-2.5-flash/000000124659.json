@@ -1,0 +1,99 @@
+{
+  "model": "gemini-2.5-flash",
+  "strategy": "single_query",
+  "image": "/home/maxim/PycharmProjects/zero-shot-detection-benchmark/data/raw/coco2017/val2017/000000124659.jpg",
+  "labels": [
+    "book",
+    "clock",
+    "refrigerator",
+    "sink",
+    "teddy bear",
+    "toaster",
+    "toothbrush"
+  ],
+  "detections": [
+    {
+      "box_2d": [
+        188,
+        71,
+        467,
+        187
+      ],
+      "label": "book"
+    },
+    {
+      "box_2d": [
+        227,
+        85,
+        296,
+        172
+      ],
+      "label": "book"
+    },
+    {
+      "box_2d": [
+        303,
+        114,
+        372,
+        169
+      ],
+      "label": "book"
+    },
+    {
+      "box_2d": [
+        326,
+        230,
+        411,
+        299
+      ],
+      "label": "book"
+    },
+    {
+      "box_2d": [
+        232,
+        72,
+        301,
+        100
+      ],
+      "label": "book"
+    },
+    {
+      "box_2d": [
+        311,
+        74,
+        381,
+        108
+      ],
+      "label": "book"
+    },
+    {
+      "box_2d": [
+        386,
+        115,
+        451,
+        150
+      ],
+      "label": "book"
+    },
+    {
+      "box_2d": [
+        390,
+        80,
+        460,
+        131
+      ],
+      "label": "book"
+    },
+    {
+      "box_2d": [
+        426,
+        237,
+        545,
+        310
+      ],
+      "label": "clock"
+    }
+  ],
+  "latency_sec": 3.695187981997151,
+  "raw_response": "```json\n[\n  {\"box_2d\": [188, 71, 467, 187], \"label\": \"book\"},\n  {\"box_2d\": [227, 85, 296, 172], \"label\": \"book\"},\n  {\"box_2d\": [303, 114, 372, 169], \"label\": \"book\"},\n  {\"box_2d\": [326, 230, 411, 299], \"label\": \"book\"},\n  {\"box_2d\": [232, 72, 301, 100], \"label\": \"book\"},\n  {\"box_2d\": [311, 74, 381, 108], \"label\": \"book\"},\n  {\"box_2d\": [386, 115, 451, 150], \"label\": \"book\"},\n  {\"box_2d\": [390, 80, 460, 131], \"label\": \"book\"},\n  {\"box_2d\": [426, 237, 545, 310], \"label\": \"clock\"}\n]\n```"
+}

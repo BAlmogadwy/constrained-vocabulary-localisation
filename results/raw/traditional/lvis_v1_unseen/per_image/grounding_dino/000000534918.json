@@ -1,0 +1,50 @@
+{
+  "model": "grounding_dino",
+  "strategy": "default",
+  "image": "/home/maxim/PycharmProjects/zero-shot-detection-benchmark/data/subsets/lvis_v1_val_unseen/images/000000534918.jpg",
+  "labels": [
+    "blender",
+    "coffee_maker",
+    "microscope",
+    "musical_instrument",
+    "sewing_machine"
+  ],
+  "result": {
+    "detections": [
+      {
+        "label": "blender",
+        "score": 0.5828090906143188,
+        "box_2d": [
+          26.787124633789062,
+          -0.10623037815093994,
+          294.9979248046875,
+          499.893798828125
+        ],
+        "box": [
+          26.787124633789062,
+          -0.10623037815093994,
+          294.9979248046875,
+          499.893798828125
+        ]
+      },
+      {
+        "label": "coffee_maker",
+        "score": 0.31748226284980774,
+        "box_2d": [
+          27.18730354309082,
+          -0.09307265281677246,
+          294.625732421875,
+          499.90667724609375
+        ],
+        "box": [
+          27.18730354309082,
+          -0.09307265281677246,
+          294.625732421875,
+          499.90667724609375
+        ]
+      }
+    ],
+    "latency_sec": 0.30161659978330135,
+    "raw_response": null
+  }
+}

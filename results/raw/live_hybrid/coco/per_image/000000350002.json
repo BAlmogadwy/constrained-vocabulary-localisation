@@ -1,0 +1,201 @@
+{
+ "image": "000000350002.jpg",
+ "labels": [
+  "hair drier",
+  "book",
+  "clock",
+  "microwave",
+  "scissors",
+  "toaster",
+  "toothbrush"
+ ],
+ "tau": 0.4,
+ "detector": {
+  "detections": [
+   {
+    "label": "scissors",
+    "box": [
+     378.8028564453125,
+     308.0582580566406,
+     405.826904296875,
+     344.5947570800781
+    ],
+    "score": 0.025283051654696465
+   },
+   {
+    "label": "toothbrush",
+    "box": [
+     275.1395263671875,
+     277.64862060546875,
+     295.6279296875,
+     295.21966552734375
+    ],
+    "score": 0.0021161867771297693
+   },
+   {
+    "label": "toothbrush",
+    "box": [
+     273.9669494628906,
+     263.190673828125,
+     310.4450988769531,
+     293.403564453125
+    ],
+    "score": 0.001992739038541913
+   },
+   {
+    "label": "scissors",
+    "box": [
+     155.6622314453125,
+     238.4296417236328,
+     178.156494140625,
+     317.49029541015625
+    ],
+    "score": 0.0015905700856819749
+   },
+   {
+    "label": "clock",
+    "box": [
+     334.98016357421875,
+     0.000179290771484375,
+     355.16864013671875,
+     12.421318054199219
+    ],
+    "score": 0.0014036180218681693
+   },
+   {
+    "label": "book",
+    "box": [
+     132.30191040039062,
+     322.7745056152344,
+     159.93850708007812,
+     349.0837097167969
+    ],
+    "score": 0.0011901322286576033
+   }
+  ],
+  "latency_sec": 0.03571169999486301
+ },
+ "detector_max_score": 0.025283051654696465,
+ "escalated": true,
+ "vlm": {
+  "model": "qwen/qwen3-vl-235b-a22b-instruct",
+  "detections": [],
+  "latency_sec": 2.147845400002552,
+  "usage": {
+   "prompt_tokens": 352,
+   "completion_tokens": 2,
+   "total_tokens": 354
+  },
+  "raw_response": {
+   "id": "gen-1783409374-wi2ehq9xFHmlJWCTH1mR",
+   "object": "chat.completion",
+   "created": 1783409374,
+   "model": "qwen/qwen3-vl-235b-a22b-instruct",
+   "provider": "DeepInfra",
+   "system_fingerprint": null,
+   "service_tier": null,
+   "choices": [
+    {
+     "index": 0,
+     "logprobs": null,
+     "finish_reason": "stop",
+     "native_finish_reason": "stop",
+     "message": {
+      "role": "assistant",
+      "content": "[]",
+      "refusal": null,
+      "reasoning": null
+     }
+    }
+   ],
+   "usage": {
+    "prompt_tokens": 352,
+    "completion_tokens": 2,
+    "total_tokens": 354,
+    "cost": 7.216e-05,
+    "is_byok": false,
+    "prompt_tokens_details": {
+     "cached_tokens": 0,
+     "cache_write_tokens": 0,
+     "audio_tokens": 0,
+     "video_tokens": 0
+    },
+    "cost_details": {
+     "upstream_inference_cost": 7.216e-05,
+     "upstream_inference_prompt_cost": 7.04e-05,
+     "upstream_inference_completions_cost": 1.76e-06
+    },
+    "completion_tokens_details": {
+     "reasoning_tokens": 0,
+     "image_tokens": 0,
+     "audio_tokens": 0
+    }
+   }
+  }
+ },
+ "fallback": false,
+ "ts": "2026-07-07T07:29:32.242408+00:00",
+ "fused": [
+  {
+   "label": "scissors",
+   "box": [
+    378.8028564453125,
+    308.0582580566406,
+    405.826904296875,
+    344.5947570800781
+   ],
+   "score": 0.025283051654696465
+  },
+  {
+   "label": "toothbrush",
+   "box": [
+    275.1395263671875,
+    277.64862060546875,
+    295.6279296875,
+    295.21966552734375
+   ],
+   "score": 0.0021161867771297693
+  },
+  {
+   "label": "toothbrush",
+   "box": [
+    273.9669494628906,
+    263.190673828125,
+    310.4450988769531,
+    293.403564453125
+   ],
+   "score": 0.001992739038541913
+  },
+  {
+   "label": "scissors",
+   "box": [
+    155.6622314453125,
+    238.4296417236328,
+    178.156494140625,
+    317.49029541015625
+   ],
+   "score": 0.0015905700856819749
+  },
+  {
+   "label": "clock",
+   "box": [
+    334.98016357421875,
+    0.000179290771484375,
+    355.16864013671875,
+    12.421318054199219
+   ],
+   "score": 0.0014036180218681693
+  },
+  {
+   "label": "book",
+   "box": [
+    132.30191040039062,
+    322.7745056152344,
+    159.93850708007812,
+    349.0837097167969
+   ],
+   "score": 0.0011901322286576033
+  }
+ ],
+ "latency_total_sec": 2.1835645999963162
+}

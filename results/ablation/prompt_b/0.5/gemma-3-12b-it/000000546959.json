@@ -1,0 +1,66 @@
+{
+  "model": "gemma-3-12b-it",
+  "strategy": "iterative",
+  "image": "/home/maxim/PycharmProjects/zero-shot-detection-benchmark/data/subsets/lvis_v1_val_unseen/images/000000546959.jpg",
+  "labels": [
+    "snowboard",
+    "blender",
+    "coffee_maker",
+    "hair_dryer",
+    "stapler_(stapling_machine)"
+  ],
+  "detections": [
+    {
+      "box_2d": [
+        110,
+        11,
+        371,
+        346
+      ],
+      "label": "snowboard"
+    },
+    {
+      "box_2d": [
+        423,
+        11,
+        613,
+        346
+      ],
+      "label": "snowboard"
+    },
+    {
+      "box_2d": [
+        673,
+        11,
+        893,
+        346
+      ],
+      "label": "snowboard"
+    },
+    {
+      "box_2d": [
+        944,
+        11,
+        1183,
+        346
+      ],
+      "label": "snowboard"
+    },
+    {
+      "box_2d": [
+        1234,
+        11,
+        1463,
+        346
+      ],
+      "label": "snowboard"
+    }
+  ],
+  "latency_sec": 18.04773120302707,
+  "raw_response": {
+    "identification": "snowboard",
+    "localization": {
+      "snowboard": "```json\n[\n  {\"box_2d\":[110,11,371,346],\"label\":\"snowboard\"},\n  {\"box_2d\":[423,11,613,346],\"label\":\"snowboard\"},\n  {\"box_2d\":[673,11,893,346],\"label\":\"snowboard\"},\n  {\"box_2d\":[944,11,1183,346],\"label\":\"snowboard\"},\n  {\"box_2d\":[1234,11,1463,346],\"label\":\"snowboard\"}\n]\n```"
+    }
+  }
+}

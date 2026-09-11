@@ -1,0 +1,84 @@
+{
+  "image": "/home/maxim/PycharmProjects/zero-shot-detection-benchmark/data/raw/coco2017/val2017/000000484978.jpg",
+  "image_id": 484978,
+  "file_name": "000000484978.jpg",
+  "num_crops": 3,
+  "crops": [
+    {
+      "annotation_id": 13330,
+      "bbox": [
+        373.05,
+        122.03,
+        31.43,
+        47.96
+      ],
+      "category_id": 112,
+      "gt_label": "blender",
+      "labels": [
+        "blender",
+        "coffee_maker",
+        "lawn_mower",
+        "microscope",
+        "musical_instrument",
+        "spatula"
+      ],
+      "prediction": null,
+      "normalized_prediction": "",
+      "matched_label": null,
+      "correct": false,
+      "latency_sec": 1.2713643540046178,
+      "raw_response": "I am sorry, but I am unable to process images and perform object detection. Therefore, I cannot provide the requested bounding boxes for the objects in the image."
+    },
+    {
+      "annotation_id": 13331,
+      "bbox": [
+        234.93,
+        111.18,
+        46.32,
+        91.4
+      ],
+      "category_id": 112,
+      "gt_label": "blender",
+      "labels": [
+        "blender",
+        "coffee_maker",
+        "lawn_mower",
+        "microscope",
+        "musical_instrument",
+        "spatula"
+      ],
+      "prediction": null,
+      "normalized_prediction": "",
+      "matched_label": null,
+      "correct": false,
+      "latency_sec": 1.3928451079991646,
+      "raw_response": "I'm sorry, but I cannot detect any of the requested objects in the provided image. The image is too blurry and low-resolution to identify any specific items clearly."
+    },
+    {
+      "annotation_id": 13362,
+      "bbox": [
+        395.37,
+        147.58,
+        47.91,
+        50.69
+      ],
+      "category_id": 284,
+      "gt_label": "coffee_maker",
+      "labels": [
+        "blender",
+        "coffee_maker",
+        "lawn_mower",
+        "microscope",
+        "musical_instrument",
+        "spatula"
+      ],
+      "prediction": "coffee_maker",
+      "normalized_prediction": "coffee maker",
+      "matched_label": "coffee_maker",
+      "correct": true,
+      "latency_sec": 1.1537564980098978,
+      "raw_response": "[{\"box_2d\": [0, 0, 1000, 1000], \"label\": \"coffee_maker\"}]"
+    }
+  ],
+  "prompt": "You are an object recognition assistant.\n\nYou will see a cropped image that contains exactly one object\nfrom the following LVIS categories (unseen split):\n\n- blender\n- coffee_maker\n- lawn_mower\n- microscope\n- musical_instrument\n- spatula\n\nYour task:\n- Return ONLY the best matching category name from this list.\n- Do not output explanations or extra text.\n\nAnswer with a single string: \"class_name\"."
+}

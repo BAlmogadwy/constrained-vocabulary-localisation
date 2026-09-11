@@ -1,0 +1,22 @@
+{
+  "model": "Llama-3.2-11B-Vision-Instruct",
+  "strategy": "iterative",
+  "image": "/home/maxim/PycharmProjects/zero-shot-detection-benchmark/data/subsets/lvis_v1_val_unseen/images/000000147913.jpg",
+  "labels": [
+    "snowboard",
+    "coffee_maker",
+    "hair_dryer",
+    "microscope",
+    "musical_instrument"
+  ],
+  "detections": [],
+  "latency_sec": 2.785097496001981,
+  "raw_response": {
+    "identification": "system\n\nCutting Knowledge Date: December 2023\nToday Date: 29 Nov 2025\n\n[{'type': 'text', 'text': 'You are an object detection assistant. Return JSON only in the format [{\"box_2d\":[x1,y1,x2,y2],\"label\":\"class_name\"}] using integer pixel coordinates.'}]user\n\nList all distinct target objects visible in this image as comma-separated names. Focus on the following classes: snowboard, coffee_maker, hair_dryer, microscope, musical_instrument.assistant\n\nsnowboard.",
+    "localization": {
+      "coffee_maker": "system\n\nCutting Knowledge Date: December 2023\nToday Date: 29 Nov 2025\n\n[{'type': 'text', 'text': 'You are an object detection assistant. Return JSON only in the format [{\"box_2d\":[x1,y1,x2,y2],\"label\":\"class_name\"}] using integer pixel coordinates.'}]user\n\nProvide the bounding box for the object labeled 'coffee_maker' as JSON in the form {\"box_2d\": [x1, y1, x2, y2], \"label\": \"name\"} using pixel coordinates. Return JSON only.assistant\n\n{\"box_2d\": [0, 0, 0, 0], \"label\": \"coffee_maker\"}",
+      "hair_dryer": "system\n\nCutting Knowledge Date: December 2023\nToday Date: 29 Nov 2025\n\n[{'type': 'text', 'text': 'You are an object detection assistant. Return JSON only in the format [{\"box_2d\":[x1,y1,x2,y2],\"label\":\"class_name\"}] using integer pixel coordinates.'}]user\n\nProvide the bounding box for the object labeled 'hair_dryer' as JSON in the form {\"box_2d\": [x1, y1, x2, y2], \"label\": \"name\"} using pixel coordinates. Return JSON only.assistant\n\n{\"box_2d\": [0, 0, 0, 0], \"label\": \"hair_dryer\"}",
+      "microscope": "system\n\nCutting Knowledge Date: December 2023\nToday Date: 29 Nov 2025\n\n[{'type': 'text', 'text': 'You are an object detection assistant. Return JSON only in the format [{\"box_2d\":[x1,y1,x2,y2],\"label\":\"class_name\"}] using integer pixel coordinates.'}]user\n\nProvide the bounding box for the object labeled'microscope' as JSON in the form {\"box_2d\": [x1, y1, x2, y2], \"label\": \"name\"} using pixel coordinates. Return JSON only.assistant\n\n{\"box_2d\": [0, 0, 0, 0], \"label\": \"microscope\"}"
+    }
+  }
+}

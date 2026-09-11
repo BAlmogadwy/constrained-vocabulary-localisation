@@ -1,0 +1,106 @@
+{
+  "model": "gpt-5",
+  "strategy": "single_query",
+  "image": "/home/maxim/PycharmProjects/zero-shot-detection-benchmark/data/raw/coco2017/val2017/000000003156.jpg",
+  "labels": [
+    "sink",
+    "clock",
+    "oven",
+    "refrigerator",
+    "teddy bear",
+    "toaster",
+    "toothbrush"
+  ],
+  "detections": [
+    {
+      "box_2d": [
+        0,
+        90,
+        125,
+        170
+      ],
+      "label": "sink",
+      "confidence": 0.82
+    }
+  ],
+  "latency_sec": 20.917143710990786,
+  "raw_response": {
+    "id": "resp_0290e1b6ce1d25c700691bb0cc00d0819499c35bb256b63eb1",
+    "created_at": 1763422412.0,
+    "error": null,
+    "incomplete_details": null,
+    "instructions": null,
+    "metadata": {},
+    "model": "gpt-5-2025-08-07",
+    "object": "response",
+    "output": [
+      {
+        "id": "rs_0290e1b6ce1d25c700691bb0cd680c8194bcfc199c06cf049c",
+        "summary": [],
+        "type": "reasoning",
+        "content": null,
+        "encrypted_content": null,
+        "status": null
+      },
+      {
+        "id": "msg_0290e1b6ce1d25c700691bb0df4a58819499de4670f6c356a9",
+        "content": [
+          {
+            "annotations": [],
+            "text": "[\n  {\"box_2d\": [0, 90, 125, 170], \"label\": \"sink\", \"confidence\": 0.82}\n]",
+            "type": "output_text",
+            "logprobs": []
+          }
+        ],
+        "role": "assistant",
+        "status": "completed",
+        "type": "message"
+      }
+    ],
+    "parallel_tool_calls": true,
+    "temperature": 1.0,
+    "tool_choice": "auto",
+    "tools": [],
+    "top_p": 1.0,
+    "background": false,
+    "conversation": null,
+    "max_output_tokens": 16192,
+    "max_tool_calls": null,
+    "previous_response_id": null,
+    "prompt": null,
+    "prompt_cache_key": null,
+    "prompt_cache_retention": null,
+    "reasoning": {
+      "effort": "medium",
+      "generate_summary": null,
+      "summary": null
+    },
+    "safety_identifier": null,
+    "service_tier": "default",
+    "status": "completed",
+    "text": {
+      "format": {
+        "type": "text"
+      },
+      "verbosity": "medium"
+    },
+    "top_logprobs": 0,
+    "truncation": "disabled",
+    "usage": {
+      "input_tokens": 431,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 809,
+      "output_tokens_details": {
+        "reasoning_tokens": 768
+      },
+      "total_tokens": 1240
+    },
+    "user": null,
+    "billing": {
+      "payer": "developer"
+    },
+    "store": true
+  }
+}

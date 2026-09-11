@@ -1,0 +1,142 @@
+{
+  "model": "Qwen3-VL-8B-Instruct",
+  "strategy": "single_query",
+  "image": "/home/maxim/PycharmProjects/zero-shot-detection-benchmark/data/subsets/lvis_v1_val_unseen/images/000000214133.jpg",
+  "labels": [
+    "spatula",
+    "blender",
+    "coffee_maker",
+    "hair_dryer",
+    "sewing_machine"
+  ],
+  "detections": [
+    {
+      "box_2d": [
+        602.0,
+        362.0,
+        652.0,
+        452.0
+      ],
+      "label": "spatula"
+    },
+    {
+      "box_2d": [
+        648.0,
+        252.0,
+        688.0,
+        452.0
+      ],
+      "label": "spatula"
+    },
+    {
+      "box_2d": [
+        680.0,
+        252.0,
+        708.0,
+        452.0
+      ],
+      "label": "spatula"
+    },
+    {
+      "box_2d": [
+        617.0,
+        252.0,
+        641.0,
+        452.0
+      ],
+      "label": "spatula"
+    },
+    {
+      "box_2d": [
+        587.0,
+        252.0,
+        607.0,
+        452.0
+      ],
+      "label": "spatula"
+    },
+    {
+      "box_2d": [
+        567.0,
+        252.0,
+        587.0,
+        452.0
+      ],
+      "label": "spatula"
+    },
+    {
+      "box_2d": [
+        548.0,
+        252.0,
+        567.0,
+        452.0
+      ],
+      "label": "spatula"
+    },
+    {
+      "box_2d": [
+        528.0,
+        252.0,
+        548.0,
+        452.0
+      ],
+      "label": "spatula"
+    },
+    {
+      "box_2d": [
+        508.0,
+        252.0,
+        528.0,
+        452.0
+      ],
+      "label": "spatula"
+    },
+    {
+      "box_2d": [
+        800.0,
+        252.0,
+        838.0,
+        492.0
+      ],
+      "label": "spatula"
+    },
+    {
+      "box_2d": [
+        838.0,
+        252.0,
+        867.0,
+        492.0
+      ],
+      "label": "spatula"
+    },
+    {
+      "box_2d": [
+        867.0,
+        252.0,
+        898.0,
+        492.0
+      ],
+      "label": "spatula"
+    },
+    {
+      "box_2d": [
+        898.0,
+        252.0,
+        928.0,
+        492.0
+      ],
+      "label": "spatula"
+    },
+    {
+      "box_2d": [
+        928.0,
+        252.0,
+        967.0,
+        471.0
+      ],
+      "label": "spatula"
+    }
+  ],
+  "latency_sec": 34.491355682723224,
+  "raw_response": "user\nYou are an object detection assistant. Given the image and the list of target classes, return detections as JSON.\nTarget classes: spatula, blender, coffee_maker, hair_dryer, sewing_machine.\nOutput format: [{\"box_2d\":[x1,y1,x2,y2],\"label\":\"class_name\"}...]\nUse pixel coordinates relative to the input image. Return JSON only.\nassistant\n```json\n[\n\t{\"box_2d\": [602, 362, 652, 452], \"label\": \"spatula\"},\n\t{\"box_2d\": [648, 252, 688, 452], \"label\": \"spatula\"},\n\t{\"box_2d\": [680, 252, 708, 452], \"label\": \"spatula\"},\n\t{\"box_2d\": [617, 252, 641, 452], \"label\": \"spatula\"},\n\t{\"box_2d\": [587, 252, 607, 452], \"label\": \"spatula\"},\n\t{\"box_2d\": [567, 252, 587, 452], \"label\": \"spatula\"},\n\t{\"box_2d\": [548, 252, 567, 452], \"label\": \"spatula\"},\n\t{\"box_2d\": [528, 252, 548, 452], \"label\": \"spatula\"},\n\t{\"box_2d\": [508, 252, 528, 452], \"label\": \"spatula\"},\n\t{\"box_2d\": [800, 252, 838, 492], \"label\": \"spatula\"},\n\t{\"box_2d\": [838, 252, 867, 492], \"label\": \"spatula\"},\n\t{\"box_2d\": [867, 252, 898, 492], \"label\": \"spatula\"},\n\t{\"box_2d\": [898, 252, 928, 492], \"label\": \"spatula\"},\n\t{\"box_2d\": [928, 252, 967, 471], \"label\": \"spatula\"}\n]\n```"
+}

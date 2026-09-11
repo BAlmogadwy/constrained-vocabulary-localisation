@@ -1,0 +1,88 @@
+{
+ "image": "000000557501.jpg",
+ "model": "qwen/qwen3-vl-235b-a22b-instruct",
+ "labels": [
+  "sink",
+  "book",
+  "hair drier",
+  "microwave",
+  "oven",
+  "scissors",
+  "toaster"
+ ],
+ "detections": [
+  {
+   "box_2d": [
+    330.88,
+    261.12,
+    426.24,
+    314.88
+   ],
+   "label": "sink",
+   "score": 0.98
+  },
+  {
+   "box_2d": [
+    417.92,
+    257.76,
+    517.76,
+    309.6
+   ],
+   "label": "sink",
+   "score": 0.97
+  }
+ ],
+ "latency_sec": 4.956660099996952,
+ "usage": {
+  "prompt_tokens": 391,
+  "completion_tokens": 91,
+  "total_tokens": 482
+ },
+ "raw_response": {
+  "id": "gen-1783415200-5QiwC6mwLO9wwVxpd2An",
+  "object": "chat.completion",
+  "created": 1783415200,
+  "model": "qwen/qwen3-vl-235b-a22b-instruct",
+  "provider": "DeepInfra",
+  "system_fingerprint": null,
+  "service_tier": null,
+  "choices": [
+   {
+    "index": 0,
+    "logprobs": null,
+    "finish_reason": "stop",
+    "native_finish_reason": "stop",
+    "message": {
+     "role": "assistant",
+     "content": "```json\n[\n\t{\"bbox_2d\": [517, 544, 666, 656], \"label\": \"sink\", \"confidence\": 0.98},\n\t{\"bbox_2d\": [653, 537, 809, 645], \"label\": \"sink\", \"confidence\": 0.97}\n]\n```",
+     "refusal": null,
+     "reasoning": null
+    }
+   }
+  ],
+  "usage": {
+   "prompt_tokens": 391,
+   "completion_tokens": 91,
+   "total_tokens": 482,
+   "cost": 0.00015828,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00015828,
+    "upstream_inference_prompt_cost": 7.82e-05,
+    "upstream_inference_completions_cost": 8.008e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   }
+  }
+ },
+ "ts": "2026-07-07T09:06:43.410682+00:00"
+}

@@ -1,0 +1,81 @@
+{
+  "model": "Qwen3-VL-8B-Instruct",
+  "strategy": "single_query",
+  "image": "/home/maxim/PycharmProjects/zero-shot-detection-benchmark/data/raw/coco2017/val2017/000000031248.jpg",
+  "labels": [
+    "book",
+    "microwave",
+    "oven",
+    "refrigerator",
+    "sink",
+    "toaster",
+    "toothbrush"
+  ],
+  "detections": [
+    {
+      "box_2d": [
+        113.0,
+        104.0,
+        300.0,
+        211.0
+      ],
+      "label": "book"
+    },
+    {
+      "box_2d": [
+        113.0,
+        348.0,
+        298.0,
+        440.0
+      ],
+      "label": "book"
+    },
+    {
+      "box_2d": [
+        113.0,
+        485.0,
+        298.0,
+        577.0
+      ],
+      "label": "book"
+    },
+    {
+      "box_2d": [
+        752.0,
+        143.0,
+        903.0,
+        238.0
+      ],
+      "label": "book"
+    },
+    {
+      "box_2d": [
+        752.0,
+        256.0,
+        903.0,
+        348.0
+      ],
+      "label": "book"
+    },
+    {
+      "box_2d": [
+        752.0,
+        372.0,
+        903.0,
+        464.0
+      ],
+      "label": "book"
+    },
+    {
+      "box_2d": [
+        752.0,
+        485.0,
+        903.0,
+        577.0
+      ],
+      "label": "book"
+    }
+  ],
+  "latency_sec": 7.718196172994794,
+  "raw_response": "user\nYou are an object detection assistant. Given the image and the list of target classes, return detections as JSON.\nTarget classes: book, microwave, oven, refrigerator, sink, toaster, toothbrush.\nOutput format: [{\"box_2d\":[x1,y1,x2,y2],\"label\":\"class_name\"}...]\nUse pixel coordinates relative to the input image. Return JSON only.\nassistant\n```json\n[\n\t{\"box_2d\": [113, 104, 300, 211],\"label\":\"book\"},\n\t{\"box_2d\": [113, 348, 298, 440],\"label\":\"book\"},\n\t{\"box_2d\": [113, 485, 298, 577],\"label\":\"book\"},\n\t{\"box_2d\": [752, 143, 903, 238],\"label\":\"book\"},\n\t{\"box_2d\": [752, 256, 903, 348],\"label\":\"book\"},\n\t{\"box_2d\": [752, 372, 903, 464],\"label\":\"book\"},\n\t{\"box_2d\": [752, 485, 903, 577],\"label\":\"book\"}\n]\n```"
+}

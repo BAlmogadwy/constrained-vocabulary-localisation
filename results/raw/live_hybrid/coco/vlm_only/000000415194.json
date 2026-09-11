@@ -1,0 +1,158 @@
+{
+ "image": "000000415194.jpg",
+ "model": "qwen/qwen3-vl-235b-a22b-instruct",
+ "labels": [
+  "refrigerator",
+  "sink",
+  "book",
+  "hair drier",
+  "microwave",
+  "scissors",
+  "vase"
+ ],
+ "detections": [
+  {
+   "box_2d": [
+    0.0,
+    138.24,
+    74.88,
+    285.6
+   ],
+   "label": "refrigerator",
+   "score": 0.98
+  },
+  {
+   "box_2d": [
+    556.8,
+    147.36,
+    640.0,
+    239.04
+   ],
+   "label": "sink",
+   "score": 0.97
+  },
+  {
+   "box_2d": [
+    188.8,
+    220.8,
+    224.64,
+    240.96
+   ],
+   "label": "book",
+   "score": 0.95
+  },
+  {
+   "box_2d": [
+    147.84,
+    211.68,
+    188.8,
+    239.04
+   ],
+   "label": "book",
+   "score": 0.94
+  },
+  {
+   "box_2d": [
+    67.84,
+    224.16,
+    109.44,
+    236.16
+   ],
+   "label": "book",
+   "score": 0.93
+  },
+  {
+   "box_2d": [
+    446.08,
+    180.0,
+    471.04,
+    195.84
+   ],
+   "label": "hair drier",
+   "score": 0.89
+  },
+  {
+   "box_2d": [
+    273.28,
+    144.0,
+    332.8,
+    195.84
+   ],
+   "label": "microwave",
+   "score": 0.96
+  },
+  {
+   "box_2d": [
+    554.24,
+    220.8,
+    620.16,
+    247.2
+   ],
+   "label": "scissors",
+   "score": 0.91
+  },
+  {
+   "box_2d": [
+    505.6,
+    198.72,
+    563.2,
+    224.16
+   ],
+   "label": "vase",
+   "score": 0.92
+  }
+ ],
+ "latency_sec": 12.081761099994765,
+ "usage": {
+  "prompt_tokens": 391,
+  "completion_tokens": 391,
+  "total_tokens": 782
+ },
+ "raw_response": {
+  "id": "gen-1783413683-jyodKWHhe1fczrMvQKN8",
+  "object": "chat.completion",
+  "created": 1783413683,
+  "model": "qwen/qwen3-vl-235b-a22b-instruct",
+  "provider": "Parasail",
+  "system_fingerprint": null,
+  "service_tier": null,
+  "choices": [
+   {
+    "index": 0,
+    "logprobs": null,
+    "finish_reason": "stop",
+    "native_finish_reason": "stop",
+    "message": {
+     "role": "assistant",
+     "content": "```json\n[\n\t{\"bbox_2d\": [0, 288, 117, 595], \"label\": \"refrigerator\", \"confidence\": 0.98},\n\t{\"bbox_2d\": [870, 307, 1000, 498], \"label\": \"sink\", \"confidence\": 0.97},\n\t{\"bbox_2d\": [295, 460, 351, 502], \"label\": \"book\", \"confidence\": 0.95},\n\t{\"bbox_2d\": [231, 441, 295, 498], \"label\": \"book\", \"confidence\": 0.94},\n\t{\"bbox_2d\": [106, 467, 171, 492], \"label\": \"book\", \"confidence\": 0.93},\n\t{\"bbox_2d\": [697, 375, 736, 408], \"label\": \"hair drier\", \"confidence\": 0.89},\n\t{\"bbox_2d\": [427, 300, 520, 408], \"label\": \"microwave\", \"confidence\": 0.96},\n\t{\"bbox_2d\": [866, 460, 969, 515], \"label\": \"scissors\", \"confidence\": 0.91},\n\t{\"bbox_2d\": [790, 414, 880, 467], \"label\": \"vase\", \"confidence\": 0.92}\n]\n```",
+     "refusal": null,
+     "reasoning": null
+    }
+   }
+  ],
+  "usage": {
+   "prompt_tokens": 391,
+   "completion_tokens": 391,
+   "total_tokens": 782,
+   "cost": 0.00082501,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00082501,
+    "upstream_inference_prompt_cost": 8.211e-05,
+    "upstream_inference_completions_cost": 0.0007429
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   }
+  }
+ },
+ "ts": "2026-07-07T08:41:33.638027+00:00"
+}

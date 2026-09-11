@@ -1,0 +1,50 @@
+{
+  "model": "yolo_world",
+  "strategy": "default",
+  "image": "C:\\Users\\user\\zeroshot\\zero-shot-detection-benchmark\\data\\subsets\\lvis_v1_val_unseen\\images\\000000472376.jpg",
+  "labels": [
+    "musical_instrument",
+    "blender",
+    "hair_dryer",
+    "sewing_machine",
+    "stapler_(stapling_machine)"
+  ],
+  "result": {
+    "detections": [
+      {
+        "label": "hair_dryer",
+        "score": 0.0017645788611844182,
+        "box_2d": [
+          534.843505859375,
+          232.51446533203125,
+          554.951904296875,
+          253.64739990234375
+        ],
+        "box": [
+          534.843505859375,
+          232.51446533203125,
+          554.951904296875,
+          253.64739990234375
+        ]
+      },
+      {
+        "label": "musical_instrument",
+        "score": 0.001026018988341093,
+        "box_2d": [
+          236.4267578125,
+          160.93997192382812,
+          308.2752685546875,
+          317.8561096191406
+        ],
+        "box": [
+          236.4267578125,
+          160.93997192382812,
+          308.2752685546875,
+          317.8561096191406
+        ]
+      }
+    ],
+    "latency_sec": 0.03834219999953348,
+    "raw_response": null
+  }
+}

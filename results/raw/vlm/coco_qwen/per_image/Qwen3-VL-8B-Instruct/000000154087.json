@@ -1,0 +1,176 @@
+{
+  "model": "Qwen3-VL-8B-Instruct",
+  "strategy": "single_query",
+  "image": "/home/maxim/PycharmProjects/zero-shot-detection-benchmark/data/raw/coco2017/val2017/000000154087.jpg",
+  "labels": [
+    "microwave",
+    "oven",
+    "toaster",
+    "sink",
+    "refrigerator",
+    "book",
+    "clock",
+    "vase",
+    "scissors",
+    "teddy bear",
+    "hair drier",
+    "toothbrush"
+  ],
+  "detections": [
+    {
+      "box_2d": [
+        393.0,
+        607.0,
+        457.0,
+        847.0
+      ],
+      "label": "person"
+    },
+    {
+      "box_2d": [
+        345.0,
+        632.0,
+        398.0,
+        832.0
+      ],
+      "label": "person"
+    },
+    {
+      "box_2d": [
+        51.0,
+        592.0,
+        135.0,
+        853.0
+      ],
+      "label": "person"
+    },
+    {
+      "box_2d": [
+        0.0,
+        607.0,
+        62.0,
+        871.0
+      ],
+      "label": "person"
+    },
+    {
+      "box_2d": [
+        298.0,
+        712.0,
+        323.0,
+        821.0
+      ],
+      "label": "person"
+    },
+    {
+      "box_2d": [
+        323.0,
+        712.0,
+        345.0,
+        821.0
+      ],
+      "label": "person"
+    },
+    {
+      "box_2d": [
+        30.0,
+        588.0,
+        51.0,
+        616.0
+      ],
+      "label": "person"
+    },
+    {
+      "box_2d": [
+        72.0,
+        588.0,
+        92.0,
+        616.0
+      ],
+      "label": "person"
+    },
+    {
+      "box_2d": [
+        174.0,
+        567.0,
+        283.0,
+        677.0
+      ],
+      "label": "flag"
+    },
+    {
+      "box_2d": [
+        447.0,
+        550.0,
+        548.0,
+        675.0
+      ],
+      "label": "flag"
+    },
+    {
+      "box_2d": [
+        725.0,
+        523.0,
+        843.0,
+        697.0
+      ],
+      "label": "flag"
+    },
+    {
+      "box_2d": [
+        23.0,
+        581.0,
+        54.0,
+        623.0
+      ],
+      "label": "flag"
+    },
+    {
+      "box_2d": [
+        717.0,
+        733.0,
+        856.0,
+        788.0
+      ],
+      "label": "sign"
+    },
+    {
+      "box_2d": [
+        107.0,
+        725.0,
+        158.0,
+        758.0
+      ],
+      "label": "sign"
+    },
+    {
+      "box_2d": [
+        359.0,
+        632.0,
+        384.0,
+        662.0
+      ],
+      "label": "hat"
+    },
+    {
+      "box_2d": [
+        404.0,
+        607.0,
+        430.0,
+        632.0
+      ],
+      "label": "hat"
+    },
+    {
+      "box_2d": [
+        72.0,
+        588.0,
+        92.0,
+        616.0
+      ],
+      "label": "hat"
+    }
+  ],
+  "latency_sec": 313.8689497239975,
+  "raw_response": "user\nYou are an object detection assistant. Given the image and the list of target classes, return detections as JSON.\nTarget classes: microwave, oven, toaster, sink, refrigerator, book, clock, vase, scissors, teddy bear, hair drier, toothbrush.\nOutput format: [{\"box_2d\":[x1,y1,x2,y2],\"label\":\"class_name\"}...]\nUse pixel coordinates relative to the input image. Return JSON only.\nassistant\n```json\n[\n\t{\"box_2d\": [393, 607, 457, 847], \"label\": \"person\"},\n\t{\"bbox_2d\": [345, 632, 398, 832], \"label\": \"person\"},\n\t{\"bbox_2d\": [51, 592, 135, 853], \"label\": \"person\"},\n\t{\"bbox_2d\": [0, 607, 62, 871], \"label\": \"person\"},\n\t{\"bbox_2d\": [298, 712, 323, 821], \"label\": \"person\"},\n\t{\"bbox_2d\": [323, 712, 345, 821], \"label\": \"person\"},\n\t{\"bbox_2d\": [30, 588, 51, 616], \"label\": \"person\"},\n\t{\"bbox_2d\": [72, 588, 92, 616], \"label\": \"person\"},\n\t{\"bbox_2d\": [174, 567, 283, 677], \"label\": \"flag\"},\n\t{\"bbox_2d\": [447, 550, 548, 675], \"label\": \"flag\"},\n\t{\"bbox_2d\": [725, 523, 843, 697], \"label\": \"flag\"},\n\t{\"bbox_2d\": [23, 581, 54, 623], \"label\": \"flag\"},\n\t{\"bbox_2d\": [717, 733, 856, 788], \"label\": \"sign\"},\n\t{\"bbox_2d\": [107, 725, 158, 758], \"label\": \"sign\"},\n\t{\"bbox_2d\": [359, 632, 384, 662], \"label\": \"hat\"},\n\t{\"bbox_2d\": [404, 607, 430, 632], \"label\": \"hat\"},\n\t{\"bbox_2d\": [72, 588, 92, 616], \"label\": \"hat\"},\n\t{\"bbox_2d\": [0, 607, 62, 871], \"label\": \"person\"},\n\t{\"bbox_2d\": [51, 592, 135, 853], \"label\": \"person\"},\n\t{\"bbox_2d\": [393, 607, 457, 847], \"label\": \"person\"},\n\t{\"bbox_2d\": [345, 632, 398, 832], \"label\": \"person\"},\n\t{\"bbox_2d\": [298, 712, 323, 821], \"label\": \"person\"},\n\t{\"bbox_2d\": [323, 712, 345, 821], \"label\": \"person\"},\n\t{\"bbox_2d\": [30, 588, 51, 616], \"label\": \"person\"},\n\t{\"bbox_2d\": [72, 588, 92, 616], \"label\": \"person\"},\n\t{\"bbox_2d\": [174, 567, 283, 677], \"label\": \"flag\"},\n\t{\"bbox_2d\": [447, 550, 548, 675], \"label\": \"flag\"},\n\t{\"bbox_2d\": [725, 523, 843, 697], \"label\": \"flag\"},\n\t{\"bbox_2d\": [23, 581, 54, 623], \"label\": \"flag\"},\n\t{\"bbox_2d\": [717, 733, 856, 788], \"label\": \"sign\"},\n\t{\"bbox_2d\": [107, 725, 158, 758], \"label\": \"sign\"},\n\t{\"bbox_2d\": [359, 632, 384, 662], \"label\": \"hat\"},\n\t{\"bbox_2d\": [404, 607, 430, 632], \"label\": \"hat\"},\n\t{\"bbox_2d\": [72, 588, 92, 616], \"label\": \"hat\"},\n\t{\"bbox_2d\": [0, 607, 62, 871], \"label\": \"person\"},\n\t{\"bbox_2d\": [51, 592, 135, 853], \"label\": \"person\"},\n\t{\"bbox_2d\": [393, 607, 457, 847], \"label\": \"person\"},\n\t{\"bbox_2d\": [345, 632, 398, 832], \"label\": \"person\"},\n\t{\"bbox_2d\": [298, 712, 323, 821], \"label\": \"person\"},\n\t{\"bbox_2d\": [323, 712, 345, 821], \"label\": \"person\"},\n\t{\"bbox_2d\": [30, 588, 51, 616], \"label\": \"person\"},\n\t{\"bbox_2d\": [72, 588, 92, 616], \"label\": \"person\"},\n\t{\"bbox_2d\": [174, 567, 283, 677], \"label\": \"flag\"},\n\t{\"bbox_2d\": [447, 550, 548, 675], \"label\": \"flag\"},\n\t{\"bbox_2d\": [725, 523, 843, 697], \"label\": \"flag\"},\n\t{\"bbox_2d\": [23, 581, 54, 623], \"label\": \"flag\"},\n\t{\"bbox_2d\": [717, 733, 856, 788], \"label\": \"sign\"},\n\t{\"bbox_2d\": [107, 725, 158, 758], \"label\": \"sign\"},\n\t{\"bbox_2d\": [359, 632, 384, 662], \"label\": \"hat\"},\n\t{\"bbox_2d\": [404, 607, 430, 632], \"label\": \"hat\"},\n\t{\"bbox_2d\": [72, 588, 92, 616], \"label\": \"hat\"},\n\t{\"bbox_2d\": [0, 607, 62, 871], \"label\": \"person\"},\n\t{\"bbox_2d\": [51, 592, 135, 853], \"label\": \"person\"},\n\t{\"bbox_2d\": [393, 607, 457, 847], \"label\": \"person\"},\n\t{\"bbox_2d\": [345, 632, 398, 832], \"label\": \"person\"},\n\t{\"bbox_2d\": [298, 712, 323, 821], \"label\": \"person\"},\n\t{\"bbox_2d\": [323, 712, 345, 821], \"label\": \"person\"},\n\t{\"bbox_2d\": [30, 588, 51, 616], \"label\": \"person\"},\n\t{\"bbox_2d\": [72, 588, 92, 616], \"label\": \"person\"},\n\t{\"bbox_2d\": [174, 567, 283, 677], \"label\": \"flag\"},\n\t{\"bbox_2d\": [447, 550, 548, 675], \"label\": \"flag\"},\n\t{\"bbox_2d\": [725, 523, 843, 697], \"label\": \"flag\"},\n\t{\"bbox_2d\": [23, 581, 54, 623], \"label\": \"flag\"},\n\t{\"bbox_2d\": [717, 733, 856, 788], \"label\": \"sign\"},\n\t{\"bbox_2d\": [107, 725, 158, 758], \"label\": \"sign\"},\n\t{\"bbox_2d\": [359, 632, 384, 662], \"label\": \"hat\"},\n\t{\"bbox_2d\": [404, 607, 430, 632], \"label\": \"hat\"},\n\t{\"bbox_2d\": [72, 588, 92, 616], \"label\": \"hat\"},\n\t{\"bbox_2d\": [0, 607, 62, 871], \"label\": \"person\"},\n\t{\"bbox_2d\": [51, 592, 135, 853], \"label\": \"person\"},\n\t{\"bbox_2d\": [393, 607, 457, 847], \"label\": \"person\"},\n\t{\"bbox_2d\": [345, 632, 398, 832], \"label\": \"person\"},\n\t{\"bbox_2d\": [298, 712, 323, 821], \"label\": \"person\"},\n\t{\"bbox_2d\": [323, 712, 345, 821], \"label\": \"person\"},\n\t{\"bbox_2d\": [30, 588, 51, 616], \"label\": \"person\"},\n\t{\"bbox_2d\": [72, 588, 92, 616], \"label\": \"person\"},\n\t{\"bbox_2d\": [174, 567, 283, 677], \"label\": \"flag\"},\n\t{\"bbox_2d\": [447, 550, 548, 675], \"label\": \"flag\"},\n\t{\"bbox_2d\": [725, 523, 843, 697], \"label\": \"flag\"},\n\t{\"bbox_2d\": [23, 581, 54, 623], \"label\": \"flag\"},\n\t{\"bbox_2d\": [717, 733, 856, 788], \"label\": \"sign\"},\n\t{\"bbox_2d\": [107, 725, 158, 758], \"label\": \"sign\"},\n\t{\"bbox_2d\": [359, 632, 384, 662], \"label\": \"hat\"},\n\t{\"bbox_2d\": [404, 607, 430, 632], \"label\": \"hat\"},\n\t{\"bbox_2d\": [72, 588, 92, 616], \"label\": \"hat\"},\n\t{\"bbox_2d\": [0, 607, 62, 871], \"label\": \"person\"},\n\t{\"bbox_2d\": [51, 592, 135, 853], \"label\": \"person\"},\n\t{\"bbox_2d\": [393, 607, 457, 847], \"label\": \"person\"},\n\t{\"bbox_2d\": [345, 632, 398, 832], \"label\": \"person\"},\n\t{\"bbox_2d\": [298, 712, 323, 821], \"label\": \"person\"},\n\t{\"bbox_2d\": [323, 712, 345, 821], \"label\": \"person\"},\n\t{\"bbox_2d\": [30, 588, 51, 616], \"label\": \"person\"},\n\t{\"bbox_2d\": [72, 588, 92, 616], \"label\": \"person\"},\n\t{\"bbox_2d\": [174, 567, 283, 677], \"label\": \"flag\"},\n\t{\"bbox_2d\": [447, 550, 548, 675], \"label\": \"flag\"},\n\t{\"bbox_2d\": [725, 523, 843, 697], \"label\": \"flag\"},\n\t{\"bbox_2d\": [23, 581, 54, 623], \"label\": \"flag\"},\n\t{\"bbox_2d\": [717, 733, 856, 788], \"label\": \"sign\"},\n\t{\"bbox_2d\": [107, 725, 158, 758], \"label\": \"sign\"},\n\t{\"bbox_2d\": [359, 632, 384, 662], \"label\": \"hat\"},\n\t{\"bbox_2d\": [404, 607, 430, 632], \"label\": \"hat\"},\n\t{\"bbox_2d\": [72, 588, 92, 616], \"label\": \"hat\"},\n\t{\"bbox_2d\": [0, 607, 62, 871], \"label\": \"person\"},\n\t{\"bbox_2d\": [51, 592, 135, 853], \"label\": \"person\"},\n\t{\"bbox_2d\": [393, 607, 457, 847], \"label\": \"person\"},\n\t{\"bbox_2d\": [345, 632, 398, 832], \"label\": \"person\"},\n\t{\"bbox_2d\": [298, 712, 323, 821], \"label\": \"person\"},\n\t{\"bbox_2d\": [323, 712, 345, 821], \"label\": \"person\"},\n\t{\"bbox_2d\": [30, 588, 51, 616], \"label\": \"person\"},\n\t{\"bbox_2d\": [72, 588, 92, 616], \"label\": \"person\"},\n\t{\"bbox_2d\": [174, 567, 283, 677], \"label\": \"flag\"},\n\t{\"bbox_2d\": [447, 550, 548, 675], \"label\": \"flag\"},\n\t{\"bbox_2d\": [725, 523, 843, 697], \"label\": \"flag\"},\n\t{\"bbox_2d\": [23, 581, 54, 623], \"label\": \"flag\"},\n\t{\"bbox_2d\": [717, 733, 856, 788], \"label\": \"sign\"},\n\t{\"bbox_2d\": [107, 725, 158, 758], \"label\": \"sign\"},\n\t{\"bbox_2d\": [359, 632, 384, 662], \"label\": \"hat\"},\n\t{\"bbox_2d\": [404, 607, 430, 632], \"label\": \"hat\"},\n\t{\"bbox_2d\": [72, 588, 92, 616], \"label\": \"hat\"},\n\t{\"bbox_2d\": [0, 607, 62, 871], \"label\": \"person\"},\n\t{\"bbox_2d\": [51, 592, 135, 853], \"label\": \"person\"},\n\t{\"bbox_2d\": [393, 607, 457, 847], \"label\": \"person\"},\n\t{\"bbox_2d\": [345, 632, 398, 832], \"label\": \"person\"},\n\t{\"bbox_2d\": [298, 712, 323, 821], \"label\": \"person\"},\n\t{\"bbox_2d\": [323, 712, 345, 821], \"label\": \"person\"},\n\t{\"bbox_2d\": [30, 588, 51, 616], \"label\": \"person\"},\n\t{\"bbox_2d\": [72, 588, 92, 616], \"label\": \"person\"},\n\t{\"bbox_2d\": [174, 567, 283, 677], \"label\": \"flag\"},\n\t{\"bbox_2d\": [447, 550, 548, 675], \"label\": \"flag\"},\n\t{\"bbox_2d\": [725, 523, 843, 697], \"label\": \"flag\"},\n\t{\"bbox_2d\": [23, 581, 54, 623], \"label\": \"flag\"},\n\t{\"bbox_2d\": [717, 733, 856, 788], \"label\": \"sign\"},\n\t{\"bbox_2d\": [107, 725, 158, 758], \"label\": \"sign\"},\n\t{\"bbox_2d\": [359, 632, 384, 662], \"label\": \"hat\"},\n\t{\"bbox_2d\": [404, 607, 430, 632], \"label\": \"hat\"},\n\t{\"bbox_2d\": [72, 588, 92, 616], \"label\": \"hat\"},\n\t{\"bbox_2d\": [0, 607, 62, 871], \"label\": \"person\"},\n\t{\"bbox_2d\": [51, 592, 135, 853], \"label\": \"person\"},\n\t{\"bbox_2d\": [393, 607, 457, 847], \"label\": \"person\"},\n\t{\"bbox_2d\": [345, 632, 398, 832], \"label\": \"person\"},\n\t{\"bbox_2d\": [298, 712, 323, 821], \"label\": \"person\"},\n\t{\"bbox_2d\": [323, 712, 345, 821], \"label\": \"person\"},\n\t{\"bbox_2d\": [30, 588, 51, 616], \"label\": \"person\"},\n\t{\"bbox_2d\": [72, 588, 92, 616], \"label\": \"person\"},\n\t{\"bbox_2d\": [174, 567, 283, 677], \"label\": \"flag\"},\n\t{\"bbox_2d\": [447, 550, 548, 675], \"label\": \"flag\"},\n\t{\"bbox_2d\": [725, 523, 843, 697], \"label\": \"flag\"},\n\t{\"bbox_2d\": [23, 581, 54, 623], \"label\": \"flag\"},\n\t{\"bbox_2d\": [717, 733, 856, 788], \"label\": \"sign\"},\n\t{\"bbox_2d\": [107, 725, 158, 758], \"label\": \"sign\"},\n\t{\"bbox_2d\": [359, 632, 384, 662], \"label\": \"hat\"},\n\t{\"bbox_2d\": [404, 607, 430, 632], \"label\": \"hat\"},\n\t{\"bbox_2d\": [72, 588, 92, 616], \"label\": \"hat\"},\n\t{\"bbox_2d\": [0, 607, 62, 871], \"label\": \"person\"},\n\t{\"bbox_2d\": [51, 592, 135, 853], \"label\": \"person\"},\n\t{\"bbox_2d\": [393, 607, 457, 847], \"label\": \"person\"},\n\t{\"bbox_2d\": [345, 632, 398, 832], \"label\": \"person\"},\n\t{\"bbox_2d\": [298, 712, 323, 821], \"label\": \"person\"},\n\t{\"bbox_2d\": [323, 712, 345, 821], \"label\": \"person\"},\n\t{\"bbox_2d\": [30, 588, 51, 616], \"label\": \"person\"},\n\t{\"bbox_2d\": [72, 588, 92, 616], \"label\": \"person\"},\n\t{\"bbox_2d\": [174, 567, 283, 677], \"label\": \"flag\"},\n\t{\"bbox_2d\": [447, 550, 548, 675], \"label\": \"flag\"},\n\t{\"bbox_2d\": [725, 523, 843, 697], \"label\": \"flag\"},\n\t{\"bbox_2d\": [23, 581, 54, 623], \"label\": \"flag\"},\n\t{\"bbox_2d\": [717, 733, 856, 788], \"label\": \"sign\"},\n\t{\"bbox_2d\": [107, 725, 158, 758], \"label\": \"sign\"},\n\t{\"bbox_2d\": [359, 632, 384, 662], \"label\": \"hat\"},\n\t{\"bbox_2d\": [404, 607, 430, 632], \"label\": \"hat\"},\n\t{\"bbox_2d\": [72, 588, 92, 616], \"label\": \"hat\"},\n\t{\"bbox_2d\": [0, 607, 62, 871], \"label\": \"person\"},\n\t{\"bbox_2d\": [51, 592, 135, 853], \"label\": \"person\"},\n\t{\"bbox_2d\": [393, 607, 457, 847], \"label\": \"person\"},\n\t{\"bbox_2d\": [345, 632, 398, 832], \"label\": \"person\"},\n\t{\"bbox_2d\": [298, 712, 323, 821], \"label\": \"person\"},\n\t{\"bbox_2d\": [323, 712, 345, 821], \"label\": \"person\"},\n\t{\"bbox_2d\": [30, 588, 51, 616], \"label\": \"person\"},\n\t{\"bbox_2d\": [72, 588, 92, 616], \"label\": \"person\"},\n\t{\"bbox_2d\": [174, 567, 283, 677], \"label\": \"flag\"},\n\t{\"bbox_2d\": [447, 550, 548, 675], \"label\": \"flag\"},\n\t{\"bbox_2d\": [725, 523, 843, 697], \"label\": \"flag\"},\n\t{\"bbox_2d\": [23, 581, 54, 623], \"label\": \"flag\"},\n\t{\"bbox_2d\": [717, 733, 856, 788], \"label\": \"sign\"},\n\t{\"bbox_2d\": [107, 725, 158, 758], \"label\": \"sign\"},\n\t{\"bbox_2d\": [359, 632, 384, 662], \"label\": \"hat\"},\n\t{\"bbox_2d\": [404, 607, 430, 632], \"label\": \"hat\"},\n\t{\"bbox_2d\": [72, 588, 92, 616], \"label\": \"hat\"},\n\t{\"bbox_2d\": [0, 607, 62, 871], \"label\": \"person\"},\n\t{\"bbox_2d\": [51, 592, 135, 853], \"label\": \"person\"},\n\t{\"bbox_2d\": [393, 607, 457, 847], \"label\": \"person\"},\n\t{\"bbox_2d\": [345, 632, 398, 832], \"label\": \"person\"},\n\t{\"bbox_2d\": [298, 712, 323, 821], \"label\": \"person\"},\n\t{\"bbox_2d\": [323, 712, 345, 821], \"label\": \"person\"},\n\t{\"bbox_2d\": [30, 588, 51, 616], \"label\": \"person\"},\n\t{\"bbox_2d\": [72, 588, 92, 616], \"label\": \"person\"},\n\t{\"bbox_2d\": [174, 567, 283, 677], \"label\": \"flag\"},\n\t{\"bbox_2d\": [447, 550, 548, 675], \"label\": \"flag\"},\n\t{\"bbox_2d\": [725, 523, 843, 697], \"label\": \"flag\"},\n\t{\"bbox_2d\": [23, 581, 54, 623], \"label\": \"flag\"},\n\t{\"bbox_2d\": [717, 733, 856, 788], \"label\": \"sign\"},\n\t{\"bbox_2d\": [107, 725, 158, 758], \"label\": \"sign\"},\n\t{\"bbox_2d\": [359, 632, 384, 662], \"label\": \"hat\"},\n\t{\"bbox_2d\": [404, 607, 430, 632], \"label\": \"hat\"},\n\t{\"bbox_2d\": [72, 588, 92, 616], \"label\": \"hat\"},\n\t{\"bbox_2d\": [0, 607, 62, 871], \"label\": \"person\"},\n\t{\"bbox_2d\": [51, 592, 135, 853], \"label\": \"person\"},\n\t{\"bbox_2d\": [393, 607, 457, 847], \"label\": \"person\"},\n\t{\"bbox_2d\": [345, 632, 398, 832], \"label\": \"person\"},\n\t{\"bbox_2d\": [298, 712, 323, 821], \"label\": \"person\"},\n\t{\"bbox_2d\": [323, 712, 345, 821], \"label\": \"person\"},\n\t{\"bbox_2d\": [30, 588, 51, 616], \"label\": \"person\"},\n\t{\"bbox_2d\": [72, 588, 92, 616], \"label\": \"person\"},\n\t{\"bbox_2d\": [174, 567, 283, 677], \"label\": \"flag\"},\n\t{\"bbox_2d\": [447, 550, 548, 675], \"label\": \"flag\"},\n\t{\"bbox_2d\": [725, 523, 843, 697], \"label\": \"flag\"},\n\t{\"bbox_2d\": [23, 581, 54, 623], \"label\": \"flag\"},\n\t{\"bbox_2d\": [717, 733, 856, 788], \"label\": \"sign\"},\n\t{\"bbox_2d\": [107, 725, 158, 758], \"label\": \"sign\"},\n\t{\"bbox_2d\": [359, 632, 384, 662], \"label\": \"hat\"},\n\t{\"bbox_2d\": [404, 607, 430, 632], \"label\": \"hat\"},\n\t{\"bbox_2d\": [72, 588, 92, 616], \"label\": \"hat\"},\n\t{\"bbox_2d\": [0, 607, 62, 871], \"label\": \"person\"},\n\t{\"bbox_2d\": [51, 592, 135, 853], \"label\": \"person\"},\n\t{\"bbox_2d\": [393, 607, 457, 847], \"label\": \"person\"},\n\t{\"bbox_2d\": [345, 632, 398, 832], \"label\": \"person\"},\n\t{\"bbox_2d\": [298, 712, 323, 821], \"label\": \"person\"},\n\t{\"bbox_2d\": [323, 712, 345, 821], \"label\": \"person\"},\n\t{\"bbox_2d\": [30, 588, 51, 616], \"label\": \"person\"},\n\t{\"bbox_2d\": [72, 588, 92, 616], \"label\": \"person\"},\n\t{\"bbox_2d\": [174, 567, 283, 677], \"label\": \"flag\"},\n\t{\"bbox_2d\": [447, 550, 548, 675], \"label\": \"flag\"},\n\t{\"bbox_2d\": [725, 523, 843, 697], \"label\": \"flag\"},\n\t{\"bbox_2d\": [23, 581, 54, 623], \"label\": \"flag\"},\n\t{\"bbox_2d\": [717, 733, 856, 788], \"label\": \"sign\"},\n\t{\"bbox_2d\": [107, 725, 158, 758], \"label\": \"sign\"},\n\t{\"bbox_2d\": [359, 632, 384, 662], \"label\": \"hat\"},\n\t{\"bbox_2d\": [404, 607, 430, 632], \"label\": \"hat\"},\n\t{\"bbox_2d\": [72, 588, 92, 616], \"label\": \"hat\"},\n\t{\"bbox_2d\": [0, 607, 62, 871], \"label\": \"person\"},\n\t{\"bbox_2d\": [51, 592, 135, 853], \"label\": \"person\"},\n\t{\"bbox_2d\": [393, 607, 457, 847], \"label\": \"person\"},\n\t{\"bbox_2d\": [345, 632, 398, 832], \"label\": \"person\"},\n\t{\"bbox_2d\": [298, 712, 323, 821], \"label\": \"person\"},\n\t{\"bbox_2d\": [323, 712, 345, 821], \"label\": \"person\"},\n\t{\"bbox_2d\": [30, 588, 51, 616], \"label\": \"person\"},\n\t{\"bbox_2d\": [72, 588, 92, 616], \"label\": \"person\"},\n\t{\"bbox_2d\": [174, 567, 283, 677], \"label\": \"flag\"},\n\t{\"bbox_2d\": [447, 550, 548, 675], \"label\": \"flag\"},\n\t{\"bbox_2d\": [725, 523, 843, 697], \"label\": \"flag\"},\n\t{\"bbox_2d\": [23, 581, 54, 623], \"label\": \"flag\"},\n\t{\"bbox_2d\": [717, 733, 856, 788], \"label\": \"sign\"},\n\t{\"bbox_2d\": [107, 725, 158, 758], \"label\": \"sign\"},\n\t{\"bbox_2d\": [359, 632, 384, 662], \"label\": \"hat\"},\n\t{\"bbox_2d\": [404, 607, 430, 632], \"label\": \"hat\"},\n\t{\"bbox_2d\": [72, 588, 92, 616], \"label\": \"hat\"},\n\t{\"bbox_2d\": [0, 607, 62, 871], \"label\": \"person\"},\n\t{\"bbox_2d\": [51, 592, 135, 853], \"label\": \"person\"},\n\t{\"bbox_2d\": [393, 607, 457, 847], \"label\": \"person\"},\n\t{\"bbox_2d\": [345, 632, 398, 832], \"label\": \"person\"},\n\t{\"bbox_2d\": [298, 712, 323, 821], \"label\": \"person\"},\n\t{\"bbox_2d\": [323, 712, 345, 821], \"label\": \"person\"},\n\t{\"bbox_2d\": [30, 588, 51, 616], \"label\": \"person\"},\n\t{\"bbox_2d\": [72, 588, 92, 616], \"label\": \"person\"},\n\t{\"bbox_2d\": [174, 567, 283, 677], \"label\": \"flag\"},\n\t{\"bbox_2d\": [447, 550, 548, 675], \"label\": \"flag\"},\n\t{\"bbox_2d\": [725, 523, 843, 697], \"label\": \"flag\"},\n\t{\"bbox_2d\": [23, 581, 54, 623], \"label\": \"flag\"},\n\t{\"bbox_2d\": [717, 733, 856, 788], \"label\": \"sign\"},\n\t{\"bbox_2d\": [107, 725, 158, 758], \"label\": \"sign\"},\n\t{\"bbox_2d\": [359, 632, 384, 662], \"label\": \"hat\"},\n\t{\"bbox_2d\": [404, 607, 430, 632], \"label\": \"hat\"},\n\t{\"bbox_2d\": [72, 588, 92, 616], \"label\": \"hat\"},\n\t{\"bbox_2d\": [0, 607, 62, 871], \"label\": \"person\"},\n\t{\"bbox_2d\": [51, 592, 135, 853], \"label\": \"person\"},\n\t{\"bbox_2d\": [393, 607, 457, 847], \"label\": \"person\"},\n\t{\"bbox_2d\": [345, 632, 398, 832], \"label\": \"person\"},\n\t{\"bbox_2d\": [298, 712, 323, 821], \"label\": \"person\"},\n\t{\"bbox_2d\": [323, 712, 345, 821], \"label\": \"person\"},\n\t{\"bbox_2d\": [30, 588, 51, 616], \"label\": \"person\"},\n\t{\"bbox_2d\": [72, 588, 92, 616], \"label\": \"person\"},\n\t{\"bbox_2d\": [174, 567, 283, 677], \"label\": \"flag\"},\n\t{\"bbox_2d\": [447, 550, 548, 675], \"label\": \"flag\"},\n\t{\"bbox_2d\": [725, 523, 843, 697], \"label\": \"flag\"},\n\t{\"bbox_2d\": [23, 581, 54, 623], \"label\": \"flag\"},\n\t{\"bbox_2d\": [717, 733, 856, 788], \"label\": \"sign\"},\n\t{\"bbox_2d\": [107, 725, 158, 758], \"label\": \"sign\"},\n\t{\"bbox_2d\": [359, 632, 384, 662], \"label\": \"hat\"},\n\t{\"bbox_2d\": [404, 607, 430, 632], \"label\": \"hat\"},\n\t{\"bbox_2d\": [72, 588, 92, 616], \"label\": \"hat\"},\n\t{\"bbox_2d\": [0, 607, 62, 871], \"label\": \"person\"},\n\t{\"bbox_2d\": [51, 592, 135, 853], \"label\": \"person\"},\n\t{\"bbox_2d\": [393, 607, 457, 847], \"label\": \"person\"},\n\t{\"bbox_2d\": [345, 632, 398, 832], \"label\": \"person\"},\n\t{\"bbox_2d\": [298, 712, 323, 821], \"label\": \"person\"},\n\t{\"bbox_2d\": [323, 712, 345, 821], \"label\": \"person\"},\n\t{\"bbox_2d\": [30, 588, 51, 616], \"label\": \"person\"},\n\t{\"bbox_2d\": [72, 588, 92, 616], \"label\": \"person\"},\n\t{\"bbox_2d\": [174, 567, 283, 677], \"label\": \"flag\"},\n\t{\"bbox_2d\": [447, 550, 548, 675], \"label\": \"flag\"},\n\t{\"bbox_2d\": [725, 523, 843, 697], \"label\": \"flag\"},\n\t{\"bbox_2d\": [23, 581, 54, 623], \"label\": \"flag\"},\n\t{\"bbox_2d\": [717, 733, 856, 788], \"label\": \"sign\"},\n\t{\"bbox_2d\": [107, 725, 158, 758], \"label\": \"sign\"},\n\t{\"bbox_2d\": [359, 632, 384, 662], \"label\": \"hat\"},\n\t{\"bbox_2d\": [404, 607, 430, 632], \"label\": \"hat\"},\n\t{\"bbox_2d\": [72, 588, 92, 616], \"label\": \"hat\"},\n\t{\"bbox_2d\": [0, 607, 62, 871], \"label\": \"person\"},\n\t{\"bbox_2d\": [51, 592, 135, 853], \"label\": \"person\"},\n\t{\"bbox_2d\": [393, 607, 457, 847], \"label\": \"person\"},\n\t{\"bbox_2d\": [345, 632, 398, 832], \"label\": \"person\"},\n\t{\"bbox_2d\": [298, 712, 323, 821], \"label\": \"person\"},\n\t{\"bbox_2d\": [323, 712, 345, 821], \"label\": \"person\"},\n\t{\"bbox_2d\": [30, 588, 51, 616], \"label\": \"person\"},\n\t{\"bbox_2d\": [72, 588, 92, 616], \"label\": \"person\"},\n\t{\"bbox_2d\": [174, 567, 283, 677], \"label\": \"flag\"},\n\t{\"bbox_2d\": [447, 550, 548, 675], \"label\": \"flag\"},\n\t{\"bbox_2d\": [725, 523, 843, 697], \"label\": \"flag\"},\n\t{\"bbox_2d\": [23, 581, 54, 623], \"label\": \"flag\"},\n\t{\"bbox_2d\": [717, 733, 856, 788], \"label\": \"sign\"},\n\t{\"bbox_2d\": [107, 725, 158, 758], \"label\": \"sign\"},\n\t{\"bbox_2d\": [359, 632, 384, 662], \"label\": \"hat\"},\n\t{\"bbox_2d\": [404, 607, 430, 632], \"label\": \"hat\"},\n\t{\"bbox_2d\": [72, 588, 92, 616], \"label\": \"hat\"},\n\t{\"bbox_2d\": [0, 607, 62, 871], \"label\": \"person\"},\n\t{\"bbox_2d\": [51, 592, 135, 853], \"label\": \"person\"},\n\t{\"bbox_2d\": [393, 607, 457, 847], \"label\": \"person\"},\n\t{\"bbox_2d\": [345, 632, 398, 832], \"label\": \"person\"},\n\t{\"bbox_2d\": [298, 712, 323, 821], \"label\": \"person\"},\n\t{\"bbox_2d\": [323, 712, 345, 821], \"label\": \"person\"},\n\t{\"bbox_2d\": [30, 588, 51, 616], \"label\": \"person\"},\n\t{\"bbox_2d\": [72, 588, 92, 616], \"label\": \"person\"},\n\t{\"bbox_2d\": [174, 567, 283, 677], \"label\": \"flag\"},\n\t{\"bbox_2d\": [447, 550, 548, 675], \"label\": \"flag\"},\n\t{\"bbox_2d\": [725, 523, 843, 697], \"label\": \"flag\"},\n\t{\"bbox_2d\": [23, 581, 54, 623], \"label\": \"flag\"},\n\t{\"bbox_2d\": [717, 733, 856, 788], \"label\": \"sign\"},\n\t{\"bbox_2d\": [107, 725, 158, 758], \"label\": \"sign\"},\n\t{\"bbox_2d\": [359, 632, 384, 662], \"label\": \"hat\"},\n\t{\"bbox_2d\": [404, 607, 430, 632], \"label\": \"hat\"},\n\t{\"bbox_2d\": [72, 588, 92, 616], \"label\": \"hat\"},\n\t{\"bbox_2d\": [0, 607, 62, 871], \"label\": \"person\"},\n\t{\"bbox_2d\": [51, 592, 135, 853], \"label\": \"person\"},\n\t{\"bbox_2d\": [393, 607, 457, 847], \"label\": \"person\"},\n\t{\"bbox_2d\": [345, 632, 398, 832], \"label\": \"person\"},\n\t{\"bbox_2d\": [298, 712, 323, 821], \"label\": \"person\"},\n\t{\"bbox_2d\": [323, 712, 345, 821], \"label\": \"person\"},\n\t{\"bbox_2d\": [30, 588, 51, 616], \"label\": \"person\"},\n\t{\"bbox_2d\": [72, 588, 92, 616], \"label\": \"person\"},\n\t{\"bbox_2d\": [174, 567, 283, 677], \"label\": \"flag\"},\n\t{\"bbox_2d\": [447, 550, 548, 675], \"label\": \"flag\"},\n\t{\"bbox_2d\": [725, 523, 843, 697], \"label\": \"flag\"},\n\t{\"bbox_2d\": [23, 581, 54, 623], \"label\": \"flag\"},\n\t{\"bbox_2d\": [717, 733, 856, 788], \"label\": \"sign\"},\n\t{\"bbox_2d\": [107, 725, 158, 758], \"label\": \"sign\"},\n\t{\"bbox_2d\": [359, 632, 384, 662], \"label\": \"hat\"},\n\t{\"bbox_2d\": [404, 607, 430, 632], \"label\": \"hat\"},\n\t{\"bbox_2d\": [72, 588, 92, 616], \"label\": \"hat\"},\n\t{\"bbox_2d\": [0, 607, 62, 871], \"label\": \"person\"},\n\t{\"bbox_2d\": [51, 592, 135, 853], \"label\": \"person\"},\n\t{\"bbox_2d\": [393, 607, 457, 847], \"label\": \"person\"},\n\t{\"bbox_2d\": [345, 632, 398, 832], \"label\": \"person\"},\n\t{\"bbox_2d\": [298, 712, 323, 821], \"label\": \"person\"},\n\t{\"bbox_2d\": [323, 712, 345, 821], \"label\": \"person\"},\n\t{\"bbox_2d\": [30, 588, 51, 616], \"label\": \"person\"},\n\t{\"bbox_2d\": [72, 588, 92, 616], \"label\": \"person\"},\n\t{\"bbox_2d\": [174, 567, 283, 677], \"label\": \"flag\"},\n\t{\"bbox_2d\": [447, 550, 548, 675], \"label\": \"flag\"},\n\t{\"bbox_2d\": [725, 523, 843, 697], \"label\": \"flag\"},\n\t{\"bbox_2d\": [23, 581, 54, 623], \"label\": \"flag\"},\n\t{\"bbox_2d\": [717, 733, 856, 788], \"label\": \"sign\"},\n\t{\"bbox_2d\": [107, 725, 158, 758], \"label\": \"sign\"},\n\t{\"bbox_2d\": [359, 632, 384, 662], \"label\": \"hat\"},\n\t{\"bbox_2d\": [404, 607, 430, 632], \"label\": \"hat\"},\n\t{\"bbox_2d\": [72, 588, 92, 616], \"label\": \"hat\"},\n\t{\"bbox_2d\": [0, 607, 62, 871], \"label\": \"person\"},\n\t{\"bbox_2d\": [51, 592, 135, 853], \"label\": \"person\"},\n\t{\"bbox_2d\": [393, 607, 457, 847], \"label\": \"person\"},\n\t{\"bbox_2d\": [345, 632, 398, 832], \"label\": \"person\"},\n\t{\"bbox_2d\": [298, 712, 323, 821], \"label\": \"person\"},\n\t{\"bbox_2d\": [323, 712, 345, 821], \"label\": \"person\"},\n\t{\"bbox_2d\": [30, 588, 51, 616], \"label\": \"person\"},\n\t{\"bbox_2d\": [72, 588, 92, 616], \"label\": \"person\"},\n\t{\"bbox_2d\": [174, 567, 283, 677], \"label\": \"flag\"},\n\t{\"bbox_2d\": [447, 550, 548, 675], \"label\": \"flag\"},\n\t{\"bbox_2d\": [725, 523, 843, 697], \"label\": \"flag\"},\n\t{\"bbox_2d\": [23, 581, 54, 623], \"label\": \"flag\"},\n\t{\"bbox_2d\": [717, 733, 856, 788], \"label\": \"sign\"},\n\t{\"bbox_2d\": [107, 725, 158, 758], \"label\": \"sign\"},\n\t{\"bbox_2d\": [359, 632, 384, 662], \"label\": \"hat\"},\n\t{\"bbox_2d\": [404, 607, 430, 632], \"label\": \"hat\"},\n\t{\"bbox_2d\": [72, 588, 92, 616], \"label\": \"hat\"},\n\t{\"bbox_2d\": [0, 607, 62, 871], \"label\": \"person\"},\n\t{\"bbox_2d\": [51, 592, 135, 853], \"label\": \"person\"},\n\t{\"bbox_2d\": [393, 607, 457, 847], \"label\": \"person\"},\n\t{\"bbox_2d\": [345, 632, 398, 832], \"label\": \"person\"},\n\t{\"bbox_2d\": [298, 712, 323, 821], \"label\": \"person\"},\n\t{\"bbox_2d\": [323, 712, 345, 821], \"label\": \"person\"},\n\t{\"bbox_2d\": [30, 588, 51, 616], \"label\": \"person\"},\n\t{\"bbox_2d\": [72, 588, 92, 616], \"label\": \"person\"},\n\t{\"bbox_2d\": [174, 567, 283, 677], \"label\": \"flag\"},\n\t{\"bbox_2d\": [447, 550, 548, 675], \"label\": \"flag\"},\n\t{\"bbox_2d\": [725, 523, 843, 697], \"label\": \"flag\"},\n\t{\"bbox_2d\": [23, 581, 54, 623], \"label\": \"flag\"},\n\t{\"bbox_2d\": [717, 733, 856, 788], \"label\": \"sign\"},\n\t{\"bbox_2d\": [107, 725, 158, 758], \"label\": \"sign\"},\n\t{\"bbox_2d\": [359, 632, 384, 662], \"label\": \"hat\"},\n\t{\"bbox_2d\": [404, 607, 430, 632], \"label\": \"hat\"},\n\t{\"bbox_2d\": [72, 588, 92, 616], \"label\": \"hat\"},\n\t{\"bbox_2d\": [0, 607, 62, 871], \"label\": \"person\"},\n\t{\"bbox_2d\": [51, 592, 135, 853], \"label\": \"person\"},\n\t{\"bbox_2d\": [393, 607, 457, 847], \"label\": \"person\"},\n\t{\"bbox_2d\": [345, 632, 398, 832], \"label\": \"person\"},\n\t{\"bbox_2d\": [298, 712, 323, 821], \"label\": \"person\"},\n\t{\"bbox_2d\": [323, 712, 345, 821], \"label\": \"person\"},\n\t{\"bbox_2d\": [30, 588, 51, 616], \"label\": \"person\"},\n\t{\"bbox_2d\": [72, 588, 92, 616], \"label\": \"person\"},\n\t{\"bbox_2d\": [174, 567, 283, 677], \"label\": \"flag\"},\n\t{\"bbox_2d\": [447, 550, 548, 675], \"label\": \"flag\"},\n\t{\"bbox_2d\": [725, 523, 843, 697], \"label\": \"flag\"},\n\t{\"bbox_2d\": [23, 581, 54, 623], \"label\": \"flag\"},\n\t{\"bbox_2d\": [717, 733, 856, 788], \"label\": \"sign\"},\n\t{\"bbox_2d\": [107, 725, 158, 758], \"label\": \"sign\"},\n\t{\"bbox_2d\": [359, 632, 384, 662], \"label\": \"hat\"},\n\t{\"bbox_2d\": [404, 607, 430, 632], \"label\": \"hat\"},\n\t{\"bbox_2d\": [72, 588, 92, 616], \"label\": \"hat\"},\n\t{\"bbox_2d\": [0, 607, 62, 871], \"label\": \"person\"},\n\t{\"bbox_2d\": [51, 592, 135, 853], \"label\": \"person\"},\n\t{\"bbox_2d\": [393, 607, 457, 847], \"label\": \"person\"},\n\t{\"bbox_2d\": [345, 632, 398, 832], \"label\": \"person\"},\n\t{\"bbox_2d\": [298, 712, 323, 821], \"label\": \"person\"},\n\t{\"bbox_2d\": [323, 712, 345, 821], \"label\": \"person\"},\n\t{\"bbox_2d\": [30, 588, 51, 616], \"label\": \"person\"},\n\t{\"bbox_2d\": [72, 588, 92, 616], \"label\": \"person\"},\n\t{\"bbox_2d\": [174, 567, 283, 677], \"label\": \"flag\"},\n\t{\"bbox_2d\": [447, 550, 548, 675], \"label\": \"flag\"},\n\t{\"bbox_2d\": [725, 523, 843, 697], \"label\": \"flag\"},\n\t{\"bbox_2d\": [23, 581, 54, 623], \"label\": \"flag\"},\n\t{\"bbox_2d\": [717, 733, 856, 788], \"label\": \"sign\"},\n\t{\"bbox_2d\": [107, 725, 158, 758], \"label\": \"sign\"},\n\t{\"bbox_2d\": [359, 632, 384, 662], \"label\": \"hat\"},\n\t{\"bbox_2d\": [404, 607, 430, 632], \"label\": \"hat\"},\n\t{\"bbox_2d\": [72, 588, 92, 616], \"label\": \"hat\"},\n\t{\"bbox_2d\": [0, 607, 62, 871], \"label\": \"person\"},\n\t{\"bbox_2d\": [51, 592, 135, 853], \"label\": \"person\"},\n\t{\"bbox_2d\": [393, 607, 457, 847], \"label\": \"person\"},\n\t{\"bbox_2d\": [345, 632, 398, 832], \"label\": \"person\"},\n\t{\"bbox_2d\": [298, 712, 323, 821], \"label\": \"person\"},\n\t{\"bbox_2d\": [323, 712, 345, 821], \"label\": \"person\"},\n\t{\"bbox_2d\": [30, 588, 51, 616], \"label\": \"person\"},\n\t{\"bbox_2d\": [72, 588, 92, 616], \"label\": \"person\"},\n\t{\"bbox_2d\": [174, 567, 283, 677], \"label\": \"flag\"},\n\t{\"bbox_2d\": [447, 550, 548, 675], \"label\": \"flag\"},\n\t{\"bbox_2d\": [725, 523, 843, 697], \"label\": \"flag\"},\n\t{\"bbox_2d\": [23, 581, 54, 623], \"label\": \"flag\"},\n\t{\"bbox_2d\": [717, 733, 856, 788], \"label\": \"sign\"},\n\t{\"bbox_2d\": [107, 725, 158, 758], \"label\": \"sign\"},\n\t{\"bbox_2d\": [359, 632, 384, 662], \"label\": \"hat\"},\n\t{\"bbox_2d\": [404, 607, 430, 632], \"label\": \"hat\"},\n\t{\"bbox_2d\": [72, 588, 92, 616], \"label\": \"hat\"},\n\t{\"bbox_2d\": [0, 607, 62, 871], \"label\": \"person\"},\n\t{\"bbox_2d\": [51, 592, 135, 853], \"label\": \"person\"},\n\t{\"bbox_2d\": [393, 607, 457, 847], \"label\": \"person\"},\n\t{\"bbox_2d\": [345, 632, 398, 832], \"label\": \"person\"},\n\t{\"bbox_2d\": [298, 712, 323, 821], \"label\": \"person\"},\n\t{\"bbox_2d\": [323, 712, 345, 821], \"label\": \"person\"},\n\t{\"bbox_2d\": [30, 588, 51, 616], \"label\": \"person\"},\n\t{\"bbox_2d\": [72, 588, 92, 616], \"label\": \"person\"},\n\t{\"bbox_2d\": [174, 567, 283, 677], \"label\": \"flag\"},\n\t{\"bbox_2d\": [447, 550, 548, 675], \"label\": \"flag\"},\n\t{\"bbox_2d\": [725, 523, 843, 697], \"label\": \"flag\"},\n\t{\"bbox_2d\": [23, 581, 54, 623], \"label\": \"flag\"},\n\t{\"bbox_2d\": [717, 733, 856, 788], \"label\": \"sign\"},\n\t{\"bbox_2d\": [107, 725, 158, 758], \"label\": \"sign\"},\n\t{\"bbox_2d\": [359, 632, 384, 662], \"label\": \"hat\"},\n\t{\"bbox_2d\": [404, 607, 430, 632], \"label\": \"hat\"},\n\t{\"bbox_2d\": [72, 588, 92, 616], \"label\": \"hat\"},\n\t{\"bbox_2d\": [0, 607, 62, 871], \"label\": \"person\"},\n\t{\"bbox_2d\": [51, 592, 135, 853], \"label\": \"person\"},\n\t{\"bbox_2d\": [393, 607, 457, 847], \"label\": \"person\"},\n\t{\"bbox_2d\": [345, 632, 398, 832], \"label\": \"person\"},\n\t{\"bbox_2d\": [298, 712, 323, 821], \"label\": \"person\"},\n\t{\"bbox_2d\": [323, 712, 345, 821], \"label\": \"person\"},\n\t{\"bbox_2d\": [30, 588, 51, 616], \"label\": \"person\"},\n\t{\"bbox_2d\": [72, 588, 92, 616], \"label\": \"person\"},\n\t{\"bbox_2d\": [174, 567, 283, 677], \"label\": \"flag\"},\n\t{\"bbox_2d\": [447, 550, 548, 675], \"label\": \"flag\"},\n\t{\"bbox_2d\": [725, 523, 843, 697], \"label\": \"flag\"},\n\t{\"bbox_2d\": [23, 581, 54, 623], \"label\": \"flag\"},\n\t{\"bbox_2d\": [717, 733, 856, 788], \"label\": \"sign\"},\n\t{\"bbox_2d\": [107, 725, 158, 758], \"label\": \"sign\"},\n\t{\"bbox_2d\": [359, 632, 384, 662], \"label\": \"hat\"},\n\t{\"bbox_2d\": [404, 607, 430, 632], \"label\": \"hat\"},\n\t{\"bbox_2d\": [72, 588, 92, 616], \"label\": \"hat\"},\n\t{\"bbox_2d\": [0, 607, 62, 871], \"label\": \"person\"},\n\t{\"bbox_2d\": [51, 592, 135, 853], \"label\": \"person\"},\n\t{\"bbox_2d\": [393, 607, 457, 847], \"label\": \"person\"},\n\t{\"bbox_2d\": [345, 632, 398, 832], \"label\": \"person\"},\n\t{\"bbox_2d\": [298, 712, 323, 821], \"label\": \"person\"},\n\t{\"bbox_2d\": [323, 712, 345, 821], \"label\": \"person\"},\n\t{\"bbox_2d\": [30, 588, 51, 616], \"label\": \"person\"},\n\t{\"bbox_2d\": [72, 588, 92, 616], \"label\": \"person\"},\n\t{\"bbox_2d\": [174"
+}

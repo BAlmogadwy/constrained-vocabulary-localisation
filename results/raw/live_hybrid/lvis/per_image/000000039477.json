@@ -1,0 +1,170 @@
+{
+ "image": "000000039477.jpg",
+ "labels": [
+  "sewing_machine",
+  "blender",
+  "microscope",
+  "musical_instrument",
+  "snowboard"
+ ],
+ "tau": 0.4,
+ "detector": {
+  "detections": [
+   {
+    "label": "musical_instrument",
+    "box": [
+     151.3076934814453,
+     265.7723388671875,
+     213.41111755371094,
+     355.16162109375
+    ],
+    "score": 0.01098638866096735
+   },
+   {
+    "label": "microscope",
+    "box": [
+     151.1165771484375,
+     266.60931396484375,
+     213.37762451171875,
+     354.82952880859375
+    ],
+    "score": 0.003146593924611807
+   },
+   {
+    "label": "musical_instrument",
+    "box": [
+     156.281494140625,
+     266.6180419921875,
+     201.5279541015625,
+     315.1734619140625
+    ],
+    "score": 0.002123998710885644
+   },
+   {
+    "label": "sewing_machine",
+    "box": [
+     153.95985412597656,
+     266.15069580078125,
+     201.5413055419922,
+     326.45892333984375
+    ],
+    "score": 0.0015563308261334896
+   }
+  ],
+  "latency_sec": 0.03773959999671206
+ },
+ "detector_max_score": 0.01098638866096735,
+ "escalated": true,
+ "vlm": {
+  "model": "qwen/qwen3-vl-235b-a22b-instruct",
+  "detections": [
+   {
+    "label": "sewing_machine",
+    "box": [
+     152.32,
+     263.546,
+     211.2,
+     353.64
+    ],
+    "score": 1.0
+   }
+  ],
+  "latency_sec": 3.1329541000013705,
+  "usage": {
+   "prompt_tokens": 349,
+   "completion_tokens": 51,
+   "total_tokens": 400
+  },
+  "raw_response": {
+   "id": "gen-1783406562-jTho1ICvvfrU3w4IycvN",
+   "object": "chat.completion",
+   "created": 1783406562,
+   "model": "qwen/qwen3-vl-235b-a22b-instruct",
+   "provider": "Alibaba",
+   "system_fingerprint": null,
+   "service_tier": null,
+   "choices": [
+    {
+     "index": 0,
+     "logprobs": null,
+     "finish_reason": "stop",
+     "native_finish_reason": "stop",
+     "message": {
+      "role": "assistant",
+      "content": "```json\n[\n\t{\"bbox_2d\": [238, 626, 330, 840], \"label\": \"sewing_machine\", \"confidence\": 0.95}\n]\n```",
+      "refusal": null,
+      "reasoning": null
+     }
+    }
+   ],
+   "usage": {
+    "prompt_tokens": 349,
+    "completion_tokens": 51,
+    "total_tokens": 400,
+    "cost": 0.00014378,
+    "is_byok": false,
+    "prompt_tokens_details": {
+     "cached_tokens": 0,
+     "cache_write_tokens": 0,
+     "audio_tokens": 0,
+     "video_tokens": 0
+    },
+    "cost_details": {
+     "upstream_inference_cost": 0.00014378,
+     "upstream_inference_prompt_cost": 9.074e-05,
+     "upstream_inference_completions_cost": 5.304e-05
+    },
+    "completion_tokens_details": {
+     "reasoning_tokens": 0,
+     "image_tokens": 0,
+     "audio_tokens": 0
+    }
+   }
+  }
+ },
+ "fallback": false,
+ "ts": "2026-07-07T06:42:40.030544+00:00",
+ "fused": [
+  {
+   "label": "musical_instrument",
+   "box": [
+    151.3076934814453,
+    265.7723388671875,
+    213.41111755371094,
+    355.16162109375
+   ],
+   "score": 0.01098638866096735
+  },
+  {
+   "label": "microscope",
+   "box": [
+    151.1165771484375,
+    266.60931396484375,
+    213.37762451171875,
+    354.82952880859375
+   ],
+   "score": 0.003146593924611807
+  },
+  {
+   "label": "musical_instrument",
+   "box": [
+    156.281494140625,
+    266.6180419921875,
+    201.5279541015625,
+    315.1734619140625
+   ],
+   "score": 0.002123998710885644
+  },
+  {
+   "label": "sewing_machine",
+   "box": [
+    153.95985412597656,
+    266.15069580078125,
+    201.5413055419922,
+    326.45892333984375
+   ],
+   "score": 0.3015563308261335
+  }
+ ],
+ "latency_total_sec": 3.1707147999986773
+}

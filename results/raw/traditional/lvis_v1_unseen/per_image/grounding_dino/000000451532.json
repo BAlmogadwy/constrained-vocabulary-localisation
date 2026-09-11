@@ -1,0 +1,50 @@
+{
+  "model": "grounding_dino",
+  "strategy": "default",
+  "image": "/home/maxim/PycharmProjects/zero-shot-detection-benchmark/data/subsets/lvis_v1_val_unseen/images/000000451532.jpg",
+  "labels": [
+    "snowboard",
+    "blender",
+    "hair_dryer",
+    "microscope",
+    "musical_instrument"
+  ],
+  "result": {
+    "detections": [
+      {
+        "label": "snowboard",
+        "score": 0.4535823464393616,
+        "box_2d": [
+          196.73226928710938,
+          335.2738952636719,
+          261.0735168457031,
+          364.624755859375
+        ],
+        "box": [
+          196.73226928710938,
+          335.2738952636719,
+          261.0735168457031,
+          364.624755859375
+        ]
+      },
+      {
+        "label": "snowboard",
+        "score": 0.44671109318733215,
+        "box_2d": [
+          309.1109924316406,
+          308.5854187011719,
+          333.52294921875,
+          346.5513916015625
+        ],
+        "box": [
+          309.1109924316406,
+          308.5854187011719,
+          333.52294921875,
+          346.5513916015625
+        ]
+      }
+    ],
+    "latency_sec": 0.37466427590698004,
+    "raw_response": null
+  }
+}

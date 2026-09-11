@@ -1,0 +1,72 @@
+{
+  "model": "gemini-2.5-flash",
+  "strategy": "single_query",
+  "labels": [
+    "microwave",
+    "toaster",
+    "microwave",
+    "oven",
+    "toaster",
+    "sink",
+    "refrigerator",
+    "book",
+    "clock",
+    "vase",
+    "scissors",
+    "teddy bear",
+    "hair drier",
+    "toothbrush"
+  ],
+  "image": "/home/maxim/PycharmProjects/zero-shot-detection-benchmark/data/raw/coco2017/val2017/000000000139.jpg",
+  "result": {
+    "detections": [
+      {
+        "box_2d": [
+          744,
+          305,
+          843,
+          497
+        ],
+        "label": "refrigerator"
+      },
+      {
+        "box_2d": [
+          695,
+          273,
+          735,
+          303
+        ],
+        "label": "clock"
+      },
+      {
+        "box_2d": [
+          246,
+          508,
+          290,
+          563
+        ],
+        "label": "vase"
+      },
+      {
+        "box_2d": [
+          862,
+          856,
+          929,
+          946
+        ],
+        "label": "vase"
+      },
+      {
+        "box_2d": [
+          507,
+          439,
+          532,
+          477
+        ],
+        "label": "vase"
+      }
+    ],
+    "latency_sec": 10.30627381708473,
+    "raw_response": "```json\n[\n  {\"box_2d\": [744, 305, 843, 497], \"label\": \"refrigerator\"},\n  {\"box_2d\": [695, 273, 735, 303], \"label\": \"clock\"},\n  {\"box_2d\": [246, 508, 290, 563], \"label\": \"vase\"},\n  {\"box_2d\": [862, 856, 929, 946], \"label\": \"vase\"},\n  {\"box_2d\": [507, 439, 532, 477], \"label\": \"vase\"}\n]\n```"
+  }
+}

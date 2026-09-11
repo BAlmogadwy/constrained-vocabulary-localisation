@@ -1,0 +1,27 @@
+{
+  "model": "gemini-2.5-flash",
+  "strategy": "single_query",
+  "image": "/home/maxim/PycharmProjects/zero-shot-detection-benchmark/data/raw/coco2017/val2017/000000136033.jpg",
+  "labels": [
+    "sink",
+    "book",
+    "hair drier",
+    "microwave",
+    "teddy bear",
+    "toaster",
+    "toothbrush"
+  ],
+  "detections": [
+    {
+      "box_2d": [
+        784,
+        521,
+        917,
+        661
+      ],
+      "label": "sink"
+    }
+  ],
+  "latency_sec": 1.9110253320541233,
+  "raw_response": "```json\n[\n  {\"box_2d\": [784, 521, 917, 661], \"label\": \"sink\"}\n]\n```"
+}

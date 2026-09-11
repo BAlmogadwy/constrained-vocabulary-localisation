@@ -1,0 +1,18 @@
+dataset:
+  images_dir: data/subsets/lvis_v1_val_unseen/images
+  limit: null
+
+labels:
+  per_image_file: data/processed/lvis_v1/val/lvis_unseen_dynamic_labels.json
+  file: prompts/coco_unseen_labels.txt
+  values: []
+
+output:
+  dir: results/raw/vlm/lvis_llama
+
+models:
+  - name: Llama-3.2-11B-Vision-Instruct
+    prompt_strategy: single_query
+    output_name: llama_32_vision_lvis_unseen.json
+
+force: false

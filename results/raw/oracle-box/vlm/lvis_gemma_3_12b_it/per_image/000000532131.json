@@ -1,0 +1,36 @@
+{
+  "image": "/home/maxim/PycharmProjects/zero-shot-detection-benchmark/data/subsets/lvis_v1_val_unseen/images/000000532131.jpg",
+  "image_id": 532131,
+  "file_name": "000000532131.jpg",
+  "num_crops": 1,
+  "crops": [
+    {
+      "annotation_id": 174897,
+      "bbox": [
+        528.8,
+        221.91,
+        21.31,
+        70.96
+      ],
+      "category_id": 993,
+      "gt_label": "spatula",
+      "labels": [
+        "spatula",
+        "blender",
+        "lawn_mower",
+        "musical_instrument",
+        "stapler_(stapling_machine)"
+      ],
+      "prediction": "musical_instrument",
+      "normalized_prediction": "musical instrument",
+      "matched_label": "musical_instrument",
+      "correct": false,
+      "latency_sec": 14.420049880020088,
+      "raw_response": {
+        "prediction": "musical_instrument",
+        "raw_response": "musical_instrument"
+      }
+    }
+  ],
+  "prompt": "You are an object recognition assistant.\n\nYou will see a cropped image that contains exactly one object\nfrom the following LVIS categories (unseen split):\n\n- spatula\n- blender\n- lawn_mower\n- musical_instrument\n- stapler_(stapling_machine)\n\nYour task:\n- Return ONLY the best matching category name from this list.\n- Do not output explanations or extra text.\n\nAnswer with a single string: \"class_name\"."
+}

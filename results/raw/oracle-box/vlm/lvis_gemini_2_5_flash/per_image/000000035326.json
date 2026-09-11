@@ -1,0 +1,57 @@
+{
+  "image": "/home/maxim/PycharmProjects/zero-shot-detection-benchmark/data/raw/coco2017/val2017/000000035326.jpg",
+  "image_id": 35326,
+  "file_name": "000000035326.jpg",
+  "num_crops": 2,
+  "crops": [
+    {
+      "annotation_id": 23704,
+      "bbox": [
+        55.45,
+        216.86,
+        30.33,
+        41.67
+      ],
+      "category_id": 993,
+      "gt_label": "spatula",
+      "labels": [
+        "spatula",
+        "lawn_mower",
+        "microscope",
+        "sewing_machine",
+        "stapler_(stapling_machine)"
+      ],
+      "prediction": null,
+      "normalized_prediction": "",
+      "matched_label": null,
+      "correct": false,
+      "latency_sec": 1.2788300050015096,
+      "raw_response": "I'm sorry, but I cannot detect any objects in the provided image. The image is extremely low resolution and appears to be a blurry, pixelated crop, making it impossible to identify any discernible objects."
+    },
+    {
+      "annotation_id": 23705,
+      "bbox": [
+        43.83,
+        196.52,
+        42.26,
+        61.45
+      ],
+      "category_id": 993,
+      "gt_label": "spatula",
+      "labels": [
+        "spatula",
+        "lawn_mower",
+        "microscope",
+        "sewing_machine",
+        "stapler_(stapling_machine)"
+      ],
+      "prediction": null,
+      "normalized_prediction": "",
+      "matched_label": null,
+      "correct": false,
+      "latency_sec": 1.2099228629958816,
+      "raw_response": "[]"
+    }
+  ],
+  "prompt": "You are an object recognition assistant.\n\nYou will see a cropped image that contains exactly one object\nfrom the following LVIS categories (unseen split):\n\n- spatula\n- lawn_mower\n- microscope\n- sewing_machine\n- stapler_(stapling_machine)\n\nYour task:\n- Return ONLY the best matching category name from this list.\n- Do not output explanations or extra text.\n\nAnswer with a single string: \"class_name\"."
+}

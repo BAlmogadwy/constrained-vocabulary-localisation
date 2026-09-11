@@ -1,0 +1,150 @@
+{
+ "image": "000000472376.jpg",
+ "labels": [
+  "musical_instrument",
+  "blender",
+  "hair_dryer",
+  "sewing_machine",
+  "stapler_(stapling_machine)"
+ ],
+ "tau": 0.4,
+ "detector": {
+  "detections": [
+   {
+    "label": "hair_dryer",
+    "box": [
+     534.843505859375,
+     232.51446533203125,
+     554.951904296875,
+     253.64739990234375
+    ],
+    "score": 0.0017645788611844182
+   },
+   {
+    "label": "musical_instrument",
+    "box": [
+     236.4267578125,
+     160.93997192382812,
+     308.2752685546875,
+     317.8561096191406
+    ],
+    "score": 0.001026018988341093
+   }
+  ],
+  "latency_sec": 0.19793460000073537
+ },
+ "detector_max_score": 0.0017645788611844182,
+ "escalated": true,
+ "vlm": {
+  "model": "qwen/qwen3-vl-235b-a22b-instruct",
+  "detections": [
+   {
+    "label": "musical_instrument",
+    "box": [
+     233.6,
+     162.24,
+     309.76,
+     317.76
+    ],
+    "score": 1.0
+   },
+   {
+    "label": "musical_instrument",
+    "box": [
+     341.76,
+     245.76,
+     393.6,
+     397.92
+    ],
+    "score": 1.0
+   }
+  ],
+  "latency_sec": 5.803176300003543,
+  "usage": {
+   "prompt_tokens": 397,
+   "completion_tokens": 97,
+   "total_tokens": 494
+  },
+  "raw_response": {
+   "id": "gen-1783406934-XNoXUhy6o0wRHj2dxJVG",
+   "object": "chat.completion",
+   "created": 1783406934,
+   "model": "qwen/qwen3-vl-235b-a22b-instruct",
+   "provider": "DeepInfra",
+   "system_fingerprint": null,
+   "service_tier": null,
+   "choices": [
+    {
+     "index": 0,
+     "logprobs": null,
+     "finish_reason": "stop",
+     "native_finish_reason": "stop",
+     "message": {
+      "role": "assistant",
+      "content": "```json\n[\n\t{\"bbox_2d\": [365, 338, 484, 662], \"label\": \"musical_instrument\", \"confidence\": 0.95},\n\t{\"bbox_2d\": [534, 512, 615, 829], \"label\": \"musical_instrument\", \"confidence\": 0.93}\n]\n```",
+      "refusal": null,
+      "reasoning": null
+     }
+    }
+   ],
+   "usage": {
+    "prompt_tokens": 397,
+    "completion_tokens": 97,
+    "total_tokens": 494,
+    "cost": 0.00016476,
+    "is_byok": false,
+    "prompt_tokens_details": {
+     "cached_tokens": 0,
+     "cache_write_tokens": 0,
+     "audio_tokens": 0,
+     "video_tokens": 0
+    },
+    "cost_details": {
+     "upstream_inference_cost": 0.00016476,
+     "upstream_inference_prompt_cost": 7.94e-05,
+     "upstream_inference_completions_cost": 8.536e-05
+    },
+    "completion_tokens_details": {
+     "reasoning_tokens": 0,
+     "image_tokens": 0,
+     "audio_tokens": 0
+    }
+   }
+  }
+ },
+ "fallback": false,
+ "ts": "2026-07-07T06:48:52.357093+00:00",
+ "fused": [
+  {
+   "label": "hair_dryer",
+   "box": [
+    534.843505859375,
+    232.51446533203125,
+    554.951904296875,
+    253.64739990234375
+   ],
+   "score": 0.0017645788611844182
+  },
+  {
+   "label": "musical_instrument",
+   "box": [
+    236.4267578125,
+    160.93997192382812,
+    308.2752685546875,
+    317.8561096191406
+   ],
+   "score": 0.3010260189883411
+  },
+  {
+   "label": "musical_instrument",
+   "box": [
+    341.76,
+    245.76,
+    393.6,
+    397.92
+   ],
+   "score": 0.4
+  }
+ ],
+ "latency_total_sec": 6.001132000004873
+}

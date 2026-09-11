@@ -1,0 +1,88 @@
+{
+ "image": "000000153343.jpg",
+ "model": "qwen/qwen3-vl-235b-a22b-instruct",
+ "labels": [
+  "teddy bear",
+  "book",
+  "clock",
+  "hair drier",
+  "oven",
+  "refrigerator",
+  "toaster"
+ ],
+ "detections": [
+  {
+   "box_2d": [
+    62.72,
+    153.12,
+    284.16,
+    381.12
+   ],
+   "label": "teddy bear",
+   "score": 0.99
+  },
+  {
+   "box_2d": [
+    358.4,
+    154.08,
+    552.96,
+    375.84
+   ],
+   "label": "teddy bear",
+   "score": 0.99
+  }
+ ],
+ "latency_sec": 5.966260800007149,
+ "usage": {
+  "prompt_tokens": 393,
+  "completion_tokens": 94,
+  "total_tokens": 487
+ },
+ "raw_response": {
+  "id": "gen-1783411255-ZoRo7ucz0qQIrMj9pl1N",
+  "object": "chat.completion",
+  "created": 1783411255,
+  "model": "qwen/qwen3-vl-235b-a22b-instruct",
+  "provider": "Alibaba",
+  "system_fingerprint": null,
+  "service_tier": null,
+  "choices": [
+   {
+    "index": 0,
+    "logprobs": null,
+    "finish_reason": "stop",
+    "native_finish_reason": "stop",
+    "message": {
+     "role": "assistant",
+     "content": "```json\n[\n\t{\"bbox_2d\": [98, 319, 444, 794], \"label\": \"teddy bear\", \"confidence\": 0.99},\n\t{\"bbox_2d\": [560, 321, 864, 783], \"label\": \"teddy bear\", \"confidence\": 0.99}\n]\n```",
+     "refusal": null,
+     "reasoning": null
+    }
+   }
+  ],
+  "usage": {
+   "prompt_tokens": 393,
+   "completion_tokens": 94,
+   "total_tokens": 487,
+   "cost": 0.00019994,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00019994,
+    "upstream_inference_prompt_cost": 0.00010218,
+    "upstream_inference_completions_cost": 9.776e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   }
+  }
+ },
+ "ts": "2026-07-07T08:00:57.663166+00:00"
+}

@@ -1,0 +1,81 @@
+{
+  "model": "Qwen3-VL-8B-Instruct",
+  "strategy": "single_query",
+  "labels": [
+    "microwave",
+    "toaster",
+    "microwave",
+    "oven",
+    "toaster",
+    "sink",
+    "refrigerator",
+    "book",
+    "clock",
+    "vase",
+    "scissors",
+    "teddy bear",
+    "hair drier",
+    "toothbrush"
+  ],
+  "image": "/home/maxim/PycharmProjects/zero-shot-detection-benchmark/data/raw/coco2017/val2017/000000000139.jpg",
+  "result": {
+    "detections": [
+      {
+        "box_2d": [
+          859.0,
+          583.0,
+          933.0,
+          940.0
+        ],
+        "label": "vase"
+      },
+      {
+        "box_2d": [
+          784.0,
+          476.0,
+          831.0,
+          520.0
+        ],
+        "label": "sink"
+      },
+      {
+        "box_2d": [
+          744.0,
+          398.0,
+          806.0,
+          672.0
+        ],
+        "label": "refrigerator"
+      },
+      {
+        "box_2d": [
+          744.0,
+          398.0,
+          806.0,
+          672.0
+        ],
+        "label": "oven"
+      },
+      {
+        "box_2d": [
+          744.0,
+          398.0,
+          806.0,
+          672.0
+        ],
+        "label": "microwave"
+      },
+      {
+        "box_2d": [
+          744.0,
+          398.0,
+          806.0,
+          672.0
+        ],
+        "label": "toaster"
+      }
+    ],
+    "latency_sec": 7.450363103998825,
+    "raw_response": "user\nYou are an object detection assistant. Given the image and the list of target classes, return detections as JSON.\nTarget classes: microwave, toaster, microwave, oven, toaster, sink, refrigerator, book, clock, vase, scissors, teddy bear, hair drier, toothbrush.\nOutput format: [{\"box_2d\":[x1,y1,x2,y2],\"label\":\"class_name\"}...]\nUse pixel coordinates relative to the input image. Return JSON only.\nassistant\n```json\n[\n\t{\"box_2d\": [859, 583, 933, 940],\"label\":\"vase\"},\n\t{\"box_702, 283, 722, 333],\"label\":\"clock\"},\n\t{\"bbox_2d\": [784, 476, 831, 520],\"label\":\"sink\"},\n\t{\"bbox_2d\": [744, 398, 806, 672],\"label\":\"refrigerator\"},\n\t{\"bbox_2d\": [744, 398, 806, 672],\"label\":\"oven\"},\n\t{\"bbox_2d\": [744, 398, 806, 672],\"label\":\"microwave\"},\n\t{\"bbox_2d\": [744, 398, 806, 672],\"label\":\"toaster\"}\n]\n```"
+  }
+}

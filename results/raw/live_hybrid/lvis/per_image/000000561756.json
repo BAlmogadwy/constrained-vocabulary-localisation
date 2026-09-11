@@ -1,0 +1,290 @@
+{
+ "image": "000000561756.jpg",
+ "labels": [
+  "stapler_(stapling_machine)",
+  "blender",
+  "coffee_maker",
+  "snowboard",
+  "spatula"
+ ],
+ "tau": 0.4,
+ "detector": {
+  "detections": [
+   {
+    "label": "stapler_(stapling_machine)",
+    "box": [
+     280.52777099609375,
+     285.03485107421875,
+     362.0274963378906,
+     355.44281005859375
+    ],
+    "score": 0.019863685593008995
+   },
+   {
+    "label": "coffee_maker",
+    "box": [
+     331.8881530761719,
+     215.4864959716797,
+     407.29962158203125,
+     314.3802795410156
+    ],
+    "score": 0.01455969549715519
+   },
+   {
+    "label": "coffee_maker",
+    "box": [
+     199.13494873046875,
+     236.39845275878906,
+     280.98724365234375,
+     368.5391845703125
+    ],
+    "score": 0.005822037812322378
+   },
+   {
+    "label": "stapler_(stapling_machine)",
+    "box": [
+     375.95428466796875,
+     293.5475769042969,
+     413.21435546875,
+     348.69342041015625
+    ],
+    "score": 0.0049384236335754395
+   },
+   {
+    "label": "blender",
+    "box": [
+     199.16798400878906,
+     236.36380004882812,
+     280.9593811035156,
+     368.6302185058594
+    ],
+    "score": 0.003689692821353674
+   },
+   {
+    "label": "stapler_(stapling_machine)",
+    "box": [
+     287.4179382324219,
+     284.99945068359375,
+     350.5809326171875,
+     324.04595947265625
+    ],
+    "score": 0.0032288299407809973
+   },
+   {
+    "label": "stapler_(stapling_machine)",
+    "box": [
+     332.4819030761719,
+     239.12371826171875,
+     499.7115478515625,
+     347.947021484375
+    ],
+    "score": 0.002808265620842576
+   },
+   {
+    "label": "coffee_maker",
+    "box": [
+     0.4688739776611328,
+     0.43632984161376953,
+     498.1882019042969,
+     371.6509704589844
+    ],
+    "score": 0.00275379978120327
+   },
+   {
+    "label": "stapler_(stapling_machine)",
+    "box": [
+     331.4050598144531,
+     214.57113647460938,
+     412.6538391113281,
+     348.13336181640625
+    ],
+    "score": 0.002151097636669874
+   },
+   {
+    "label": "coffee_maker",
+    "box": [
+     0.0,
+     0.021409988403320312,
+     125.24083709716797,
+     59.360008239746094
+    ],
+    "score": 0.0015450123464688659
+   }
+  ],
+  "latency_sec": 0.2862800999864703
+ },
+ "detector_max_score": 0.019863685593008995,
+ "escalated": true,
+ "vlm": {
+  "model": "qwen/qwen3-vl-235b-a22b-instruct",
+  "detections": [
+   {
+    "label": "stapler_(stapling_machine)",
+    "box": [
+     282.5,
+     282.0,
+     362.5,
+     354.0
+    ],
+    "score": 1.0
+   }
+  ],
+  "latency_sec": 2.7600572999945143,
+  "usage": {
+   "prompt_tokens": 286,
+   "completion_tokens": 56,
+   "total_tokens": 342
+  },
+  "raw_response": {
+   "id": "gen-1783407004-wWYnxrGaBZ8z2S9FtAyW",
+   "object": "chat.completion",
+   "created": 1783407004,
+   "model": "qwen/qwen3-vl-235b-a22b-instruct",
+   "provider": "Parasail",
+   "system_fingerprint": null,
+   "service_tier": null,
+   "choices": [
+    {
+     "index": 0,
+     "logprobs": null,
+     "finish_reason": "stop",
+     "native_finish_reason": "stop",
+     "message": {
+      "role": "assistant",
+      "content": "```json\n[\n\t{\"box_2d\": [565, 752, 725, 944], \"label\": \"stapler_(stapling_machine)\", \"confidence\": 0.95}\n]\n```",
+      "refusal": null,
+      "reasoning": null
+     }
+    }
+   ],
+   "usage": {
+    "prompt_tokens": 286,
+    "completion_tokens": 56,
+    "total_tokens": 342,
+    "cost": 0.00016646,
+    "is_byok": false,
+    "prompt_tokens_details": {
+     "cached_tokens": 0,
+     "cache_write_tokens": 0,
+     "audio_tokens": 0,
+     "video_tokens": 0
+    },
+    "cost_details": {
+     "upstream_inference_cost": 0.00016646,
+     "upstream_inference_prompt_cost": 6.006e-05,
+     "upstream_inference_completions_cost": 0.0001064
+    },
+    "completion_tokens_details": {
+     "reasoning_tokens": 0,
+     "image_tokens": 0,
+     "audio_tokens": 0
+    }
+   }
+  }
+ },
+ "fallback": false,
+ "ts": "2026-07-07T06:50:02.339864+00:00",
+ "fused": [
+  {
+   "label": "stapler_(stapling_machine)",
+   "box": [
+    280.52777099609375,
+    285.03485107421875,
+    362.0274963378906,
+    355.44281005859375
+   ],
+   "score": 0.319863685593009
+  },
+  {
+   "label": "coffee_maker",
+   "box": [
+    331.8881530761719,
+    215.4864959716797,
+    407.29962158203125,
+    314.3802795410156
+   ],
+   "score": 0.01455969549715519
+  },
+  {
+   "label": "coffee_maker",
+   "box": [
+    199.13494873046875,
+    236.39845275878906,
+    280.98724365234375,
+    368.5391845703125
+   ],
+   "score": 0.005822037812322378
+  },
+  {
+   "label": "stapler_(stapling_machine)",
+   "box": [
+    375.95428466796875,
+    293.5475769042969,
+    413.21435546875,
+    348.69342041015625
+   ],
+   "score": 0.0049384236335754395
+  },
+  {
+   "label": "blender",
+   "box": [
+    199.16798400878906,
+    236.36380004882812,
+    280.9593811035156,
+    368.6302185058594
+   ],
+   "score": 0.003689692821353674
+  },
+  {
+   "label": "stapler_(stapling_machine)",
+   "box": [
+    287.4179382324219,
+    284.99945068359375,
+    350.5809326171875,
+    324.04595947265625
+   ],
+   "score": 0.0032288299407809973
+  },
+  {
+   "label": "stapler_(stapling_machine)",
+   "box": [
+    332.4819030761719,
+    239.12371826171875,
+    499.7115478515625,
+    347.947021484375
+   ],
+   "score": 0.002808265620842576
+  },
+  {
+   "label": "coffee_maker",
+   "box": [
+    0.4688739776611328,
+    0.43632984161376953,
+    498.1882019042969,
+    371.6509704589844
+   ],
+   "score": 0.00275379978120327
+  },
+  {
+   "label": "stapler_(stapling_machine)",
+   "box": [
+    331.4050598144531,
+    214.57113647460938,
+    412.6538391113281,
+    348.13336181640625
+   ],
+   "score": 0.002151097636669874
+  },
+  {
+   "label": "coffee_maker",
+   "box": [
+    0.0,
+    0.021409988403320312,
+    125.24083709716797,
+    59.360008239746094
+   ],
+   "score": 0.0015450123464688659
+  }
+ ],
+ "latency_total_sec": 3.0463576999754878
+}

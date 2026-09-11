@@ -1,0 +1,34 @@
+{
+  "model": "yolo_world",
+  "strategy": "default",
+  "image": "/home/maxim/PycharmProjects/zero-shot-detection-benchmark/data/subsets/lvis_v1_val_unseen/images/000000230315.jpg",
+  "labels": [
+    "snowboard",
+    "blender",
+    "coffee_maker",
+    "microscope",
+    "musical_instrument"
+  ],
+  "result": {
+    "detections": [
+      {
+        "label": "snowboard",
+        "score": 0.964116632938385,
+        "box_2d": [
+          153.78472900390625,
+          154.13702392578125,
+          310.80029296875,
+          246.71893310546875
+        ],
+        "box": [
+          153.78472900390625,
+          154.13702392578125,
+          310.80029296875,
+          246.71893310546875
+        ]
+      }
+    ],
+    "latency_sec": 0.034645249135792255,
+    "raw_response": null
+  }
+}

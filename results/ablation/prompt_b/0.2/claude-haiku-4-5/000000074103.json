@@ -1,0 +1,20 @@
+{
+  "model": "claude-haiku-4-5",
+  "strategy": "iterative",
+  "image": "/home/maxim/PycharmProjects/zero-shot-detection-benchmark/data/subsets/lvis_v1_val_unseen/images/000000074103.jpg",
+  "labels": [
+    "snowboard",
+    "blender",
+    "microscope",
+    "musical_instrument",
+    "spatula"
+  ],
+  "result": {
+    "detections": [],
+    "latency_sec": 0.1912519580218941,
+    "raw_response": {
+      "error": "Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CVcBGvscnhZJmGXUj4iLJ'}",
+      "traceback": "Traceback (most recent call last):\n  File \"/home/maxim/PycharmProjects/zero-shot-detection-benchmark/experiments/run_ablation.py\", line 271, in run_model_variant\n    prediction = detector.predict(\n                 ^^^^^^^^^^^^^^^^^\n  File \"/home/maxim/PycharmProjects/zero-shot-detection-benchmark/models/vlm/claude_detector.py\", line 39, in predict\n    return self._predict_iterative(image_path, classes)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/maxim/PycharmProjects/zero-shot-detection-benchmark/models/vlm/claude_detector.py\", line 85, in _predict_iterative\n    id_message = self.client.messages.create(\n                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/maxim/PycharmProjects/zero-shot-detection-benchmark/.venv/lib/python3.12/site-packages/anthropic/_utils/_utils.py\", line 282, in wrapper\n    return func(*args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/maxim/PycharmProjects/zero-shot-detection-benchmark/.venv/lib/python3.12/site-packages/anthropic/resources/messages/messages.py\", line 927, in create\n    return self._post(\n           ^^^^^^^^^^^\n  File \"/home/maxim/PycharmProjects/zero-shot-detection-benchmark/.venv/lib/python3.12/site-packages/anthropic/_base_client.py\", line 1326, in post\n    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))\n                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/maxim/PycharmProjects/zero-shot-detection-benchmark/.venv/lib/python3.12/site-packages/anthropic/_base_client.py\", line 1114, in request\n    raise self._make_status_error_from_response(err.response) from None\nanthropic.BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CVcBGvscnhZJmGXUj4iLJ'}\n"
+    }
+  }
+}

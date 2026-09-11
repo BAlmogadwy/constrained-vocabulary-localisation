@@ -1,0 +1,43 @@
+{
+  "image": "/home/maxim/PycharmProjects/zero-shot-detection-benchmark/data/subsets/lvis_v1_val_unseen/images/000000285548.jpg",
+  "image_id": 285548,
+  "file_name": "000000285548.jpg",
+  "num_crops": 1,
+  "crops": [
+    {
+      "annotation_id": 200793,
+      "bbox": [
+        325.15,
+        329.39,
+        149.29,
+        45.61
+      ],
+      "category_id": 1006,
+      "gt_label": "stapler_(stapling_machine)",
+      "labels": [
+        "stapler_(stapling_machine)",
+        "coffee_maker",
+        "hair_dryer",
+        "musical_instrument",
+        "spatula"
+      ],
+      "prediction": "stapler_(stapling_machine)",
+      "normalized_prediction": "stapler (stapling machine)",
+      "matched_label": "stapler_(stapling_machine)",
+      "correct": true,
+      "latency_sec": 5.595584546012105,
+      "raw_response": {
+        "stapler_(stapling_machine)": "[{\"box_2d\":[0,0,150,46],\"label\":\"stapler_(stapling_machine)\"}]",
+        "coffee_maker": "[]",
+        "coffee_maker_norm": "[{\"box_norm\":[0.05,0.02,0.44,0.46],\"label\":\"coffee_maker\"}]",
+        "hair_dryer": "[]",
+        "hair_dryer_norm": "[{\"box_norm\":[0.03,0.07,0.38,0.43],\"label\":\"hair_dryer\"}]",
+        "musical_instrument": "[]",
+        "musical_instrument_norm": "[{\"box_norm\":[0.0,0.0,0.0,0.0],\"label\":\"musical_instrument\"}]",
+        "spatula": "[]",
+        "spatula_norm": "[{\"box_norm\":[0.000000,0.000000,0.000000,0.000000],\"label\":\"None\"}]"
+      }
+    }
+  ],
+  "prompt": "You are an object recognition assistant.\n\nYou will see a cropped image that contains exactly one object\nfrom the following LVIS categories (unseen split):\n\n- stapler_(stapling_machine)\n- coffee_maker\n- hair_dryer\n- musical_instrument\n- spatula\n\nYour task:\n- Return ONLY the best matching category name from this list.\n- Do not output explanations or extra text.\n\nAnswer with a single string: \"class_name\"."
+}

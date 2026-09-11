@@ -1,0 +1,153 @@
+{
+  "image": "/home/maxim/PycharmProjects/zero-shot-detection-benchmark/data/subsets/lvis_v1_val_unseen/images/000000085081.jpg",
+  "image_id": 85081,
+  "file_name": "000000085081.jpg",
+  "num_crops": 6,
+  "crops": [
+    {
+      "annotation_id": 131937,
+      "bbox": [
+        449.74,
+        228.78,
+        37.53,
+        19.23
+      ],
+      "category_id": 976,
+      "gt_label": "snowboard",
+      "labels": [
+        "snowboard",
+        "blender",
+        "hair_dryer",
+        "lawn_mower",
+        "musical_instrument"
+      ],
+      "prediction": null,
+      "normalized_prediction": "",
+      "matched_label": null,
+      "correct": false,
+      "latency_sec": 1.4160442690190393,
+      "raw_response": "I'm sorry, but the image provided is too small and pixelated to accurately detect any objects. The resolution is extremely low (8x8 pixels), making it impossible to identify any discernible shapes or features for object detection. Please provide a clearer, higher-resolution image."
+    },
+    {
+      "annotation_id": 131938,
+      "bbox": [
+        530.19,
+        216.05,
+        16.44,
+        4.82
+      ],
+      "category_id": 976,
+      "gt_label": "snowboard",
+      "labels": [
+        "snowboard",
+        "blender",
+        "hair_dryer",
+        "lawn_mower",
+        "musical_instrument"
+      ],
+      "prediction": null,
+      "normalized_prediction": "",
+      "matched_label": null,
+      "correct": false,
+      "latency_sec": 2.2884238509868737,
+      "raw_response": "[]"
+    },
+    {
+      "annotation_id": 131939,
+      "bbox": [
+        0.0,
+        421.34,
+        508.01,
+        58.66
+      ],
+      "category_id": 976,
+      "gt_label": "snowboard",
+      "labels": [
+        "snowboard",
+        "blender",
+        "hair_dryer",
+        "lawn_mower",
+        "musical_instrument"
+      ],
+      "prediction": "snowboard",
+      "normalized_prediction": "snowboard",
+      "matched_label": "snowboard",
+      "correct": true,
+      "latency_sec": 3.876285259000724,
+      "raw_response": "[{\"box_2d\": [0, 0, 994, 997], \"label\": \"snowboard\"}]"
+    },
+    {
+      "annotation_id": 131940,
+      "bbox": [
+        0.0,
+        185.08,
+        17.22,
+        7.46
+      ],
+      "category_id": 976,
+      "gt_label": "snowboard",
+      "labels": [
+        "snowboard",
+        "blender",
+        "hair_dryer",
+        "lawn_mower",
+        "musical_instrument"
+      ],
+      "prediction": null,
+      "normalized_prediction": "",
+      "matched_label": null,
+      "correct": false,
+      "latency_sec": 1.4691745930176694,
+      "raw_response": "[]"
+    },
+    {
+      "annotation_id": 131941,
+      "bbox": [
+        371.59,
+        204.77,
+        25.59,
+        6.68
+      ],
+      "category_id": 976,
+      "gt_label": "snowboard",
+      "labels": [
+        "snowboard",
+        "blender",
+        "hair_dryer",
+        "lawn_mower",
+        "musical_instrument"
+      ],
+      "prediction": null,
+      "normalized_prediction": "",
+      "matched_label": null,
+      "correct": false,
+      "latency_sec": 1.4963040159782395,
+      "raw_response": "[]"
+    },
+    {
+      "annotation_id": 131942,
+      "bbox": [
+        69.31,
+        189.88,
+        26.05,
+        8.73
+      ],
+      "category_id": 976,
+      "gt_label": "snowboard",
+      "labels": [
+        "snowboard",
+        "blender",
+        "hair_dryer",
+        "lawn_mower",
+        "musical_instrument"
+      ],
+      "prediction": null,
+      "normalized_prediction": "",
+      "matched_label": null,
+      "correct": false,
+      "latency_sec": 1.4013113990076818,
+      "raw_response": "[]"
+    }
+  ],
+  "prompt": "You are an object recognition assistant.\n\nYou will see a cropped image that contains exactly one object\nfrom the following LVIS categories (unseen split):\n\n- snowboard\n- blender\n- hair_dryer\n- lawn_mower\n- musical_instrument\n\nYour task:\n- Return ONLY the best matching category name from this list.\n- Do not output explanations or extra text.\n\nAnswer with a single string: \"class_name\"."
+}

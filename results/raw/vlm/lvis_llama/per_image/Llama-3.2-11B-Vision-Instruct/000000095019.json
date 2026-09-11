@@ -1,0 +1,45 @@
+{
+  "model": "Llama-3.2-11B-Vision-Instruct",
+  "strategy": "single_query",
+  "image": "/home/maxim/PycharmProjects/zero-shot-detection-benchmark/data/subsets/lvis_v1_val_unseen/images/000000095019.jpg",
+  "labels": [
+    "snowboard",
+    "blender",
+    "musical_instrument",
+    "spatula",
+    "stapler_(stapling_machine)"
+  ],
+  "detections": [
+    {
+      "box_2d": [
+        144,
+        104,
+        341,
+        236
+      ],
+      "label": "snowboard"
+    },
+    {
+      "box_2d": [
+        1,
+        0,
+        639,
+        425
+      ],
+      "label": "snowboarder"
+    }
+  ],
+  "latency_sec": 15.297705359756947,
+  "raw_response": {
+    "snowboard": "[{\"box_2d\":[0,0,0,0],\"label\":\"snowboard\"}]",
+    "snowboard_norm": "[{\"box_norm\":[0.225,0.245,0.533,0.555],\"label\":\"snowboard\"}]",
+    "blender": "[]",
+    "blender_norm": "[{\"box_norm\":[0.001,0.001,0.998,0.998],\"label\":\"snowboarder\"}]",
+    "musical_instrument": "[]",
+    "musical_instrument_norm": "[{\"box_norm\":[0.000,0.000,0.000,0.000],\"label\":\"musical_instrument\"}]",
+    "spatula": "[]",
+    "spatula_norm": "[{\"box_norm\":[0.000,0.000,0.000,0.000],\"label\":\"spatula\"}]",
+    "stapler_(stapling_machine)": "[]",
+    "stapler_(stapling_machine)_norm": "[{\"box_norm\":[0.000,0.000,0.000,0.000],\"label\":\"stapler_(stapling_machine)\"}]"
+  }
+}

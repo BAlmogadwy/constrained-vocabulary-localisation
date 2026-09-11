@@ -1,0 +1,130 @@
+{
+ "image": "000000097679.jpg",
+ "labels": [
+  "snowboard",
+  "coffee_maker",
+  "hair_dryer",
+  "spatula",
+  "stapler_(stapling_machine)"
+ ],
+ "tau": 0.4,
+ "detector": {
+  "detections": [
+   {
+    "label": "snowboard",
+    "box": [
+     191.7489013671875,
+     155.33389282226562,
+     329.25750732421875,
+     183.35629272460938
+    ],
+    "score": 0.03876893222332001
+   },
+   {
+    "label": "snowboard",
+    "box": [
+     518.6651000976562,
+     172.23513793945312,
+     533.4032592773438,
+     188.51217651367188
+    ],
+    "score": 0.0013550143921747804
+   }
+  ],
+  "latency_sec": 0.04157029998896178
+ },
+ "detector_max_score": 0.03876893222332001,
+ "escalated": true,
+ "vlm": {
+  "model": "qwen/qwen3-vl-235b-a22b-instruct",
+  "detections": [
+   {
+    "label": "snowboard",
+    "box": [
+     192.0,
+     156.0,
+     328.32,
+     184.8
+    ],
+    "score": 1.0
+   }
+  ],
+  "latency_sec": 4.761608000000706,
+  "usage": {
+   "prompt_tokens": 397,
+   "completion_tokens": 50,
+   "total_tokens": 447
+  },
+  "raw_response": {
+   "id": "gen-1783406637-IFC81CQPyaPfjAt2Qpwg",
+   "object": "chat.completion",
+   "created": 1783406637,
+   "model": "qwen/qwen3-vl-235b-a22b-instruct",
+   "provider": "Venice",
+   "system_fingerprint": null,
+   "service_tier": null,
+   "choices": [
+    {
+     "index": 0,
+     "logprobs": null,
+     "finish_reason": "stop",
+     "native_finish_reason": "stop",
+     "message": {
+      "role": "assistant",
+      "content": "```json\n[\n\t{\"box_2d\": [300, 325, 513, 385], \"label\": \"snowboard\", \"confidence\": 0.99}\n]\n```",
+      "refusal": null,
+      "reasoning": null
+     }
+    }
+   ],
+   "usage": {
+    "prompt_tokens": 397,
+    "completion_tokens": 50,
+    "total_tokens": 447,
+    "cost": 0.00017837,
+    "is_byok": false,
+    "prompt_tokens_details": {
+     "cached_tokens": 0,
+     "cache_write_tokens": 0,
+     "audio_tokens": 0,
+     "video_tokens": 0
+    },
+    "cost_details": {
+     "upstream_inference_cost": 0.00017837,
+     "upstream_inference_prompt_cost": 8.337e-05,
+     "upstream_inference_completions_cost": 9.5e-05
+    },
+    "completion_tokens_details": {
+     "reasoning_tokens": 0,
+     "image_tokens": 0,
+     "audio_tokens": 0
+    }
+   }
+  }
+ },
+ "fallback": false,
+ "ts": "2026-07-07T06:43:54.028595+00:00",
+ "fused": [
+  {
+   "label": "snowboard",
+   "box": [
+    191.7489013671875,
+    155.33389282226562,
+    329.25750732421875,
+    183.35629272460938
+   ],
+   "score": 0.33876893222332
+  },
+  {
+   "label": "snowboard",
+   "box": [
+    518.6651000976562,
+    172.23513793945312,
+    533.4032592773438,
+    188.51217651367188
+   ],
+   "score": 0.0013550143921747804
+  }
+ ],
+ "latency_total_sec": 4.803190399994492
+}

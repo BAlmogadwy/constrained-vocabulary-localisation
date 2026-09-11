@@ -1,0 +1,219 @@
+{
+ "image": "000000529568.jpg",
+ "model": "qwen/qwen3-vl-235b-a22b-instruct",
+ "labels": [
+  "book",
+  "oven",
+  "sink",
+  "vase",
+  "clock",
+  "microwave",
+  "refrigerator",
+  "teddy bear"
+ ],
+ "detections": [
+  {
+   "box_2d": [
+    358.08,
+    243.2,
+    370.08,
+    293.76
+   ],
+   "label": "book",
+   "score": 0.99
+  },
+  {
+   "box_2d": [
+    368.16,
+    243.2,
+    380.16,
+    293.76
+   ],
+   "label": "book",
+   "score": 0.99
+  },
+  {
+   "box_2d": [
+    378.24,
+    243.2,
+    390.24,
+    293.76
+   ],
+   "label": "book",
+   "score": 0.99
+  },
+  {
+   "box_2d": [
+    388.32,
+    243.2,
+    400.32,
+    293.76
+   ],
+   "label": "book",
+   "score": 0.99
+  },
+  {
+   "box_2d": [
+    398.4,
+    243.2,
+    410.4,
+    293.76
+   ],
+   "label": "book",
+   "score": 0.99
+  },
+  {
+   "box_2d": [
+    408.48,
+    243.2,
+    420.48,
+    293.76
+   ],
+   "label": "book",
+   "score": 0.99
+  },
+  {
+   "box_2d": [
+    132.96,
+    390.4,
+    230.88,
+    458.88
+   ],
+   "label": "oven",
+   "score": 0.99
+  },
+  {
+   "box_2d": [
+    291.84,
+    385.28,
+    454.08,
+    480.0
+   ],
+   "label": "sink",
+   "score": 0.99
+  },
+  {
+   "box_2d": [
+    0.0,
+    416.0,
+    53.28,
+    499.84
+   ],
+   "label": "vase",
+   "score": 0.99
+  },
+  {
+   "box_2d": [
+    302.88,
+    265.6,
+    324.96,
+    286.08
+   ],
+   "label": "clock",
+   "score": 0.99
+  },
+  {
+   "box_2d": [
+    330.72,
+    265.6,
+    353.76,
+    286.08
+   ],
+   "label": "clock",
+   "score": 0.99
+  },
+  {
+   "box_2d": [
+    416.64,
+    245.12,
+    454.08,
+    293.76
+   ],
+   "label": "clock",
+   "score": 0.99
+  },
+  {
+   "box_2d": [
+    457.92,
+    242.56,
+    480.0,
+    293.76
+   ],
+   "label": "clock",
+   "score": 0.99
+  },
+  {
+   "box_2d": [
+    414.24,
+    168.96,
+    479.04,
+    245.12
+   ],
+   "label": "microwave",
+   "score": 0.99
+  },
+  {
+   "box_2d": [
+    219.84,
+    390.4,
+    292.8,
+    569.6
+   ],
+   "label": "refrigerator",
+   "score": 0.99
+  }
+ ],
+ "latency_sec": 16.078447299994878,
+ "usage": {
+  "prompt_tokens": 393,
+  "completion_tokens": 640,
+  "total_tokens": 1033
+ },
+ "raw_response": {
+  "id": "gen-1783414932-py6FkqAylgtUbd4AiNaU",
+  "object": "chat.completion",
+  "created": 1783414932,
+  "model": "qwen/qwen3-vl-235b-a22b-instruct",
+  "provider": "Alibaba",
+  "system_fingerprint": null,
+  "service_tier": null,
+  "choices": [
+   {
+    "index": 0,
+    "logprobs": null,
+    "finish_reason": "stop",
+    "native_finish_reason": "stop",
+    "message": {
+     "role": "assistant",
+     "content": "```json\n[\n\t{\"bbox_2d\": [746, 380, 771, 459], \"label\": \"book\", \"confidence\": 0.99},\n\t{\"bbox_2d\": [767, 380, 792, 459], \"label\": \"book\", \"confidence\": 0.99},\n\t{\"bbox_2d\": [788, 380, 813, 459], \"label\": \"book\", \"confidence\": 0.99},\n\t{\"bbox_2d\": [809, 380, 834, 459], \"label\": \"book\", \"confidence\": 0.99},\n\t{\"bbox_2d\": [830, 380, 855, 459], \"label\": \"book\", \"confidence\": 0.99},\n\t{\"bbox_2d\": [851, 380, 876, 459], \"label\": \"book\", \"confidence\": 0.99},\n\t{\"bbox_2d\": [277, 610, 481, 717], \"label\": \"oven\", \"confidence\": 0.99},\n\t{\"bbox_2d\": [608, 602, 946, 750], \"label\": \"sink\", \"confidence\": 0.99},\n\t{\"bbox_2d\": [0, 650, 111, 781], \"label\": \"vase\", \"confidence\": 0.99},\n\t{\"bbox_2d\": [631, 415, 677, 447], \"label\": \"clock\", \"confidence\": 0.99},\n\t{\"bbox_2d\": [689, 415, 737, 447], \"label\": \"clock\", \"confidence\": 0.99},\n\t{\"bbox_2d\": [868, 383, 946, 459], \"label\": \"clock\", \"confidence\": 0.99},\n\t{\"bbox_2d\": [954, 379, 1000, 459], \"label\": \"clock\", \"confidence\": 0.99},\n\t{\"bbox_2d\": [863, 264, 998, 383], \"label\": \"microwave\", \"confidence\": 0.99},\n\t{\"bbox_2d\": [458, 610, 610, 890], \"label\": \"refrigerator\", \"confidence\": 0.99}\n]\n```",
+     "refusal": null,
+     "reasoning": null
+    }
+   }
+  ],
+  "usage": {
+   "prompt_tokens": 393,
+   "completion_tokens": 640,
+   "total_tokens": 1033,
+   "cost": 0.00076778,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00076778,
+    "upstream_inference_prompt_cost": 0.00010218,
+    "upstream_inference_completions_cost": 0.0006656
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   }
+  }
+ },
+ "ts": "2026-07-07T09:02:25.944837+00:00"
+}

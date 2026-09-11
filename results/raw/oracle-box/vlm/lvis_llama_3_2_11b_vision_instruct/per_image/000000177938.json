@@ -1,0 +1,43 @@
+{
+  "image": "/home/maxim/PycharmProjects/zero-shot-detection-benchmark/data/subsets/lvis_v1_val_unseen/images/000000177938.jpg",
+  "image_id": 177938,
+  "file_name": "000000177938.jpg",
+  "num_crops": 1,
+  "crops": [
+    {
+      "annotation_id": 89468,
+      "bbox": [
+        119.09,
+        263.03,
+        105.31,
+        62.98
+      ],
+      "category_id": 634,
+      "gt_label": "lawn_mower",
+      "labels": [
+        "lawn_mower",
+        "blender",
+        "musical_instrument",
+        "sewing_machine",
+        "snowboard"
+      ],
+      "prediction": "lawn_mower",
+      "normalized_prediction": "lawn mower",
+      "matched_label": "lawn_mower",
+      "correct": true,
+      "latency_sec": 5.342867436003871,
+      "raw_response": {
+        "lawn_mower": "[{\"box_2d\":[0,0,106,64],\"label\":\"lawn_mower\"}]",
+        "blender": "[]",
+        "blender_norm": "[{\"box_norm\":[0.0,0.0,0.5,0.5],\"label\":\"blender\"}]",
+        "musical_instrument": "[]",
+        "musical_instrument_norm": "[{\"box_norm\":[0.0,0.0,0.5,0.5],\"label\":\"none\"}]",
+        "sewing_machine": "[]",
+        "sewing_machine_norm": "[{\"box_norm\":[0.0,0.0,0.5,0.5],\"label\":\"sewing_machine\"}]",
+        "snowboard": "[]",
+        "snowboard_norm": "[{\"box_norm\":[0.0,0.0,0.5,0.5],\"label\":\"snowboard\"}]"
+      }
+    }
+  ],
+  "prompt": "You are an object recognition assistant.\n\nYou will see a cropped image that contains exactly one object\nfrom the following LVIS categories (unseen split):\n\n- lawn_mower\n- blender\n- musical_instrument\n- sewing_machine\n- snowboard\n\nYour task:\n- Return ONLY the best matching category name from this list.\n- Do not output explanations or extra text.\n\nAnswer with a single string: \"class_name\"."
+}

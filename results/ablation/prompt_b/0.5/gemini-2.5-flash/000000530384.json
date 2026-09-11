@@ -1,0 +1,30 @@
+{
+  "model": "gemini-2.5-flash",
+  "strategy": "iterative",
+  "image": "/home/maxim/PycharmProjects/zero-shot-detection-benchmark/data/subsets/lvis_v1_val_unseen/images/000000530384.jpg",
+  "labels": [
+    "blender",
+    "coffee_maker",
+    "lawn_mower",
+    "sewing_machine",
+    "spatula"
+  ],
+  "detections": [
+    {
+      "box_2d": [
+        483,
+        429,
+        532,
+        452
+      ],
+      "label": "blender"
+    }
+  ],
+  "latency_sec": 10.035165081033483,
+  "raw_response": {
+    "identification": "Ceiling, recessed lights, pendant lights, crown molding, wall, vent, plants, wall decor, kitchen cabinets, countertop, microwave, stovetop, oven, refrigerator, blender, toaster, faucet, sink, under-cabinet lighting, electrical outlets, paper towel holder, paper towels, basket, framed picture, small sign, vase, bar stools, carpet, doorway, open door, louvered door, framed painting, hallway, window, bed, bedding, corbels",
+    "localization": {
+      "blender": "```json\n[\n  {\"box_2d\": [483, 429, 532, 452], \"label\": \"blender\"}\n]\n```"
+    }
+  }
+}

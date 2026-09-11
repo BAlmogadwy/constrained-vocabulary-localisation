@@ -1,0 +1,76 @@
+{
+  "image": "/home/maxim/PycharmProjects/zero-shot-detection-benchmark/data/subsets/lvis_v1_val_unseen/images/000000000294.jpg",
+  "image_id": 294,
+  "file_name": "000000000294.jpg",
+  "num_crops": 2,
+  "crops": [
+    {
+      "annotation_id": 92201,
+      "bbox": [
+        347.53,
+        343.62,
+        39.2,
+        63.68
+      ],
+      "category_id": 993,
+      "gt_label": "spatula",
+      "labels": [
+        "spatula",
+        "blender",
+        "musical_instrument",
+        "sewing_machine",
+        "stapler_(stapling_machine)"
+      ],
+      "prediction": "spatula",
+      "normalized_prediction": "spatula",
+      "matched_label": "spatula",
+      "correct": true,
+      "latency_sec": 5.121929066983284,
+      "raw_response": {
+        "spatula": "[{\"box_2d\":[0,0,40,65],\"label\":\"spatula\"}]",
+        "blender": "[{\"box_2d\":[0,0,40,65],\"label\":\"blender\"}]",
+        "musical_instrument": "[{\"box_2d\":[0,0,40,65],\"label\":\"musical_instrument\"}]",
+        "sewing_machine": "[]",
+        "sewing_machine_norm": "[{\"box_norm\":[0.0,0.0,0.5,0.5],\"label\":\"sewing_machine\"}]",
+        "stapler_(stapling_machine)": "[]",
+        "stapler_(stapling_machine)_norm": "[{\"box_norm\":[0.083,0.083,0.333,0.333],\"label\":\"stapler_(stapling_machine)\"}]"
+      }
+    },
+    {
+      "annotation_id": 92202,
+      "bbox": [
+        422.78,
+        253.09,
+        25.79,
+        105.78
+      ],
+      "category_id": 993,
+      "gt_label": "spatula",
+      "labels": [
+        "spatula",
+        "blender",
+        "musical_instrument",
+        "sewing_machine",
+        "stapler_(stapling_machine)"
+      ],
+      "prediction": "spatula",
+      "normalized_prediction": "spatula",
+      "matched_label": "spatula",
+      "correct": true,
+      "latency_sec": 5.967301291006152,
+      "raw_response": {
+        "spatula": "[]",
+        "spatula_norm": "[{\"box_norm\":[0.01,0.03,0.99,0.98],\"label\":\"spatula\"}]",
+        "blender": "[]",
+        "blender_norm": "[{\"box_norm\":[0.0,0.0,0.5,0.5],\"label\":\"blender\"}]",
+        "musical_instrument": "[]",
+        "musical_instrument_norm": "[{\"box_norm\":[0.000000,0.000000,0.000000,0.000000],\"label\":\"none\"}]",
+        "sewing_machine": "[]",
+        "sewing_machine_norm": "[{\"box_norm\":[0.0,0.0,0.0,0.0],\"label\":\"sewing_machine\"}]",
+        "stapler_(stapling_machine)": "[]",
+        "stapler_(stapling_machine)_norm": "[{\"box_norm\":[0.05,0.24,0.42,0.98],\"label\":\"stapler_(stapling_machine)\"}]"
+      }
+    }
+  ],
+  "prompt": "You are an object recognition assistant.\n\nYou will see a cropped image that contains exactly one object\nfrom the following LVIS categories (unseen split):\n\n- spatula\n- blender\n- musical_instrument\n- sewing_machine\n- stapler_(stapling_machine)\n\nYour task:\n- Return ONLY the best matching category name from this list.\n- Do not output explanations or extra text.\n\nAnswer with a single string: \"class_name\"."
+}

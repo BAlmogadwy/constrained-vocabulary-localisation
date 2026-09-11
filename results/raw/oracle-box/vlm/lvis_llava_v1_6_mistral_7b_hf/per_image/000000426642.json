@@ -1,0 +1,111 @@
+{
+  "image": "/home/maxim/PycharmProjects/zero-shot-detection-benchmark/data/subsets/lvis_v1_val_unseen/images/000000426642.jpg",
+  "image_id": 426642,
+  "file_name": "000000426642.jpg",
+  "num_crops": 3,
+  "crops": [
+    {
+      "annotation_id": 155812,
+      "bbox": [
+        59.37,
+        228.83,
+        39.27,
+        5.5
+      ],
+      "category_id": 976,
+      "gt_label": "snowboard",
+      "labels": [
+        "snowboard",
+        "hair_dryer",
+        "lawn_mower",
+        "sewing_machine",
+        "spatula"
+      ],
+      "prediction": "class_name\".",
+      "normalized_prediction": "class name",
+      "matched_label": null,
+      "correct": false,
+      "latency_sec": 0.1829958139860537,
+      "raw_response": {
+        "prediction": "class_name\".",
+        "raw_response": "USER:  \nYou are an object recognition assistant.\n\nYou will see a cropped image that contains exactly one object\nfrom the following LVIS categories (unseen split):\n\n- snowboard\n- hair_dryer\n- lawn_mower\n- sewing_machine\n- spatula\n\nYour task:\n- Return ONLY the best matching category name from this list.\n- Do not output explanations or extra text.\n\nAnswer with a single string: \"class_name\".\nASSISTANT: \"class_name\". ",
+        "labels": [
+          "snowboard",
+          "hair_dryer",
+          "lawn_mower",
+          "sewing_machine",
+          "spatula"
+        ]
+      }
+    },
+    {
+      "annotation_id": 155813,
+      "bbox": [
+        25.46,
+        470.44,
+        371.26,
+        26.12
+      ],
+      "category_id": 976,
+      "gt_label": "snowboard",
+      "labels": [
+        "snowboard",
+        "hair_dryer",
+        "lawn_mower",
+        "sewing_machine",
+        "spatula"
+      ],
+      "prediction": "snowboard",
+      "normalized_prediction": "snowboard",
+      "matched_label": "snowboard",
+      "correct": true,
+      "latency_sec": 0.12937479198444635,
+      "raw_response": {
+        "prediction": "snowboard",
+        "raw_response": "USER:  \nYou are an object recognition assistant.\n\nYou will see a cropped image that contains exactly one object\nfrom the following LVIS categories (unseen split):\n\n- snowboard\n- hair_dryer\n- lawn_mower\n- sewing_machine\n- spatula\n\nYour task:\n- Return ONLY the best matching category name from this list.\n- Do not output explanations or extra text.\n\nAnswer with a single string: \"class_name\".\nASSISTANT: snowboard ",
+        "labels": [
+          "snowboard",
+          "hair_dryer",
+          "lawn_mower",
+          "sewing_machine",
+          "spatula"
+        ]
+      }
+    },
+    {
+      "annotation_id": 155814,
+      "bbox": [
+        447.92,
+        298.67,
+        88.42,
+        8.07
+      ],
+      "category_id": 976,
+      "gt_label": "snowboard",
+      "labels": [
+        "snowboard",
+        "hair_dryer",
+        "lawn_mower",
+        "sewing_machine",
+        "spatula"
+      ],
+      "prediction": "",
+      "normalized_prediction": "",
+      "matched_label": null,
+      "correct": false,
+      "latency_sec": 0.09948149899719283,
+      "raw_response": {
+        "prediction": "",
+        "raw_response": "USER:  \nYou are an object recognition assistant.\n\nYou will see a cropped image that contains exactly one object\nfrom the following LVIS categories (unseen split):\n\n- snowboard\n- hair_dryer\n- lawn_mower\n- sewing_machine\n- spatula\n\nYour task:\n- Return ONLY the best matching category name from this list.\n- Do not output explanations or extra text.\n\nAnswer with a single string: \"class_name\".\nASSISTANT: ",
+        "labels": [
+          "snowboard",
+          "hair_dryer",
+          "lawn_mower",
+          "sewing_machine",
+          "spatula"
+        ]
+      }
+    }
+  ],
+  "prompt": "You are an object recognition assistant.\n\nYou will see a cropped image that contains exactly one object\nfrom the following LVIS categories (unseen split):\n\n- snowboard\n- hair_dryer\n- lawn_mower\n- sewing_machine\n- spatula\n\nYour task:\n- Return ONLY the best matching category name from this list.\n- Do not output explanations or extra text.\n\nAnswer with a single string: \"class_name\"."
+}

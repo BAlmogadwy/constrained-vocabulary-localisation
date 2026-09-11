@@ -1,0 +1,39 @@
+{
+  "image": "/home/maxim/PycharmProjects/zero-shot-detection-benchmark/data/raw/coco2017/val2017/000000262682.jpg",
+  "image_id": 262682,
+  "file_name": "000000262682.jpg",
+  "num_crops": 1,
+  "crops": [
+    {
+      "annotation_id": 27468,
+      "bbox": [
+        179.96,
+        324.23,
+        22.8,
+        38.89
+      ],
+      "category_id": 284,
+      "gt_label": "coffee_maker",
+      "labels": [
+        "coffee_maker",
+        "blender",
+        "hair_dryer",
+        "lawn_mower",
+        "microscope"
+      ],
+      "prediction": "coffee_maker",
+      "normalized_prediction": "coffee maker",
+      "matched_label": "coffee_maker",
+      "correct": true,
+      "latency_sec": 3.6757954320055433,
+      "raw_response": {
+        "coffee_maker": "[{\"box_2d\":[0,0,24,40],\"label\":\"coffee_maker\"}]",
+        "blender": "[{\"box_2d\":[0,0,24,10],\"label\":\"blender\"}]",
+        "hair_dryer": "[{\"box_2d\":[0,0,24,10],\"label\":\"hair_dryer\"}]",
+        "lawn_mower": "[{\"box_2d\":[0,0,24,40],\"label\":\"lawn_mower\"}]",
+        "microscope": "[{\"box_2d\":[0,0,24,40],\"label\":\"microscope\"}]"
+      }
+    }
+  ],
+  "prompt": "You are an object recognition assistant.\n\nYou will see a cropped image that contains exactly one object\nfrom the following LVIS categories (unseen split):\n\n- coffee_maker\n- blender\n- hair_dryer\n- lawn_mower\n- microscope\n\nYour task:\n- Return ONLY the best matching category name from this list.\n- Do not output explanations or extra text.\n\nAnswer with a single string: \"class_name\"."
+}

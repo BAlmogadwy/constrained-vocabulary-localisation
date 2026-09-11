@@ -1,0 +1,76 @@
+{
+ "image": "000000172595.jpg",
+ "model": "qwen/qwen3-vl-235b-a22b-instruct",
+ "labels": [
+  "stapler_(stapling_machine)",
+  "coffee_maker",
+  "musical_instrument",
+  "snowboard",
+  "spatula"
+ ],
+ "detections": [
+  {
+   "box_2d": [
+    517.76,
+    169.92,
+    577.92,
+    195.84
+   ],
+   "label": "stapler_(stapling_machine)",
+   "score": 0.95
+  }
+ ],
+ "latency_sec": 3.1009258000121918,
+ "usage": {
+  "prompt_tokens": 316,
+  "completion_tokens": 50,
+  "total_tokens": 366
+ },
+ "raw_response": {
+  "id": "gen-1783407567-WadYQjDwf61NCMyNNnhN",
+  "object": "chat.completion",
+  "created": 1783407567,
+  "model": "qwen/qwen3-vl-235b-a22b-instruct",
+  "provider": "DeepInfra",
+  "system_fingerprint": null,
+  "service_tier": null,
+  "choices": [
+   {
+    "index": 0,
+    "logprobs": null,
+    "finish_reason": "stop",
+    "native_finish_reason": "stop",
+    "message": {
+     "role": "assistant",
+     "content": "[{\"box_2d\": [809, 472, 903, 544], \"label\": \"stapler_(stapling_machine)\", \"confidence\": 0.95}]",
+     "refusal": null,
+     "reasoning": null
+    }
+   }
+  ],
+  "usage": {
+   "prompt_tokens": 316,
+   "completion_tokens": 50,
+   "total_tokens": 366,
+   "cost": 0.0001072,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0001072,
+    "upstream_inference_prompt_cost": 6.32e-05,
+    "upstream_inference_completions_cost": 4.4e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   }
+  }
+ },
+ "ts": "2026-07-07T06:59:29.048940+00:00"
+}

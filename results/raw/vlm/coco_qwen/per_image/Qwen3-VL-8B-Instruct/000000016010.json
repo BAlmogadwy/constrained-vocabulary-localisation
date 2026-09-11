@@ -1,0 +1,95 @@
+{
+  "model": "Qwen3-VL-8B-Instruct",
+  "strategy": "single_query",
+  "image": "/home/maxim/PycharmProjects/zero-shot-detection-benchmark/data/raw/coco2017/val2017/000000016010.jpg",
+  "labels": [
+    "microwave",
+    "oven",
+    "toaster",
+    "sink",
+    "refrigerator",
+    "book",
+    "clock",
+    "vase",
+    "scissors",
+    "teddy bear",
+    "hair drier",
+    "toothbrush"
+  ],
+  "detections": [
+    {
+      "box_2d": [
+        561.0,
+        563.0,
+        703.0,
+        697.0
+      ],
+      "label": "zebra"
+    },
+    {
+      "box_2d": [
+        643.0,
+        563.0,
+        703.0,
+        687.0
+      ],
+      "label": "zebra"
+    },
+    {
+      "box_2d": [
+        438.0,
+        559.0,
+        472.0,
+        613.0
+      ],
+      "label": "zebra"
+    },
+    {
+      "box_2d": [
+        477.0,
+        563.0,
+        512.0,
+        613.0
+      ],
+      "label": "zebra"
+    },
+    {
+      "box_2d": [
+        508.0,
+        559.0,
+        556.0,
+        613.0
+      ],
+      "label": "zebra"
+    },
+    {
+      "box_2d": [
+        107.0,
+        511.0,
+        143.0,
+        559.0
+      ],
+      "label": "zebra"
+    },
+    {
+      "box_2d": [
+        0.0,
+        517.0,
+        138.0,
+        613.0
+      ],
+      "label": "rhino"
+    },
+    {
+      "box_2d": [
+        775.0,
+        595.0,
+        817.0,
+        623.0
+      ],
+      "label": "rhino"
+    }
+  ],
+  "latency_sec": 8.495004173993948,
+  "raw_response": "user\nYou are an object detection assistant. Given the image and the list of target classes, return detections as JSON.\nTarget classes: microwave, oven, toaster, sink, refrigerator, book, clock, vase, scissors, teddy bear, hair drier, toothbrush.\nOutput format: [{\"box_2d\":[x1,y1,x2,y2],\"label\":\"class_name\"}...]\nUse pixel coordinates relative to the input image. Return JSON only.\nassistant\n```json\n[\n\t{\"box_2d\": [561, 563, 703, 697],\"label\":\"zebra\"},\n\t{\"box_2d\": [643, 563, 703, 687],\"label\":\"zebra\"},\n\t{\"box_2d\": [438, 559, 472, 613],\"label\":\"zebra\"},\n\t{\"box_2d\": [477, 563, 512, 613],\"label\":\"zebra\"},\n\t{\"box_2d\": [508, 559, 556, 613],\"label\":\"zebra\"},\n\t{\"box_2d\": [107, 511, 143, 559],\"label\":\"zebra\"},\n\t{\"box_2d\": [0, 517, 138, 613],\"label\":\"rhino\"},\n\t{\"box_2d\": [775, 595, 817, 623],\"label\":\"rhino\"}\n]\n```"
+}

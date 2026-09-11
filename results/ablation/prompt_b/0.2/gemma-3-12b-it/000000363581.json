@@ -1,0 +1,30 @@
+{
+  "model": "gemma-3-12b-it",
+  "strategy": "iterative",
+  "image": "/home/maxim/PycharmProjects/zero-shot-detection-benchmark/data/subsets/lvis_v1_val_unseen/images/000000363581.jpg",
+  "labels": [
+    "spatula",
+    "hair_dryer",
+    "lawn_mower",
+    "microscope",
+    "musical_instrument"
+  ],
+  "detections": [
+    {
+      "box_2d": [
+        538,
+        420,
+        611,
+        533
+      ],
+      "label": "spatula"
+    }
+  ],
+  "latency_sec": 18.037368585006334,
+  "raw_response": {
+    "identification": "spatula",
+    "localization": {
+      "spatula": "```json\n[{\"box_2d\":[538,420,611,533],\"label\":\"spatula\"}]\n```"
+    }
+  }
+}

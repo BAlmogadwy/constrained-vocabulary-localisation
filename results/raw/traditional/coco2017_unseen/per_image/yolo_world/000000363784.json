@@ -1,0 +1,52 @@
+{
+  "model": "yolo_world",
+  "strategy": "default",
+  "image": "/home/maxim/PycharmProjects/zero-shot-detection-benchmark/data/raw/coco2017/val2017/000000363784.jpg",
+  "labels": [
+    "sink",
+    "book",
+    "clock",
+    "microwave",
+    "oven",
+    "refrigerator",
+    "teddy bear"
+  ],
+  "result": {
+    "detections": [
+      {
+        "label": "sink",
+        "score": 0.7354616522789001,
+        "box_2d": [
+          98.12774658203125,
+          268.72686767578125,
+          242.25875854492188,
+          371.618408203125
+        ],
+        "box": [
+          98.12774658203125,
+          268.72686767578125,
+          242.25875854492188,
+          371.618408203125
+        ]
+      },
+      {
+        "label": "sink",
+        "score": 0.2508299946784973,
+        "box_2d": [
+          250.92889404296875,
+          274.11712646484375,
+          577.7386474609375,
+          480.0
+        ],
+        "box": [
+          250.92889404296875,
+          274.11712646484375,
+          577.7386474609375,
+          480.0
+        ]
+      }
+    ],
+    "latency_sec": 0.014720975001182524,
+    "raw_response": null
+  }
+}

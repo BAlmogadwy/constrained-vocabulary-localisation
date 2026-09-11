@@ -1,0 +1,241 @@
+{
+ "image": "000000026690.jpg",
+ "labels": [
+  "refrigerator",
+  "microwave",
+  "oven",
+  "scissors",
+  "sink",
+  "teddy bear",
+  "toothbrush"
+ ],
+ "tau": 0.4,
+ "detector": {
+  "detections": [
+   {
+    "label": "teddy bear",
+    "box": [
+     87.99606323242188,
+     431.9365539550781,
+     135.2672882080078,
+     471.5508728027344
+    ],
+    "score": 0.003167306538671255
+   },
+   {
+    "label": "teddy bear",
+    "box": [
+     217.908203125,
+     242.03948974609375,
+     259.9097595214844,
+     295.0089111328125
+    ],
+    "score": 0.0030630254186689854
+   },
+   {
+    "label": "teddy bear",
+    "box": [
+     365.61090087890625,
+     568.3480224609375,
+     411.95501708984375,
+     640.0
+    ],
+    "score": 0.002689689863473177
+   },
+   {
+    "label": "teddy bear",
+    "box": [
+     84.31724548339844,
+     399.88238525390625,
+     113.10186767578125,
+     446.2562255859375
+    ],
+    "score": 0.0017863993998616934
+   },
+   {
+    "label": "teddy bear",
+    "box": [
+     236.85459899902344,
+     514.1903686523438,
+     276.6734619140625,
+     562.4978637695312
+    ],
+    "score": 0.0017805453389883041
+   },
+   {
+    "label": "teddy bear",
+    "box": [
+     161.5546875,
+     448.5938720703125,
+     210.87567138671875,
+     519.0949096679688
+    ],
+    "score": 0.0014599479036405683
+   },
+   {
+    "label": "teddy bear",
+    "box": [
+     243.4694366455078,
+     164.18170166015625,
+     382.11505126953125,
+     316.9140625
+    ],
+    "score": 0.0012767791049554944
+   },
+   {
+    "label": "teddy bear",
+    "box": [
+     237.70376586914062,
+     514.3082275390625,
+     260.8109436035156,
+     548.659912109375
+    ],
+    "score": 0.0010299806017428637
+   }
+  ],
+  "latency_sec": 0.03672430000733584
+ },
+ "detector_max_score": 0.003167306538671255,
+ "escalated": true,
+ "vlm": {
+  "model": "qwen/qwen3-vl-235b-a22b-instruct",
+  "detections": [],
+  "latency_sec": 1.9011848000081955,
+  "usage": {
+   "prompt_tokens": 352,
+   "completion_tokens": 2,
+   "total_tokens": 354
+  },
+  "raw_response": {
+   "id": "gen-1783408680-gQiONl2qi8UDPbHu0mc9",
+   "object": "chat.completion",
+   "created": 1783408680,
+   "model": "qwen/qwen3-vl-235b-a22b-instruct",
+   "provider": "Parasail",
+   "system_fingerprint": null,
+   "service_tier": null,
+   "choices": [
+    {
+     "index": 0,
+     "logprobs": null,
+     "finish_reason": "stop",
+     "native_finish_reason": "stop",
+     "message": {
+      "role": "assistant",
+      "content": "[]",
+      "refusal": null,
+      "reasoning": null
+     }
+    }
+   ],
+   "usage": {
+    "prompt_tokens": 352,
+    "completion_tokens": 2,
+    "total_tokens": 354,
+    "cost": 7.772e-05,
+    "is_byok": false,
+    "prompt_tokens_details": {
+     "cached_tokens": 0,
+     "cache_write_tokens": 0,
+     "audio_tokens": 0,
+     "video_tokens": 0
+    },
+    "cost_details": {
+     "upstream_inference_cost": 7.772e-05,
+     "upstream_inference_prompt_cost": 7.392e-05,
+     "upstream_inference_completions_cost": 3.8e-06
+    },
+    "completion_tokens_details": {
+     "reasoning_tokens": 0,
+     "image_tokens": 0,
+     "audio_tokens": 0
+    }
+   }
+  }
+ },
+ "fallback": false,
+ "ts": "2026-07-07T07:17:58.522973+00:00",
+ "fused": [
+  {
+   "label": "teddy bear",
+   "box": [
+    87.99606323242188,
+    431.9365539550781,
+    135.2672882080078,
+    471.5508728027344
+   ],
+   "score": 0.003167306538671255
+  },
+  {
+   "label": "teddy bear",
+   "box": [
+    217.908203125,
+    242.03948974609375,
+    259.9097595214844,
+    295.0089111328125
+   ],
+   "score": 0.0030630254186689854
+  },
+  {
+   "label": "teddy bear",
+   "box": [
+    365.61090087890625,
+    568.3480224609375,
+    411.95501708984375,
+    640.0
+   ],
+   "score": 0.002689689863473177
+  },
+  {
+   "label": "teddy bear",
+   "box": [
+    84.31724548339844,
+    399.88238525390625,
+    113.10186767578125,
+    446.2562255859375
+   ],
+   "score": 0.0017863993998616934
+  },
+  {
+   "label": "teddy bear",
+   "box": [
+    236.85459899902344,
+    514.1903686523438,
+    276.6734619140625,
+    562.4978637695312
+   ],
+   "score": 0.0017805453389883041
+  },
+  {
+   "label": "teddy bear",
+   "box": [
+    161.5546875,
+    448.5938720703125,
+    210.87567138671875,
+    519.0949096679688
+   ],
+   "score": 0.0014599479036405683
+  },
+  {
+   "label": "teddy bear",
+   "box": [
+    243.4694366455078,
+    164.18170166015625,
+    382.11505126953125,
+    316.9140625
+   ],
+   "score": 0.0012767791049554944
+  },
+  {
+   "label": "teddy bear",
+   "box": [
+    237.70376586914062,
+    514.3082275390625,
+    260.8109436035156,
+    548.659912109375
+   ],
+   "score": 0.0010299806017428637
+  }
+ ],
+ "latency_total_sec": 1.937935500012827
+}

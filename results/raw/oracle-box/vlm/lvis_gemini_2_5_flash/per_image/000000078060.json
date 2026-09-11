@@ -1,0 +1,81 @@
+{
+  "image": "/home/maxim/PycharmProjects/zero-shot-detection-benchmark/data/subsets/lvis_v1_val_unseen/images/000000078060.jpg",
+  "image_id": 78060,
+  "file_name": "000000078060.jpg",
+  "num_crops": 3,
+  "crops": [
+    {
+      "annotation_id": 76570,
+      "bbox": [
+        52.75,
+        291.71,
+        43.7,
+        18.3
+      ],
+      "category_id": 976,
+      "gt_label": "snowboard",
+      "labels": [
+        "snowboard",
+        "hair_dryer",
+        "lawn_mower",
+        "musical_instrument",
+        "sewing_machine"
+      ],
+      "prediction": null,
+      "normalized_prediction": "",
+      "matched_label": null,
+      "correct": false,
+      "latency_sec": 1.710109444014961,
+      "raw_response": "I am sorry, but I cannot detect any of the requested objects (snowboard, hair_dryer, lawn_mower, musical_instrument, sewing_machine) in the provided image. The image is extremely low resolution and heavily pixelated, making it impossible to identify any discernible objects."
+    },
+    {
+      "annotation_id": 76571,
+      "bbox": [
+        32.32,
+        206.48,
+        28.91,
+        5.61
+      ],
+      "category_id": 976,
+      "gt_label": "snowboard",
+      "labels": [
+        "snowboard",
+        "hair_dryer",
+        "lawn_mower",
+        "musical_instrument",
+        "sewing_machine"
+      ],
+      "prediction": null,
+      "normalized_prediction": "",
+      "matched_label": null,
+      "correct": false,
+      "latency_sec": 1.4258393449999858,
+      "raw_response": "[]"
+    },
+    {
+      "annotation_id": 76572,
+      "bbox": [
+        44.98,
+        219.5,
+        21.95,
+        36.24
+      ],
+      "category_id": 976,
+      "gt_label": "snowboard",
+      "labels": [
+        "snowboard",
+        "hair_dryer",
+        "lawn_mower",
+        "musical_instrument",
+        "sewing_machine"
+      ],
+      "prediction": null,
+      "normalized_prediction": "",
+      "matched_label": null,
+      "correct": false,
+      "latency_sec": 1.4037476980010979,
+      "raw_response": "I'm sorry, but I cannot fulfill this request. The provided image is extremely blurry and low-resolution, making it impossible to accurately detect any objects, including the ones listed."
+    }
+  ],
+  "prompt": "You are an object recognition assistant.\n\nYou will see a cropped image that contains exactly one object\nfrom the following LVIS categories (unseen split):\n\n- snowboard\n- hair_dryer\n- lawn_mower\n- musical_instrument\n- sewing_machine\n\nYour task:\n- Return ONLY the best matching category name from this list.\n- Do not output explanations or extra text.\n\nAnswer with a single string: \"class_name\"."
+}

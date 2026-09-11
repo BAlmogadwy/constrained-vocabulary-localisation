@@ -1,0 +1,230 @@
+{
+ "image": "000000188545.jpg",
+ "labels": [
+  "snowboard",
+  "microscope",
+  "musical_instrument",
+  "sewing_machine",
+  "spatula"
+ ],
+ "tau": 0.4,
+ "detector": {
+  "detections": [
+   {
+    "label": "snowboard",
+    "box": [
+     354.79736328125,
+     182.64404296875,
+     400.1195068359375,
+     224.24285888671875
+    ],
+    "score": 0.26904550194740295
+   },
+   {
+    "label": "snowboard",
+    "box": [
+     354.73583984375,
+     182.41268920898438,
+     488.377685546875,
+     310.1192321777344
+    ],
+    "score": 0.13074976205825806
+   },
+   {
+    "label": "snowboard",
+    "box": [
+     457.7591552734375,
+     231.94598388671875,
+     488.218017578125,
+     279.3468017578125
+    ],
+    "score": 0.08876519650220871
+   },
+   {
+    "label": "snowboard",
+    "box": [
+     410.2813720703125,
+     371.4092102050781,
+     450.3160400390625,
+     378.4325256347656
+    ],
+    "score": 0.07132498174905777
+   },
+   {
+    "label": "snowboard",
+    "box": [
+     354.5789794921875,
+     182.5806884765625,
+     461.034912109375,
+     243.8564453125
+    ],
+    "score": 0.04098472371697426
+   },
+   {
+    "label": "snowboard",
+    "box": [
+     459.9769287109375,
+     258.36285400390625,
+     481.3026123046875,
+     279.095947265625
+    ],
+    "score": 0.028375286608934402
+   },
+   {
+    "label": "snowboard",
+    "box": [
+     470.07647705078125,
+     232.01528930664062,
+     488.76361083984375,
+     254.45919799804688
+    ],
+    "score": 0.0022556569892913103
+   }
+  ],
+  "latency_sec": 0.03867680000257678
+ },
+ "detector_max_score": 0.26904550194740295,
+ "escalated": true,
+ "vlm": {
+  "model": "qwen/qwen3-vl-235b-a22b-instruct",
+  "detections": [
+   {
+    "label": "snowboard",
+    "box": [
+     355.84,
+     181.902,
+     484.48,
+     275.415
+    ],
+    "score": 1.0
+   }
+  ],
+  "latency_sec": 10.902810300001875,
+  "usage": {
+   "prompt_tokens": 350,
+   "completion_tokens": 50,
+   "total_tokens": 400
+  },
+  "raw_response": {
+   "id": "gen-1783406718-l2WhVpqvMTvT143GUQpx",
+   "object": "chat.completion",
+   "created": 1783406718,
+   "model": "qwen/qwen3-vl-235b-a22b-instruct",
+   "provider": "DeepInfra",
+   "system_fingerprint": null,
+   "service_tier": null,
+   "choices": [
+    {
+     "index": 0,
+     "logprobs": null,
+     "finish_reason": "stop",
+     "native_finish_reason": "stop",
+     "message": {
+      "role": "assistant",
+      "content": "```json\n[\n\t{\"bbox_2d\": [556, 426, 757, 645], \"label\": \"snowboard\", \"confidence\": 0.98}\n]\n```",
+      "refusal": null,
+      "reasoning": null
+     }
+    }
+   ],
+   "usage": {
+    "prompt_tokens": 350,
+    "completion_tokens": 50,
+    "total_tokens": 400,
+    "cost": 0.000114,
+    "is_byok": false,
+    "prompt_tokens_details": {
+     "cached_tokens": 0,
+     "cache_write_tokens": 0,
+     "audio_tokens": 0,
+     "video_tokens": 0
+    },
+    "cost_details": {
+     "upstream_inference_cost": 0.000114,
+     "upstream_inference_prompt_cost": 7e-05,
+     "upstream_inference_completions_cost": 4.4e-05
+    },
+    "completion_tokens_details": {
+     "reasoning_tokens": 0,
+     "image_tokens": 0,
+     "audio_tokens": 0
+    }
+   }
+  }
+ },
+ "fallback": false,
+ "ts": "2026-07-07T06:45:15.907268+00:00",
+ "fused": [
+  {
+   "label": "snowboard",
+   "box": [
+    354.79736328125,
+    182.64404296875,
+    400.1195068359375,
+    224.24285888671875
+   ],
+   "score": 0.26904550194740295
+  },
+  {
+   "label": "snowboard",
+   "box": [
+    354.73583984375,
+    182.41268920898438,
+    488.377685546875,
+    310.1192321777344
+   ],
+   "score": 0.43074976205825805
+  },
+  {
+   "label": "snowboard",
+   "box": [
+    457.7591552734375,
+    231.94598388671875,
+    488.218017578125,
+    279.3468017578125
+   ],
+   "score": 0.08876519650220871
+  },
+  {
+   "label": "snowboard",
+   "box": [
+    410.2813720703125,
+    371.4092102050781,
+    450.3160400390625,
+    378.4325256347656
+   ],
+   "score": 0.07132498174905777
+  },
+  {
+   "label": "snowboard",
+   "box": [
+    354.5789794921875,
+    182.5806884765625,
+    461.034912109375,
+    243.8564453125
+   ],
+   "score": 0.04098472371697426
+  },
+  {
+   "label": "snowboard",
+   "box": [
+    459.9769287109375,
+    258.36285400390625,
+    481.3026123046875,
+    279.095947265625
+   ],
+   "score": 0.028375286608934402
+  },
+  {
+   "label": "snowboard",
+   "box": [
+    470.07647705078125,
+    232.01528930664062,
+    488.76361083984375,
+    254.45919799804688
+   ],
+   "score": 0.0022556569892913103
+  }
+ ],
+ "latency_total_sec": 10.9415047000075
+}

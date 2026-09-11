@@ -1,0 +1,64 @@
+{
+  "model": "gemini-2.5-flash",
+  "strategy": "single_query",
+  "image": "/home/maxim/PycharmProjects/zero-shot-detection-benchmark/data/raw/coco2017/val2017/000000068833.jpg",
+  "labels": [
+    "clock",
+    "microwave",
+    "refrigerator",
+    "sink",
+    "hair drier",
+    "scissors",
+    "toaster",
+    "toothbrush"
+  ],
+  "detections": [
+    {
+      "box_2d": [
+        845,
+        78,
+        936,
+        137
+      ],
+      "label": "clock"
+    },
+    {
+      "box_2d": [
+        657,
+        427,
+        788,
+        502
+      ],
+      "label": "microwave"
+    },
+    {
+      "box_2d": [
+        0,
+        219,
+        149,
+        874
+      ],
+      "label": "refrigerator"
+    },
+    {
+      "box_2d": [
+        825,
+        477,
+        986,
+        529
+      ],
+      "label": "sink"
+    },
+    {
+      "box_2d": [
+        504,
+        452,
+        576,
+        506
+      ],
+      "label": "toaster"
+    }
+  ],
+  "latency_sec": 3.8236826219945215,
+  "raw_response": "```json\n[\n  {\"box_2d\": [845, 78, 936, 137], \"label\": \"clock\"},\n  {\"box_2d\": [657, 427, 788, 502], \"label\": \"microwave\"},\n  {\"box_2d\": [0, 219, 149, 874], \"label\": \"refrigerator\"},\n  {\"box_2d\": [825, 477, 986, 529], \"label\": \"sink\"},\n  {\"box_2d\": [504, 452, 576, 506], \"label\": \"toaster\"}\n]\n```"
+}

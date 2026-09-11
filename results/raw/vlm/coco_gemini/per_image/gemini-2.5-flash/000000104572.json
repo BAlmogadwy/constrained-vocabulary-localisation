@@ -1,0 +1,126 @@
+{
+  "model": "gemini-2.5-flash",
+  "strategy": "single_query",
+  "image": "/home/maxim/PycharmProjects/zero-shot-detection-benchmark/data/raw/coco2017/val2017/000000104572.jpg",
+  "labels": [
+    "sink",
+    "book",
+    "hair drier",
+    "microwave",
+    "oven",
+    "scissors",
+    "vase"
+  ],
+  "detections": [
+    {
+      "box_2d": [
+        86,
+        786,
+        319,
+        959
+      ],
+      "label": "sink"
+    },
+    {
+      "box_2d": [
+        431,
+        577,
+        538,
+        715
+      ],
+      "label": "sink"
+    },
+    {
+      "box_2d": [
+        463,
+        582,
+        536,
+        691
+      ],
+      "label": "sink"
+    },
+    {
+      "box_2d": [
+        461,
+        626,
+        499,
+        690
+      ],
+      "label": "sink"
+    },
+    {
+      "box_2d": [
+        461,
+        650,
+        484,
+        691
+      ],
+      "label": "sink"
+    },
+    {
+      "box_2d": [
+        461,
+        672,
+        473,
+        691
+      ],
+      "label": "sink"
+    },
+    {
+      "box_2d": [
+        461,
+        623,
+        514,
+        691
+      ],
+      "label": "sink"
+    },
+    {
+      "box_2d": [
+        463,
+        623,
+        501,
+        680
+      ],
+      "label": "sink"
+    },
+    {
+      "box_2d": [
+        492,
+        578,
+        536,
+        650
+      ],
+      "label": "sink"
+    },
+    {
+      "box_2d": [
+        477,
+        611,
+        514,
+        670
+      ],
+      "label": "sink"
+    },
+    {
+      "box_2d": [
+        461,
+        602,
+        536,
+        706
+      ],
+      "label": "sink"
+    },
+    {
+      "box_2d": [
+        461,
+        603,
+        527,
+        691
+      ],
+      "label": "sink"
+    }
+  ],
+  "latency_sec": 7.967586812970694,
+  "raw_response": "```json\n[\n  {\"box_2d\": [86, 786, 319, 959], \"label\": \"sink\"},\n  {\"box_2d\": [431, 577, 538, 715], \"label\": \"sink\"},\n  {\"box_2d\": [463, 582, 536, 691], \"label\": \"sink\"},\n  {\"box_2d\": [461, 626, 499, 690], \"label\": \"sink\"},\n  {\"box_2d\": [461, 650, 484, 691], \"label\": \"sink\"},\n  {\"box_2d\": [461, 672, 473, 691], \"label\": \"sink\"},\n  {\"box_2d\": [461, 623, 514, 691], \"label\": \"sink\"},\n  {\"box_2d\": [463, 623, 501, 680], \"label\": \"sink\"},\n  {\"box_2d\": [492, 578, 536, 650], \"label\": \"sink\"},\n  {\"box_2d\": [477, 611, 514, 670], \"label\": \"sink\"},\n  {\"box_2d\": [461, 602, 536, 706], \"label\": \"sink\"},\n  {\"box_2d\": [461, 603, 527, 691], \"label\": \"sink\"}\n]\n```"
+}

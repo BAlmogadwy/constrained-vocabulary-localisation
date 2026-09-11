@@ -1,0 +1,117 @@
+{
+  "image": "/home/maxim/PycharmProjects/zero-shot-detection-benchmark/data/subsets/lvis_v1_val_unseen/images/000000359073.jpg",
+  "image_id": 359073,
+  "file_name": "000000359073.jpg",
+  "num_crops": 4,
+  "crops": [
+    {
+      "annotation_id": 226722,
+      "bbox": [
+        41.36,
+        391.4,
+        44.22,
+        14.56
+      ],
+      "category_id": 976,
+      "gt_label": "snowboard",
+      "labels": [
+        "snowboard",
+        "lawn_mower",
+        "musical_instrument",
+        "sewing_machine",
+        "stapler_(stapling_machine)"
+      ],
+      "prediction": "snowboard",
+      "normalized_prediction": "snowboard",
+      "matched_label": "snowboard",
+      "correct": true,
+      "latency_sec": 14.427174518001266,
+      "raw_response": {
+        "prediction": "snowboard",
+        "raw_response": "snowboard"
+      }
+    },
+    {
+      "annotation_id": 226723,
+      "bbox": [
+        280.98,
+        339.37,
+        12.02,
+        1.03
+      ],
+      "category_id": 976,
+      "gt_label": "snowboard",
+      "labels": [
+        "snowboard",
+        "lawn_mower",
+        "musical_instrument",
+        "sewing_machine",
+        "stapler_(stapling_machine)"
+      ],
+      "prediction": "sewing_machine",
+      "normalized_prediction": "sewing machine",
+      "matched_label": "sewing_machine",
+      "correct": false,
+      "latency_sec": 14.426880389015423,
+      "raw_response": {
+        "prediction": "sewing_machine",
+        "raw_response": "sewing_machine"
+      }
+    },
+    {
+      "annotation_id": 226724,
+      "bbox": [
+        82.2,
+        384.69,
+        40.59,
+        20.71
+      ],
+      "category_id": 976,
+      "gt_label": "snowboard",
+      "labels": [
+        "snowboard",
+        "lawn_mower",
+        "musical_instrument",
+        "sewing_machine",
+        "stapler_(stapling_machine)"
+      ],
+      "prediction": "snowboard",
+      "normalized_prediction": "snowboard",
+      "matched_label": "snowboard",
+      "correct": true,
+      "latency_sec": 14.420854388008593,
+      "raw_response": {
+        "prediction": "snowboard",
+        "raw_response": "snowboard"
+      }
+    },
+    {
+      "annotation_id": 226725,
+      "bbox": [
+        336.12,
+        343.59,
+        5.58,
+        1.03
+      ],
+      "category_id": 976,
+      "gt_label": "snowboard",
+      "labels": [
+        "snowboard",
+        "lawn_mower",
+        "musical_instrument",
+        "sewing_machine",
+        "stapler_(stapling_machine)"
+      ],
+      "prediction": "sewing_machine",
+      "normalized_prediction": "sewing machine",
+      "matched_label": "sewing_machine",
+      "correct": false,
+      "latency_sec": 14.425655152997933,
+      "raw_response": {
+        "prediction": "sewing_machine",
+        "raw_response": "sewing_machine"
+      }
+    }
+  ],
+  "prompt": "You are an object recognition assistant.\n\nYou will see a cropped image that contains exactly one object\nfrom the following LVIS categories (unseen split):\n\n- snowboard\n- lawn_mower\n- musical_instrument\n- sewing_machine\n- stapler_(stapling_machine)\n\nYour task:\n- Return ONLY the best matching category name from this list.\n- Do not output explanations or extra text.\n\nAnswer with a single string: \"class_name\"."
+}

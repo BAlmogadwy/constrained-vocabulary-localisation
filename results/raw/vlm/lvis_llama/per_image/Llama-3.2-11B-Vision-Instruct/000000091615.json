@@ -1,0 +1,36 @@
+{
+  "model": "Llama-3.2-11B-Vision-Instruct",
+  "strategy": "single_query",
+  "image": "/home/maxim/PycharmProjects/zero-shot-detection-benchmark/data/subsets/lvis_v1_val_unseen/images/000000091615.jpg",
+  "labels": [
+    "coffee_maker",
+    "hair_dryer",
+    "lawn_mower",
+    "sewing_machine",
+    "stapler_(stapling_machine)"
+  ],
+  "detections": [
+    {
+      "box_2d": [
+        36,
+        103,
+        164,
+        145
+      ],
+      "label": "coffee_maker"
+    }
+  ],
+  "latency_sec": 15.23298333119601,
+  "raw_response": {
+    "coffee_maker": "[{\"box_2d\":[0,0,0,0],\"label\":\"coffee_maker\"}]",
+    "coffee_maker_norm": "[{\"box_norm\":[0.056,0.243,0.256,0.342],\"label\":\"coffee_maker\"}]",
+    "hair_dryer": "[]",
+    "hair_dryer_norm": "[{\"box_norm\":[0.000,0.000,0.000,0.000],\"label\":\"hair_dryer\"}]",
+    "lawn_mower": "[]",
+    "lawn_mower_norm": "[{\"box_norm\":[0.0,0.0,0.0,0.0],\"label\":\"lawn_mower\"}]",
+    "sewing_machine": "[]",
+    "sewing_machine_norm": "[{\"box_norm\":[0.0,0.0,0.0,0.0],\"label\":\"sewing_machine\"}]",
+    "stapler_(stapling_machine)": "[]",
+    "stapler_(stapling_machine)_norm": "[{\"box_norm\":[0.000,0.000,0.000,0.000],\"label\":\"stapler_(stapling_machine)\"}]"
+  }
+}

@@ -1,0 +1,150 @@
+{
+ "image": "000000489724.jpg",
+ "labels": [
+  "snowboard",
+  "coffee_maker",
+  "lawn_mower",
+  "spatula",
+  "stapler_(stapling_machine)"
+ ],
+ "tau": 0.4,
+ "detector": {
+  "detections": [
+   {
+    "label": "snowboard",
+    "box": [
+     171.53109741210938,
+     172.3789520263672,
+     179.21632385253906,
+     209.73899841308594
+    ],
+    "score": 0.2434825599193573
+   },
+   {
+    "label": "snowboard",
+    "box": [
+     156.27830505371094,
+     173.9534912109375,
+     178.53720092773438,
+     206.71365356445312
+    ],
+    "score": 0.003963689785450697
+   },
+   {
+    "label": "snowboard",
+    "box": [
+     168.85171508789062,
+     174.89581298828125,
+     178.02442932128906,
+     192.2738494873047
+    ],
+    "score": 0.003030586987733841
+   }
+  ],
+  "latency_sec": 0.032464800009620376
+ },
+ "detector_max_score": 0.2434825599193573,
+ "escalated": true,
+ "vlm": {
+  "model": "qwen/qwen3-vl-235b-a22b-instruct",
+  "detections": [
+   {
+    "label": "snowboard",
+    "box": [
+     155.178,
+     163.0,
+     180.153,
+     219.5
+    ],
+    "score": 1.0
+   }
+  ],
+  "latency_sec": 3.4561392000032356,
+  "usage": {
+   "prompt_tokens": 256,
+   "completion_tokens": 50,
+   "total_tokens": 306
+  },
+  "raw_response": {
+   "id": "gen-1783406951-pk5oeUqPND6leYWuQOGU",
+   "object": "chat.completion",
+   "created": 1783406951,
+   "model": "qwen/qwen3-vl-235b-a22b-instruct",
+   "provider": "Alibaba",
+   "system_fingerprint": null,
+   "service_tier": null,
+   "choices": [
+    {
+     "index": 0,
+     "logprobs": null,
+     "finish_reason": "stop",
+     "native_finish_reason": "stop",
+     "message": {
+      "role": "assistant",
+      "content": "```json\n[\n\t{\"box_2d\": [466, 326, 541, 439], \"label\": \"snowboard\", \"confidence\": 0.95}\n]\n```",
+      "refusal": null,
+      "reasoning": null
+     }
+    }
+   ],
+   "usage": {
+    "prompt_tokens": 256,
+    "completion_tokens": 50,
+    "total_tokens": 306,
+    "cost": 0.00011856,
+    "is_byok": false,
+    "prompt_tokens_details": {
+     "cached_tokens": 0,
+     "cache_write_tokens": 0,
+     "audio_tokens": 0,
+     "video_tokens": 0
+    },
+    "cost_details": {
+     "upstream_inference_cost": 0.00011856,
+     "upstream_inference_prompt_cost": 6.656e-05,
+     "upstream_inference_completions_cost": 5.2e-05
+    },
+    "completion_tokens_details": {
+     "reasoning_tokens": 0,
+     "image_tokens": 0,
+     "audio_tokens": 0
+    }
+   }
+  }
+ },
+ "fallback": false,
+ "ts": "2026-07-07T06:49:09.499828+00:00",
+ "fused": [
+  {
+   "label": "snowboard",
+   "box": [
+    171.53109741210938,
+    172.3789520263672,
+    179.21632385253906,
+    209.73899841308594
+   ],
+   "score": 0.2434825599193573
+  },
+  {
+   "label": "snowboard",
+   "box": [
+    156.27830505371094,
+    173.9534912109375,
+    178.53720092773438,
+    206.71365356445312
+   ],
+   "score": 0.3039636897854507
+  },
+  {
+   "label": "snowboard",
+   "box": [
+    168.85171508789062,
+    174.89581298828125,
+    178.02442932128906,
+    192.2738494873047
+   ],
+   "score": 0.003030586987733841
+  }
+ ],
+ "latency_total_sec": 3.488630200008629
+}

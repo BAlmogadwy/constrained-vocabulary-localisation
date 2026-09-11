@@ -1,0 +1,36 @@
+{
+  "model": "Llama-3.2-11B-Vision-Instruct",
+  "strategy": "single_query",
+  "image": "/home/maxim/PycharmProjects/zero-shot-detection-benchmark/data/subsets/lvis_v1_val_unseen/images/000000117645.jpg",
+  "labels": [
+    "snowboard",
+    "blender",
+    "coffee_maker",
+    "microscope",
+    "musical_instrument"
+  ],
+  "detections": [
+    {
+      "box_2d": [
+        0,
+        0,
+        640,
+        480
+      ],
+      "label": "snowboard"
+    }
+  ],
+  "latency_sec": 15.86177895963192,
+  "raw_response": {
+    "snowboard": "[{\"box_2d\":[0,0,0,0],\"label\":\"snowboard\"}]",
+    "snowboard_norm": "[{\"box_norm\":[0.000000,0.000000,0.999999,0.999999],\"label\":\"snowboard\"}]",
+    "blender": "[{\"box_2d\":[0,0,0,0],\"label\":\"blender\"}]",
+    "blender_norm": "[{\"box_norm\":[0.0,0.0,0.0,0.0],\"label\":\"blender\"}]",
+    "coffee_maker": "[]",
+    "coffee_maker_norm": "[{\"box_norm\":[0.000000,0.000000,0.000000,0.000000],\"label\":\"coffee_maker\"}]",
+    "microscope": "[]",
+    "microscope_norm": "[{\"box_norm\":[0.000,0.000,0.000,0.000],\"label\":\"microscope\"}]",
+    "musical_instrument": "[]",
+    "musical_instrument_norm": "[{\"box_norm\":[0.0,0.0,0.0,0.0],\"label\":\"musical_instrument\"}]"
+  }
+}

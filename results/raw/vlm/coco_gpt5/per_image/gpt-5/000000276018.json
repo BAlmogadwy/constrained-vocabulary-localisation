@@ -1,0 +1,146 @@
+{
+  "model": "gpt-5",
+  "strategy": "single_query",
+  "image": "/home/maxim/PycharmProjects/zero-shot-detection-benchmark/data/raw/coco2017/val2017/000000276018.jpg",
+  "labels": [
+    "teddy bear",
+    "clock",
+    "hair drier",
+    "refrigerator",
+    "sink",
+    "toaster",
+    "vase"
+  ],
+  "detections": [
+    {
+      "box_2d": [
+        92,
+        478,
+        187,
+        612
+      ],
+      "label": "teddy bear",
+      "confidence": 0.94
+    },
+    {
+      "box_2d": [
+        228,
+        485,
+        293,
+        565
+      ],
+      "label": "teddy bear",
+      "confidence": 0.91
+    },
+    {
+      "box_2d": [
+        333,
+        335,
+        382,
+        403
+      ],
+      "label": "teddy bear",
+      "confidence": 0.88
+    },
+    {
+      "box_2d": [
+        137,
+        327,
+        205,
+        373
+      ],
+      "label": "teddy bear",
+      "confidence": 0.86
+    },
+    {
+      "box_2d": [
+        196,
+        230,
+        254,
+        284
+      ],
+      "label": "teddy bear",
+      "confidence": 0.83
+    }
+  ],
+  "latency_sec": 54.96530924800027,
+  "raw_response": {
+    "id": "resp_01447d54be0bfa3e00691c1b755388819b9b3e7a67a103d356",
+    "created_at": 1763449717.0,
+    "error": null,
+    "incomplete_details": null,
+    "instructions": null,
+    "metadata": {},
+    "model": "gpt-5-2025-08-07",
+    "object": "response",
+    "output": [
+      {
+        "id": "rs_01447d54be0bfa3e00691c1b764794819b951366eba7de560f",
+        "summary": [],
+        "type": "reasoning",
+        "content": null,
+        "encrypted_content": null,
+        "status": null
+      },
+      {
+        "id": "msg_01447d54be0bfa3e00691c1ba403f4819ba8f954036d372edb",
+        "content": [
+          {
+            "annotations": [],
+            "text": "[\n  {\"box_2d\": [92, 478, 187, 612], \"label\": \"teddy bear\", \"confidence\": 0.94},\n  {\"box_2d\": [228, 485, 293, 565], \"label\": \"teddy bear\", \"confidence\": 0.91},\n  {\"box_2d\": [333, 335, 382, 403], \"label\": \"teddy bear\", \"confidence\": 0.88},\n  {\"box_2d\": [137, 327, 205, 373], \"label\": \"teddy bear\", \"confidence\": 0.86},\n  {\"box_2d\": [196, 230, 254, 284], \"label\": \"teddy bear\", \"confidence\": 0.83}\n]",
+            "type": "output_text",
+            "logprobs": []
+          }
+        ],
+        "role": "assistant",
+        "status": "completed",
+        "type": "message"
+      }
+    ],
+    "parallel_tool_calls": true,
+    "temperature": 1.0,
+    "tool_choice": "auto",
+    "tools": [],
+    "top_p": 1.0,
+    "background": false,
+    "conversation": null,
+    "max_output_tokens": 16192,
+    "max_tool_calls": null,
+    "previous_response_id": null,
+    "prompt": null,
+    "prompt_cache_key": null,
+    "prompt_cache_retention": null,
+    "reasoning": {
+      "effort": "medium",
+      "generate_summary": null,
+      "summary": null
+    },
+    "safety_identifier": null,
+    "service_tier": "default",
+    "status": "completed",
+    "text": {
+      "format": {
+        "type": "text"
+      },
+      "verbosity": "medium"
+    },
+    "top_logprobs": 0,
+    "truncation": "disabled",
+    "usage": {
+      "input_tokens": 433,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 1975,
+      "output_tokens_details": {
+        "reasoning_tokens": 1792
+      },
+      "total_tokens": 2408
+    },
+    "user": null,
+    "billing": {
+      "payer": "developer"
+    },
+    "store": true
+  }
+}

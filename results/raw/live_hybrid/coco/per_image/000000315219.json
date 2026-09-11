@@ -1,0 +1,222 @@
+{
+ "image": "000000315219.jpg",
+ "labels": [
+  "hair drier",
+  "book",
+  "clock",
+  "microwave",
+  "oven",
+  "sink",
+  "teddy bear"
+ ],
+ "tau": 0.4,
+ "detector": {
+  "detections": [
+   {
+    "label": "clock",
+    "box": [
+     125.50797271728516,
+     0.015163421630859375,
+     303.0813293457031,
+     499.93475341796875
+    ],
+    "score": 0.013187292963266373
+   },
+   {
+    "label": "book",
+    "box": [
+     167.3712921142578,
+     341.3638610839844,
+     286.445556640625,
+     436.4884948730469
+    ],
+    "score": 0.009185110218822956
+   },
+   {
+    "label": "microwave",
+    "box": [
+     126.93419647216797,
+     0.0,
+     293.5371398925781,
+     130.64370727539062
+    ],
+    "score": 0.0032271300442516804
+   },
+   {
+    "label": "book",
+    "box": [
+     126.1310806274414,
+     0.0,
+     304.6029357910156,
+     499.7750244140625
+    ],
+    "score": 0.002474430250003934
+   },
+   {
+    "label": "book",
+    "box": [
+     132.31690979003906,
+     0.0,
+     293.19549560546875,
+     130.9158935546875
+    ],
+    "score": 0.0015218780608847737
+   },
+   {
+    "label": "hair drier",
+    "box": [
+     163.2530517578125,
+     433.7813720703125,
+     222.48365783691406,
+     499.93682861328125
+    ],
+    "score": 0.0011508085299283266
+   }
+  ],
+  "latency_sec": 0.034209700010251254
+ },
+ "detector_max_score": 0.013187292963266373,
+ "escalated": true,
+ "vlm": {
+  "model": "qwen/qwen3-vl-235b-a22b-instruct",
+  "detections": [
+   {
+    "label": "hair drier",
+    "box": [
+     129.87,
+     0.0,
+     291.375,
+     136.0
+    ],
+    "score": 1.0
+   }
+  ],
+  "latency_sec": 2.6607730999967316,
+  "usage": {
+   "prompt_tokens": 253,
+   "completion_tokens": 49,
+   "total_tokens": 302
+  },
+  "raw_response": {
+   "id": "gen-1783409311-NFH5OzxGvL10Lduc9jVj",
+   "object": "chat.completion",
+   "created": 1783409311,
+   "model": "qwen/qwen3-vl-235b-a22b-instruct",
+   "provider": "Novita",
+   "system_fingerprint": null,
+   "service_tier": null,
+   "choices": [
+    {
+     "index": 0,
+     "logprobs": null,
+     "finish_reason": "stop",
+     "native_finish_reason": "stop",
+     "message": {
+      "role": "assistant",
+      "content": "```json\n[\n\t{\"box_2d\": [390, 0, 875, 272], \"label\": \"hair drier\", \"confidence\": 0.98}\n]\n```",
+      "refusal": null,
+      "reasoning": null
+     }
+    }
+   ],
+   "usage": {
+    "prompt_tokens": 253,
+    "completion_tokens": 49,
+    "total_tokens": 302,
+    "cost": 0.0001494,
+    "is_byok": false,
+    "prompt_tokens_details": {
+     "cached_tokens": 0,
+     "cache_write_tokens": 0,
+     "audio_tokens": 0,
+     "video_tokens": 0
+    },
+    "cost_details": {
+     "upstream_inference_cost": 0.0001494,
+     "upstream_inference_prompt_cost": 7.59e-05,
+     "upstream_inference_completions_cost": 7.35e-05
+    },
+    "completion_tokens_details": {
+     "reasoning_tokens": 0,
+     "image_tokens": 0,
+     "audio_tokens": 0
+    }
+   }
+  }
+ },
+ "fallback": false,
+ "ts": "2026-07-07T07:28:29.655183+00:00",
+ "fused": [
+  {
+   "label": "clock",
+   "box": [
+    125.50797271728516,
+    0.015163421630859375,
+    303.0813293457031,
+    499.93475341796875
+   ],
+   "score": 0.013187292963266373
+  },
+  {
+   "label": "book",
+   "box": [
+    167.3712921142578,
+    341.3638610839844,
+    286.445556640625,
+    436.4884948730469
+   ],
+   "score": 0.009185110218822956
+  },
+  {
+   "label": "microwave",
+   "box": [
+    126.93419647216797,
+    0.0,
+    293.5371398925781,
+    130.64370727539062
+   ],
+   "score": 0.0032271300442516804
+  },
+  {
+   "label": "book",
+   "box": [
+    126.1310806274414,
+    0.0,
+    304.6029357910156,
+    499.7750244140625
+   ],
+   "score": 0.002474430250003934
+  },
+  {
+   "label": "book",
+   "box": [
+    132.31690979003906,
+    0.0,
+    293.19549560546875,
+    130.9158935546875
+   ],
+   "score": 0.0015218780608847737
+  },
+  {
+   "label": "hair drier",
+   "box": [
+    163.2530517578125,
+    433.7813720703125,
+    222.48365783691406,
+    499.93682861328125
+   ],
+   "score": 0.0011508085299283266
+  },
+  {
+   "label": "hair drier",
+   "box": [
+    129.87,
+    0.0,
+    291.375,
+    136.0
+   ],
+   "score": 0.4
+  }
+ ],
+ "latency_total_sec": 2.6950255000119796
+}

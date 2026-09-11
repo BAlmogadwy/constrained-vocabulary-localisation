@@ -1,0 +1,142 @@
+{
+ "image": "000000372349.jpg",
+ "labels": [
+  "toothbrush",
+  "book",
+  "clock",
+  "hair drier",
+  "microwave",
+  "refrigerator",
+  "sink"
+ ],
+ "tau": 0.4,
+ "detector": {
+  "detections": [
+   {
+    "label": "toothbrush",
+    "box": [
+     286.36993408203125,
+     233.18386840820312,
+     294.59112548828125,
+     244.74075317382812
+    ],
+    "score": 0.0036866546142846346
+   },
+   {
+    "label": "toothbrush",
+    "box": [
+     280.9366149902344,
+     232.586669921875,
+     295.0354309082031,
+     257.148193359375
+    ],
+    "score": 0.0019095786847174168
+   }
+  ],
+  "latency_sec": 0.03561239999544341
+ },
+ "detector_max_score": 0.0036866546142846346,
+ "escalated": true,
+ "vlm": {
+  "model": "qwen/qwen3-vl-235b-a22b-instruct",
+  "detections": [
+   {
+    "label": "toothbrush",
+    "box": [
+     281.6,
+     229.862,
+     297.6,
+     241.224
+    ],
+    "score": 1.0
+   }
+  ],
+  "latency_sec": 4.0484119999891846,
+  "usage": {
+   "prompt_tokens": 372,
+   "completion_tokens": 51,
+   "total_tokens": 423
+  },
+  "raw_response": {
+   "id": "gen-1783409508-PRxfpmhQmrJxi0wX5sCE",
+   "object": "chat.completion",
+   "created": 1783409508,
+   "model": "qwen/qwen3-vl-235b-a22b-instruct",
+   "provider": "Alibaba",
+   "system_fingerprint": null,
+   "service_tier": null,
+   "choices": [
+    {
+     "index": 0,
+     "logprobs": null,
+     "finish_reason": "stop",
+     "native_finish_reason": "stop",
+     "message": {
+      "role": "assistant",
+      "content": "```json\n[\n\t{\"box_2d\": [440, 526, 465, 552], \"label\": \"toothbrush\", \"confidence\": 0.95}\n]\n```",
+      "refusal": null,
+      "reasoning": null
+     }
+    }
+   ],
+   "usage": {
+    "prompt_tokens": 372,
+    "completion_tokens": 51,
+    "total_tokens": 423,
+    "cost": 0.00014976,
+    "is_byok": false,
+    "prompt_tokens_details": {
+     "cached_tokens": 0,
+     "cache_write_tokens": 0,
+     "audio_tokens": 0,
+     "video_tokens": 0
+    },
+    "cost_details": {
+     "upstream_inference_cost": 0.00014976,
+     "upstream_inference_prompt_cost": 9.672e-05,
+     "upstream_inference_completions_cost": 5.304e-05
+    },
+    "completion_tokens_details": {
+     "reasoning_tokens": 0,
+     "image_tokens": 0,
+     "audio_tokens": 0
+    }
+   }
+  }
+ },
+ "fallback": false,
+ "ts": "2026-07-07T07:31:45.495498+00:00",
+ "fused": [
+  {
+   "label": "toothbrush",
+   "box": [
+    286.36993408203125,
+    233.18386840820312,
+    294.59112548828125,
+    244.74075317382812
+   ],
+   "score": 0.0036866546142846346
+  },
+  {
+   "label": "toothbrush",
+   "box": [
+    280.9366149902344,
+    232.586669921875,
+    295.0354309082031,
+    257.148193359375
+   ],
+   "score": 0.0019095786847174168
+  },
+  {
+   "label": "toothbrush",
+   "box": [
+    281.6,
+    229.862,
+    297.6,
+    241.224
+   ],
+   "score": 0.4
+  }
+ ],
+ "latency_total_sec": 4.084090999982436
+}

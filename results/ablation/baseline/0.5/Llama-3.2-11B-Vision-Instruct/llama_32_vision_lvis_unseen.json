@@ -1,0 +1,3954 @@
+{
+  "model": "Llama-3.2-11B-Vision-Instruct",
+  "strategy": "single_query",
+  "labels": [
+    "microwave",
+    "oven",
+    "toaster",
+    "sink",
+    "refrigerator",
+    "book",
+    "clock",
+    "vase",
+    "scissors",
+    "teddy bear",
+    "hair drier",
+    "toothbrush"
+  ],
+  "per_image_labels": true,
+  "per_image_labels_file": "/home/maxim/PycharmProjects/zero-shot-detection-benchmark/data/processed/lvis_v1/val/lvis_unseen_dynamic_labels.json",
+  "images_dir": "/home/maxim/PycharmProjects/zero-shot-detection-benchmark/data/subsets/lvis_v1_val_unseen/images",
+  "num_images": 100,
+  "results": [
+    {
+      "image": "000000528984.jpg",
+      "detections": [
+        {
+          "box_2d": [
+            0,
+            0,
+            640,
+            480
+          ],
+          "label": "snowboard"
+        }
+      ],
+      "latency_sec": 5.391922980896197,
+      "raw_response": {
+        "snowboard": "[{\"box_2d\":[0,0,640,480],\"label\":\"snowboard\"}]",
+        "coffee_maker": "[]",
+        "coffee_maker_norm": "[{\"box_norm\":[0.000,0.000,0.000,0.000],\"label\":\"coffee_maker\"}]",
+        "lawn_mower": "[]",
+        "lawn_mower_norm": "[{\"box_norm\":[0.000,0.000,0.000,0.000],\"label\":\"lawn_mower\"}]",
+        "microscope": "[]",
+        "microscope_norm": "[{\"box_norm\":[0.000,0.000,0.000,0.000],\"label\":\"microscope\"}]",
+        "sewing_machine": "[]",
+        "sewing_machine_norm": "[{\"box_norm\":[0.000,0.000,0.000,0.000],\"label\":\"sewing_machine\"}]"
+      },
+      "labels_used": [
+        "snowboard",
+        "coffee_maker",
+        "lawn_mower",
+        "microscope",
+        "sewing_machine"
+      ]
+    },
+    {
+      "image": "000000359762.jpg",
+      "detections": [
+        {
+          "box_2d": [
+            0,
+            0,
+            639,
+            480
+          ],
+          "label": "spatula"
+        }
+      ],
+      "latency_sec": 5.880294471047819,
+      "raw_response": {
+        "spatula": "[]",
+        "spatula_norm": "[{\"box_norm\":[0.000,0.000,0.999,0.999],\"label\":\"spatula\"}]",
+        "coffee_maker": "[]",
+        "coffee_maker_norm": "[{\"box_norm\":[0.000,0.000,0.000,0.000],\"label\":\"coffee_maker\"}]",
+        "hair_dryer": "[]",
+        "hair_dryer_norm": "[{\"box_norm\":[0.0,0.0,0.0,0.0],\"label\":\"hair_dryer\"}]",
+        "lawn_mower": "[]",
+        "lawn_mower_norm": "[{\"box_norm\":[0.0,0.0,0.0,0.0],\"label\":\"lawn_mower\"}]",
+        "snowboard": "[]",
+        "snowboard_norm": "[{\"box_norm\":[0.000,0.000,0.000,0.000],\"label\":\"snowboard\"}]"
+      },
+      "labels_used": [
+        "spatula",
+        "coffee_maker",
+        "hair_dryer",
+        "lawn_mower",
+        "snowboard"
+      ]
+    },
+    {
+      "image": "000000549508.jpg",
+      "detections": [
+        {
+          "box_2d": [
+            0,
+            0,
+            639,
+            480
+          ],
+          "label": "snowboard"
+        }
+      ],
+      "latency_sec": 6.264764382969588,
+      "raw_response": {
+        "snowboard": "[{\"box_2d\":[0,0,0,0],\"label\":\"snowboard\"}]",
+        "snowboard_norm": "[{\"box_norm\":[0.000,0.000,0.999,0.999],\"label\":\"snowboard\"}]",
+        "blender": "[]",
+        "blender_norm": "[{\"box_norm\":[0.000,0.000,0.000,0.000],\"label\":\"blender\"}]",
+        "musical_instrument": "[]",
+        "musical_instrument_norm": "[{\"box_norm\":[0.000,0.000,0.000,0.000],\"label\":\"musical_instrument\"}]",
+        "sewing_machine": "[]",
+        "sewing_machine_norm": "[{\"box_norm\":[0.000,0.000,0.000,0.000],\"label\":\"sewing_machine\"}]",
+        "spatula": "[]",
+        "spatula_norm": "[{\"box_norm\":[0.000,0.000,0.000,0.000],\"label\":\"spatula\"}]"
+      },
+      "labels_used": [
+        "snowboard",
+        "blender",
+        "musical_instrument",
+        "sewing_machine",
+        "spatula"
+      ]
+    },
+    {
+      "image": "000000565767.jpg",
+      "detections": [
+        {
+          "box_2d": [
+            157,
+            272,
+            265,
+            395
+          ],
+          "label": "snowboard"
+        },
+        {
+          "box_2d": [
+            29,
+            209,
+            149,
+            308
+          ],
+          "label": "blender"
+        },
+        {
+          "box_2d": [
+            0,
+            0,
+            611,
+            611
+          ],
+          "label": "snowboarder"
+        }
+      ],
+      "latency_sec": 6.433669816004112,
+      "raw_response": {
+        "snowboard": "[{\"box_2d\":[0,0,0,0],\"label\":\"snowboard\"}]",
+        "snowboard_norm": "[{\"box_norm\":[0.256,0.444,0.433,0.645],\"label\":\"snowboard\"}]",
+        "blender": "[]",
+        "blender_norm": "[{\"box_norm\":[0.048,0.341,0.243,0.504],\"label\":\"blender\"}]",
+        "hair_dryer": "[]",
+        "hair_dryer_norm": "[{\"box_norm\":[0.000,0.000,0.998,0.998],\"label\":\"snowboarder\"}]",
+        "sewing_machine": "[]",
+        "sewing_machine_norm": "[{\"box_norm\":[0.0,0.0,0.0,0.0],\"label\":\"sewing_machine\"}]",
+        "stapler_(stapling_machine)": "[]",
+        "stapler_(stapling_machine)_norm": "[{\"box_norm\":[0.0,0.0,0.0,0.0],\"label\":\"stapler_(stapling_machine)\"}]"
+      },
+      "labels_used": [
+        "snowboard",
+        "blender",
+        "hair_dryer",
+        "sewing_machine",
+        "stapler_(stapling_machine)"
+      ]
+    },
+    {
+      "image": "000000147913.jpg",
+      "detections": [
+        {
+          "box_2d": [
+            126,
+            155,
+            266,
+            355
+          ],
+          "label": "snowboard"
+        },
+        {
+          "box_2d": [
+            0,
+            0,
+            480,
+            639
+          ],
+          "label": "snowboard"
+        }
+      ],
+      "latency_sec": 6.266595461056568,
+      "raw_response": {
+        "snowboard": "[{\"box_2d\":[0,0,0,0],\"label\":\"snowboard\"}]",
+        "snowboard_norm": "[{\"box_norm\":[0.262,0.242,0.555,0.555],\"label\":\"snowboard\"}]",
+        "coffee_maker": "[]",
+        "coffee_maker_norm": "[{\"box_norm\":[0.0,0.0,0.0,0.0],\"label\":\"coffee_maker\"}]",
+        "hair_dryer": "[]",
+        "hair_dryer_norm": "[{\"box_norm\":[0.0,0.0,0.0,0.0],\"label\":\"hair_dryer\"}]",
+        "microscope": "[]",
+        "microscope_norm": "[{\"box_norm\":[0.000,0.000,0.999,0.999],\"label\":\"snowboard\"}]",
+        "musical_instrument": "[]",
+        "musical_instrument_norm": "[{\"box_norm\":[0.0,0.0,0.0,0.0],\"label\":\"musical_instrument\"}]"
+      },
+      "labels_used": [
+        "snowboard",
+        "coffee_maker",
+        "hair_dryer",
+        "microscope",
+        "musical_instrument"
+      ]
+    },
+    {
+      "image": "000000330420.jpg",
+      "detections": [
+        {
+          "box_2d": [
+            0,
+            0,
+            426,
+            640
+          ],
+          "label": "blender"
+        }
+      ],
+      "latency_sec": 5.5716941360151395,
+      "raw_response": {
+        "blender": "[{\"box_2d\":[0,0,426,640],\"label\":\"blender\"}]",
+        "lawn_mower": "[]",
+        "lawn_mower_norm": "[{\"box_norm\":[0.0,0.0,0.0,0.0],\"label\":\"lawn_mower\"}]",
+        "microscope": "[]",
+        "microscope_norm": "[{\"box_norm\":[0.0,0.0,0.0,0.0],\"label\":\"microscope\"}]",
+        "musical_instrument": "[]",
+        "musical_instrument_norm": "[{\"box_norm\":[0.0,0.0,0.0,0.0],\"label\":\"musical_instrument\"}]",
+        "stapler_(stapling_machine)": "[]",
+        "stapler_(stapling_machine)_norm": "[{\"box_norm\":[0.0,0.0,0.0,0.0],\"label\":\"stapler_(stapling_machine)\"}]"
+      },
+      "labels_used": [
+        "blender",
+        "lawn_mower",
+        "microscope",
+        "musical_instrument",
+        "stapler_(stapling_machine)"
+      ]
+    },
+    {
+      "image": "000000390704.jpg",
+      "detections": [
+        {
+          "box_2d": [
+            93,
+            113,
+            291,
+            266
+          ],
+          "label": "snowboard"
+        }
+      ],
+      "latency_sec": 6.265424394980073,
+      "raw_response": {
+        "snowboard": "[{\"box_2d\":[0,0,0,0],\"label\":\"snowboard\"}]",
+        "snowboard_norm": "[{\"box_norm\":[0.145,0.235,0.455,0.555],\"label\":\"snowboard\"}]",
+        "coffee_maker": "[]",
+        "coffee_maker_norm": "[{\"box_norm\":[0.000,0.000,0.000,0.000],\"label\":\"coffee_maker\"}]",
+        "musical_instrument": "[]",
+        "musical_instrument_norm": "[{\"box_norm\":[0.0,0.0,0.0,0.0],\"label\":\"musical_instrument\"}]",
+        "sewing_machine": "[]",
+        "sewing_machine_norm": "[{\"box_norm\":[0.000,0.000,0.000,0.000],\"label\":\"sewing_machine\"}]",
+        "spatula": "[]",
+        "spatula_norm": "[{\"box_norm\":[0.0,0.0,0.0,0.0],\"label\":\"spatula\"}]"
+      },
+      "labels_used": [
+        "snowboard",
+        "coffee_maker",
+        "musical_instrument",
+        "sewing_machine",
+        "spatula"
+      ]
+    },
+    {
+      "image": "000000357202.jpg",
+      "detections": [
+        {
+          "box_2d": [
+            28,
+            61,
+            156,
+            126
+          ],
+          "label": "snowboard"
+        },
+        {
+          "box_2d": [
+            0,
+            0,
+            639,
+            426
+          ],
+          "label": "snowboarder"
+        },
+        {
+          "box_2d": [
+            0,
+            0,
+            639,
+            427
+          ],
+          "label": "snowboarder"
+        }
+      ],
+      "latency_sec": 6.392228254000656,
+      "raw_response": {
+        "snowboard": "[{\"box_2d\":[0,0,0,0],\"label\":\"snowboard\"}]",
+        "snowboard_norm": "[{\"box_norm\":[0.044,0.142,0.244,0.294],\"label\":\"snowboard\"}]",
+        "coffee_maker": "[]",
+        "coffee_maker_norm": "[{\"box_norm\":[0.0,0.0,0.0,0.0],\"label\":\"coffee_maker\"}]",
+        "hair_dryer": "[]",
+        "hair_dryer_norm": "[{\"box_norm\":[0.000,0.000,0.998,0.998],\"label\":\"snowboarder\"}]",
+        "lawn_mower": "[]",
+        "lawn_mower_norm": "[{\"box_norm\":[0.000,0.000,0.999,0.999],\"label\":\"snowboarder\"}]",
+        "stapler_(stapling_machine)": "[]",
+        "stapler_(stapling_machine)_norm": "[{\"box_norm\":[0.000,0.000,0.000,0.000],\"label\":\"stapler_(stapling_machine)\"}]"
+      },
+      "labels_used": [
+        "snowboard",
+        "coffee_maker",
+        "hair_dryer",
+        "lawn_mower",
+        "stapler_(stapling_machine)"
+      ]
+    },
+    {
+      "image": "000000304827.jpg",
+      "detections": [
+        {
+          "box_2d": [
+            163,
+            160,
+            214,
+            182
+          ],
+          "label": "coffee_maker"
+        }
+      ],
+      "latency_sec": 6.7995162489824,
+      "raw_response": {
+        "coffee_maker": "[{\"box_2d\":[246,0.555,0.283,0.722],\"label\":\"coffee_maker\"}]",
+        "coffee_maker_norm": "[{\"box_norm\":[0.255,0.444,0.335,0.505],\"label\":\"coffee_maker\"}]",
+        "blender": "[{\"box_2d\":[0,0,0,0],\"label\":\"blender\"}]",
+        "blender_norm": "[{\"box_norm\":[0.000,0.000,0.000,0.000],\"label\":\"blender\"}]",
+        "lawn_mower": "[]",
+        "lawn_mower_norm": "[{\"box_norm\":[0.000,0.000,0.000,0.000],\"label\":\"lawn_mower\"}]",
+        "microscope": "[]",
+        "microscope_norm": "[{\"box_norm\":[0.000,0.000,0.000,0.000],\"label\":\"microscope\"}]",
+        "snowboard": "[]",
+        "snowboard_norm": "[{\"box_norm\":[0.000,0.000,0.000,0.000],\"label\":\"snowboard\"}]"
+      },
+      "labels_used": [
+        "coffee_maker",
+        "blender",
+        "lawn_mower",
+        "microscope",
+        "snowboard"
+      ]
+    },
+    {
+      "image": "000000397269.jpg",
+      "detections": [
+        {
+          "box_2d": [
+            0,
+            0,
+            640,
+            480
+          ],
+          "label": "None"
+        }
+      ],
+      "latency_sec": 5.817212744965218,
+      "raw_response": {
+        "spatula": "[]",
+        "spatula_norm": "[{\"box_norm\":[0.000,0.000,0.000,0.000],\"label\":\"spatula\"}]",
+        "coffee_maker": "[]",
+        "coffee_maker_norm": "[{\"box_norm\":[0.0,0.0,0.0,0.0],\"label\":\"coffee_maker\"}]",
+        "hair_dryer": "[]",
+        "hair_dryer_norm": "[{\"box_norm\":[0.0,0.0,0.0,0.0],\"label\":\"hair_dryer\"}]",
+        "microscope": "[]",
+        "microscope_norm": "[{\"box_norm\":[0.0,0.0,0.0,0.0],\"label\":\"microscope\"}]",
+        "snowboard": "[]",
+        "snowboard_norm": "[{\"box_norm\":[0.0,0.0,1.0,1.0],\"label\":\"None\"}]"
+      },
+      "labels_used": [
+        "spatula",
+        "coffee_maker",
+        "hair_dryer",
+        "microscope",
+        "snowboard"
+      ]
+    },
+    {
+      "image": "000000189694.jpg",
+      "detections": [
+        {
+          "box_2d": [
+            148,
+            213,
+            284,
+            309
+          ],
+          "label": "coffee_maker"
+        }
+      ],
+      "latency_sec": 6.327499708044343,
+      "raw_response": {
+        "coffee_maker": "[{\"box_2d\":[246,0,444,0],\"label\":\"coffee_maker\"}]",
+        "coffee_maker_norm": "[{\"box_norm\":[0.231,0.444,0.444,0.644],\"label\":\"coffee_maker\"}]",
+        "hair_dryer": "[]",
+        "hair_dryer_norm": "[{\"box_norm\":[0.000,0.000,0.000,0.000],\"label\":\"hair_dryer\"}]",
+        "lawn_mower": "[]",
+        "lawn_mower_norm": "[{\"box_norm\":[0.0,0.0,0.0,0.0],\"label\":\"lawn_mower\"}]",
+        "musical_instrument": "[]",
+        "musical_instrument_norm": "[{\"box_norm\":[0.0,0.0,0.0,0.0],\"label\":\"musical_instrument\"}]",
+        "snowboard": "[]",
+        "snowboard_norm": "[{\"box_norm\":[0.0,0.0,0.0,0.0],\"label\":\"snowboard\"}]"
+      },
+      "labels_used": [
+        "coffee_maker",
+        "hair_dryer",
+        "lawn_mower",
+        "musical_instrument",
+        "snowboard"
+      ]
+    },
+    {
+      "image": "000000359073.jpg",
+      "detections": [
+        {
+          "box_2d": [
+            0,
+            0,
+            640,
+            480
+          ],
+          "label": "snowboard"
+        }
+      ],
+      "latency_sec": 5.012744450010359,
+      "raw_response": {
+        "snowboard": "[{\"box_2d\":[0,0,640,480],\"label\":\"snowboard\"}]",
+        "lawn_mower": "[]",
+        "lawn_mower_norm": "[{\"box_norm\":[0.000,0.000,0.000,0.000],\"label\":\"lawn_mower\"}]",
+        "musical_instrument": "[]",
+        "musical_instrument_norm": "[{\"box_norm\":[0.0,0.0,0.0,0.0],\"label\":\"musical_instrument\"}]",
+        "sewing_machine": "[]",
+        "sewing_machine_norm": "[]",
+        "stapler_(stapling_machine)": "[]",
+        "stapler_(stapling_machine)_norm": "[{\"box_norm\":[0.000,0.000,0.000,0.000],\"label\":\"stapler_(stapling_machine)\"}]"
+      },
+      "labels_used": [
+        "snowboard",
+        "lawn_mower",
+        "musical_instrument",
+        "sewing_machine",
+        "stapler_(stapling_machine)"
+      ]
+    },
+    {
+      "image": "000000083682.jpg",
+      "detections": [
+        {
+          "box_2d": [
+            156,
+            107,
+            346,
+            231
+          ],
+          "label": "snowboard"
+        },
+        {
+          "box_2d": [
+            20,
+            111,
+            291,
+            188
+          ],
+          "label": "snowboard"
+        },
+        {
+          "box_2d": [
+            0,
+            0,
+            639,
+            435
+          ],
+          "label": "snowboard"
+        },
+        {
+          "box_2d": [
+            0,
+            0,
+            639,
+            435
+          ],
+          "label": "none"
+        }
+      ],
+      "latency_sec": 6.191948167048395,
+      "raw_response": {
+        "snowboard": "[{\"box_2d\":[0,0,0,0],\"label\":\"snowboard\"}]",
+        "snowboard_norm": "[{\"box_norm\":[0.244,0.247,0.541,0.532],\"label\":\"snowboard\"}]",
+        "blender": "[]",
+        "blender_norm": "[{\"box_norm\":[0.032,0.255,0.455,0.433],\"label\":\"snowboard\"}]",
+        "hair_dryer": "[]",
+        "hair_dryer_norm": "[{\"box_norm\":[0.000,0.000,0.999,0.999],\"label\":\"snowboard\"}]",
+        "sewing_machine": "[]",
+        "sewing_machine_norm": "[{\"box_norm\":[0.000,0.000,0.999,0.999],\"label\":\"none\"}]",
+        "spatula": "[]",
+        "spatula_norm": "[{\"box_norm\":[0.000,0.000,0.000,0.000],\"label\":\"spatula\"}]"
+      },
+      "labels_used": [
+        "snowboard",
+        "blender",
+        "hair_dryer",
+        "sewing_machine",
+        "spatula"
+      ]
+    },
+    {
+      "image": "000000430711.jpg",
+      "detections": [
+        {
+          "box_2d": [
+            0,
+            0,
+            480,
+            639
+          ],
+          "label": "blender"
+        }
+      ],
+      "latency_sec": 6.290407774038613,
+      "raw_response": {
+        "blender": "[{\"box_2d\":[0,0,0,0],\"label\":\"blender\"}]",
+        "blender_norm": "[{\"box_norm\":[0.000,0.000,0.999,0.999],\"label\":\"blender\"}]",
+        "hair_dryer": "[]",
+        "hair_dryer_norm": "[{\"box_norm\":[0.0,0.0,0.0,0.0],\"label\":\"hair_dryer\"}]",
+        "microscope": "[]",
+        "microscope_norm": "[{\"box_norm\":[0.0,0.0,0.0,0.0],\"label\":\"microscope\"}]",
+        "musical_instrument": "[]",
+        "musical_instrument_norm": "[{\"box_norm\":[0.000,0.000,0.000,0.000],\"label\":\"musical_instrument\"}]",
+        "spatula": "[]",
+        "spatula_norm": "[{\"box_norm\":[0.000,0.000,0.000,0.000],\"label\":\"spatula\"}]"
+      },
+      "labels_used": [
+        "blender",
+        "hair_dryer",
+        "microscope",
+        "musical_instrument",
+        "spatula"
+      ]
+    },
+    {
+      "image": "000000401766.jpg",
+      "detections": [
+        {
+          "box_2d": [
+            39,
+            90,
+            118,
+            218
+          ],
+          "label": "coffee_maker"
+        },
+        {
+          "box_2d": [
+            2,
+            144,
+            118,
+            221
+          ],
+          "label": "spatula"
+        }
+      ],
+      "latency_sec": 8.045323726953939,
+      "raw_response": {
+        "coffee_maker": "[{\"box_2d\":[0,0,0,0],\"label\":\"coffee_maker\"}]",
+        "coffee_maker_norm": "[{\"box_norm\":[0.082,0.141,0.245,0.341],\"label\":\"coffee_maker\"}]",
+        "spatula": "[{\"box_2d\":[0,0,0,0],\"label\":\"spatula\"}]",
+        "spatula_norm": "[{\"box_norm\":[0.005,0.225,0.245,0.345],\"label\":\"spatula\"}]",
+        "hair_dryer": "[]",
+        "hair_dryer_norm": "[{\"box_norm\":[0.0,0.0,0.0,0.0],\"label\":\"hair_dryer\"}]",
+        "lawn_mower": "[]",
+        "lawn_mower_norm": "[{\"box_norm\":[0.0,0.0,0.0,0.0],\"label\":\"lawn_mower\"}]",
+        "snowboard": "[]",
+        "snowboard_norm": "[{\"box_norm\":[0.0,0.0,0.0,0.0],\"label\":\"snowboard\"}]",
+        "stapler_(stapling_machine)": "[]",
+        "stapler_(stapling_machine)_norm": "[{\"box_norm\":[0.0,0.0,0.0,0.0],\"label\":\"stapler_(stapling_machine)\"}]"
+      },
+      "labels_used": [
+        "coffee_maker",
+        "spatula",
+        "hair_dryer",
+        "lawn_mower",
+        "snowboard",
+        "stapler_(stapling_machine)"
+      ]
+    },
+    {
+      "image": "000000058554.jpg",
+      "detections": [
+        {
+          "box_2d": [
+            32,
+            32,
+            352,
+            608
+          ],
+          "label": "blender"
+        },
+        {
+          "box_2d": [
+            32,
+            32,
+            275,
+            288
+          ],
+          "label": "coffee_maker"
+        },
+        {
+          "box_2d": [
+            320,
+            320,
+            480,
+            480
+          ],
+          "label": "spatula"
+        }
+      ],
+      "latency_sec": 5.692408316070214,
+      "raw_response": {
+        "blender": "[{\"box_2d\":[0,0,0,0],\"label\":\"blender\"}]",
+        "blender_norm": "[{\"box_norm\":[0.05,0.05,0.55,0.95],\"label\":\"blender\"}]",
+        "coffee_maker": "[]",
+        "coffee_maker_norm": "[{\"box_norm\":[0.05,0.05,0.43,0.45],\"label\":\"coffee_maker\"}]",
+        "lawn_mower": "[]",
+        "lawn_mower_norm": "[]",
+        "snowboard": "[]",
+        "snowboard_norm": "[{\"box_norm\":[0.0,0.0,0.0,0.0],\"label\":\"snowboard\"}]",
+        "spatula": "[]",
+        "spatula_norm": "[{\"box_norm\":[0.5,0.5,0.75,0.75],\"label\":\"spatula\"}]"
+      },
+      "labels_used": [
+        "blender",
+        "coffee_maker",
+        "lawn_mower",
+        "snowboard",
+        "spatula"
+      ]
+    },
+    {
+      "image": "000000500579.jpg",
+      "detections": [
+        {
+          "box_2d": [
+            28,
+            103,
+            284,
+            236
+          ],
+          "label": "snowboard"
+        }
+      ],
+      "latency_sec": 6.276209417032078,
+      "raw_response": {
+        "snowboard": "[{\"box_2d\":[0,0,0,0],\"label\":\"snowboard\"}]",
+        "snowboard_norm": "[{\"box_norm\":[0.044,0.242,0.444,0.555],\"label\":\"snowboard\"}]",
+        "coffee_maker": "[]",
+        "coffee_maker_norm": "[{\"box_norm\":[0.000,0.000,0.000,0.000],\"label\":\"coffee_maker\"}]",
+        "hair_dryer": "[]",
+        "hair_dryer_norm": "[{\"box_norm\":[0.000,0.000,0.000,0.000],\"label\":\"hair_dryer\"}]",
+        "sewing_machine": "[]",
+        "sewing_machine_norm": "[{\"box_norm\":[0.000,0.000,0.000,0.000],\"label\":\"sewing_machine\"}]",
+        "spatula": "[]",
+        "spatula_norm": "[{\"box_norm\":[0.000,0.000,0.000,0.000],\"label\":\"spatula\"}]"
+      },
+      "labels_used": [
+        "snowboard",
+        "coffee_maker",
+        "hair_dryer",
+        "sewing_machine",
+        "spatula"
+      ]
+    },
+    {
+      "image": "000000341865.jpg",
+      "detections": [
+        {
+          "box_2d": [
+            3,
+            2,
+            157,
+            166
+          ],
+          "label": "hair_dryer"
+        },
+        {
+          "box_2d": [
+            0,
+            0,
+            639,
+            479
+          ],
+          "label": "microscope"
+        },
+        {
+          "box_2d": [
+            0,
+            0,
+            639,
+            480
+          ],
+          "label": "none"
+        }
+      ],
+      "latency_sec": 6.305467223981395,
+      "raw_response": {
+        "hair_dryer": "[{\"box_2d\":[0,0,0,0],\"label\":\"hair_dryer\"}]",
+        "hair_dryer_norm": "[{\"box_norm\":[0.005,0.005,0.245,0.345],\"label\":\"hair_dryer\"}]",
+        "blender": "[]",
+        "blender_norm": "[{\"box_norm\":[0.0,0.0,0.0,0.0],\"label\":\"blender\"}]",
+        "microscope": "[]",
+        "microscope_norm": "[{\"box_norm\":[0.000,0.000,0.998,0.998],\"label\":\"microscope\"}]",
+        "musical_instrument": "[]",
+        "musical_instrument_norm": "[{\"box_norm\":[0.000,0.000,0.000,0.000],\"label\":\"musical_instrument\"}]",
+        "sewing_machine": "[]",
+        "sewing_machine_norm": "[{\"box_norm\":[0.000,0.000,0.999,0.999],\"label\":\"none\"}]"
+      },
+      "labels_used": [
+        "hair_dryer",
+        "blender",
+        "microscope",
+        "musical_instrument",
+        "sewing_machine"
+      ]
+    },
+    {
+      "image": "000000407349.jpg",
+      "detections": [
+        {
+          "box_2d": [
+            34,
+            165,
+            92,
+            213
+          ],
+          "label": "coffee_maker"
+        }
+      ],
+      "latency_sec": 6.331858669989742,
+      "raw_response": {
+        "coffee_maker": "[{\"box_2d\":[0,0,0,0],\"label\":\"coffee_maker\"}]",
+        "coffee_maker_norm": "[{\"box_norm\":[0.053,0.343,0.143,0.443],\"label\":\"coffee_maker\"}]",
+        "hair_dryer": "[]",
+        "hair_dryer_norm": "[{\"box_norm\":[0.0,0.0,0.0,0.0],\"label\":\"hair_dryer\"}]",
+        "lawn_mower": "[]",
+        "lawn_mower_norm": "[{\"box_norm\":[0.0,0.0,0.0,0.0],\"label\":\"lawn_mower\"}]",
+        "snowboard": "[]",
+        "snowboard_norm": "[{\"box_norm\":[0.0,0.0,0.0,0.0],\"label\":\"snowboard\"}]",
+        "spatula": "[]",
+        "spatula_norm": "[{\"box_norm\":[0.000,0.000,0.000,0.000],\"label\":\"spatula\"}]"
+      },
+      "labels_used": [
+        "coffee_maker",
+        "hair_dryer",
+        "lawn_mower",
+        "snowboard",
+        "spatula"
+      ]
+    },
+    {
+      "image": "000000546959.jpg",
+      "detections": [
+        {
+          "box_2d": [
+            164,
+            117,
+            284,
+            357
+          ],
+          "label": "snowboard"
+        },
+        {
+          "box_2d": [
+            0,
+            0,
+            639,
+            480
+          ],
+          "label": "snowboard"
+        }
+      ],
+      "latency_sec": 7.608307974995114,
+      "raw_response": {
+        "snowboard": "[{\"box_2d\":[0,0,0,0],\"label\":\"snowboard\"}, {\"box_2d\":[0,0,0,0],\"label\":\"snowboard\"}, {\"box_2d\":[0,0,0,0],\"label\":\"snowboard\"}, {\"box_2d\":[0,0,0,0],\"label\":\"snowboard\"}]",
+        "snowboard_norm": "[{\"box_norm\":[0.256,0.244,0.444,0.744],\"label\":\"snowboard\"}]",
+        "blender": "[]",
+        "blender_norm": "[{\"box_norm\":[0.000,0.000,0.999,0.999],\"label\":\"snowboard\"}]",
+        "coffee_maker": "[]",
+        "coffee_maker_norm": "[{\"box_norm\":[0.000,0.000,0.000,0.000],\"label\":\"coffee_maker\"}]",
+        "hair_dryer": "[]",
+        "hair_dryer_norm": "[{\"box_norm\":[0.0,0.0,0.0,0.0],\"label\":\"hair_dryer\"}]",
+        "stapler_(stapling_machine)": "[]",
+        "stapler_(stapling_machine)_norm": "[{\"box_norm\":[0.0,0.0,0.0,0.0],\"label\":\"stapler_(stapling_machine)\"}]"
+      },
+      "labels_used": [
+        "snowboard",
+        "blender",
+        "coffee_maker",
+        "hair_dryer",
+        "stapler_(stapling_machine)"
+      ]
+    },
+    {
+      "image": "000000305813.jpg",
+      "detections": [
+        {
+          "box_2d": [
+            157,
+            284,
+            218,
+            322
+          ],
+          "label": "blender"
+        }
+      ],
+      "latency_sec": 8.153008441906422,
+      "raw_response": {
+        "blender": "[{\"box_2d\":[0,0,0,0],\"label\":\"blender\"}]",
+        "blender_norm": "[{\"box_norm\":[0.247,0.444,0.344,0.503],\"label\":\"blender\"}]",
+        "hair_dryer": "[{\"box_2d\":[0,0,0,0],\"label\":\"hair_dryer\"}]",
+        "hair_dryer_norm": "[{\"box_norm\":[0.000,0.000,0.000,0.000],\"label\":\"hair_dryer\"}]",
+        "musical_instrument": "[{\"box_2d\":[0,0,0,0],\"label\":\"musical_instrument\"}]",
+        "musical_instrument_norm": "[{\"box_norm\":[0.000,0.000,0.000,0.000],\"label\":\"musical_instrument\"}]",
+        "snowboard": "[]",
+        "snowboard_norm": "[{\"box_norm\":[0.000000,0.000000,0.000000,0.000000],\"label\":\"snowboard\"}]",
+        "stapler_(stapling_machine)": "[{\"box_2d\":[0,0,0,0],\"label\":\"stapler_(stapling_machine)\"}]",
+        "stapler_(stapling_machine)_norm": "[{\"box_norm\":[0.000000,0.000000,0.000000,0.000000],\"label\":\"stapler_(stapling_machine)\"}]"
+      },
+      "labels_used": [
+        "blender",
+        "hair_dryer",
+        "musical_instrument",
+        "snowboard",
+        "stapler_(stapling_machine)"
+      ]
+    },
+    {
+      "image": "000000025452.jpg",
+      "detections": [
+        {
+          "box_2d": [
+            151,
+            61,
+            255,
+            145
+          ],
+          "label": "snowboard"
+        }
+      ],
+      "latency_sec": 6.40881764201913,
+      "raw_response": {
+        "snowboard": "[{\"box_2d\":[0,0,0,0],\"label\":\"snowboard\"}]",
+        "snowboard_norm": "[{\"box_norm\":[0.236,0.144,0.399,0.342],\"label\":\"snowboard\"}]",
+        "microscope": "[]",
+        "microscope_norm": "[{\"box_norm\":[0.000,0.000,0.000,0.000],\"label\":\"microscope\"}]",
+        "musical_instrument": "[]",
+        "musical_instrument_norm": "[{\"box_norm\":[0.000,0.000,0.000,0.000],\"label\":\"musical_instrument\"}]",
+        "sewing_machine": "[]",
+        "sewing_machine_norm": "[{\"box_norm\":[0.000,0.000,0.000,0.000],\"label\":\"sewing_machine\"}]",
+        "stapler_(stapling_machine)": "[]",
+        "stapler_(stapling_machine)_norm": "[{\"box_norm\":[0.0,0.0,0.0,0.0],\"label\":\"stapler_(stapling_machine)\"}]"
+      },
+      "labels_used": [
+        "snowboard",
+        "microscope",
+        "musical_instrument",
+        "sewing_machine",
+        "stapler_(stapling_machine)"
+      ]
+    },
+    {
+      "image": "000000343282.jpg",
+      "detections": [
+        {
+          "box_2d": [
+            0,
+            0,
+            640,
+            480
+          ],
+          "label": "snowboard"
+        }
+      ],
+      "latency_sec": 5.40140060603153,
+      "raw_response": {
+        "snowboard": "[{\"box_2d\":[0,0,640,480],\"label\":\"snowboard\"}]",
+        "coffee_maker": "[]",
+        "coffee_maker_norm": "[{\"box_norm\":[0.000,0.000,0.000,0.000],\"label\":\"coffee_maker\"}]",
+        "hair_dryer": "[]",
+        "hair_dryer_norm": "[{\"box_norm\":[0.000,0.000,0.000,0.000],\"label\":\"hair_dryer\"}]",
+        "microscope": "[]",
+        "microscope_norm": "[{\"box_norm\":[0.000,0.000,0.000,0.000],\"label\":\"microscope\"}]",
+        "sewing_machine": "[]",
+        "sewing_machine_norm": "[{\"box_norm\":[0.000,0.000,0.000,0.000],\"label\":\"sewing_machine\"}]"
+      },
+      "labels_used": [
+        "snowboard",
+        "coffee_maker",
+        "hair_dryer",
+        "microscope",
+        "sewing_machine"
+      ]
+    },
+    {
+      "image": "000000093959.jpg",
+      "detections": [
+        {
+          "box_2d": [
+            112,
+            218,
+            131,
+            284
+          ],
+          "label": "coffee_maker"
+        },
+        {
+          "box_2d": [
+            22,
+            150,
+            68,
+            188
+          ],
+          "label": "spatula"
+        }
+      ],
+      "latency_sec": 6.249052006052807,
+      "raw_response": {
+        "coffee_maker": "[{\"box_2d\":[0,0,0,0],\"label\":\"coffee_maker\"}]",
+        "coffee_maker_norm": "[{\"box_norm\":[0.234,0.341,0.272,0.444],\"label\":\"coffee_maker\"}]",
+        "blender": "[]",
+        "blender_norm": "[{\"box_norm\":[0.000,0.000,0.000,0.000],\"label\":\"blender\"}]",
+        "musical_instrument": "[]",
+        "musical_instrument_norm": "[{\"box_norm\":[0.000,0.000,0.000,0.000],\"label\":\"musical_instrument\"}]",
+        "snowboard": "[]",
+        "snowboard_norm": "[{\"box_norm\":[0.0,0.0,0.0,0.0],\"label\":\"snowboard\"}]",
+        "spatula": "[]",
+        "spatula_norm": "[{\"box_norm\":[0.046,0.234,0.142,0.294],\"label\":\"spatula\"}]"
+      },
+      "labels_used": [
+        "coffee_maker",
+        "blender",
+        "musical_instrument",
+        "snowboard",
+        "spatula"
+      ]
+    },
+    {
+      "image": "000000459210.jpg",
+      "detections": [
+        {
+          "box_2d": [
+            22,
+            104,
+            268,
+            185
+          ],
+          "label": "snowboard"
+        }
+      ],
+      "latency_sec": 6.267228981014341,
+      "raw_response": {
+        "snowboard": "[{\"box_2d\":[0,0,0,0],\"label\":\"snowboard\"}]",
+        "snowboard_norm": "[{\"box_norm\":[0.034,0.242,0.419,0.432],\"label\":\"snowboard\"}]",
+        "coffee_maker": "[]",
+        "coffee_maker_norm": "[{\"box_norm\":[0.000,0.000,0.000,0.000],\"label\":\"coffee_maker\"}]",
+        "hair_dryer": "[]",
+        "hair_dryer_norm": "[{\"box_norm\":[0.000,0.000,0.000,0.000],\"label\":\"hair_dryer\"}]",
+        "microscope": "[]",
+        "microscope_norm": "[{\"box_norm\":[0.0,0.0,0.0,0.0],\"label\":\"microscope\"}]",
+        "spatula": "[]",
+        "spatula_norm": "[{\"box_norm\":[0.0,0.0,0.0,0.0],\"label\":\"spatula\"}]"
+      },
+      "labels_used": [
+        "snowboard",
+        "coffee_maker",
+        "hair_dryer",
+        "microscope",
+        "spatula"
+      ]
+    },
+    {
+      "image": "000000231153.jpg",
+      "detections": [
+        {
+          "box_2d": [
+            15,
+            88,
+            147,
+            256
+          ],
+          "label": "snowboard"
+        },
+        {
+          "box_2d": [
+            0,
+            0,
+            332,
+            500
+          ],
+          "label": "snowboarder"
+        },
+        {
+          "box_2d": [
+            0,
+            0,
+            331,
+            499
+          ],
+          "label": "none"
+        },
+        {
+          "box_2d": [
+            0,
+            0,
+            332,
+            500
+          ],
+          "label": "snowboard"
+        }
+      ],
+      "latency_sec": 6.317785121966153,
+      "raw_response": {
+        "snowboard": "[{\"box_2d\":[0,0,0,0],\"label\":\"snowboard\"}]",
+        "snowboard_norm": "[{\"box_norm\":[0.044,0.176,0.444,0.512],\"label\":\"snowboard\"}]",
+        "microscope": "[]",
+        "microscope_norm": "[{\"box_norm\":[0.000,0.000,0.999,0.999],\"label\":\"snowboarder\"}]",
+        "sewing_machine": "[]",
+        "sewing_machine_norm": "[{\"box_norm\":[0.000,0.000,0.998,0.998],\"label\":\"none\"}]",
+        "spatula": "[]",
+        "spatula_norm": "[{\"box_norm\":[0.000,0.000,0.999,0.999],\"label\":\"snowboard\"}]",
+        "stapler_(stapling_machine)": "[]",
+        "stapler_(stapling_machine)_norm": "[{\"box_norm\":[0.0,0.0,0.0,0.0],\"label\":\"stapler_(stapling_machine)\"}]"
+      },
+      "labels_used": [
+        "snowboard",
+        "microscope",
+        "sewing_machine",
+        "spatula",
+        "stapler_(stapling_machine)"
+      ]
+    },
+    {
+      "image": "000000152915.jpg",
+      "detections": [
+        {
+          "box_2d": [
+            157,
+            109,
+            338,
+            237
+          ],
+          "label": "snowboard"
+        },
+        {
+          "box_2d": [
+            0,
+            0,
+            639,
+            426
+          ],
+          "label": "snowboarder"
+        },
+        {
+          "box_2d": [
+            0,
+            0,
+            639,
+            427
+          ],
+          "label": "none"
+        }
+      ],
+      "latency_sec": 6.214634045027196,
+      "raw_response": {
+        "snowboard": "[{\"box_2d\":[0,0,0,0],\"label\":\"snowboard\"}]",
+        "snowboard_norm": "[{\"box_norm\":[0.245,0.256,0.528,0.555],\"label\":\"snowboard\"}]",
+        "coffee_maker": "[]",
+        "coffee_maker_norm": "[{\"box_norm\":[0.000,0.000,0.000,0.000],\"label\":\"coffee_maker\"}]",
+        "hair_dryer": "[]",
+        "hair_dryer_norm": "[{\"box_norm\":[0.000,0.000,0.998,0.998],\"label\":\"snowboarder\"}]",
+        "sewing_machine": "[]",
+        "sewing_machine_norm": "[{\"box_norm\":[0.000,0.000,0.999,0.999],\"label\":\"none\"}]",
+        "spatula": "[]",
+        "spatula_norm": "[{\"box_norm\":[0.000,0.000,0.000,0.000],\"label\":\"spatula\"}]"
+      },
+      "labels_used": [
+        "snowboard",
+        "coffee_maker",
+        "hair_dryer",
+        "sewing_machine",
+        "spatula"
+      ]
+    },
+    {
+      "image": "000000308735.jpg",
+      "detections": [
+        {
+          "box_2d": [
+            0,
+            0,
+            640,
+            478
+          ],
+          "label": "pizza"
+        }
+      ],
+      "latency_sec": 5.217588181956671,
+      "raw_response": {
+        "spatula": "[]",
+        "spatula_norm": "[{\"box_norm\":[0.000,0.000,0.000,0.000],\"label\":\"spatula\"}]",
+        "blender": "[]",
+        "blender_norm": "[{\"box_norm\":[0.0,0.0,0.0,0.0],\"label\":\"blender\"}]",
+        "microscope": "[]",
+        "microscope_norm": "[{\"box_norm\":[0.0,0.0,0.0,0.0],\"label\":\"microscope\"}]",
+        "snowboard": "[]",
+        "snowboard_norm": "[{\"box_norm\":[0.0,0.0,1.0,1.0],\"label\":\"pizza\"}]",
+        "stapler_(stapling_machine)": "[]",
+        "stapler_(stapling_machine)_norm": "[]"
+      },
+      "labels_used": [
+        "spatula",
+        "blender",
+        "microscope",
+        "snowboard",
+        "stapler_(stapling_machine)"
+      ]
+    },
+    {
+      "image": "000000456695.jpg",
+      "detections": [
+        {
+          "box_2d": [
+            28,
+            104,
+            252,
+            238
+          ],
+          "label": "blender"
+        },
+        {
+          "box_2d": [
+            0,
+            0,
+            639,
+            428
+          ],
+          "label": "lawn_mower"
+        }
+      ],
+      "latency_sec": 6.5809313809731975,
+      "raw_response": {
+        "blender": "[{\"box_2d\":[0,0,0,0],\"label\":\"blender\"}]",
+        "blender_norm": "[{\"box_norm\":[0.044,0.244,0.394,0.555],\"label\":\"blender\"}]",
+        "lawn_mower": "[]",
+        "lawn_mower_norm": "[{\"box_norm\":[0.000,0.000,0.999,0.999],\"label\":\"lawn_mower\"}]",
+        "snowboard": "[]",
+        "snowboard_norm": "[{\"box_norm\":[0.000000,0.000000,0.000000,0.000000],\"label\":\"snowboard\"}]",
+        "spatula": "[]",
+        "spatula_norm": "[{\"box_norm\":[0.000000,0.000000,0.000000,0.000000],\"label\":\"spatula\"}]",
+        "stapler_(stapling_machine)": "[]",
+        "stapler_(stapling_machine)_norm": "[{\"box_norm\":[0.000,0.000,0.000,0.000],\"label\":\"stapler_(stapling_machine)\"}]"
+      },
+      "labels_used": [
+        "blender",
+        "lawn_mower",
+        "snowboard",
+        "spatula",
+        "stapler_(stapling_machine)"
+      ]
+    },
+    {
+      "image": "000000257815.jpg",
+      "detections": [
+        {
+          "box_2d": [
+            68,
+            284,
+            213,
+            355
+          ],
+          "label": "blender"
+        },
+        {
+          "box_2d": [
+            123,
+            157,
+            194,
+            284
+          ],
+          "label": "coffee_maker"
+        }
+      ],
+      "latency_sec": 6.256582604022697,
+      "raw_response": {
+        "blender": "[{\"box_2d\":[0,0,0,0],\"label\":\"blender\"}]",
+        "blender_norm": "[{\"box_norm\":[0.142,0.444,0.444,0.555],\"label\":\"blender\"}]",
+        "coffee_maker": "[]",
+        "coffee_maker_norm": "[{\"box_norm\":[0.256,0.246,0.405,0.444],\"label\":\"coffee_maker\"}]",
+        "lawn_mower": "[]",
+        "lawn_mower_norm": "[{\"box_norm\":[0.000,0.000,0.000,0.000],\"label\":\"lawn_mower\"}]",
+        "microscope": "[]",
+        "microscope_norm": "[{\"box_norm\":[0.000,0.000,0.000,0.000],\"label\":\"microscope\"}]",
+        "sewing_machine": "[]",
+        "sewing_machine_norm": "[{\"box_norm\":[0.000,0.000,0.000,0.000],\"label\":\"sewing_machine\"}]"
+      },
+      "labels_used": [
+        "blender",
+        "coffee_maker",
+        "lawn_mower",
+        "microscope",
+        "sewing_machine"
+      ]
+    },
+    {
+      "image": "000000186276.jpg",
+      "detections": [
+        {
+          "box_2d": [
+            20,
+            105,
+            219,
+            237
+          ],
+          "label": "hair_dryer"
+        }
+      ],
+      "latency_sec": 6.440283776028082,
+      "raw_response": {
+        "hair_dryer": "[{\"box_2d\":[0,0,0,0],\"label\":\"hair_dryer\"}]",
+        "hair_dryer_norm": "[{\"box_norm\":[0.032,0.247,0.342,0.555],\"label\":\"hair_dryer\"}]",
+        "coffee_maker": "[]",
+        "coffee_maker_norm": "[{\"box_norm\":[0.000,0.000,0.000,0.000],\"label\":\"coffee_maker\"}]",
+        "microscope": "[]",
+        "microscope_norm": "[{\"box_norm\":[0.000,0.000,0.000,0.000],\"label\":\"microscope\"}]",
+        "sewing_machine": "[]",
+        "sewing_machine_norm": "[{\"box_norm\":[0.0,0.0,0.0,0.0],\"label\":\"sewing_machine\"}]",
+        "stapler_(stapling_machine)": "[]",
+        "stapler_(stapling_machine)_norm": "[{\"box_norm\":[0.0,0.0,0.0,0.0],\"label\":\"stapler_(stapling_machine)\"}]"
+      },
+      "labels_used": [
+        "hair_dryer",
+        "coffee_maker",
+        "microscope",
+        "sewing_machine",
+        "stapler_(stapling_machine)"
+      ]
+    },
+    {
+      "image": "000000058928.jpg",
+      "detections": [
+        {
+          "box_2d": [
+            29,
+            213,
+            86,
+            240
+          ],
+          "label": "coffee_maker"
+        }
+      ],
+      "latency_sec": 6.4532617760123685,
+      "raw_response": {
+        "coffee_maker": "[{\"box_2d\":[0,0,0,0],\"label\":\"coffee_maker\"}]",
+        "coffee_maker_norm": "[{\"box_norm\":[0.046,0.444,0.134,0.499],\"label\":\"coffee_maker\"}]",
+        "lawn_mower": "[]",
+        "lawn_mower_norm": "[{\"box_norm\":[0.000,0.000,0.000,0.000],\"label\":\"lawn_mower\"}]",
+        "musical_instrument": "[]",
+        "musical_instrument_norm": "[{\"box_norm\":[0.000,0.000,0.000,0.000],\"label\":\"musical_instrument\"}]",
+        "sewing_machine": "[]",
+        "sewing_machine_norm": "[{\"box_norm\":[0.000,0.000,0.000,0.000],\"label\":\"sewing_machine\"}]",
+        "stapler_(stapling_machine)": "[]",
+        "stapler_(stapling_machine)_norm": "[{\"box_norm\":[0.000,0.000,0.000,0.000],\"label\":\"stapler_(stapling_machine)\"}]"
+      },
+      "labels_used": [
+        "coffee_maker",
+        "lawn_mower",
+        "musical_instrument",
+        "sewing_machine",
+        "stapler_(stapling_machine)"
+      ]
+    },
+    {
+      "image": "000000518487.jpg",
+      "detections": [
+        {
+          "box_2d": [
+            0,
+            0,
+            426,
+            640
+          ],
+          "label": "blender"
+        }
+      ],
+      "latency_sec": 5.434445432038046,
+      "raw_response": {
+        "blender": "[{\"box_2d\":[0,0,426,640],\"label\":\"blender\"}]",
+        "hair_dryer": "[]",
+        "hair_dryer_norm": "[{\"box_norm\":[0.0,0.0,0.0,0.0],\"label\":\"hair_dryer\"}]",
+        "lawn_mower": "[]",
+        "lawn_mower_norm": "[{\"box_norm\":[0.0,0.0,0.0,0.0],\"label\":\"lawn_mower\"}]",
+        "microscope": "[]",
+        "microscope_norm": "[{\"box_norm\":[0.0,0.0,0.0,0.0],\"label\":\"microscope\"}]",
+        "sewing_machine": "[]",
+        "sewing_machine_norm": "[{\"box_norm\":[0.0,0.0,0.0,0.0],\"label\":\"sewing_machine\"}]"
+      },
+      "labels_used": [
+        "blender",
+        "hair_dryer",
+        "lawn_mower",
+        "microscope",
+        "sewing_machine"
+      ]
+    },
+    {
+      "image": "000000043073.jpg",
+      "detections": [
+        {
+          "box_2d": [
+            0,
+            0,
+            640,
+            484
+          ],
+          "label": "hair_dryer"
+        }
+      ],
+      "latency_sec": 5.441386200953275,
+      "raw_response": {
+        "hair_dryer": "[{\"box_2d\":[0,0,640,484],\"label\":\"hair_dryer\"}]",
+        "coffee_maker": "[]",
+        "coffee_maker_norm": "[{\"box_norm\":[0.000,0.000,0.000,0.000],\"label\":\"coffee_maker\"}]",
+        "microscope": "[]",
+        "microscope_norm": "[{\"box_norm\":[0.000,0.000,0.000,0.000],\"label\":\"microscope\"}]",
+        "musical_instrument": "[]",
+        "musical_instrument_norm": "[{\"box_norm\":[0.0,0.0,0.0,0.0],\"label\":\"musical_instrument\"}]",
+        "spatula": "[]",
+        "spatula_norm": "[{\"box_norm\":[0.000,0.000,0.000,0.000],\"label\":\"spatula\"}]"
+      },
+      "labels_used": [
+        "hair_dryer",
+        "coffee_maker",
+        "microscope",
+        "musical_instrument",
+        "spatula"
+      ]
+    },
+    {
+      "image": "000000062937.jpg",
+      "detections": [
+        {
+          "box_2d": [
+            8,
+            222,
+            41,
+            282
+          ],
+          "label": "spatula"
+        },
+        {
+          "box_2d": [
+            78,
+            222,
+            114,
+            278
+          ],
+          "label": "blender"
+        },
+        {
+          "box_2d": [
+            78,
+            222,
+            135,
+            278
+          ],
+          "label": "coffee_maker"
+        }
+      ],
+      "latency_sec": 5.836116044898517,
+      "raw_response": {
+        "spatula": "[]",
+        "spatula_norm": "[{\"box_norm\":[0.024,0.444,0.124,0.564],\"label\":\"spatula\"}]",
+        "blender": "[]",
+        "blender_norm": "[{\"box_norm\":[0.234,0.444,0.342,0.555],\"label\":\"blender\"}]",
+        "coffee_maker": "[]",
+        "coffee_maker_norm": "[{\"box_norm\":[0.234,0.444,0.404,0.555],\"label\":\"coffee_maker\"}]",
+        "hair_dryer": "[]",
+        "hair_dryer_norm": "[{\"box_norm\":[0.000,0.000,0.000,0.000],\"label\":\"hair_dryer\"}]",
+        "sewing_machine": "[]",
+        "sewing_machine_norm": "[{\"box_norm\":[0.000,0.000,0.000,0.000],\"label\":\"sewing_machine\"}]"
+      },
+      "labels_used": [
+        "spatula",
+        "blender",
+        "coffee_maker",
+        "hair_dryer",
+        "sewing_machine"
+      ]
+    },
+    {
+      "image": "000000409403.jpg",
+      "detections": [
+        {
+          "box_2d": [
+            123,
+            173,
+            304,
+            345
+          ],
+          "label": "blender"
+        },
+        {
+          "box_2d": [
+            123,
+            173,
+            255,
+            292
+          ],
+          "label": "coffee_maker"
+        },
+        {
+          "box_2d": [
+            24,
+            44,
+            102,
+            137
+          ],
+          "label": "lawn_mower"
+        },
+        {
+          "box_2d": [
+            0,
+            0,
+            200,
+            154
+          ],
+          "label": "microscope"
+        },
+        {
+          "box_2d": [
+            18,
+            78,
+            190,
+            171
+          ],
+          "label": "snowboard"
+        },
+        {
+          "box_2d": [
+            14,
+            75,
+            178,
+            164
+          ],
+          "label": "spatula"
+        }
+      ],
+      "latency_sec": 6.680192155065015,
+      "raw_response": {
+        "blender": "[{\"box_2d\":[123, 173, 304, 345],\"label\":\"blender\"}]",
+        "coffee_maker": "[{\"box_2d\":[123, 173, 255, 292],\"label\":\"coffee_maker\"}]",
+        "lawn_mower": "[]",
+        "lawn_mower_norm": "[{\"box_norm\":[0.059,0.144,0.255,0.444],\"label\":\"lawn_mower\"}]",
+        "microscope": "[]",
+        "microscope_norm": "[{\"box_norm\":[0.000,0.000,0.500,0.500],\"label\":\"microscope\"}]",
+        "snowboard": "[]",
+        "snowboard_norm": "[{\"box_norm\":[0.046,0.253,0.475,0.555],\"label\":\"snowboard\"}]",
+        "spatula": "[{\"box_2d\":[0,0,0,0],\"label\":\"spatula\"}]",
+        "spatula_norm": "[{\"box_norm\":[0.036,0.242,0.444,0.532],\"label\":\"spatula\"}]"
+      },
+      "labels_used": [
+        "blender",
+        "coffee_maker",
+        "lawn_mower",
+        "microscope",
+        "snowboard",
+        "spatula"
+      ]
+    },
+    {
+      "image": "000000050158.jpg",
+      "detections": [
+        {
+          "box_2d": [
+            1,
+            121,
+            639,
+            463
+          ],
+          "label": "snowboard"
+        }
+      ],
+      "latency_sec": 6.228147375979461,
+      "raw_response": {
+        "snowboard": "[{\"box_2d\":[0,0,0,0],\"label\":\"snowboard\"}]",
+        "snowboard_norm": "[{\"box_norm\":[0.001,0.261,0.998,0.998],\"label\":\"snowboard\"}]",
+        "blender": "[]",
+        "blender_norm": "[{\"box_norm\":[0.000,0.000,0.000,0.000],\"label\":\"blender\"}]",
+        "microscope": "[]",
+        "microscope_norm": "[{\"box_norm\":[0.000,0.000,0.000,0.000],\"label\":\"microscope\"}]",
+        "sewing_machine": "[]",
+        "sewing_machine_norm": "[{\"box_norm\":[0.000,0.000,0.000,0.000],\"label\":\"sewing_machine\"}]",
+        "spatula": "[]",
+        "spatula_norm": "[{\"box_norm\":[0.0,0.0,0.0,0.0],\"label\":\"spatula\"}]"
+      },
+      "labels_used": [
+        "snowboard",
+        "blender",
+        "microscope",
+        "sewing_machine",
+        "spatula"
+      ]
+    },
+    {
+      "image": "000000016344.jpg",
+      "detections": [
+        {
+          "box_2d": [
+            17,
+            103,
+            287,
+            188
+          ],
+          "label": "snowboard"
+        },
+        {
+          "box_2d": [
+            156,
+            102,
+            284,
+            185
+          ],
+          "label": "snowboard"
+        },
+        {
+          "box_2d": [
+            0,
+            0,
+            639,
+            426
+          ],
+          "label": "lawn_mower"
+        },
+        {
+          "box_2d": [
+            0,
+            0,
+            639,
+            426
+          ],
+          "label": "None"
+        }
+      ],
+      "latency_sec": 6.388996257912368,
+      "raw_response": {
+        "snowboard": "[{\"box_2d\":[0,0,0,0],\"label\":\"snowboard\"}]",
+        "snowboard_norm": "[{\"box_norm\":[0.027,0.241,0.449,0.442],\"label\":\"snowboard\"}]",
+        "blender": "[]",
+        "blender_norm": "[{\"box_norm\":[0.244,0.240,0.444,0.434],\"label\":\"snowboard\"}]",
+        "lawn_mower": "[]",
+        "lawn_mower_norm": "[{\"box_norm\":[0.000,0.000,0.999,0.999],\"label\":\"lawn_mower\"}]",
+        "musical_instrument": "[]",
+        "musical_instrument_norm": "[{\"box_norm\":[0.000,0.000,0.999,0.999],\"label\":\"None\"}]",
+        "stapler_(stapling_machine)": "[]",
+        "stapler_(stapling_machine)_norm": "[{\"box_norm\":[0.0,0.0,0.0,0.0],\"label\":\"stapler_(stapling_machine)\"}]"
+      },
+      "labels_used": [
+        "snowboard",
+        "blender",
+        "lawn_mower",
+        "musical_instrument",
+        "stapler_(stapling_machine)"
+      ]
+    },
+    {
+      "image": "000000182118.jpg",
+      "detections": [
+        {
+          "box_2d": [
+            0,
+            0,
+            374,
+            499
+          ],
+          "label": "microscope"
+        },
+        {
+          "box_2d": [
+            0,
+            0,
+            188,
+            250
+          ],
+          "label": "musical_instrument"
+        }
+      ],
+      "latency_sec": 6.017711818916723,
+      "raw_response": {
+        "stapler_(stapling_machine)": "[]",
+        "stapler_(stapling_machine)_norm": "[{\"box_norm\":[0.000,0.000,0.000,0.000],\"label\":\"stapler_(stapling_machine)\"}]",
+        "lawn_mower": "[]",
+        "lawn_mower_norm": "[{\"box_norm\":[0.000,0.000,0.000,0.000],\"label\":\"lawn_mower\"}]",
+        "microscope": "[]",
+        "microscope_norm": "[{\"box_norm\":[0.000,0.000,0.998,0.998],\"label\":\"microscope\"}]",
+        "musical_instrument": "[]",
+        "musical_instrument_norm": "[{\"box_norm\":[0.000,0.000,0.500,0.500],\"label\":\"musical_instrument\"}]",
+        "spatula": "[]",
+        "spatula_norm": "[{\"box_norm\":[0.000,0.000,0.000,0.000],\"label\":\"spatula\"}]"
+      },
+      "labels_used": [
+        "stapler_(stapling_machine)",
+        "lawn_mower",
+        "microscope",
+        "musical_instrument",
+        "spatula"
+      ]
+    },
+    {
+      "image": "000000530384.jpg",
+      "detections": [
+        {
+          "box_2d": [
+            164,
+            189,
+            219,
+            215
+          ],
+          "label": "coffee_maker"
+        },
+        {
+          "box_2d": [
+            28,
+            189,
+            91,
+            232
+          ],
+          "label": "spatula"
+        }
+      ],
+      "latency_sec": 7.132928718929179,
+      "raw_response": {
+        "blender": "[{\"box_2d\":[0,0,0,0],\"label\":\"blender\"}]",
+        "blender_norm": "[{\"box_norm\":[0.000,0.000,0.000,0.000],\"label\":\"blender\"}]",
+        "coffee_maker": "[{\"box_2d\":[0,0,0,0],\"label\":\"coffee_maker\"}]",
+        "coffee_maker_norm": "[{\"box_norm\":[0.256,0.444,0.342,0.504],\"label\":\"coffee_maker\"}]",
+        "lawn_mower": "[]",
+        "lawn_mower_norm": "[{\"box_norm\":[0.000,0.000,0.000,0.000],\"label\":\"lawn_mower\"}]",
+        "sewing_machine": "[]",
+        "sewing_machine_norm": "[{\"box_norm\":[0.000,0.000,0.000,0.000],\"label\":\"sewing_machine\"}]",
+        "spatula": "[{\"box_2d\":[0,0,0,0],\"label\":\"spatula\"}]",
+        "spatula_norm": "[{\"box_norm\":[0.044,0.444,0.142,0.544],\"label\":\"spatula\"}]"
+      },
+      "labels_used": [
+        "blender",
+        "coffee_maker",
+        "lawn_mower",
+        "sewing_machine",
+        "spatula"
+      ]
+    },
+    {
+      "image": "000000082143.jpg",
+      "detections": [
+        {
+          "box_2d": [
+            0,
+            0,
+            640,
+            426
+          ],
+          "label": "snowboard"
+        }
+      ],
+      "latency_sec": 5.553159402916208,
+      "raw_response": {
+        "snowboard": "[{\"box_2d\":[0,0,640,426],\"label\":\"snowboard\"}]",
+        "coffee_maker": "[]",
+        "coffee_maker_norm": "[{\"box_norm\":[0.0,0.0,0.0,0.0],\"label\":\"coffee_maker\"}]",
+        "hair_dryer": "[]",
+        "hair_dryer_norm": "[{\"box_norm\":[0.000,0.000,0.000,0.000],\"label\":\"hair_dryer\"}]",
+        "sewing_machine": "[]",
+        "sewing_machine_norm": "[{\"box_norm\":[0.0,0.0,0.0,0.0],\"label\":\"sewing_machine\"}]",
+        "stapler_(stapling_machine)": "[]",
+        "stapler_(stapling_machine)_norm": "[{\"box_norm\":[0.0,0.0,0.0,0.0],\"label\":\"stapler_(stapling_machine)\"}]"
+      },
+      "labels_used": [
+        "snowboard",
+        "coffee_maker",
+        "hair_dryer",
+        "sewing_machine",
+        "stapler_(stapling_machine)"
+      ]
+    },
+    {
+      "image": "000000284817.jpg",
+      "detections": [
+        {
+          "box_2d": [
+            228,
+            100,
+            281,
+            188
+          ],
+          "label": "spatula"
+        },
+        {
+          "box_2d": [
+            29,
+            100,
+            93,
+            143
+          ],
+          "label": "stapler_(stapling_machine)"
+        }
+      ],
+      "latency_sec": 6.471617723000236,
+      "raw_response": {
+        "spatula": "[{\"box_2d\":[0,0,0,0],\"label\":\"spatula\"}]",
+        "spatula_norm": "[{\"box_norm\":[0.357,0.235,0.439,0.442],\"label\":\"spatula\"}]",
+        "hair_dryer": "[]",
+        "hair_dryer_norm": "[{\"box_norm\":[0.000,0.000,0.000,0.000],\"label\":\"hair_dryer\"}]",
+        "microscope": "[]",
+        "microscope_norm": "[{\"box_norm\":[0.000,0.000,0.000,0.000],\"label\":\"microscope\"}]",
+        "musical_instrument": "[]",
+        "musical_instrument_norm": "[{\"box_norm\":[0.000,0.000,0.000,0.000],\"label\":\"musical_instrument\"}]",
+        "stapler_(stapling_machine)": "[]",
+        "stapler_(stapling_machine)_norm": "[{\"box_norm\":[0.045,0.235,0.145,0.335],\"label\":\"stapler_(stapling_machine)\"}]"
+      },
+      "labels_used": [
+        "spatula",
+        "hair_dryer",
+        "microscope",
+        "musical_instrument",
+        "stapler_(stapling_machine)"
+      ]
+    },
+    {
+      "image": "000000518321.jpg",
+      "detections": [
+        {
+          "box_2d": [
+            27,
+            90,
+            127,
+            170
+          ],
+          "label": "coffee_maker"
+        }
+      ],
+      "latency_sec": 6.277403682935983,
+      "raw_response": {
+        "coffee_maker": "[{\"box_2d\":[0,0,0,0],\"label\":\"coffee_maker\"}]",
+        "coffee_maker_norm": "[{\"box_norm\":[0.056,0.141,0.264,0.266],\"label\":\"coffee_maker\"}]",
+        "blender": "[]",
+        "blender_norm": "[{\"box_norm\":[0.0,0.0,0.0,0.0],\"label\":\"blender\"}]",
+        "lawn_mower": "[]",
+        "lawn_mower_norm": "[{\"box_norm\":[0.0,0.0,0.0,0.0],\"label\":\"lawn_mower\"}]",
+        "sewing_machine": "[]",
+        "sewing_machine_norm": "[{\"box_norm\":[0.0,0.0,0.0,0.0],\"label\":\"sewing_machine\"}]",
+        "spatula": "[]",
+        "spatula_norm": "[{\"box_norm\":[0.000,0.000,0.000,0.000],\"label\":\"spatula\"}]"
+      },
+      "labels_used": [
+        "coffee_maker",
+        "blender",
+        "lawn_mower",
+        "sewing_machine",
+        "spatula"
+      ]
+    },
+    {
+      "image": "000000452687.jpg",
+      "detections": [
+        {
+          "box_2d": [
+            23,
+            92,
+            499,
+            316
+          ],
+          "label": "snowboard"
+        },
+        {
+          "box_2d": [
+            0,
+            0,
+            500,
+            375
+          ],
+          "label": "snowboard"
+        }
+      ],
+      "latency_sec": 6.357931470032781,
+      "raw_response": {
+        "snowboard": "[{\"box_2d\":[0,0,500,0.5],\"label\":\"snowboard\"}]",
+        "snowboard_norm": "[{\"box_norm\":[0.046,0.245,0.998,0.844],\"label\":\"snowboard\"}]",
+        "blender": "[]",
+        "blender_norm": "[{\"box_norm\":[0.0,0.0,0.0,0.0],\"label\":\"blender\"}]",
+        "coffee_maker": "[]",
+        "coffee_maker_norm": "[{\"box_norm\":[0.0,0.0,0.0,0.0],\"label\":\"coffee_maker\"}]",
+        "hair_dryer": "[]",
+        "hair_dryer_norm": "[{\"box_norm\":[0.0,0.0,1.0,1.0],\"label\":\"snowboard\"}]",
+        "stapler_(stapling_machine)": "[]",
+        "stapler_(stapling_machine)_norm": "[{\"box_norm\":[0.0,0.0,0.0,0.0],\"label\":\"stapler_(stapling_machine)\"}]"
+      },
+      "labels_used": [
+        "snowboard",
+        "blender",
+        "coffee_maker",
+        "hair_dryer",
+        "stapler_(stapling_machine)"
+      ]
+    },
+    {
+      "image": "000000535355.jpg",
+      "detections": [],
+      "latency_sec": 6.344046104000881,
+      "raw_response": {
+        "spatula": "[]",
+        "spatula_norm": "[{\"box_norm\":[0.000,0.000,0.000,0.000],\"label\":\"spatula\"}]",
+        "lawn_mower": "[]",
+        "lawn_mower_norm": "[{\"box_norm\":[0.0,0.0,0.0,0.0],\"label\":\"lawn_mower\"}]",
+        "musical_instrument": "[]",
+        "musical_instrument_norm": "[{\"box_norm\":[0.0,0.0,0.0,0.0],\"label\":\"musical_instrument\"}]",
+        "sewing_machine": "[]",
+        "sewing_machine_norm": "[{\"box_norm\":[0.000,0.000,0.000,0.000],\"label\":\"sewing_machine\"}]",
+        "stapler_(stapling_machine)": "[]",
+        "stapler_(stapling_machine)_norm": "[{\"box_norm\":[0.0,0.0,0.0,0.0],\"label\":\"stapler_(stapling_machine)\"}]",
+        "_fallback": "[]"
+      },
+      "labels_used": [
+        "spatula",
+        "lawn_mower",
+        "musical_instrument",
+        "sewing_machine",
+        "stapler_(stapling_machine)"
+      ]
+    },
+    {
+      "image": "000000015062.jpg",
+      "detections": [
+        {
+          "box_2d": [
+            0,
+            0,
+            640,
+            480
+          ],
+          "label": "snowboard"
+        }
+      ],
+      "latency_sec": 5.55697819404304,
+      "raw_response": {
+        "snowboard": "[{\"box_2d\":[0,0,640,480],\"label\":\"snowboard\"}]",
+        "coffee_maker": "[]",
+        "coffee_maker_norm": "[{\"box_norm\":[0.0,0.0,0.0,0.0],\"label\":\"coffee_maker\"}]",
+        "musical_instrument": "[]",
+        "musical_instrument_norm": "[{\"box_norm\":[0.000,0.000,0.000,0.000],\"label\":\"musical_instrument\"}]",
+        "sewing_machine": "[]",
+        "sewing_machine_norm": "[{\"box_norm\":[0.0,0.0,0.0,0.0],\"label\":\"sewing_machine\"}]",
+        "stapler_(stapling_machine)": "[]",
+        "stapler_(stapling_machine)_norm": "[{\"box_norm\":[0.0,0.0,0.0,0.0],\"label\":\"stapler_(stapling_machine)\"}]"
+      },
+      "labels_used": [
+        "snowboard",
+        "coffee_maker",
+        "musical_instrument",
+        "sewing_machine",
+        "stapler_(stapling_machine)"
+      ]
+    },
+    {
+      "image": "000000568810.jpg",
+      "detections": [
+        {
+          "box_2d": [
+            28,
+            116,
+            92,
+            213
+          ],
+          "label": "snowboard"
+        }
+      ],
+      "latency_sec": 6.402856032946147,
+      "raw_response": {
+        "snowboard": "[{\"box_2d\":[0,0,0,0],\"label\":\"snowboard\"}]",
+        "snowboard_norm": "[{\"box_norm\":[0.044,0.242,0.144,0.444],\"label\":\"snowboard\"}]",
+        "coffee_maker": "[]",
+        "coffee_maker_norm": "[{\"box_norm\":[0.000,0.000,0.000,0.000],\"label\":\"coffee_maker\"}]",
+        "lawn_mower": "[]",
+        "lawn_mower_norm": "[{\"box_norm\":[0.0,0.0,0.0,0.0],\"label\":\"lawn_mower\"}]",
+        "spatula": "[]",
+        "spatula_norm": "[{\"box_norm\":[0.0,0.0,0.0,0.0],\"label\":\"spatula\"}]",
+        "stapler_(stapling_machine)": "[]",
+        "stapler_(stapling_machine)_norm": "[{\"box_norm\":[0.000,0.000,0.000,0.000],\"label\":\"stapler_(stapling_machine)\"}]"
+      },
+      "labels_used": [
+        "snowboard",
+        "coffee_maker",
+        "lawn_mower",
+        "spatula",
+        "stapler_(stapling_machine)"
+      ]
+    },
+    {
+      "image": "000000435894.jpg",
+      "detections": [
+        {
+          "box_2d": [
+            156,
+            105,
+            355,
+            318
+          ],
+          "label": "snowboard"
+        },
+        {
+          "box_2d": [
+            234,
+            104,
+            355,
+            242
+          ],
+          "label": "snowboard"
+        },
+        {
+          "box_2d": [
+            0,
+            0,
+            639,
+            427
+          ],
+          "label": "snowboard"
+        },
+        {
+          "box_2d": [
+            0,
+            0,
+            639,
+            427
+          ],
+          "label": "snowboard"
+        },
+        {
+          "box_2d": [
+            0,
+            0,
+            639,
+            427
+          ],
+          "label": "snowboard"
+        }
+      ],
+      "latency_sec": 7.63236815307755,
+      "raw_response": {
+        "snowboard": "[{\"box_2d\":[292,0.444,0.555,0.744],\"label\":\"snowboard\"}]",
+        "snowboard_norm": "[{\"box_norm\":[0.244,0.245,0.555,0.744],\"label\":\"snowboard\"}]",
+        "blender": "[{\"box_2d\":[0,0,0,0],\"label\":\"blender\"}]",
+        "blender_norm": "[{\"box_norm\":[0.365,0.243,0.555,0.567],\"label\":\"snowboard\"}]",
+        "coffee_maker": "[{\"box_2d\":[0,0,0,0],\"label\":\"coffee_maker\"}]",
+        "coffee_maker_norm": "[{\"box_norm\":[0.000,0.000,0.999,0.999],\"label\":\"snowboard\"}]",
+        "lawn_mower": "[{\"box_2d\":[0,0,0,0],\"label\":\"lawn_mower\"}]",
+        "lawn_mower_norm": "[{\"box_norm\":[0.000,0.000,0.999,0.999],\"label\":\"snowboard\"}]",
+        "stapler_(stapling_machine)": "[]",
+        "stapler_(stapling_machine)_norm": "[{\"box_norm\":[0.000,0.000,0.999,0.999],\"label\":\"snowboard\"}]"
+      },
+      "labels_used": [
+        "snowboard",
+        "blender",
+        "coffee_maker",
+        "lawn_mower",
+        "stapler_(stapling_machine)"
+      ]
+    },
+    {
+      "image": "000000211905.jpg",
+      "detections": [
+        {
+          "box_2d": [
+            138,
+            83,
+            234,
+            186
+          ],
+          "label": "microscope"
+        },
+        {
+          "box_2d": [
+            0,
+            0,
+            320,
+            214
+          ],
+          "label": "stapler_(stapling_machine)"
+        }
+      ],
+      "latency_sec": 7.61999347503297,
+      "raw_response": {
+        "microscope": "[{\"box_2d\":[0,0,0,0],\"label\":\"microscope\"}]",
+        "microscope_norm": "[{\"box_norm\":[0.215,0.195,0.365,0.435],\"label\":\"microscope\"}]",
+        "stapler_(stapling_machine)": "[]",
+        "stapler_(stapling_machine)_norm": "[{\"box_norm\":[0.0,0.0,0.5,0.5],\"label\":\"stapler_(stapling_machine)\"}]",
+        "blender": "[]",
+        "blender_norm": "[{\"box_norm\":[0.000,0.000,0.000,0.000],\"label\":\"blender\"}]",
+        "hair_dryer": "[]",
+        "hair_dryer_norm": "[{\"box_norm\":[0.0,0.0,0.0,0.0],\"label\":\"hair_dryer\"}]",
+        "musical_instrument": "[]",
+        "musical_instrument_norm": "[{\"box_norm\":[0.000,0.000,0.000,0.000],\"label\":\"None\"}]",
+        "sewing_machine": "[]",
+        "sewing_machine_norm": "[{\"box_norm\":[0.000000,0.000000,0.000000,0.000000],\"label\":\"sewing_machine\"}]"
+      },
+      "labels_used": [
+        "microscope",
+        "stapler_(stapling_machine)",
+        "blender",
+        "hair_dryer",
+        "musical_instrument",
+        "sewing_machine"
+      ]
+    },
+    {
+      "image": "000000047873.jpg",
+      "detections": [
+        {
+          "box_2d": [
+            29,
+            105,
+            155,
+            190
+          ],
+          "label": "coffee_maker"
+        }
+      ],
+      "latency_sec": 6.3122216159245,
+      "raw_response": {
+        "coffee_maker": "[{\"box_2d\":[0,0,0,0],\"label\":\"coffee_maker\"}]",
+        "coffee_maker_norm": "[{\"box_norm\":[0.046,0.245,0.242,0.444],\"label\":\"coffee_maker\"}]",
+        "hair_dryer": "[]",
+        "hair_dryer_norm": "[{\"box_norm\":[0.0,0.0,0.0,0.0],\"label\":\"hair_dryer\"}]",
+        "lawn_mower": "[]",
+        "lawn_mower_norm": "[{\"box_norm\":[0.0,0.0,0.0,0.0],\"label\":\"lawn_mower\"}]",
+        "musical_instrument": "[]",
+        "musical_instrument_norm": "[{\"box_norm\":[0.0,0.0,0.0,0.0],\"label\":\"musical_instrument\"}]",
+        "snowboard": "[]",
+        "snowboard_norm": "[{\"box_norm\":[0.0,0.0,0.0,0.0],\"label\":\"snowboard\"}]"
+      },
+      "labels_used": [
+        "coffee_maker",
+        "hair_dryer",
+        "lawn_mower",
+        "musical_instrument",
+        "snowboard"
+      ]
+    },
+    {
+      "image": "000000573795.jpg",
+      "detections": [
+        {
+          "box_2d": [
+            0,
+            0,
+            639,
+            535
+          ],
+          "label": "snowboard"
+        }
+      ],
+      "latency_sec": 6.389660715940408,
+      "raw_response": {
+        "snowboard": "[{\"box_2d\":[0,0,0,0],\"label\":\"snowboard\"}]",
+        "snowboard_norm": "[{\"box_norm\":[0.000,0.000,0.998,0.998],\"label\":\"snowboard\"}]",
+        "blender": "[]",
+        "blender_norm": "[{\"box_norm\":[0.000,0.000,0.000,0.000],\"label\":\"blender\"}]",
+        "hair_dryer": "[]",
+        "hair_dryer_norm": "[{\"box_norm\":[0.0,0.0,0.0,0.0],\"label\":\"hair_dryer\"}]",
+        "microscope": "[]",
+        "microscope_norm": "[{\"box_norm\":[0.000,0.000,0.000,0.000],\"label\":\"microscope\"}]",
+        "stapler_(stapling_machine)": "[]",
+        "stapler_(stapling_machine)_norm": "[{\"box_norm\":[0.000,0.000,0.000,0.000],\"label\":\"stapler_(stapling_machine)\"}]"
+      },
+      "labels_used": [
+        "snowboard",
+        "blender",
+        "hair_dryer",
+        "microscope",
+        "stapler_(stapling_machine)"
+      ]
+    },
+    {
+      "image": "000000195525.jpg",
+      "detections": [
+        {
+          "box_2d": [
+            0,
+            0,
+            494,
+            284
+          ],
+          "label": "hair_dryer"
+        },
+        {
+          "box_2d": [
+            0,
+            0,
+            494,
+            639
+          ],
+          "label": "coffee_maker"
+        },
+        {
+          "box_2d": [
+            0,
+            0,
+            494,
+            639
+          ],
+          "label": "lawn_mower"
+        }
+      ],
+      "latency_sec": 5.913239000947215,
+      "raw_response": {
+        "hair_dryer": "[]",
+        "hair_dryer_norm": "[{\"box_norm\":[0.000,0.000,0.999,0.444],\"label\":\"hair_dryer\"}]",
+        "coffee_maker": "[]",
+        "coffee_maker_norm": "[{\"box_norm\":[0.000,0.000,0.999,0.999],\"label\":\"coffee_maker\"}]",
+        "lawn_mower": "[]",
+        "lawn_mower_norm": "[{\"box_norm\":[0.000,0.000,0.999,0.999],\"label\":\"lawn_mower\"}]",
+        "musical_instrument": "[]",
+        "musical_instrument_norm": "[{\"box_norm\":[0.0,0.0,0.0,0.0],\"label\":\"musical_instrument\"}]",
+        "spatula": "[]",
+        "spatula_norm": "[{\"box_norm\":[0.0,0.0,0.0,0.0],\"label\":\"spatula\"}]"
+      },
+      "labels_used": [
+        "hair_dryer",
+        "coffee_maker",
+        "lawn_mower",
+        "musical_instrument",
+        "spatula"
+      ]
+    },
+    {
+      "image": "000000169646.jpg",
+      "detections": [
+        {
+          "box_2d": [
+            155,
+            103,
+            283,
+            188
+          ],
+          "label": "spatula"
+        },
+        {
+          "box_2d": [
+            157,
+            104,
+            278,
+            193
+          ],
+          "label": "coffee_maker"
+        },
+        {
+          "box_2d": [
+            165,
+            189,
+            215,
+            215
+          ],
+          "label": "stapler_(stapling_machine)"
+        }
+      ],
+      "latency_sec": 6.472622485947795,
+      "raw_response": {
+        "spatula": "[{\"box_2d\":[0,0,0,0],\"label\":\"spatula\"}]",
+        "spatula_norm": "[{\"box_norm\":[0.242,0.242,0.442,0.442],\"label\":\"spatula\"}]",
+        "coffee_maker": "[]",
+        "coffee_maker_norm": "[{\"box_norm\":[0.245,0.245,0.435,0.455],\"label\":\"coffee_maker\"}]",
+        "hair_dryer": "[]",
+        "hair_dryer_norm": "[{\"box_norm\":[0.000,0.000,0.000,0.000],\"label\":\"hair_dryer\"}]",
+        "musical_instrument": "[]",
+        "musical_instrument_norm": "[{\"box_norm\":[0.000,0.000,0.000,0.000],\"label\":\"musical_instrument\"}]",
+        "stapler_(stapling_machine)": "[]",
+        "stapler_(stapling_machine)_norm": "[{\"box_norm\":[0.258,0.444,0.336,0.505],\"label\":\"stapler_(stapling_machine)\"}]"
+      },
+      "labels_used": [
+        "spatula",
+        "coffee_maker",
+        "hair_dryer",
+        "musical_instrument",
+        "stapler_(stapling_machine)"
+      ]
+    },
+    {
+      "image": "000000533159.jpg",
+      "detections": [
+        {
+          "box_2d": [
+            150,
+            155,
+            355,
+            346
+          ],
+          "label": "snowboard"
+        },
+        {
+          "box_2d": [
+            0,
+            0,
+            640,
+            640
+          ],
+          "label": "None"
+        }
+      ],
+      "latency_sec": 6.302025532000698,
+      "raw_response": {
+        "snowboard": "[{\"box_2d\":[0,0,0,0],\"label\":\"snowboard\"}]",
+        "snowboard_norm": "[{\"box_norm\":[0.235,0.242,0.555,0.541],\"label\":\"snowboard\"}]",
+        "hair_dryer": "[]",
+        "hair_dryer_norm": "[{\"box_norm\":[0.0,0.0,0.0,0.0],\"label\":\"hair_dryer\"}]",
+        "lawn_mower": "[]",
+        "lawn_mower_norm": "[{\"box_norm\":[0.0,0.0,0.0,0.0],\"label\":\"lawn_mower\"}]",
+        "microscope": "[]",
+        "microscope_norm": "[{\"box_norm\":[0.0,0.0,0.0,0.0],\"label\":\"microscope\"}]",
+        "musical_instrument": "[]",
+        "musical_instrument_norm": "[{\"box_norm\":[0.0,0.0,1.0,1.0],\"label\":\"None\"}]"
+      },
+      "labels_used": [
+        "snowboard",
+        "hair_dryer",
+        "lawn_mower",
+        "microscope",
+        "musical_instrument"
+      ]
+    },
+    {
+      "image": "000000254599.jpg",
+      "detections": [],
+      "latency_sec": 6.56144858605694,
+      "raw_response": {
+        "snowboard": "[{\"box_2d\":[0,0,0,0],\"label\":\"snowboard\"}]",
+        "snowboard_norm": "[{\"box_norm\":[0.000,0.000,0.000,0.000],\"label\":\"snowboard\"}]",
+        "blender": "[]",
+        "blender_norm": "[{\"box_norm\":[0.0,0.0,0.0,0.0],\"label\":\"blender\"}]",
+        "coffee_maker": "[]",
+        "coffee_maker_norm": "[{\"box_norm\":[0.0,0.0,0.0,0.0],\"label\":\"coffee_maker\"}]",
+        "hair_dryer": "[]",
+        "hair_dryer_norm": "[{\"box_norm\":[0.0,0.0,0.0,0.0],\"label\":\"hair_dryer\"}]",
+        "spatula": "[]",
+        "spatula_norm": "[{\"box_norm\":[0.0,0.0,0.0,0.0],\"label\":\"spatula\"}]",
+        "_fallback": "[]"
+      },
+      "labels_used": [
+        "snowboard",
+        "blender",
+        "coffee_maker",
+        "hair_dryer",
+        "spatula"
+      ]
+    },
+    {
+      "image": "000000491168.jpg",
+      "detections": [
+        {
+          "box_2d": [
+            14,
+            82,
+            136,
+            121
+          ],
+          "label": "snowboard"
+        }
+      ],
+      "latency_sec": 6.2426421529380605,
+      "raw_response": {
+        "snowboard": "[{\"box_2d\":[0,0,0,0],\"label\":\"snowboard\"}]",
+        "snowboard_norm": "[{\"box_norm\":[0.027,0.245,0.273,0.362],\"label\":\"snowboard\"}]",
+        "coffee_maker": "[]",
+        "coffee_maker_norm": "[{\"box_norm\":[0.000,0.000,0.000,0.000],\"label\":\"coffee_maker\"}]",
+        "lawn_mower": "[]",
+        "lawn_mower_norm": "[{\"box_norm\":[0.000,0.000,0.000,0.000],\"label\":\"lawn_mower\"}]",
+        "microscope": "[]",
+        "microscope_norm": "[{\"box_norm\":[0.000,0.000,0.000,0.000],\"label\":\"microscope\"}]",
+        "sewing_machine": "[]",
+        "sewing_machine_norm": "[{\"box_norm\":[0.000,0.000,0.000,0.000],\"label\":\"sewing_machine\"}]"
+      },
+      "labels_used": [
+        "snowboard",
+        "coffee_maker",
+        "lawn_mower",
+        "microscope",
+        "sewing_machine"
+      ]
+    },
+    {
+      "image": "000000075863.jpg",
+      "detections": [
+        {
+          "box_2d": [
+            35,
+            105,
+            86,
+            190
+          ],
+          "label": "coffee_maker"
+        }
+      ],
+      "latency_sec": 6.476205589948222,
+      "raw_response": {
+        "coffee_maker": "[{\"box_2d\":[134,0,244,0.5],\"label\":\"coffee_maker\"}]",
+        "coffee_maker_norm": "[{\"box_norm\":[0.054,0.245,0.134,0.444],\"label\":\"coffee_maker\"}]",
+        "hair_dryer": "[]",
+        "hair_dryer_norm": "[{\"box_norm\":[0.000,0.000,0.000,0.000],\"label\":\"hair_dryer\"}]",
+        "lawn_mower": "[]",
+        "lawn_mower_norm": "[{\"box_norm\":[0.0,0.0,0.0,0.0],\"label\":\"lawn_mower\"}]",
+        "microscope": "[]",
+        "microscope_norm": "[{\"box_norm\":[0.000,0.000,0.000,0.000],\"label\":\"microscope\"}]",
+        "stapler_(stapling_machine)": "[]",
+        "stapler_(stapling_machine)_norm": "[{\"box_norm\":[0.000,0.000,0.000,0.000],\"label\":\"stapler_(stapling_machine)\"}]"
+      },
+      "labels_used": [
+        "coffee_maker",
+        "hair_dryer",
+        "lawn_mower",
+        "microscope",
+        "stapler_(stapling_machine)"
+      ]
+    },
+    {
+      "image": "000000394957.jpg",
+      "detections": [],
+      "latency_sec": 6.275196025031619,
+      "raw_response": {
+        "hair_dryer": "[]",
+        "hair_dryer_norm": "[{\"box_norm\":[0.000,0.000,0.000,0.000],\"label\":\"hair_dryer\"}]",
+        "coffee_maker": "[]",
+        "coffee_maker_norm": "[{\"box_norm\":[0.000,0.000,0.000,0.000],\"label\":\"coffee_maker\"}]",
+        "sewing_machine": "[]",
+        "sewing_machine_norm": "[{\"box_norm\":[0.000,0.000,0.000,0.000],\"label\":\"sewing_machine\"}]",
+        "snowboard": "[]",
+        "snowboard_norm": "[{\"box_norm\":[0.0,0.0,0.0,0.0],\"label\":\"snowboard\"}]",
+        "stapler_(stapling_machine)": "[]",
+        "stapler_(stapling_machine)_norm": "[{\"box_norm\":[0.0,0.0,0.0,0.0],\"label\":\"stapler_(stapling_machine)\"}]",
+        "_fallback": "[]"
+      },
+      "labels_used": [
+        "hair_dryer",
+        "coffee_maker",
+        "sewing_machine",
+        "snowboard",
+        "stapler_(stapling_machine)"
+      ]
+    },
+    {
+      "image": "000000329502.jpg",
+      "detections": [
+        {
+          "box_2d": [
+            0,
+            0,
+            639,
+            479
+          ],
+          "label": "snowboard"
+        }
+      ],
+      "latency_sec": 6.2685845519881696,
+      "raw_response": {
+        "snowboard": "[{\"box_2d\":[0,0,0,0],\"label\":\"snowboard\"}]",
+        "snowboard_norm": "[{\"box_norm\":[0.000,0.000,0.998,0.998],\"label\":\"snowboard\"}]",
+        "coffee_maker": "[]",
+        "coffee_maker_norm": "[{\"box_norm\":[0.000,0.000,0.000,0.000],\"label\":\"coffee_maker\"}]",
+        "musical_instrument": "[]",
+        "musical_instrument_norm": "[{\"box_norm\":[0.000,0.000,0.000,0.000],\"label\":\"musical_instrument\"}]",
+        "sewing_machine": "[]",
+        "sewing_machine_norm": "[{\"box_norm\":[0.000,0.000,0.000,0.000],\"label\":\"sewing_machine\"}]",
+        "spatula": "[]",
+        "spatula_norm": "[{\"box_norm\":[0.000,0.000,0.000,0.000],\"label\":\"spatula\"}]"
+      },
+      "labels_used": [
+        "snowboard",
+        "coffee_maker",
+        "musical_instrument",
+        "sewing_machine",
+        "spatula"
+      ]
+    },
+    {
+      "image": "000000028802.jpg",
+      "detections": [],
+      "latency_sec": 6.312553675961681,
+      "raw_response": {
+        "blender": "[]",
+        "blender_norm": "[{\"box_norm\":[0.0,0.0,0.0,0.0],\"label\":\"blender\"}]",
+        "lawn_mower": "[]",
+        "lawn_mower_norm": "[{\"box_norm\":[0.0,0.0,0.0,0.0],\"label\":\"lawn_mower\"}]",
+        "musical_instrument": "[]",
+        "musical_instrument_norm": "[{\"box_norm\":[0.000,0.000,0.000,0.000],\"label\":\"musical_instrument\"}]",
+        "snowboard": "[]",
+        "snowboard_norm": "[{\"box_norm\":[0.000,0.000,0.000,0.000],\"label\":\"snowboard\"}]",
+        "stapler_(stapling_machine)": "[]",
+        "stapler_(stapling_machine)_norm": "[{\"box_norm\":[0.0,0.0,0.0,0.0],\"label\":\"stapler_(stapling_machine)\"}]",
+        "_fallback": "[]"
+      },
+      "labels_used": [
+        "blender",
+        "lawn_mower",
+        "musical_instrument",
+        "snowboard",
+        "stapler_(stapling_machine)"
+      ]
+    },
+    {
+      "image": "000000369575.jpg",
+      "detections": [
+        {
+          "box_2d": [
+            21,
+            157,
+            69,
+            220
+          ],
+          "label": "spatula"
+        },
+        {
+          "box_2d": [
+            22,
+            92,
+            55,
+            126
+          ],
+          "label": "lawn_mower"
+        }
+      ],
+      "latency_sec": 5.887423699954525,
+      "raw_response": {
+        "spatula": "[]",
+        "spatula_norm": "[{\"box_norm\":[0.044,0.245,0.144,0.344],\"label\":\"spatula\"}]",
+        "hair_dryer": "[]",
+        "hair_dryer_norm": "[{\"box_norm\":[0.000,0.000,0.000,0.000],\"label\":\"hair_dryer\"}]",
+        "lawn_mower": "[]",
+        "lawn_mower_norm": "[{\"box_norm\":[0.045,0.143,0.115,0.197],\"label\":\"lawn_mower\"}]",
+        "sewing_machine": "[]",
+        "sewing_machine_norm": "[{\"box_norm\":[0.0,0.0,0.0,0.0],\"label\":\"sewing_machine\"}]",
+        "snowboard": "[]",
+        "snowboard_norm": "[{\"box_norm\":[0.000,0.000,0.000,0.000],\"label\":\"snowboard\"}]"
+      },
+      "labels_used": [
+        "spatula",
+        "hair_dryer",
+        "lawn_mower",
+        "sewing_machine",
+        "snowboard"
+      ]
+    },
+    {
+      "image": "000000535889.jpg",
+      "detections": [],
+      "latency_sec": 6.7743225450394675,
+      "raw_response": {
+        "coffee_maker": "[{\"box_2d\":[0,0,0,0],\"label\":\"coffee_maker\"}]",
+        "coffee_maker_norm": "[{\"box_norm\":[0.000000,0.000000,0.000000,0.000000],\"label\":\"coffee_maker\"}]",
+        "hair_dryer": "[]",
+        "hair_dryer_norm": "[{\"box_norm\":[0.0,0.0,0.0,0.0],\"label\":\"hair_dryer\"}]",
+        "microscope": "[]",
+        "microscope_norm": "[{\"box_norm\":[0.0,0.0,0.0,0.0],\"label\":\"microscope\"}]",
+        "snowboard": "[]",
+        "snowboard_norm": "[{\"box_norm\":[0.0,0.0,0.0,0.0],\"label\":\"snowboard\"}]",
+        "stapler_(stapling_machine)": "[]",
+        "stapler_(stapling_machine)_norm": "[{\"box_norm\":[0.000,0.000,0.000,0.000],\"label\":\"stapler_(stapling_machine)\"}]",
+        "_fallback": "[]"
+      },
+      "labels_used": [
+        "coffee_maker",
+        "hair_dryer",
+        "microscope",
+        "snowboard",
+        "stapler_(stapling_machine)"
+      ]
+    },
+    {
+      "image": "000000538092.jpg",
+      "detections": [],
+      "latency_sec": 6.608248583972454,
+      "raw_response": {
+        "coffee_maker": "[{\"box_2d\":[0,0,0,0],\"label\":\"coffee_maker\"}]",
+        "coffee_maker_norm": "[{\"box_norm\":[0.000,0.000,0.000,0.000],\"label\":\"coffee_maker\"}]",
+        "hair_dryer": "[]",
+        "hair_dryer_norm": "[{\"box_norm\":[0.000,0.000,0.000,0.000],\"label\":\"hair_dryer\"}]",
+        "musical_instrument": "[]",
+        "musical_instrument_norm": "[{\"box_norm\":[0.000,0.000,0.000,0.000],\"label\":\"musical_instrument\"}]",
+        "sewing_machine": "[]",
+        "sewing_machine_norm": "[{\"box_norm\":[0.000,0.000,0.000,0.000],\"label\":\"sewing_machine\"}]",
+        "snowboard": "[]",
+        "snowboard_norm": "[{\"box_norm\":[0.000,0.000,0.000,0.000],\"label\":\"snowboard\"}]",
+        "_fallback": "[]"
+      },
+      "labels_used": [
+        "coffee_maker",
+        "hair_dryer",
+        "musical_instrument",
+        "sewing_machine",
+        "snowboard"
+      ]
+    },
+    {
+      "image": "000000363581.jpg",
+      "detections": [
+        {
+          "box_2d": [
+            28,
+            118,
+            150,
+            208
+          ],
+          "label": "spatula"
+        }
+      ],
+      "latency_sec": 6.361216852092184,
+      "raw_response": {
+        "spatula": "[{\"box_2d\":[0,0,0,0],\"label\":\"spatula\"}]",
+        "spatula_norm": "[{\"box_norm\":[0.044,0.245,0.234,0.434],\"label\":\"spatula\"}]",
+        "hair_dryer": "[]",
+        "hair_dryer_norm": "[{\"box_norm\":[0.0,0.0,0.0,0.0],\"label\":\"hair_dryer\"}]",
+        "lawn_mower": "[]",
+        "lawn_mower_norm": "[{\"box_norm\":[0.0,0.0,0.0,0.0],\"label\":\"lawn_mower\"}]",
+        "microscope": "[]",
+        "microscope_norm": "[{\"box_norm\":[0.000,0.000,0.000,0.000],\"label\":\"microscope\"}]",
+        "musical_instrument": "[]",
+        "musical_instrument_norm": "[{\"box_norm\":[0.000,0.000,0.000,0.000],\"label\":\"musical_instrument\"}]"
+      },
+      "labels_used": [
+        "spatula",
+        "hair_dryer",
+        "lawn_mower",
+        "microscope",
+        "musical_instrument"
+      ]
+    },
+    {
+      "image": "000000294360.jpg",
+      "detections": [
+        {
+          "box_2d": [
+            164,
+            103,
+            341,
+            318
+          ],
+          "label": "snowboard"
+        }
+      ],
+      "latency_sec": 6.3303164759418,
+      "raw_response": {
+        "snowboard": "[{\"box_2d\":[0,0,0,0],\"label\":\"snowboard\"}]",
+        "snowboard_norm": "[{\"box_norm\":[0.256,0.242,0.533,0.744],\"label\":\"snowboard\"}]",
+        "hair_dryer": "[]",
+        "hair_dryer_norm": "[{\"box_norm\":[0.000,0.000,0.000,0.000],\"label\":\"hair_dryer\"}]",
+        "musical_instrument": "[]",
+        "musical_instrument_norm": "[{\"box_norm\":[0.000,0.000,0.000,0.000],\"label\":\"musical_instrument\"}]",
+        "sewing_machine": "[]",
+        "sewing_machine_norm": "[{\"box_norm\":[0.000,0.000,0.000,0.000],\"label\":\"sewing_machine\"}]",
+        "spatula": "[]",
+        "spatula_norm": "[{\"box_norm\":[0.000,0.000,0.000,0.000],\"label\":\"spatula\"}]"
+      },
+      "labels_used": [
+        "snowboard",
+        "hair_dryer",
+        "musical_instrument",
+        "sewing_machine",
+        "spatula"
+      ]
+    },
+    {
+      "image": "000000209027.jpg",
+      "detections": [
+        {
+          "box_2d": [
+            164,
+            173,
+            284,
+            274
+          ],
+          "label": "hair_dryer"
+        },
+        {
+          "box_2d": [
+            162,
+            179,
+            355,
+            281
+          ],
+          "label": "blender"
+        }
+      ],
+      "latency_sec": 6.47655224299524,
+      "raw_response": {
+        "hair_dryer": "[{\"box_2d\":[0,0,0,0],\"label\":\"hair_dryer\"}]",
+        "hair_dryer_norm": "[{\"box_norm\":[0.256,0.342,0.444,0.542],\"label\":\"hair_dryer\"}]",
+        "blender": "[]",
+        "blender_norm": "[{\"box_norm\":[0.253,0.354,0.555,0.555],\"label\":\"blender\"}]",
+        "musical_instrument": "[]",
+        "musical_instrument_norm": "[{\"box_norm\":[0.0,0.0,0.0,0.0],\"label\":\"musical_instrument\"}]",
+        "snowboard": "[]",
+        "snowboard_norm": "[{\"box_norm\":[0.000,0.000,0.000,0.000],\"label\":\"snowboard\"}]",
+        "stapler_(stapling_machine)": "[]",
+        "stapler_(stapling_machine)_norm": "[{\"box_norm\":[0.000,0.000,0.000,0.000],\"label\":\"stapler_(stapling_machine)\"}]"
+      },
+      "labels_used": [
+        "hair_dryer",
+        "blender",
+        "musical_instrument",
+        "snowboard",
+        "stapler_(stapling_machine)"
+      ]
+    },
+    {
+      "image": "000000451532.jpg",
+      "detections": [],
+      "latency_sec": 7.381316913990304,
+      "raw_response": {
+        "snowboard": "[{\"box_2d\":[0,0,0,0],\"label\":\"snowboard\"}, {\"box_2d\":[0,0,0,0],\"label\":\"snowboard\"}, {\"box_2d\":[0,0,0,0],\"label\":\"snowboard\"}]",
+        "snowboard_norm": "[{\"box_norm\":[0.000,0.000,0.000,0.000],\"label\":\"snowboard\"}]",
+        "blender": "[]",
+        "blender_norm": "[{\"box_norm\":[0.000,0.000,0.000,0.000],\"label\":\"blender\"}]",
+        "hair_dryer": "[]",
+        "hair_dryer_norm": "[{\"box_norm\":[0.0,0.0,0.0,0.0],\"label\":\"hair_dryer\"}]",
+        "microscope": "[]",
+        "microscope_norm": "[{\"box_norm\":[0.0,0.0,0.0,0.0],\"label\":\"microscope\"}]",
+        "musical_instrument": "[]",
+        "musical_instrument_norm": "[{\"box_norm\":[0.0,0.0,0.0,0.0],\"label\":\"musical_instrument\"}]",
+        "_fallback": "[]"
+      },
+      "labels_used": [
+        "snowboard",
+        "blender",
+        "hair_dryer",
+        "microscope",
+        "musical_instrument"
+      ]
+    },
+    {
+      "image": "000000505636.jpg",
+      "detections": [
+        {
+          "box_2d": [
+            19,
+            92,
+            189,
+            355
+          ],
+          "label": "snowboard"
+        },
+        {
+          "box_2d": [
+            103,
+            158,
+            185,
+            291
+          ],
+          "label": "blender"
+        },
+        {
+          "box_2d": [
+            0,
+            0,
+            425,
+            639
+          ],
+          "label": "snowboarder"
+        },
+        {
+          "box_2d": [
+            0,
+            0,
+            426,
+            639
+          ],
+          "label": "snowboard"
+        },
+        {
+          "box_2d": [
+            0,
+            0,
+            426,
+            320
+          ],
+          "label": "snowboarder"
+        }
+      ],
+      "latency_sec": 6.235954525996931,
+      "raw_response": {
+        "snowboard": "[{\"box_2d\":[0,0,426,0],\"label\":\"snowboard\"}]",
+        "snowboard_norm": "[{\"box_norm\":[0.044,0.144,0.444,0.555],\"label\":\"snowboard\"}]",
+        "blender": "[]",
+        "blender_norm": "[{\"box_norm\":[0.242,0.247,0.434,0.455],\"label\":\"blender\"}]",
+        "hair_dryer": "[]",
+        "hair_dryer_norm": "[{\"box_norm\":[0.000,0.000,0.998,0.998],\"label\":\"snowboarder\"}]",
+        "musical_instrument": "[]",
+        "musical_instrument_norm": "[{\"box_norm\":[0.000,0.000,0.999,0.999],\"label\":\"snowboard\"}]",
+        "stapler_(stapling_machine)": "[]",
+        "stapler_(stapling_machine)_norm": "[{\"box_norm\":[0.0,0.0,1.0,0.5],\"label\":\"snowboarder\"}]"
+      },
+      "labels_used": [
+        "snowboard",
+        "blender",
+        "hair_dryer",
+        "musical_instrument",
+        "stapler_(stapling_machine)"
+      ]
+    },
+    {
+      "image": "000000545944.jpg",
+      "detections": [
+        {
+          "box_2d": [
+            29,
+            118,
+            221,
+            214
+          ],
+          "label": "hair_dryer"
+        }
+      ],
+      "latency_sec": 6.4815701799234375,
+      "raw_response": {
+        "hair_dryer": "[{\"box_2d\":[0,0,0,0],\"label\":\"hair_dryer\"}]",
+        "hair_dryer_norm": "[{\"box_norm\":[0.045,0.245,0.345,0.445],\"label\":\"hair_dryer\"}]",
+        "lawn_mower": "[]",
+        "lawn_mower_norm": "[{\"box_norm\":[0.0,0.0,0.0,0.0],\"label\":\"lawn_mower\"}]",
+        "snowboard": "[]",
+        "snowboard_norm": "[{\"box_norm\":[0.000,0.000,0.000,0.000],\"label\":\"snowboard\"}]",
+        "spatula": "[]",
+        "spatula_norm": "[{\"box_norm\":[0.000,0.000,0.000,0.000],\"label\":\"spatula\"}]",
+        "stapler_(stapling_machine)": "[]",
+        "stapler_(stapling_machine)_norm": "[{\"box_norm\":[0.0,0.0,0.0,0.0],\"label\":\"stapler_(stapling_machine)\"}]"
+      },
+      "labels_used": [
+        "hair_dryer",
+        "lawn_mower",
+        "snowboard",
+        "spatula",
+        "stapler_(stapling_machine)"
+      ]
+    },
+    {
+      "image": "000000252525.jpg",
+      "detections": [
+        {
+          "box_2d": [
+            28,
+            96,
+            128,
+            154
+          ],
+          "label": "coffee_maker"
+        },
+        {
+          "box_2d": [
+            172,
+            92,
+            222,
+            129
+          ],
+          "label": "spatula"
+        }
+      ],
+      "latency_sec": 6.820240585948341,
+      "raw_response": {
+        "coffee_maker": "[{\"box_2d\":[0,0,0,0],\"label\":\"coffee_maker\"}]",
+        "coffee_maker_norm": "[{\"box_norm\":[0.056,0.256,0.255,0.411],\"label\":\"coffee_maker\"}]",
+        "blender": "[{\"box_2d\":[0,0,0,0],\"label\":\"blender\"}]",
+        "blender_norm": "[{\"box_norm\":[0.0,0.0,0.0,0.0],\"label\":\"blender\"}]",
+        "hair_dryer": "[]",
+        "hair_dryer_norm": "[{\"box_norm\":[0.000,0.000,0.000,0.000],\"label\":\"hair_dryer\"}]",
+        "spatula": "[]",
+        "spatula_norm": "[{\"box_norm\":[0.345,0.245,0.445,0.345],\"label\":\"spatula\"}]",
+        "stapler_(stapling_machine)": "[]",
+        "stapler_(stapling_machine)_norm": "[{\"box_norm\":[0.000,0.000,0.000,0.000],\"label\":\"stapler_(stapling_machine)\"}]"
+      },
+      "labels_used": [
+        "coffee_maker",
+        "blender",
+        "hair_dryer",
+        "spatula",
+        "stapler_(stapling_machine)"
+      ]
+    },
+    {
+      "image": "000000228659.jpg",
+      "detections": [
+        {
+          "box_2d": [
+            0,
+            0,
+            639,
+            359
+          ],
+          "label": "snowboard"
+        }
+      ],
+      "latency_sec": 6.431090757017955,
+      "raw_response": {
+        "snowboard": "[{\"box_2d\":[0,0,0,0],\"label\":\"snowboard\"}]",
+        "snowboard_norm": "[{\"box_norm\":[0.000,0.000,0.998,0.998],\"label\":\"snowboard\"}]",
+        "musical_instrument": "[]",
+        "musical_instrument_norm": "[{\"box_norm\":[0.000,0.000,0.000,0.000],\"label\":\"musical_instrument\"}]",
+        "sewing_machine": "[]",
+        "sewing_machine_norm": "[{\"box_norm\":[0.000,0.000,0.000,0.000],\"label\":\"sewing_machine\"}]",
+        "spatula": "[]",
+        "spatula_norm": "[{\"box_norm\":[0.0,0.0,0.0,0.0],\"label\":\"spatula\"}]",
+        "stapler_(stapling_machine)": "[]",
+        "stapler_(stapling_machine)_norm": "[{\"box_norm\":[0.0,0.0,0.0,0.0],\"label\":\"stapler_(stapling_machine)\"}]"
+      },
+      "labels_used": [
+        "snowboard",
+        "musical_instrument",
+        "sewing_machine",
+        "spatula",
+        "stapler_(stapling_machine)"
+      ]
+    },
+    {
+      "image": "000000263647.jpg",
+      "detections": [
+        {
+          "box_2d": [
+            0,
+            0,
+            640,
+            425
+          ],
+          "label": "snowboard"
+        }
+      ],
+      "latency_sec": 5.443501499015838,
+      "raw_response": {
+        "snowboard": "[{\"box_2d\":[0,0,640,425],\"label\":\"snowboard\"}]",
+        "lawn_mower": "[]",
+        "lawn_mower_norm": "[{\"box_norm\":[0.0,0.0,0.0,0.0],\"label\":\"lawn_mower\"}]",
+        "microscope": "[]",
+        "microscope_norm": "[{\"box_norm\":[0.0,0.0,0.0,0.0],\"label\":\"microscope\"}]",
+        "musical_instrument": "[]",
+        "musical_instrument_norm": "[{\"box_norm\":[0.0,0.0,0.0,0.0],\"label\":\"musical_instrument\"}]",
+        "spatula": "[]",
+        "spatula_norm": "[{\"box_norm\":[0.0,0.0,0.0,0.0],\"label\":\"spatula\"}]"
+      },
+      "labels_used": [
+        "snowboard",
+        "lawn_mower",
+        "microscope",
+        "musical_instrument",
+        "spatula"
+      ]
+    },
+    {
+      "image": "000000370899.jpg",
+      "detections": [],
+      "latency_sec": 6.652166864019819,
+      "raw_response": {
+        "sewing_machine": "[]",
+        "sewing_machine_norm": "[{\"box_norm\":[0.0,0.0,0.0,0.0],\"label\":\"sewing_machine\"}]",
+        "lawn_mower": "[]",
+        "lawn_mower_norm": "[{\"box_norm\":[0.000,0.000,0.000,0.000],\"label\":\"lawn_mower\"}]",
+        "musical_instrument": "[{\"box_2d\":[0,0,0,0],\"label\":\"musical_instrument\"}]",
+        "musical_instrument_norm": "[{\"box_norm\":[0.000,0.000,0.000,0.000],\"label\":\"musical_instrument\"}]",
+        "snowboard": "[]",
+        "snowboard_norm": "[{\"box_norm\":[0.000,0.000,0.000,0.000],\"label\":\"snowboard\"}]",
+        "spatula": "[]",
+        "spatula_norm": "[{\"box_norm\":[0.000,0.000,0.000,0.000],\"label\":\"spatula\"}]",
+        "_fallback": "[]"
+      },
+      "labels_used": [
+        "sewing_machine",
+        "lawn_mower",
+        "musical_instrument",
+        "snowboard",
+        "spatula"
+      ]
+    },
+    {
+      "image": "000000323592.jpg",
+      "detections": [
+        {
+          "box_2d": [
+            0,
+            0,
+            640,
+            461
+          ],
+          "label": "none"
+        }
+      ],
+      "latency_sec": 5.965931245009415,
+      "raw_response": {
+        "spatula": "[]",
+        "spatula_norm": "[{\"box_norm\":[0.000,0.000,0.000,0.000],\"label\":\"spatula\"}]",
+        "lawn_mower": "[]",
+        "lawn_mower_norm": "[{\"box_norm\":[0.0,0.0,0.0,0.0],\"label\":\"lawn_mower\"}]",
+        "sewing_machine": "[]",
+        "sewing_machine_norm": "[{\"box_norm\":[0.0,0.0,1.0,1.0],\"label\":\"none\"}]",
+        "snowboard": "[]",
+        "snowboard_norm": "[{\"box_norm\":[0.0,0.0,0.0,0.0],\"label\":\"snowboard\"}]",
+        "stapler_(stapling_machine)": "[]",
+        "stapler_(stapling_machine)_norm": "[{\"box_norm\":[0.0,0.0,0.0,0.0],\"label\":\"stapler_(stapling_machine)\"}]"
+      },
+      "labels_used": [
+        "spatula",
+        "lawn_mower",
+        "sewing_machine",
+        "snowboard",
+        "stapler_(stapling_machine)"
+      ]
+    },
+    {
+      "image": "000000561168.jpg",
+      "detections": [],
+      "latency_sec": 6.312736150925048,
+      "raw_response": {
+        "spatula": "[]",
+        "spatula_norm": "[{\"box_norm\":[0.000,0.000,0.000,0.000],\"label\":\"spatula\"}]",
+        "blender": "[]",
+        "blender_norm": "[{\"box_norm\":[0.000,0.000,0.000,0.000],\"label\":\"blender\"}]",
+        "hair_dryer": "[]",
+        "hair_dryer_norm": "[{\"box_norm\":[0.000,0.000,0.000,0.000],\"label\":\"hair_dryer\"}]",
+        "sewing_machine": "[]",
+        "sewing_machine_norm": "[{\"box_norm\":[0.000,0.000,0.000,0.000],\"label\":\"sewing_machine\"}]",
+        "stapler_(stapling_machine)": "[]",
+        "stapler_(stapling_machine)_norm": "[{\"box_norm\":[0.000,0.000,0.000,0.000],\"label\":\"stapler_(stapling_machine)\"}]",
+        "_fallback": "[]"
+      },
+      "labels_used": [
+        "spatula",
+        "blender",
+        "hair_dryer",
+        "sewing_machine",
+        "stapler_(stapling_machine)"
+      ]
+    },
+    {
+      "image": "000000162902.jpg",
+      "detections": [
+        {
+          "box_2d": [
+            26,
+            47,
+            217,
+            184
+          ],
+          "label": "snowboard"
+        },
+        {
+          "box_2d": [
+            0,
+            0,
+            500,
+            332
+          ],
+          "label": "snowboarder"
+        }
+      ],
+      "latency_sec": 7.613465721951798,
+      "raw_response": {
+        "snowboard": "[{\"box_2d\":[0,0,0,0],\"label\":\"snowboard\"}, {\"box_2d\":[0,0,0,0],\"label\":\"snowboard\"}, {\"box_2d\":[0,0,0,0],\"label\":\"snowboard\"}, {\"box_2d\":[0,0,0,0],\"label\":\"snowboard\"}]",
+        "snowboard_norm": "[{\"box_norm\":[0.051,0.141,0.434,0.555],\"label\":\"snowboard\"}]",
+        "blender": "[]",
+        "blender_norm": "[{\"box_norm\":[0.000,0.000,0.999,0.999],\"label\":\"snowboarder\"}]",
+        "musical_instrument": "[]",
+        "musical_instrument_norm": "[{\"box_norm\":[0.000,0.000,0.000,0.000],\"label\":\"musical_instrument\"}]",
+        "spatula": "[]",
+        "spatula_norm": "[{\"box_norm\":[0.0,0.0,0.0,0.0],\"label\":\"spatula\"}]",
+        "stapler_(stapling_machine)": "[]",
+        "stapler_(stapling_machine)_norm": "[{\"box_norm\":[0.000,0.000,0.000,0.000],\"label\":\"stapler_(stapling_machine)\"}]"
+      },
+      "labels_used": [
+        "snowboard",
+        "blender",
+        "musical_instrument",
+        "spatula",
+        "stapler_(stapling_machine)"
+      ]
+    },
+    {
+      "image": "000000472376.jpg",
+      "detections": [
+        {
+          "box_2d": [
+            28,
+            213,
+            164,
+            266
+          ],
+          "label": "musical_instrument"
+        }
+      ],
+      "latency_sec": 6.495866563054733,
+      "raw_response": {
+        "musical_instrument": "[{\"box_2d\":[0,0,0,0],\"label\":\"musical_instrument\"}]",
+        "musical_instrument_norm": "[{\"box_norm\":[0.044,0.444,0.256,0.555],\"label\":\"musical_instrument\"}]",
+        "blender": "[]",
+        "blender_norm": "[{\"box_norm\":[0.000,0.000,0.000,0.000],\"label\":\"blender\"}]",
+        "hair_dryer": "[]",
+        "hair_dryer_norm": "[{\"box_norm\":[0.000,0.000,0.000,0.000],\"label\":\"hair_dryer\"}]",
+        "sewing_machine": "[]",
+        "sewing_machine_norm": "[{\"box_norm\":[0.000,0.000,0.000,0.000],\"label\":\"sewing_machine\"}]",
+        "stapler_(stapling_machine)": "[]",
+        "stapler_(stapling_machine)_norm": "[{\"box_norm\":[0.000,0.000,0.000,0.000],\"label\":\"stapler_(stapling_machine)\"}]"
+      },
+      "labels_used": [
+        "musical_instrument",
+        "blender",
+        "hair_dryer",
+        "sewing_machine",
+        "stapler_(stapling_machine)"
+      ]
+    },
+    {
+      "image": "000000273607.jpg",
+      "detections": [
+        {
+          "box_2d": [
+            0,
+            0,
+            320,
+            240
+          ],
+          "label": "blender"
+        },
+        {
+          "box_2d": [
+            0,
+            0,
+            160,
+            168
+          ],
+          "label": "coffee_maker"
+        }
+      ],
+      "latency_sec": 6.215357864974067,
+      "raw_response": {
+        "blender": "[{\"box_2d\":[0,0,0,0],\"label\":\"blender\"}]",
+        "blender_norm": "[{\"box_norm\":[0.000,0.000,0.500,0.500],\"label\":\"blender\"}]",
+        "coffee_maker": "[]",
+        "coffee_maker_norm": "[{\"box_norm\":[0.000,0.000,0.250,0.350],\"label\":\"coffee_maker\"}]",
+        "microscope": "[]",
+        "microscope_norm": "[{\"box_norm\":[0.000,0.000,0.000,0.000],\"label\":\"microscope\"}]",
+        "sewing_machine": "[]",
+        "sewing_machine_norm": "[{\"box_norm\":[0.000,0.000,0.000,0.000],\"label\":\"sewing_machine\"}]",
+        "snowboard": "[]",
+        "snowboard_norm": "[{\"box_norm\":[0.000,0.000,0.000,0.000],\"label\":\"snowboard\"}]"
+      },
+      "labels_used": [
+        "blender",
+        "coffee_maker",
+        "microscope",
+        "sewing_machine",
+        "snowboard"
+      ]
+    },
+    {
+      "image": "000000550481.jpg",
+      "detections": [],
+      "latency_sec": 6.9488745969720185,
+      "raw_response": {
+        "microscope": "[{\"box_2d\":[0,0,0,0],\"label\":\"microscope\"}]",
+        "microscope_norm": "[{\"box_norm\":[0.000000,0.000000,0.000000,0.000000],\"label\":\"microscope\"}]",
+        "lawn_mower": "[]",
+        "lawn_mower_norm": "[{\"box_norm\":[0.000,0.000,0.000,0.000],\"label\":\"lawn_mower\"}]",
+        "snowboard": "[]",
+        "snowboard_norm": "[{\"box_norm\":[0.000,0.000,0.000,0.000],\"label\":\"snowboard\"}]",
+        "spatula": "[]",
+        "spatula_norm": "[{\"box_norm\":[0.000000,0.000000,0.000000,0.000000],\"label\":\"spatula\"}]",
+        "stapler_(stapling_machine)": "[]",
+        "stapler_(stapling_machine)_norm": "[{\"box_norm\":[0.000000,0.000000,0.000000,0.000000],\"label\":\"stapler_(stapling_machine)\"}]",
+        "_fallback": "[]"
+      },
+      "labels_used": [
+        "microscope",
+        "lawn_mower",
+        "snowboard",
+        "spatula",
+        "stapler_(stapling_machine)"
+      ]
+    },
+    {
+      "image": "000000511430.jpg",
+      "detections": [
+        {
+          "box_2d": [
+            21,
+            190,
+            92,
+            237
+          ],
+          "label": "blender"
+        },
+        {
+          "box_2d": [
+            20,
+            190,
+            86,
+            237
+          ],
+          "label": "spatula"
+        }
+      ],
+      "latency_sec": 6.865529121016152,
+      "raw_response": {
+        "blender": "[{\"box_2d\":[0,0,0,0],\"label\":\"blender\"}]",
+        "blender_norm": "[{\"box_norm\":[0.033,0.444,0.143,0.555],\"label\":\"blender\"}]",
+        "hair_dryer": "[]",
+        "hair_dryer_norm": "[{\"box_norm\":[0.000,0.000,0.000,0.000],\"label\":\"hair_dryer\"}]",
+        "sewing_machine": "[]",
+        "sewing_machine_norm": "[{\"box_norm\":[0.0,0.0,0.0,0.0],\"label\":\"sewing_machine\"}]",
+        "spatula": "[{\"box_2d\":[0,0,0,0],\"label\":\"spatula\"}]",
+        "spatula_norm": "[{\"box_norm\":[0.032,0.444,0.134,0.555],\"label\":\"spatula\"}]",
+        "stapler_(stapling_machine)": "[]",
+        "stapler_(stapling_machine)_norm": "[{\"box_norm\":[0.000,0.000,0.000,0.000],\"label\":\"stapler_(stapling_machine)\"}]"
+      },
+      "labels_used": [
+        "blender",
+        "hair_dryer",
+        "sewing_machine",
+        "spatula",
+        "stapler_(stapling_machine)"
+      ]
+    },
+    {
+      "image": "000000320875.jpg",
+      "detections": [
+        {
+          "box_2d": [
+            31,
+            155,
+            91,
+            194
+          ],
+          "label": "blender"
+        }
+      ],
+      "latency_sec": 8.112766242004,
+      "raw_response": {
+        "blender": "[{\"box_2d\":[0,0,0,0],\"label\":\"blender\"}]",
+        "blender_norm": "[{\"box_norm\":[0.048,0.444,0.142,0.555],\"label\":\"blender\"}]",
+        "hair_dryer": "[{\"box_2d\":[0,0,0,0],\"label\":\"hair_dryer\"}]",
+        "hair_dryer_norm": "[{\"box_norm\":[0.000,0.000,0.000,0.000],\"label\":\"hair_dryer\"}]",
+        "lawn_mower": "[{\"box_2d\":[0,0,0,0],\"label\":\"lawn_mower\"}]",
+        "lawn_mower_norm": "[{\"box_norm\":[0.0,0.0,0.0,0.0],\"label\":\"lawn_mower\"}]",
+        "musical_instrument": "[{\"box_2d\":[0,0,0,0],\"label\":\"None\"}]",
+        "musical_instrument_norm": "[{\"box_norm\":[0.0,0.0,0.0,0.0],\"label\":\"musical_instrument\"}]",
+        "sewing_machine": "[{\"box_2d\":[0,0,0,0],\"label\":\"sewing_machine\"}]",
+        "sewing_machine_norm": "[{\"box_norm\":[0.0,0.0,0.0,0.0],\"label\":\"sewing_machine\"}]"
+      },
+      "labels_used": [
+        "blender",
+        "hair_dryer",
+        "lawn_mower",
+        "musical_instrument",
+        "sewing_machine"
+      ]
+    },
+    {
+      "image": "000000102757.jpg",
+      "detections": [
+        {
+          "box_2d": [
+            1,
+            105,
+            170,
+            190
+          ],
+          "label": "coffee_maker"
+        },
+        {
+          "box_2d": [
+            1,
+            1,
+            639,
+            426
+          ],
+          "label": "stapler_(stapling_machine)"
+        }
+      ],
+      "latency_sec": 7.407922068028711,
+      "raw_response": {
+        "blender": "[{\"box_2d\":[0,0,0,0],\"label\":\"blender\"}]",
+        "blender_norm": "[{\"box_norm\":[0.000,0.000,0.000,0.000],\"label\":\"blender\"}]",
+        "coffee_maker": "[{\"box_2d\":[0,0,0,0],\"label\":\"coffee_maker\"}]",
+        "coffee_maker_norm": "[{\"box_norm\":[0.002,0.245,0.266,0.444],\"label\":\"coffee_maker\"}]",
+        "musical_instrument": "[]",
+        "musical_instrument_norm": "[{\"box_norm\":[0.000,0.000,0.000,0.000],\"label\":\"musical_instrument\"}]",
+        "sewing_machine": "[]",
+        "sewing_machine_norm": "[{\"box_norm\":[0.000,0.000,0.000,0.000],\"label\":\"sewing_machine\"}]",
+        "stapler_(stapling_machine)": "[{\"box_2d\":[0,0,0,0],\"label\":\"stapler_(stapling_machine)\"}]",
+        "stapler_(stapling_machine)_norm": "[{\"box_norm\":[0.002,0.002,0.998,0.998],\"label\":\"stapler_(stapling_machine)\"}]"
+      },
+      "labels_used": [
+        "blender",
+        "coffee_maker",
+        "musical_instrument",
+        "sewing_machine",
+        "stapler_(stapling_machine)"
+      ]
+    },
+    {
+      "image": "000000107167.jpg",
+      "detections": [
+        {
+          "box_2d": [
+            15,
+            138,
+            191,
+            355
+          ],
+          "label": "blender"
+        }
+      ],
+      "latency_sec": 5.159797308035195,
+      "raw_response": {
+        "blender": "[{\"box_2d\":[0,0,0,0],\"label\":\"blender\"}]",
+        "blender_norm": "[{\"box_norm\":[0.035,0.215,0.445,0.555],\"label\":\"blender\"}]",
+        "hair_dryer": "[]",
+        "hair_dryer_norm": "[{\"box_norm\":[0.0,0.0,0.0,0.0],\"label\":\"hair_dryer\"}]",
+        "musical_instrument": "[]",
+        "musical_instrument_norm": "[{\"box_norm\":[0.0,0.0,0.0,0.0],\"label\":\"musical_instrument\"}]",
+        "sewing_machine": "[]",
+        "sewing_machine_norm": "[]",
+        "stapler_(stapling_machine)": "[]",
+        "stapler_(stapling_machine)_norm": "[]"
+      },
+      "labels_used": [
+        "blender",
+        "hair_dryer",
+        "musical_instrument",
+        "sewing_machine",
+        "stapler_(stapling_machine)"
+      ]
+    },
+    {
+      "image": "000000037035.jpg",
+      "detections": [
+        {
+          "box_2d": [
+            419,
+            212,
+            470,
+            246
+          ],
+          "label": "blender"
+        }
+      ],
+      "latency_sec": 6.3921556799905375,
+      "raw_response": {
+        "blender": "[{\"box_2d\":[0,0,0,0],\"label\":\"blender\"}]",
+        "blender_norm": "[{\"box_norm\":[0.654,0.442,0.734,0.512],\"label\":\"blender\"}]",
+        "hair_dryer": "[]",
+        "hair_dryer_norm": "[{\"box_norm\":[0.0,0.0,0.0,0.0],\"label\":\"hair_dryer\"}]",
+        "microscope": "[]",
+        "microscope_norm": "[{\"box_norm\":[0.0,0.0,0.0,0.0],\"label\":\"microscope\"}]",
+        "snowboard": "[]",
+        "snowboard_norm": "[{\"box_norm\":[0.0,0.0,0.0,0.0],\"label\":\"snowboard\"}]",
+        "stapler_(stapling_machine)": "[]",
+        "stapler_(stapling_machine)_norm": "[{\"box_norm\":[0.0,0.0,0.0,0.0],\"label\":\"stapler_(stapling_machine)\"}]"
+      },
+      "labels_used": [
+        "blender",
+        "hair_dryer",
+        "microscope",
+        "snowboard",
+        "stapler_(stapling_machine)"
+      ]
+    },
+    {
+      "image": "000000349695.jpg",
+      "detections": [
+        {
+          "box_2d": [
+            220,
+            189,
+            276,
+            236
+          ],
+          "label": "coffee_maker"
+        }
+      ],
+      "latency_sec": 7.147980303037912,
+      "raw_response": {
+        "coffee_maker": "[{\"box_2d\":[246,0,346,0],\"label\":\"coffee_maker\"}]",
+        "coffee_maker_norm": "[{\"box_norm\":[0.343,0.444,0.432,0.555],\"label\":\"coffee_maker\"}]",
+        "blender": "[{\"box_2d\":[0,0,0,0],\"label\":\"blender\"}]",
+        "blender_norm": "[{\"box_norm\":[0.000,0.000,0.000,0.000],\"label\":\"blender\"}]",
+        "hair_dryer": "[{\"box_2d\":[0,0,0,0],\"label\":\"hair_dryer\"}]",
+        "hair_dryer_norm": "[{\"box_norm\":[0.000,0.000,0.000,0.000],\"label\":\"hair_dryer\"}]",
+        "sewing_machine": "[]",
+        "sewing_machine_norm": "[{\"box_norm\":[0.0,0.0,0.0,0.0],\"label\":\"sewing_machine\"}]",
+        "snowboard": "[]",
+        "snowboard_norm": "[{\"box_norm\":[0.000,0.000,0.000,0.000],\"label\":\"snowboard\"}]"
+      },
+      "labels_used": [
+        "coffee_maker",
+        "blender",
+        "hair_dryer",
+        "sewing_machine",
+        "snowboard"
+      ]
+    },
+    {
+      "image": "000000574537.jpg",
+      "detections": [
+        {
+          "box_2d": [
+            138,
+            105,
+            266,
+            238
+          ],
+          "label": "snowboard"
+        },
+        {
+          "box_2d": [
+            0,
+            0,
+            639,
+            428
+          ],
+          "label": "snowboard"
+        }
+      ],
+      "latency_sec": 6.377852233010344,
+      "raw_response": {
+        "snowboard": "[{\"box_2d\":[0,0,0,0],\"label\":\"snowboard\"}]",
+        "snowboard_norm": "[{\"box_norm\":[0.216,0.245,0.416,0.555],\"label\":\"snowboard\"}]",
+        "blender": "[]",
+        "blender_norm": "[{\"box_norm\":[0.000,0.000,0.999,0.999],\"label\":\"snowboard\"}]",
+        "coffee_maker": "[]",
+        "coffee_maker_norm": "[{\"box_norm\":[0.000,0.000,0.000,0.000],\"label\":\"coffee_maker\"}]",
+        "hair_dryer": "[]",
+        "hair_dryer_norm": "[{\"box_norm\":[0.000,0.000,0.000,0.000],\"label\":\"hair_dryer\"}]",
+        "stapler_(stapling_machine)": "[]",
+        "stapler_(stapling_machine)_norm": "[{\"box_norm\":[0.000,0.000,0.000,0.000],\"label\":\"stapler_(stapling_machine)\"}]"
+      },
+      "labels_used": [
+        "snowboard",
+        "blender",
+        "coffee_maker",
+        "hair_dryer",
+        "stapler_(stapling_machine)"
+      ]
+    },
+    {
+      "image": "000000031113.jpg",
+      "detections": [
+        {
+          "box_2d": [
+            25,
+            217,
+            91,
+            273
+          ],
+          "label": "hair_dryer"
+        },
+        {
+          "box_2d": [
+            88,
+            210,
+            122,
+            250
+          ],
+          "label": "coffee_maker"
+        },
+        {
+          "box_2d": [
+            0,
+            0,
+            188,
+            250
+          ],
+          "label": "microscope"
+        }
+      ],
+      "latency_sec": 5.867768892087042,
+      "raw_response": {
+        "hair_dryer": "[]",
+        "hair_dryer_norm": "[{\"box_norm\":[0.066,0.434,0.243,0.546],\"label\":\"hair_dryer\"}]",
+        "coffee_maker": "[]",
+        "coffee_maker_norm": "[{\"box_norm\":[0.234,0.419,0.324,0.501],\"label\":\"coffee_maker\"}]",
+        "lawn_mower": "[]",
+        "lawn_mower_norm": "[{\"box_norm\":[0.000,0.000,0.000,0.000],\"label\":\"lawn_mower\"}]",
+        "microscope": "[]",
+        "microscope_norm": "[{\"box_norm\":[0.000,0.000,0.500,0.500],\"label\":\"microscope\"}]",
+        "sewing_machine": "[]",
+        "sewing_machine_norm": "[{\"box_norm\":[0.000,0.000,0.000,0.000],\"label\":\"sewing_machine\"}]"
+      },
+      "labels_used": [
+        "hair_dryer",
+        "coffee_maker",
+        "lawn_mower",
+        "microscope",
+        "sewing_machine"
+      ]
+    },
+    {
+      "image": "000000074103.jpg",
+      "detections": [
+        {
+          "box_2d": [
+            100,
+            92,
+            236,
+            355
+          ],
+          "label": "snowboard"
+        },
+        {
+          "box_2d": [
+            100,
+            92,
+            164,
+            252
+          ],
+          "label": "blender"
+        }
+      ],
+      "latency_sec": 6.2496530880453065,
+      "raw_response": {
+        "snowboard": "[{\"box_2d\":[0,0,0,0],\"label\":\"snowboard\"}]",
+        "snowboard_norm": "[{\"box_norm\":[0.234,0.143,0.555,0.555],\"label\":\"snowboard\"}]",
+        "blender": "[]",
+        "blender_norm": "[{\"box_norm\":[0.234,0.144,0.384,0.394],\"label\":\"blender\"}]",
+        "microscope": "[]",
+        "microscope_norm": "[{\"box_norm\":[0.0,0.0,0.0,0.0],\"label\":\"microscope\"}]",
+        "musical_instrument": "[]",
+        "musical_instrument_norm": "[{\"box_norm\":[0.0,0.0,0.0,0.0],\"label\":\"musical_instrument\"}]",
+        "spatula": "[]",
+        "spatula_norm": "[{\"box_norm\":[0.0,0.0,0.0,0.0],\"label\":\"spatula\"}]"
+      },
+      "labels_used": [
+        "snowboard",
+        "blender",
+        "microscope",
+        "musical_instrument",
+        "spatula"
+      ]
+    },
+    {
+      "image": "000000141017.jpg",
+      "detections": [
+        {
+          "box_2d": [
+            150,
+            188,
+            176,
+            205
+          ],
+          "label": "coffee_maker"
+        }
+      ],
+      "latency_sec": 6.23376532306429,
+      "raw_response": {
+        "blender": "[{\"box_2d\":[0,0,0,0],\"label\":\"blender\"}]",
+        "blender_norm": "[{\"box_norm\":[0.000,0.000,0.000,0.000],\"label\":\"blender\"}]",
+        "coffee_maker": "[]",
+        "coffee_maker_norm": "[{\"box_norm\":[0.235,0.444,0.275,0.484],\"label\":\"coffee_maker\"}]",
+        "microscope": "[]",
+        "microscope_norm": "[{\"box_norm\":[0.000,0.000,0.000,0.000],\"label\":\"microscope\"}]",
+        "musical_instrument": "[]",
+        "musical_instrument_norm": "[{\"box_norm\":[0.000,0.000,0.000,0.000],\"label\":\"musical_instrument\"}]",
+        "snowboard": "[]",
+        "snowboard_norm": "[{\"box_norm\":[0.000,0.000,0.000,0.000],\"label\":\"snowboard\"}]"
+      },
+      "labels_used": [
+        "blender",
+        "coffee_maker",
+        "microscope",
+        "musical_instrument",
+        "snowboard"
+      ]
+    },
+    {
+      "image": "000000409624.jpg",
+      "detections": [
+        {
+          "box_2d": [
+            0,
+            155,
+            105,
+            281
+          ],
+          "label": "snowboard"
+        }
+      ],
+      "latency_sec": 6.388101053074934,
+      "raw_response": {
+        "snowboard": "[{\"box_2d\":[0,0,0,0],\"label\":\"snowboard\"}]",
+        "snowboard_norm": "[{\"box_norm\":[0.001,0.242,0.245,0.439],\"label\":\"snowboard\"}]",
+        "coffee_maker": "[]",
+        "coffee_maker_norm": "[{\"box_norm\":[0.000,0.000,0.000,0.000],\"label\":\"coffee_maker\"}]",
+        "hair_dryer": "[]",
+        "hair_dryer_norm": "[{\"box_norm\":[0.000,0.000,0.000,0.000],\"label\":\"hair_dryer\"}]",
+        "microscope": "[]",
+        "microscope_norm": "[{\"box_norm\":[0.000,0.000,0.000,0.000],\"label\":\"microscope\"}]",
+        "stapler_(stapling_machine)": "[]",
+        "stapler_(stapling_machine)_norm": "[{\"box_norm\":[0.0,0.0,0.0,0.0],\"label\":\"stapler_(stapling_machine)\"}]"
+      },
+      "labels_used": [
+        "snowboard",
+        "coffee_maker",
+        "hair_dryer",
+        "microscope",
+        "stapler_(stapling_machine)"
+      ]
+    },
+    {
+      "image": "000000040426.jpg",
+      "detections": [
+        {
+          "box_2d": [
+            29,
+            19,
+            291,
+            266
+          ],
+          "label": "blender"
+        },
+        {
+          "box_2d": [
+            0,
+            0,
+            640,
+            480
+          ],
+          "label": "strawberry"
+        }
+      ],
+      "latency_sec": 6.250589724048041,
+      "raw_response": {
+        "blender": "[{\"box_2d\":[0,0,0,0],\"label\":\"blender\"}]",
+        "blender_norm": "[{\"box_norm\":[0.045,0.040,0.455,0.555],\"label\":\"blender\"}]",
+        "hair_dryer": "[]",
+        "hair_dryer_norm": "[{\"box_norm\":[0.0,0.0,1.0,1.0],\"label\":\"strawberry\"}]",
+        "microscope": "[]",
+        "microscope_norm": "[{\"box_norm\":[0.0,0.0,0.0,0.0],\"label\":\"microscope\"}]",
+        "sewing_machine": "[]",
+        "sewing_machine_norm": "[{\"box_norm\":[0.0,0.0,0.0,0.0],\"label\":\"sewing_machine\"}]",
+        "spatula": "[]",
+        "spatula_norm": "[{\"box_norm\":[0.0,0.0,0.0,0.0],\"label\":\"spatula\"}]"
+      },
+      "labels_used": [
+        "blender",
+        "hair_dryer",
+        "microscope",
+        "sewing_machine",
+        "spatula"
+      ]
+    },
+    {
+      "image": "000000078060.jpg",
+      "detections": [
+        {
+          "box_2d": [
+            148,
+            160,
+            285,
+            266
+          ],
+          "label": "snowboard"
+        }
+      ],
+      "latency_sec": 6.342154085054062,
+      "raw_response": {
+        "snowboard": "[{\"box_2d\":[0,0,0,0],\"label\":\"snowboard\"}]",
+        "snowboard_norm": "[{\"box_norm\":[0.231,0.333,0.445,0.555],\"label\":\"snowboard\"}]",
+        "hair_dryer": "[]",
+        "hair_dryer_norm": "[{\"box_norm\":[0.000,0.000,0.000,0.000],\"label\":\"hair_dryer\"}]",
+        "lawn_mower": "[]",
+        "lawn_mower_norm": "[{\"box_norm\":[0.0,0.0,0.0,0.0],\"label\":\"lawn_mower\"}]",
+        "musical_instrument": "[]",
+        "musical_instrument_norm": "[{\"box_norm\":[0.000,0.000,0.000,0.000],\"label\":\"musical_instrument\"}]",
+        "sewing_machine": "[]",
+        "sewing_machine_norm": "[{\"box_norm\":[0.0,0.0,0.0,0.0],\"label\":\"sewing_machine\"}]"
+      },
+      "labels_used": [
+        "snowboard",
+        "hair_dryer",
+        "lawn_mower",
+        "musical_instrument",
+        "sewing_machine"
+      ]
+    },
+    {
+      "image": "000000197807.jpg",
+      "detections": [
+        {
+          "box_2d": [
+            33,
+            116,
+            219,
+            399
+          ],
+          "label": "snowboard"
+        }
+      ],
+      "latency_sec": 6.358437090064399,
+      "raw_response": {
+        "snowboard": "[{\"box_2d\":[0,0,0,0],\"label\":\"snowboard\"}]",
+        "snowboard_norm": "[{\"box_norm\":[0.051,0.241,0.342,0.831],\"label\":\"snowboard\"}]",
+        "blender": "[]",
+        "blender_norm": "[{\"box_norm\":[0.000,0.000,0.000,0.000],\"label\":\"blender\"}]",
+        "coffee_maker": "[]",
+        "coffee_maker_norm": "[{\"box_norm\":[0.000,0.000,0.000,0.000],\"label\":\"coffee_maker\"}]",
+        "sewing_machine": "[]",
+        "sewing_machine_norm": "[{\"box_norm\":[0.000,0.000,0.000,0.000],\"label\":\"sewing_machine\"}]",
+        "stapler_(stapling_machine)": "[]",
+        "stapler_(stapling_machine)_norm": "[{\"box_norm\":[0.0,0.0,0.0,0.0],\"label\":\"stapler_(stapling_machine)\"}]"
+      },
+      "labels_used": [
+        "snowboard",
+        "blender",
+        "coffee_maker",
+        "sewing_machine",
+        "stapler_(stapling_machine)"
+      ]
+    },
+    {
+      "image": "000000460339.jpg",
+      "detections": [
+        {
+          "box_2d": [
+            0,
+            0,
+            427,
+            640
+          ],
+          "label": "snowboard"
+        },
+        {
+          "box_2d": [
+            0,
+            0,
+            427,
+            639
+          ],
+          "label": "snowboard"
+        },
+        {
+          "box_2d": [
+            0,
+            0,
+            427,
+            320
+          ],
+          "label": "coffee_maker"
+        }
+      ],
+      "latency_sec": 5.381635110010393,
+      "raw_response": {
+        "snowboard": "[{\"box_2d\":[0,0,427,640],\"label\":\"snowboard\"}]",
+        "blender": "[]",
+        "blender_norm": "[{\"box_norm\":[0.000,0.000,0.999,0.999],\"label\":\"snowboard\"}]",
+        "coffee_maker": "[]",
+        "coffee_maker_norm": "[{\"box_norm\":[0.0,0.0,1.0,0.5]}]",
+        "microscope": "[]",
+        "microscope_norm": "[{\"box_norm\":[0.000,0.000,0.000,0.000],\"label\":\"microscope\"}]",
+        "stapler_(stapling_machine)": "[]",
+        "stapler_(stapling_machine)_norm": "[{\"box_norm\":[0.0,0.0,0.0,0.0],\"label\":\"stapler_(stapling_machine)\"}]"
+      },
+      "labels_used": [
+        "snowboard",
+        "blender",
+        "coffee_maker",
+        "microscope",
+        "stapler_(stapling_machine)"
+      ]
+    },
+    {
+      "image": "000000423116.jpg",
+      "detections": [
+        {
+          "box_2d": [
+            150,
+            118,
+            219,
+            213
+          ],
+          "label": "spatula"
+        }
+      ],
+      "latency_sec": 6.280528043978848,
+      "raw_response": {
+        "spatula": "[{\"box_2d\":[0,0,0,0],\"label\":\"None\"}]",
+        "spatula_norm": "[{\"box_norm\":[0.234,0.247,0.342,0.444],\"label\":\"spatula\"}]",
+        "coffee_maker": "[]",
+        "coffee_maker_norm": "[{\"box_norm\":[0.000,0.000,0.000,0.000],\"label\":\"coffee_maker\"}]",
+        "lawn_mower": "[]",
+        "lawn_mower_norm": "[{\"box_norm\":[0.0,0.0,0.0,0.0],\"label\":\"lawn_mower\"}]",
+        "musical_instrument": "[]",
+        "musical_instrument_norm": "[{\"box_norm\":[0.000,0.000,0.000,0.000],\"label\":\"musical_instrument\"}]",
+        "snowboard": "[]",
+        "snowboard_norm": "[{\"box_norm\":[0.000,0.000,0.000,0.000],\"label\":\"snowboard\"}]"
+      },
+      "labels_used": [
+        "spatula",
+        "coffee_maker",
+        "lawn_mower",
+        "musical_instrument",
+        "snowboard"
+      ]
+    },
+    {
+      "image": "000000102630.jpg",
+      "detections": [
+        {
+          "box_2d": [
+            0,
+            0,
+            640,
+            360
+          ],
+          "label": "snowboard"
+        }
+      ],
+      "latency_sec": 5.57628478994593,
+      "raw_response": {
+        "snowboard": "[{\"box_2d\":[0,0,640,360],\"label\":\"snowboard\"}]",
+        "coffee_maker": "[]",
+        "coffee_maker_norm": "[{\"box_norm\":[0.000,0.000,0.000,0.000],\"label\":\"coffee_maker\"}]",
+        "lawn_mower": "[]",
+        "lawn_mower_norm": "[{\"box_norm\":[0.000,0.000,0.000,0.000],\"label\":\"lawn_mower\"}]",
+        "musical_instrument": "[]",
+        "musical_instrument_norm": "[{\"box_norm\":[0.000,0.000,0.000,0.000],\"label\":\"musical_instrument\"}]",
+        "stapler_(stapling_machine)": "[]",
+        "stapler_(stapling_machine)_norm": "[{\"box_norm\":[0.000,0.000,0.000,0.000],\"label\":\"stapler_(stapling_machine)\"}]"
+      },
+      "labels_used": [
+        "snowboard",
+        "coffee_maker",
+        "lawn_mower",
+        "musical_instrument",
+        "stapler_(stapling_machine)"
+      ]
+    },
+    {
+      "image": "000000029875.jpg",
+      "detections": [
+        {
+          "box_2d": [
+            20,
+            122,
+            128,
+            222
+          ],
+          "label": "spatula"
+        },
+        {
+          "box_2d": [
+            12,
+            122,
+            128,
+            222
+          ],
+          "label": "hair_dryer"
+        },
+        {
+          "box_2d": [
+            0,
+            0,
+            375,
+            500
+          ],
+          "label": "musical_instrument"
+        },
+        {
+          "box_2d": [
+            6,
+            122,
+            96,
+            197
+          ],
+          "label": "snowboard"
+        }
+      ],
+      "latency_sec": 5.874770994065329,
+      "raw_response": {
+        "spatula": "[{\"box_2d\":[0,0,0,0],\"label\":\"None\"}]",
+        "spatula_norm": "[{\"box_norm\":[0.054,0.245,0.342,0.444],\"label\":\"spatula\"}]",
+        "hair_dryer": "[]",
+        "hair_dryer_norm": "[{\"box_norm\":[0.032,0.243,0.342,0.444],\"label\":\"hair_dryer\"}]",
+        "lawn_mower": "[]",
+        "lawn_mower_norm": "[{\"box_norm\":[0.0,0.0,0.0,0.0],\"label\":\"lawn_mower\"}]",
+        "musical_instrument": "[{\"box_2d\":[0,0,375,500],\"label\":\"musical_instrument\"}]",
+        "snowboard": "[]",
+        "snowboard_norm": "[{\"box_norm\":[0.016,0.244,0.256,0.394],\"label\":\"snowboard\"}]"
+      },
+      "labels_used": [
+        "spatula",
+        "hair_dryer",
+        "lawn_mower",
+        "musical_instrument",
+        "snowboard"
+      ]
+    },
+    {
+      "image": "000000273371.jpg",
+      "detections": [
+        {
+          "box_2d": [
+            246,
+            0,
+            384,
+            246
+          ],
+          "label": "coffee_maker"
+        },
+        {
+          "box_2d": [
+            1,
+            223,
+            67,
+            254
+          ],
+          "label": "spatula"
+        }
+      ],
+      "latency_sec": 5.871675987960771,
+      "raw_response": {
+        "coffee_maker": "[{\"box_2d\":[246,0,384,246],\"label\":\"coffee_maker\"}]",
+        "hair_dryer": "[]",
+        "hair_dryer_norm": "[{\"box_norm\":[0.0,0.0,0.0,0.0],\"label\":\"hair_dryer\"}]",
+        "sewing_machine": "[]",
+        "sewing_machine_norm": "[{\"box_norm\":[0.0,0.0,0.0,0.0],\"label\":\"sewing_machine\"}]",
+        "snowboard": "[]",
+        "snowboard_norm": "[{\"box_norm\":[0.0,0.0,0.0,0.0],\"label\":\"snowboard\"}]",
+        "spatula": "[{\"box_2d\":[0,0,0,0],\"label\":\"spatula\"}]",
+        "spatula_norm": "[{\"box_norm\":[0.002,0.444,0.104,0.504],\"label\":\"spatula\"}]"
+      },
+      "labels_used": [
+        "coffee_maker",
+        "hair_dryer",
+        "sewing_machine",
+        "snowboard",
+        "spatula"
+      ]
+    },
+    {
+      "image": "000000065484.jpg",
+      "detections": [
+        {
+          "box_2d": [
+            150,
+            104,
+            207,
+            146
+          ],
+          "label": "spatula"
+        },
+        {
+          "box_2d": [
+            28,
+            190,
+            90,
+            237
+          ],
+          "label": "coffee_maker"
+        }
+      ],
+      "latency_sec": 7.4464915819698945,
+      "raw_response": {
+        "spatula": "[{\"box_2d\":[0,0,0,0],\"label\":\"spatula\"}]",
+        "spatula_norm": "[{\"box_norm\":[0.234,0.244,0.324,0.343],\"label\":\"spatula\"}]",
+        "blender": "[{\"box_2d\":[0,0,0,0],\"label\":\"blender\"}]",
+        "blender_norm": "[{\"box_norm\":[0.000000,0.000000,0.000000,0.000000],\"label\":\"blender\"}]",
+        "coffee_maker": "[{\"box_2d\":[0,0,0,0],\"label\":\"coffee_maker\"}]",
+        "coffee_maker_norm": "[{\"box_norm\":[0.044,0.444,0.141,0.555],\"label\":\"coffee_maker\"}]",
+        "hair_dryer": "[]",
+        "hair_dryer_norm": "[{\"box_norm\":[0.000,0.000,0.000,0.000],\"label\":\"hair_dryer\"}]",
+        "stapler_(stapling_machine)": "[]",
+        "stapler_(stapling_machine)_norm": "[{\"box_norm\":[0.000000,0.000000,0.000000,0.000000],\"label\":\"stapler_(stapling_machine)\"}]"
+      },
+      "labels_used": [
+        "spatula",
+        "blender",
+        "coffee_maker",
+        "hair_dryer",
+        "stapler_(stapling_machine)"
+      ]
+    },
+    {
+      "image": "000000495681.jpg",
+      "detections": [
+        {
+          "box_2d": [
+            25,
+            355,
+            79,
+            419
+          ],
+          "label": "coffee_maker"
+        }
+      ],
+      "latency_sec": 6.228334330022335,
+      "raw_response": {
+        "coffee_maker": "[{\"box_2d\":[0,0,0,0],\"label\":\"coffee_maker\"}]",
+        "coffee_maker_norm": "[{\"box_norm\":[0.045,0.555,0.145,0.655],\"label\":\"coffee_maker\"}]",
+        "blender": "[]",
+        "blender_norm": "[{\"box_norm\":[0.000,0.000,0.000,0.000],\"label\":\"blender\"}]",
+        "sewing_machine": "[]",
+        "sewing_machine_norm": "[{\"box_norm\":[0.000,0.000,0.000,0.000],\"label\":\"sewing_machine\"}]",
+        "snowboard": "[]",
+        "snowboard_norm": "[{\"box_norm\":[0.0,0.0,0.0,0.0],\"label\":\"snowboard\"}]",
+        "spatula": "[]",
+        "spatula_norm": "[{\"box_norm\":[0.000,0.000,0.000,0.000],\"label\":\"spatula\"}]"
+      },
+      "labels_used": [
+        "coffee_maker",
+        "blender",
+        "sewing_machine",
+        "snowboard",
+        "spatula"
+      ]
+    }
+  ],
+  "summary": {
+    "wall_time_sec": 635.303301834967,
+    "total_latency_sec": 635.279097974766,
+    "avg_latency_sec": 6.3527909797476605
+  }
+}

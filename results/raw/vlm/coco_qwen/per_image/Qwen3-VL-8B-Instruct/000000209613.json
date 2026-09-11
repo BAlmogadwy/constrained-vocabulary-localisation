@@ -1,0 +1,95 @@
+{
+  "model": "Qwen3-VL-8B-Instruct",
+  "strategy": "single_query",
+  "image": "/home/maxim/PycharmProjects/zero-shot-detection-benchmark/data/raw/coco2017/val2017/000000209613.jpg",
+  "labels": [
+    "microwave",
+    "oven",
+    "toaster",
+    "sink",
+    "refrigerator",
+    "book",
+    "clock",
+    "vase",
+    "scissors",
+    "teddy bear",
+    "hair drier",
+    "toothbrush"
+  ],
+  "detections": [
+    {
+      "box_2d": [
+        472.0,
+        545.0,
+        655.0,
+        788.0
+      ],
+      "label": "sheep"
+    },
+    {
+      "box_2d": [
+        241.0,
+        595.0,
+        497.0,
+        826.0
+      ],
+      "label": "sheep"
+    },
+    {
+      "box_2d": [
+        174.0,
+        581.0,
+        335.0,
+        800.0
+      ],
+      "label": "sheep"
+    },
+    {
+      "box_2d": [
+        78.0,
+        638.0,
+        185.0,
+        895.0
+      ],
+      "label": "sheep"
+    },
+    {
+      "box_2d": [
+        335.0,
+        567.0,
+        407.0,
+        645.0
+      ],
+      "label": "sheep"
+    },
+    {
+      "box_2d": [
+        202.0,
+        424.0,
+        256.0,
+        512.0
+      ],
+      "label": "sheep"
+    },
+    {
+      "box_2d": [
+        270.0,
+        424.0,
+        312.0,
+        495.0
+      ],
+      "label": "sheep"
+    },
+    {
+      "box_2d": [
+        868.0,
+        540.0,
+        947.0,
+        645.0
+      ],
+      "label": "sheep"
+    }
+  ],
+  "latency_sec": 8.142585556997801,
+  "raw_response": "user\nYou are an object detection assistant. Given the image and the list of target classes, return detections as JSON.\nTarget classes: microwave, oven, toaster, sink, refrigerator, book, clock, vase, scissors, teddy bear, hair drier, toothbrush.\nOutput format: [{\"box_2d\":[x1,y1,x2,y2],\"label\":\"class_name\"}...]\nUse pixel coordinates relative to the input image. Return JSON only.\nassistant\n```json\n[\n\t{\"box_2d\": [472, 545, 655, 788],\"label\":\"sheep\"},\n\t{\"bbox_2d\": [241, 595, 497, 826],\"label\":\"sheep\"},\n\t{\"bbox_2d\": [174, 581, 335, 800],\"label\":\"sheep\"},\n\t{\"bbox_2d\": [78, 638, 185, 895],\"label\":\"sheep\"},\n\t{\"bbox_2d\": [335, 567, 407, 645],\"label\":\"sheep\"},\n\t{\"bbox_2d\": [202, 424, 256, 512],\"label\":\"sheep\"},\n\t{\"bbox_2d\": [270, 424, 312, 495],\"label\":\"sheep\"},\n\t{\"bbox_2d\": [868, 540, 947, 645],\"label\":\"sheep\"}\n]\n```"
+}

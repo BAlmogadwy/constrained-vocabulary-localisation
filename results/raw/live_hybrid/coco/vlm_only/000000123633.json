@@ -1,0 +1,128 @@
+{
+ "image": "000000123633.jpg",
+ "model": "qwen/qwen3-vl-235b-a22b-instruct",
+ "labels": [
+  "book",
+  "scissors",
+  "hair drier",
+  "oven",
+  "sink",
+  "teddy bear",
+  "vase"
+ ],
+ "detections": [
+  {
+   "box_2d": [
+    582.4,
+    124.8,
+    640.0,
+    160.8
+   ],
+   "label": "book",
+   "score": 0.95
+  },
+  {
+   "box_2d": [
+    579.84,
+    172.8,
+    615.68,
+    272.16
+   ],
+   "label": "book",
+   "score": 0.95
+  },
+  {
+   "box_2d": [
+    602.24,
+    184.8,
+    638.72,
+    280.8
+   ],
+   "label": "book",
+   "score": 0.95
+  },
+  {
+   "box_2d": [
+    615.68,
+    188.64,
+    640.0,
+    280.8
+   ],
+   "label": "book",
+   "score": 0.95
+  },
+  {
+   "box_2d": [
+    260.48,
+    386.88,
+    320.0,
+    429.6
+   ],
+   "label": "scissors",
+   "score": 0.95
+  },
+  {
+   "box_2d": [
+    457.6,
+    396.0,
+    485.76,
+    413.76
+   ],
+   "label": "scissors",
+   "score": 0.95
+  }
+ ],
+ "latency_sec": 18.707119900005637,
+ "usage": {
+  "prompt_tokens": 393,
+  "completion_tokens": 263,
+  "total_tokens": 656
+ },
+ "raw_response": {
+  "id": "gen-1783410963-aEhsjsF032XOrw2QkUE2",
+  "object": "chat.completion",
+  "created": 1783410963,
+  "model": "qwen/qwen3-vl-235b-a22b-instruct",
+  "provider": "DeepInfra",
+  "system_fingerprint": null,
+  "service_tier": null,
+  "choices": [
+   {
+    "index": 0,
+    "logprobs": null,
+    "finish_reason": "stop",
+    "native_finish_reason": "stop",
+    "message": {
+     "role": "assistant",
+     "content": "```json\n[\n\t{\"bbox_2d\": [910, 260, 1000, 335], \"label\": \"book\", \"confidence\": 0.95},\n\t{\"bbox_2d\": [906, 360, 962, 567], \"label\": \"book\", \"confidence\": 0.95},\n\t{\"bbox_2d\": [941, 385, 998, 585], \"label\": \"book\", \"confidence\": 0.95},\n\t{\"bbox_2d\": [962, 393, 1000, 585], \"label\": \"book\", \"confidence\": 0.95},\n\t{\"bbox_2d\": [407, 806, 500, 895], \"label\": \"scissors\", \"confidence\": 0.95},\n\t{\"bbox_2d\": [715, 825, 759, 862], \"label\": \"scissors\", \"confidence\": 0.95}\n]\n```",
+     "refusal": null,
+     "reasoning": null
+    }
+   }
+  ],
+  "usage": {
+   "prompt_tokens": 393,
+   "completion_tokens": 263,
+   "total_tokens": 656,
+   "cost": 0.00031004,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00031004,
+    "upstream_inference_prompt_cost": 7.86e-05,
+    "upstream_inference_completions_cost": 0.00023144
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   }
+  }
+ },
+ "ts": "2026-07-07T07:56:20.774804+00:00"
+}

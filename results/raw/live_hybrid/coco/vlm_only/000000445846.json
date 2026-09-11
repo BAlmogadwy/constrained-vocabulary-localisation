@@ -1,0 +1,119 @@
+{
+ "image": "000000445846.jpg",
+ "model": "qwen/qwen3-vl-235b-a22b-instruct",
+ "labels": [
+  "microwave",
+  "oven",
+  "refrigerator",
+  "sink",
+  "book",
+  "hair drier",
+  "toaster",
+  "toothbrush"
+ ],
+ "detections": [
+  {
+   "box_2d": [
+    572.8,
+    119.133,
+    639.36,
+    426.146
+   ],
+   "label": "refrigerator",
+   "score": 0.98
+  },
+  {
+   "box_2d": [
+    134.4,
+    275.415,
+    173.44,
+    408.639
+   ],
+   "label": "oven",
+   "score": 0.95
+  },
+  {
+   "box_2d": [
+    253.44,
+    266.448,
+    441.6,
+    275.415
+   ],
+   "label": "sink",
+   "score": 0.97
+  },
+  {
+   "box_2d": [
+    540.16,
+    208.376,
+    555.52,
+    226.737
+   ],
+   "label": "book",
+   "score": 0.92
+  },
+  {
+   "box_2d": [
+    540.16,
+    190.015,
+    555.52,
+    208.376
+   ],
+   "label": "book",
+   "score": 0.91
+  }
+ ],
+ "latency_sec": 7.379739299998619,
+ "usage": {
+  "prompt_tokens": 354,
+  "completion_tokens": 219,
+  "total_tokens": 573
+ },
+ "raw_response": {
+  "id": "gen-1783414053-VgSYUzEhj0pvhLyxiY39",
+  "object": "chat.completion",
+  "created": 1783414053,
+  "model": "qwen/qwen3-vl-235b-a22b-instruct",
+  "provider": "Parasail",
+  "system_fingerprint": null,
+  "service_tier": null,
+  "choices": [
+   {
+    "index": 0,
+    "logprobs": null,
+    "finish_reason": "stop",
+    "native_finish_reason": "stop",
+    "message": {
+     "role": "assistant",
+     "content": "```json\n[\n\t{\"bbox_2d\": [895, 279, 999, 998], \"label\": \"refrigerator\", \"confidence\": 0.98},\n\t{\"bbox_2d\": [210, 645, 271, 957], \"label\": \"oven\", \"confidence\": 0.95},\n\t{\"bbox_2d\": [396, 624, 690, 645], \"label\": \"sink\", \"confidence\": 0.97},\n\t{\"bbox_2d\": [844, 488, 868, 531], \"label\": \"book\", \"confidence\": 0.92},\n\t{\"bbox_2d\": [844, 445, 868, 488], \"label\": \"book\", \"confidence\": 0.91}\n]\n```",
+     "refusal": null,
+     "reasoning": null
+    }
+   }
+  ],
+  "usage": {
+   "prompt_tokens": 354,
+   "completion_tokens": 219,
+   "total_tokens": 573,
+   "cost": 0.00049044,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00049044,
+    "upstream_inference_prompt_cost": 7.434e-05,
+    "upstream_inference_completions_cost": 0.0004161
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   }
+  }
+ },
+ "ts": "2026-07-07T08:47:38.310970+00:00"
+}

@@ -1,0 +1,54 @@
+{
+  "model": "gemini-2.5-flash",
+  "strategy": "single_query",
+  "image": "/home/maxim/PycharmProjects/zero-shot-detection-benchmark/data/raw/coco2017/val2017/000000164602.jpg",
+  "labels": [
+    "sink",
+    "toothbrush",
+    "hair drier",
+    "oven",
+    "refrigerator",
+    "teddy bear",
+    "vase"
+  ],
+  "detections": [
+    {
+      "box_2d": [
+        337,
+        391,
+        388,
+        452
+      ],
+      "label": "toothbrush"
+    },
+    {
+      "box_2d": [
+        448,
+        526,
+        482,
+        626
+      ],
+      "label": "toothbrush"
+    },
+    {
+      "box_2d": [
+        850,
+        689,
+        998,
+        831
+      ],
+      "label": "sink"
+    },
+    {
+      "box_2d": [
+        631,
+        0,
+        810,
+        72
+      ],
+      "label": "sink"
+    }
+  ],
+  "latency_sec": 2.678936459007673,
+  "raw_response": "```json\n[\n  {\"box_2d\": [337, 391, 388, 452], \"label\": \"toothbrush\"},\n  {\"box_2d\": [448, 526, 482, 626], \"label\": \"toothbrush\"},\n  {\"box_2d\": [850, 689, 998, 831], \"label\": \"sink\"},\n  {\"box_2d\": [631, 0, 810, 72], \"label\": \"sink\"}\n]\n```"
+}

@@ -1,0 +1,84 @@
+{
+  "image": "/home/maxim/PycharmProjects/zero-shot-detection-benchmark/data/raw/coco2017/val2017/000000484978.jpg",
+  "image_id": 484978,
+  "file_name": "000000484978.jpg",
+  "num_crops": 3,
+  "crops": [
+    {
+      "annotation_id": 13330,
+      "bbox": [
+        373.05,
+        122.03,
+        31.43,
+        47.96
+      ],
+      "category_id": 112,
+      "gt_label": "blender",
+      "labels": [
+        "blender",
+        "coffee_maker",
+        "lawn_mower",
+        "microscope",
+        "musical_instrument",
+        "spatula"
+      ],
+      "prediction": "blender",
+      "normalized_prediction": "blender",
+      "matched_label": "blender",
+      "correct": true,
+      "latency_sec": 1.43270925298566,
+      "raw_response": "user\nYou are an object detection assistant. Given the image and the list of target classes, return detections as JSON.\nTarget classes: blender, coffee_maker, lawn_mower, microscope, musical_instrument, spatula.\nOutput format: [{\"box_2d\":[x1,y1,x2,y2],\"label\":\"class_name\"}...]\nUse pixel coordinates relative to the input image. Return JSON only.\nassistant\n```json\n[\n\t{\"box_2d\": [0, 0, 989, 989], \"label\": \"blender\"}\n]\n```"
+    },
+    {
+      "annotation_id": 13331,
+      "bbox": [
+        234.93,
+        111.18,
+        46.32,
+        91.4
+      ],
+      "category_id": 112,
+      "gt_label": "blender",
+      "labels": [
+        "blender",
+        "coffee_maker",
+        "lawn_mower",
+        "microscope",
+        "musical_instrument",
+        "spatula"
+      ],
+      "prediction": "microscope",
+      "normalized_prediction": "microscope",
+      "matched_label": "microscope",
+      "correct": false,
+      "latency_sec": 1.4245602720184252,
+      "raw_response": "user\nYou are an object detection assistant. Given the image and the list of target classes, return detections as JSON.\nTarget classes: blender, coffee_maker, lawn_mower, microscope, musical_instrument, spatula.\nOutput format: [{\"box_2d\":[x1,y1,x2,y2],\"label\":\"class_name\"}...]\nUse pixel coordinates relative to the input image. Return JSON only.\nassistant\n```json\n[\n\t{\"box_2d\":[10, 0, 999, 987],\"label\":\"microscope\"}\n]\n```"
+    },
+    {
+      "annotation_id": 13362,
+      "bbox": [
+        395.37,
+        147.58,
+        47.91,
+        50.69
+      ],
+      "category_id": 284,
+      "gt_label": "coffee_maker",
+      "labels": [
+        "blender",
+        "coffee_maker",
+        "lawn_mower",
+        "microscope",
+        "musical_instrument",
+        "spatula"
+      ],
+      "prediction": "blender",
+      "normalized_prediction": "blender",
+      "matched_label": "blender",
+      "correct": false,
+      "latency_sec": 1.4556254270137288,
+      "raw_response": "user\nYou are an object detection assistant. Given the image and the list of target classes, return detections as JSON.\nTarget classes: blender, coffee_maker, lawn_mower, microscope, musical_instrument, spatula.\nOutput format: [{\"box_2d\":[x1,y1,x2,y2],\"label\":\"class_name\"}...]\nUse pixel coordinates relative to the input image. Return JSON only.\nassistant\n```json\n[\n\t{\"box_2d\": [0, 0, 984, 984], \"label\": \"blender\"}\n]\n```"
+    }
+  ],
+  "prompt": "You are an object recognition assistant.\n\nYou will see a cropped image that contains exactly one object\nfrom the following LVIS categories (unseen split):\n\n- blender\n- coffee_maker\n- lawn_mower\n- microscope\n- musical_instrument\n- spatula\n\nYour task:\n- Return ONLY the best matching category name from this list.\n- Do not output explanations or extra text.\n\nAnswer with a single string: \"class_name\"."
+}

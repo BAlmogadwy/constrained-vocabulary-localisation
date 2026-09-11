@@ -1,0 +1,86 @@
+{
+  "model": "Qwen3-VL-8B-Instruct",
+  "strategy": "single_query",
+  "image": "/home/maxim/PycharmProjects/zero-shot-detection-benchmark/data/raw/coco2017/val2017/000000162543.jpg",
+  "labels": [
+    "microwave",
+    "oven",
+    "toaster",
+    "sink",
+    "refrigerator",
+    "book",
+    "clock",
+    "vase",
+    "scissors",
+    "teddy bear",
+    "hair drier",
+    "toothbrush"
+  ],
+  "detections": [
+    {
+      "box_2d": [
+        328.0,
+        445.0,
+        444.0,
+        730.0
+      ],
+      "label": "elephant"
+    },
+    {
+      "box_2d": [
+        444.0,
+        433.0,
+        542.0,
+        730.0
+      ],
+      "label": "elephant"
+    },
+    {
+      "box_2d": [
+        533.0,
+        452.0,
+        652.0,
+        667.0
+      ],
+      "label": "elephant"
+    },
+    {
+      "box_2d": [
+        717.0,
+        367.0,
+        787.0,
+        585.0
+      ],
+      "label": "elephant"
+    },
+    {
+      "box_2d": [
+        787.0,
+        461.0,
+        835.0,
+        545.0
+      ],
+      "label": "elephant"
+    },
+    {
+      "box_2d": [
+        648.0,
+        352.0,
+        703.0,
+        461.0
+      ],
+      "label": "elephant"
+    },
+    {
+      "box_2d": [
+        394.0,
+        424.0,
+        477.0,
+        475.0
+      ],
+      "label": "elephant"
+    }
+  ],
+  "latency_sec": 9.686824207004975,
+  "raw_response": "user\nYou are an object detection assistant. Given the image and the list of target classes, return detections as JSON.\nTarget classes: microwave, oven, toaster, sink, refrigerator, book, clock, vase, scissors, teddy bear, hair drier, toothbrush.\nOutput format: [{\"box_2d\":[x1,y1,x2,y2],\"label\":\"class_name\"}...]\nUse pixel coordinates relative to the input image. Return JSON only.\nassistant\n```json\n[\n    {\"box_2d\": [328, 445, 444, 730],\"label\":\"elephant\"},\n    {\"box_2d\": [444, 433, 542, 730],\"label\":\"elephant\"},\n    {\"box_2d\": [533, 452, 652, 667],\"label\":\"elephant\"},\n    {\"box_2d\": [717, 367, 787, 585],\"label\":\"elephant\"},\n    {\"box_2d\": [787, 461, 835, 545],\"label\":\"elephant\"},\n    {\"box_2d\": [648, 352, 703, 461],\"label\":\"elephant\"},\n    {\"box_2d\": [394, 424, 477, 475],\"label\":\"elephant\"}\n]\n```"
+}

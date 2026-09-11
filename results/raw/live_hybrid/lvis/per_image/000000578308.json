@@ -1,0 +1,200 @@
+{
+ "image": "000000578308.jpg",
+ "labels": [
+  "spatula",
+  "blender",
+  "microscope",
+  "sewing_machine",
+  "stapler_(stapling_machine)"
+ ],
+ "tau": 0.4,
+ "detector": {
+  "detections": [
+   {
+    "label": "spatula",
+    "box": [
+     13.094740867614746,
+     498.9764099121094,
+     404.8782958984375,
+     612.0
+    ],
+    "score": 0.3344663083553314
+   },
+   {
+    "label": "spatula",
+    "box": [
+     199.51380920410156,
+     471.4358825683594,
+     468.1781921386719,
+     568.9060668945312
+    ],
+    "score": 0.08393906056880951
+   },
+   {
+    "label": "spatula",
+    "box": [
+     1.799155354499817,
+     348.1185302734375,
+     608.2025146484375,
+     612.0
+    ],
+    "score": 0.05893717333674431
+   },
+   {
+    "label": "spatula",
+    "box": [
+     157.38796997070312,
+     227.16909790039062,
+     356.1379699707031,
+     314.81585693359375
+    ],
+    "score": 0.00962956715375185
+   },
+   {
+    "label": "spatula",
+    "box": [
+     4.6086649894714355,
+     550.3732299804688,
+     258.74322509765625,
+     612.0
+    ],
+    "score": 0.0014831587905064225
+   }
+  ],
+  "latency_sec": 0.10723110000253655
+ },
+ "detector_max_score": 0.3344663083553314,
+ "escalated": true,
+ "vlm": {
+  "model": "qwen/qwen3-vl-235b-a22b-instruct",
+  "detections": [
+   {
+    "label": "spatula",
+    "box": [
+     205.632,
+     503.064,
+     394.74,
+     570.384
+    ],
+    "score": 1.0
+   }
+  ],
+  "latency_sec": 4.265172400002484,
+  "usage": {
+   "prompt_tokens": 454,
+   "completion_tokens": 51,
+   "total_tokens": 505
+  },
+  "raw_response": {
+   "id": "gen-1783407018-GA7w2eJCbCmvBwtqpJAQ",
+   "object": "chat.completion",
+   "created": 1783407018,
+   "model": "qwen/qwen3-vl-235b-a22b-instruct",
+   "provider": "Novita",
+   "system_fingerprint": null,
+   "service_tier": null,
+   "choices": [
+    {
+     "index": 0,
+     "logprobs": null,
+     "finish_reason": "stop",
+     "native_finish_reason": "stop",
+     "message": {
+      "role": "assistant",
+      "content": "```json\n[\n\t{\"bbox_2d\": [336, 822, 645, 932], \"label\": \"spatula\", \"confidence\": 0.99}\n]\n```",
+      "refusal": null,
+      "reasoning": null
+     }
+    }
+   ],
+   "usage": {
+    "prompt_tokens": 454,
+    "completion_tokens": 51,
+    "total_tokens": 505,
+    "cost": 0.0002127,
+    "is_byok": false,
+    "prompt_tokens_details": {
+     "cached_tokens": 0,
+     "cache_write_tokens": 0,
+     "audio_tokens": 0,
+     "video_tokens": 0
+    },
+    "cost_details": {
+     "upstream_inference_cost": 0.0002127,
+     "upstream_inference_prompt_cost": 0.0001362,
+     "upstream_inference_completions_cost": 7.65e-05
+    },
+    "completion_tokens_details": {
+     "reasoning_tokens": 0,
+     "image_tokens": 0,
+     "audio_tokens": 0
+    }
+   }
+  }
+ },
+ "fallback": false,
+ "ts": "2026-07-07T06:50:15.190846+00:00",
+ "fused": [
+  {
+   "label": "spatula",
+   "box": [
+    13.094740867614746,
+    498.9764099121094,
+    404.8782958984375,
+    612.0
+   ],
+   "score": 0.3344663083553314
+  },
+  {
+   "label": "spatula",
+   "box": [
+    199.51380920410156,
+    471.4358825683594,
+    468.1781921386719,
+    568.9060668945312
+   ],
+   "score": 0.08393906056880951
+  },
+  {
+   "label": "spatula",
+   "box": [
+    1.799155354499817,
+    348.1185302734375,
+    608.2025146484375,
+    612.0
+   ],
+   "score": 0.05893717333674431
+  },
+  {
+   "label": "spatula",
+   "box": [
+    157.38796997070312,
+    227.16909790039062,
+    356.1379699707031,
+    314.81585693359375
+   ],
+   "score": 0.00962956715375185
+  },
+  {
+   "label": "spatula",
+   "box": [
+    4.6086649894714355,
+    550.3732299804688,
+    258.74322509765625,
+    612.0
+   ],
+   "score": 0.0014831587905064225
+  },
+  {
+   "label": "spatula",
+   "box": [
+    205.632,
+    503.064,
+    394.74,
+    570.384
+   ],
+   "score": 0.4
+  }
+ ],
+ "latency_total_sec": 4.37242640000477
+}

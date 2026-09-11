@@ -1,0 +1,30 @@
+{
+  "model": "gemma-3-12b-it",
+  "strategy": "iterative",
+  "image": "/home/maxim/PycharmProjects/zero-shot-detection-benchmark/data/subsets/lvis_v1_val_unseen/images/000000308735.jpg",
+  "labels": [
+    "spatula",
+    "blender",
+    "microscope",
+    "snowboard",
+    "stapler_(stapling_machine)"
+  ],
+  "detections": [
+    {
+      "box_2d": [
+        751,
+        250,
+        833,
+        388
+      ],
+      "label": "spatula"
+    }
+  ],
+  "latency_sec": 18.050862872973084,
+  "raw_response": {
+    "identification": "spatula",
+    "localization": {
+      "spatula": "```json\n[{\"box_2d\":[751,250,833,388],\"label\":\"spatula\"}]\n```"
+    }
+  }
+}

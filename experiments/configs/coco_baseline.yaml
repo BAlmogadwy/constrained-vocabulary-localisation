@@ -1,0 +1,23 @@
+dataset:
+  images_dir: data/raw/coco2017/val2017
+  limit: null  # set to an integer for quick smoke tests
+
+labels:
+  file: prompts/coco_unseen_labels.txt
+  values:
+    - microwave
+    - toaster
+
+output:
+  dir: results/raw/traditional/coco2017_val
+
+models:
+  - name: yolo_world
+    device: cuda:0
+    output_name: yolo_world_coco_val.json
+  - name: grounding_dino
+    device: cuda:0
+    output_name: grounding_dino_coco_val.json
+  - name: owl_vit
+    device: cuda:0
+    output_name: owl_vit_coco_val.json

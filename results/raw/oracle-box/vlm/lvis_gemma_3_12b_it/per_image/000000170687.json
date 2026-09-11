@@ -1,0 +1,90 @@
+{
+  "image": "/home/maxim/PycharmProjects/zero-shot-detection-benchmark/data/subsets/lvis_v1_val_unseen/images/000000170687.jpg",
+  "image_id": 170687,
+  "file_name": "000000170687.jpg",
+  "num_crops": 3,
+  "crops": [
+    {
+      "annotation_id": 139113,
+      "bbox": [
+        71.66,
+        301.97,
+        324.54,
+        65.64
+      ],
+      "category_id": 976,
+      "gt_label": "snowboard",
+      "labels": [
+        "snowboard",
+        "blender",
+        "microscope",
+        "musical_instrument",
+        "stapler_(stapling_machine)"
+      ],
+      "prediction": "snowboard",
+      "normalized_prediction": "snowboard",
+      "matched_label": "snowboard",
+      "correct": true,
+      "latency_sec": 14.40803007100476,
+      "raw_response": {
+        "prediction": "snowboard",
+        "raw_response": "snowboard"
+      }
+    },
+    {
+      "annotation_id": 139114,
+      "bbox": [
+        235.25,
+        264.73,
+        264.75,
+        90.31
+      ],
+      "category_id": 976,
+      "gt_label": "snowboard",
+      "labels": [
+        "snowboard",
+        "blender",
+        "microscope",
+        "musical_instrument",
+        "stapler_(stapling_machine)"
+      ],
+      "prediction": "snowboard",
+      "normalized_prediction": "snowboard",
+      "matched_label": "snowboard",
+      "correct": true,
+      "latency_sec": 14.408772204013076,
+      "raw_response": {
+        "prediction": "snowboard",
+        "raw_response": "snowboard"
+      }
+    },
+    {
+      "annotation_id": 139115,
+      "bbox": [
+        0.0,
+        313.45,
+        93.43,
+        54.21
+      ],
+      "category_id": 976,
+      "gt_label": "snowboard",
+      "labels": [
+        "snowboard",
+        "blender",
+        "microscope",
+        "musical_instrument",
+        "stapler_(stapling_machine)"
+      ],
+      "prediction": "snowboard",
+      "normalized_prediction": "snowboard",
+      "matched_label": "snowboard",
+      "correct": true,
+      "latency_sec": 14.41010646900395,
+      "raw_response": {
+        "prediction": "snowboard",
+        "raw_response": "snowboard"
+      }
+    }
+  ],
+  "prompt": "You are an object recognition assistant.\n\nYou will see a cropped image that contains exactly one object\nfrom the following LVIS categories (unseen split):\n\n- snowboard\n- blender\n- microscope\n- musical_instrument\n- stapler_(stapling_machine)\n\nYour task:\n- Return ONLY the best matching category name from this list.\n- Do not output explanations or extra text.\n\nAnswer with a single string: \"class_name\"."
+}

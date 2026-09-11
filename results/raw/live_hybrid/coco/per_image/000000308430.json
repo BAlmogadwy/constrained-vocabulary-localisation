@@ -1,0 +1,272 @@
+{
+ "image": "000000308430.jpg",
+ "labels": [
+  "book",
+  "oven",
+  "clock",
+  "scissors",
+  "sink",
+  "toaster",
+  "toothbrush"
+ ],
+ "tau": 0.4,
+ "detector": {
+  "detections": [
+   {
+    "label": "book",
+    "box": [
+     0.0,
+     142.50115966796875,
+     61.700843811035156,
+     474.7626953125
+    ],
+    "score": 0.11260277032852173
+   },
+   {
+    "label": "toaster",
+    "box": [
+     0.188140869140625,
+     0.0,
+     299.68341064453125,
+     75.79666900634766
+    ],
+    "score": 0.08936329185962677
+   },
+   {
+    "label": "sink",
+    "box": [
+     114.51251220703125,
+     3.594329833984375,
+     639.9112548828125,
+     480.0
+    ],
+    "score": 0.06701336801052094
+   },
+   {
+    "label": "oven",
+    "box": [
+     0.120452880859375,
+     0.03437042236328125,
+     343.1019592285156,
+     75.47651672363281
+    ],
+    "score": 0.04626734182238579
+   },
+   {
+    "label": "oven",
+    "box": [
+     0.0,
+     1.414520263671875,
+     639.5828857421875,
+     479.82110595703125
+    ],
+    "score": 0.031730491667985916
+   },
+   {
+    "label": "scissors",
+    "box": [
+     2.518310546875,
+     401.6620178222656,
+     318.61798095703125,
+     480.0
+    ],
+    "score": 0.008187948726117611
+   },
+   {
+    "label": "toothbrush",
+    "box": [
+     3.1329803466796875,
+     202.78330993652344,
+     122.22298431396484,
+     357.0560302734375
+    ],
+    "score": 0.002217470668256283
+   },
+   {
+    "label": "scissors",
+    "box": [
+     0.0,
+     200.74530029296875,
+     122.89614868164062,
+     471.64300537109375
+    ],
+    "score": 0.001846801838837564
+   },
+   {
+    "label": "scissors",
+    "box": [
+     523.091064453125,
+     100.27139282226562,
+     640.0,
+     279.77294921875
+    ],
+    "score": 0.0015310454182326794
+   }
+  ],
+  "latency_sec": 0.038933399991947226
+ },
+ "detector_max_score": 0.11260277032852173,
+ "escalated": true,
+ "vlm": {
+  "model": "qwen/qwen3-vl-235b-a22b-instruct",
+  "detections": [
+   {
+    "label": "book",
+    "box": [
+     0.0,
+     144.0,
+     61.44,
+     356.16
+    ],
+    "score": 1.0
+   }
+  ],
+  "latency_sec": 2.4420435999927577,
+  "usage": {
+   "prompt_tokens": 390,
+   "completion_tokens": 46,
+   "total_tokens": 436
+  },
+  "raw_response": {
+   "id": "gen-1783409305-HpTF0e2tppmfZJf6mTrv",
+   "object": "chat.completion",
+   "created": 1783409305,
+   "model": "qwen/qwen3-vl-235b-a22b-instruct",
+   "provider": "Parasail",
+   "system_fingerprint": null,
+   "service_tier": null,
+   "choices": [
+    {
+     "index": 0,
+     "logprobs": null,
+     "finish_reason": "stop",
+     "native_finish_reason": "stop",
+     "message": {
+      "role": "assistant",
+      "content": "```json\n[\n\t{\"bbox_2d\": [0, 300, 96, 742], \"label\": \"book\", \"confidence\": 0.95}\n]\n```",
+      "refusal": null,
+      "reasoning": null
+     }
+    }
+   ],
+   "usage": {
+    "prompt_tokens": 390,
+    "completion_tokens": 46,
+    "total_tokens": 436,
+    "cost": 0.0001693,
+    "is_byok": false,
+    "prompt_tokens_details": {
+     "cached_tokens": 0,
+     "cache_write_tokens": 0,
+     "audio_tokens": 0,
+     "video_tokens": 0
+    },
+    "cost_details": {
+     "upstream_inference_cost": 0.0001693,
+     "upstream_inference_prompt_cost": 8.19e-05,
+     "upstream_inference_completions_cost": 8.74e-05
+    },
+    "completion_tokens_details": {
+     "reasoning_tokens": 0,
+     "image_tokens": 0,
+     "audio_tokens": 0
+    }
+   }
+  }
+ },
+ "fallback": false,
+ "ts": "2026-07-07T07:28:23.345241+00:00",
+ "fused": [
+  {
+   "label": "book",
+   "box": [
+    0.0,
+    142.50115966796875,
+    61.700843811035156,
+    474.7626953125
+   ],
+   "score": 0.4126027703285217
+  },
+  {
+   "label": "toaster",
+   "box": [
+    0.188140869140625,
+    0.0,
+    299.68341064453125,
+    75.79666900634766
+   ],
+   "score": 0.08936329185962677
+  },
+  {
+   "label": "sink",
+   "box": [
+    114.51251220703125,
+    3.594329833984375,
+    639.9112548828125,
+    480.0
+   ],
+   "score": 0.06701336801052094
+  },
+  {
+   "label": "oven",
+   "box": [
+    0.120452880859375,
+    0.03437042236328125,
+    343.1019592285156,
+    75.47651672363281
+   ],
+   "score": 0.04626734182238579
+  },
+  {
+   "label": "oven",
+   "box": [
+    0.0,
+    1.414520263671875,
+    639.5828857421875,
+    479.82110595703125
+   ],
+   "score": 0.031730491667985916
+  },
+  {
+   "label": "scissors",
+   "box": [
+    2.518310546875,
+    401.6620178222656,
+    318.61798095703125,
+    480.0
+   ],
+   "score": 0.008187948726117611
+  },
+  {
+   "label": "toothbrush",
+   "box": [
+    3.1329803466796875,
+    202.78330993652344,
+    122.22298431396484,
+    357.0560302734375
+   ],
+   "score": 0.002217470668256283
+  },
+  {
+   "label": "scissors",
+   "box": [
+    0.0,
+    200.74530029296875,
+    122.89614868164062,
+    471.64300537109375
+   ],
+   "score": 0.001846801838837564
+  },
+  {
+   "label": "scissors",
+   "box": [
+    523.091064453125,
+    100.27139282226562,
+    640.0,
+    279.77294921875
+   ],
+   "score": 0.0015310454182326794
+  }
+ ],
+ "latency_total_sec": 2.480991299977177
+}

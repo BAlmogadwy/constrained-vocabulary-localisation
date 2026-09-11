@@ -1,0 +1,63 @@
+{
+  "model": "gemini-2.5-flash",
+  "strategy": "single_query",
+  "image": "/home/maxim/PycharmProjects/zero-shot-detection-benchmark/data/raw/coco2017/val2017/000000091406.jpg",
+  "labels": [
+    "book",
+    "refrigerator",
+    "scissors",
+    "sink",
+    "teddy bear",
+    "toothbrush",
+    "vase"
+  ],
+  "detections": [
+    {
+      "box_2d": [
+        335,
+        207,
+        354,
+        264
+      ],
+      "label": "book"
+    },
+    {
+      "box_2d": [
+        356,
+        207,
+        380,
+        263
+      ],
+      "label": "book"
+    },
+    {
+      "box_2d": [
+        334,
+        280,
+        354,
+        332
+      ],
+      "label": "book"
+    },
+    {
+      "box_2d": [
+        357,
+        280,
+        381,
+        332
+      ],
+      "label": "book"
+    },
+    {
+      "box_2d": [
+        455,
+        459,
+        511,
+        497
+      ],
+      "label": "teddy bear"
+    }
+  ],
+  "latency_sec": 6.552295188012067,
+  "raw_response": "```json\n[\n  {\"box_2d\": [335, 207, 354, 264], \"label\": \"book\"},\n  {\"box_2d\": [356, 207, 380, 263], \"label\": \"book\"},\n  {\"box_2d\": [334, 280, 354, 332], \"label\": \"book\"},\n  {\"box_2d\": [357, 280, 381, 332], \"label\": \"book\"},\n  {\"box_2d\": [455, 459, 511, 497], \"label\": \"teddy bear\"}\n]\n```"
+}

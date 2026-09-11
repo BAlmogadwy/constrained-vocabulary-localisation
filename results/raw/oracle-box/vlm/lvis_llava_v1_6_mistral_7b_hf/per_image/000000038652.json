@@ -1,0 +1,111 @@
+{
+  "image": "/home/maxim/PycharmProjects/zero-shot-detection-benchmark/data/subsets/lvis_v1_val_unseen/images/000000038652.jpg",
+  "image_id": 38652,
+  "file_name": "000000038652.jpg",
+  "num_crops": 3,
+  "crops": [
+    {
+      "annotation_id": 131922,
+      "bbox": [
+        573.47,
+        248.74,
+        38.46,
+        223.07
+      ],
+      "category_id": 993,
+      "gt_label": "spatula",
+      "labels": [
+        "spatula",
+        "blender",
+        "coffee_maker",
+        "sewing_machine",
+        "stapler_(stapling_machine)"
+      ],
+      "prediction": "stapler_(stapling_machine)",
+      "normalized_prediction": "stapler (stapling machine)",
+      "matched_label": "stapler_(stapling_machine)",
+      "correct": false,
+      "latency_sec": 0.2297389059967827,
+      "raw_response": {
+        "prediction": "stapler_(stapling_machine)",
+        "raw_response": "USER:  \nYou are an object recognition assistant.\n\nYou will see a cropped image that contains exactly one object\nfrom the following LVIS categories (unseen split):\n\n- spatula\n- blender\n- coffee_maker\n- sewing_machine\n- stapler_(stapling_machine)\n\nYour task:\n- Return ONLY the best matching category name from this list.\n- Do not output explanations or extra text.\n\nAnswer with a single string: \"class_name\".\nASSISTANT: stapler_(stapling_machine) ",
+        "labels": [
+          "spatula",
+          "blender",
+          "coffee_maker",
+          "sewing_machine",
+          "stapler_(stapling_machine)"
+        ]
+      }
+    },
+    {
+      "annotation_id": 131923,
+      "bbox": [
+        532.01,
+        232.66,
+        46.41,
+        238.47
+      ],
+      "category_id": 993,
+      "gt_label": "spatula",
+      "labels": [
+        "spatula",
+        "blender",
+        "coffee_maker",
+        "sewing_machine",
+        "stapler_(stapling_machine)"
+      ],
+      "prediction": "coffee_maker",
+      "normalized_prediction": "coffee maker",
+      "matched_label": "coffee_maker",
+      "correct": false,
+      "latency_sec": 0.18935940199298784,
+      "raw_response": {
+        "prediction": "coffee_maker",
+        "raw_response": "USER:  \nYou are an object recognition assistant.\n\nYou will see a cropped image that contains exactly one object\nfrom the following LVIS categories (unseen split):\n\n- spatula\n- blender\n- coffee_maker\n- sewing_machine\n- stapler_(stapling_machine)\n\nYour task:\n- Return ONLY the best matching category name from this list.\n- Do not output explanations or extra text.\n\nAnswer with a single string: \"class_name\".\nASSISTANT: \"coffee_maker\" ",
+        "labels": [
+          "spatula",
+          "blender",
+          "coffee_maker",
+          "sewing_machine",
+          "stapler_(stapling_machine)"
+        ]
+      }
+    },
+    {
+      "annotation_id": 131924,
+      "bbox": [
+        591.5,
+        274.7,
+        47.22,
+        195.9
+      ],
+      "category_id": 993,
+      "gt_label": "spatula",
+      "labels": [
+        "spatula",
+        "blender",
+        "coffee_maker",
+        "sewing_machine",
+        "stapler_(stapling_machine)"
+      ],
+      "prediction": "coffee_maker",
+      "normalized_prediction": "coffee maker",
+      "matched_label": "coffee_maker",
+      "correct": false,
+      "latency_sec": 0.19572235102532431,
+      "raw_response": {
+        "prediction": "coffee_maker",
+        "raw_response": "USER:  \nYou are an object recognition assistant.\n\nYou will see a cropped image that contains exactly one object\nfrom the following LVIS categories (unseen split):\n\n- spatula\n- blender\n- coffee_maker\n- sewing_machine\n- stapler_(stapling_machine)\n\nYour task:\n- Return ONLY the best matching category name from this list.\n- Do not output explanations or extra text.\n\nAnswer with a single string: \"class_name\".\nASSISTANT: \"coffee_maker\" ",
+        "labels": [
+          "spatula",
+          "blender",
+          "coffee_maker",
+          "sewing_machine",
+          "stapler_(stapling_machine)"
+        ]
+      }
+    }
+  ],
+  "prompt": "You are an object recognition assistant.\n\nYou will see a cropped image that contains exactly one object\nfrom the following LVIS categories (unseen split):\n\n- spatula\n- blender\n- coffee_maker\n- sewing_machine\n- stapler_(stapling_machine)\n\nYour task:\n- Return ONLY the best matching category name from this list.\n- Do not output explanations or extra text.\n\nAnswer with a single string: \"class_name\"."
+}

@@ -1,0 +1,34 @@
+{
+  "model": "owl_vit",
+  "strategy": "default",
+  "image": "/home/maxim/PycharmProjects/zero-shot-detection-benchmark/data/subsets/lvis_v1_val_unseen/images/000000334470.jpg",
+  "labels": [
+    "stapler_(stapling_machine)",
+    "hair_dryer",
+    "lawn_mower",
+    "musical_instrument",
+    "sewing_machine"
+  ],
+  "result": {
+    "detections": [
+      {
+        "label": "stapler_(stapling_machine)",
+        "score": 0.28092217445373535,
+        "box_2d": [
+          224.88900756835938,
+          202.15216064453125,
+          287.1521301269531,
+          292.8884582519531
+        ],
+        "box": [
+          224.88900756835938,
+          202.15216064453125,
+          287.1521301269531,
+          292.8884582519531
+        ]
+      }
+    ],
+    "latency_sec": 0.08072310499846935,
+    "raw_response": null
+  }
+}

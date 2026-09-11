@@ -1,0 +1,34 @@
+{
+  "model": "owl_vit",
+  "strategy": "default",
+  "image": "/home/maxim/PycharmProjects/zero-shot-detection-benchmark/data/subsets/lvis_v1_val_unseen/images/000000167486.jpg",
+  "labels": [
+    "blender",
+    "hair_dryer",
+    "musical_instrument",
+    "snowboard",
+    "spatula"
+  ],
+  "result": {
+    "detections": [
+      {
+        "label": "musical_instrument",
+        "score": 0.21007350087165833,
+        "box_2d": [
+          240.2315673828125,
+          172.54591369628906,
+          302.2226257324219,
+          219.6975860595703
+        ],
+        "box": [
+          240.2315673828125,
+          172.54591369628906,
+          302.2226257324219,
+          219.6975860595703
+        ]
+      }
+    ],
+    "latency_sec": 0.08059519529342651,
+    "raw_response": null
+  }
+}

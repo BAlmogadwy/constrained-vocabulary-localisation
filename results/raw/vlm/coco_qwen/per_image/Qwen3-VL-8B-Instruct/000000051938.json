@@ -1,0 +1,194 @@
+{
+  "model": "Qwen3-VL-8B-Instruct",
+  "strategy": "single_query",
+  "image": "/home/maxim/PycharmProjects/zero-shot-detection-benchmark/data/raw/coco2017/val2017/000000051938.jpg",
+  "labels": [
+    "microwave",
+    "oven",
+    "toaster",
+    "sink",
+    "refrigerator",
+    "book",
+    "clock",
+    "vase",
+    "scissors",
+    "teddy bear",
+    "hair drier",
+    "toothbrush"
+  ],
+  "detections": [
+    {
+      "box_2d": [
+        444.0,
+        334.0,
+        512.0,
+        578.0
+      ],
+      "label": "person"
+    },
+    {
+      "box_2d": [
+        564.0,
+        466.0,
+        593.0,
+        542.0
+      ],
+      "label": "person"
+    },
+    {
+      "box_2d": [
+        631.0,
+        452.0,
+        652.0,
+        521.0
+      ],
+      "label": "person"
+    },
+    {
+      "box_2d": [
+        620.0,
+        416.0,
+        634.0,
+        462.0
+      ],
+      "label": "person"
+    },
+    {
+      "box_2d": [
+        827.0,
+        416.0,
+        840.0,
+        452.0
+      ],
+      "label": "person"
+    },
+    {
+      "box_2d": [
+        783.0,
+        435.0,
+        793.0,
+        462.0
+      ],
+      "label": "person"
+    },
+    {
+      "box_2d": [
+        793.0,
+        435.0,
+        802.0,
+        462.0
+      ],
+      "label": "person"
+    },
+    {
+      "box_2d": [
+        420.0,
+        500.0,
+        430.0,
+        550.0
+      ],
+      "label": "person"
+    },
+    {
+      "box_2d": [
+        438.0,
+        506.0,
+        452.0,
+        556.0
+      ],
+      "label": "person"
+    },
+    {
+      "box_2d": [
+        530.0,
+        483.0,
+        542.0,
+        512.0
+      ],
+      "label": "person"
+    },
+    {
+      "box_2d": [
+        520.0,
+        483.0,
+        530.0,
+        512.0
+      ],
+      "label": "person"
+    },
+    {
+      "box_2d": [
+        644.0,
+        452.0,
+        657.0,
+        483.0
+      ],
+      "label": "person"
+    },
+    {
+      "box_2d": [
+        411.0,
+        345.0,
+        512.0,
+        388.0
+      ],
+      "label": "snowboard"
+    },
+    {
+      "box_2d": [
+        567.0,
+        521.0,
+        592.0,
+        542.0
+      ],
+      "label": "snowboard"
+    },
+    {
+      "box_2d": [
+        631.0,
+        512.0,
+        652.0,
+        521.0
+      ],
+      "label": "snowboard"
+    },
+    {
+      "box_2d": [
+        620.0,
+        452.0,
+        634.0,
+        462.0
+      ],
+      "label": "snowboard"
+    },
+    {
+      "box_2d": [
+        444.0,
+        550.0,
+        452.0,
+        556.0
+      ],
+      "label": "snowboard"
+    },
+    {
+      "box_2d": [
+        438.0,
+        556.0,
+        452.0,
+        565.0
+      ],
+      "label": "snowboard"
+    },
+    {
+      "box_2d": [
+        420.0,
+        550.0,
+        430.0,
+        556.0
+      ],
+      "label": "snowboard"
+    }
+  ],
+  "latency_sec": 301.4013878669939,
+  "raw_response": "user\nYou are an object detection assistant. Given the image and the list of target classes, return detections as JSON.\nTarget classes: microwave, oven, toaster, sink, refrigerator, book, clock, vase, scissors, teddy bear, hair drier, toothbrush.\nOutput format: [{\"box_2d\":[x1,y1,x2,y2],\"label\":\"class_name\"}...]\nUse pixel coordinates relative to the input image. Return JSON only.\nassistant\n```json\n[\n\t{\"box_2d\": [444, 334, 512, 578],\"label\":\"person\"},\n\t{\"bbox_2d\": [564, 466, 593, 542],\"label\":\"person\"},\n\t{\"bbox_2d\": [631, 452, 652, 521],\"label\":\"person\"},\n\t{\"bbox_2d\": [620, 416, 634, 462],\"label\":\"person\"},\n\t{\"bbox_2d\": [827, 416, 840, 452],\"label\":\"person\"},\n\t{\"bbox_2d\": [783, 435, 793, 462],\"label\":\"person\"},\n\t{\"bbox_2d\": [793, 435, 802, 462],\"label\":\"person\"},\n\t{\"bbox_2d\": [420, 500, 430, 550],\"label\":\"person\"},\n\t{\"bbox_2d\": [438, 506, 452, 556],\"label\":\"person\"},\n\t{\"bbox_2d\": [530, 483, 542, 512],\"label\":\"person\"},\n\t{\"bbox_2d\": [520, 483, 530, 512],\"label\":\"person\"},\n\t{\"bbox_2d\": [644, 452, 657, 483],\"label\":\"person\"},\n\t{\"bbox_2d\": [411, 345, 512, 388],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [567, 521, 592, 542],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [631, 512, 652, 521],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [620, 452, 634, 462],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [444, 550, 452, 556],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [438, 556, 452, 565],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [420, 550, 430, 556],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [438, 556, 452, 565],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [420, 550, 430, 556],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [438, 556, 452, 565],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [420, 550, 430, 556],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [438, 556, 452, 565],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [420, 550, 430, 556],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [438, 556, 452, 565],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [420, 550, 430, 556],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [438, 556, 452, 565],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [420, 550, 430, 556],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [438, 556, 452, 565],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [420, 550, 430, 556],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [438, 556, 452, 565],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [420, 550, 430, 556],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [438, 556, 452, 565],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [420, 550, 430, 556],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [438, 556, 452, 565],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [420, 550, 430, 556],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [438, 556, 452, 565],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [420, 550, 430, 556],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [438, 556, 452, 565],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [420, 550, 430, 556],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [438, 556, 452, 565],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [420, 550, 430, 556],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [438, 556, 452, 565],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [420, 550, 430, 556],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [438, 556, 452, 565],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [420, 550, 430, 556],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [438, 556, 452, 565],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [420, 550, 430, 556],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [438, 556, 452, 565],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [420, 550, 430, 556],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [438, 556, 452, 565],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [420, 550, 430, 556],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [438, 556, 452, 565],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [420, 550, 430, 556],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [438, 556, 452, 565],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [420, 550, 430, 556],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [438, 556, 452, 565],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [420, 550, 430, 556],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [438, 556, 452, 565],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [420, 550, 430, 556],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [438, 556, 452, 565],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [420, 550, 430, 556],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [438, 556, 452, 565],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [420, 550, 430, 556],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [438, 556, 452, 565],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [420, 550, 430, 556],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [438, 556, 452, 565],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [420, 550, 430, 556],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [438, 556, 452, 565],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [420, 550, 430, 556],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [438, 556, 452, 565],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [420, 550, 430, 556],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [438, 556, 452, 565],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [420, 550, 430, 556],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [438, 556, 452, 565],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [420, 550, 430, 556],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [438, 556, 452, 565],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [420, 550, 430, 556],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [438, 556, 452, 565],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [420, 550, 430, 556],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [438, 556, 452, 565],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [420, 550, 430, 556],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [438, 556, 452, 565],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [420, 550, 430, 556],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [438, 556, 452, 565],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [420, 550, 430, 556],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [438, 556, 452, 565],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [420, 550, 430, 556],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [438, 556, 452, 565],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [420, 550, 430, 556],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [438, 556, 452, 565],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [420, 550, 430, 556],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [438, 556, 452, 565],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [420, 550, 430, 556],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [438, 556, 452, 565],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [420, 550, 430, 556],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [438, 556, 452, 565],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [420, 550, 430, 556],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [438, 556, 452, 565],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [420, 550, 430, 556],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [438, 556, 452, 565],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [420, 550, 430, 556],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [438, 556, 452, 565],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [420, 550, 430, 556],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [438, 556, 452, 565],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [420, 550, 430, 556],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [438, 556, 452, 565],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [420, 550, 430, 556],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [438, 556, 452, 565],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [420, 550, 430, 556],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [438, 556, 452, 565],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [420, 550, 430, 556],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [438, 556, 452, 565],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [420, 550, 430, 556],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [438, 556, 452, 565],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [420, 550, 430, 556],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [438, 556, 452, 565],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [420, 550, 430, 556],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [438, 556, 452, 565],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [420, 550, 430, 556],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [438, 556, 452, 565],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [420, 550, 430, 556],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [438, 556, 452, 565],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [420, 550, 430, 556],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [438, 556, 452, 565],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [420, 550, 430, 556],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [438, 556, 452, 565],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [420, 550, 430, 556],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [438, 556, 452, 565],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [420, 550, 430, 556],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [438, 556, 452, 565],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [420, 550, 430, 556],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [438, 556, 452, 565],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [420, 550, 430, 556],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [438, 556, 452, 565],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [420, 550, 430, 556],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [438, 556, 452, 565],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [420, 550, 430, 556],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [438, 556, 452, 565],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [420, 550, 430, 556],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [438, 556, 452, 565],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [420, 550, 430, 556],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [438, 556, 452, 565],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [420, 550, 430, 556],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [438, 556, 452, 565],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [420, 550, 430, 556],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [438, 556, 452, 565],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [420, 550, 430, 556],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [438, 556, 452, 565],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [420, 550, 430, 556],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [438, 556, 452, 565],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [420, 550, 430, 556],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [438, 556, 452, 565],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [420, 550, 430, 556],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [438, 556, 452, 565],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [420, 550, 430, 556],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [438, 556, 452, 565],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [420, 550, 430, 556],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [438, 556, 452, 565],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [420, 550, 430, 556],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [438, 556, 452, 565],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [420, 550, 430, 556],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [438, 556, 452, 565],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [420, 550, 430, 556],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [438, 556, 452, 565],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [420, 550, 430, 556],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [438, 556, 452, 565],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [420, 550, 430, 556],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [438, 556, 452, 565],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [420, 550, 430, 556],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [438, 556, 452, 565],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [420, 550, 430, 556],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [438, 556, 452, 565],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [420, 550, 430, 556],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [438, 556, 452, 565],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [420, 550, 430, 556],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [438, 556, 452, 565],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [420, 550, 430, 556],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [438, 556, 452, 565],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [420, 550, 430, 556],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [438, 556, 452, 565],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [420, 550, 430, 556],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [438, 556, 452, 565],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [420, 550, 430, 556],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [438, 556, 452, 565],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [420, 550, 430, 556],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [438, 556, 452, 565],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [420, 550, 430, 556],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [438, 556, 452, 565],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [420, 550, 430, 556],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [438, 556, 452, 565],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [420, 550, 430, 556],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [438, 556, 452, 565],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [420, 550, 430, 556],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [438, 556, 452, 565],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [420, 550, 430, 556],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [438, 556, 452, 565],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [420, 550, 430, 556],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [438, 556, 452, 565],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [420, 550, 430, 556],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [438, 556, 452, 565],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [420, 550, 430, 556],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [438, 556, 452, 565],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [420, 550, 430, 556],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [438, 556, 452, 565],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [420, 550, 430, 556],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [438, 556, 452, 565],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [420, 550, 430, 556],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [438, 556, 452, 565],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [420, 550, 430, 556],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [438, 556, 452, 565],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [420, 550, 430, 556],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [438, 556, 452, 565],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [420, 550, 430, 556],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [438, 556, 452, 565],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [420, 550, 430, 556],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [438, 556, 452, 565],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [420, 550, 430, 556],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [438, 556, 452, 565],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [420, 550, 430, 556],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [438, 556, 452, 565],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [420, 550, 430, 556],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [438, 556, 452, 565],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [420, 550, 430, 556],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [438, 556, 452, 565],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [420, 550, 430, 556],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [438, 556, 452, 565],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [420, 550, 430, 556],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [438, 556, 452, 565],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [420, 550, 430, 556],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [438, 556, 452, 565],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [420, 550, 430, 556],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [438, 556, 452, 565],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [420, 550, 430, 556],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [438, 556, 452, 565],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [420, 550, 430, 556],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [438, 556, 452, 565],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [420, 550, 430, 556],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [438, 556, 452, 565],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [420, 550, 430, 556],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [438, 556, 452, 565],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [420, 550, 430, 556],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [438, 556, 452, 565],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [420, 550, 430, 556],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [438, 556, 452, 565],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [420, 550, 430, 556],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [438, 556, 452, 565],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [420, 550, 430, 556],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [438, 556, 452, 565],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [420, 550, 430, 556],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [438, 556, 452, 565],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [420, 550, 430, 556],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [438, 556, 452, 565],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [420, 550, 430, 556],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [438, 556, 452, 565],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [420, 550, 430, 556],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [438, 556, 452, 565],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [420, 550, 430, 556],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [438, 556, 452, 565],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [420, 550, 430, 556],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [438, 556, 452, 565],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [420, 550, 430, 556],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [438, 556, 452, 565],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [420, 550, 430, 556],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [438, 556, 452, 565],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [420, 550, 430, 556],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [438, 556, 452, 565],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [420, 550, 430, 556],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [438, 556, 452, 565],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [420, 550, 430, 556],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [438, 556, 452, 565],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [420, 550, 430, 556],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [438, 556, 452, 565],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [420, 550, 430, 556],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [438, 556, 452, 565],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [420, 550, 430, 556],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [438, 556, 452, 565],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [420, 550, 430, 556],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [438, 556, 452, 565],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [420, 550, 430, 556],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [438, 556, 452, 565],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [420, 550, 430, 556],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [438, 556, 452, 565],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [420, 550, 430, 556],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [438, 556, 452, 565],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [420, 550, 430, 556],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [438, 556, 452, 565],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [420, 550, 430, 556],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [438, 556, 452, 565],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [420, 550, 430, 556],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [438, 556, 452, 565],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [420, 550, 430, 556],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [438, 556, 452, 565],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [420, 550, 430, 556],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [438, 556, 452, 565],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [420, 550, 430, 556],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [438, 556, 452, 565],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [420, 550, 430, 556],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [438, 556, 452, 565],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [420, 550, 430, 556],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [438, 556, 452, 565],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [420, 550, 430, 556],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [438, 556, 452, 565],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [420, 550, 430, 556],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [438, 556, 452, 565],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [420, 550, 430, 556],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [438, 556, 452, 565],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [420, 550, 430, 556],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [438, 556, 452, 565],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [420, 550, 430, 556],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [438, 556, 452, 565],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [420, 550, 430, 556],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [438, 556, 452, 565],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [420, 550, 430, 556],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [438, 556, 452, 565],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [420, 550, 430, 556],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [438, 556, 452, 565],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [420, 550, 430, 556],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [438, 556, 452, 565],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [420, 550, 430, 556],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [438, 556, 452, 565],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [420, 550, 430, 556],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [438, 556, 452, 565],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [420, 550, 430, 556],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [438, 556, 452, 565],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [420, 550, 430, 556],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [438, 556, 452, 565],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [420, 550, 430, 556],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [438, 556, 452, 565],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [420, 550, 430, 556],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [438, 556, 452, 565],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [420, 550, 430, 556],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [438, 556, 452, 565],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [420, 550, 430, 556],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [438, 556, 452, 565],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [420, 550, 430, 556],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [438, 556, 452, 565],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [420, 550, 430, 556],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [438, 556, 452, 565],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [420, 550, 430, 556],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [438, 556, 452, 565],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [420, 550, 430, 556],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [438, 556, 452, 565],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [420, 550, 430, 556],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [438, 556, 452, 565],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [420, 550, 430, 556],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [438, 556, 452, 565],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [420, 550, 430, 556],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [438, 556, 452, 565],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [420, 550, 430, 556],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [438, 556, 452, 565],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [420, 550, 430, 556],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [438, 556, 452, 565],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [420, 550, 430, 556],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [438, 556, 452, 565],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [420, 550, 430, 556],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [438, 556, 452, 565],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [420, 550, 430, 556],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [438, 556, 452, 565],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [420, 550, 430, 556],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [438, 556, 452, 565],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [420, 550, 430, 556],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [438, 556, 452, 565],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [420, 550, 430, 556],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [438, 556, 452, 565],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [420, 550, 430, 556],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [438, 556, 452, 565],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [420, 550, 430, 556],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [438, 556, 452, 565],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [420, 550, 430, 556],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [438, 556, 452, 565],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [420, 550, 430, 556],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [438, 556, 452, 565],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [420, 550, 430, 556],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [438, 556, 452, 565],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [420, 550, 430, 556],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [438, 556, 452, 565],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [420, 550, 430, 556],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [438, 556, 452, 565],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [420, 550, 430, 556],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [438, 556, 452, 565],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [420, 550, 430, 556],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [438, 556, 452, 565],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [420, 550, 430, 556],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [438, 556, 452, 565],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [420, 550, 430, 556],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [438, 556, 452, 565],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [420, 550, 430, 556],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [438, 556, 452, 565],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [420, 550, 430, 556],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [438, 556, 452, 565],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [420, 550, 430, 556],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [438, 556, 452, 565],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [420, 550, 430, 556],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [438, 556, 452, 565],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [420, 550, 430, 556],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [438, 556, 452, 565],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [420, 550, 430, 556],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [438, 556, 452, 565],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [420, 550, 430, 556],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [438, 556, 452, 565],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [420, 550, 430, 556],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [438, 556, 452, 565],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [420, 550, 430, 556],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [438, 556, 452, 565],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [420, 550, 430, 556],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [438, 556, 452, 565],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [420, 550, 430, 556],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [438, 556, 452, 565],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [420, 550, 430, 556],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [438, 556, 452, 565],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [420, 550, 430, 556],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [438, 556, 452, 565],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [420, 550, 430, 556],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [438, 556, 452, 565],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [420, 550, 430, 556],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [438, 556, 452, 565],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [420, 550, 430, 556],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [438, 556, 452, 565],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [420, 550, 430, 556],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [438, 556, 452, 565],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [420, 550, 430, 556],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [438, 556, 452, 565],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [420, 550, 430, 556],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [438, 556, 452, 565],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [420, 550, 430, 556],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [438, 556, 452, 565],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [420, 550, 430, 556],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [438, 556, 452, 565],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [420, 550, 430, 556],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [438, 556, 452, 565],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [420, 550, 430, 556],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [438, 556, 452, 565],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [420, 550, 430, 556],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [438, 556, 452, 565],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [420, 550, 430, 556],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [438, 556, 452, 565],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [420, 550, 430, 556],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [438, 556, 452, 565],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [420, 550, 430, 556],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [438, 556, 452, 565],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [420, 550, 430, 556],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [438, 556, 452, 565],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [420, 550, 430, 556],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [438, 556, 452, 565],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [420, 550, 430, 556],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [438, 556, 452, 565],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [420, 550, 430, 556],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [438, 556, 452, 565],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [420, 550, 430, 556],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [438, 556, 452, 565],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [420, 550, 430, 556],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [438, 556, 452, 565],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [420, 550, 430, 556],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [438, 556, 452, 565],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [420, 550, 430, 556],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [438, 556, 452, 565],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [420, 550, 430, 556],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [438, 556, 452, 565],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [420, 550, 430, 556],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [438, 556, 452, 565],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [420, 550, 430, 556],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [438, 556, 452, 565],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [420, 550, 430, 556],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [438, 556, 452, 565],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [420, 550, 430, 556],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [438, 556, 452, 565],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [420, 550, 430, 556],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [438, 556, 452, 565],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [420, 550, 430, 556],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [438, 556, 452, 565],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [420, 550, 430, 556],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [438, 556, 452, 565],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [420, 550, 430, 556],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [438, 556, 452, 565],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [420, 550, 430, 556],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [438, 556, 452, 565],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [420, 550, 430, 556],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [438, 556, 452, 565],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [420, 550, 430, 556],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [438, 556, 452, 565],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [420, 550, 430, 556],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [438, 556, 452, 565],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [420, 550, 430, 556],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [438, 556, 452, 565],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [420, 550, 430, 556],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [438, 556, 452, 565],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [420, 550, 430, 556],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [438, 556, 452, 565],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [420, 550, 430, 556],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [438, 556, 452, 565],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [420, 550, 430, 556],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [438, 556, 452, 565],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [420, 550, 430, 556],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [438, 556, 452, 565],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [420, 550, 430, 556],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [438, 556, 452, 565],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [420, 550, 430, 556],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [438, 556, 452, 565],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [420, 550, 430, 556],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [438, 556, 452, 565],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [420, 550, 430, 556],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [438, 556, 452, 565],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [420, 550, 430, 556],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": [438, 556, 452, 565],\"label\":\"snowboard\"},\n\t{\"bbox_2d\": ["
+}

@@ -1,0 +1,152 @@
+{
+ "image": "000000531036.jpg",
+ "labels": [
+  "book",
+  "clock",
+  "hair drier",
+  "refrigerator",
+  "scissors",
+  "toaster",
+  "vase"
+ ],
+ "tau": 0.4,
+ "detector": {
+  "detections": [
+   {
+    "label": "refrigerator",
+    "box": [
+     0.030181884765625,
+     219.7109375,
+     160.04312133789062,
+     406.14544677734375
+    ],
+    "score": 0.009382998570799828
+   },
+   {
+    "label": "book",
+    "box": [
+     387.59112548828125,
+     347.9927673339844,
+     411.61181640625,
+     358.9032897949219
+    ],
+    "score": 0.0033640151377767324
+   },
+   {
+    "label": "book",
+    "box": [
+     142.320068359375,
+     59.366363525390625,
+     480.0,
+     448.8200988769531
+    ],
+    "score": 0.001037507550790906
+   }
+  ],
+  "latency_sec": 0.04527109999617096
+ },
+ "detector_max_score": 0.009382998570799828,
+ "escalated": true,
+ "vlm": {
+  "model": "qwen/qwen3-vl-235b-a22b-instruct",
+  "detections": [
+   {
+    "label": "book",
+    "box": [
+     385.44,
+     342.4,
+     408.0,
+     358.4
+    ],
+    "score": 1.0
+   }
+  ],
+  "latency_sec": 3.161637099998188,
+  "usage": {
+   "prompt_tokens": 391,
+   "completion_tokens": 49,
+   "total_tokens": 440
+  },
+  "raw_response": {
+   "id": "gen-1783409885-HPjqsjEORMCcN8hPrtK6",
+   "object": "chat.completion",
+   "created": 1783409885,
+   "model": "qwen/qwen3-vl-235b-a22b-instruct",
+   "provider": "Parasail",
+   "system_fingerprint": null,
+   "service_tier": null,
+   "choices": [
+    {
+     "index": 0,
+     "logprobs": null,
+     "finish_reason": "stop",
+     "native_finish_reason": "stop",
+     "message": {
+      "role": "assistant",
+      "content": "```json\n[\n\t{\"box_2d\": [803, 535, 850, 560], \"label\": \"book\", \"confidence\": 0.99}\n]\n```",
+      "refusal": null,
+      "reasoning": null
+     }
+    }
+   ],
+   "usage": {
+    "prompt_tokens": 391,
+    "completion_tokens": 49,
+    "total_tokens": 440,
+    "cost": 0.00017345,
+    "is_byok": false,
+    "prompt_tokens_details": {
+     "cached_tokens": 16,
+     "cache_write_tokens": 0,
+     "audio_tokens": 0,
+     "video_tokens": 0
+    },
+    "cost_details": {
+     "upstream_inference_cost": 0.00017345,
+     "upstream_inference_prompt_cost": 8.035e-05,
+     "upstream_inference_completions_cost": 9.31e-05
+    },
+    "completion_tokens_details": {
+     "reasoning_tokens": 0,
+     "image_tokens": 0,
+     "audio_tokens": 0
+    }
+   }
+  }
+ },
+ "fallback": false,
+ "ts": "2026-07-07T07:38:02.984614+00:00",
+ "fused": [
+  {
+   "label": "refrigerator",
+   "box": [
+    0.030181884765625,
+    219.7109375,
+    160.04312133789062,
+    406.14544677734375
+   ],
+   "score": 0.009382998570799828
+  },
+  {
+   "label": "book",
+   "box": [
+    387.59112548828125,
+    347.9927673339844,
+    411.61181640625,
+    358.9032897949219
+   ],
+   "score": 0.3033640151377767
+  },
+  {
+   "label": "book",
+   "box": [
+    142.320068359375,
+    59.366363525390625,
+    480.0,
+    448.8200988769531
+   ],
+   "score": 0.001037507550790906
+  }
+ ],
+ "latency_total_sec": 3.2069404999929247
+}

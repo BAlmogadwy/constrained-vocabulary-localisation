@@ -1,0 +1,50 @@
+{
+  "model": "grounding_dino",
+  "strategy": "default",
+  "image": "/home/maxim/PycharmProjects/zero-shot-detection-benchmark/data/subsets/lvis_v1_val_unseen/images/000000178028.jpg",
+  "labels": [
+    "hair_dryer",
+    "lawn_mower",
+    "musical_instrument",
+    "snowboard",
+    "stapler_(stapling_machine)"
+  ],
+  "result": {
+    "detections": [
+      {
+        "label": "hair _ dryer lawn _ mower",
+        "score": 0.38902977108955383,
+        "box_2d": [
+          342.9694519042969,
+          1.12876296043396,
+          374.76470947265625,
+          261.3887634277344
+        ],
+        "box": [
+          342.9694519042969,
+          1.12876296043396,
+          374.76470947265625,
+          261.3887634277344
+        ]
+      },
+      {
+        "label": "hair _ dryer lawn _ mower",
+        "score": 0.273025244474411,
+        "box_2d": [
+          182.91702270507812,
+          6.577536582946777,
+          227.2613983154297,
+          213.93630981445312
+        ],
+        "box": [
+          182.91702270507812,
+          6.577536582946777,
+          227.2613983154297,
+          213.93630981445312
+        ]
+      }
+    ],
+    "latency_sec": 0.27634510956704617,
+    "raw_response": null
+  }
+}

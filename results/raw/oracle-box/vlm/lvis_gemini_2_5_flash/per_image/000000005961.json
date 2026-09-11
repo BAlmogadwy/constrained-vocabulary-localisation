@@ -1,0 +1,57 @@
+{
+  "image": "/home/maxim/PycharmProjects/zero-shot-detection-benchmark/data/subsets/lvis_v1_val_unseen/images/000000005961.jpg",
+  "image_id": 5961,
+  "file_name": "000000005961.jpg",
+  "num_crops": 2,
+  "crops": [
+    {
+      "annotation_id": 138933,
+      "bbox": [
+        325.21,
+        211.06,
+        25.23,
+        40.55
+      ],
+      "category_id": 993,
+      "gt_label": "spatula",
+      "labels": [
+        "spatula",
+        "coffee_maker",
+        "lawn_mower",
+        "musical_instrument",
+        "sewing_machine"
+      ],
+      "prediction": null,
+      "normalized_prediction": "",
+      "matched_label": null,
+      "correct": false,
+      "latency_sec": 1.2196096939733252,
+      "raw_response": "I am sorry, but I cannot detect any objects in the provided image. The image appears to be completely black or heavily corrupted, making it impossible to identify any visual content."
+    },
+    {
+      "annotation_id": 138934,
+      "bbox": [
+        302.0,
+        228.58,
+        26.35,
+        24.57
+      ],
+      "category_id": 993,
+      "gt_label": "spatula",
+      "labels": [
+        "spatula",
+        "coffee_maker",
+        "lawn_mower",
+        "musical_instrument",
+        "sewing_machine"
+      ],
+      "prediction": null,
+      "normalized_prediction": "",
+      "matched_label": null,
+      "correct": false,
+      "latency_sec": 1.6367026920197532,
+      "raw_response": "I cannot detect any of the requested objects in this image as it is too blurry and low-resolution. Please provide a clearer image."
+    }
+  ],
+  "prompt": "You are an object recognition assistant.\n\nYou will see a cropped image that contains exactly one object\nfrom the following LVIS categories (unseen split):\n\n- spatula\n- coffee_maker\n- lawn_mower\n- musical_instrument\n- sewing_machine\n\nYour task:\n- Return ONLY the best matching category name from this list.\n- Do not output explanations or extra text.\n\nAnswer with a single string: \"class_name\"."
+}

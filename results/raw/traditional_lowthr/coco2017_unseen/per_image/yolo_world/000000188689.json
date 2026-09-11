@@ -1,0 +1,41 @@
+{
+  "model": "yolo_world",
+  "strategy": "default",
+  "image": "C:\\Users\\user\\zeroshot\\zero-shot-detection-benchmark\\data\\raw\\coco2017\\val2017\\000000188689.jpg",
+  "labels": [
+    "microwave",
+    "oven",
+    "toaster",
+    "sink",
+    "refrigerator",
+    "book",
+    "clock",
+    "vase",
+    "scissors",
+    "teddy bear",
+    "hair drier",
+    "toothbrush"
+  ],
+  "result": {
+    "detections": [
+      {
+        "label": "vase",
+        "score": 0.04485480859875679,
+        "box_2d": [
+          33.42983627319336,
+          65.36528778076172,
+          304.7726745605469,
+          202.7157745361328
+        ],
+        "box": [
+          33.42983627319336,
+          65.36528778076172,
+          304.7726745605469,
+          202.7157745361328
+        ]
+      }
+    ],
+    "latency_sec": 0.03524739999920712,
+    "raw_response": null
+  }
+}

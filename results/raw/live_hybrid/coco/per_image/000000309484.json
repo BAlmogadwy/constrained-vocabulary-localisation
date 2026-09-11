@@ -1,0 +1,232 @@
+{
+ "image": "000000309484.jpg",
+ "labels": [
+  "toothbrush",
+  "book",
+  "clock",
+  "refrigerator",
+  "scissors",
+  "sink",
+  "toaster"
+ ],
+ "tau": 0.4,
+ "detector": {
+  "detections": [
+   {
+    "label": "toothbrush",
+    "box": [
+     152.8931427001953,
+     216.3160400390625,
+     415.01519775390625,
+     289.48040771484375
+    ],
+    "score": 0.1837414652109146
+   },
+   {
+    "label": "toothbrush",
+    "box": [
+     155.28253173828125,
+     136.58004760742188,
+     526.1898193359375,
+     396.0890808105469
+    ],
+    "score": 0.16362076997756958
+   },
+   {
+    "label": "toothbrush",
+    "box": [
+     394.9945068359375,
+     139.51907348632812,
+     522.984375,
+     320.8226623535156
+    ],
+    "score": 0.020771119743585587
+   },
+   {
+    "label": "scissors",
+    "box": [
+     396.77032470703125,
+     140.10208129882812,
+     509.69940185546875,
+     198.60385131835938
+    ],
+    "score": 0.0027370930183678865
+   },
+   {
+    "label": "scissors",
+    "box": [
+     131.8477783203125,
+     137.29408264160156,
+     529.1771240234375,
+     399.4444580078125
+    ],
+    "score": 0.0025396174751222134
+   },
+   {
+    "label": "scissors",
+    "box": [
+     395.7313232421875,
+     139.57290649414062,
+     522.6299438476562,
+     265.2746276855469
+    ],
+    "score": 0.0014093475183472037
+   },
+   {
+    "label": "book",
+    "box": [
+     0.0,
+     3.2264404296875,
+     531.243408203125,
+     638.2164916992188
+    ],
+    "score": 0.0012017624685540795
+   }
+  ],
+  "latency_sec": 0.059632199991028756
+ },
+ "detector_max_score": 0.1837414652109146,
+ "escalated": true,
+ "vlm": {
+  "model": "qwen/qwen3-vl-235b-a22b-instruct",
+  "detections": [
+   {
+    "label": "toothbrush",
+    "box": [
+     184.418,
+     216.32,
+     415.207,
+     291.2
+    ],
+    "score": 1.0
+   }
+  ],
+  "latency_sec": 2.938778800002183,
+  "usage": {
+   "prompt_tokens": 430,
+   "completion_tokens": 51,
+   "total_tokens": 481
+  },
+  "raw_response": {
+   "id": "gen-1783409308-ckvZApOTLcOJ5AgG4BEH",
+   "object": "chat.completion",
+   "created": 1783409308,
+   "model": "qwen/qwen3-vl-235b-a22b-instruct",
+   "provider": "Novita",
+   "system_fingerprint": null,
+   "service_tier": null,
+   "choices": [
+    {
+     "index": 0,
+     "logprobs": null,
+     "finish_reason": "stop",
+     "native_finish_reason": "stop",
+     "message": {
+      "role": "assistant",
+      "content": "```json\n[\n\t{\"bbox_2d\": [346, 338, 779, 455], \"label\": \"toothbrush\", \"confidence\": 0.99}\n]\n```",
+      "refusal": null,
+      "reasoning": null
+     }
+    }
+   ],
+   "usage": {
+    "prompt_tokens": 430,
+    "completion_tokens": 51,
+    "total_tokens": 481,
+    "cost": 0.0002055,
+    "is_byok": false,
+    "prompt_tokens_details": {
+     "cached_tokens": 0,
+     "cache_write_tokens": 0,
+     "audio_tokens": 0,
+     "video_tokens": 0
+    },
+    "cost_details": {
+     "upstream_inference_cost": 0.0002055,
+     "upstream_inference_prompt_cost": 0.000129,
+     "upstream_inference_completions_cost": 7.65e-05
+    },
+    "completion_tokens_details": {
+     "reasoning_tokens": 0,
+     "image_tokens": 0,
+     "audio_tokens": 0
+    }
+   }
+  }
+ },
+ "fallback": false,
+ "ts": "2026-07-07T07:28:26.178114+00:00",
+ "fused": [
+  {
+   "label": "toothbrush",
+   "box": [
+    152.8931427001953,
+    216.3160400390625,
+    415.01519775390625,
+    289.48040771484375
+   ],
+   "score": 0.4837414652109146
+  },
+  {
+   "label": "toothbrush",
+   "box": [
+    155.28253173828125,
+    136.58004760742188,
+    526.1898193359375,
+    396.0890808105469
+   ],
+   "score": 0.16362076997756958
+  },
+  {
+   "label": "toothbrush",
+   "box": [
+    394.9945068359375,
+    139.51907348632812,
+    522.984375,
+    320.8226623535156
+   ],
+   "score": 0.020771119743585587
+  },
+  {
+   "label": "scissors",
+   "box": [
+    396.77032470703125,
+    140.10208129882812,
+    509.69940185546875,
+    198.60385131835938
+   ],
+   "score": 0.0027370930183678865
+  },
+  {
+   "label": "scissors",
+   "box": [
+    131.8477783203125,
+    137.29408264160156,
+    529.1771240234375,
+    399.4444580078125
+   ],
+   "score": 0.0025396174751222134
+  },
+  {
+   "label": "scissors",
+   "box": [
+    395.7313232421875,
+    139.57290649414062,
+    522.6299438476562,
+    265.2746276855469
+   ],
+   "score": 0.0014093475183472037
+  },
+  {
+   "label": "book",
+   "box": [
+    0.0,
+    3.2264404296875,
+    531.243408203125,
+    638.2164916992188
+   ],
+   "score": 0.0012017624685540795
+  }
+ ],
+ "latency_total_sec": 2.998453199994401
+}

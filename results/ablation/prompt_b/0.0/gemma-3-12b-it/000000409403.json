@@ -1,0 +1,41 @@
+{
+  "model": "gemma-3-12b-it",
+  "strategy": "iterative",
+  "image": "/home/maxim/PycharmProjects/zero-shot-detection-benchmark/data/subsets/lvis_v1_val_unseen/images/000000409403.jpg",
+  "labels": [
+    "blender",
+    "coffee_maker",
+    "lawn_mower",
+    "microscope",
+    "snowboard",
+    "spatula"
+  ],
+  "detections": [
+    {
+      "box_2d": [
+        280,
+        230,
+        533,
+        536
+      ],
+      "label": "blender"
+    },
+    {
+      "box_2d": [
+        771,
+        361,
+        793,
+        403
+      ],
+      "label": "spatula"
+    }
+  ],
+  "latency_sec": 32.4660215069307,
+  "raw_response": {
+    "identification": "blender, spatula",
+    "localization": {
+      "blender": "```json\n[{\"box_2d\":[280,230,533,536],\"label\":\"blender\"}]\n```",
+      "spatula": "```json\n[{\"box_2d\":[771,361,793,403],\"label\":\"spatula\"}]\n```"
+    }
+  }
+}

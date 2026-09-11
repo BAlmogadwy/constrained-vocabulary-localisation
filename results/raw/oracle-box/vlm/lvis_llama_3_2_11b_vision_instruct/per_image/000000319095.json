@@ -1,0 +1,43 @@
+{
+  "image": "/home/maxim/PycharmProjects/zero-shot-detection-benchmark/data/subsets/lvis_v1_val_unseen/images/000000319095.jpg",
+  "image_id": 319095,
+  "file_name": "000000319095.jpg",
+  "num_crops": 1,
+  "crops": [
+    {
+      "annotation_id": 50725,
+      "bbox": [
+        215.66,
+        264.66,
+        133.7,
+        29.74
+      ],
+      "category_id": 976,
+      "gt_label": "snowboard",
+      "labels": [
+        "snowboard",
+        "blender",
+        "coffee_maker",
+        "microscope",
+        "stapler_(stapling_machine)"
+      ],
+      "prediction": "snowboard",
+      "normalized_prediction": "snowboard",
+      "matched_label": "snowboard",
+      "correct": true,
+      "latency_sec": 16.01041638798779,
+      "raw_response": {
+        "snowboard": "[{\"box_2d\":[0,0,135,31],\"label\":\"snowboard\"}]",
+        "blender": "[]",
+        "blender_norm": "[{\"box_norm\":[0.0,0.0,0.0,0.0],\"label\":\"blender\"}]",
+        "coffee_maker": "[]",
+        "coffee_maker_norm": "[\n\n  {\n    \"box_norm\": [0.0, 0.0, 0.0, 0.0],\n    \"label\": \"coffee_maker\"\n  }\n\n]",
+        "microscope": "[]",
+        "microscope_norm": "[{\"box_norm\":[0.0,0.0,0.5,0.5],\"label\":\"microscope\"}]",
+        "stapler_(stapling_machine)": "[]",
+        "stapler_(stapling_machine)_norm": "[\n\n  {\n    \"box_norm\": [0.0, 0.0, 0.0, 0.0],\n    \"label\": \"stapler_(stapling_machine)\"\n  },\n  {\n    \"box_norm\": [0.0, 0.0, 0.0, 0.0],\n    \"label\": \"stapler_(stapling_machine)\"\n  },\n  {\n    \"box_norm\": [0.0, 0.0, 0.0, 0.0],\n    \"label\": \"stapler_(stapling_machine)\"\n  },\n  {\n    \"box_norm\": [0.0, 0.0, 0.0, 0.0],\n    \"label\": \"stapler_(stapling_machine)\"\n  },\n  {\n    \"box_norm\": [0.0, 0.0, 0.0, 0.0],\n    \"label\": \"stapler_(stapling_machine)\"\n  },\n  {\n    \"box_norm\": [0.0, 0.0, 0.0, 0.0],\n    \"label\": \"stapler_(stapling_machine)\"\n  },\n  {\n    \"box_norm\": [0.0, 0.0, 0.0, 0.0],\n    \"label\": \"stapler_(stapling_machine)\"\n  },\n  {\n    \"box_norm\": [0.0, 0.0, 0.0, 0.0],\n    \"label\": \"stapler_(stapling_machine)\"\n  },\n  {\n    \"box_norm\": [0.0, 0.0, 0.0, 0.0],\n    \"label\": \"stapler_(stapling_machine)\"\n  },\n  {\n    \"box_norm\": [0.0, 0.0, 0.0, 0.0],\n    \"label\": \"stapler_(stapling_machine)\"\n  },\n  {\n    \"box_norm\": [0.0, 0.0, 0.0, 0.0],\n    \"label\": \"stapler_(stapling_machine)\"\n  },\n  {\n    \"box_norm\": [0.0, 0.0, 0.0, 0.0],\n    \"label\": \"stapler_(st"
+      }
+    }
+  ],
+  "prompt": "You are an object recognition assistant.\n\nYou will see a cropped image that contains exactly one object\nfrom the following LVIS categories (unseen split):\n\n- snowboard\n- blender\n- coffee_maker\n- microscope\n- stapler_(stapling_machine)\n\nYour task:\n- Return ONLY the best matching category name from this list.\n- Do not output explanations or extra text.\n\nAnswer with a single string: \"class_name\"."
+}

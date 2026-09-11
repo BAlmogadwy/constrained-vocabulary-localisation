@@ -1,0 +1,50 @@
+{
+  "model": "grounding_dino",
+  "strategy": "default",
+  "image": "/home/maxim/PycharmProjects/zero-shot-detection-benchmark/data/subsets/lvis_v1_val_unseen/images/000000504559.jpg",
+  "labels": [
+    "snowboard",
+    "hair_dryer",
+    "lawn_mower",
+    "musical_instrument",
+    "sewing_machine"
+  ],
+  "result": {
+    "detections": [
+      {
+        "label": "snowboard",
+        "score": 0.5299491882324219,
+        "box_2d": [
+          108.74736022949219,
+          94.50648498535156,
+          200.9347686767578,
+          438.352294921875
+        ],
+        "box": [
+          108.74736022949219,
+          94.50648498535156,
+          200.9347686767578,
+          438.352294921875
+        ]
+      },
+      {
+        "label": "snowboard",
+        "score": 0.4731048047542572,
+        "box_2d": [
+          305.04290771484375,
+          106.10844421386719,
+          344.0355224609375,
+          431.47119140625
+        ],
+        "box": [
+          305.04290771484375,
+          106.10844421386719,
+          344.0355224609375,
+          431.47119140625
+        ]
+      }
+    ],
+    "latency_sec": 0.2520262263715267,
+    "raw_response": null
+  }
+}

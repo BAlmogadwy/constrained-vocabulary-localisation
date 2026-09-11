@@ -1,0 +1,99 @@
+{
+ "image": "000000315219.jpg",
+ "labels": [
+  "hair_dryer",
+  "coffee_maker",
+  "microscope",
+  "snowboard",
+  "spatula"
+ ],
+ "tau": 0.4,
+ "detector": {
+  "detections": [
+   {
+    "label": "coffee_maker",
+    "box": [
+     125.75434112548828,
+     0.0,
+     303.598388671875,
+     499.81121826171875
+    ],
+    "score": 0.005418039858341217
+   }
+  ],
+  "latency_sec": 0.045346900005824864
+ },
+ "detector_max_score": 0.005418039858341217,
+ "escalated": true,
+ "vlm": {
+  "model": "qwen/qwen3-vl-235b-a22b-instruct",
+  "detections": [],
+  "latency_sec": 1.88484499999322,
+  "usage": {
+   "prompt_tokens": 251,
+   "completion_tokens": 6,
+   "total_tokens": 257
+  },
+  "raw_response": {
+   "id": "gen-1783406822-AV1byItjQ88QUU2I86ci",
+   "object": "chat.completion",
+   "created": 1783406822,
+   "model": "qwen/qwen3-vl-235b-a22b-instruct",
+   "provider": "Alibaba",
+   "system_fingerprint": null,
+   "service_tier": null,
+   "choices": [
+    {
+     "index": 0,
+     "logprobs": null,
+     "finish_reason": "stop",
+     "native_finish_reason": "stop",
+     "message": {
+      "role": "assistant",
+      "content": "```json\n[]\n```",
+      "refusal": null,
+      "reasoning": null
+     }
+    }
+   ],
+   "usage": {
+    "prompt_tokens": 251,
+    "completion_tokens": 6,
+    "total_tokens": 257,
+    "cost": 7.15e-05,
+    "is_byok": false,
+    "prompt_tokens_details": {
+     "cached_tokens": 0,
+     "cache_write_tokens": 0,
+     "audio_tokens": 0,
+     "video_tokens": 0
+    },
+    "cost_details": {
+     "upstream_inference_cost": 7.15e-05,
+     "upstream_inference_prompt_cost": 6.526e-05,
+     "upstream_inference_completions_cost": 6.24e-06
+    },
+    "completion_tokens_details": {
+     "reasoning_tokens": 0,
+     "image_tokens": 0,
+     "audio_tokens": 0
+    }
+   }
+  }
+ },
+ "fallback": false,
+ "ts": "2026-07-07T06:47:00.663525+00:00",
+ "fused": [
+  {
+   "label": "coffee_maker",
+   "box": [
+    125.75434112548828,
+    0.0,
+    303.598388671875,
+    499.81121826171875
+   ],
+   "score": 0.005418039858341217
+  }
+ ],
+ "latency_total_sec": 1.9301990999956615
+}

@@ -1,0 +1,241 @@
+{
+  "model": "Qwen3-VL-8B-Instruct",
+  "strategy": "single_query",
+  "experiment": "visual_cot",
+  "prompt_variant": "baseline",
+  "temperature": 0.0,
+  "image": "/home/maxim/PycharmProjects/zero-shot-detection-benchmark/data/subsets/lvis_v1_val_unseen/images/000000049984.jpg",
+  "image_relative": "000000049984.jpg",
+  "labels": [
+    "hair_dryer",
+    "coffee_maker",
+    "sewing_machine",
+    "spatula",
+    "stapler_(stapling_machine)"
+  ],
+  "metadata": {
+    "image": "/home/maxim/PycharmProjects/zero-shot-detection-benchmark/data/subsets/lvis_v1_val_unseen/images/000000049984.jpg",
+    "image_relative": "000000049984.jpg",
+    "image_size": {
+      "width": 427,
+      "height": 640
+    },
+    "labels": [
+      "hair_dryer",
+      "coffee_maker",
+      "sewing_machine",
+      "spatula",
+      "stapler_(stapling_machine)"
+    ],
+    "ground_truth_labels": [
+      "hair_dryer",
+      "coffee_maker",
+      "sewing_machine",
+      "spatula",
+      "stapler_(stapling_machine)"
+    ]
+  },
+  "detections": [
+    {
+      "box_2d": [
+        714.0,
+        457.0,
+        764.0,
+        533.0
+      ],
+      "label": "hair_dryer"
+    }
+  ],
+  "latency_sec": 18.68350038002245,
+  "final_detections": [
+    {
+      "box_2d": [
+        714.0,
+        457.0,
+        764.0,
+        533.0
+      ],
+      "label": "hair_dryer"
+    }
+  ],
+  "final_latency_sec": 18.68350038002245,
+  "refinement_chain": [
+    {
+      "step": 0,
+      "stage": "baseline",
+      "prompt": "Baseline inference using the configured prompt strategy.",
+      "labels_sent": [
+        "hair_dryer",
+        "coffee_maker",
+        "sewing_machine",
+        "spatula",
+        "stapler_(stapling_machine)"
+      ],
+      "input_images": [
+        "/home/maxim/PycharmProjects/zero-shot-detection-benchmark/data/subsets/lvis_v1_val_unseen/images/000000049984.jpg"
+      ],
+      "annotated_image": "/home/maxim/PycharmProjects/zero-shot-detection-benchmark/data/subsets/lvis_v1_val_unseen/images/000000049984.jpg",
+      "detections": [],
+      "latency_sec": 3.353918527951464,
+      "raw_response": "user\nYou are an object detection assistant. Given the image and the list of target classes, return detections as JSON.\nTarget classes: hair_dryer, coffee_maker, sewing_machine, spatula, stapler_(stapling_machine).\nOutput format: [{\"box_2d\":[x1,y1,x2,y2],\"label\":\"class_name\"}...]\nUse pixel coordinates relative to the input image. Return JSON only.\nassistant\nThere is no object from the given target classes in the image.",
+      "status": "ok",
+      "normalized_boxes": []
+    },
+    {
+      "step": 1,
+      "stage": "refinement",
+      "prompt": "You found no objects previously. Look closer and provide bounding boxes for any of the following labels: hair_dryer, coffee_maker, sewing_machine, spatula, stapler_(stapling_machine). Return JSON only.",
+      "labels_sent": [
+        "hair_dryer",
+        "coffee_maker",
+        "sewing_machine",
+        "spatula",
+        "stapler_(stapling_machine)",
+        "INSTRUCTION: You found no objects previously. Look closer and provide bounding boxes for any of the following labels: hair_dryer, coffee_maker, sewing_machine, spatula, stapler_(stapling_machine). Return JSON only."
+      ],
+      "input_images": [
+        "/home/maxim/PycharmProjects/zero-shot-detection-benchmark/data/subsets/lvis_v1_val_unseen/images/000000049984.jpg"
+      ],
+      "annotated_image": null,
+      "detections": [
+        {
+          "box_2d": [
+            714.0,
+            457.0,
+            764.0,
+            533.0
+          ],
+          "label": "hair_dryer"
+        }
+      ],
+      "latency_sec": 3.7874939700122923,
+      "raw_response": "user\nYou are an object detection assistant. Given the image and the list of target classes, return detections as JSON.\nTarget classes: hair_dryer, coffee_maker, sewing_machine, spatula, stapler_(stapling_machine), INSTRUCTION: You found no objects previously. Look closer and provide bounding boxes for any of the following labels: hair_dryer, coffee_maker, sewing_machine, spatula, stapler_(stapling_machine). Return JSON only..\nOutput format: [{\"box_2d\":[x1,y1,x2,y2],\"label\":\"class_name\"}...]\nUse pixel coordinates relative to the input image. Return JSON only.\nassistant\n```json\n[\n    {\"box_2d\": [714, 457, 764, 533], \"label\": \"hair_dryer\"}\n]\n```",
+      "status": "ok",
+      "normalized_boxes": [
+        [
+          0.7140625,
+          1.0,
+          0.8328125,
+          1.0
+        ]
+      ]
+    },
+    {
+      "step": 2,
+      "stage": "refinement",
+      "prompt": "I have drawn your predictions from the previous step in red. Visually inspect the alignment. Are the boxes accurate? If not, provide corrected coordinates for: hair_dryer, coffee_maker, sewing_machine, spatula, stapler_(stapling_machine). Return JSON only.",
+      "labels_sent": [
+        "hair_dryer",
+        "coffee_maker",
+        "sewing_machine",
+        "spatula",
+        "stapler_(stapling_machine)",
+        "INSTRUCTION: I have drawn your predictions from the previous step in red. Visually inspect the alignment. Are the boxes accurate? If not, provide corrected coordinates for: hair_dryer, coffee_maker, sewing_machine, spatula, stapler_(stapling_machine). Return JSON only."
+      ],
+      "input_images": [
+        "/home/maxim/PycharmProjects/zero-shot-detection-benchmark/results/visual_cot/lvis_qwen/baseline/0.0/Qwen3-VL-8B-Instruct/debug_images/000000049984/step_2.png"
+      ],
+      "annotated_image": "/home/maxim/PycharmProjects/zero-shot-detection-benchmark/results/visual_cot/lvis_qwen/baseline/0.0/Qwen3-VL-8B-Instruct/debug_images/000000049984/step_2.png",
+      "detections": [
+        {
+          "box_2d": [
+            714.0,
+            457.0,
+            764.0,
+            533.0
+          ],
+          "label": "hair_dryer"
+        }
+      ],
+      "latency_sec": 3.8441759870620444,
+      "raw_response": "user\nYou are an object detection assistant. Given the image and the list of target classes, return detections as JSON.\nTarget classes: hair_dryer, coffee_maker, sewing_machine, spatula, stapler_(stapling_machine), INSTRUCTION: I have drawn your predictions from the previous step in red. Visually inspect the alignment. Are the boxes accurate? If not, provide corrected coordinates for: hair_dryer, coffee_maker, sewing_machine, spatula, stapler_(stapling_machine). Return JSON only..\nOutput format: [{\"box_2d\":[x1,y1,x2,y2],\"label\":\"class_name\"}...]\nUse pixel coordinates relative to the input image. Return JSON only.\nassistant\n```json\n[\n    {\"box_2d\": [714, 457, 764, 533], \"label\": \"hair_dryer\"}\n]\n```",
+      "status": "ok",
+      "normalized_boxes": [
+        [
+          0.7140625,
+          1.0,
+          0.8328125,
+          1.0
+        ]
+      ]
+    },
+    {
+      "step": 3,
+      "stage": "refinement",
+      "prompt": "I have drawn your predictions from the previous step in red. Visually inspect the alignment. Are the boxes accurate? If not, provide corrected coordinates for: hair_dryer, coffee_maker, sewing_machine, spatula, stapler_(stapling_machine). Return JSON only.",
+      "labels_sent": [
+        "hair_dryer",
+        "coffee_maker",
+        "sewing_machine",
+        "spatula",
+        "stapler_(stapling_machine)",
+        "INSTRUCTION: I have drawn your predictions from the previous step in red. Visually inspect the alignment. Are the boxes accurate? If not, provide corrected coordinates for: hair_dryer, coffee_maker, sewing_machine, spatula, stapler_(stapling_machine). Return JSON only."
+      ],
+      "input_images": [
+        "/home/maxim/PycharmProjects/zero-shot-detection-benchmark/results/visual_cot/lvis_qwen/baseline/0.0/Qwen3-VL-8B-Instruct/debug_images/000000049984/step_3.png"
+      ],
+      "annotated_image": "/home/maxim/PycharmProjects/zero-shot-detection-benchmark/results/visual_cot/lvis_qwen/baseline/0.0/Qwen3-VL-8B-Instruct/debug_images/000000049984/step_3.png",
+      "detections": [
+        {
+          "box_2d": [
+            714.0,
+            457.0,
+            764.0,
+            533.0
+          ],
+          "label": "hair_dryer"
+        }
+      ],
+      "latency_sec": 3.873625991982408,
+      "raw_response": "user\nYou are an object detection assistant. Given the image and the list of target classes, return detections as JSON.\nTarget classes: hair_dryer, coffee_maker, sewing_machine, spatula, stapler_(stapling_machine), INSTRUCTION: I have drawn your predictions from the previous step in red. Visually inspect the alignment. Are the boxes accurate? If not, provide corrected coordinates for: hair_dryer, coffee_maker, sewing_machine, spatula, stapler_(stapling_machine). Return JSON only..\nOutput format: [{\"box_2d\":[x1,y1,x2,y2],\"label\":\"class_name\"}...]\nUse pixel coordinates relative to the input image. Return JSON only.\nassistant\n```json\n[\n    {\"box_2d\": [714, 457, 764, 533], \"label\": \"hair_dryer\"}\n]\n```",
+      "status": "ok",
+      "normalized_boxes": [
+        [
+          0.7140625,
+          1.0,
+          0.8328125,
+          1.0
+        ]
+      ]
+    },
+    {
+      "step": 4,
+      "stage": "refinement",
+      "prompt": "I have drawn your predictions from the previous step in red. Visually inspect the alignment. Are the boxes accurate? If not, provide corrected coordinates for: hair_dryer, coffee_maker, sewing_machine, spatula, stapler_(stapling_machine). Return JSON only.",
+      "labels_sent": [
+        "hair_dryer",
+        "coffee_maker",
+        "sewing_machine",
+        "spatula",
+        "stapler_(stapling_machine)",
+        "INSTRUCTION: I have drawn your predictions from the previous step in red. Visually inspect the alignment. Are the boxes accurate? If not, provide corrected coordinates for: hair_dryer, coffee_maker, sewing_machine, spatula, stapler_(stapling_machine). Return JSON only."
+      ],
+      "input_images": [
+        "/home/maxim/PycharmProjects/zero-shot-detection-benchmark/results/visual_cot/lvis_qwen/baseline/0.0/Qwen3-VL-8B-Instruct/debug_images/000000049984/step_4.png"
+      ],
+      "annotated_image": "/home/maxim/PycharmProjects/zero-shot-detection-benchmark/results/visual_cot/lvis_qwen/baseline/0.0/Qwen3-VL-8B-Instruct/debug_images/000000049984/step_4.png",
+      "detections": [
+        {
+          "box_2d": [
+            714.0,
+            457.0,
+            764.0,
+            533.0
+          ],
+          "label": "hair_dryer"
+        }
+      ],
+      "latency_sec": 3.8242859030142426,
+      "raw_response": "user\nYou are an object detection assistant. Given the image and the list of target classes, return detections as JSON.\nTarget classes: hair_dryer, coffee_maker, sewing_machine, spatula, stapler_(stapling_machine), INSTRUCTION: I have drawn your predictions from the previous step in red. Visually inspect the alignment. Are the boxes accurate? If not, provide corrected coordinates for: hair_dryer, coffee_maker, sewing_machine, spatula, stapler_(stapling_machine). Return JSON only..\nOutput format: [{\"box_2d\":[x1,y1,x2,y2],\"label\":\"class_name\"}...]\nUse pixel coordinates relative to the input image. Return JSON only.\nassistant\n```json\n[\n    {\"box_2d\": [714, 457, 764, 533], \"label\": \"hair_dryer\"}\n]\n```",
+      "status": "ok",
+      "normalized_boxes": [
+        [
+          0.7140625,
+          1.0,
+          0.8328125,
+          1.0
+        ]
+      ]
+    }
+  ]
+}

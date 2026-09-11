@@ -1,0 +1,34 @@
+{
+  "model": "gemini-2.5-flash",
+  "strategy": "single_query",
+  "image": "/home/maxim/PycharmProjects/zero-shot-detection-benchmark/data/subsets/lvis_v1_val_unseen/images/000000472376.jpg",
+  "labels": [
+    "musical_instrument",
+    "blender",
+    "hair_dryer",
+    "sewing_machine",
+    "stapler_(stapling_machine)"
+  ],
+  "detections": [
+    {
+      "box_2d": [
+        334,
+        368,
+        672,
+        474
+      ],
+      "label": "musical_instrument"
+    },
+    {
+      "box_2d": [
+        510,
+        532,
+        831,
+        613
+      ],
+      "label": "musical_instrument"
+    }
+  ],
+  "latency_sec": 3.0193654319737107,
+  "raw_response": "```json\n[\n  {\"box_2d\": [334, 368, 672, 474], \"label\": \"musical_instrument\"},\n  {\"box_2d\": [510, 532, 831, 613], \"label\": \"musical_instrument\"}\n]\n```"
+}

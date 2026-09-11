@@ -1,0 +1,30 @@
+{
+  "model": "gemma-3-12b-it",
+  "strategy": "iterative",
+  "image": "/home/maxim/PycharmProjects/zero-shot-detection-benchmark/data/subsets/lvis_v1_val_unseen/images/000000565767.jpg",
+  "labels": [
+    "snowboard",
+    "blender",
+    "hair_dryer",
+    "sewing_machine",
+    "stapler_(stapling_machine)"
+  ],
+  "detections": [
+    {
+      "box_2d": [
+        388,
+        438,
+        513,
+        556
+      ],
+      "label": "snowboard"
+    }
+  ],
+  "latency_sec": 18.05560897802934,
+  "raw_response": {
+    "identification": "snowboard",
+    "localization": {
+      "snowboard": "```json\n[{\"box_2d\":[388,438,513,556],\"label\":\"snowboard\"}]\n```"
+    }
+  }
+}

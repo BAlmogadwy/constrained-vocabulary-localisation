@@ -1,0 +1,34 @@
+{
+  "model": "gemma-3-12b-it",
+  "strategy": "single_query",
+  "image": "/home/maxim/PycharmProjects/zero-shot-detection-benchmark/data/subsets/lvis_v1_val_unseen/images/000000305813.jpg",
+  "labels": [
+    "blender",
+    "hair_dryer",
+    "musical_instrument",
+    "snowboard",
+    "stapler_(stapling_machine)"
+  ],
+  "detections": [
+    {
+      "box_2d": [
+        368,
+        266,
+        513,
+        436
+      ],
+      "label": "blender"
+    },
+    {
+      "box_2d": [
+        733,
+        753,
+        788,
+        823
+      ],
+      "label": "hair_dryer"
+    }
+  ],
+  "latency_sec": 14.386472349055111,
+  "raw_response": "```json\n[\n  {\"box_2d\":[368, 266, 513, 436], \"label\": \"blender\"},\n  {\"box_2d\":[733, 753, 788, 823], \"label\": \"hair_dryer\"}\n]\n```"
+}

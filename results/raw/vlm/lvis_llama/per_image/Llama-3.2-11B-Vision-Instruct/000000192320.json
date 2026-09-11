@@ -1,0 +1,45 @@
+{
+  "model": "Llama-3.2-11B-Vision-Instruct",
+  "strategy": "single_query",
+  "image": "/home/maxim/PycharmProjects/zero-shot-detection-benchmark/data/subsets/lvis_v1_val_unseen/images/000000192320.jpg",
+  "labels": [
+    "spatula",
+    "blender",
+    "lawn_mower",
+    "musical_instrument",
+    "snowboard"
+  ],
+  "detections": [
+    {
+      "box_2d": [
+        30,
+        115,
+        98,
+        210
+      ],
+      "label": "spatula"
+    },
+    {
+      "box_2d": [
+        449,
+        210,
+        483,
+        241
+      ],
+      "label": "blender"
+    }
+  ],
+  "latency_sec": 15.804861418902874,
+  "raw_response": {
+    "spatula": "[{\"box_2d\":[0,0,0,0],\"label\":\"None\"}]",
+    "spatula_norm": "[{\"box_norm\":[0.047,0.244,0.153,0.444],\"label\":\"spatula\"}]",
+    "blender": "[{\"box_2d\":[0,0,0,0],\"label\":\"blender\"}]",
+    "blender_norm": "[{\"box_norm\":[0.702,0.444,0.755,0.509],\"label\":\"blender\"}]",
+    "lawn_mower": "[]",
+    "lawn_mower_norm": "[{\"box_norm\":[0.000,0.000,0.000,0.000],\"label\":\"lawn_mower\"}]",
+    "musical_instrument": "[]",
+    "musical_instrument_norm": "[{\"box_norm\":[0.000,0.000,0.000,0.000],\"label\":\"musical_instrument\"}]",
+    "snowboard": "[]",
+    "snowboard_norm": "[{\"box_norm\":[0.000,0.000,0.000,0.000],\"label\":\"snowboard\"}]"
+  }
+}

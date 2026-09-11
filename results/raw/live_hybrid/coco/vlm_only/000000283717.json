@@ -1,0 +1,178 @@
+{
+ "image": "000000283717.jpg",
+ "model": "qwen/qwen3-vl-235b-a22b-instruct",
+ "labels": [
+  "microwave",
+  "oven",
+  "book",
+  "hair drier",
+  "refrigerator",
+  "sink",
+  "toaster"
+ ],
+ "detections": [
+  {
+   "box_2d": [
+    281.6,
+    144.0,
+    618.24,
+    333.6
+   ],
+   "label": "microwave",
+   "score": 0.99
+  },
+  {
+   "box_2d": [
+    304.0,
+    44.16,
+    593.92,
+    152.16
+   ],
+   "label": "oven",
+   "score": 0.98
+  },
+  {
+   "box_2d": [
+    536.32,
+    372.0,
+    582.4,
+    480.0
+   ],
+   "label": "book",
+   "score": 0.95
+  },
+  {
+   "box_2d": [
+    496.0,
+    372.0,
+    540.8,
+    480.0
+   ],
+   "label": "book",
+   "score": 0.94
+  },
+  {
+   "box_2d": [
+    445.44,
+    359.04,
+    501.12,
+    480.0
+   ],
+   "label": "book",
+   "score": 0.93
+  },
+  {
+   "box_2d": [
+    337.92,
+    368.16,
+    400.0,
+    480.0
+   ],
+   "label": "book",
+   "score": 0.92
+  },
+  {
+   "box_2d": [
+    368.0,
+    368.16,
+    445.44,
+    480.0
+   ],
+   "label": "book",
+   "score": 0.91
+  },
+  {
+   "box_2d": [
+    176.64,
+    384.0,
+    241.28,
+    480.0
+   ],
+   "label": "hair drier",
+   "score": 0.96
+  },
+  {
+   "box_2d": [
+    0.0,
+    0.0,
+    213.76,
+    184.8
+   ],
+   "label": "refrigerator",
+   "score": 0.97
+  },
+  {
+   "box_2d": [
+    0.0,
+    384.0,
+    61.44,
+    480.0
+   ],
+   "label": "sink",
+   "score": 0.95
+  },
+  {
+   "box_2d": [
+    233.6,
+    272.16,
+    294.4,
+    420.0
+   ],
+   "label": "toaster",
+   "score": 0.94
+  }
+ ],
+ "latency_sec": 13.832893900005729,
+ "usage": {
+  "prompt_tokens": 391,
+  "completion_tokens": 474,
+  "total_tokens": 865
+ },
+ "raw_response": {
+  "id": "gen-1783412446-nlzMPsgl3zYsOVKkzwWS",
+  "object": "chat.completion",
+  "created": 1783412446,
+  "model": "qwen/qwen3-vl-235b-a22b-instruct",
+  "provider": "Alibaba",
+  "system_fingerprint": null,
+  "service_tier": null,
+  "choices": [
+   {
+    "index": 0,
+    "logprobs": null,
+    "finish_reason": "stop",
+    "native_finish_reason": "stop",
+    "message": {
+     "role": "assistant",
+     "content": "```json\n[\n\t{\"box_2d\": [440, 300, 966, 695], \"label\": \"microwave\", \"confidence\": 0.99},\n\t{\"bbox_2d\": [475, 92, 928, 317], \"label\": \"oven\", \"confidence\": 0.98},\n\t{\"bbox_2d\": [838, 775, 910, 1000], \"label\": \"book\", \"confidence\": 0.95},\n\t{\"bbox_2d\": [775, 775, 845, 1000], \"label\": \"book\", \"confidence\": 0.94},\n\t{\"bbox_2d\": [696, 748, 783, 1000], \"label\": \"book\", \"confidence\": 0.93},\n\t{\"bbox_2d\": [528, 767, 625, 1000], \"label\": \"book\", \"confidence\": 0.92},\n\t{\"bbox_2d\": [575, 767, 696, 1000], \"label\": \"book\", \"confidence\": 0.91},\n\t{\"bbox_2d\": [276, 800, 377, 1000], \"label\": \"hair drier\", \"confidence\": 0.96},\n\t{\"bbox_2d\": [0, 0, 334, 385], \"label\": \"refrigerator\", \"confidence\": 0.97},\n\t{\"bbox_2d\": [0, 800, 96, 1000], \"label\": \"sink\", \"confidence\": 0.95},\n\t{\"bbox_2d\": [365, 567, 460, 875], \"label\": \"toaster\", \"confidence\": 0.94}\n]\n```",
+     "refusal": null,
+     "reasoning": null
+    }
+   }
+  ],
+  "usage": {
+   "prompt_tokens": 391,
+   "completion_tokens": 474,
+   "total_tokens": 865,
+   "cost": 0.00059462,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00059462,
+    "upstream_inference_prompt_cost": 0.00010166,
+    "upstream_inference_completions_cost": 0.00049296
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   }
+  }
+ },
+ "ts": "2026-07-07T08:20:58.547299+00:00"
+}

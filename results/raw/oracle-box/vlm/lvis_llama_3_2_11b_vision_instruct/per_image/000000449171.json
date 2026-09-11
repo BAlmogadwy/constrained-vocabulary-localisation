@@ -1,0 +1,113 @@
+{
+  "image": "/home/maxim/PycharmProjects/zero-shot-detection-benchmark/data/subsets/lvis_v1_val_unseen/images/000000449171.jpg",
+  "image_id": 449171,
+  "file_name": "000000449171.jpg",
+  "num_crops": 3,
+  "crops": [
+    {
+      "annotation_id": 136616,
+      "bbox": [
+        0.0,
+        160.33,
+        58.43,
+        214.67
+      ],
+      "category_id": 976,
+      "gt_label": "snowboard",
+      "labels": [
+        "snowboard",
+        "coffee_maker",
+        "microscope",
+        "musical_instrument",
+        "sewing_machine"
+      ],
+      "prediction": "snowboard",
+      "normalized_prediction": "snowboard",
+      "matched_label": "snowboard",
+      "correct": true,
+      "latency_sec": 5.377283506997628,
+      "raw_response": {
+        "snowboard": "[{\"box_2d\":[0,0,59,64],\"label\":\"snowboard\"}]",
+        "coffee_maker": "[]",
+        "coffee_maker_norm": "[{\"box_norm\":[0.0,0.0,0.0,0.0],\"label\":\"coffee_maker\"}]",
+        "microscope": "[]",
+        "microscope_norm": "[{\"box_norm\":[0.0,0.0,0.0,0.0],\"label\":\"microscope\"}]",
+        "musical_instrument": "[]",
+        "musical_instrument_norm": "[{\"box_norm\":[0.0,0.0,0.0,0.0],\"label\":\"musical_instrument\"}]",
+        "sewing_machine": "[]",
+        "sewing_machine_norm": "[{\"box_norm\":[0.0,0.0,0.0,0.0],\"label\":\"sewing_machine\"}]"
+      }
+    },
+    {
+      "annotation_id": 136617,
+      "bbox": [
+        344.18,
+        0.0,
+        91.02,
+        247.29
+      ],
+      "category_id": 976,
+      "gt_label": "snowboard",
+      "labels": [
+        "snowboard",
+        "coffee_maker",
+        "microscope",
+        "musical_instrument",
+        "sewing_machine"
+      ],
+      "prediction": null,
+      "normalized_prediction": "",
+      "matched_label": null,
+      "correct": false,
+      "latency_sec": 4.38419321301626,
+      "raw_response": {
+        "snowboard": "[]",
+        "snowboard_norm": "[{\"box_norm\":[0.0,0.0,0.0,0.0],\"label\":\"snowboard\"}]",
+        "coffee_maker": "[]",
+        "coffee_maker_norm": "[]",
+        "microscope": "[]",
+        "microscope_norm": "[]",
+        "musical_instrument": "[]",
+        "musical_instrument_norm": "[]",
+        "sewing_machine": "[]",
+        "sewing_machine_norm": "[{\"box_norm\":[0.0,0.0,0.0,0.0],\"label\":\"sewing_machine\"}]",
+        "_fallback": "[]"
+      }
+    },
+    {
+      "annotation_id": 136618,
+      "bbox": [
+        189.91,
+        22.23,
+        118.0,
+        178.02
+      ],
+      "category_id": 976,
+      "gt_label": "snowboard",
+      "labels": [
+        "snowboard",
+        "coffee_maker",
+        "microscope",
+        "musical_instrument",
+        "sewing_machine"
+      ],
+      "prediction": "snowboard",
+      "normalized_prediction": "snowboard",
+      "matched_label": "snowboard",
+      "correct": true,
+      "latency_sec": 4.9070614610100165,
+      "raw_response": {
+        "snowboard": "[{\"box_2d\":[0,0,119,179],\"label\":\"snowboard\"}]",
+        "coffee_maker": "[]",
+        "coffee_maker_norm": "[]",
+        "microscope": "[]",
+        "microscope_norm": "[{\"box_norm\":[0.0,0.0,0.0,0.0],\"label\":\"microscope\"}]",
+        "musical_instrument": "[]",
+        "musical_instrument_norm": "[{\"box_norm\":[0.000000,0.000000,0.999999,0.999999],\"label\":\"musical_instrument\"}]",
+        "sewing_machine": "[]",
+        "sewing_machine_norm": "[{\"box_norm\":[0.0,0.0,0.0,0.0],\"label\":\"sewing_machine\"}]"
+      }
+    }
+  ],
+  "prompt": "You are an object recognition assistant.\n\nYou will see a cropped image that contains exactly one object\nfrom the following LVIS categories (unseen split):\n\n- snowboard\n- coffee_maker\n- microscope\n- musical_instrument\n- sewing_machine\n\nYour task:\n- Return ONLY the best matching category name from this list.\n- Do not output explanations or extra text.\n\nAnswer with a single string: \"class_name\"."
+}

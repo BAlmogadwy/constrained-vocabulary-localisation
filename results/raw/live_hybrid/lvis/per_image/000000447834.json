@@ -1,0 +1,270 @@
+{
+ "image": "000000447834.jpg",
+ "labels": [
+  "blender",
+  "hair_dryer",
+  "musical_instrument",
+  "sewing_machine",
+  "snowboard"
+ ],
+ "tau": 0.4,
+ "detector": {
+  "detections": [
+   {
+    "label": "blender",
+    "box": [
+     174.91827392578125,
+     222.2839813232422,
+     375.76727294921875,
+     374.89996337890625
+    ],
+    "score": 0.07321880012750626
+   },
+   {
+    "label": "blender",
+    "box": [
+     342.5384521484375,
+     165.6249237060547,
+     489.0436096191406,
+     334.06671142578125
+    ],
+    "score": 0.06718963384628296
+   },
+   {
+    "label": "hair_dryer",
+    "box": [
+     330.4354553222656,
+     118.16694641113281,
+     439.86865234375,
+     217.16241455078125
+    ],
+    "score": 0.024014126509428024
+   },
+   {
+    "label": "hair_dryer",
+    "box": [
+     189.7813720703125,
+     302.7935485839844,
+     294.7392578125,
+     375.0
+    ],
+    "score": 0.021212780848145485
+   },
+   {
+    "label": "blender",
+    "box": [
+     330.26116943359375,
+     117.93013000488281,
+     439.8928527832031,
+     220.22509765625
+    ],
+    "score": 0.020901206880807877
+   },
+   {
+    "label": "blender",
+    "box": [
+     173.6410675048828,
+     23.472763061523438,
+     500.0,
+     374.90118408203125
+    ],
+    "score": 0.016252778470516205
+   },
+   {
+    "label": "blender",
+    "box": [
+     473.2857666015625,
+     95.0943832397461,
+     500.0,
+     365.13232421875
+    ],
+    "score": 0.007004471495747566
+   },
+   {
+    "label": "blender",
+    "box": [
+     245.65945434570312,
+     0.0,
+     352.68975830078125,
+     49.74251174926758
+    ],
+    "score": 0.00471456628292799
+   },
+   {
+    "label": "blender",
+    "box": [
+     295.12835693359375,
+     131.41448974609375,
+     329.53399658203125,
+     223.10205078125
+    ],
+    "score": 0.0014574696542695165
+   }
+  ],
+  "latency_sec": 0.27025039998989087
+ },
+ "detector_max_score": 0.07321880012750626,
+ "escalated": true,
+ "vlm": {
+  "model": "qwen/qwen3-vl-235b-a22b-instruct",
+  "detections": [
+   {
+    "label": "blender",
+    "box": [
+     190.5,
+     223.125,
+     377.5,
+     374.25
+    ],
+    "score": 1.0
+   }
+  ],
+  "latency_sec": 3.668264399995678,
+  "usage": {
+   "prompt_tokens": 284,
+   "completion_tokens": 50,
+   "total_tokens": 334
+  },
+  "raw_response": {
+   "id": "gen-1783406904-TfgFpyj7Z4JqvjBONvHe",
+   "object": "chat.completion",
+   "created": 1783406904,
+   "model": "qwen/qwen3-vl-235b-a22b-instruct",
+   "provider": "Parasail",
+   "system_fingerprint": null,
+   "service_tier": null,
+   "choices": [
+    {
+     "index": 0,
+     "logprobs": null,
+     "finish_reason": "stop",
+     "native_finish_reason": "stop",
+     "message": {
+      "role": "assistant",
+      "content": "```json\n[\n\t{\"box_2d\": [381, 595, 755, 998], \"label\": \"blender\", \"confidence\": 0.95}\n]\n```",
+      "refusal": null,
+      "reasoning": null
+     }
+    }
+   ],
+   "usage": {
+    "prompt_tokens": 284,
+    "completion_tokens": 50,
+    "total_tokens": 334,
+    "cost": 0.00015464,
+    "is_byok": false,
+    "prompt_tokens_details": {
+     "cached_tokens": 0,
+     "cache_write_tokens": 0,
+     "audio_tokens": 0,
+     "video_tokens": 0
+    },
+    "cost_details": {
+     "upstream_inference_cost": 0.00015464,
+     "upstream_inference_prompt_cost": 5.964e-05,
+     "upstream_inference_completions_cost": 9.5e-05
+    },
+    "completion_tokens_details": {
+     "reasoning_tokens": 0,
+     "image_tokens": 0,
+     "audio_tokens": 0
+    }
+   }
+  }
+ },
+ "fallback": false,
+ "ts": "2026-07-07T06:48:22.854340+00:00",
+ "fused": [
+  {
+   "label": "blender",
+   "box": [
+    174.91827392578125,
+    222.2839813232422,
+    375.76727294921875,
+    374.89996337890625
+   ],
+   "score": 0.37321880012750625
+  },
+  {
+   "label": "blender",
+   "box": [
+    342.5384521484375,
+    165.6249237060547,
+    489.0436096191406,
+    334.06671142578125
+   ],
+   "score": 0.06718963384628296
+  },
+  {
+   "label": "hair_dryer",
+   "box": [
+    330.4354553222656,
+    118.16694641113281,
+    439.86865234375,
+    217.16241455078125
+   ],
+   "score": 0.024014126509428024
+  },
+  {
+   "label": "hair_dryer",
+   "box": [
+    189.7813720703125,
+    302.7935485839844,
+    294.7392578125,
+    375.0
+   ],
+   "score": 0.021212780848145485
+  },
+  {
+   "label": "blender",
+   "box": [
+    330.26116943359375,
+    117.93013000488281,
+    439.8928527832031,
+    220.22509765625
+   ],
+   "score": 0.020901206880807877
+  },
+  {
+   "label": "blender",
+   "box": [
+    173.6410675048828,
+    23.472763061523438,
+    500.0,
+    374.90118408203125
+   ],
+   "score": 0.016252778470516205
+  },
+  {
+   "label": "blender",
+   "box": [
+    473.2857666015625,
+    95.0943832397461,
+    500.0,
+    365.13232421875
+   ],
+   "score": 0.007004471495747566
+  },
+  {
+   "label": "blender",
+   "box": [
+    245.65945434570312,
+    0.0,
+    352.68975830078125,
+    49.74251174926758
+   ],
+   "score": 0.00471456628292799
+  },
+  {
+   "label": "blender",
+   "box": [
+    295.12835693359375,
+    131.41448974609375,
+    329.53399658203125,
+    223.10205078125
+   ],
+   "score": 0.0014574696542695165
+  }
+ ],
+ "latency_total_sec": 3.9385607999865897
+}

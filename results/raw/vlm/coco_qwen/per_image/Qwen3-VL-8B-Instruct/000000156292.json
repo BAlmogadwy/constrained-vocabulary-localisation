@@ -1,0 +1,81 @@
+{
+  "model": "Qwen3-VL-8B-Instruct",
+  "strategy": "single_query",
+  "image": "/home/maxim/PycharmProjects/zero-shot-detection-benchmark/data/raw/coco2017/val2017/000000156292.jpg",
+  "labels": [
+    "clock",
+    "book",
+    "scissors",
+    "sink",
+    "teddy bear",
+    "toaster",
+    "vase"
+  ],
+  "detections": [
+    {
+      "box_2d": [
+        314.0,
+        378.0,
+        624.0,
+        582.0
+      ],
+      "label": "clock"
+    },
+    {
+      "box_2d": [
+        148.0,
+        478.0,
+        300.0,
+        582.0
+      ],
+      "label": "clock"
+    },
+    {
+      "box_2d": [
+        157.0,
+        382.0,
+        298.0,
+        481.0
+      ],
+      "label": "clock"
+    },
+    {
+      "box_2d": [
+        652.0,
+        382.0,
+        795.0,
+        481.0
+      ],
+      "label": "clock"
+    },
+    {
+      "box_2d": [
+        652.0,
+        481.0,
+        795.0,
+        582.0
+      ],
+      "label": "clock"
+    },
+    {
+      "box_2d": [
+        314.0,
+        595.0,
+        638.0,
+        800.0
+      ],
+      "label": "clock"
+    },
+    {
+      "box_2d": [
+        398.0,
+        233.0,
+        550.0,
+        335.0
+      ],
+      "label": "clock"
+    }
+  ],
+  "latency_sec": 7.199508124991553,
+  "raw_response": "user\nYou are an object detection assistant. Given the image and the list of target classes, return detections as JSON.\nTarget classes: clock, book, scissors, sink, teddy bear, toaster, vase.\nOutput format: [{\"box_2d\":[x1,y1,x2,y2],\"label\":\"class_name\"}...]\nUse pixel coordinates relative to the input image. Return JSON only.\nassistant\n```json\n[\n\t{\"box_2d\": [314, 378, 624, 582],\"label\":\"clock\"},\n\t{\"bbox_2d\": [148, 478, 300, 582],\"label\":\"clock\"},\n\t{\"bbox_2d\": [157, 382, 298, 481],\"label\":\"clock\"},\n\t{\"bbox_2d\": [652, 382, 795, 481],\"label\":\"clock\"},\n\t{\"bbox_2d\": [652, 481, 795, 582],\"label\":\"clock\"},\n\t{\"bbox_2d\": [314, 595, 638, 800],\"label\":\"clock\"},\n\t{\"bbox_2d\": [398, 233, 550, 335],\"label\":\"clock\"}\n]\n```"
+}

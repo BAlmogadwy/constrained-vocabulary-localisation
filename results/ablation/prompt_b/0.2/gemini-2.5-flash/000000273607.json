@@ -1,0 +1,20 @@
+{
+  "model": "gemini-2.5-flash",
+  "strategy": "iterative",
+  "image": "/home/maxim/PycharmProjects/zero-shot-detection-benchmark/data/subsets/lvis_v1_val_unseen/images/000000273607.jpg",
+  "labels": [
+    "blender",
+    "coffee_maker",
+    "microscope",
+    "sewing_machine",
+    "snowboard"
+  ],
+  "result": {
+    "detections": [],
+    "latency_sec": 6.2262717799749225,
+    "raw_response": {
+      "error": "'int' object has no attribute 'get'",
+      "traceback": "Traceback (most recent call last):\n  File \"/home/maxim/PycharmProjects/zero-shot-detection-benchmark/experiments/run_ablation.py\", line 271, in run_model_variant\n    prediction = detector.predict(\n                 ^^^^^^^^^^^^^^^^^\n  File \"/home/maxim/PycharmProjects/zero-shot-detection-benchmark/models/vlm/gemini_detector.py\", line 42, in predict\n    return self._predict_iterative(image_path, classes)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/maxim/PycharmProjects/zero-shot-detection-benchmark/models/vlm/gemini_detector.py\", line 101, in _predict_iterative\n    detections.extend(det for det in parsed if det.get(\"label\") == name or det.get(\"label\") in classes)\n  File \"/home/maxim/PycharmProjects/zero-shot-detection-benchmark/models/vlm/gemini_detector.py\", line 101, in <genexpr>\n    detections.extend(det for det in parsed if det.get(\"label\") == name or det.get(\"label\") in classes)\n                                               ^^^^^^^\nAttributeError: 'int' object has no attribute 'get'\n"
+    }
+  }
+}

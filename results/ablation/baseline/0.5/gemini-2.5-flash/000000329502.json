@@ -1,0 +1,43 @@
+{
+  "model": "gemini-2.5-flash",
+  "strategy": "single_query",
+  "image": "/home/maxim/PycharmProjects/zero-shot-detection-benchmark/data/subsets/lvis_v1_val_unseen/images/000000329502.jpg",
+  "labels": [
+    "snowboard",
+    "coffee_maker",
+    "musical_instrument",
+    "sewing_machine",
+    "spatula"
+  ],
+  "detections": [
+    {
+      "box_2d": [
+        662,
+        0,
+        742,
+        59
+      ],
+      "label": "musical_instrument"
+    },
+    {
+      "box_2d": [
+        757,
+        0,
+        966,
+        929
+      ],
+      "label": "snowboard"
+    },
+    {
+      "box_2d": [
+        311,
+        0,
+        417,
+        195
+      ],
+      "label": "musical_instrument"
+    }
+  ],
+  "latency_sec": 2.4537614199798554,
+  "raw_response": "```json\n[\n  {\"box_2d\": [662, 0, 742, 59], \"label\": \"musical_instrument\"},\n  {\"box_2d\": [757, 0, 966, 929], \"label\": \"snowboard\"},\n  {\"box_2d\": [311, 0, 417, 195], \"label\": \"musical_instrument\"}\n]\n```"
+}

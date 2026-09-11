@@ -1,0 +1,77 @@
+{
+  "model": "Qwen3-VL-8B-Instruct",
+  "strategy": "single_query",
+  "image": "/home/maxim/PycharmProjects/zero-shot-detection-benchmark/data/raw/coco2017/val2017/000000008629.jpg",
+  "labels": [
+    "microwave",
+    "oven",
+    "toaster",
+    "sink",
+    "refrigerator",
+    "book",
+    "clock",
+    "vase",
+    "scissors",
+    "teddy bear",
+    "hair drier",
+    "toothbrush"
+  ],
+  "detections": [
+    {
+      "box_2d": [
+        28.0,
+        672.0,
+        330.0,
+        944.0
+      ],
+      "label": "pizza"
+    },
+    {
+      "box_2d": [
+        357.0,
+        672.0,
+        652.0,
+        970.0
+      ],
+      "label": "pizza"
+    },
+    {
+      "box_2d": [
+        672.0,
+        672.0,
+        944.0,
+        908.0
+      ],
+      "label": "pizza"
+    },
+    {
+      "box_2d": [
+        672.0,
+        367.0,
+        972.0,
+        612.0
+      ],
+      "label": "pizza"
+    },
+    {
+      "box_2d": [
+        672.0,
+        31.0,
+        972.0,
+        294.0
+      ],
+      "label": "pizza"
+    },
+    {
+      "box_2d": [
+        28.0,
+        28.0,
+        648.0,
+        584.0
+      ],
+      "label": "pizza"
+    }
+  ],
+  "latency_sec": 8.813200447999407,
+  "raw_response": "user\nYou are an object detection assistant. Given the image and the list of target classes, return detections as JSON.\nTarget classes: microwave, oven, toaster, sink, refrigerator, book, clock, vase, scissors, teddy bear, hair drier, toothbrush.\nOutput format: [{\"box_2d\":[x1,y1,x2,y2],\"label\":\"class_name\"}...]\nUse pixel coordinates relative to the input image. Return JSON only.\nassistant\n```json\n[\n\t{\"box_2d\": [28, 672, 330, 944],\"label\":\"pizza\"},\n\t{\"box_2d\": [357, 672, 652, 970],\"label\":\"pizza\"},\n\t{\"box_2d\": [672, 672, 944, 908],\"label\":\"pizza\"},\n\t{\"box_2d\": [672, 367, 972, 612],\"label\":\"pizza\"},\n\t{\"box_2d\": [672, 31, 972, 294],\"label\":\"pizza\"},\n\t{\"box_2d\": [28, 28, 648, 584],\"label\":\"pizza\"}\n]\n```"
+}

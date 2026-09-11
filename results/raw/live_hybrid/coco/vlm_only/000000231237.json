@@ -1,0 +1,78 @@
+{
+ "image": "000000231237.jpg",
+ "model": "qwen/qwen3-vl-235b-a22b-instruct",
+ "labels": [
+  "vase",
+  "book",
+  "hair drier",
+  "oven",
+  "refrigerator",
+  "scissors",
+  "toothbrush"
+ ],
+ "detections": [
+  {
+   "box_2d": [
+    92.852,
+    254.0,
+    255.51,
+    456.0
+   ],
+   "label": "vase",
+   "score": 0.99
+  }
+ ],
+ "latency_sec": 3.503183499997249,
+ "usage": {
+  "prompt_tokens": 252,
+  "completion_tokens": 50,
+  "total_tokens": 302
+ },
+ "raw_response": {
+  "id": "gen-1783412077-1rL1YyB3wTrXYVFsEN9e",
+  "object": "chat.completion",
+  "created": 1783412077,
+  "model": "qwen/qwen3-vl-235b-a22b-instruct",
+  "provider": "Novita",
+  "system_fingerprint": null,
+  "service_tier": null,
+  "choices": [
+   {
+    "index": 0,
+    "logprobs": null,
+    "finish_reason": "stop",
+    "native_finish_reason": "stop",
+    "message": {
+     "role": "assistant",
+     "content": "```json\n[\n\t{\"box_2d\": [278, 508, 765, 912], \"label\": \"vase\", \"confidence\": 0.99}\n]\n```",
+     "refusal": null,
+     "reasoning": null
+    }
+   }
+  ],
+  "usage": {
+   "prompt_tokens": 252,
+   "completion_tokens": 50,
+   "total_tokens": 302,
+   "cost": 0.0001506,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0001506,
+    "upstream_inference_prompt_cost": 7.56e-05,
+    "upstream_inference_completions_cost": 7.5e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   }
+  }
+ },
+ "ts": "2026-07-07T08:14:39.408225+00:00"
+}

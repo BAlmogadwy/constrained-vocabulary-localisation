@@ -1,0 +1,25 @@
+{
+  "model": "gemma-3-12b-it",
+  "strategy": "single_query",
+  "image": "/home/maxim/PycharmProjects/zero-shot-detection-benchmark/data/subsets/lvis_v1_val_unseen/images/000000231153.jpg",
+  "labels": [
+    "snowboard",
+    "microscope",
+    "sewing_machine",
+    "spatula",
+    "stapler_(stapling_machine)"
+  ],
+  "detections": [
+    {
+      "box_2d": [
+        270,
+        360,
+        680,
+        750
+      ],
+      "label": "snowboard"
+    }
+  ],
+  "latency_sec": 14.36891331197694,
+  "raw_response": "```json\n[\n  {\"box_2d\":[270,360,680,750],\"label\":\"snowboard\"}\n]\n```"
+}

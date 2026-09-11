@@ -1,0 +1,63 @@
+{
+  "model": "Llama-3.2-11B-Vision-Instruct",
+  "strategy": "single_query",
+  "image": "/home/maxim/PycharmProjects/zero-shot-detection-benchmark/data/subsets/lvis_v1_val_unseen/images/000000083682.jpg",
+  "labels": [
+    "snowboard",
+    "blender",
+    "hair_dryer",
+    "sewing_machine",
+    "spatula"
+  ],
+  "detections": [
+    {
+      "box_2d": [
+        156,
+        107,
+        346,
+        231
+      ],
+      "label": "snowboard"
+    },
+    {
+      "box_2d": [
+        20,
+        111,
+        291,
+        188
+      ],
+      "label": "snowboard"
+    },
+    {
+      "box_2d": [
+        0,
+        0,
+        639,
+        435
+      ],
+      "label": "snowboard"
+    },
+    {
+      "box_2d": [
+        0,
+        0,
+        639,
+        435
+      ],
+      "label": "none"
+    }
+  ],
+  "latency_sec": 6.191948167048395,
+  "raw_response": {
+    "snowboard": "[{\"box_2d\":[0,0,0,0],\"label\":\"snowboard\"}]",
+    "snowboard_norm": "[{\"box_norm\":[0.244,0.247,0.541,0.532],\"label\":\"snowboard\"}]",
+    "blender": "[]",
+    "blender_norm": "[{\"box_norm\":[0.032,0.255,0.455,0.433],\"label\":\"snowboard\"}]",
+    "hair_dryer": "[]",
+    "hair_dryer_norm": "[{\"box_norm\":[0.000,0.000,0.999,0.999],\"label\":\"snowboard\"}]",
+    "sewing_machine": "[]",
+    "sewing_machine_norm": "[{\"box_norm\":[0.000,0.000,0.999,0.999],\"label\":\"none\"}]",
+    "spatula": "[]",
+    "spatula_norm": "[{\"box_norm\":[0.000,0.000,0.000,0.000],\"label\":\"spatula\"}]"
+  }
+}

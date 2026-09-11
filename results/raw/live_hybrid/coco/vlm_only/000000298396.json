@@ -1,0 +1,249 @@
+{
+ "image": "000000298396.jpg",
+ "model": "qwen/qwen3-vl-235b-a22b-instruct",
+ "labels": [
+  "clock",
+  "oven",
+  "scissors",
+  "sink",
+  "book",
+  "teddy bear",
+  "toothbrush",
+  "vase"
+ ],
+ "detections": [
+  {
+   "box_2d": [
+    30.72,
+    0.0,
+    92.8,
+    50.88
+   ],
+   "label": "clock",
+   "score": 0.98
+  },
+  {
+   "box_2d": [
+    460.8,
+    149.76,
+    566.4,
+    259.68
+   ],
+   "label": "oven",
+   "score": 0.97
+  },
+  {
+   "box_2d": [
+    362.88,
+    150.72,
+    372.48,
+    177.6
+   ],
+   "label": "scissors",
+   "score": 0.95
+  },
+  {
+   "box_2d": [
+    422.4,
+    173.76,
+    433.28,
+    189.6
+   ],
+   "label": "scissors",
+   "score": 0.93
+  },
+  {
+   "box_2d": [
+    433.28,
+    173.76,
+    442.24,
+    189.6
+   ],
+   "label": "scissors",
+   "score": 0.92
+  },
+  {
+   "box_2d": [
+    442.24,
+    173.76,
+    451.2,
+    189.6
+   ],
+   "label": "scissors",
+   "score": 0.91
+  },
+  {
+   "box_2d": [
+    442.24,
+    173.76,
+    451.2,
+    189.6
+   ],
+   "label": "scissors",
+   "score": 0.91
+  },
+  {
+   "box_2d": [
+    433.28,
+    173.76,
+    442.24,
+    189.6
+   ],
+   "label": "scissors",
+   "score": 0.92
+  },
+  {
+   "box_2d": [
+    422.4,
+    173.76,
+    433.28,
+    189.6
+   ],
+   "label": "scissors",
+   "score": 0.93
+  },
+  {
+   "box_2d": [
+    362.88,
+    150.72,
+    372.48,
+    177.6
+   ],
+   "label": "scissors",
+   "score": 0.95
+  },
+  {
+   "box_2d": [
+    66.56,
+    269.76,
+    201.6,
+    307.68
+   ],
+   "label": "sink",
+   "score": 0.99
+  },
+  {
+   "box_2d": [
+    311.68,
+    221.76,
+    330.88,
+    237.6
+   ],
+   "label": "book",
+   "score": 0.96
+  },
+  {
+   "box_2d": [
+    311.68,
+    221.76,
+    330.88,
+    237.6
+   ],
+   "label": "book",
+   "score": 0.96
+  },
+  {
+   "box_2d": [
+    357.12,
+    388.8,
+    472.32,
+    453.6
+   ],
+   "label": "teddy bear",
+   "score": 0.85
+  },
+  {
+   "box_2d": [
+    417.28,
+    225.6,
+    426.24,
+    259.68
+   ],
+   "label": "toothbrush",
+   "score": 0.94
+  },
+  {
+   "box_2d": [
+    426.24,
+    225.6,
+    433.28,
+    259.68
+   ],
+   "label": "toothbrush",
+   "score": 0.93
+  },
+  {
+   "box_2d": [
+    433.28,
+    225.6,
+    440.32,
+    259.68
+   ],
+   "label": "toothbrush",
+   "score": 0.92
+  },
+  {
+   "box_2d": [
+    440.32,
+    225.6,
+    447.36,
+    259.68
+   ],
+   "label": "toothbrush",
+   "score": 0.91
+  }
+ ],
+ "latency_sec": 19.246720299997833,
+ "usage": {
+  "prompt_tokens": 394,
+  "completion_tokens": 800,
+  "total_tokens": 1194
+ },
+ "raw_response": {
+  "id": "gen-1783412629-oJY0fZImBHlaUcCS5E6z",
+  "object": "chat.completion",
+  "created": 1783412629,
+  "model": "qwen/qwen3-vl-235b-a22b-instruct",
+  "provider": "Alibaba",
+  "system_fingerprint": null,
+  "service_tier": null,
+  "choices": [
+   {
+    "index": 0,
+    "logprobs": null,
+    "finish_reason": "length",
+    "native_finish_reason": "length",
+    "message": {
+     "role": "assistant",
+     "content": "```json\n[\n\t{\"bbox_2d\": [48, 0, 145, 106], \"label\": \"clock\", \"confidence\": 0.98},\n\t{\"bbox_2d\": [720, 312, 885, 541], \"label\": \"oven\", \"confidence\": 0.97},\n\t{\"bbox_2d\": [567, 314, 582, 370], \"label\": \"scissors\", \"confidence\": 0.95},\n\t{\"bbox_2d\": [660, 362, 677, 395], \"label\": \"scissors\", \"confidence\": 0.93},\n\t{\"bbox_2d\": [677, 362, 691, 395], \"label\": \"scissors\", \"confidence\": 0.92},\n\t{\"bbox_2d\": [691, 362, 705, 395], \"label\": \"scissors\", \"confidence\": 0.91},\n\t{\"bbox_2d\": [691, 362, 705, 395], \"label\": \"scissors\", \"confidence\": 0.91},\n\t{\"bbox_2d\": [677, 362, 691, 395], \"label\": \"scissors\", \"confidence\": 0.92},\n\t{\"bbox_2d\": [660, 362, 677, 395], \"label\": \"scissors\", \"confidence\": 0.93},\n\t{\"bbox_2d\": [567, 314, 582, 370], \"label\": \"scissors\", \"confidence\": 0.95},\n\t{\"bbox_2d\": [104, 562, 315, 641], \"label\": \"sink\", \"confidence\": 0.99},\n\t{\"bbox_2d\": [487, 462, 517, 495], \"label\": \"book\", \"confidence\": 0.96},\n\t{\"bbox_2d\": [487, 462, 517, 495], \"label\": \"book\", \"confidence\": 0.96},\n\t{\"bbox_2d\": [558, 810, 738, 945], \"label\": \"teddy bear\", \"confidence\": 0.85},\n\t{\"bbox_2d\": [652, 470, 666, 541], \"label\": \"toothbrush\", \"confidence\": 0.94},\n\t{\"bbox_2d\": [666, 470, 677, 541], \"label\": \"toothbrush\", \"confidence\": 0.93},\n\t{\"bbox_2d\": [677, 470, 688, 541], \"label\": \"toothbrush\", \"confidence\": 0.92},\n\t{\"bbox_2d\": [688, 470, 699, 541], \"label\": \"toothbrush\", \"confidence\": 0.91},\n\t{\"bbox_2d\": [699, 470, 710, 54",
+     "refusal": null,
+     "reasoning": null
+    }
+   }
+  ],
+  "usage": {
+   "prompt_tokens": 394,
+   "completion_tokens": 800,
+   "total_tokens": 1194,
+   "cost": 0.00093444,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00093444,
+    "upstream_inference_prompt_cost": 0.00010244,
+    "upstream_inference_completions_cost": 0.000832
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   }
+  }
+ },
+ "ts": "2026-07-07T08:24:05.824092+00:00"
+}

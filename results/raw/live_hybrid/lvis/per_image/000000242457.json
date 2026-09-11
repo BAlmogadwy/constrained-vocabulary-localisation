@@ -1,0 +1,230 @@
+{
+ "image": "000000242457.jpg",
+ "labels": [
+  "blender",
+  "hair_dryer",
+  "microscope",
+  "musical_instrument",
+  "sewing_machine"
+ ],
+ "tau": 0.4,
+ "detector": {
+  "detections": [
+   {
+    "label": "blender",
+    "box": [
+     211.218505859375,
+     134.6437225341797,
+     254.93875122070312,
+     197.68641662597656
+    ],
+    "score": 0.12937317788600922
+   },
+   {
+    "label": "blender",
+    "box": [
+     206.8428955078125,
+     133.1307830810547,
+     313.77783203125,
+     198.01931762695312
+    ],
+    "score": 0.004165011923760176
+   },
+   {
+    "label": "blender",
+    "box": [
+     187.25772094726562,
+     132.10826110839844,
+     322.9075927734375,
+     335.12371826171875
+    ],
+    "score": 0.002797260181978345
+   },
+   {
+    "label": "musical_instrument",
+    "box": [
+     190.74278259277344,
+     64.55973052978516,
+     207.5106201171875,
+     106.78164672851562
+    ],
+    "score": 0.0022460115142166615
+   },
+   {
+    "label": "musical_instrument",
+    "box": [
+     413.65240478515625,
+     238.2945556640625,
+     473.97003173828125,
+     279.03143310546875
+    ],
+    "score": 0.0014282498741522431
+   },
+   {
+    "label": "microscope",
+    "box": [
+     190.76283264160156,
+     65.01683044433594,
+     207.27793884277344,
+     107.3888931274414
+    ],
+    "score": 0.0012119204038754106
+   },
+   {
+    "label": "blender",
+    "box": [
+     198.54055786132812,
+     133.3572540283203,
+     259.891845703125,
+     318.0494384765625
+    ],
+    "score": 0.0011167209595441818
+   }
+  ],
+  "latency_sec": 0.09192310000071302
+ },
+ "detector_max_score": 0.12937317788600922,
+ "escalated": true,
+ "vlm": {
+  "model": "qwen/qwen3-vl-235b-a22b-instruct",
+  "detections": [
+   {
+    "label": "blender",
+    "box": [
+     223.0,
+     134.636,
+     250.0,
+     191.544
+    ],
+    "score": 1.0
+   }
+  ],
+  "latency_sec": 3.0679050000035204,
+  "usage": {
+   "prompt_tokens": 267,
+   "completion_tokens": 50,
+   "total_tokens": 317
+  },
+  "raw_response": {
+   "id": "gen-1783406769-8hNBTzLTy1WlphNiwnFW",
+   "object": "chat.completion",
+   "created": 1783406769,
+   "model": "qwen/qwen3-vl-235b-a22b-instruct",
+   "provider": "Novita",
+   "system_fingerprint": null,
+   "service_tier": null,
+   "choices": [
+    {
+     "index": 0,
+     "logprobs": null,
+     "finish_reason": "stop",
+     "native_finish_reason": "stop",
+     "message": {
+      "role": "assistant",
+      "content": "```json\n[\n\t{\"bbox_2d\": [446, 388, 500, 552], \"label\": \"blender\", \"confidence\": 0.99}\n]\n```",
+      "refusal": null,
+      "reasoning": null
+     }
+    }
+   ],
+   "usage": {
+    "prompt_tokens": 267,
+    "completion_tokens": 50,
+    "total_tokens": 317,
+    "cost": 0.0001551,
+    "is_byok": false,
+    "prompt_tokens_details": {
+     "cached_tokens": 0,
+     "cache_write_tokens": 0,
+     "audio_tokens": 0,
+     "video_tokens": 0
+    },
+    "cost_details": {
+     "upstream_inference_cost": 0.0001551,
+     "upstream_inference_prompt_cost": 8.01e-05,
+     "upstream_inference_completions_cost": 7.5e-05
+    },
+    "completion_tokens_details": {
+     "reasoning_tokens": 0,
+     "image_tokens": 0,
+     "audio_tokens": 0
+    }
+   }
+  }
+ },
+ "fallback": false,
+ "ts": "2026-07-07T06:46:07.922567+00:00",
+ "fused": [
+  {
+   "label": "blender",
+   "box": [
+    211.218505859375,
+    134.6437225341797,
+    254.93875122070312,
+    197.68641662597656
+   ],
+   "score": 0.4293731778860092
+  },
+  {
+   "label": "blender",
+   "box": [
+    206.8428955078125,
+    133.1307830810547,
+    313.77783203125,
+    198.01931762695312
+   ],
+   "score": 0.004165011923760176
+  },
+  {
+   "label": "blender",
+   "box": [
+    187.25772094726562,
+    132.10826110839844,
+    322.9075927734375,
+    335.12371826171875
+   ],
+   "score": 0.002797260181978345
+  },
+  {
+   "label": "musical_instrument",
+   "box": [
+    190.74278259277344,
+    64.55973052978516,
+    207.5106201171875,
+    106.78164672851562
+   ],
+   "score": 0.0022460115142166615
+  },
+  {
+   "label": "musical_instrument",
+   "box": [
+    413.65240478515625,
+    238.2945556640625,
+    473.97003173828125,
+    279.03143310546875
+   ],
+   "score": 0.0014282498741522431
+  },
+  {
+   "label": "microscope",
+   "box": [
+    190.76283264160156,
+    65.01683044433594,
+    207.27793884277344,
+    107.3888931274414
+   ],
+   "score": 0.0012119204038754106
+  },
+  {
+   "label": "blender",
+   "box": [
+    198.54055786132812,
+    133.3572540283203,
+    259.891845703125,
+    318.0494384765625
+   ],
+   "score": 0.0011167209595441818
+  }
+ ],
+ "latency_total_sec": 3.159845000001951
+}

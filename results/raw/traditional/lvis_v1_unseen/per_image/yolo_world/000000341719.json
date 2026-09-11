@@ -1,0 +1,50 @@
+{
+  "model": "yolo_world",
+  "strategy": "default",
+  "image": "/home/maxim/PycharmProjects/zero-shot-detection-benchmark/data/subsets/lvis_v1_val_unseen/images/000000341719.jpg",
+  "labels": [
+    "snowboard",
+    "coffee_maker",
+    "lawn_mower",
+    "musical_instrument",
+    "stapler_(stapling_machine)"
+  ],
+  "result": {
+    "detections": [
+      {
+        "label": "snowboard",
+        "score": 0.8343419432640076,
+        "box_2d": [
+          542.1832275390625,
+          297.14166259765625,
+          589.5186767578125,
+          409.77813720703125
+        ],
+        "box": [
+          542.1832275390625,
+          297.14166259765625,
+          589.5186767578125,
+          409.77813720703125
+        ]
+      },
+      {
+        "label": "snowboard",
+        "score": 0.5833581686019897,
+        "box_2d": [
+          292.0085754394531,
+          356.47552490234375,
+          372.8734436035156,
+          385.28521728515625
+        ],
+        "box": [
+          292.0085754394531,
+          356.47552490234375,
+          372.8734436035156,
+          385.28521728515625
+        ]
+      }
+    ],
+    "latency_sec": 0.03534573782235384,
+    "raw_response": null
+  }
+}

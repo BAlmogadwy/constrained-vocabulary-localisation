@@ -1,0 +1,153 @@
+{
+  "image": "/home/maxim/PycharmProjects/zero-shot-detection-benchmark/data/raw/coco2017/val2017/000000529939.jpg",
+  "image_id": 529939,
+  "file_name": "000000529939.jpg",
+  "num_crops": 6,
+  "crops": [
+    {
+      "annotation_id": 50005,
+      "bbox": [
+        421.27,
+        136.9,
+        89.6,
+        179.28
+      ],
+      "category_id": 976,
+      "gt_label": "snowboard",
+      "labels": [
+        "snowboard",
+        "lawn_mower",
+        "microscope",
+        "sewing_machine",
+        "stapler_(stapling_machine)"
+      ],
+      "prediction": null,
+      "normalized_prediction": "",
+      "matched_label": null,
+      "correct": false,
+      "latency_sec": 1.5426320760161616,
+      "raw_response": "[]"
+    },
+    {
+      "annotation_id": 50006,
+      "bbox": [
+        0.0,
+        182.15,
+        19.89,
+        10.31
+      ],
+      "category_id": 976,
+      "gt_label": "snowboard",
+      "labels": [
+        "snowboard",
+        "lawn_mower",
+        "microscope",
+        "sewing_machine",
+        "stapler_(stapling_machine)"
+      ],
+      "prediction": null,
+      "normalized_prediction": "",
+      "matched_label": null,
+      "correct": false,
+      "latency_sec": 1.3827680649992544,
+      "raw_response": "I am sorry, but I cannot process images and therefore cannot detect objects or provide bounding box coordinates."
+    },
+    {
+      "annotation_id": 50007,
+      "bbox": [
+        42.18,
+        174.19,
+        37.5,
+        175.2
+      ],
+      "category_id": 976,
+      "gt_label": "snowboard",
+      "labels": [
+        "snowboard",
+        "lawn_mower",
+        "microscope",
+        "sewing_machine",
+        "stapler_(stapling_machine)"
+      ],
+      "prediction": null,
+      "normalized_prediction": "",
+      "matched_label": null,
+      "correct": false,
+      "latency_sec": 1.3223193550074939,
+      "raw_response": "I am sorry, but I cannot detect any of the requested objects in the provided image. The image is too blurry and indistinct to identify any clear objects."
+    },
+    {
+      "annotation_id": 50008,
+      "bbox": [
+        16.89,
+        181.03,
+        52.63,
+        171.9
+      ],
+      "category_id": 976,
+      "gt_label": "snowboard",
+      "labels": [
+        "snowboard",
+        "lawn_mower",
+        "microscope",
+        "sewing_machine",
+        "stapler_(stapling_machine)"
+      ],
+      "prediction": "snowboard",
+      "normalized_prediction": "snowboard",
+      "matched_label": "snowboard",
+      "correct": true,
+      "latency_sec": 3.041561502002878,
+      "raw_response": "```json\n[\n  {\"box_2d\": [0, 0, 480, 1000], \"label\": \"snowboard\"}\n]\n```"
+    },
+    {
+      "annotation_id": 50009,
+      "bbox": [
+        0.0,
+        188.01,
+        34.94,
+        161.92
+      ],
+      "category_id": 976,
+      "gt_label": "snowboard",
+      "labels": [
+        "snowboard",
+        "lawn_mower",
+        "microscope",
+        "sewing_machine",
+        "stapler_(stapling_machine)"
+      ],
+      "prediction": null,
+      "normalized_prediction": "",
+      "matched_label": null,
+      "correct": false,
+      "latency_sec": 1.6464510839723516,
+      "raw_response": "I am sorry, but I cannot detect any of the requested objects (snowboard, lawn_mower, microscope, sewing_machine, stapler) in the provided image. The image is extremely blurry and indistinct, making it impossible to identify any specific items, even with the provided crops."
+    },
+    {
+      "annotation_id": 50010,
+      "bbox": [
+        0.53,
+        190.55,
+        19.2,
+        67.43
+      ],
+      "category_id": 976,
+      "gt_label": "snowboard",
+      "labels": [
+        "snowboard",
+        "lawn_mower",
+        "microscope",
+        "sewing_machine",
+        "stapler_(stapling_machine)"
+      ],
+      "prediction": null,
+      "normalized_prediction": "",
+      "matched_label": null,
+      "correct": false,
+      "latency_sec": 1.5728247300139628,
+      "raw_response": "[]"
+    }
+  ],
+  "prompt": "You are an object recognition assistant.\n\nYou will see a cropped image that contains exactly one object\nfrom the following LVIS categories (unseen split):\n\n- snowboard\n- lawn_mower\n- microscope\n- sewing_machine\n- stapler_(stapling_machine)\n\nYour task:\n- Return ONLY the best matching category name from this list.\n- Do not output explanations or extra text.\n\nAnswer with a single string: \"class_name\"."
+}

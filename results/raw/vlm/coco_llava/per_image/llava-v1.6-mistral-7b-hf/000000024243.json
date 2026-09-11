@@ -1,0 +1,137 @@
+{
+  "model": "llava-v1.6-mistral-7b-hf",
+  "strategy": "single_query",
+  "image": "/home/maxim/PycharmProjects/zero-shot-detection-benchmark/data/raw/coco2017/val2017/000000024243.jpg",
+  "labels": [
+    "refrigerator",
+    "book",
+    "clock",
+    "microwave",
+    "scissors",
+    "sink",
+    "toaster"
+  ],
+  "detections": [
+    {
+      "box_2d": [
+        [
+          0.456,
+          0.0,
+          0.858,
+          0.719
+        ],
+        [
+          0.456,
+          0.0,
+          0.858,
+          0.719
+        ]
+      ],
+      "label": "refrigerator"
+    },
+    {
+      "box_2d": [
+        [
+          0.0,
+          0.0,
+          0.25,
+          0.988
+        ],
+        [
+          0.0,
+          0.0,
+          0.25,
+          0.988
+        ]
+      ],
+      "label": "book"
+    },
+    {
+      "box_2d": [
+        [
+          0.0,
+          0.0,
+          0.25,
+          0.988
+        ],
+        [
+          0.0,
+          0.0,
+          0.25,
+          0.988
+        ]
+      ],
+      "label": "clock"
+    },
+    {
+      "box_2d": [
+        [
+          0.0,
+          0.0,
+          0.25,
+          0.988
+        ],
+        [
+          0.0,
+          0.0,
+          0.25,
+          0.988
+        ]
+      ],
+      "label": "microwave"
+    },
+    {
+      "box_2d": [
+        [
+          0.0,
+          0.0,
+          0.25,
+          0.988
+        ],
+        [
+          0.0,
+          0.0,
+          0.25,
+          0.988
+        ]
+      ],
+      "label": "scissors"
+    },
+    {
+      "box_2d": [
+        [
+          0.0,
+          0.0,
+          0.25,
+          0.988
+        ],
+        [
+          0.0,
+          0.0,
+          0.25,
+          0.988
+        ]
+      ],
+      "label": "sink"
+    },
+    {
+      "box_2d": [
+        [
+          0.0,
+          0.0,
+          0.25,
+          0.988
+        ],
+        [
+          0.0,
+          0.0,
+          0.25,
+          0.988
+        ]
+      ],
+      "label": "toaster"
+    }
+  ],
+  "latency_sec": 8.321889824001119,
+  "raw_response": "USER:  \nDetect the following objects in the image: refrigerator, book, clock, microwave, scissors, sink, toaster. For each detected object, provide JSON entries in the form [{\"box_2d\": [x1, y1, x2, y2], \"label\": \"class_name\"}]. Return only JSON. ASSISTANT: ```json\n[\n  {\n    \"box_2d\": [\n      [0.456,0.000,0.858,0.719],\n      [0.456,0.000,0.858,0.719]\n    ],\n    \"label\": \"refrigerator\"\n  },\n  {\n    \"box_2d\": [\n      [0.000,0.000,0.250,0.988],\n      [0.000,0.000,0.250,0.988]\n    ],\n    \"label\": \"book\"\n  },\n  {\n    \"box_2d\": [\n      [0.000,0.000,0.250,0.988],\n      [0.000,0.000,0.250,0.988]\n    ],\n    \"label\": \"clock\"\n  },\n  {\n    \"box_2d\": [\n      [0.000,0.000,0.250,0.988],\n      [0.000,0.000,0.250,0.988]\n    ],\n    \"label\": \"microwave\"\n  },\n  {\n    \"box_2d\": [\n      [0.000,0.000,0.250,0.988],\n      [0.000,0.000,0.250,0.988]\n    ],\n    \"label\": \"scissors\"\n  },\n  {\n    \"box_2d\": [\n      [0.000,0.000,0.250,0.988],\n      [0.000,0.000,0.250,0.988]\n    ],\n    \"label\": \"sink\"\n  },\n  {\n    \"box_2d\": [\n      [0.000,0.000,0.250,0.988],\n      [0.000,0.000,0.250,0.988]\n    ],\n    \"label\": \"toaster\"\n  }\n]\n``` "
+}

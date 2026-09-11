@@ -1,0 +1,129 @@
+{
+  "image": "/home/maxim/PycharmProjects/zero-shot-detection-benchmark/data/subsets/lvis_v1_val_unseen/images/000000069411.jpg",
+  "image_id": 69411,
+  "file_name": "000000069411.jpg",
+  "num_crops": 5,
+  "crops": [
+    {
+      "annotation_id": 86377,
+      "bbox": [
+        476.58,
+        106.53,
+        120.63,
+        33.83
+      ],
+      "category_id": 976,
+      "gt_label": "snowboard",
+      "labels": [
+        "snowboard",
+        "microscope",
+        "musical_instrument",
+        "sewing_machine",
+        "spatula"
+      ],
+      "prediction": "snowboard",
+      "normalized_prediction": "snowboard",
+      "matched_label": "snowboard",
+      "correct": true,
+      "latency_sec": 1.9854733730026055,
+      "raw_response": "```json\n[\n  {\"box_2d\": [0, 0, 991, 1000], \"label\": \"snowboard\"}\n]\n```"
+    },
+    {
+      "annotation_id": 86378,
+      "bbox": [
+        336.47,
+        229.66,
+        142.9,
+        29.41
+      ],
+      "category_id": 976,
+      "gt_label": "snowboard",
+      "labels": [
+        "snowboard",
+        "microscope",
+        "musical_instrument",
+        "sewing_machine",
+        "spatula"
+      ],
+      "prediction": "snowboard",
+      "normalized_prediction": "snowboard",
+      "matched_label": "snowboard",
+      "correct": true,
+      "latency_sec": 1.622505553998053,
+      "raw_response": "```json\n[\n  {\"box_2d\": [0, 0, 995, 1000], \"label\": \"snowboard\"}\n]\n```"
+    },
+    {
+      "annotation_id": 86379,
+      "bbox": [
+        180.78,
+        383.38,
+        151.74,
+        48.4
+      ],
+      "category_id": 976,
+      "gt_label": "snowboard",
+      "labels": [
+        "snowboard",
+        "microscope",
+        "musical_instrument",
+        "sewing_machine",
+        "spatula"
+      ],
+      "prediction": "snowboard",
+      "normalized_prediction": "snowboard",
+      "matched_label": "snowboard",
+      "correct": true,
+      "latency_sec": 2.5929998369829264,
+      "raw_response": "```json\n[\n  {\"box_2d\": [0, 104, 532, 992], \"label\": \"snowboard\"}\n]\n```"
+    },
+    {
+      "annotation_id": 86380,
+      "bbox": [
+        191.12,
+        136.66,
+        126.13,
+        25.37
+      ],
+      "category_id": 976,
+      "gt_label": "snowboard",
+      "labels": [
+        "snowboard",
+        "microscope",
+        "musical_instrument",
+        "sewing_machine",
+        "spatula"
+      ],
+      "prediction": "snowboard",
+      "normalized_prediction": "snowboard",
+      "matched_label": "snowboard",
+      "correct": true,
+      "latency_sec": 1.6149389750207774,
+      "raw_response": "```json\n[\n  {\"box_2d\": [108, 0, 891, 936], \"label\": \"snowboard\"}\n]\n```"
+    },
+    {
+      "annotation_id": 86381,
+      "bbox": [
+        45.02,
+        225.93,
+        136.56,
+        35.41
+      ],
+      "category_id": 976,
+      "gt_label": "snowboard",
+      "labels": [
+        "snowboard",
+        "microscope",
+        "musical_instrument",
+        "sewing_machine",
+        "spatula"
+      ],
+      "prediction": "snowboard",
+      "normalized_prediction": "snowboard",
+      "matched_label": "snowboard",
+      "correct": true,
+      "latency_sec": 1.560514131007949,
+      "raw_response": "```json\n[\n  {\"box_2d\": [0, 246, 502, 735], \"label\": \"snowboard\"}\n]\n```"
+    }
+  ],
+  "prompt": "You are an object recognition assistant.\n\nYou will see a cropped image that contains exactly one object\nfrom the following LVIS categories (unseen split):\n\n- snowboard\n- microscope\n- musical_instrument\n- sewing_machine\n- spatula\n\nYour task:\n- Return ONLY the best matching category name from this list.\n- Do not output explanations or extra text.\n\nAnswer with a single string: \"class_name\"."
+}

@@ -1,0 +1,34 @@
+{
+  "model": "owl_vit",
+  "strategy": "default",
+  "image": "/home/maxim/PycharmProjects/zero-shot-detection-benchmark/data/subsets/lvis_v1_val_unseen/images/000000088603.jpg",
+  "labels": [
+    "hair_dryer",
+    "coffee_maker",
+    "lawn_mower",
+    "microscope",
+    "musical_instrument"
+  ],
+  "result": {
+    "detections": [
+      {
+        "label": "hair_dryer",
+        "score": 0.24423979222774506,
+        "box_2d": [
+          272.35931396484375,
+          168.33657836914062,
+          322.7029724121094,
+          235.63436889648438
+        ],
+        "box": [
+          272.35931396484375,
+          168.33657836914062,
+          322.7029724121094,
+          235.63436889648438
+        ]
+      }
+    ],
+    "latency_sec": 0.08196971472352743,
+    "raw_response": null
+  }
+}

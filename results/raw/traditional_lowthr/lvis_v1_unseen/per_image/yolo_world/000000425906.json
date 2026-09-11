@@ -1,0 +1,50 @@
+{
+  "model": "yolo_world",
+  "strategy": "default",
+  "image": "C:\\Users\\user\\zeroshot\\zero-shot-detection-benchmark\\data\\subsets\\lvis_v1_val_unseen\\images\\000000425906.jpg",
+  "labels": [
+    "snowboard",
+    "blender",
+    "coffee_maker",
+    "microscope",
+    "musical_instrument"
+  ],
+  "result": {
+    "detections": [
+      {
+        "label": "snowboard",
+        "score": 0.9212726950645447,
+        "box_2d": [
+          107.62579345703125,
+          117.22222900390625,
+          282.7351989746094,
+          269.5197448730469
+        ],
+        "box": [
+          107.62579345703125,
+          117.22222900390625,
+          282.7351989746094,
+          269.5197448730469
+        ]
+      },
+      {
+        "label": "snowboard",
+        "score": 0.002032328862696886,
+        "box_2d": [
+          0.01552581787109375,
+          446.9418640136719,
+          44.62007522583008,
+          582.967529296875
+        ],
+        "box": [
+          0.01552581787109375,
+          446.9418640136719,
+          44.62007522583008,
+          582.967529296875
+        ]
+      }
+    ],
+    "latency_sec": 0.035129399999277666,
+    "raw_response": null
+  }
+}

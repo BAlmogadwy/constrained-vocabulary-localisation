@@ -1,0 +1,36 @@
+{
+  "model": "Llama-3.2-11B-Vision-Instruct",
+  "strategy": "single_query",
+  "image": "/home/maxim/PycharmProjects/zero-shot-detection-benchmark/data/subsets/lvis_v1_val_unseen/images/000000273607.jpg",
+  "labels": [
+    "blender",
+    "coffee_maker",
+    "microscope",
+    "sewing_machine",
+    "snowboard"
+  ],
+  "detections": [
+    {
+      "box_2d": [
+        0,
+        0,
+        160,
+        120
+      ],
+      "label": "coffee_maker"
+    }
+  ],
+  "latency_sec": 6.203636871068738,
+  "raw_response": {
+    "blender": "[{\"box_2d\":[0,0,0,0],\"label\":\"blender\"}]",
+    "blender_norm": "[{\"box_norm\":[0.000,0.000,0.000,0.000],\"label\":\"blender\"}]",
+    "coffee_maker": "[]",
+    "coffee_maker_norm": "[{\"box_norm\":[0.000,0.000,0.250,0.250],\"label\":\"coffee_maker\"}]",
+    "microscope": "[]",
+    "microscope_norm": "[{\"box_norm\":[0.0,0.0,0.0,0.0],\"label\":\"microscope\"}]",
+    "sewing_machine": "[]",
+    "sewing_machine_norm": "[{\"box_norm\":[0.000,0.000,0.000,0.000],\"label\":\"sewing_machine\"}]",
+    "snowboard": "[]",
+    "snowboard_norm": "[{\"box_norm\":[0.000,0.000,0.000,0.000],\"label\":\"snowboard\"}]"
+  }
+}

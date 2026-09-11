@@ -1,0 +1,76 @@
+{
+ "image": "000000549508.jpg",
+ "model": "qwen/qwen3-vl-235b-a22b-instruct",
+ "labels": [
+  "snowboard",
+  "blender",
+  "musical_instrument",
+  "sewing_machine",
+  "spatula"
+ ],
+ "detections": [
+  {
+   "box_2d": [
+    221.44,
+    221.76,
+    263.68,
+    234.72
+   ],
+   "label": "snowboard",
+   "score": 0.99
+  }
+ ],
+ "latency_sec": 6.033121800006484,
+ "usage": {
+  "prompt_tokens": 390,
+  "completion_tokens": 50,
+  "total_tokens": 440
+ },
+ "raw_response": {
+  "id": "gen-1783408582-oNAbNXxIx94dVyLMvAVd",
+  "object": "chat.completion",
+  "created": 1783408582,
+  "model": "qwen/qwen3-vl-235b-a22b-instruct",
+  "provider": "Novita",
+  "system_fingerprint": null,
+  "service_tier": null,
+  "choices": [
+   {
+    "index": 0,
+    "logprobs": null,
+    "finish_reason": "stop",
+    "native_finish_reason": "stop",
+    "message": {
+     "role": "assistant",
+     "content": "```json\n[\n\t{\"bbox_2d\": [346, 462, 412, 489], \"label\": \"snowboard\", \"confidence\": 0.99}\n]\n```",
+     "refusal": null,
+     "reasoning": null
+    }
+   }
+  ],
+  "usage": {
+   "prompt_tokens": 390,
+   "completion_tokens": 50,
+   "total_tokens": 440,
+   "cost": 0.000192,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.000192,
+    "upstream_inference_prompt_cost": 0.000117,
+    "upstream_inference_completions_cost": 7.5e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   }
+  }
+ },
+ "ts": "2026-07-07T07:16:25.491786+00:00"
+}

@@ -1,0 +1,20 @@
+{
+  "model": "gpt-5",
+  "strategy": "single_query",
+  "image": "/home/maxim/PycharmProjects/zero-shot-detection-benchmark/data/subsets/lvis_v1_val_unseen/images/000000528984.jpg",
+  "labels": [
+    "snowboard",
+    "coffee_maker",
+    "lawn_mower",
+    "microscope",
+    "sewing_machine"
+  ],
+  "result": {
+    "detections": [],
+    "latency_sec": 10.166536713019013,
+    "raw_response": {
+      "error": "Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}",
+      "traceback": "Traceback (most recent call last):\n  File \"/home/maxim/PycharmProjects/zero-shot-detection-benchmark/experiments/run_ablation.py\", line 301, in run_model_variant\n    prediction = detector.predict(\n                 ^^^^^^^^^^^^^^^^^\n  File \"/home/maxim/PycharmProjects/zero-shot-detection-benchmark/models/vlm/gpt5_detector.py\", line 44, in predict\n    return self._predict_single_query(image_path, classes)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/maxim/PycharmProjects/zero-shot-detection-benchmark/models/vlm/gpt5_detector.py\", line 57, in _predict_single_query\n    response = self.client.responses.create(\n               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/maxim/PycharmProjects/zero-shot-detection-benchmark/.venv/lib/python3.12/site-packages/openai/resources/responses/responses.py\", line 840, in create\n    return self._post(\n           ^^^^^^^^^^^\n  File \"/home/maxim/PycharmProjects/zero-shot-detection-benchmark/.venv/lib/python3.12/site-packages/openai/_base_client.py\", line 1259, in post\n    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))\n                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/maxim/PycharmProjects/zero-shot-detection-benchmark/.venv/lib/python3.12/site-packages/openai/_base_client.py\", line 1047, in request\n    raise self._make_status_error_from_response(err.response) from None\nopenai.RateLimitError: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}\n"
+    }
+  }
+}

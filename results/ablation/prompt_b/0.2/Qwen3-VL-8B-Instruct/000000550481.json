@@ -1,0 +1,34 @@
+{
+  "model": "Qwen3-VL-8B-Instruct",
+  "strategy": "iterative",
+  "image": "/home/maxim/PycharmProjects/zero-shot-detection-benchmark/data/subsets/lvis_v1_val_unseen/images/000000550481.jpg",
+  "labels": [
+    "microscope",
+    "lawn_mower",
+    "snowboard",
+    "spatula",
+    "stapler_(stapling_machine)"
+  ],
+  "detections": [
+    {
+      "box_2d": [
+        456.0,
+        530.0,
+        552.0,
+        714.0
+      ],
+      "label": "microscope"
+    }
+  ],
+  "latency_sec": 13.730165958986618,
+  "raw_response": {
+    "identification": "user\nYou are assisting with object localization. From the target class list, return only the classes that are visible in the image.\nTarget classes: microscope, lawn_mower, snowboard, spatula, stapler_(stapling_machine).\nRespond with comma-separated class names using the provided spelling.\nassistant\nmicroscope",
+    "localization": {
+      "lawn_mower": "user\nProvide bounding boxes for objects labeled 'lawn_mower'. Return JSON in the format [{\"box_2d\":[x1,y1,x2,y2],\"label\":\"lawn_mower\"}...]. Use pixel coordinates relative to the input image. Return [] if not visible.\nassistant\n[]",
+      "snowboard": "user\nProvide bounding boxes for objects labeled 'snowboard'. Return JSON in the format [{\"box_2d\":[x1,y1,x2,y2],\"label\":\"snowboard\"}...]. Use pixel coordinates relative to the input image. Return [] if not visible.\nassistant\n[]",
+      "spatula": "user\nProvide bounding boxes for objects labeled 'spatula'. Return JSON in the format [{\"box_2d\":[x1,y1,x2,y2],\"label\":\"spatula\"}...]. Use pixel coordinates relative to the input image. Return [] if not visible.\nassistant\n[]",
+      "stapler_(stapling_machine)": "user\nProvide bounding boxes for objects labeled 'stapler_(stapling_machine)'. Return JSON in the format [{\"box_2d\":[x1,y1,x2,y2],\"label\":\"stapler_(stapling_machine)\"}...]. Use pixel coordinates relative to the input image. Return [] if not visible.\nassistant\n[]",
+      "microscope": "user\nProvide bounding boxes for objects labeled 'microscope'. Return JSON in the format [{\"box_2d\":[x1,y1,x2,y2],\"label\":\"microscope\"}...]. Use pixel coordinates relative to the input image. Return [] if not visible.\nassistant\n```json\n[\n\t{\"box_2d\":[456, 530, 552, 714],\"label\":\"microscope\"}\n]\n```"
+    }
+  }
+}

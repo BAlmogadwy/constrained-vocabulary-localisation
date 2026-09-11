@@ -1,0 +1,98 @@
+{
+ "image": "000000569917.jpg",
+ "model": "qwen/qwen3-vl-235b-a22b-instruct",
+ "labels": [
+  "sink",
+  "toothbrush",
+  "book",
+  "microwave",
+  "oven",
+  "scissors",
+  "vase"
+ ],
+ "detections": [
+  {
+   "box_2d": [
+    210.72,
+    368.0,
+    418.56,
+    460.16
+   ],
+   "label": "sink",
+   "score": 0.95
+  },
+  {
+   "box_2d": [
+    333.6,
+    280.96,
+    343.68,
+    349.44
+   ],
+   "label": "toothbrush",
+   "score": 0.92
+  },
+  {
+   "box_2d": [
+    322.56,
+    291.2,
+    333.6,
+    349.44
+   ],
+   "label": "toothbrush",
+   "score": 0.91
+  }
+ ],
+ "latency_sec": 5.43115580000449,
+ "usage": {
+  "prompt_tokens": 390,
+  "completion_tokens": 137,
+  "total_tokens": 527
+ },
+ "raw_response": {
+  "id": "gen-1783415318-bt4P5FShTkVQswRYudCY",
+  "object": "chat.completion",
+  "created": 1783415318,
+  "model": "qwen/qwen3-vl-235b-a22b-instruct",
+  "provider": "Parasail",
+  "system_fingerprint": null,
+  "service_tier": null,
+  "choices": [
+   {
+    "index": 0,
+    "logprobs": null,
+    "finish_reason": "stop",
+    "native_finish_reason": "stop",
+    "message": {
+     "role": "assistant",
+     "content": "```json\n[\n\t{\"bbox_2d\": [439, 575, 872, 719], \"label\": \"sink\", \"confidence\": 0.95},\n\t{\"bbox_2d\": [695, 439, 716, 546], \"label\": \"toothbrush\", \"confidence\": 0.92},\n\t{\"bbox_2d\": [672, 455, 695, 546], \"label\": \"toothbrush\", \"confidence\": 0.91}\n]\n```",
+     "refusal": null,
+     "reasoning": null
+    }
+   }
+  ],
+  "usage": {
+   "prompt_tokens": 390,
+   "completion_tokens": 137,
+   "total_tokens": 527,
+   "cost": 0.0003422,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0003422,
+    "upstream_inference_prompt_cost": 8.19e-05,
+    "upstream_inference_completions_cost": 0.0002603
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   }
+  }
+ },
+ "ts": "2026-07-07T09:08:42.232046+00:00"
+}

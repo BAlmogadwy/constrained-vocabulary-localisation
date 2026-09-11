@@ -1,0 +1,118 @@
+{
+ "image": "000000213445.jpg",
+ "model": "qwen/qwen3-vl-235b-a22b-instruct",
+ "labels": [
+  "book",
+  "hair drier",
+  "refrigerator",
+  "scissors",
+  "sink",
+  "toaster",
+  "toothbrush"
+ ],
+ "detections": [
+  {
+   "box_2d": [
+    0.0,
+    120.0,
+    37.536,
+    208.5
+   ],
+   "label": "book",
+   "score": 0.98
+  },
+  {
+   "box_2d": [
+    0.0,
+    31.0,
+    37.536,
+    113.5
+   ],
+   "label": "book",
+   "score": 0.97
+  },
+  {
+   "box_2d": [
+    195.84,
+    29.0,
+    230.52,
+    64.5
+   ],
+   "label": "book",
+   "score": 0.96
+  },
+  {
+   "box_2d": [
+    254.592,
+    0.0,
+    289.68,
+    27.0
+   ],
+   "label": "book",
+   "score": 0.95
+  },
+  {
+   "box_2d": [
+    146.88,
+    0.0,
+    179.52,
+    43.5
+   ],
+   "label": "book",
+   "score": 0.94
+  }
+ ],
+ "latency_sec": 6.607287200007704,
+ "usage": {
+  "prompt_tokens": 300,
+  "completion_tokens": 203,
+  "total_tokens": 503
+ },
+ "raw_response": {
+  "id": "gen-1783411905-WF1AAJZTV6SDriIgsT2W",
+  "object": "chat.completion",
+  "created": 1783411905,
+  "model": "qwen/qwen3-vl-235b-a22b-instruct",
+  "provider": "Novita",
+  "system_fingerprint": null,
+  "service_tier": null,
+  "choices": [
+   {
+    "index": 0,
+    "logprobs": null,
+    "finish_reason": "stop",
+    "native_finish_reason": "stop",
+    "message": {
+     "role": "assistant",
+     "content": "```json\n[\n\t{\"bbox_2d\": [0, 240, 92, 417], \"label\": \"book\", \"confidence\": 0.98},\n\t{\"bbox_2d\": [0, 62, 92, 227], \"label\": \"book\", \"confidence\": 0.97},\n\t{\"bbox_2d\": [480, 58, 565, 129], \"label\": \"book\", \"confidence\": 0.96},\n\t{\"bbox_2d\": [624, 0, 710, 54], \"label\": \"book\", \"confidence\": 0.95},\n\t{\"bbox_2d\": [360, 0, 440, 87], \"label\": \"book\", \"confidence\": 0.94}\n]\n```",
+     "refusal": null,
+     "reasoning": null
+    }
+   }
+  ],
+  "usage": {
+   "prompt_tokens": 300,
+   "completion_tokens": 203,
+   "total_tokens": 503,
+   "cost": 0.0003945,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0003945,
+    "upstream_inference_prompt_cost": 9e-05,
+    "upstream_inference_completions_cost": 0.0003045
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   }
+  }
+ },
+ "ts": "2026-07-07T08:11:49.814482+00:00"
+}

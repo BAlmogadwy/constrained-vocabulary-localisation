@@ -1,0 +1,45 @@
+{
+  "model": "llava-v1.6-mistral-7b-hf",
+  "strategy": "single_query",
+  "image": "/home/maxim/PycharmProjects/zero-shot-detection-benchmark/data/raw/coco2017/val2017/000000090108.jpg",
+  "labels": [
+    "sink",
+    "microwave",
+    "oven",
+    "refrigerator",
+    "scissors",
+    "toothbrush",
+    "vase"
+  ],
+  "detections": [
+    {
+      "box_2d": [
+        0.2,
+        0.5,
+        0.386,
+        0.967
+      ],
+      "label": "sink"
+    },
+    {
+      "box_2d": [
+        0.6,
+        0.15,
+        0.8,
+        0.5
+      ],
+      "label": "shower"
+    },
+    {
+      "box_2d": [
+        0.83,
+        0.51,
+        0.986,
+        0.877
+      ],
+      "label": "toilet"
+    }
+  ],
+  "latency_sec": 2.054384338989621,
+  "raw_response": "USER:  \nDetect the following objects in the image: sink, microwave, oven, refrigerator, scissors, toothbrush, vase. For each detected object, provide JSON entries in the form [{\"box_2d\": [x1, y1, x2, y2], \"label\": \"class_name\"}]. Return only JSON. ASSISTANT: ```json\n[\n  {\"box_2d\": [0.200,0.500,0.386,0.967], \"label\": \"sink\"},\n  {\"box_2d\": [0.600,0.150,0.800,0.500], \"label\": \"shower\"},\n  {\"box_2d\": [0.830,0.510,0.986,0.877], \"label\": \"toilet\"}\n]\n``` "
+}

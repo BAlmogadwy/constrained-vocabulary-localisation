@@ -1,0 +1,630 @@
+{
+  "model": "Qwen3-VL-8B-Instruct",
+  "strategy": "single_query",
+  "experiment": "visual_cot",
+  "prompt_variant": "baseline",
+  "temperature": 0.0,
+  "image": "/home/maxim/PycharmProjects/zero-shot-detection-benchmark/data/subsets/lvis_v1_val_unseen/images/000000503535.jpg",
+  "image_relative": "000000503535.jpg",
+  "labels": [
+    "snowboard",
+    "blender",
+    "lawn_mower",
+    "sewing_machine",
+    "stapler_(stapling_machine)"
+  ],
+  "metadata": {
+    "image": "/home/maxim/PycharmProjects/zero-shot-detection-benchmark/data/subsets/lvis_v1_val_unseen/images/000000503535.jpg",
+    "image_relative": "000000503535.jpg",
+    "image_size": {
+      "width": 640,
+      "height": 480
+    },
+    "labels": [
+      "snowboard",
+      "blender",
+      "lawn_mower",
+      "sewing_machine",
+      "stapler_(stapling_machine)"
+    ],
+    "ground_truth_labels": [
+      "snowboard",
+      "blender",
+      "lawn_mower",
+      "sewing_machine",
+      "stapler_(stapling_machine)"
+    ]
+  },
+  "detections": [
+    {
+      "box_2d": [
+        467.0,
+        321.0,
+        552.0,
+        989.0
+      ],
+      "label": "snowboard"
+    },
+    {
+      "box_2d": [
+        663.0,
+        366.0,
+        714.0,
+        989.0
+      ],
+      "label": "snowboard"
+    },
+    {
+      "box_2d": [
+        250.0,
+        355.0,
+        307.0,
+        989.0
+      ],
+      "label": "snowboard"
+    },
+    {
+      "box_2d": [
+        398.0,
+        338.0,
+        477.0,
+        989.0
+      ],
+      "label": "snowboard"
+    },
+    {
+      "box_2d": [
+        787.0,
+        248.0,
+        843.0,
+        426.0
+      ],
+      "label": "snowboard"
+    }
+  ],
+  "latency_sec": 33.94215526408516,
+  "final_detections": [
+    {
+      "box_2d": [
+        467.0,
+        321.0,
+        552.0,
+        989.0
+      ],
+      "label": "snowboard"
+    },
+    {
+      "box_2d": [
+        663.0,
+        366.0,
+        714.0,
+        989.0
+      ],
+      "label": "snowboard"
+    },
+    {
+      "box_2d": [
+        250.0,
+        355.0,
+        307.0,
+        989.0
+      ],
+      "label": "snowboard"
+    },
+    {
+      "box_2d": [
+        398.0,
+        338.0,
+        477.0,
+        989.0
+      ],
+      "label": "snowboard"
+    },
+    {
+      "box_2d": [
+        787.0,
+        248.0,
+        843.0,
+        426.0
+      ],
+      "label": "snowboard"
+    }
+  ],
+  "final_latency_sec": 33.94215526408516,
+  "refinement_chain": [
+    {
+      "step": 0,
+      "stage": "baseline",
+      "prompt": "Baseline inference using the configured prompt strategy.",
+      "labels_sent": [
+        "snowboard",
+        "blender",
+        "lawn_mower",
+        "sewing_machine",
+        "stapler_(stapling_machine)"
+      ],
+      "input_images": [
+        "/home/maxim/PycharmProjects/zero-shot-detection-benchmark/data/subsets/lvis_v1_val_unseen/images/000000503535.jpg"
+      ],
+      "annotated_image": "/home/maxim/PycharmProjects/zero-shot-detection-benchmark/data/subsets/lvis_v1_val_unseen/images/000000503535.jpg",
+      "detections": [
+        {
+          "box_2d": [
+            462.0,
+            320.0,
+            552.0,
+            989.0
+          ],
+          "label": "snowboard"
+        },
+        {
+          "box_2d": [
+            666.0,
+            366.0,
+            733.0,
+            989.0
+          ],
+          "label": "snowboard"
+        },
+        {
+          "box_2d": [
+            250.0,
+            355.0,
+            302.0,
+            989.0
+          ],
+          "label": "snowboard"
+        },
+        {
+          "box_2d": [
+            398.0,
+            338.0,
+            477.0,
+            989.0
+          ],
+          "label": "snowboard"
+        },
+        {
+          "box_2d": [
+            477.0,
+            320.0,
+            552.0,
+            989.0
+          ],
+          "label": "snowboard"
+        }
+      ],
+      "latency_sec": 7.918785059009679,
+      "raw_response": "user\nYou are an object detection assistant. Given the image and the list of target classes, return detections as JSON.\nTarget classes: snowboard, blender, lawn_mower, sewing_machine, stapler_(stapling_machine).\nOutput format: [{\"box_2d\":[x1,y1,x2,y2],\"label\":\"class_name\"}...]\nUse pixel coordinates relative to the input image. Return JSON only.\nassistant\n```json\n[\n\t{\"box_2d\": [462, 320, 552, 989],\"label\":\"snowboard\"},\n\t{\"box_2d\": [666, 366, 733, 989],\"label\":\"snowboard\"},\n\t{\"box_2d\": [250, 355, 302, 989],\"label\":\"snowboard\"},\n\t{\"box_2d\": [398, 338, 477, 989],\"label\":\"snowboard\"},\n\t{\"box_2d\": [477, 320, 552, 989],\"label\":\"snowboard\"},\n\t{\"box_2d\": [666, 366, 733, 989],\"label\":\"snowboard\"},\n\t{\"box_2d\": [250, 355, 302, 989],\"label\":\"snowboard\"},\n\t{\"box_2d\": [398, 338, 477, 989],\"label\":\"snowboard\"}\n]\n```",
+      "status": "ok",
+      "normalized_boxes": [
+        [
+          0.6666666666666666,
+          0.721875,
+          1.0,
+          0.8625
+        ],
+        [
+          0.7625,
+          1.0,
+          1.0,
+          1.0
+        ],
+        [
+          0.7395833333333334,
+          0.390625,
+          1.0,
+          0.471875
+        ],
+        [
+          0.7041666666666667,
+          0.621875,
+          1.0,
+          0.7453125
+        ],
+        [
+          0.6666666666666666,
+          0.7453125,
+          1.0,
+          0.8625
+        ]
+      ]
+    },
+    {
+      "step": 1,
+      "stage": "refinement",
+      "prompt": "I have drawn your predictions from the previous step in red. Visually inspect the alignment. Are the boxes accurate? If not, provide corrected coordinates for: snowboard, blender, lawn_mower, sewing_machine, stapler_(stapling_machine). Return JSON only.",
+      "labels_sent": [
+        "snowboard",
+        "blender",
+        "lawn_mower",
+        "sewing_machine",
+        "stapler_(stapling_machine)",
+        "INSTRUCTION: I have drawn your predictions from the previous step in red. Visually inspect the alignment. Are the boxes accurate? If not, provide corrected coordinates for: snowboard, blender, lawn_mower, sewing_machine, stapler_(stapling_machine). Return JSON only."
+      ],
+      "input_images": [
+        "/home/maxim/PycharmProjects/zero-shot-detection-benchmark/results/visual_cot/lvis_qwen/baseline/0.0/Qwen3-VL-8B-Instruct/debug_images/000000503535/step_1.png"
+      ],
+      "annotated_image": "/home/maxim/PycharmProjects/zero-shot-detection-benchmark/results/visual_cot/lvis_qwen/baseline/0.0/Qwen3-VL-8B-Instruct/debug_images/000000503535/step_1.png",
+      "detections": [
+        {
+          "box_2d": [
+            467.0,
+            321.0,
+            557.0,
+            987.0
+          ],
+          "label": "snowboard"
+        },
+        {
+          "box_2d": [
+            663.0,
+            366.0,
+            717.0,
+            987.0
+          ],
+          "label": "snowboard"
+        },
+        {
+          "box_2d": [
+            247.0,
+            355.0,
+            307.0,
+            987.0
+          ],
+          "label": "snowboard"
+        },
+        {
+          "box_2d": [
+            398.0,
+            338.0,
+            483.0,
+            987.0
+          ],
+          "label": "snowboard"
+        },
+        {
+          "box_2d": [
+            787.0,
+            248.0,
+            843.0,
+            426.0
+          ],
+          "label": "snowboard"
+        }
+      ],
+      "latency_sec": 6.558384670992382,
+      "raw_response": "user\nYou are an object detection assistant. Given the image and the list of target classes, return detections as JSON.\nTarget classes: snowboard, blender, lawn_mower, sewing_machine, stapler_(stapling_machine), INSTRUCTION: I have drawn your predictions from the previous step in red. Visually inspect the alignment. Are the boxes accurate? If not, provide corrected coordinates for: snowboard, blender, lawn_mower, sewing_machine, stapler_(stapling_machine). Return JSON only..\nOutput format: [{\"box_2d\":[x1,y1,x2,y2],\"label\":\"class_name\"}...]\nUse pixel coordinates relative to the input image. Return JSON only.\nassistant\n```json\n[\n\t{\"box_2d\": [467, 321, 557, 987], \"label\": \"snowboard\"},\n\t{\"box_2d\": [663, 366, 717, 987], \"label\": \"snowboard\"},\n\t{\"box_2d\": [247, 355, 307, 987], \"label\": \"snowboard\"},\n\t{\"box_2d\": [398, 338, 483, 987], \"label\": \"snowboard\"},\n\t{\"box_2d\": [787, 248, 843, 426], \"label\": \"snowboard\"}\n]\n```",
+      "status": "ok",
+      "normalized_boxes": [
+        [
+          0.66875,
+          0.7296875,
+          1.0,
+          0.8703125
+        ],
+        [
+          0.7625,
+          1.0,
+          1.0,
+          1.0
+        ],
+        [
+          0.7395833333333334,
+          0.3859375,
+          1.0,
+          0.4796875
+        ],
+        [
+          0.7041666666666667,
+          0.621875,
+          1.0,
+          0.7546875
+        ],
+        [
+          0.5166666666666667,
+          1.0,
+          0.8875,
+          1.0
+        ]
+      ]
+    },
+    {
+      "step": 2,
+      "stage": "refinement",
+      "prompt": "I have drawn your predictions from the previous step in red. Visually inspect the alignment. Are the boxes accurate? If not, provide corrected coordinates for: snowboard, blender, lawn_mower, sewing_machine, stapler_(stapling_machine). Return JSON only.",
+      "labels_sent": [
+        "snowboard",
+        "blender",
+        "lawn_mower",
+        "sewing_machine",
+        "stapler_(stapling_machine)",
+        "INSTRUCTION: I have drawn your predictions from the previous step in red. Visually inspect the alignment. Are the boxes accurate? If not, provide corrected coordinates for: snowboard, blender, lawn_mower, sewing_machine, stapler_(stapling_machine). Return JSON only."
+      ],
+      "input_images": [
+        "/home/maxim/PycharmProjects/zero-shot-detection-benchmark/results/visual_cot/lvis_qwen/baseline/0.0/Qwen3-VL-8B-Instruct/debug_images/000000503535/step_2.png"
+      ],
+      "annotated_image": "/home/maxim/PycharmProjects/zero-shot-detection-benchmark/results/visual_cot/lvis_qwen/baseline/0.0/Qwen3-VL-8B-Instruct/debug_images/000000503535/step_2.png",
+      "detections": [
+        {
+          "box_2d": [
+            467.0,
+            321.0,
+            553.0,
+            989.0
+          ],
+          "label": "snowboard"
+        },
+        {
+          "box_2d": [
+            663.0,
+            366.0,
+            717.0,
+            989.0
+          ],
+          "label": "snowboard"
+        },
+        {
+          "box_2d": [
+            250.0,
+            355.0,
+            307.0,
+            989.0
+          ],
+          "label": "snowboard"
+        },
+        {
+          "box_2d": [
+            398.0,
+            338.0,
+            480.0,
+            989.0
+          ],
+          "label": "snowboard"
+        },
+        {
+          "box_2d": [
+            787.0,
+            248.0,
+            843.0,
+            426.0
+          ],
+          "label": "snowboard"
+        }
+      ],
+      "latency_sec": 6.44797916803509,
+      "raw_response": "user\nYou are an object detection assistant. Given the image and the list of target classes, return detections as JSON.\nTarget classes: snowboard, blender, lawn_mower, sewing_machine, stapler_(stapling_machine), INSTRUCTION: I have drawn your predictions from the previous step in red. Visually inspect the alignment. Are the boxes accurate? If not, provide corrected coordinates for: snowboard, blender, lawn_mower, sewing_machine, stapler_(stapling_machine). Return JSON only..\nOutput format: [{\"box_2d\":[x1,y1,x2,y2],\"label\":\"class_name\"}...]\nUse pixel coordinates relative to the input image. Return JSON only.\nassistant\n```json\n[\n\t{\"box_2d\": [467, 321, 553, 989], \"label\": \"snowboard\"},\n\t{\"box_2d\": [663, 366, 717, 989], \"label\": \"snowboard\"},\n\t{\"box_2d\": [250, 355, 307, 989], \"label\": \"snowboard\"},\n\t{\"box_2d\": [398, 338, 480, 989], \"label\": \"snowboard\"},\n\t{\"box_2d\": [787, 248, 843, 426], \"label\": \"snowboard\"}\n]\n```",
+      "status": "ok",
+      "normalized_boxes": [
+        [
+          0.66875,
+          0.7296875,
+          1.0,
+          0.8640625
+        ],
+        [
+          0.7625,
+          1.0,
+          1.0,
+          1.0
+        ],
+        [
+          0.7395833333333334,
+          0.390625,
+          1.0,
+          0.4796875
+        ],
+        [
+          0.7041666666666667,
+          0.621875,
+          1.0,
+          0.75
+        ],
+        [
+          0.5166666666666667,
+          1.0,
+          0.8875,
+          1.0
+        ]
+      ]
+    },
+    {
+      "step": 3,
+      "stage": "refinement",
+      "prompt": "I have drawn your predictions from the previous step in red. Visually inspect the alignment. Are the boxes accurate? If not, provide corrected coordinates for: snowboard, blender, lawn_mower, sewing_machine, stapler_(stapling_machine). Return JSON only.",
+      "labels_sent": [
+        "snowboard",
+        "blender",
+        "lawn_mower",
+        "sewing_machine",
+        "stapler_(stapling_machine)",
+        "INSTRUCTION: I have drawn your predictions from the previous step in red. Visually inspect the alignment. Are the boxes accurate? If not, provide corrected coordinates for: snowboard, blender, lawn_mower, sewing_machine, stapler_(stapling_machine). Return JSON only."
+      ],
+      "input_images": [
+        "/home/maxim/PycharmProjects/zero-shot-detection-benchmark/results/visual_cot/lvis_qwen/baseline/0.0/Qwen3-VL-8B-Instruct/debug_images/000000503535/step_3.png"
+      ],
+      "annotated_image": "/home/maxim/PycharmProjects/zero-shot-detection-benchmark/results/visual_cot/lvis_qwen/baseline/0.0/Qwen3-VL-8B-Instruct/debug_images/000000503535/step_3.png",
+      "detections": [
+        {
+          "box_2d": [
+            467.0,
+            321.0,
+            553.0,
+            989.0
+          ],
+          "label": "snowboard"
+        },
+        {
+          "box_2d": [
+            663.0,
+            366.0,
+            717.0,
+            989.0
+          ],
+          "label": "snowboard"
+        },
+        {
+          "box_2d": [
+            247.0,
+            355.0,
+            307.0,
+            989.0
+          ],
+          "label": "snowboard"
+        },
+        {
+          "box_2d": [
+            398.0,
+            338.0,
+            477.0,
+            989.0
+          ],
+          "label": "snowboard"
+        },
+        {
+          "box_2d": [
+            787.0,
+            248.0,
+            843.0,
+            426.0
+          ],
+          "label": "snowboard"
+        }
+      ],
+      "latency_sec": 6.495843206997961,
+      "raw_response": "user\nYou are an object detection assistant. Given the image and the list of target classes, return detections as JSON.\nTarget classes: snowboard, blender, lawn_mower, sewing_machine, stapler_(stapling_machine), INSTRUCTION: I have drawn your predictions from the previous step in red. Visually inspect the alignment. Are the boxes accurate? If not, provide corrected coordinates for: snowboard, blender, lawn_mower, sewing_machine, stapler_(stapling_machine). Return JSON only..\nOutput format: [{\"box_2d\":[x1,y1,x2,y2],\"label\":\"class_name\"}...]\nUse pixel coordinates relative to the input image. Return JSON only.\nassistant\n```json\n[\n\t{\"box_2d\": [467, 321, 553, 989], \"label\": \"snowboard\"},\n\t{\"box_2d\": [663, 366, 717, 989], \"label\": \"snowboard\"},\n\t{\"box_2d\": [247, 355, 307, 989], \"label\": \"snowboard\"},\n\t{\"box_2d\": [398, 338, 477, 989], \"label\": \"snowboard\"},\n\t{\"box_2d\": [787, 248, 843, 426], \"label\": \"snowboard\"}\n]\n```",
+      "status": "ok",
+      "normalized_boxes": [
+        [
+          0.66875,
+          0.7296875,
+          1.0,
+          0.8640625
+        ],
+        [
+          0.7625,
+          1.0,
+          1.0,
+          1.0
+        ],
+        [
+          0.7395833333333334,
+          0.3859375,
+          1.0,
+          0.4796875
+        ],
+        [
+          0.7041666666666667,
+          0.621875,
+          1.0,
+          0.7453125
+        ],
+        [
+          0.5166666666666667,
+          1.0,
+          0.8875,
+          1.0
+        ]
+      ]
+    },
+    {
+      "step": 4,
+      "stage": "refinement",
+      "prompt": "I have drawn your predictions from the previous step in red. Visually inspect the alignment. Are the boxes accurate? If not, provide corrected coordinates for: snowboard, blender, lawn_mower, sewing_machine, stapler_(stapling_machine). Return JSON only.",
+      "labels_sent": [
+        "snowboard",
+        "blender",
+        "lawn_mower",
+        "sewing_machine",
+        "stapler_(stapling_machine)",
+        "INSTRUCTION: I have drawn your predictions from the previous step in red. Visually inspect the alignment. Are the boxes accurate? If not, provide corrected coordinates for: snowboard, blender, lawn_mower, sewing_machine, stapler_(stapling_machine). Return JSON only."
+      ],
+      "input_images": [
+        "/home/maxim/PycharmProjects/zero-shot-detection-benchmark/results/visual_cot/lvis_qwen/baseline/0.0/Qwen3-VL-8B-Instruct/debug_images/000000503535/step_4.png"
+      ],
+      "annotated_image": "/home/maxim/PycharmProjects/zero-shot-detection-benchmark/results/visual_cot/lvis_qwen/baseline/0.0/Qwen3-VL-8B-Instruct/debug_images/000000503535/step_4.png",
+      "detections": [
+        {
+          "box_2d": [
+            467.0,
+            321.0,
+            552.0,
+            989.0
+          ],
+          "label": "snowboard"
+        },
+        {
+          "box_2d": [
+            663.0,
+            366.0,
+            714.0,
+            989.0
+          ],
+          "label": "snowboard"
+        },
+        {
+          "box_2d": [
+            250.0,
+            355.0,
+            307.0,
+            989.0
+          ],
+          "label": "snowboard"
+        },
+        {
+          "box_2d": [
+            398.0,
+            338.0,
+            477.0,
+            989.0
+          ],
+          "label": "snowboard"
+        },
+        {
+          "box_2d": [
+            787.0,
+            248.0,
+            843.0,
+            426.0
+          ],
+          "label": "snowboard"
+        }
+      ],
+      "latency_sec": 6.521163159050047,
+      "raw_response": "user\nYou are an object detection assistant. Given the image and the list of target classes, return detections as JSON.\nTarget classes: snowboard, blender, lawn_mower, sewing_machine, stapler_(stapling_machine), INSTRUCTION: I have drawn your predictions from the previous step in red. Visually inspect the alignment. Are the boxes accurate? If not, provide corrected coordinates for: snowboard, blender, lawn_mower, sewing_machine, stapler_(stapling_machine). Return JSON only..\nOutput format: [{\"box_2d\":[x1,y1,x2,y2],\"label\":\"class_name\"}...]\nUse pixel coordinates relative to the input image. Return JSON only.\nassistant\n```json\n[\n\t{\"box_2d\": [467, 321, 552, 989], \"label\": \"snowboard\"},\n\t{\"box_2d\": [663, 366, 714, 989], \"label\": \"snowboard\"},\n\t{\"box_2d\": [250, 355, 307, 989], \"label\": \"snowboard\"},\n\t{\"box_2d\": [398, 338, 477, 989], \"label\": \"snowboard\"},\n\t{\"box_2d\": [787, 248, 843, 426], \"label\": \"snowboard\"}\n]\n```",
+      "status": "ok",
+      "normalized_boxes": [
+        [
+          0.66875,
+          0.7296875,
+          1.0,
+          0.8625
+        ],
+        [
+          0.7625,
+          1.0,
+          1.0,
+          1.0
+        ],
+        [
+          0.7395833333333334,
+          0.390625,
+          1.0,
+          0.4796875
+        ],
+        [
+          0.7041666666666667,
+          0.621875,
+          1.0,
+          0.7453125
+        ],
+        [
+          0.5166666666666667,
+          1.0,
+          0.8875,
+          1.0
+        ]
+      ]
+    }
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "model": "Llama-3.2-11B-Vision-Instruct",
+  "strategy": "single_query",
+  "image": "/home/maxim/PycharmProjects/zero-shot-detection-benchmark/data/subsets/lvis_v1_val_unseen/images/000000397354.jpg",
+  "labels": [
+    "blender",
+    "microscope",
+    "sewing_machine",
+    "snowboard",
+    "spatula"
+  ],
+  "detections": [
+    {
+      "box_2d": [
+        150,
+        190,
+        221,
+        242
+      ],
+      "label": "blender"
+    },
+    {
+      "box_2d": [
+        28,
+        213,
+        86,
+        266
+      ],
+      "label": "spatula"
+    }
+  ],
+  "latency_sec": 14.81111781205982,
+  "raw_response": {
+    "blender": "[{\"box_2d\":[0,0,0,0],\"label\":\"blender\"}]",
+    "blender_norm": "[{\"box_norm\":[0.235,0.395,0.345,0.505],\"label\":\"blender\"}]",
+    "microscope": "[]",
+    "microscope_norm": "[{\"box_norm\":[0.000,0.000,0.000,0.000],\"label\":\"microscope\"}]",
+    "sewing_machine": "[]",
+    "sewing_machine_norm": "[{\"box_norm\":[0.000,0.000,0.000,0.000],\"label\":\"sewing_machine\"}]",
+    "snowboard": "[]",
+    "snowboard_norm": "[{\"box_norm\":[0.000,0.000,0.000,0.000],\"label\":\"snowboard\"}]",
+    "spatula": "[]",
+    "spatula_norm": "[{\"box_norm\":[0.044,0.444,0.134,0.555],\"label\":\"spatula\"}]"
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "model": "owl_vit",
+  "strategy": "default",
+  "image": "/home/maxim/PycharmProjects/zero-shot-detection-benchmark/data/subsets/lvis_v1_val_unseen/images/000000017899.jpg",
+  "labels": [
+    "spatula",
+    "blender",
+    "coffee_maker",
+    "sewing_machine",
+    "snowboard"
+  ],
+  "result": {
+    "detections": [
+      {
+        "label": "sewing_machine",
+        "score": 0.21746522188186646,
+        "box_2d": [
+          311.62744140625,
+          230.3197479248047,
+          477.3470458984375,
+          372.712890625
+        ],
+        "box": [
+          311.62744140625,
+          230.3197479248047,
+          477.3470458984375,
+          372.712890625
+        ]
+      },
+      {
+        "label": "blender",
+        "score": 0.3008118271827698,
+        "box_2d": [
+          411.83953857421875,
+          424.38458251953125,
+          480.95947265625,
+          609.61474609375
+        ],
+        "box": [
+          411.83953857421875,
+          424.38458251953125,
+          480.95947265625,
+          609.61474609375
+        ]
+      }
+    ],
+    "latency_sec": 0.08937275595963001,
+    "raw_response": null
+  }
+}

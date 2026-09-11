@@ -1,0 +1,34 @@
+{
+  "model": "owl_vit",
+  "strategy": "default",
+  "image": "/home/maxim/PycharmProjects/zero-shot-detection-benchmark/data/subsets/lvis_v1_val_unseen/images/000000283717.jpg",
+  "labels": [
+    "coffee_maker",
+    "lawn_mower",
+    "microscope",
+    "sewing_machine",
+    "stapler_(stapling_machine)"
+  ],
+  "result": {
+    "detections": [
+      {
+        "label": "microscope",
+        "score": 0.23723956942558289,
+        "box_2d": [
+          149.9621124267578,
+          198.89222717285156,
+          261.90765380859375,
+          451.8246154785156
+        ],
+        "box": [
+          149.9621124267578,
+          198.89222717285156,
+          261.90765380859375,
+          451.8246154785156
+        ]
+      }
+    ],
+    "latency_sec": 0.07964341808110476,
+    "raw_response": null
+  }
+}

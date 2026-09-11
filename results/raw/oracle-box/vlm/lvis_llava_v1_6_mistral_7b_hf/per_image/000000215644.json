@@ -1,0 +1,43 @@
+{
+  "image": "/home/maxim/PycharmProjects/zero-shot-detection-benchmark/data/raw/coco2017/val2017/000000215644.jpg",
+  "image_id": 215644,
+  "file_name": "000000215644.jpg",
+  "num_crops": 1,
+  "crops": [
+    {
+      "annotation_id": 42815,
+      "bbox": [
+        509.85,
+        386.66,
+        60.74,
+        44.25
+      ],
+      "category_id": 993,
+      "gt_label": "spatula",
+      "labels": [
+        "spatula",
+        "hair_dryer",
+        "lawn_mower",
+        "microscope",
+        "snowboard"
+      ],
+      "prediction": "hair_dryer",
+      "normalized_prediction": "hair dryer",
+      "matched_label": "hair_dryer",
+      "correct": false,
+      "latency_sec": 0.215533429000061,
+      "raw_response": {
+        "prediction": "hair_dryer",
+        "raw_response": "USER:  \nYou are an object recognition assistant.\n\nYou will see a cropped image that contains exactly one object\nfrom the following LVIS categories (unseen split):\n\n- spatula\n- hair_dryer\n- lawn_mower\n- microscope\n- snowboard\n\nYour task:\n- Return ONLY the best matching category name from this list.\n- Do not output explanations or extra text.\n\nAnswer with a single string: \"class_name\".\nASSISTANT: hair_dryer ",
+        "labels": [
+          "spatula",
+          "hair_dryer",
+          "lawn_mower",
+          "microscope",
+          "snowboard"
+        ]
+      }
+    }
+  ],
+  "prompt": "You are an object recognition assistant.\n\nYou will see a cropped image that contains exactly one object\nfrom the following LVIS categories (unseen split):\n\n- spatula\n- hair_dryer\n- lawn_mower\n- microscope\n- snowboard\n\nYour task:\n- Return ONLY the best matching category name from this list.\n- Do not output explanations or extra text.\n\nAnswer with a single string: \"class_name\"."
+}

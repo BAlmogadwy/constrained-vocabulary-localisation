@@ -1,0 +1,138 @@
+{
+ "image": "000000078266.jpg",
+ "model": "qwen/qwen3-vl-235b-a22b-instruct",
+ "labels": [
+  "refrigerator",
+  "sink",
+  "clock",
+  "microwave",
+  "oven",
+  "scissors",
+  "teddy bear"
+ ],
+ "detections": [
+  {
+   "box_2d": [
+    57.6,
+    96.728,
+    145.28,
+    198.592
+   ],
+   "label": "refrigerator",
+   "score": 0.95
+  },
+  {
+   "box_2d": [
+    369.28,
+    209.72,
+    481.92,
+    234.544
+   ],
+   "label": "sink",
+   "score": 0.98
+  },
+  {
+   "box_2d": [
+    393.6,
+    42.8,
+    418.56,
+    124.12
+   ],
+   "label": "clock",
+   "score": 0.85
+  },
+  {
+   "box_2d": [
+    426.88,
+    122.408,
+    499.84,
+    195.596
+   ],
+   "label": "microwave",
+   "score": 0.92
+  },
+  {
+   "box_2d": [
+    481.92,
+    191.744,
+    524.8,
+    338.12
+   ],
+   "label": "oven",
+   "score": 0.91
+  },
+  {
+   "box_2d": [
+    248.32,
+    144.664,
+    272.0,
+    173.34
+   ],
+   "label": "scissors",
+   "score": 0.88
+  },
+  {
+   "box_2d": [
+    227.2,
+    198.592,
+    243.2,
+    216.996
+   ],
+   "label": "teddy bear",
+   "score": 0.75
+  }
+ ],
+ "latency_sec": 7.772901400006958,
+ "usage": {
+  "prompt_tokens": 351,
+  "completion_tokens": 306,
+  "total_tokens": 657
+ },
+ "raw_response": {
+  "id": "gen-1783410609-CfMYV0h13SomvGoR4X2B",
+  "object": "chat.completion",
+  "created": 1783410609,
+  "model": "qwen/qwen3-vl-235b-a22b-instruct",
+  "provider": "Alibaba",
+  "system_fingerprint": null,
+  "service_tier": null,
+  "choices": [
+   {
+    "index": 0,
+    "logprobs": null,
+    "finish_reason": "stop",
+    "native_finish_reason": "stop",
+    "message": {
+     "role": "assistant",
+     "content": "```json\n[\n\t{\"bbox_2d\": [90, 226, 227, 464], \"label\": \"refrigerator\", \"confidence\": 0.95},\n\t{\"bbox_2d\": [577, 490, 753, 548], \"label\": \"sink\", \"confidence\": 0.98},\n\t{\"bbox_2d\": [615, 100, 654, 290], \"label\": \"clock\", \"confidence\": 0.85},\n\t{\"bbox_2d\": [667, 286, 781, 457], \"label\": \"microwave\", \"confidence\": 0.92},\n\t{\"bbox_2d\": [753, 448, 820, 790], \"label\": \"oven\", \"confidence\": 0.91},\n\t{\"bbox_2d\": [388, 338, 425, 405], \"label\": \"scissors\", \"confidence\": 0.88},\n\t{\"bbox_2d\": [355, 464, 380, 507], \"label\": \"teddy bear\", \"confidence\": 0.75}\n]\n```",
+     "refusal": null,
+     "reasoning": null
+    }
+   }
+  ],
+  "usage": {
+   "prompt_tokens": 351,
+   "completion_tokens": 306,
+   "total_tokens": 657,
+   "cost": 0.0004095,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0004095,
+    "upstream_inference_prompt_cost": 9.126e-05,
+    "upstream_inference_completions_cost": 0.00031824
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   }
+  }
+ },
+ "ts": "2026-07-07T07:50:15.758234+00:00"
+}

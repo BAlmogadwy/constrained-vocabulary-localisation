@@ -1,0 +1,39 @@
+{
+  "model": "gemma-3-12b-it",
+  "strategy": "iterative",
+  "image": "/home/maxim/PycharmProjects/zero-shot-detection-benchmark/data/subsets/lvis_v1_val_unseen/images/000000545944.jpg",
+  "labels": [
+    "hair_dryer",
+    "lawn_mower",
+    "snowboard",
+    "spatula",
+    "stapler_(stapling_machine)"
+  ],
+  "detections": [
+    {
+      "box_2d": [
+        286,
+        260,
+        438,
+        421
+      ],
+      "label": "hair_dryer"
+    },
+    {
+      "box_2d": [
+        581,
+        260,
+        734,
+        421
+      ],
+      "label": "hair_dryer"
+    }
+  ],
+  "latency_sec": 18.05009554605931,
+  "raw_response": {
+    "identification": "hair_dryer",
+    "localization": {
+      "hair_dryer": "```json\n[\n  {\"box_2d\":[286,260,438,421],\"label\":\"hair_dryer\"},\n  {\"box_2d\":[581,260,734,421],\"label\":\"hair_dryer\"}\n]\n```"
+    }
+  }
+}

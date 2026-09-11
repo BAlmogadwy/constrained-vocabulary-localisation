@@ -1,0 +1,182 @@
+{
+ "image": "000000501368.jpg",
+ "labels": [
+  "hair drier",
+  "clock",
+  "refrigerator",
+  "scissors",
+  "sink",
+  "toaster",
+  "toothbrush"
+ ],
+ "tau": 0.4,
+ "detector": {
+  "detections": [
+   {
+    "label": "toothbrush",
+    "box": [
+     190.8976593017578,
+     317.0660400390625,
+     209.37437438964844,
+     368.7538757324219
+    ],
+    "score": 0.0037915778812021017
+   },
+   {
+    "label": "clock",
+    "box": [
+     165.01406860351562,
+     297.1641540527344,
+     219.50294494628906,
+     400.67254638671875
+    ],
+    "score": 0.002705338643863797
+   },
+   {
+    "label": "toothbrush",
+    "box": [
+     175.4806671142578,
+     324.2443542480469,
+     185.94578552246094,
+     368.1144714355469
+    ],
+    "score": 0.0018933418905362487
+   },
+   {
+    "label": "refrigerator",
+    "box": [
+     2.2968053817749023,
+     0.4364967346191406,
+     372.7035827636719,
+     499.86151123046875
+    ],
+    "score": 0.0015272318851202726
+   }
+  ],
+  "latency_sec": 0.28728449999471195
+ },
+ "detector_max_score": 0.0037915778812021017,
+ "escalated": true,
+ "vlm": {
+  "model": "qwen/qwen3-vl-235b-a22b-instruct",
+  "detections": [
+   {
+    "label": "hair drier",
+    "box": [
+     75.0,
+     0.0,
+     375.0,
+     499.0
+    ],
+    "score": 1.0
+   }
+  ],
+  "latency_sec": 6.040592599994852,
+  "usage": {
+   "prompt_tokens": 284,
+   "completion_tokens": 50,
+   "total_tokens": 334
+  },
+  "raw_response": {
+   "id": "gen-1783409828-spM6FIlmD9fUCF4xgfNc",
+   "object": "chat.completion",
+   "created": 1783409828,
+   "model": "qwen/qwen3-vl-235b-a22b-instruct",
+   "provider": "DeepInfra",
+   "system_fingerprint": null,
+   "service_tier": null,
+   "choices": [
+    {
+     "index": 0,
+     "logprobs": null,
+     "finish_reason": "stop",
+     "native_finish_reason": "stop",
+     "message": {
+      "role": "assistant",
+      "content": "```json\n[\n\t{\"box_2d\": [200, 0, 1000, 998], \"label\": \"hair drier\", \"confidence\": 0.95}\n]\n```",
+      "refusal": null,
+      "reasoning": null
+     }
+    }
+   ],
+   "usage": {
+    "prompt_tokens": 284,
+    "completion_tokens": 50,
+    "total_tokens": 334,
+    "cost": 0.0001008,
+    "is_byok": false,
+    "prompt_tokens_details": {
+     "cached_tokens": 0,
+     "cache_write_tokens": 0,
+     "audio_tokens": 0,
+     "video_tokens": 0
+    },
+    "cost_details": {
+     "upstream_inference_cost": 0.0001008,
+     "upstream_inference_prompt_cost": 5.68e-05,
+     "upstream_inference_completions_cost": 4.4e-05
+    },
+    "completion_tokens_details": {
+     "reasoning_tokens": 0,
+     "image_tokens": 0,
+     "audio_tokens": 0
+    }
+   }
+  }
+ },
+ "fallback": false,
+ "ts": "2026-07-07T07:37:06.070347+00:00",
+ "fused": [
+  {
+   "label": "toothbrush",
+   "box": [
+    190.8976593017578,
+    317.0660400390625,
+    209.37437438964844,
+    368.7538757324219
+   ],
+   "score": 0.0037915778812021017
+  },
+  {
+   "label": "clock",
+   "box": [
+    165.01406860351562,
+    297.1641540527344,
+    219.50294494628906,
+    400.67254638671875
+   ],
+   "score": 0.002705338643863797
+  },
+  {
+   "label": "toothbrush",
+   "box": [
+    175.4806671142578,
+    324.2443542480469,
+    185.94578552246094,
+    368.1144714355469
+   ],
+   "score": 0.0018933418905362487
+  },
+  {
+   "label": "refrigerator",
+   "box": [
+    2.2968053817749023,
+    0.4364967346191406,
+    372.7035827636719,
+    499.86151123046875
+   ],
+   "score": 0.0015272318851202726
+  },
+  {
+   "label": "hair drier",
+   "box": [
+    75.0,
+    0.0,
+    375.0,
+    499.0
+   ],
+   "score": 0.4
+  }
+ ],
+ "latency_total_sec": 6.32790569998906
+}

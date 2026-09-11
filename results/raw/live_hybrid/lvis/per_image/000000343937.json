@@ -1,0 +1,150 @@
+{
+ "image": "000000343937.jpg",
+ "labels": [
+  "snowboard",
+  "blender",
+  "hair_dryer",
+  "microscope",
+  "musical_instrument"
+ ],
+ "tau": 0.4,
+ "detector": {
+  "detections": [
+   {
+    "label": "snowboard",
+    "box": [
+     332.9332275390625,
+     399.85162353515625,
+     397.7298583984375,
+     420.99847412109375
+    ],
+    "score": 0.219978466629982
+   },
+   {
+    "label": "snowboard",
+    "box": [
+     333.03314208984375,
+     323.2406311035156,
+     412.11322021484375,
+     421.0634460449219
+    ],
+    "score": 0.12937985360622406
+   },
+   {
+    "label": "snowboard",
+    "box": [
+     332.80682373046875,
+     369.04241943359375,
+     398.43109130859375,
+     420.76885986328125
+    ],
+    "score": 0.11748894304037094
+   }
+  ],
+  "latency_sec": 0.03702299999713432
+ },
+ "detector_max_score": 0.219978466629982,
+ "escalated": true,
+ "vlm": {
+  "model": "qwen/qwen3-vl-235b-a22b-instruct",
+  "detections": [
+   {
+    "label": "snowboard",
+    "box": [
+     332.16,
+     384.344,
+     399.36,
+     422.008
+    ],
+    "score": 1.0
+   }
+  ],
+  "latency_sec": 4.684669599999324,
+  "usage": {
+   "prompt_tokens": 351,
+   "completion_tokens": 50,
+   "total_tokens": 401
+  },
+  "raw_response": {
+   "id": "gen-1783406839-q8cA1k6UupgVX37NpgMS",
+   "object": "chat.completion",
+   "created": 1783406839,
+   "model": "qwen/qwen3-vl-235b-a22b-instruct",
+   "provider": "DeepInfra",
+   "system_fingerprint": null,
+   "service_tier": null,
+   "choices": [
+    {
+     "index": 0,
+     "logprobs": null,
+     "finish_reason": "stop",
+     "native_finish_reason": "stop",
+     "message": {
+      "role": "assistant",
+      "content": "```json\n[\n\t{\"bbox_2d\": [519, 898, 624, 986], \"label\": \"snowboard\", \"confidence\": 0.95}\n]\n```",
+      "refusal": null,
+      "reasoning": null
+     }
+    }
+   ],
+   "usage": {
+    "prompt_tokens": 351,
+    "completion_tokens": 50,
+    "total_tokens": 401,
+    "cost": 0.0001142,
+    "is_byok": false,
+    "prompt_tokens_details": {
+     "cached_tokens": 0,
+     "cache_write_tokens": 0,
+     "audio_tokens": 0,
+     "video_tokens": 0
+    },
+    "cost_details": {
+     "upstream_inference_cost": 0.0001142,
+     "upstream_inference_prompt_cost": 7.02e-05,
+     "upstream_inference_completions_cost": 4.4e-05
+    },
+    "completion_tokens_details": {
+     "reasoning_tokens": 0,
+     "image_tokens": 0,
+     "audio_tokens": 0
+    }
+   }
+  }
+ },
+ "fallback": false,
+ "ts": "2026-07-07T06:47:17.057361+00:00",
+ "fused": [
+  {
+   "label": "snowboard",
+   "box": [
+    332.9332275390625,
+    399.85162353515625,
+    397.7298583984375,
+    420.99847412109375
+   ],
+   "score": 0.519978466629982
+  },
+  {
+   "label": "snowboard",
+   "box": [
+    333.03314208984375,
+    323.2406311035156,
+    412.11322021484375,
+    421.0634460449219
+   ],
+   "score": 0.12937985360622406
+  },
+  {
+   "label": "snowboard",
+   "box": [
+    332.80682373046875,
+    369.04241943359375,
+    398.43109130859375,
+    420.76885986328125
+   ],
+   "score": 0.11748894304037094
+  }
+ ],
+ "latency_total_sec": 4.721726800009492
+}

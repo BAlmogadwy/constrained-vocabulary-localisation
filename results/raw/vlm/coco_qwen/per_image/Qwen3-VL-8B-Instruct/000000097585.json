@@ -1,0 +1,162 @@
+{
+  "model": "Qwen3-VL-8B-Instruct",
+  "strategy": "single_query",
+  "image": "/home/maxim/PycharmProjects/zero-shot-detection-benchmark/data/raw/coco2017/val2017/000000097585.jpg",
+  "labels": [
+    "vase",
+    "microwave",
+    "refrigerator",
+    "scissors",
+    "sink",
+    "toaster",
+    "toothbrush"
+  ],
+  "detections": [
+    {
+      "box_2d": [
+        573.0,
+        652.0,
+        712.0,
+        902.0
+      ],
+      "label": "vase"
+    },
+    {
+      "box_2d": [
+        508.0,
+        133.0,
+        712.0,
+        357.0
+      ],
+      "label": "vase"
+    },
+    {
+      "box_2d": [
+        233.0,
+        452.0,
+        433.0,
+        702.0
+      ],
+      "label": "vase"
+    },
+    {
+      "box_2d": [
+        24.0,
+        552.0,
+        158.0,
+        733.0
+      ],
+      "label": "vase"
+    },
+    {
+      "box_2d": [
+        258.0,
+        762.0,
+        402.0,
+        1000.0
+      ],
+      "label": "vase"
+    },
+    {
+      "box_2d": [
+        258.0,
+        175.0,
+        397.0,
+        392.0
+      ],
+      "label": "vase"
+    },
+    {
+      "box_2d": [
+        65.0,
+        102.0,
+        194.0,
+        253.0
+      ],
+      "label": "vase"
+    },
+    {
+      "box_2d": [
+        44.0,
+        305.0,
+        158.0,
+        475.0
+      ],
+      "label": "vase"
+    },
+    {
+      "box_2d": [
+        24.0,
+        792.0,
+        126.0,
+        988.0
+      ],
+      "label": "vase"
+    },
+    {
+      "box_2d": [
+        817.0,
+        752.0,
+        998.0,
+        1000.0
+      ],
+      "label": "vase"
+    },
+    {
+      "box_2d": [
+        809.0,
+        462.0,
+        998.0,
+        708.0
+      ],
+      "label": "vase"
+    },
+    {
+      "box_2d": [
+        817.0,
+        162.0,
+        962.0,
+        392.0
+      ],
+      "label": "vase"
+    },
+    {
+      "box_2d": [
+        244.0,
+        0.0,
+        426.0,
+        152.0
+      ],
+      "label": "vase"
+    },
+    {
+      "box_2d": [
+        527.0,
+        0.0,
+        672.0,
+        102.0
+      ],
+      "label": "vase"
+    },
+    {
+      "box_2d": [
+        797.0,
+        0.0,
+        916.0,
+        148.0
+      ],
+      "label": "vase"
+    },
+    {
+      "box_2d": [
+        531.0,
+        972.0,
+        758.0,
+        1000.0
+      ],
+      "label": "vase"
+    }
+  ],
+  "latency_sec": 12.465824525992502,
+  "raw_response": "user\nYou are an object detection assistant. Given the image and the list of target classes, return detections as JSON.\nTarget classes: vase, microwave, refrigerator, scissors, sink, toaster, toothbrush.\nOutput format: [{\"box_2d\":[x1,y1,x2,y2],\"label\":\"class_name\"}...]\nUse pixel coordinates relative to the input image. Return JSON only.\nassistant\n```json\n[\n\t{\"box_2d\": [573, 652, 712, 902],\"label\":\"vase\"},\n\t{\"box_2d\": [508, 133, 712, 357],\"label\":\"vase\"},\n\t{\"box_2d\": [233, 452, 433, 702],\"label\":\"vase\"},\n\t{\"box_2d\": [24, 552, 158, 733],\"label\":\"vase\"},\n\t{\"box_2d\": [258, 762, 402, 1000],\"label\":\"vase\"},\n\t{\"box\": [258, 175, 397, 392], \"label\": \"vase\"},\n\t{\"box\": [65, 102, 194, 253], \"label\": \"vase\"},\n\t{\"box\": [44, 305, 158, 475], \"label\": \"vase\"},\n\t{\"box\": [24, 792, 126, 988], \"label\": \"vase\"},\n\t{\"box\": [817, 752, 998, 1000], \"label\": \"vase\"},\n\t{\"box\": [809, 462, 998, 708], \"label\": \"vase\"},\n\t{\"box\": [817, 162, 962, 392], \"label\": \"vase\"},\n\t{\"box\": [244, 0, 426, 152], \"label\": \"vase\"},\n\t{\"box\": [527, 0, 672, 102], \"label\": \"vase\"},\n\t{\"box\": [797, 0, 916, 148], \"label\": \"vase\"},\n\t{\"box\": [531, 972, 758, 1000], \"label\": \"vase\"}\n]\n```"
+}

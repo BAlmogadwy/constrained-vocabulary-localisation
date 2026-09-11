@@ -1,0 +1,76 @@
+{
+ "image": "000000320875.jpg",
+ "model": "qwen/qwen3-vl-235b-a22b-instruct",
+ "labels": [
+  "blender",
+  "hair_dryer",
+  "lawn_mower",
+  "musical_instrument",
+  "sewing_machine"
+ ],
+ "detections": [
+  {
+   "box_2d": [
+    83.2,
+    184.272,
+    184.32,
+    301.536
+   ],
+   "label": "blender",
+   "score": 0.98
+  }
+ ],
+ "latency_sec": 5.356138000002829,
+ "usage": {
+  "prompt_tokens": 313,
+  "completion_tokens": 50,
+  "total_tokens": 363
+ },
+ "raw_response": {
+  "id": "gen-1783407959-RGhiFxvrnK5nJ70sxx1r",
+  "object": "chat.completion",
+  "created": 1783407959,
+  "model": "qwen/qwen3-vl-235b-a22b-instruct",
+  "provider": "Parasail",
+  "system_fingerprint": null,
+  "service_tier": null,
+  "choices": [
+   {
+    "index": 0,
+    "logprobs": null,
+    "finish_reason": "stop",
+    "native_finish_reason": "stop",
+    "message": {
+     "role": "assistant",
+     "content": "```json\n[\n\t{\"bbox_2d\": [130, 528, 288, 864], \"label\": \"blender\", \"confidence\": 0.98}\n]\n```",
+     "refusal": null,
+     "reasoning": null
+    }
+   }
+  ],
+  "usage": {
+   "prompt_tokens": 313,
+   "completion_tokens": 50,
+   "total_tokens": 363,
+   "cost": 0.00016073,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00016073,
+    "upstream_inference_prompt_cost": 6.573e-05,
+    "upstream_inference_completions_cost": 9.5e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   }
+  }
+ },
+ "ts": "2026-07-07T07:06:00.304663+00:00"
+}

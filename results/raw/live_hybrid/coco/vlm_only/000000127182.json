@@ -1,0 +1,140 @@
+{
+ "image": "000000127182.jpg",
+ "model": "qwen/qwen3-vl-235b-a22b-instruct",
+ "labels": [
+  "microwave",
+  "oven",
+  "refrigerator",
+  "sink",
+  "vase",
+  "clock",
+  "hair drier",
+  "toaster",
+  "toothbrush"
+ ],
+ "detections": [
+  {
+   "box_2d": [
+    51.667,
+    152.32,
+    138.348,
+    265.6
+   ],
+   "label": "microwave",
+   "score": 0.99
+  },
+  {
+   "box_2d": [
+    0.854,
+    361.6,
+    189.161,
+    629.76
+   ],
+   "label": "oven",
+   "score": 0.99
+  },
+  {
+   "box_2d": [
+    258.335,
+    379.52,
+    381.738,
+    547.84
+   ],
+   "label": "refrigerator",
+   "score": 0.99
+  },
+  {
+   "box_2d": [
+    320.25,
+    358.4,
+    426.146,
+    377.6
+   ],
+   "label": "sink",
+   "score": 0.99
+  },
+  {
+   "box_2d": [
+    338.611,
+    324.48,
+    368.074,
+    361.6
+   ],
+   "label": "vase",
+   "score": 0.99
+  },
+  {
+   "box_2d": [
+    368.074,
+    343.04,
+    389.424,
+    361.6
+   ],
+   "label": "clock",
+   "score": 0.99
+  },
+  {
+   "box_2d": [
+    102.48,
+    318.08,
+    162.687,
+    355.2
+   ],
+   "label": "toaster",
+   "score": 0.99
+  }
+ ],
+ "latency_sec": 6.704390300001251,
+ "usage": {
+  "prompt_tokens": 356,
+  "completion_tokens": 304,
+  "total_tokens": 660
+ },
+ "raw_response": {
+  "id": "gen-1783411038-c8axVvUGuf5On9l2FObE",
+  "object": "chat.completion",
+  "created": 1783411038,
+  "model": "qwen/qwen3-vl-235b-a22b-instruct",
+  "provider": "Alibaba",
+  "system_fingerprint": null,
+  "service_tier": null,
+  "choices": [
+   {
+    "index": 0,
+    "logprobs": null,
+    "finish_reason": "stop",
+    "native_finish_reason": "stop",
+    "message": {
+     "role": "assistant",
+     "content": "```json\n[\n\t{\"bbox_2d\": [121, 238, 324, 415], \"label\": \"microwave\", \"confidence\": 0.99},\n\t{\"bbox_2d\": [2, 565, 443, 984], \"label\": \"oven\", \"confidence\": 0.99},\n\t{\"bbox_2d\": [605, 593, 894, 856], \"label\": \"refrigerator\", \"confidence\": 0.99},\n\t{\"bbox_2d\": [750, 560, 998, 590], \"label\": \"sink\", \"confidence\": 0.99},\n\t{\"bbox_2d\": [793, 507, 862, 565], \"label\": \"vase\", \"confidence\": 0.99},\n\t{\"bbox_2d\": [862, 536, 912, 565], \"label\": \"clock\", \"confidence\": 0.99},\n\t{\"bbox_2d\": [240, 497, 381, 555], \"label\": \"toaster\", \"confidence\": 0.99}\n]\n```",
+     "refusal": null,
+     "reasoning": null
+    }
+   }
+  ],
+  "usage": {
+   "prompt_tokens": 356,
+   "completion_tokens": 304,
+   "total_tokens": 660,
+   "cost": 0.00040872,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00040872,
+    "upstream_inference_prompt_cost": 9.256e-05,
+    "upstream_inference_completions_cost": 0.00031616
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   }
+  }
+ },
+ "ts": "2026-07-07T07:57:23.017352+00:00"
+}

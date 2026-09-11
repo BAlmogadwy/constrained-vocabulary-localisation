@@ -1,0 +1,182 @@
+{
+ "image": "000000029640.jpg",
+ "labels": [
+  "oven",
+  "book",
+  "refrigerator",
+  "scissors",
+  "sink",
+  "teddy bear",
+  "toothbrush"
+ ],
+ "tau": 0.4,
+ "detector": {
+  "detections": [
+   {
+    "label": "sink",
+    "box": [
+     0.0,
+     0.0,
+     639.4290771484375,
+     423.4832458496094
+    ],
+    "score": 0.262959748506546
+   },
+   {
+    "label": "scissors",
+    "box": [
+     506.9959411621094,
+     198.86830139160156,
+     639.9403076171875,
+     389.574462890625
+    ],
+    "score": 0.010971874929964542
+   },
+   {
+    "label": "toothbrush",
+    "box": [
+     507.3446960449219,
+     198.74905395507812,
+     639.970703125,
+     355.3257141113281
+    ],
+    "score": 0.004108945839107037
+   },
+   {
+    "label": "sink",
+    "box": [
+     0.0,
+     347.9054260253906,
+     57.04271697998047,
+     425.9346008300781
+    ],
+    "score": 0.003379367059096694
+   }
+  ],
+  "latency_sec": 0.03596740000648424
+ },
+ "detector_max_score": 0.262959748506546,
+ "escalated": true,
+ "vlm": {
+  "model": "qwen/qwen3-vl-235b-a22b-instruct",
+  "detections": [
+   {
+    "label": "oven",
+    "box": [
+     0.0,
+     0.0,
+     639.36,
+     426.0
+    ],
+    "score": 1.0
+   }
+  ],
+  "latency_sec": 3.2566789999982575,
+  "usage": {
+   "prompt_tokens": 352,
+   "completion_tokens": 46,
+   "total_tokens": 398
+  },
+  "raw_response": {
+   "id": "gen-1783408682-hmRYXZcYtHokBS3kxeqY",
+   "object": "chat.completion",
+   "created": 1783408682,
+   "model": "qwen/qwen3-vl-235b-a22b-instruct",
+   "provider": "Novita",
+   "system_fingerprint": null,
+   "service_tier": null,
+   "choices": [
+    {
+     "index": 0,
+     "logprobs": null,
+     "finish_reason": "stop",
+     "native_finish_reason": "stop",
+     "message": {
+      "role": "assistant",
+      "content": "```json\n[\n\t{\"bbox_2d\": [0, 0, 999, 1000], \"label\": \"oven\", \"confidence\": 0.95}\n]\n```",
+      "refusal": null,
+      "reasoning": null
+     }
+    }
+   ],
+   "usage": {
+    "prompt_tokens": 352,
+    "completion_tokens": 46,
+    "total_tokens": 398,
+    "cost": 0.0001746,
+    "is_byok": false,
+    "prompt_tokens_details": {
+     "cached_tokens": 0,
+     "cache_write_tokens": 0,
+     "audio_tokens": 0,
+     "video_tokens": 0
+    },
+    "cost_details": {
+     "upstream_inference_cost": 0.0001746,
+     "upstream_inference_prompt_cost": 0.0001056,
+     "upstream_inference_completions_cost": 6.9e-05
+    },
+    "completion_tokens_details": {
+     "reasoning_tokens": 0,
+     "image_tokens": 0,
+     "audio_tokens": 0
+    }
+   }
+  }
+ },
+ "fallback": false,
+ "ts": "2026-07-07T07:18:00.812978+00:00",
+ "fused": [
+  {
+   "label": "sink",
+   "box": [
+    0.0,
+    0.0,
+    639.4290771484375,
+    423.4832458496094
+   ],
+   "score": 0.262959748506546
+  },
+  {
+   "label": "scissors",
+   "box": [
+    506.9959411621094,
+    198.86830139160156,
+    639.9403076171875,
+    389.574462890625
+   ],
+   "score": 0.010971874929964542
+  },
+  {
+   "label": "toothbrush",
+   "box": [
+    507.3446960449219,
+    198.74905395507812,
+    639.970703125,
+    355.3257141113281
+   ],
+   "score": 0.004108945839107037
+  },
+  {
+   "label": "sink",
+   "box": [
+    0.0,
+    347.9054260253906,
+    57.04271697998047,
+    425.9346008300781
+   ],
+   "score": 0.003379367059096694
+  },
+  {
+   "label": "oven",
+   "box": [
+    0.0,
+    0.0,
+    639.36,
+    426.0
+   ],
+   "score": 0.4
+  }
+ ],
+ "latency_total_sec": 3.292671800008975
+}

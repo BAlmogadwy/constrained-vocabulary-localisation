@@ -1,0 +1,44 @@
+{
+  "image": "/home/maxim/PycharmProjects/zero-shot-detection-benchmark/data/subsets/lvis_v1_val_unseen/images/000000117784.jpg",
+  "image_id": 117784,
+  "file_name": "000000117784.jpg",
+  "num_crops": 1,
+  "crops": [
+    {
+      "annotation_id": 132481,
+      "bbox": [
+        235.44,
+        216.35,
+        40.53,
+        66.45
+      ],
+      "category_id": 284,
+      "gt_label": "coffee_maker",
+      "labels": [
+        "coffee_maker",
+        "lawn_mower",
+        "musical_instrument",
+        "spatula",
+        "stapler_(stapling_machine)"
+      ],
+      "prediction": "coffee_maker",
+      "normalized_prediction": "coffee maker",
+      "matched_label": "coffee_maker",
+      "correct": true,
+      "latency_sec": 6.655484250979498,
+      "raw_response": {
+        "coffee_maker": "[]",
+        "coffee_maker_norm": "[{\"box_norm\":[0.05,0.14,0.53,0.85],\"label\":\"coffee_maker\"}]",
+        "lawn_mower": "[]",
+        "lawn_mower_norm": "[{\"box_norm\":[0.000000,0.000000,0.000000,0.000000],\"label\":\"lawn_mower\"}]",
+        "musical_instrument": "[]",
+        "musical_instrument_norm": "[{\"box_norm\":[0.05,0.07,0.28,0.43],\"label\":\"musical_instrument\"}]",
+        "spatula": "[]",
+        "spatula_norm": "[{\"box_norm\":[0.0,0.0,0.0,0.0],\"label\":\"spatula\"}]",
+        "stapler_(stapling_machine)": "[]",
+        "stapler_(stapling_machine)_norm": "[{\"box_norm\":[0.05,0.06,0.34,0.46],\"label\":\"stapler_(stapling_machine)\"}]"
+      }
+    }
+  ],
+  "prompt": "You are an object recognition assistant.\n\nYou will see a cropped image that contains exactly one object\nfrom the following LVIS categories (unseen split):\n\n- coffee_maker\n- lawn_mower\n- musical_instrument\n- spatula\n- stapler_(stapling_machine)\n\nYour task:\n- Return ONLY the best matching category name from this list.\n- Do not output explanations or extra text.\n\nAnswer with a single string: \"class_name\"."
+}

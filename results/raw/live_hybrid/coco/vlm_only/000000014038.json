@@ -1,0 +1,128 @@
+{
+ "image": "000000014038.jpg",
+ "model": "qwen/qwen3-vl-235b-a22b-instruct",
+ "labels": [
+  "book",
+  "microwave",
+  "refrigerator",
+  "clock",
+  "oven",
+  "sink",
+  "vase"
+ ],
+ "detections": [
+  {
+   "box_2d": [
+    150.4,
+    239.974,
+    301.44,
+    399.672
+   ],
+   "label": "microwave",
+   "score": 0.99
+  },
+  {
+   "box_2d": [
+    12.8,
+    123.83,
+    150.4,
+    426.146
+   ],
+   "label": "refrigerator",
+   "score": 0.99
+  },
+  {
+   "box_2d": [
+    470.4,
+    190.015,
+    501.12,
+    229.726
+   ],
+   "label": "clock",
+   "score": 0.99
+  },
+  {
+   "box_2d": [
+    165.76,
+    334.341,
+    275.2,
+    375.333
+   ],
+   "label": "oven",
+   "score": 0.99
+  },
+  {
+   "box_2d": [
+    150.4,
+    239.974,
+    301.44,
+    399.672
+   ],
+   "label": "sink",
+   "score": 0.99
+  },
+  {
+   "box_2d": [
+    515.84,
+    58.926,
+    553.6,
+    96.502
+   ],
+   "label": "vase",
+   "score": 0.99
+  }
+ ],
+ "latency_sec": 6.868805099991732,
+ "usage": {
+  "prompt_tokens": 349,
+  "completion_tokens": 262,
+  "total_tokens": 611
+ },
+ "raw_response": {
+  "id": "gen-1783410161-KnkWLgFqAcmqmBA3cLJ3",
+  "object": "chat.completion",
+  "created": 1783410161,
+  "model": "qwen/qwen3-vl-235b-a22b-instruct",
+  "provider": "Alibaba",
+  "system_fingerprint": null,
+  "service_tier": null,
+  "choices": [
+   {
+    "index": 0,
+    "logprobs": null,
+    "finish_reason": "stop",
+    "native_finish_reason": "stop",
+    "message": {
+     "role": "assistant",
+     "content": "```json\n[\n\t{\"bbox_2d\": [235, 562, 471, 936], \"label\": \"microwave\", \"confidence\": 0.99},\n\t{\"bbox_2d\": [20, 290, 235, 998], \"label\": \"refrigerator\", \"confidence\": 0.99},\n\t{\"bbox_2d\": [735, 445, 783, 538], \"label\": \"clock\", \"confidence\": 0.99},\n\t{\"bbox_2d\": [259, 783, 430, 879], \"label\": \"oven\", \"confidence\": 0.99},\n\t{\"bbox_2d\": [235, 562, 471, 936], \"label\": \"sink\", \"confidence\": 0.99},\n\t{\"bbox_2d\": [806, 138, 865, 226], \"label\": \"vase\", \"confidence\": 0.99}\n]\n```",
+     "refusal": null,
+     "reasoning": null
+    }
+   }
+  ],
+  "usage": {
+   "prompt_tokens": 349,
+   "completion_tokens": 262,
+   "total_tokens": 611,
+   "cost": 0.00036322,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00036322,
+    "upstream_inference_prompt_cost": 9.074e-05,
+    "upstream_inference_completions_cost": 0.00027248
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   }
+  }
+ },
+ "ts": "2026-07-07T07:42:46.683308+00:00"
+}

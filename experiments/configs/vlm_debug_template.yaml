@@ -1,0 +1,15 @@
+dataset:
+  images_dir: data/debug_sample  # Drop a single representative image here.
+  limit: 1
+
+labels:
+  values:
+    - placeholder_label  # Replace with the object classes of interest.
+
+output:
+  dir: results/debug  # Debug outputs saved alongside the script defaults.
+
+models:
+  - name: gpt-5
+    prompt_strategy: single_query
+    output_name: gpt5_debug.json

@@ -1,0 +1,78 @@
+{
+ "image": "000000194746.jpg",
+ "model": "qwen/qwen3-vl-235b-a22b-instruct",
+ "labels": [
+  "oven",
+  "hair drier",
+  "microwave",
+  "refrigerator",
+  "sink",
+  "toaster",
+  "vase"
+ ],
+ "detections": [
+  {
+   "box_2d": [
+    0.0,
+    0.0,
+    499.5,
+    374.625
+   ],
+   "label": "oven",
+   "score": 0.99
+  }
+ ],
+ "latency_sec": 1.6610396000032779,
+ "usage": {
+  "prompt_tokens": 283,
+  "completion_tokens": 45,
+  "total_tokens": 328
+ },
+ "raw_response": {
+  "id": "gen-1783411802-lpvEd576UsMcVFCr8xy5",
+  "object": "chat.completion",
+  "created": 1783411802,
+  "model": "qwen/qwen3-vl-235b-a22b-instruct",
+  "provider": "Alibaba",
+  "system_fingerprint": null,
+  "service_tier": null,
+  "choices": [
+   {
+    "index": 0,
+    "logprobs": null,
+    "finish_reason": "stop",
+    "native_finish_reason": "stop",
+    "message": {
+     "role": "assistant",
+     "content": "```json\n[\n\t{\"box_2d\": [0, 0, 999, 999], \"label\": \"oven\", \"confidence\": 0.99}\n]\n```",
+     "refusal": null,
+     "reasoning": null
+    }
+   }
+  ],
+  "usage": {
+   "prompt_tokens": 283,
+   "completion_tokens": 45,
+   "total_tokens": 328,
+   "cost": 0.00012038,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00012038,
+    "upstream_inference_prompt_cost": 7.358e-05,
+    "upstream_inference_completions_cost": 4.68e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   }
+  }
+ },
+ "ts": "2026-07-07T08:10:01.902172+00:00"
+}

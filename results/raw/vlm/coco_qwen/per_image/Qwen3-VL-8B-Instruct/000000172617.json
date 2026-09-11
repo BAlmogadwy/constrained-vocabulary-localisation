@@ -1,0 +1,81 @@
+{
+  "model": "Qwen3-VL-8B-Instruct",
+  "strategy": "single_query",
+  "image": "/home/maxim/PycharmProjects/zero-shot-detection-benchmark/data/raw/coco2017/val2017/000000172617.jpg",
+  "labels": [
+    "book",
+    "clock",
+    "oven",
+    "refrigerator",
+    "scissors",
+    "sink",
+    "vase"
+  ],
+  "detections": [
+    {
+      "box_2d": [
+        528.0,
+        107.0,
+        738.0,
+        175.0
+      ],
+      "label": "book"
+    },
+    {
+      "box_2d": [
+        120.0,
+        252.0,
+        398.0,
+        387.0
+      ],
+      "label": "book"
+    },
+    {
+      "box_2d": [
+        120.0,
+        317.0,
+        407.0,
+        433.0
+      ],
+      "label": "book"
+    },
+    {
+      "box_2d": [
+        120.0,
+        357.0,
+        407.0,
+        477.0
+      ],
+      "label": "book"
+    },
+    {
+      "box_2d": [
+        0.0,
+        323.0,
+        156.0,
+        452.0
+      ],
+      "label": "book"
+    },
+    {
+      "box_2d": [
+        0.0,
+        417.0,
+        238.0,
+        583.0
+      ],
+      "label": "book"
+    },
+    {
+      "box_2d": [
+        0.0,
+        452.0,
+        238.0,
+        607.0
+      ],
+      "label": "book"
+    }
+  ],
+  "latency_sec": 6.408481088001281,
+  "raw_response": "user\nYou are an object detection assistant. Given the image and the list of target classes, return detections as JSON.\nTarget classes: book, clock, oven, refrigerator, scissors, sink, vase.\nOutput format: [{\"box_2d\":[x1,y1,x2,y2],\"label\":\"class_name\"}...]\nUse pixel coordinates relative to the input image. Return JSON only.\nassistant\n```json\n[\n\t{\"box_2d\": [528, 107, 738, 175],\"label\":\"book\"},\n\t{\"bbox_2d\": [120, 252, 398, 387],\"label\":\"book\"},\n\t{\"bbox_2d\": [120, 317, 407, 433],\"label\":\"book\"},\n\t{\"bbox_2d\": [120, 357, 407, 477],\"label\":\"book\"},\n\t{\"bbox_2d\": [0, 323, 156, 452],\"label\":\"book\"},\n\t{\"bbox_2d\": [0, 417, 238, 583],\"label\":\"book\"},\n\t{\"bbox_2d\": [0, 452, 238, 607],\"label\":\"book\"}\n]\n```"
+}

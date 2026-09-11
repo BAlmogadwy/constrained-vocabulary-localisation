@@ -1,0 +1,50 @@
+{
+  "model": "yolo_world",
+  "strategy": "default",
+  "image": "C:\\Users\\user\\zeroshot\\zero-shot-detection-benchmark\\data\\subsets\\lvis_v1_val_unseen\\images\\000000049984.jpg",
+  "labels": [
+    "hair_dryer",
+    "coffee_maker",
+    "sewing_machine",
+    "spatula",
+    "stapler_(stapling_machine)"
+  ],
+  "result": {
+    "detections": [
+      {
+        "label": "coffee_maker",
+        "score": 0.0019357152050361037,
+        "box_2d": [
+          310.20379638671875,
+          304.6809997558594,
+          330.46002197265625,
+          344.5439147949219
+        ],
+        "box": [
+          310.20379638671875,
+          304.6809997558594,
+          330.46002197265625,
+          344.5439147949219
+        ]
+      },
+      {
+        "label": "hair_dryer",
+        "score": 0.0011049911845475435,
+        "box_2d": [
+          134.75823974609375,
+          346.79736328125,
+          262.4171142578125,
+          595.0673828125
+        ],
+        "box": [
+          134.75823974609375,
+          346.79736328125,
+          262.4171142578125,
+          595.0673828125
+        ]
+      }
+    ],
+    "latency_sec": 0.03962660000070173,
+    "raw_response": null
+  }
+}

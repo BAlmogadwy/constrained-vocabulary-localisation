@@ -1,0 +1,270 @@
+{
+ "image": "000000442323.jpg",
+ "labels": [
+  "coffee_maker",
+  "blender",
+  "microscope",
+  "spatula",
+  "stapler_(stapling_machine)"
+ ],
+ "tau": 0.4,
+ "detector": {
+  "detections": [
+   {
+    "label": "coffee_maker",
+    "box": [
+     401.93597412109375,
+     181.00286865234375,
+     430.42462158203125,
+     221.6317138671875
+    ],
+    "score": 0.13851366937160492
+   },
+   {
+    "label": "coffee_maker",
+    "box": [
+     391.69488525390625,
+     180.64126586914062,
+     459.71954345703125,
+     226.28616333007812
+    ],
+    "score": 0.034792158752679825
+   },
+   {
+    "label": "stapler_(stapling_machine)",
+    "box": [
+     391.8665771484375,
+     180.84994506835938,
+     459.9193115234375,
+     226.61019897460938
+    ],
+    "score": 0.01758599281311035
+   },
+   {
+    "label": "microscope",
+    "box": [
+     398.00201416015625,
+     180.89584350585938,
+     450.65728759765625,
+     224.09140014648438
+    ],
+    "score": 0.009449062868952751
+   },
+   {
+    "label": "coffee_maker",
+    "box": [
+     218.13177490234375,
+     152.18551635742188,
+     371.67059326171875,
+     295.7659606933594
+    ],
+    "score": 0.006918959319591522
+   },
+   {
+    "label": "microscope",
+    "box": [
+     217.82736206054688,
+     152.32199096679688,
+     371.5506286621094,
+     295.8482971191406
+    ],
+    "score": 0.003965561278164387
+   },
+   {
+    "label": "coffee_maker",
+    "box": [
+     0.0,
+     319.5322265625,
+     36.24256134033203,
+     480.0
+    ],
+    "score": 0.003902014344930649
+   },
+   {
+    "label": "stapler_(stapling_machine)",
+    "box": [
+     425.3395080566406,
+     199.93698120117188,
+     449.1670837402344,
+     222.22055053710938
+    ],
+    "score": 0.0023329840041697025
+   },
+   {
+    "label": "blender",
+    "box": [
+     0.0,
+     211.44927978515625,
+     36.5650520324707,
+     479.71685791015625
+    ],
+    "score": 0.001468757400289178
+   }
+  ],
+  "latency_sec": 0.04040589999931399
+ },
+ "detector_max_score": 0.13851366937160492,
+ "escalated": true,
+ "vlm": {
+  "model": "qwen/qwen3-vl-235b-a22b-instruct",
+  "detections": [
+   {
+    "label": "coffee_maker",
+    "box": [
+     401.28,
+     181.92,
+     429.44,
+     221.76
+    ],
+    "score": 1.0
+   }
+  ],
+  "latency_sec": 3.507289100001799,
+  "usage": {
+   "prompt_tokens": 393,
+   "completion_tokens": 50,
+   "total_tokens": 443
+  },
+  "raw_response": {
+   "id": "gen-1783406895-smTLCxXH8Y4lpb47f9lF",
+   "object": "chat.completion",
+   "created": 1783406895,
+   "model": "qwen/qwen3-vl-235b-a22b-instruct",
+   "provider": "Venice",
+   "system_fingerprint": null,
+   "service_tier": null,
+   "choices": [
+    {
+     "index": 0,
+     "logprobs": null,
+     "finish_reason": "stop",
+     "native_finish_reason": "stop",
+     "message": {
+      "role": "assistant",
+      "content": "```json\n[\n\t{\"bbox_2d\": [627, 379, 671, 462], \"label\": \"coffee_maker\", \"confidence\": 0.95}\n]\n```",
+      "refusal": null,
+      "reasoning": null
+     }
+    }
+   ],
+   "usage": {
+    "prompt_tokens": 393,
+    "completion_tokens": 50,
+    "total_tokens": 443,
+    "cost": 0.00017753,
+    "is_byok": false,
+    "prompt_tokens_details": {
+     "cached_tokens": 0,
+     "cache_write_tokens": 0,
+     "audio_tokens": 0,
+     "video_tokens": 0
+    },
+    "cost_details": {
+     "upstream_inference_cost": 0.00017753,
+     "upstream_inference_prompt_cost": 8.253e-05,
+     "upstream_inference_completions_cost": 9.5e-05
+    },
+    "completion_tokens_details": {
+     "reasoning_tokens": 0,
+     "image_tokens": 0,
+     "audio_tokens": 0
+    }
+   }
+  }
+ },
+ "fallback": false,
+ "ts": "2026-07-07T06:48:13.338435+00:00",
+ "fused": [
+  {
+   "label": "coffee_maker",
+   "box": [
+    401.93597412109375,
+    181.00286865234375,
+    430.42462158203125,
+    221.6317138671875
+   ],
+   "score": 0.4385136693716049
+  },
+  {
+   "label": "coffee_maker",
+   "box": [
+    391.69488525390625,
+    180.64126586914062,
+    459.71954345703125,
+    226.28616333007812
+   ],
+   "score": 0.034792158752679825
+  },
+  {
+   "label": "stapler_(stapling_machine)",
+   "box": [
+    391.8665771484375,
+    180.84994506835938,
+    459.9193115234375,
+    226.61019897460938
+   ],
+   "score": 0.01758599281311035
+  },
+  {
+   "label": "microscope",
+   "box": [
+    398.00201416015625,
+    180.89584350585938,
+    450.65728759765625,
+    224.09140014648438
+   ],
+   "score": 0.009449062868952751
+  },
+  {
+   "label": "coffee_maker",
+   "box": [
+    218.13177490234375,
+    152.18551635742188,
+    371.67059326171875,
+    295.7659606933594
+   ],
+   "score": 0.006918959319591522
+  },
+  {
+   "label": "microscope",
+   "box": [
+    217.82736206054688,
+    152.32199096679688,
+    371.5506286621094,
+    295.8482971191406
+   ],
+   "score": 0.003965561278164387
+  },
+  {
+   "label": "coffee_maker",
+   "box": [
+    0.0,
+    319.5322265625,
+    36.24256134033203,
+    480.0
+   ],
+   "score": 0.003902014344930649
+  },
+  {
+   "label": "stapler_(stapling_machine)",
+   "box": [
+    425.3395080566406,
+    199.93698120117188,
+    449.1670837402344,
+    222.22055053710938
+   ],
+   "score": 0.0023329840041697025
+  },
+  {
+   "label": "blender",
+   "box": [
+    0.0,
+    211.44927978515625,
+    36.5650520324707,
+    479.71685791015625
+   ],
+   "score": 0.001468757400289178
+  }
+ ],
+ "latency_total_sec": 3.5477155999979004
+}

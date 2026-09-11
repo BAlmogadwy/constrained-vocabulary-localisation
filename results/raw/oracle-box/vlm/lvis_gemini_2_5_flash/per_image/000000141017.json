@@ -1,0 +1,33 @@
+{
+  "image": "/home/maxim/PycharmProjects/zero-shot-detection-benchmark/data/subsets/lvis_v1_val_unseen/images/000000141017.jpg",
+  "image_id": 141017,
+  "file_name": "000000141017.jpg",
+  "num_crops": 1,
+  "crops": [
+    {
+      "annotation_id": 67308,
+      "bbox": [
+        126.32,
+        186.62,
+        15.29,
+        26.49
+      ],
+      "category_id": 112,
+      "gt_label": "blender",
+      "labels": [
+        "blender",
+        "coffee_maker",
+        "microscope",
+        "musical_instrument",
+        "snowboard"
+      ],
+      "prediction": null,
+      "normalized_prediction": "",
+      "matched_label": null,
+      "correct": false,
+      "latency_sec": 1.0628297599905636,
+      "raw_response": "I'm sorry, but I cannot detect any objects in the provided image. The image is completely blank. Please provide a valid image for object detection."
+    }
+  ],
+  "prompt": "You are an object recognition assistant.\n\nYou will see a cropped image that contains exactly one object\nfrom the following LVIS categories (unseen split):\n\n- blender\n- coffee_maker\n- microscope\n- musical_instrument\n- snowboard\n\nYour task:\n- Return ONLY the best matching category name from this list.\n- Do not output explanations or extra text.\n\nAnswer with a single string: \"class_name\"."
+}

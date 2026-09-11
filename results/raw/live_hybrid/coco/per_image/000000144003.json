@@ -1,0 +1,242 @@
+{
+ "image": "000000144003.jpg",
+ "labels": [
+  "refrigerator",
+  "clock",
+  "hair drier",
+  "microwave",
+  "oven",
+  "toaster",
+  "vase"
+ ],
+ "tau": 0.4,
+ "detector": {
+  "detections": [
+   {
+    "label": "vase",
+    "box": [
+     159.5702667236328,
+     258.066162109375,
+     261.4455261230469,
+     370.1961669921875
+    ],
+    "score": 0.006715414579957724
+   },
+   {
+    "label": "refrigerator",
+    "box": [
+     0.0,
+     116.4184799194336,
+     32.39293670654297,
+     375.0
+    ],
+    "score": 0.0033092659432440996
+   },
+   {
+    "label": "toaster",
+    "box": [
+     159.56735229492188,
+     258.2648620605469,
+     261.5683898925781,
+     370.027099609375
+    ],
+    "score": 0.002647415501996875
+   },
+   {
+    "label": "clock",
+    "box": [
+     371.59246826171875,
+     202.23155212402344,
+     427.388427734375,
+     250.6272735595703
+    ],
+    "score": 0.0021695666946470737
+   },
+   {
+    "label": "refrigerator",
+    "box": [
+     0.0,
+     121.89098358154297,
+     166.3167266845703,
+     374.9775390625
+    ],
+    "score": 0.0016523594968020916
+   },
+   {
+    "label": "clock",
+    "box": [
+     192.4760284423828,
+     211.2047119140625,
+     290.09332275390625,
+     294.5682373046875
+    ],
+    "score": 0.0013706894824281335
+   },
+   {
+    "label": "oven",
+    "box": [
+     366.34674072265625,
+     172.79132080078125,
+     472.9920349121094,
+     362.5115051269531
+    ],
+    "score": 0.0011117163812741637
+   }
+  ],
+  "latency_sec": 0.04018969999742694
+ },
+ "detector_max_score": 0.006715414579957724,
+ "escalated": true,
+ "vlm": {
+  "model": "qwen/qwen3-vl-235b-a22b-instruct",
+  "detections": [
+   {
+    "label": "refrigerator",
+    "box": [
+     0.0,
+     0.0,
+     109.0,
+     374.25
+    ],
+    "score": 1.0
+   }
+  ],
+  "latency_sec": 2.566580900005647,
+  "usage": {
+   "prompt_tokens": 283,
+   "completion_tokens": 47,
+   "total_tokens": 330
+  },
+  "raw_response": {
+   "id": "gen-1783408904-10ahnMwn2MTpAnTmqWtA",
+   "object": "chat.completion",
+   "created": 1783408904,
+   "model": "qwen/qwen3-vl-235b-a22b-instruct",
+   "provider": "Parasail",
+   "system_fingerprint": null,
+   "service_tier": null,
+   "choices": [
+    {
+     "index": 0,
+     "logprobs": null,
+     "finish_reason": "stop",
+     "native_finish_reason": "stop",
+     "message": {
+      "role": "assistant",
+      "content": "```json\n[\n\t{\"box_2d\": [0, 0, 218, 998], \"label\": \"refrigerator\", \"confidence\": 0.95}\n]\n```",
+      "refusal": null,
+      "reasoning": null
+     }
+    }
+   ],
+   "usage": {
+    "prompt_tokens": 283,
+    "completion_tokens": 47,
+    "total_tokens": 330,
+    "cost": 0.00014873,
+    "is_byok": false,
+    "prompt_tokens_details": {
+     "cached_tokens": 0,
+     "cache_write_tokens": 0,
+     "audio_tokens": 0,
+     "video_tokens": 0
+    },
+    "cost_details": {
+     "upstream_inference_cost": 0.00014873,
+     "upstream_inference_prompt_cost": 5.943e-05,
+     "upstream_inference_completions_cost": 8.93e-05
+    },
+    "completion_tokens_details": {
+     "reasoning_tokens": 0,
+     "image_tokens": 0,
+     "audio_tokens": 0
+    }
+   }
+  }
+ },
+ "fallback": false,
+ "ts": "2026-07-07T07:21:43.063786+00:00",
+ "fused": [
+  {
+   "label": "vase",
+   "box": [
+    159.5702667236328,
+    258.066162109375,
+    261.4455261230469,
+    370.1961669921875
+   ],
+   "score": 0.006715414579957724
+  },
+  {
+   "label": "refrigerator",
+   "box": [
+    0.0,
+    116.4184799194336,
+    32.39293670654297,
+    375.0
+   ],
+   "score": 0.0033092659432440996
+  },
+  {
+   "label": "toaster",
+   "box": [
+    159.56735229492188,
+    258.2648620605469,
+    261.5683898925781,
+    370.027099609375
+   ],
+   "score": 0.002647415501996875
+  },
+  {
+   "label": "clock",
+   "box": [
+    371.59246826171875,
+    202.23155212402344,
+    427.388427734375,
+    250.6272735595703
+   ],
+   "score": 0.0021695666946470737
+  },
+  {
+   "label": "refrigerator",
+   "box": [
+    0.0,
+    121.89098358154297,
+    166.3167266845703,
+    374.9775390625
+   ],
+   "score": 0.0016523594968020916
+  },
+  {
+   "label": "clock",
+   "box": [
+    192.4760284423828,
+    211.2047119140625,
+    290.09332275390625,
+    294.5682373046875
+   ],
+   "score": 0.0013706894824281335
+  },
+  {
+   "label": "oven",
+   "box": [
+    366.34674072265625,
+    172.79132080078125,
+    472.9920349121094,
+    362.5115051269531
+   ],
+   "score": 0.0011117163812741637
+  },
+  {
+   "label": "refrigerator",
+   "box": [
+    0.0,
+    0.0,
+    109.0,
+    374.25
+   ],
+   "score": 0.4
+  }
+ ],
+ "latency_total_sec": 2.6067921000067145
+}

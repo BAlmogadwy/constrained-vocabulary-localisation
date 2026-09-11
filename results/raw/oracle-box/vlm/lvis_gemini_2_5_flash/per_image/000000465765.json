@@ -1,0 +1,81 @@
+{
+  "image": "/home/maxim/PycharmProjects/zero-shot-detection-benchmark/data/subsets/lvis_v1_val_unseen/images/000000465765.jpg",
+  "image_id": 465765,
+  "file_name": "000000465765.jpg",
+  "num_crops": 3,
+  "crops": [
+    {
+      "annotation_id": 150127,
+      "bbox": [
+        311.83,
+        315.68,
+        67.0,
+        18.57
+      ],
+      "category_id": 976,
+      "gt_label": "snowboard",
+      "labels": [
+        "snowboard",
+        "hair_dryer",
+        "musical_instrument",
+        "sewing_machine",
+        "stapler_(stapling_machine)"
+      ],
+      "prediction": null,
+      "normalized_prediction": "",
+      "matched_label": null,
+      "correct": false,
+      "latency_sec": 1.4553330249909777,
+      "raw_response": "I am sorry, but I cannot detect any of the requested objects in the provided image. The image quality is too low and the objects are indistinguishable."
+    },
+    {
+      "annotation_id": 150128,
+      "bbox": [
+        188.39,
+        245.65,
+        34.18,
+        10.21
+      ],
+      "category_id": 976,
+      "gt_label": "snowboard",
+      "labels": [
+        "snowboard",
+        "hair_dryer",
+        "musical_instrument",
+        "sewing_machine",
+        "stapler_(stapling_machine)"
+      ],
+      "prediction": null,
+      "normalized_prediction": "",
+      "matched_label": null,
+      "correct": false,
+      "latency_sec": 1.4197672470181715,
+      "raw_response": "I cannot perform this task. The image provided is completely blurred and indistinct, making it impossible to identify any objects, let alone the specific ones requested."
+    },
+    {
+      "annotation_id": 150129,
+      "bbox": [
+        327.87,
+        217.35,
+        31.52,
+        4.07
+      ],
+      "category_id": 976,
+      "gt_label": "snowboard",
+      "labels": [
+        "snowboard",
+        "hair_dryer",
+        "musical_instrument",
+        "sewing_machine",
+        "stapler_(stapling_machine)"
+      ],
+      "prediction": null,
+      "normalized_prediction": "",
+      "matched_label": null,
+      "correct": false,
+      "latency_sec": 1.6614699380006641,
+      "raw_response": "[]"
+    }
+  ],
+  "prompt": "You are an object recognition assistant.\n\nYou will see a cropped image that contains exactly one object\nfrom the following LVIS categories (unseen split):\n\n- snowboard\n- hair_dryer\n- musical_instrument\n- sewing_machine\n- stapler_(stapling_machine)\n\nYour task:\n- Return ONLY the best matching category name from this list.\n- Do not output explanations or extra text.\n\nAnswer with a single string: \"class_name\"."
+}

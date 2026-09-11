@@ -1,0 +1,90 @@
+{
+  "model": "Qwen3-VL-8B-Instruct",
+  "strategy": "single_query",
+  "image": "/home/maxim/PycharmProjects/zero-shot-detection-benchmark/data/raw/coco2017/val2017/000000063602.jpg",
+  "labels": [
+    "book",
+    "clock",
+    "refrigerator",
+    "sink",
+    "toaster",
+    "toothbrush",
+    "vase"
+  ],
+  "detections": [
+    {
+      "box_2d": [
+        550.0,
+        338.0,
+        573.0,
+        402.0
+      ],
+      "label": "book"
+    },
+    {
+      "box_2d": [
+        533.0,
+        250.0,
+        550.0,
+        395.0
+      ],
+      "label": "book"
+    },
+    {
+      "box_2d": [
+        517.0,
+        245.0,
+        533.0,
+        395.0
+      ],
+      "label": "book"
+    },
+    {
+      "box_2d": [
+        484.0,
+        245.0,
+        500.0,
+        395.0
+      ],
+      "label": "book"
+    },
+    {
+      "box_2d": [
+        500.0,
+        245.0,
+        517.0,
+        395.0
+      ],
+      "label": "book"
+    },
+    {
+      "box_2d": [
+        573.0,
+        338.0,
+        589.0,
+        402.0
+      ],
+      "label": "book"
+    },
+    {
+      "box_2d": [
+        589.0,
+        338.0,
+        602.0,
+        402.0
+      ],
+      "label": "book"
+    },
+    {
+      "box_2d": [
+        567.0,
+        338.0,
+        579.0,
+        402.0
+      ],
+      "label": "book"
+    }
+  ],
+  "latency_sec": 7.486080825998215,
+  "raw_response": "user\nYou are an object detection assistant. Given the image and the list of target classes, return detections as JSON.\nTarget classes: book, clock, refrigerator, sink, toaster, toothbrush, vase.\nOutput format: [{\"box_2d\":[x1,y1,x2,y2],\"label\":\"class_name\"}...]\nUse pixel coordinates relative to the input image. Return JSON only.\nassistant\n```json\n[\n\t{\"box_2d\":[550, 338, 573, 402],\"label\":\"book\"},\n\t{\"box_2d\":[533, 250, 550, 395],\"label\":\"book\"},\n\t{\"box_2d\":[517, 245, 533, 395],\"label\":\"book\"},\n\t{\"box_2d\":[484, 245, 500, 395],\"label\":\"book\"},\n\t{\"box_2d\":[500, 245, 517, 395],\"label\":\"book\"},\n\t{\"box_2d\":[573, 338, 589, 402],\"label\":\"book\"},\n\t{\"box_2d\":[589, 338, 602, 402],\"label\":\"book\"},\n\t{\"box_2d\":[567, 338, 579, 402],\"label\":\"book\"}\n]\n```"
+}

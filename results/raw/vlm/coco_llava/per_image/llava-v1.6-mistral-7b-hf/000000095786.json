@@ -1,0 +1,45 @@
+{
+  "model": "llava-v1.6-mistral-7b-hf",
+  "strategy": "single_query",
+  "image": "/home/maxim/PycharmProjects/zero-shot-detection-benchmark/data/raw/coco2017/val2017/000000095786.jpg",
+  "labels": [
+    "vase",
+    "book",
+    "clock",
+    "oven",
+    "scissors",
+    "teddy bear",
+    "toothbrush"
+  ],
+  "detections": [
+    {
+      "box_2d": [
+        0.0,
+        0.128,
+        0.436,
+        0.859
+      ],
+      "label": "vase"
+    },
+    {
+      "box_2d": [
+        0.436,
+        0.0,
+        0.864,
+        0.611
+      ],
+      "label": "vase"
+    },
+    {
+      "box_2d": [
+        0.486,
+        0.505,
+        0.932,
+        0.988
+      ],
+      "label": "vase"
+    }
+  ],
+  "latency_sec": 2.2701784889941337,
+  "raw_response": "USER:  \nDetect the following objects in the image: vase, book, clock, oven, scissors, teddy bear, toothbrush. For each detected object, provide JSON entries in the form [{\"box_2d\": [x1, y1, x2, y2], \"label\": \"class_name\"}]. Return only JSON. ASSISTANT: ```json\n[\n  {\n    \"box_2d\": [0.000,0.128,0.436,0.859],\n    \"label\": \"vase\"\n  },\n  {\n    \"box_2d\": [0.436,0.000,0.864,0.611],\n    \"label\": \"vase\"\n  },\n  {\n    \"box_2d\": [0.486,0.505,0.932,0.988],\n    \"label\": \"vase\"\n  }\n]\n``` "
+}

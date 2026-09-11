@@ -1,0 +1,54 @@
+{
+  "model": "gemini-2.5-flash",
+  "strategy": "single_query",
+  "image": "/home/maxim/PycharmProjects/zero-shot-detection-benchmark/data/raw/coco2017/val2017/000000111951.jpg",
+  "labels": [
+    "sink",
+    "vase",
+    "book",
+    "clock",
+    "scissors",
+    "teddy bear",
+    "toothbrush"
+  ],
+  "detections": [
+    {
+      "box_2d": [
+        53,
+        504,
+        246,
+        694
+      ],
+      "class_name": "sink"
+    },
+    {
+      "box_2d": [
+        243,
+        335,
+        344,
+        461
+      ],
+      "class_name": "sink"
+    },
+    {
+      "box_2d": [
+        343,
+        107,
+        444,
+        250
+      ],
+      "class_name": "vase"
+    },
+    {
+      "box_2d": [
+        665,
+        874,
+        999,
+        999
+      ],
+      "class_name": "vase"
+    }
+  ],
+  "latency_sec": 4.761178600019775,
+  "raw_response": "```json\n[\n  {\"box_2d\": [53, 504, 246, 694], \"class_name\": \"sink\"},\n  {\"box_2d\": [243, 335, 344, 461], \"class_name\": \"sink\"},\n  {\"box_2d\": [343, 107, 444, 250], \"class_name\": \"vase\"},\n  {\"box_2d\": [665, 874, 999, 999], \"class_name\": \"vase\"}\n]\n```"
+}

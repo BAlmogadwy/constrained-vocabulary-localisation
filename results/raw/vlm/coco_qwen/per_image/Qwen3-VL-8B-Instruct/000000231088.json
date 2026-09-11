@@ -1,0 +1,131 @@
+{
+  "model": "Qwen3-VL-8B-Instruct",
+  "strategy": "single_query",
+  "image": "/home/maxim/PycharmProjects/zero-shot-detection-benchmark/data/raw/coco2017/val2017/000000231088.jpg",
+  "labels": [
+    "microwave",
+    "oven",
+    "toaster",
+    "sink",
+    "refrigerator",
+    "book",
+    "clock",
+    "vase",
+    "scissors",
+    "teddy bear",
+    "hair drier",
+    "toothbrush"
+  ],
+  "detections": [
+    {
+      "box_2d": [
+        155.0,
+        807.0,
+        626.0,
+        980.0
+      ],
+      "label": "microwave"
+    },
+    {
+      "box_2d": [
+        545.0,
+        714.0,
+        1000.0,
+        983.0
+      ],
+      "label": "oven"
+    },
+    {
+      "box_2d": [
+        402.0,
+        542.0,
+        857.0,
+        733.0
+      ],
+      "label": "toaster"
+    },
+    {
+      "box_2d": [
+        57.0,
+        607.0,
+        521.0,
+        857.0
+      ],
+      "label": "sink"
+    },
+    {
+      "box_2d": [
+        0.0,
+        273.0,
+        526.0,
+        607.0
+      ],
+      "label": "refrigerator"
+    },
+    {
+      "box_2d": [
+        226.0,
+        0.0,
+        895.0,
+        422.0
+      ],
+      "label": "book"
+    },
+    {
+      "box_2d": [
+        131.0,
+        507.0,
+        212.0,
+        582.0
+      ],
+      "label": "clock"
+    },
+    {
+      "box_2d": [
+        352.0,
+        157.0,
+        445.0,
+        238.0
+      ],
+      "label": "vase"
+    },
+    {
+      "box_2d": [
+        226.0,
+        814.0,
+        274.0,
+        857.0
+      ],
+      "label": "scissors"
+    },
+    {
+      "box_2d": [
+        776.0,
+        938.0,
+        800.0,
+        988.0
+      ],
+      "label": "teddy bear"
+    },
+    {
+      "box_2d": [
+        452.0,
+        744.0,
+        545.0,
+        828.0
+      ],
+      "label": "hair drier"
+    },
+    {
+      "box_2d": [
+        545.0,
+        714.0,
+        1000.0,
+        983.0
+      ],
+      "label": "toothbrush"
+    }
+  ],
+  "latency_sec": 14.183269417000702,
+  "raw_response": "user\nYou are an object detection assistant. Given the image and the list of target classes, return detections as JSON.\nTarget classes: microwave, oven, toaster, sink, refrigerator, book, clock, vase, scissors, teddy bear, hair drier, toothbrush.\nOutput format: [{\"box_2d\":[x1,y1,x2,y2],\"label\":\"class_name\"}...]\nUse pixel coordinates relative to the input image. Return JSON only.\nassistant\n```json\n[\n\t{\"box_2d\": [155, 807, 626, 980], \"label\": \"microwave\"},\n\t{\"box_2d\": [545, 714, 1000, 983], \"label\": \"oven\"},\n\t{\"box_2d\": [402, 542, 857, 733], \"label\": \"toaster\"},\n\t{\"box_2d\": [57, 607, 521, 857], \"label\": \"sink\"},\n\t{\"box_2d\": [0, 273, 526, 607], \"label\": \"refrigerator\"},\n\t{\"box_2d\": [226, 0, 895, 422], \"label\": \"book\"},\n\t{\"box_2d\": [131, 507, 212, 582], \"label\": \"clock\"},\n\t{\"box_2d\": [352, 157, 445, 238], \"label\": \"vase\"},\n\t{\"box_2d\": [226, 814, 274, 857], \"label\": \"scissors\"},\n\t{\"box_2d\": [776, 938, 800, 988], \"label\": \"teddy bear\"},\n\t{\"box_2d\": [452, 744, 545, 828], \"label\": \"hair drier\"},\n\t{\"box_2d\": [545, 714, 1000, 983], \"label\": \"toothbrush\"}\n]\n```"
+}

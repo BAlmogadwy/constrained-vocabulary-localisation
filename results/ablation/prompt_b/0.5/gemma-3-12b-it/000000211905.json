@@ -1,0 +1,31 @@
+{
+  "model": "gemma-3-12b-it",
+  "strategy": "iterative",
+  "image": "/home/maxim/PycharmProjects/zero-shot-detection-benchmark/data/subsets/lvis_v1_val_unseen/images/000000211905.jpg",
+  "labels": [
+    "microscope",
+    "stapler_(stapling_machine)",
+    "blender",
+    "hair_dryer",
+    "musical_instrument",
+    "sewing_machine"
+  ],
+  "detections": [
+    {
+      "box_2d": [
+        111,
+        230,
+        261,
+        366
+      ],
+      "label": "microscope"
+    }
+  ],
+  "latency_sec": 18.047290027025156,
+  "raw_response": {
+    "identification": "microscope",
+    "localization": {
+      "microscope": "```json\n[{\"box_2d\":[111,230,261,366],\"label\":\"microscope\"}]\n```"
+    }
+  }
+}

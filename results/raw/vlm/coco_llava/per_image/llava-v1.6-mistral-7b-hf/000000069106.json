@@ -1,0 +1,50 @@
+{
+  "model": "llava-v1.6-mistral-7b-hf",
+  "strategy": "single_query",
+  "image": "/home/maxim/PycharmProjects/zero-shot-detection-benchmark/data/raw/coco2017/val2017/000000069106.jpg",
+  "labels": [
+    "microwave",
+    "oven",
+    "toaster",
+    "sink",
+    "refrigerator",
+    "book",
+    "clock",
+    "vase",
+    "scissors",
+    "teddy bear",
+    "hair drier",
+    "toothbrush"
+  ],
+  "detections": [
+    {
+      "box_2d": [
+        0.136,
+        0.361,
+        0.436,
+        0.778
+      ],
+      "label": "zebra"
+    },
+    {
+      "box_2d": [
+        0.42,
+        0.344,
+        0.656,
+        0.755
+      ],
+      "label": "zebra"
+    },
+    {
+      "box_2d": [
+        0.632,
+        0.322,
+        0.876,
+        0.72
+      ],
+      "label": "zebra"
+    }
+  ],
+  "latency_sec": 1.9733139609961654,
+  "raw_response": "USER:  \nDetect the following objects in the image: microwave, oven, toaster, sink, refrigerator, book, clock, vase, scissors, teddy bear, hair drier, toothbrush. For each detected object, provide JSON entries in the form [{\"box_2d\": [x1, y1, x2, y2], \"label\": \"class_name\"}]. Return only JSON. ASSISTANT: ```json\n[\n  {\"box_2d\": [0.136,0.361,0.436,0.778], \"label\": \"zebra\"},\n  {\"box_2d\": [0.420,0.344,0.656,0.755], \"label\": \"zebra\"},\n  {\"box_2d\": [0.632,0.322,0.876,0.720], \"label\": \"zebra\"}\n]\n``` "
+}

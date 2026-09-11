@@ -1,0 +1,76 @@
+{
+ "image": "000000350002.jpg",
+ "model": "qwen/qwen3-vl-235b-a22b-instruct",
+ "labels": [
+  "hair_dryer",
+  "blender",
+  "coffee_maker",
+  "lawn_mower",
+  "sewing_machine"
+ ],
+ "detections": [
+  {
+   "box_2d": [
+    0.0,
+    94.72,
+    164.822,
+    281.6
+   ],
+   "label": "hair_dryer",
+   "score": 0.98
+  }
+ ],
+ "latency_sec": 3.7934881999972276,
+ "usage": {
+  "prompt_tokens": 352,
+  "completion_tokens": 50,
+  "total_tokens": 402
+ },
+ "raw_response": {
+  "id": "gen-1783408050-CeVq1M6CrEZHMZRLIBU8",
+  "object": "chat.completion",
+  "created": 1783408050,
+  "model": "qwen/qwen3-vl-235b-a22b-instruct",
+  "provider": "Venice",
+  "system_fingerprint": null,
+  "service_tier": null,
+  "choices": [
+   {
+    "index": 0,
+    "logprobs": null,
+    "finish_reason": "stop",
+    "native_finish_reason": "stop",
+    "message": {
+     "role": "assistant",
+     "content": "```json\n[\n\t{\"box_2d\": [0, 148, 386, 440], \"label\": \"hair_dryer\", \"confidence\": 0.98}\n]\n```",
+     "refusal": null,
+     "reasoning": null
+    }
+   }
+  ],
+  "usage": {
+   "prompt_tokens": 352,
+   "completion_tokens": 50,
+   "total_tokens": 402,
+   "cost": 0.00013196,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 336,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00013196,
+    "upstream_inference_prompt_cost": 3.696e-05,
+    "upstream_inference_completions_cost": 9.5e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   }
+  }
+ },
+ "ts": "2026-07-07T07:07:32.077413+00:00"
+}

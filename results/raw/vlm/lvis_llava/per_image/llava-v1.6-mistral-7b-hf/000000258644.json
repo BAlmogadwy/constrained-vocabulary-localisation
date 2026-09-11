@@ -1,0 +1,70 @@
+{
+  "model": "llava-v1.6-mistral-7b-hf",
+  "strategy": "single_query",
+  "image": "/home/maxim/PycharmProjects/zero-shot-detection-benchmark/data/subsets/lvis_v1_val_unseen/images/000000258644.jpg",
+  "labels": [
+    "blender",
+    "coffee_maker",
+    "lawn_mower",
+    "sewing_machine",
+    "snowboard"
+  ],
+  "detections": [
+    {
+      "box_2d": [
+        0.537,
+        0.522,
+        0.883,
+        0.922
+      ],
+      "label": "blender"
+    },
+    {
+      "box_2d": [
+        0.0,
+        0.405,
+        0.233,
+        0.958
+      ],
+      "label": "person"
+    },
+    {
+      "box_2d": [
+        0.283,
+        0.347,
+        0.552,
+        0.734
+      ],
+      "label": "door"
+    },
+    {
+      "box_2d": [
+        0.0,
+        0.405,
+        0.233,
+        0.958
+      ],
+      "label": "person"
+    },
+    {
+      "box_2d": [
+        0.283,
+        0.347,
+        0.552,
+        0.734
+      ],
+      "label": "door"
+    },
+    {
+      "box_2d": [
+        0.537,
+        0.522,
+        0.883,
+        0.922
+      ],
+      "label": "blender"
+    }
+  ],
+  "latency_sec": 12.391309979371727,
+  "raw_response": "USER:  \nDetect the following objects in the image: blender, coffee_maker, lawn_mower, sewing_machine, snowboard. For each detected object, provide JSON entries in the form [{\"box_2d\": [x1, y1, x2, y2], \"label\": \"class_name\"}]. Return only JSON. ASSISTANT: ```json\n[\n  {\n    \"box_2d\": [\n     0.537,\n     0.522,\n     0.883,\n     0.922\n    ],\n    \"label\": \"blender\"\n  },\n  {\n    \"box_2d\": [\n     0.000,\n     0.405,\n     0.233,\n     0.958\n    ],\n    \"label\": \"person\"\n  },\n  {\n    \"box_2d\": [\n     0.283,\n     0.347,\n     0.552,\n     0.734\n    ],\n    \"label\": \"door\"\n  },\n  {\n    \"box_2d\": [\n     0.000,\n     0.405,\n     0.233,\n     0.958\n    ],\n    \"label\": \"person\"\n  },\n  {\n    \"box_2d\": [\n     0.283,\n     0.347,\n     0.552,\n     0.734\n    ],\n    \"label\": \"door\"\n  },\n  {\n    \"box_2d\": [\n     0.537,\n     0.522,\n     0.883,\n     0.922\n    ],\n    \"label\": \"blender\"\n  }\n]\n``` "
+}

@@ -1,0 +1,190 @@
+{
+ "image": "000000184978.jpg",
+ "labels": [
+  "snowboard",
+  "hair_dryer",
+  "lawn_mower",
+  "sewing_machine",
+  "spatula"
+ ],
+ "tau": 0.4,
+ "detector": {
+  "detections": [
+   {
+    "label": "snowboard",
+    "box": [
+     134.2445068359375,
+     467.8509521484375,
+     231.32684326171875,
+     497.15966796875
+    ],
+    "score": 0.1450614184141159
+   },
+   {
+    "label": "snowboard",
+    "box": [
+     165.55502319335938,
+     475.7508544921875,
+     231.31198120117188,
+     492.6708984375
+    ],
+    "score": 0.027478627860546112
+   },
+   {
+    "label": "snowboard",
+    "box": [
+     469.20458984375,
+     574.8861083984375,
+     480.0,
+     592.1583251953125
+    ],
+    "score": 0.007973022758960724
+   },
+   {
+    "label": "snowboard",
+    "box": [
+     157.644287109375,
+     365.696044921875,
+     197.0953369140625,
+     408.3189697265625
+    ],
+    "score": 0.0015961849130690098
+   },
+   {
+    "label": "snowboard",
+    "box": [
+     469.4036560058594,
+     571.697998046875,
+     480.0,
+     611.88818359375
+    ],
+    "score": 0.0014334229053929448
+   }
+  ],
+  "latency_sec": 0.09567309998965356
+ },
+ "detector_max_score": 0.1450614184141159,
+ "escalated": true,
+ "vlm": {
+  "model": "qwen/qwen3-vl-235b-a22b-instruct",
+  "detections": [
+   {
+    "label": "snowboard",
+    "box": [
+     144.96,
+     471.68,
+     230.88,
+     492.8
+    ],
+    "score": 1.0
+   }
+  ],
+  "latency_sec": 10.007699599998887,
+  "usage": {
+   "prompt_tokens": 393,
+   "completion_tokens": 50,
+   "total_tokens": 443
+  },
+  "raw_response": {
+   "id": "gen-1783406706-82LxOcUqeT6Qm8Mgmjs1",
+   "object": "chat.completion",
+   "created": 1783406706,
+   "model": "qwen/qwen3-vl-235b-a22b-instruct",
+   "provider": "DeepInfra",
+   "system_fingerprint": null,
+   "service_tier": null,
+   "choices": [
+    {
+     "index": 0,
+     "logprobs": null,
+     "finish_reason": "stop",
+     "native_finish_reason": "stop",
+     "message": {
+      "role": "assistant",
+      "content": "```json\n[\n\t{\"box_2d\": [302, 737, 481, 770], \"label\": \"snowboard\", \"confidence\": 0.95}\n]\n```",
+      "refusal": null,
+      "reasoning": null
+     }
+    }
+   ],
+   "usage": {
+    "prompt_tokens": 393,
+    "completion_tokens": 50,
+    "total_tokens": 443,
+    "cost": 0.0001226,
+    "is_byok": false,
+    "prompt_tokens_details": {
+     "cached_tokens": 0,
+     "cache_write_tokens": 0,
+     "audio_tokens": 0,
+     "video_tokens": 0
+    },
+    "cost_details": {
+     "upstream_inference_cost": 0.0001226,
+     "upstream_inference_prompt_cost": 7.86e-05,
+     "upstream_inference_completions_cost": 4.4e-05
+    },
+    "completion_tokens_details": {
+     "reasoning_tokens": 0,
+     "image_tokens": 0,
+     "audio_tokens": 0
+    }
+   }
+  }
+ },
+ "fallback": false,
+ "ts": "2026-07-07T06:45:03.545861+00:00",
+ "fused": [
+  {
+   "label": "snowboard",
+   "box": [
+    134.2445068359375,
+    467.8509521484375,
+    231.32684326171875,
+    497.15966796875
+   ],
+   "score": 0.4450614184141159
+  },
+  {
+   "label": "snowboard",
+   "box": [
+    165.55502319335938,
+    475.7508544921875,
+    231.31198120117188,
+    492.6708984375
+   ],
+   "score": 0.027478627860546112
+  },
+  {
+   "label": "snowboard",
+   "box": [
+    469.20458984375,
+    574.8861083984375,
+    480.0,
+    592.1583251953125
+   ],
+   "score": 0.007973022758960724
+  },
+  {
+   "label": "snowboard",
+   "box": [
+    157.644287109375,
+    365.696044921875,
+    197.0953369140625,
+    408.3189697265625
+   ],
+   "score": 0.0015961849130690098
+  },
+  {
+   "label": "snowboard",
+   "box": [
+    469.4036560058594,
+    571.697998046875,
+    480.0,
+    611.88818359375
+   ],
+   "score": 0.0014334229053929448
+  }
+ ],
+ "latency_total_sec": 10.103384999980335
+}

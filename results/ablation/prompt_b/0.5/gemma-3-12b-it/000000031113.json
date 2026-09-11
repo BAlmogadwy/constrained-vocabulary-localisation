@@ -1,0 +1,30 @@
+{
+  "model": "gemma-3-12b-it",
+  "strategy": "iterative",
+  "image": "/home/maxim/PycharmProjects/zero-shot-detection-benchmark/data/subsets/lvis_v1_val_unseen/images/000000031113.jpg",
+  "labels": [
+    "hair_dryer",
+    "coffee_maker",
+    "lawn_mower",
+    "microscope",
+    "sewing_machine"
+  ],
+  "detections": [
+    {
+      "box_2d": [
+        531,
+        330,
+        623,
+        433
+      ],
+      "label": "hair_dryer"
+    }
+  ],
+  "latency_sec": 18.04481238592416,
+  "raw_response": {
+    "identification": "hair_dryer",
+    "localization": {
+      "hair_dryer": "```json\n[{\"box_2d\":[531,330,623,433],\"label\":\"hair_dryer\"}]\n```"
+    }
+  }
+}

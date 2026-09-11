@@ -1,0 +1,86 @@
+{
+  "model": "Qwen3-VL-8B-Instruct",
+  "strategy": "single_query",
+  "image": "/home/maxim/PycharmProjects/zero-shot-detection-benchmark/data/raw/coco2017/val2017/000000121417.jpg",
+  "labels": [
+    "microwave",
+    "oven",
+    "toaster",
+    "sink",
+    "refrigerator",
+    "book",
+    "clock",
+    "vase",
+    "scissors",
+    "teddy bear",
+    "hair drier",
+    "toothbrush"
+  ],
+  "detections": [
+    {
+      "box_2d": [
+        223.0,
+        231.0,
+        931.0,
+        983.0
+      ],
+      "label": "person"
+    },
+    {
+      "box_2d": [
+        93.0,
+        0.0,
+        242.0,
+        154.0
+      ],
+      "label": "person"
+    },
+    {
+      "box_2d": [
+        334.0,
+        0.0,
+        538.0,
+        87.0
+      ],
+      "label": "person"
+    },
+    {
+      "box_2d": [
+        538.0,
+        0.0,
+        737.0,
+        101.0
+      ],
+      "label": "person"
+    },
+    {
+      "box_2d": [
+        737.0,
+        0.0,
+        845.0,
+        62.0
+      ],
+      "label": "person"
+    },
+    {
+      "box_2d": [
+        845.0,
+        0.0,
+        933.0,
+        87.0
+      ],
+      "label": "person"
+    },
+    {
+      "box_2d": [
+        933.0,
+        0.0,
+        1000.0,
+        87.0
+      ],
+      "label": "person"
+    }
+  ],
+  "latency_sec": 7.588390431992593,
+  "raw_response": "user\nYou are an object detection assistant. Given the image and the list of target classes, return detections as JSON.\nTarget classes: microwave, oven, toaster, sink, refrigerator, book, clock, vase, scissors, teddy bear, hair drier, toothbrush.\nOutput format: [{\"box_2d\":[x1,y1,x2,y2],\"label\":\"class_name\"}...]\nUse pixel coordinates relative to the input image. Return JSON only.\nassistant\n```json\n[\n\t{\"box_2d\": [223, 231, 931, 983],\"label\":\"person\"},\n\t{\"bbox_2d\": [93, 0, 242, 154],\"label\":\"person\"},\n\t{\"bbox_2d\": [334, 0, 538, 87],\"label\":\"person\"},\n\t{\"bbox_2d\": [538, 0, 737, 101],\"label\":\"person\"},\n\t{\"bbox_2d\": [737, 0, 845, 62],\"label\":\"person\"},\n\t{\"bbox_2d\": [845, 0, 933, 87],\"label\":\"person\"},\n\t{\"bbox_2d\": [933, 0, 1000, 87],\"label\":\"person\"}\n]\n```"
+}

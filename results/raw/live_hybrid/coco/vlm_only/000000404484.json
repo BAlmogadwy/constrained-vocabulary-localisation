@@ -1,0 +1,67 @@
+{
+ "image": "000000404484.jpg",
+ "model": "qwen/qwen3-vl-235b-a22b-instruct",
+ "labels": [
+  "teddy bear",
+  "clock",
+  "oven",
+  "refrigerator",
+  "sink",
+  "toaster",
+  "vase"
+ ],
+ "detections": [],
+ "latency_sec": 2.2799775000021327,
+ "usage": {
+  "prompt_tokens": 171,
+  "completion_tokens": 6,
+  "total_tokens": 177
+ },
+ "raw_response": {
+  "id": "gen-1783413610-gzNVLwWSRIPnnkem75PT",
+  "object": "chat.completion",
+  "created": 1783413610,
+  "model": "qwen/qwen3-vl-235b-a22b-instruct",
+  "provider": "Parasail",
+  "system_fingerprint": null,
+  "service_tier": null,
+  "choices": [
+   {
+    "index": 0,
+    "logprobs": null,
+    "finish_reason": "stop",
+    "native_finish_reason": "stop",
+    "message": {
+     "role": "assistant",
+     "content": "```json\n[]\n```",
+     "refusal": null,
+     "reasoning": null
+    }
+   }
+  ],
+  "usage": {
+   "prompt_tokens": 171,
+   "completion_tokens": 6,
+   "total_tokens": 177,
+   "cost": 4.731e-05,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 4.731e-05,
+    "upstream_inference_prompt_cost": 3.591e-05,
+    "upstream_inference_completions_cost": 1.14e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   }
+  }
+ },
+ "ts": "2026-07-07T08:40:09.859670+00:00"
+}

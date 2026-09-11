@@ -1,0 +1,81 @@
+{
+  "model": "gemini-2.5-flash",
+  "strategy": "single_query",
+  "image": "/home/maxim/PycharmProjects/zero-shot-detection-benchmark/data/raw/coco2017/val2017/000000154358.jpg",
+  "labels": [
+    "book",
+    "vase",
+    "hair drier",
+    "scissors",
+    "sink",
+    "teddy bear",
+    "toothbrush"
+  ],
+  "detections": [
+    {
+      "box_2d": [
+        295,
+        487,
+        368,
+        555
+      ],
+      "label": "book"
+    },
+    {
+      "box_2d": [
+        374,
+        574,
+        467,
+        638
+      ],
+      "label": "vase"
+    },
+    {
+      "box_2d": [
+        389,
+        829,
+        475,
+        915
+      ],
+      "label": "vase"
+    },
+    {
+      "box_2d": [
+        447,
+        725,
+        467,
+        749
+      ],
+      "label": "vase"
+    },
+    {
+      "box_2d": [
+        556,
+        786,
+        616,
+        824
+      ],
+      "label": "vase"
+    },
+    {
+      "box_2d": [
+        554,
+        137,
+        608,
+        187
+      ],
+      "label": "vase"
+    },
+    {
+      "box_2d": [
+        363,
+        290,
+        563,
+        370
+      ],
+      "label": "book"
+    }
+  ],
+  "latency_sec": 6.620123535976745,
+  "raw_response": "```json\n[\n  {\"box_2d\": [295, 487, 368, 555], \"label\": \"book\"},\n  {\"box_2d\": [374, 574, 467, 638], \"label\": \"vase\"},\n  {\"box_2d\": [389, 829, 475, 915], \"label\": \"vase\"},\n  {\"box_2d\": [447, 725, 467, 749], \"label\": \"vase\"},\n  {\"box_2d\": [556, 786, 616, 824], \"label\": \"vase\"},\n  {\"box_2d\": [554, 137, 608, 187], \"label\": \"vase\"},\n  {\"box_2d\": [363, 290, 563, 370], \"label\": \"book\"}\n]\n```"
+}

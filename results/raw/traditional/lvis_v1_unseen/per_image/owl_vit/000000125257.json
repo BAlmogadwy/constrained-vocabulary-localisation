@@ -1,0 +1,34 @@
+{
+  "model": "owl_vit",
+  "strategy": "default",
+  "image": "/home/maxim/PycharmProjects/zero-shot-detection-benchmark/data/subsets/lvis_v1_val_unseen/images/000000125257.jpg",
+  "labels": [
+    "snowboard",
+    "microscope",
+    "musical_instrument",
+    "sewing_machine",
+    "spatula"
+  ],
+  "result": {
+    "detections": [
+      {
+        "label": "snowboard",
+        "score": 0.31798219680786133,
+        "box_2d": [
+          338.31329345703125,
+          217.16439819335938,
+          410.4266357421875,
+          238.86952209472656
+        ],
+        "box": [
+          338.31329345703125,
+          217.16439819335938,
+          410.4266357421875,
+          238.86952209472656
+        ]
+      }
+    ],
+    "latency_sec": 0.08307282347232103,
+    "raw_response": null
+  }
+}

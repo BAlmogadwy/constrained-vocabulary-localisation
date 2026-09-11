@@ -1,0 +1,81 @@
+{
+  "image": "/home/maxim/PycharmProjects/zero-shot-detection-benchmark/data/raw/coco2017/val2017/000000040471.jpg",
+  "image_id": 40471,
+  "file_name": "000000040471.jpg",
+  "num_crops": 3,
+  "crops": [
+    {
+      "annotation_id": 43087,
+      "bbox": [
+        236.37,
+        299.54,
+        7.69,
+        16.34
+      ],
+      "category_id": 993,
+      "gt_label": "spatula",
+      "labels": [
+        "spatula",
+        "coffee_maker",
+        "musical_instrument",
+        "sewing_machine",
+        "snowboard"
+      ],
+      "prediction": null,
+      "normalized_prediction": "",
+      "matched_label": null,
+      "correct": false,
+      "latency_sec": 0.9591104169958271,
+      "raw_response": "I am sorry, but I cannot process images and therefore cannot perform object detection."
+    },
+    {
+      "annotation_id": 43088,
+      "bbox": [
+        223.18,
+        294.96,
+        9.21,
+        20.83
+      ],
+      "category_id": 993,
+      "gt_label": "spatula",
+      "labels": [
+        "spatula",
+        "coffee_maker",
+        "musical_instrument",
+        "sewing_machine",
+        "snowboard"
+      ],
+      "prediction": null,
+      "normalized_prediction": "",
+      "matched_label": null,
+      "correct": false,
+      "latency_sec": 1.370972384000197,
+      "raw_response": "[]"
+    },
+    {
+      "annotation_id": 43089,
+      "bbox": [
+        237.5,
+        303.56,
+        10.33,
+        12.21
+      ],
+      "category_id": 993,
+      "gt_label": "spatula",
+      "labels": [
+        "spatula",
+        "coffee_maker",
+        "musical_instrument",
+        "sewing_machine",
+        "snowboard"
+      ],
+      "prediction": null,
+      "normalized_prediction": "",
+      "matched_label": null,
+      "correct": false,
+      "latency_sec": 1.2208937729883473,
+      "raw_response": "[]"
+    }
+  ],
+  "prompt": "You are an object recognition assistant.\n\nYou will see a cropped image that contains exactly one object\nfrom the following LVIS categories (unseen split):\n\n- spatula\n- coffee_maker\n- musical_instrument\n- sewing_machine\n- snowboard\n\nYour task:\n- Return ONLY the best matching category name from this list.\n- Do not output explanations or extra text.\n\nAnswer with a single string: \"class_name\"."
+}

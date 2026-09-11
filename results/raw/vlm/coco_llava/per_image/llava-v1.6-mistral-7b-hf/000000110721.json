@@ -1,0 +1,113 @@
+{
+  "model": "llava-v1.6-mistral-7b-hf",
+  "strategy": "single_query",
+  "image": "/home/maxim/PycharmProjects/zero-shot-detection-benchmark/data/raw/coco2017/val2017/000000110721.jpg",
+  "labels": [
+    "microwave",
+    "oven",
+    "toaster",
+    "sink",
+    "refrigerator",
+    "book",
+    "clock",
+    "vase",
+    "scissors",
+    "teddy bear",
+    "hair drier",
+    "toothbrush"
+  ],
+  "detections": [
+    {
+      "box_2d": [
+        0.039,
+        0.298,
+        0.55,
+        0.787
+      ],
+      "label": "class_name"
+    },
+    {
+      "box_2d": [
+        0.039,
+        0.298,
+        0.55,
+        0.787
+      ],
+      "label": "airplane"
+    },
+    {
+      "box_2d": [
+        0.039,
+        0.298,
+        0.55,
+        0.787
+      ],
+      "label": "airplane_on_ground"
+    },
+    {
+      "box_2d": [
+        0.039,
+        0.298,
+        0.55,
+        0.787
+      ],
+      "label": "airplane_on_ground_at_airport"
+    },
+    {
+      "box_2d": [
+        0.039,
+        0.298,
+        0.55,
+        0.787
+      ],
+      "label": "airplane_on_ground_at_airport_in_daytime"
+    },
+    {
+      "box_2d": [
+        0.039,
+        0.298,
+        0.55,
+        0.787
+      ],
+      "label": "airplane_on_ground_at_airport_in_daytime_in_summer"
+    },
+    {
+      "box_2d": [
+        0.039,
+        0.298,
+        0.55,
+        0.787
+      ],
+      "label": "airplane_on_ground_at_airport_in_daytime_in_summer_in_june"
+    },
+    {
+      "box_2d": [
+        0.039,
+        0.298,
+        0.55,
+        0.787
+      ],
+      "label": "airplane_on_ground_at_airport_in_daytime_in_summer_in_june_2020"
+    },
+    {
+      "box_2d": [
+        0.039,
+        0.298,
+        0.55,
+        0.787
+      ],
+      "label": "airplane_on_ground_at_airport_in_daytime_in_summer_in_june_2020_12:00"
+    },
+    {
+      "box_2d": [
+        0.039,
+        0.298,
+        0.55,
+        0.787
+      ],
+      "label": "airplane_on_ground_at_airport_in_daytime_in_summer_in_june_2020_12:00_UTC"
+    }
+  ],
+  "latency_sec": 8.302469047004706,
+  "raw_response": "USER:  \nDetect the following objects in the image: microwave, oven, toaster, sink, refrigerator, book, clock, vase, scissors, teddy bear, hair drier, toothbrush. For each detected object, provide JSON entries in the form [{\"box_2d\": [x1, y1, x2, y2], \"label\": \"class_name\"}]. Return only JSON. ASSISTANT: ```json\n[\n  {\"box_2d\": [0.039,0.298,0.550,0.787], \"label\": \"class_name\"},\n  {\"box_2d\": [0.039,0.298,0.550,0.787], \"label\": \"airplane\"},\n  {\"box_2d\": [0.039,0.298,0.550,0.787], \"label\": \"airplane_on_ground\"},\n  {\"box_2d\": [0.039,0.298,0.550,0.787], \"label\": \"airplane_on_ground_at_airport\"},\n  {\"box_2d\": [0.039,0.298,0.550,0.787], \"label\": \"airplane_on_ground_at_airport_in_daytime\"},\n  {\"box_2d\": [0.039,0.298,0.550,0.787], \"label\": \"airplane_on_ground_at_airport_in_daytime_in_summer\"},\n  {\"box_2d\": [0.039,0.298,0.550,0.787], \"label\": \"airplane_on_ground_at_airport_in_daytime_in_summer_in_june\"},\n  {\"box_2d\": [0.039,0.298,0.550,0.787], \"label\": \"airplane_on_ground_at_airport_in_daytime_in_summer_in_june_2020\"},\n  {\"box_2d\": [0.039,0.298,0.550,0.787], \"label\": \"airplane_on_ground_at_airport_in_daytime_in_summer_in_june_2020_12:00\"},\n  {\"box_2d\": [0.039,0.298,0.550,0.787], \"label\": \"airplane_on_ground_at_airport_in_daytime_in_summer_in_june_2020_12:00_UTC\"}\n]\n``` "
+}

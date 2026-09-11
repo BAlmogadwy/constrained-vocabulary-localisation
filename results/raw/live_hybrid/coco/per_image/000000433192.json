@@ -1,0 +1,212 @@
+{
+ "image": "000000433192.jpg",
+ "labels": [
+  "book",
+  "clock",
+  "hair drier",
+  "refrigerator",
+  "scissors",
+  "toaster",
+  "vase"
+ ],
+ "tau": 0.4,
+ "detector": {
+  "detections": [
+   {
+    "label": "book",
+    "box": [
+     139.07412719726562,
+     140.86146545410156,
+     261.8197937011719,
+     228.69357299804688
+    ],
+    "score": 0.096633680164814
+   },
+   {
+    "label": "hair drier",
+    "box": [
+     257.64752197265625,
+     165.3978271484375,
+     298.9713134765625,
+     180.451416015625
+    ],
+    "score": 0.02809566631913185
+   },
+   {
+    "label": "book",
+    "box": [
+     80.50241088867188,
+     87.59436798095703,
+     499.63751220703125,
+     374.9334716796875
+    ],
+    "score": 0.014374003745615482
+   },
+   {
+    "label": "book",
+    "box": [
+     265.56292724609375,
+     164.61773681640625,
+     298.9715576171875,
+     173.1726837158203
+    ],
+    "score": 0.003269167384132743
+   },
+   {
+    "label": "book",
+    "box": [
+     258.7202453613281,
+     165.2866668701172,
+     299.2549133300781,
+     181.07164001464844
+    ],
+    "score": 0.002467202255502343
+   },
+   {
+    "label": "refrigerator",
+    "box": [
+     400.6994323730469,
+     0.11610984802246094,
+     500.0,
+     217.39955139160156
+    ],
+    "score": 0.001361086149699986
+   }
+  ],
+  "latency_sec": 0.03637950000120327
+ },
+ "detector_max_score": 0.096633680164814,
+ "escalated": true,
+ "vlm": {
+  "model": "qwen/qwen3-vl-235b-a22b-instruct",
+  "detections": [
+   {
+    "label": "book",
+    "box": [
+     256.0,
+     165.0,
+     299.5,
+     178.5
+    ],
+    "score": 1.0
+   }
+  ],
+  "latency_sec": 3.681103400012944,
+  "usage": {
+   "prompt_tokens": 283,
+   "completion_tokens": 49,
+   "total_tokens": 332
+  },
+  "raw_response": {
+   "id": "gen-1783409655-J2bNjosSRTGbXopmtHem",
+   "object": "chat.completion",
+   "created": 1783409655,
+   "model": "qwen/qwen3-vl-235b-a22b-instruct",
+   "provider": "DeepInfra",
+   "system_fingerprint": null,
+   "service_tier": null,
+   "choices": [
+    {
+     "index": 0,
+     "logprobs": null,
+     "finish_reason": "stop",
+     "native_finish_reason": "stop",
+     "message": {
+      "role": "assistant",
+      "content": "```json\n[\n\t{\"bbox_2d\": [512, 440, 599, 476], \"label\": \"book\", \"confidence\": 0.95}\n]\n```",
+      "refusal": null,
+      "reasoning": null
+     }
+    }
+   ],
+   "usage": {
+    "prompt_tokens": 283,
+    "completion_tokens": 49,
+    "total_tokens": 332,
+    "cost": 9.972e-05,
+    "is_byok": false,
+    "prompt_tokens_details": {
+     "cached_tokens": 0,
+     "cache_write_tokens": 0,
+     "audio_tokens": 0,
+     "video_tokens": 0
+    },
+    "cost_details": {
+     "upstream_inference_cost": 9.972e-05,
+     "upstream_inference_prompt_cost": 5.66e-05,
+     "upstream_inference_completions_cost": 4.312e-05
+    },
+    "completion_tokens_details": {
+     "reasoning_tokens": 0,
+     "image_tokens": 0,
+     "audio_tokens": 0
+    }
+   }
+  }
+ },
+ "fallback": false,
+ "ts": "2026-07-07T07:34:13.976242+00:00",
+ "fused": [
+  {
+   "label": "book",
+   "box": [
+    139.07412719726562,
+    140.86146545410156,
+    261.8197937011719,
+    228.69357299804688
+   ],
+   "score": 0.096633680164814
+  },
+  {
+   "label": "hair drier",
+   "box": [
+    257.64752197265625,
+    165.3978271484375,
+    298.9713134765625,
+    180.451416015625
+   ],
+   "score": 0.02809566631913185
+  },
+  {
+   "label": "book",
+   "box": [
+    80.50241088867188,
+    87.59436798095703,
+    499.63751220703125,
+    374.9334716796875
+   ],
+   "score": 0.014374003745615482
+  },
+  {
+   "label": "book",
+   "box": [
+    265.56292724609375,
+    164.61773681640625,
+    298.9715576171875,
+    173.1726837158203
+   ],
+   "score": 0.003269167384132743
+  },
+  {
+   "label": "book",
+   "box": [
+    258.7202453613281,
+    165.2866668701172,
+    299.2549133300781,
+    181.07164001464844
+   ],
+   "score": 0.30246720225550233
+  },
+  {
+   "label": "refrigerator",
+   "box": [
+    400.6994323730469,
+    0.11610984802246094,
+    500.0,
+    217.39955139160156
+   ],
+   "score": 0.001361086149699986
+  }
+ ],
+ "latency_total_sec": 3.7175187000102596
+}

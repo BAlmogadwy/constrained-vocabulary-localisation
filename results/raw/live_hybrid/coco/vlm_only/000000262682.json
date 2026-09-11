@@ -1,0 +1,108 @@
+{
+ "image": "000000262682.jpg",
+ "model": "qwen/qwen3-vl-235b-a22b-instruct",
+ "labels": [
+  "oven",
+  "sink",
+  "book",
+  "clock",
+  "hair drier",
+  "microwave",
+  "vase"
+ ],
+ "detections": [
+  {
+   "box_2d": [
+    35.868,
+    390.4,
+    125.965,
+    488.96
+   ],
+   "label": "oven",
+   "score": 0.99
+  },
+  {
+   "box_2d": [
+    224.602,
+    382.08,
+    341.6,
+    440.32
+   ],
+   "label": "sink",
+   "score": 0.99
+  },
+  {
+   "box_2d": [
+    330.498,
+    363.52,
+    373.198,
+    379.52
+   ],
+   "label": "sink",
+   "score": 0.99
+  },
+  {
+   "box_2d": [
+    173.789,
+    324.48,
+    187.026,
+    361.6
+   ],
+   "label": "microwave",
+   "score": 0.99
+  }
+ ],
+ "latency_sec": 6.733811199999764,
+ "usage": {
+  "prompt_tokens": 351,
+  "completion_tokens": 175,
+  "total_tokens": 526
+ },
+ "raw_response": {
+  "id": "gen-1783412342-dAi7Evr0wemJId9rw9Fb",
+  "object": "chat.completion",
+  "created": 1783412342,
+  "model": "qwen/qwen3-vl-235b-a22b-instruct",
+  "provider": "Alibaba",
+  "system_fingerprint": null,
+  "service_tier": null,
+  "choices": [
+   {
+    "index": 0,
+    "logprobs": null,
+    "finish_reason": "stop",
+    "native_finish_reason": "stop",
+    "message": {
+     "role": "assistant",
+     "content": "```json\n[\n\t{\"bbox_2d\": [84, 610, 295, 764], \"label\": \"oven\", \"confidence\": 0.99},\n\t{\"bbox_2d\": [526, 597, 800, 688], \"label\": \"sink\", \"confidence\": 0.99},\n\t{\"bbox_2d\": [774, 568, 874, 593], \"label\": \"sink\", \"confidence\": 0.99},\n\t{\"bbox_2d\": [407, 507, 438, 565], \"label\": \"microwave\", \"confidence\": 0.99}\n]\n```",
+     "refusal": null,
+     "reasoning": null
+    }
+   }
+  ],
+  "usage": {
+   "prompt_tokens": 351,
+   "completion_tokens": 175,
+   "total_tokens": 526,
+   "cost": 0.00027326,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00027326,
+    "upstream_inference_prompt_cost": 9.126e-05,
+    "upstream_inference_completions_cost": 0.000182
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   }
+  }
+ },
+ "ts": "2026-07-07T08:19:05.851363+00:00"
+}

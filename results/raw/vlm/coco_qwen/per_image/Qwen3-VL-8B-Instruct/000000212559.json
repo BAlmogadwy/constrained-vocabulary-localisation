@@ -1,0 +1,104 @@
+{
+  "model": "Qwen3-VL-8B-Instruct",
+  "strategy": "single_query",
+  "image": "/home/maxim/PycharmProjects/zero-shot-detection-benchmark/data/raw/coco2017/val2017/000000212559.jpg",
+  "labels": [
+    "microwave",
+    "oven",
+    "toaster",
+    "sink",
+    "refrigerator",
+    "book",
+    "clock",
+    "vase",
+    "scissors",
+    "teddy bear",
+    "hair drier",
+    "toothbrush"
+  ],
+  "detections": [
+    {
+      "box_2d": [
+        0.0,
+        468.0,
+        632.0,
+        937.0
+      ],
+      "label": "sheep"
+    },
+    {
+      "box_2d": [
+        331.0,
+        269.0,
+        464.0,
+        483.0
+      ],
+      "label": "sheep"
+    },
+    {
+      "box_2d": [
+        433.0,
+        286.0,
+        570.0,
+        416.0
+      ],
+      "label": "sheep"
+    },
+    {
+      "box_2d": [
+        635.0,
+        355.0,
+        807.0,
+        481.0
+      ],
+      "label": "sheep"
+    },
+    {
+      "box_2d": [
+        817.0,
+        342.0,
+        964.0,
+        452.0
+      ],
+      "label": "sheep"
+    },
+    {
+      "box_2d": [
+        803.0,
+        277.0,
+        930.0,
+        355.0
+      ],
+      "label": "sheep"
+    },
+    {
+      "box_2d": [
+        798.0,
+        194.0,
+        913.0,
+        330.0
+      ],
+      "label": "sheep"
+    },
+    {
+      "box_2d": [
+        913.0,
+        194.0,
+        1000.0,
+        373.0
+      ],
+      "label": "sheep"
+    },
+    {
+      "box_2d": [
+        0.0,
+        381.0,
+        53.0,
+        567.0
+      ],
+      "label": "sheep"
+    }
+  ],
+  "latency_sec": 9.244394250010373,
+  "raw_response": "user\nYou are an object detection assistant. Given the image and the list of target classes, return detections as JSON.\nTarget classes: microwave, oven, toaster, sink, refrigerator, book, clock, vase, scissors, teddy bear, hair drier, toothbrush.\nOutput format: [{\"box_2d\":[x1,y1,x2,y2],\"label\":\"class_name\"}...]\nUse pixel coordinates relative to the input image. Return JSON only.\nassistant\n```json\n[\n\t{\"box_2d\": [0, 468, 632, 937],\"label\":\"sheep\"},\n\t{\"bbox_2d\": [331, 269, 464, 483],\"label\":\"sheep\"},\n\t{\"bbox_2d\": [433, 286, 570, 416],\"label\":\"sheep\"},\n\t{\"bbox_2d\": [635, 355, 807, 481],\"label\":\"sheep\"},\n\t{\"bbox_2d\": [817, 342, 964, 452],\"label\":\"sheep\"},\n\t{\"bbox_2d\": [803, 277, 930, 355],\"label\":\"sheep\"},\n\t{\"bbox_2d\": [798, 194, 913, 330],\"label\":\"sheep\"},\n\t{\"bbox_2d\": [913, 194, 1000, 373],\"label\":\"sheep\"},\n\t{\"bbox_2d\": [0, 381, 53, 567],\"label\":\"sheep\"}\n]\n```"
+}

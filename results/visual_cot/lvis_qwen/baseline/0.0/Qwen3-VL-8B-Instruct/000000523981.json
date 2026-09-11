@@ -1,0 +1,1791 @@
+{
+  "model": "Qwen3-VL-8B-Instruct",
+  "strategy": "single_query",
+  "experiment": "visual_cot",
+  "prompt_variant": "baseline",
+  "temperature": 0.0,
+  "image": "/home/maxim/PycharmProjects/zero-shot-detection-benchmark/data/subsets/lvis_v1_val_unseen/images/000000523981.jpg",
+  "image_relative": "000000523981.jpg",
+  "labels": [
+    "spatula",
+    "microscope",
+    "musical_instrument",
+    "snowboard",
+    "stapler_(stapling_machine)"
+  ],
+  "metadata": {
+    "image": "/home/maxim/PycharmProjects/zero-shot-detection-benchmark/data/subsets/lvis_v1_val_unseen/images/000000523981.jpg",
+    "image_relative": "000000523981.jpg",
+    "image_size": {
+      "width": 500,
+      "height": 375
+    },
+    "labels": [
+      "spatula",
+      "microscope",
+      "musical_instrument",
+      "snowboard",
+      "stapler_(stapling_machine)"
+    ],
+    "ground_truth_labels": [
+      "spatula",
+      "microscope",
+      "musical_instrument",
+      "snowboard",
+      "stapler_(stapling_machine)"
+    ]
+  },
+  "detections": [
+    {
+      "box_2d": [
+        373.0,
+        445.0,
+        433.0,
+        583.0
+      ],
+      "label": "spatula"
+    },
+    {
+      "box_2d": [
+        522.0,
+        424.0,
+        552.0,
+        577.0
+      ],
+      "label": "spatula"
+    },
+    {
+      "box_2d": [
+        552.0,
+        424.0,
+        575.0,
+        577.0
+      ],
+      "label": "spatula"
+    },
+    {
+      "box_2d": [
+        575.0,
+        424.0,
+        605.0,
+        577.0
+      ],
+      "label": "spatula"
+    },
+    {
+      "box_2d": [
+        605.0,
+        424.0,
+        635.0,
+        577.0
+      ],
+      "label": "spatula"
+    },
+    {
+      "box_2d": [
+        635.0,
+        424.0,
+        665.0,
+        577.0
+      ],
+      "label": "spatula"
+    },
+    {
+      "box_2d": [
+        665.0,
+        424.0,
+        695.0,
+        577.0
+      ],
+      "label": "spatula"
+    },
+    {
+      "box_2d": [
+        695.0,
+        424.0,
+        725.0,
+        577.0
+      ],
+      "label": "spatula"
+    },
+    {
+      "box_2d": [
+        725.0,
+        424.0,
+        755.0,
+        577.0
+      ],
+      "label": "spatula"
+    },
+    {
+      "box_2d": [
+        755.0,
+        424.0,
+        785.0,
+        577.0
+      ],
+      "label": "spatula"
+    },
+    {
+      "box_2d": [
+        785.0,
+        424.0,
+        815.0,
+        577.0
+      ],
+      "label": "spatula"
+    },
+    {
+      "box_2d": [
+        815.0,
+        424.0,
+        845.0,
+        577.0
+      ],
+      "label": "spatula"
+    },
+    {
+      "box_2d": [
+        845.0,
+        424.0,
+        875.0,
+        577.0
+      ],
+      "label": "spatula"
+    },
+    {
+      "box_2d": [
+        875.0,
+        424.0,
+        905.0,
+        577.0
+      ],
+      "label": "spatula"
+    },
+    {
+      "box_2d": [
+        905.0,
+        424.0,
+        935.0,
+        577.0
+      ],
+      "label": "spatula"
+    },
+    {
+      "box_2d": [
+        935.0,
+        424.0,
+        965.0,
+        577.0
+      ],
+      "label": "spatula"
+    },
+    {
+      "box_2d": [
+        965.0,
+        424.0,
+        995.0,
+        577.0
+      ],
+      "label": "spatula"
+    }
+  ],
+  "latency_sec": 59.22585138818249,
+  "final_detections": [
+    {
+      "box_2d": [
+        373.0,
+        445.0,
+        433.0,
+        583.0
+      ],
+      "label": "spatula"
+    },
+    {
+      "box_2d": [
+        522.0,
+        424.0,
+        552.0,
+        577.0
+      ],
+      "label": "spatula"
+    },
+    {
+      "box_2d": [
+        552.0,
+        424.0,
+        575.0,
+        577.0
+      ],
+      "label": "spatula"
+    },
+    {
+      "box_2d": [
+        575.0,
+        424.0,
+        605.0,
+        577.0
+      ],
+      "label": "spatula"
+    },
+    {
+      "box_2d": [
+        605.0,
+        424.0,
+        635.0,
+        577.0
+      ],
+      "label": "spatula"
+    },
+    {
+      "box_2d": [
+        635.0,
+        424.0,
+        665.0,
+        577.0
+      ],
+      "label": "spatula"
+    },
+    {
+      "box_2d": [
+        665.0,
+        424.0,
+        695.0,
+        577.0
+      ],
+      "label": "spatula"
+    },
+    {
+      "box_2d": [
+        695.0,
+        424.0,
+        725.0,
+        577.0
+      ],
+      "label": "spatula"
+    },
+    {
+      "box_2d": [
+        725.0,
+        424.0,
+        755.0,
+        577.0
+      ],
+      "label": "spatula"
+    },
+    {
+      "box_2d": [
+        755.0,
+        424.0,
+        785.0,
+        577.0
+      ],
+      "label": "spatula"
+    },
+    {
+      "box_2d": [
+        785.0,
+        424.0,
+        815.0,
+        577.0
+      ],
+      "label": "spatula"
+    },
+    {
+      "box_2d": [
+        815.0,
+        424.0,
+        845.0,
+        577.0
+      ],
+      "label": "spatula"
+    },
+    {
+      "box_2d": [
+        845.0,
+        424.0,
+        875.0,
+        577.0
+      ],
+      "label": "spatula"
+    },
+    {
+      "box_2d": [
+        875.0,
+        424.0,
+        905.0,
+        577.0
+      ],
+      "label": "spatula"
+    },
+    {
+      "box_2d": [
+        905.0,
+        424.0,
+        935.0,
+        577.0
+      ],
+      "label": "spatula"
+    },
+    {
+      "box_2d": [
+        935.0,
+        424.0,
+        965.0,
+        577.0
+      ],
+      "label": "spatula"
+    },
+    {
+      "box_2d": [
+        965.0,
+        424.0,
+        995.0,
+        577.0
+      ],
+      "label": "spatula"
+    }
+  ],
+  "final_latency_sec": 59.22585138818249,
+  "refinement_chain": [
+    {
+      "step": 0,
+      "stage": "baseline",
+      "prompt": "Baseline inference using the configured prompt strategy.",
+      "labels_sent": [
+        "spatula",
+        "microscope",
+        "musical_instrument",
+        "snowboard",
+        "stapler_(stapling_machine)"
+      ],
+      "input_images": [
+        "/home/maxim/PycharmProjects/zero-shot-detection-benchmark/data/subsets/lvis_v1_val_unseen/images/000000523981.jpg"
+      ],
+      "annotated_image": "/home/maxim/PycharmProjects/zero-shot-detection-benchmark/data/subsets/lvis_v1_val_unseen/images/000000523981.jpg",
+      "detections": [
+        {
+          "box_2d": [
+            373.0,
+            448.0,
+            433.0,
+            583.0
+          ],
+          "label": "spatula"
+        },
+        {
+          "box_2d": [
+            523.0,
+            427.0,
+            552.0,
+            583.0
+          ],
+          "label": "spatula"
+        },
+        {
+          "box_2d": [
+            552.0,
+            427.0,
+            575.0,
+            583.0
+          ],
+          "label": "spatula"
+        },
+        {
+          "box_2d": [
+            575.0,
+            427.0,
+            602.0,
+            583.0
+          ],
+          "label": "spatula"
+        },
+        {
+          "box_2d": [
+            602.0,
+            427.0,
+            625.0,
+            583.0
+          ],
+          "label": "spatula"
+        },
+        {
+          "box_2d": [
+            625.0,
+            427.0,
+            652.0,
+            583.0
+          ],
+          "label": "spatula"
+        },
+        {
+          "box_2d": [
+            652.0,
+            427.0,
+            675.0,
+            583.0
+          ],
+          "label": "spatula"
+        },
+        {
+          "box_2d": [
+            675.0,
+            427.0,
+            702.0,
+            583.0
+          ],
+          "label": "spatula"
+        },
+        {
+          "box_2d": [
+            702.0,
+            427.0,
+            725.0,
+            583.0
+          ],
+          "label": "spatula"
+        },
+        {
+          "box_2d": [
+            725.0,
+            427.0,
+            752.0,
+            583.0
+          ],
+          "label": "spatula"
+        },
+        {
+          "box_2d": [
+            752.0,
+            427.0,
+            775.0,
+            583.0
+          ],
+          "label": "spatula"
+        },
+        {
+          "box_2d": [
+            775.0,
+            427.0,
+            802.0,
+            583.0
+          ],
+          "label": "spatula"
+        },
+        {
+          "box_2d": [
+            802.0,
+            427.0,
+            825.0,
+            583.0
+          ],
+          "label": "spatula"
+        },
+        {
+          "box_2d": [
+            825.0,
+            427.0,
+            852.0,
+            583.0
+          ],
+          "label": "spatula"
+        },
+        {
+          "box_2d": [
+            852.0,
+            427.0,
+            875.0,
+            583.0
+          ],
+          "label": "spatula"
+        },
+        {
+          "box_2d": [
+            875.0,
+            427.0,
+            902.0,
+            583.0
+          ],
+          "label": "spatula"
+        },
+        {
+          "box_2d": [
+            902.0,
+            427.0,
+            925.0,
+            583.0
+          ],
+          "label": "spatula"
+        },
+        {
+          "box_2d": [
+            925.0,
+            427.0,
+            952.0,
+            583.0
+          ],
+          "label": "spatula"
+        },
+        {
+          "box_2d": [
+            952.0,
+            427.0,
+            975.0,
+            583.0
+          ],
+          "label": "spatula"
+        },
+        {
+          "box_2d": [
+            975.0,
+            427.0,
+            1000.0,
+            583.0
+          ],
+          "label": "spatula"
+        }
+      ],
+      "latency_sec": 13.076632834039629,
+      "raw_response": "user\nYou are an object detection assistant. Given the image and the list of target classes, return detections as JSON.\nTarget classes: spatula, microscope, musical_instrument, snowboard, stapler_(stapling_machine).\nOutput format: [{\"box_2d\":[x1,y1,x2,y2],\"label\":\"class_name\"}...]\nUse pixel coordinates relative to the input image. Return JSON only.\nassistant\n```json\n[\n\t{\"box_2d\": [373, 448, 433, 583],\"label\":\"spatula\"},\n\t{\"box_2d\": [523, 427, 552, 583],\"label\":\"spatula\"},\n\t{\"box_2d\": [552, 427, 575, 583],\"label\":\"spatula\"},\n\t{\"box_2d\": [575, 427, 602, 583],\"label\":\"spatula\"},\n\t{\"box_2d\": [602, 427, 625, 583],\"label\":\"spatula\"},\n\t{\"box_2d\": [625, 427, 652, 583],\"label\":\"spatula\"},\n\t{\"box_2d\": [652, 427, 675, 583],\"label\":\"spatula\"},\n\t{\"box_2d\": [675, 427, 702, 583],\"label\":\"spatula\"},\n\t{\"box_2d\": [702, 427, 725, 583],\"label\":\"spatula\"},\n\t{\"box_2d\": [725, 427, 752, 583],\"label\":\"spatula\"},\n\t{\"box_2d\": [752, 427, 775, 583],\"label\":\"spatula\"},\n\t{\"box_2d\": [775, 427, 802, 583],\"label\":\"spatula\"},\n\t{\"box_2d\": [802, 427, 825, 583],\"label\":\"spatula\"},\n\t{\"box_2d\": [825, 427, 852, 583],\"label\":\"spatula\"},\n\t{\"box_2d\": [852, 427, 875, 583],\"label\":\"spatula\"},\n\t{\"box_2d\": [875, 427, 902, 583],\"label\":\"spatula\"},\n\t{\"box_2d\": [902, 427, 925, 583],\"label\":\"spatula\"},\n\t{\"box_2d\": [925, 427, 952, 583],\"label\":\"spatula\"},\n\t{\"box_2d\": [952, 427, 975, 583],\"label\":\"spatula\"},\n\t{\"box_2d\": [975, 427, 1000, 583],\"label\":\"spatula\"}\n]\n```",
+      "status": "ok",
+      "normalized_boxes": [
+        [
+          1.0,
+          0.746,
+          1.0,
+          0.866
+        ],
+        [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "step": 1,
+      "stage": "refinement",
+      "prompt": "I have drawn your predictions from the previous step in red. Visually inspect the alignment. Are the boxes accurate? If not, provide corrected coordinates for: spatula, microscope, musical_instrument, snowboard, stapler_(stapling_machine). Return JSON only.",
+      "labels_sent": [
+        "spatula",
+        "microscope",
+        "musical_instrument",
+        "snowboard",
+        "stapler_(stapling_machine)",
+        "INSTRUCTION: I have drawn your predictions from the previous step in red. Visually inspect the alignment. Are the boxes accurate? If not, provide corrected coordinates for: spatula, microscope, musical_instrument, snowboard, stapler_(stapling_machine). Return JSON only."
+      ],
+      "input_images": [
+        "/home/maxim/PycharmProjects/zero-shot-detection-benchmark/results/visual_cot/lvis_qwen/baseline/0.0/Qwen3-VL-8B-Instruct/debug_images/000000523981/step_1.png"
+      ],
+      "annotated_image": "/home/maxim/PycharmProjects/zero-shot-detection-benchmark/results/visual_cot/lvis_qwen/baseline/0.0/Qwen3-VL-8B-Instruct/debug_images/000000523981/step_1.png",
+      "detections": [
+        {
+          "box_2d": [
+            373.0,
+            445.0,
+            433.0,
+            583.0
+          ],
+          "label": "spatula"
+        },
+        {
+          "box_2d": [
+            522.0,
+            424.0,
+            552.0,
+            577.0
+          ],
+          "label": "spatula"
+        },
+        {
+          "box_2d": [
+            552.0,
+            424.0,
+            575.0,
+            577.0
+          ],
+          "label": "spatula"
+        },
+        {
+          "box_2d": [
+            575.0,
+            424.0,
+            605.0,
+            577.0
+          ],
+          "label": "spatula"
+        },
+        {
+          "box_2d": [
+            605.0,
+            424.0,
+            635.0,
+            577.0
+          ],
+          "label": "spatula"
+        },
+        {
+          "box_2d": [
+            635.0,
+            424.0,
+            665.0,
+            577.0
+          ],
+          "label": "spatula"
+        },
+        {
+          "box_2d": [
+            665.0,
+            424.0,
+            695.0,
+            577.0
+          ],
+          "label": "spatula"
+        },
+        {
+          "box_2d": [
+            695.0,
+            424.0,
+            725.0,
+            577.0
+          ],
+          "label": "spatula"
+        },
+        {
+          "box_2d": [
+            725.0,
+            424.0,
+            755.0,
+            577.0
+          ],
+          "label": "spatula"
+        },
+        {
+          "box_2d": [
+            755.0,
+            424.0,
+            785.0,
+            577.0
+          ],
+          "label": "spatula"
+        },
+        {
+          "box_2d": [
+            785.0,
+            424.0,
+            815.0,
+            577.0
+          ],
+          "label": "spatula"
+        },
+        {
+          "box_2d": [
+            815.0,
+            424.0,
+            845.0,
+            577.0
+          ],
+          "label": "spatula"
+        },
+        {
+          "box_2d": [
+            845.0,
+            424.0,
+            875.0,
+            577.0
+          ],
+          "label": "spatula"
+        },
+        {
+          "box_2d": [
+            875.0,
+            424.0,
+            905.0,
+            577.0
+          ],
+          "label": "spatula"
+        },
+        {
+          "box_2d": [
+            905.0,
+            424.0,
+            935.0,
+            577.0
+          ],
+          "label": "spatula"
+        },
+        {
+          "box_2d": [
+            935.0,
+            424.0,
+            965.0,
+            577.0
+          ],
+          "label": "spatula"
+        },
+        {
+          "box_2d": [
+            965.0,
+            424.0,
+            995.0,
+            577.0
+          ],
+          "label": "spatula"
+        }
+      ],
+      "latency_sec": 11.506227294099517,
+      "raw_response": "user\nYou are an object detection assistant. Given the image and the list of target classes, return detections as JSON.\nTarget classes: spatula, microscope, musical_instrument, snowboard, stapler_(stapling_machine), INSTRUCTION: I have drawn your predictions from the previous step in red. Visually inspect the alignment. Are the boxes accurate? If not, provide corrected coordinates for: spatula, microscope, musical_instrument, snowboard, stapler_(stapling_machine). Return JSON only..\nOutput format: [{\"box_2d\":[x1,y1,x2,y2],\"label\":\"class_name\"}...]\nUse pixel coordinates relative to the input image. Return JSON only.\nassistant\n```json\n[\n    {\"box_2d\": [373, 445, 433, 583],\"label\":\"spatula\"},\n    {\"box_2d\": [522, 424, 552, 577],\"label\":\"spatula\"},\n    {\"box_2d\": [552, 424, 575, 577],\"label\":\"spatula\"},\n    {\"box_2d\": [575, 424, 605, 577],\"label\":\"spatula\"},\n    {\"box_2d\": [605, 424, 635, 577],\"label\":\"spatula\"},\n    {\"box_2d\": [635, 424, 665, 577],\"label\":\"spatula\"},\n    {\"box_2d\": [665, 424, 695, 577],\"label\":\"spatula\"},\n    {\"box_2d\": [695, 424, 725, 577],\"label\":\"spatula\"},\n    {\"box_2d\": [725, 424, 755, 577],\"label\":\"spatula\"},\n    {\"box_2d\": [755, 424, 785, 577],\"label\":\"spatula\"},\n    {\"box_2d\": [785, 424, 815, 577],\"label\":\"spatula\"},\n    {\"box_2d\": [815, 424, 845, 577],\"label\":\"spatula\"},\n    {\"box_2d\": [845, 424, 875, 577],\"label\":\"spatula\"},\n    {\"box_2d\": [875, 424, 905, 577],\"label\":\"spatula\"},\n    {\"box_2d\": [905, 424, 935, 577],\"label\":\"spatula\"},\n    {\"box_2d\": [935, 424, 965, 577],\"label\":\"spatula\"},\n    {\"box_2d\": [965, 424, 995, 577],\"label\":\"spatula\"}\n]\n```",
+      "status": "ok",
+      "normalized_boxes": [
+        [
+          1.0,
+          0.746,
+          1.0,
+          0.866
+        ],
+        [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "step": 2,
+      "stage": "refinement",
+      "prompt": "I have drawn your predictions from the previous step in red. Visually inspect the alignment. Are the boxes accurate? If not, provide corrected coordinates for: spatula, microscope, musical_instrument, snowboard, stapler_(stapling_machine). Return JSON only.",
+      "labels_sent": [
+        "spatula",
+        "microscope",
+        "musical_instrument",
+        "snowboard",
+        "stapler_(stapling_machine)",
+        "INSTRUCTION: I have drawn your predictions from the previous step in red. Visually inspect the alignment. Are the boxes accurate? If not, provide corrected coordinates for: spatula, microscope, musical_instrument, snowboard, stapler_(stapling_machine). Return JSON only."
+      ],
+      "input_images": [
+        "/home/maxim/PycharmProjects/zero-shot-detection-benchmark/results/visual_cot/lvis_qwen/baseline/0.0/Qwen3-VL-8B-Instruct/debug_images/000000523981/step_2.png"
+      ],
+      "annotated_image": "/home/maxim/PycharmProjects/zero-shot-detection-benchmark/results/visual_cot/lvis_qwen/baseline/0.0/Qwen3-VL-8B-Instruct/debug_images/000000523981/step_2.png",
+      "detections": [
+        {
+          "box_2d": [
+            373.0,
+            445.0,
+            433.0,
+            583.0
+          ],
+          "label": "spatula"
+        },
+        {
+          "box_2d": [
+            522.0,
+            424.0,
+            552.0,
+            577.0
+          ],
+          "label": "spatula"
+        },
+        {
+          "box_2d": [
+            552.0,
+            424.0,
+            575.0,
+            577.0
+          ],
+          "label": "spatula"
+        },
+        {
+          "box_2d": [
+            575.0,
+            424.0,
+            605.0,
+            577.0
+          ],
+          "label": "spatula"
+        },
+        {
+          "box_2d": [
+            605.0,
+            424.0,
+            635.0,
+            577.0
+          ],
+          "label": "spatula"
+        },
+        {
+          "box_2d": [
+            635.0,
+            424.0,
+            665.0,
+            577.0
+          ],
+          "label": "spatula"
+        },
+        {
+          "box_2d": [
+            665.0,
+            424.0,
+            695.0,
+            577.0
+          ],
+          "label": "spatula"
+        },
+        {
+          "box_2d": [
+            695.0,
+            424.0,
+            725.0,
+            577.0
+          ],
+          "label": "spatula"
+        },
+        {
+          "box_2d": [
+            725.0,
+            424.0,
+            755.0,
+            577.0
+          ],
+          "label": "spatula"
+        },
+        {
+          "box_2d": [
+            755.0,
+            424.0,
+            785.0,
+            577.0
+          ],
+          "label": "spatula"
+        },
+        {
+          "box_2d": [
+            785.0,
+            424.0,
+            815.0,
+            577.0
+          ],
+          "label": "spatula"
+        },
+        {
+          "box_2d": [
+            815.0,
+            424.0,
+            845.0,
+            577.0
+          ],
+          "label": "spatula"
+        },
+        {
+          "box_2d": [
+            845.0,
+            424.0,
+            875.0,
+            577.0
+          ],
+          "label": "spatula"
+        },
+        {
+          "box_2d": [
+            875.0,
+            424.0,
+            905.0,
+            577.0
+          ],
+          "label": "spatula"
+        },
+        {
+          "box_2d": [
+            905.0,
+            424.0,
+            935.0,
+            577.0
+          ],
+          "label": "spatula"
+        },
+        {
+          "box_2d": [
+            935.0,
+            424.0,
+            965.0,
+            577.0
+          ],
+          "label": "spatula"
+        },
+        {
+          "box_2d": [
+            965.0,
+            424.0,
+            995.0,
+            577.0
+          ],
+          "label": "spatula"
+        }
+      ],
+      "latency_sec": 11.553497590939514,
+      "raw_response": "user\nYou are an object detection assistant. Given the image and the list of target classes, return detections as JSON.\nTarget classes: spatula, microscope, musical_instrument, snowboard, stapler_(stapling_machine), INSTRUCTION: I have drawn your predictions from the previous step in red. Visually inspect the alignment. Are the boxes accurate? If not, provide corrected coordinates for: spatula, microscope, musical_instrument, snowboard, stapler_(stapling_machine). Return JSON only..\nOutput format: [{\"box_2d\":[x1,y1,x2,y2],\"label\":\"class_name\"}...]\nUse pixel coordinates relative to the input image. Return JSON only.\nassistant\n```json\n[\n    {\"box_2d\": [373, 445, 433, 583],\"label\":\"spatula\"},\n    {\"box_2d\": [522, 424, 552, 577],\"label\":\"spatula\"},\n    {\"box_2d\": [552, 424, 575, 577],\"label\":\"spatula\"},\n    {\"box_2d\": [575, 424, 605, 577],\"label\":\"spatula\"},\n    {\"box_2d\": [605, 424, 635, 577],\"label\":\"spatula\"},\n    {\"box_2d\": [635, 424, 665, 577],\"label\":\"spatula\"},\n    {\"box_2d\": [665, 424, 695, 577],\"label\":\"spatula\"},\n    {\"box_2d\": [695, 424, 725, 577],\"label\":\"spatula\"},\n    {\"box_2d\": [725, 424, 755, 577],\"label\":\"spatula\"},\n    {\"box_2d\": [755, 424, 785, 577],\"label\":\"spatula\"},\n    {\"box_2d\": [785, 424, 815, 577],\"label\":\"spatula\"},\n    {\"box_2d\": [815, 424, 845, 577],\"label\":\"spatula\"},\n    {\"box_2d\": [845, 424, 875, 577],\"label\":\"spatula\"},\n    {\"box_2d\": [875, 424, 905, 577],\"label\":\"spatula\"},\n    {\"box_2d\": [905, 424, 935, 577],\"label\":\"spatula\"},\n    {\"box_2d\": [935, 424, 965, 577],\"label\":\"spatula\"},\n    {\"box_2d\": [965, 424, 995, 577],\"label\":\"spatula\"}\n]\n```",
+      "status": "ok",
+      "normalized_boxes": [
+        [
+          1.0,
+          0.746,
+          1.0,
+          0.866
+        ],
+        [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "step": 3,
+      "stage": "refinement",
+      "prompt": "I have drawn your predictions from the previous step in red. Visually inspect the alignment. Are the boxes accurate? If not, provide corrected coordinates for: spatula, microscope, musical_instrument, snowboard, stapler_(stapling_machine). Return JSON only.",
+      "labels_sent": [
+        "spatula",
+        "microscope",
+        "musical_instrument",
+        "snowboard",
+        "stapler_(stapling_machine)",
+        "INSTRUCTION: I have drawn your predictions from the previous step in red. Visually inspect the alignment. Are the boxes accurate? If not, provide corrected coordinates for: spatula, microscope, musical_instrument, snowboard, stapler_(stapling_machine). Return JSON only."
+      ],
+      "input_images": [
+        "/home/maxim/PycharmProjects/zero-shot-detection-benchmark/results/visual_cot/lvis_qwen/baseline/0.0/Qwen3-VL-8B-Instruct/debug_images/000000523981/step_3.png"
+      ],
+      "annotated_image": "/home/maxim/PycharmProjects/zero-shot-detection-benchmark/results/visual_cot/lvis_qwen/baseline/0.0/Qwen3-VL-8B-Instruct/debug_images/000000523981/step_3.png",
+      "detections": [
+        {
+          "box_2d": [
+            373.0,
+            445.0,
+            433.0,
+            583.0
+          ],
+          "label": "spatula"
+        },
+        {
+          "box_2d": [
+            522.0,
+            424.0,
+            552.0,
+            577.0
+          ],
+          "label": "spatula"
+        },
+        {
+          "box_2d": [
+            552.0,
+            424.0,
+            575.0,
+            577.0
+          ],
+          "label": "spatula"
+        },
+        {
+          "box_2d": [
+            575.0,
+            424.0,
+            605.0,
+            577.0
+          ],
+          "label": "spatula"
+        },
+        {
+          "box_2d": [
+            605.0,
+            424.0,
+            635.0,
+            577.0
+          ],
+          "label": "spatula"
+        },
+        {
+          "box_2d": [
+            635.0,
+            424.0,
+            665.0,
+            577.0
+          ],
+          "label": "spatula"
+        },
+        {
+          "box_2d": [
+            665.0,
+            424.0,
+            695.0,
+            577.0
+          ],
+          "label": "spatula"
+        },
+        {
+          "box_2d": [
+            695.0,
+            424.0,
+            725.0,
+            577.0
+          ],
+          "label": "spatula"
+        },
+        {
+          "box_2d": [
+            725.0,
+            424.0,
+            755.0,
+            577.0
+          ],
+          "label": "spatula"
+        },
+        {
+          "box_2d": [
+            755.0,
+            424.0,
+            785.0,
+            577.0
+          ],
+          "label": "spatula"
+        },
+        {
+          "box_2d": [
+            785.0,
+            424.0,
+            815.0,
+            577.0
+          ],
+          "label": "spatula"
+        },
+        {
+          "box_2d": [
+            815.0,
+            424.0,
+            845.0,
+            577.0
+          ],
+          "label": "spatula"
+        },
+        {
+          "box_2d": [
+            845.0,
+            424.0,
+            875.0,
+            577.0
+          ],
+          "label": "spatula"
+        },
+        {
+          "box_2d": [
+            875.0,
+            424.0,
+            905.0,
+            577.0
+          ],
+          "label": "spatula"
+        },
+        {
+          "box_2d": [
+            905.0,
+            424.0,
+            935.0,
+            577.0
+          ],
+          "label": "spatula"
+        },
+        {
+          "box_2d": [
+            935.0,
+            424.0,
+            965.0,
+            577.0
+          ],
+          "label": "spatula"
+        },
+        {
+          "box_2d": [
+            965.0,
+            424.0,
+            995.0,
+            577.0
+          ],
+          "label": "spatula"
+        }
+      ],
+      "latency_sec": 11.55643120710738,
+      "raw_response": "user\nYou are an object detection assistant. Given the image and the list of target classes, return detections as JSON.\nTarget classes: spatula, microscope, musical_instrument, snowboard, stapler_(stapling_machine), INSTRUCTION: I have drawn your predictions from the previous step in red. Visually inspect the alignment. Are the boxes accurate? If not, provide corrected coordinates for: spatula, microscope, musical_instrument, snowboard, stapler_(stapling_machine). Return JSON only..\nOutput format: [{\"box_2d\":[x1,y1,x2,y2],\"label\":\"class_name\"}...]\nUse pixel coordinates relative to the input image. Return JSON only.\nassistant\n```json\n[\n    {\"box_2d\": [373, 445, 433, 583],\"label\":\"spatula\"},\n    {\"box_2d\": [522, 424, 552, 577],\"label\":\"spatula\"},\n    {\"box_2d\": [552, 424, 575, 577],\"label\":\"spatula\"},\n    {\"box_2d\": [575, 424, 605, 577],\"label\":\"spatula\"},\n    {\"box_2d\": [605, 424, 635, 577],\"label\":\"spatula\"},\n    {\"box_2d\": [635, 424, 665, 577],\"label\":\"spatula\"},\n    {\"box_2d\": [665, 424, 695, 577],\"label\":\"spatula\"},\n    {\"box_2d\": [695, 424, 725, 577],\"label\":\"spatula\"},\n    {\"box_2d\": [725, 424, 755, 577],\"label\":\"spatula\"},\n    {\"box_2d\": [755, 424, 785, 577],\"label\":\"spatula\"},\n    {\"box_2d\": [785, 424, 815, 577],\"label\":\"spatula\"},\n    {\"box_2d\": [815, 424, 845, 577],\"label\":\"spatula\"},\n    {\"box_2d\": [845, 424, 875, 577],\"label\":\"spatula\"},\n    {\"box_2d\": [875, 424, 905, 577],\"label\":\"spatula\"},\n    {\"box_2d\": [905, 424, 935, 577],\"label\":\"spatula\"},\n    {\"box_2d\": [935, 424, 965, 577],\"label\":\"spatula\"},\n    {\"box_2d\": [965, 424, 995, 577],\"label\":\"spatula\"}\n]\n```",
+      "status": "ok",
+      "normalized_boxes": [
+        [
+          1.0,
+          0.746,
+          1.0,
+          0.866
+        ],
+        [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "step": 4,
+      "stage": "refinement",
+      "prompt": "I have drawn your predictions from the previous step in red. Visually inspect the alignment. Are the boxes accurate? If not, provide corrected coordinates for: spatula, microscope, musical_instrument, snowboard, stapler_(stapling_machine). Return JSON only.",
+      "labels_sent": [
+        "spatula",
+        "microscope",
+        "musical_instrument",
+        "snowboard",
+        "stapler_(stapling_machine)",
+        "INSTRUCTION: I have drawn your predictions from the previous step in red. Visually inspect the alignment. Are the boxes accurate? If not, provide corrected coordinates for: spatula, microscope, musical_instrument, snowboard, stapler_(stapling_machine). Return JSON only."
+      ],
+      "input_images": [
+        "/home/maxim/PycharmProjects/zero-shot-detection-benchmark/results/visual_cot/lvis_qwen/baseline/0.0/Qwen3-VL-8B-Instruct/debug_images/000000523981/step_4.png"
+      ],
+      "annotated_image": "/home/maxim/PycharmProjects/zero-shot-detection-benchmark/results/visual_cot/lvis_qwen/baseline/0.0/Qwen3-VL-8B-Instruct/debug_images/000000523981/step_4.png",
+      "detections": [
+        {
+          "box_2d": [
+            373.0,
+            445.0,
+            433.0,
+            583.0
+          ],
+          "label": "spatula"
+        },
+        {
+          "box_2d": [
+            522.0,
+            424.0,
+            552.0,
+            577.0
+          ],
+          "label": "spatula"
+        },
+        {
+          "box_2d": [
+            552.0,
+            424.0,
+            575.0,
+            577.0
+          ],
+          "label": "spatula"
+        },
+        {
+          "box_2d": [
+            575.0,
+            424.0,
+            605.0,
+            577.0
+          ],
+          "label": "spatula"
+        },
+        {
+          "box_2d": [
+            605.0,
+            424.0,
+            635.0,
+            577.0
+          ],
+          "label": "spatula"
+        },
+        {
+          "box_2d": [
+            635.0,
+            424.0,
+            665.0,
+            577.0
+          ],
+          "label": "spatula"
+        },
+        {
+          "box_2d": [
+            665.0,
+            424.0,
+            695.0,
+            577.0
+          ],
+          "label": "spatula"
+        },
+        {
+          "box_2d": [
+            695.0,
+            424.0,
+            725.0,
+            577.0
+          ],
+          "label": "spatula"
+        },
+        {
+          "box_2d": [
+            725.0,
+            424.0,
+            755.0,
+            577.0
+          ],
+          "label": "spatula"
+        },
+        {
+          "box_2d": [
+            755.0,
+            424.0,
+            785.0,
+            577.0
+          ],
+          "label": "spatula"
+        },
+        {
+          "box_2d": [
+            785.0,
+            424.0,
+            815.0,
+            577.0
+          ],
+          "label": "spatula"
+        },
+        {
+          "box_2d": [
+            815.0,
+            424.0,
+            845.0,
+            577.0
+          ],
+          "label": "spatula"
+        },
+        {
+          "box_2d": [
+            845.0,
+            424.0,
+            875.0,
+            577.0
+          ],
+          "label": "spatula"
+        },
+        {
+          "box_2d": [
+            875.0,
+            424.0,
+            905.0,
+            577.0
+          ],
+          "label": "spatula"
+        },
+        {
+          "box_2d": [
+            905.0,
+            424.0,
+            935.0,
+            577.0
+          ],
+          "label": "spatula"
+        },
+        {
+          "box_2d": [
+            935.0,
+            424.0,
+            965.0,
+            577.0
+          ],
+          "label": "spatula"
+        },
+        {
+          "box_2d": [
+            965.0,
+            424.0,
+            995.0,
+            577.0
+          ],
+          "label": "spatula"
+        }
+      ],
+      "latency_sec": 11.533062461996451,
+      "raw_response": "user\nYou are an object detection assistant. Given the image and the list of target classes, return detections as JSON.\nTarget classes: spatula, microscope, musical_instrument, snowboard, stapler_(stapling_machine), INSTRUCTION: I have drawn your predictions from the previous step in red. Visually inspect the alignment. Are the boxes accurate? If not, provide corrected coordinates for: spatula, microscope, musical_instrument, snowboard, stapler_(stapling_machine). Return JSON only..\nOutput format: [{\"box_2d\":[x1,y1,x2,y2],\"label\":\"class_name\"}...]\nUse pixel coordinates relative to the input image. Return JSON only.\nassistant\n```json\n[\n    {\"box_2d\": [373, 445, 433, 583],\"label\":\"spatula\"},\n    {\"box_2d\": [522, 424, 552, 577],\"label\":\"spatula\"},\n    {\"box_2d\": [552, 424, 575, 577],\"label\":\"spatula\"},\n    {\"box_2d\": [575, 424, 605, 577],\"label\":\"spatula\"},\n    {\"box_2d\": [605, 424, 635, 577],\"label\":\"spatula\"},\n    {\"box_2d\": [635, 424, 665, 577],\"label\":\"spatula\"},\n    {\"box_2d\": [665, 424, 695, 577],\"label\":\"spatula\"},\n    {\"box_2d\": [695, 424, 725, 577],\"label\":\"spatula\"},\n    {\"box_2d\": [725, 424, 755, 577],\"label\":\"spatula\"},\n    {\"box_2d\": [755, 424, 785, 577],\"label\":\"spatula\"},\n    {\"box_2d\": [785, 424, 815, 577],\"label\":\"spatula\"},\n    {\"box_2d\": [815, 424, 845, 577],\"label\":\"spatula\"},\n    {\"box_2d\": [845, 424, 875, 577],\"label\":\"spatula\"},\n    {\"box_2d\": [875, 424, 905, 577],\"label\":\"spatula\"},\n    {\"box_2d\": [905, 424, 935, 577],\"label\":\"spatula\"},\n    {\"box_2d\": [935, 424, 965, 577],\"label\":\"spatula\"},\n    {\"box_2d\": [965, 424, 995, 577],\"label\":\"spatula\"}\n]\n```",
+      "status": "ok",
+      "normalized_boxes": [
+        [
+          1.0,
+          0.746,
+          1.0,
+          0.866
+        ],
+        [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ]
+      ]
+    }
+  ]
+}

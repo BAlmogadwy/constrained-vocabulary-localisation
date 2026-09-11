@@ -1,0 +1,50 @@
+{
+  "model": "grounding_dino",
+  "strategy": "default",
+  "image": "/home/maxim/PycharmProjects/zero-shot-detection-benchmark/data/subsets/lvis_v1_val_unseen/images/000000456695.jpg",
+  "labels": [
+    "blender",
+    "lawn_mower",
+    "snowboard",
+    "spatula",
+    "stapler_(stapling_machine)"
+  ],
+  "result": {
+    "detections": [
+      {
+        "label": "blender lawn _ mower",
+        "score": 0.5077794194221497,
+        "box_2d": [
+          42.14689254760742,
+          6.838191986083984,
+          368.85443115234375,
+          426.1942138671875
+        ],
+        "box": [
+          42.14689254760742,
+          6.838191986083984,
+          368.85443115234375,
+          426.1942138671875
+        ]
+      },
+      {
+        "label": "blender",
+        "score": 0.3321231007575989,
+        "box_2d": [
+          167.89553833007812,
+          7.865907192230225,
+          368.248779296875,
+          425.0961608886719
+        ],
+        "box": [
+          167.89553833007812,
+          7.865907192230225,
+          368.248779296875,
+          425.0961608886719
+        ]
+      }
+    ],
+    "latency_sec": 0.30912153143435717,
+    "raw_response": null
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "model": "yolo_world",
+  "strategy": "default",
+  "image": "C:\\Users\\user\\zeroshot\\zero-shot-detection-benchmark\\data\\subsets\\lvis_v1_val_unseen\\images\\000000397269.jpg",
+  "labels": [
+    "spatula",
+    "coffee_maker",
+    "hair_dryer",
+    "microscope",
+    "snowboard"
+  ],
+  "result": {
+    "detections": [
+      {
+        "label": "spatula",
+        "score": 0.8726528882980347,
+        "box_2d": [
+          403.86517333984375,
+          167.12188720703125,
+          640.0,
+          480.0
+        ],
+        "box": [
+          403.86517333984375,
+          167.12188720703125,
+          640.0,
+          480.0
+        ]
+      },
+      {
+        "label": "spatula",
+        "score": 0.00386371579952538,
+        "box_2d": [
+          0.0,
+          0.26096343994140625,
+          33.39569854736328,
+          42.170310974121094
+        ],
+        "box": [
+          0.0,
+          0.26096343994140625,
+          33.39569854736328,
+          42.170310974121094
+        ]
+      }
+    ],
+    "latency_sec": 0.03953700000056415,
+    "raw_response": null
+  }
+}

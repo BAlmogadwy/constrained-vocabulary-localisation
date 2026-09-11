@@ -1,0 +1,138 @@
+{
+ "image": "000000056127.jpg",
+ "model": "qwen/qwen3-vl-235b-a22b-instruct",
+ "labels": [
+  "oven",
+  "refrigerator",
+  "sink",
+  "book",
+  "hair drier",
+  "microwave",
+  "teddy bear"
+ ],
+ "detections": [
+  {
+   "box_2d": [
+    212.86,
+    320.0,
+    247.08,
+    464.0
+   ],
+   "label": "oven",
+   "score": 0.95
+  },
+  {
+   "box_2d": [
+    304.5,
+    267.52,
+    341.62,
+    384.0
+   ],
+   "label": "refrigerator",
+   "score": 0.95
+  },
+  {
+   "box_2d": [
+    374.68,
+    273.28,
+    463.42,
+    326.4
+   ],
+   "label": "sink",
+   "score": 0.95
+  },
+  {
+   "box_2d": [
+    391.5,
+    223.36,
+    429.2,
+    246.4
+   ],
+   "label": "book",
+   "score": 0.95
+  },
+  {
+   "box_2d": [
+    264.48,
+    280.32,
+    288.84,
+    356.48
+   ],
+   "label": "hair drier",
+   "score": 0.95
+  },
+  {
+   "box_2d": [
+    158.92,
+    292.48,
+    221.56,
+    329.6
+   ],
+   "label": "microwave",
+   "score": 0.95
+  },
+  {
+   "box_2d": [
+    66.12,
+    339.2,
+    91.06,
+    371.2
+   ],
+   "label": "teddy bear",
+   "score": 0.95
+  }
+ ],
+ "latency_sec": 13.93177029999788,
+ "usage": {
+  "prompt_tokens": 453,
+  "completion_tokens": 308,
+  "total_tokens": 761
+ },
+ "raw_response": {
+  "id": "gen-1783410461-0MODsFnNDpyPFR8NGUGu",
+  "object": "chat.completion",
+  "created": 1783410461,
+  "model": "qwen/qwen3-vl-235b-a22b-instruct",
+  "provider": "DeepInfra",
+  "system_fingerprint": null,
+  "service_tier": null,
+  "choices": [
+   {
+    "index": 0,
+    "logprobs": null,
+    "finish_reason": "stop",
+    "native_finish_reason": "stop",
+    "message": {
+     "role": "assistant",
+     "content": "```json\n[\n\t{\"box_2d\": [367, 500, 426, 725], \"label\": \"oven\", \"confidence\": 0.95},\n\t{\"bbox_2d\": [525, 418, 589, 600], \"label\": \"refrigerator\", \"confidence\": 0.95},\n\t{\"bbox_2d\": [646, 427, 799, 510], \"label\": \"sink\", \"confidence\": 0.95},\n\t{\"bbox_2d\": [675, 349, 740, 385], \"label\": \"book\", \"confidence\": 0.95},\n\t{\"bbox_2d\": [456, 438, 498, 557], \"label\": \"hair drier\", \"confidence\": 0.95},\n\t{\"bbox_2d\": [274, 457, 382, 515], \"label\": \"microwave\", \"confidence\": 0.95},\n\t{\"bbox_2d\": [114, 530, 157, 580], \"label\": \"teddy bear\", \"confidence\": 0.95}\n]\n```",
+     "refusal": null,
+     "reasoning": null
+    }
+   }
+  ],
+  "usage": {
+   "prompt_tokens": 453,
+   "completion_tokens": 308,
+   "total_tokens": 761,
+   "cost": 0.00036164,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00036164,
+    "upstream_inference_prompt_cost": 9.06e-05,
+    "upstream_inference_completions_cost": 0.00027104
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   }
+  }
+ },
+ "ts": "2026-07-07T07:47:52.287189+00:00"
+}

@@ -1,0 +1,36 @@
+{
+  "model": "owl_vit",
+  "strategy": "default",
+  "image": "/home/maxim/PycharmProjects/zero-shot-detection-benchmark/data/raw/coco2017/val2017/000000562843.jpg",
+  "labels": [
+    "scissors",
+    "book",
+    "refrigerator",
+    "sink",
+    "teddy bear",
+    "toaster",
+    "toothbrush"
+  ],
+  "result": {
+    "detections": [
+      {
+        "label": "scissors",
+        "score": 0.331582635641098,
+        "box_2d": [
+          87.96790313720703,
+          243.44276428222656,
+          495.7051086425781,
+          374.5102844238281
+        ],
+        "box": [
+          87.96790313720703,
+          243.44276428222656,
+          495.7051086425781,
+          374.5102844238281
+        ]
+      }
+    ],
+    "latency_sec": 0.02132808600072167,
+    "raw_response": null
+  }
+}

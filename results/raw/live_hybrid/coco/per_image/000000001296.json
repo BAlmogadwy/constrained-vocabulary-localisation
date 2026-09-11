@@ -1,0 +1,192 @@
+{
+ "image": "000000001296.jpg",
+ "labels": [
+  "clock",
+  "hair drier",
+  "microwave",
+  "oven",
+  "scissors",
+  "teddy bear",
+  "toothbrush"
+ ],
+ "tau": 0.4,
+ "detector": {
+  "detections": [
+   {
+    "label": "scissors",
+    "box": [
+     248.894287109375,
+     319.345703125,
+     298.9051513671875,
+     392.5303955078125
+    ],
+    "score": 0.0069189188070595264
+   },
+   {
+    "label": "toothbrush",
+    "box": [
+     298.13568115234375,
+     142.51382446289062,
+     371.75872802734375,
+     278.7264709472656
+    ],
+    "score": 0.0032703671604394913
+   },
+   {
+    "label": "clock",
+    "box": [
+     341.157958984375,
+     383.89666748046875,
+     415.475341796875,
+     429.02313232421875
+    ],
+    "score": 0.0028718137182295322
+   },
+   {
+    "label": "clock",
+    "box": [
+     171.9423828125,
+     395.4544677734375,
+     251.17626953125,
+     466.81005859375
+    ],
+    "score": 0.0022375325206667185
+   },
+   {
+    "label": "teddy bear",
+    "box": [
+     0.0,
+     0.1419677734375,
+     105.22317504882812,
+     249.55880737304688
+    ],
+    "score": 0.0010117872152477503
+   }
+  ],
+  "latency_sec": 0.03655370000342373
+ },
+ "detector_max_score": 0.0069189188070595264,
+ "escalated": true,
+ "vlm": {
+  "model": "qwen/qwen3-vl-235b-a22b-instruct",
+  "detections": [
+   {
+    "label": "clock",
+    "box": [
+     343.735,
+     387.84,
+     415.898,
+     430.08
+    ],
+    "score": 1.0
+   }
+  ],
+  "latency_sec": 2.922335800001747,
+  "usage": {
+   "prompt_tokens": 354,
+   "completion_tokens": 49,
+   "total_tokens": 403
+  },
+  "raw_response": {
+   "id": "gen-1783408661-iqqbirlXsNf31TkevZrb",
+   "object": "chat.completion",
+   "created": 1783408661,
+   "model": "qwen/qwen3-vl-235b-a22b-instruct",
+   "provider": "Alibaba",
+   "system_fingerprint": null,
+   "service_tier": null,
+   "choices": [
+    {
+     "index": 0,
+     "logprobs": null,
+     "finish_reason": "stop",
+     "native_finish_reason": "stop",
+     "message": {
+      "role": "assistant",
+      "content": "```json\n[\n\t{\"box_2d\": [805, 606, 974, 672], \"label\": \"clock\", \"confidence\": 0.99}\n]\n```",
+      "refusal": null,
+      "reasoning": null
+     }
+    }
+   ],
+   "usage": {
+    "prompt_tokens": 354,
+    "completion_tokens": 49,
+    "total_tokens": 403,
+    "cost": 0.000143,
+    "is_byok": false,
+    "prompt_tokens_details": {
+     "cached_tokens": 0,
+     "cache_write_tokens": 0,
+     "audio_tokens": 0,
+     "video_tokens": 0
+    },
+    "cost_details": {
+     "upstream_inference_cost": 0.000143,
+     "upstream_inference_prompt_cost": 9.204e-05,
+     "upstream_inference_completions_cost": 5.096e-05
+    },
+    "completion_tokens_details": {
+     "reasoning_tokens": 0,
+     "image_tokens": 0,
+     "audio_tokens": 0
+    }
+   }
+  }
+ },
+ "fallback": false,
+ "ts": "2026-07-07T07:17:39.406979+00:00",
+ "fused": [
+  {
+   "label": "scissors",
+   "box": [
+    248.894287109375,
+    319.345703125,
+    298.9051513671875,
+    392.5303955078125
+   ],
+   "score": 0.0069189188070595264
+  },
+  {
+   "label": "toothbrush",
+   "box": [
+    298.13568115234375,
+    142.51382446289062,
+    371.75872802734375,
+    278.7264709472656
+   ],
+   "score": 0.0032703671604394913
+  },
+  {
+   "label": "clock",
+   "box": [
+    341.157958984375,
+    383.89666748046875,
+    415.475341796875,
+    429.02313232421875
+   ],
+   "score": 0.3028718137182295
+  },
+  {
+   "label": "clock",
+   "box": [
+    171.9423828125,
+    395.4544677734375,
+    251.17626953125,
+    466.81005859375
+   ],
+   "score": 0.0022375325206667185
+  },
+  {
+   "label": "teddy bear",
+   "box": [
+    0.0,
+    0.1419677734375,
+    105.22317504882812,
+    249.55880737304688
+   ],
+   "score": 0.0010117872152477503
+  }
+ ],
+ "latency_total_sec": 2.958919100012281
+}

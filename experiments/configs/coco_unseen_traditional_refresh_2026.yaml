@@ -1,0 +1,27 @@
+dataset:
+  images_dir: data/subsets/coco2017_val_unseen_901/images
+  limit: null
+
+labels:
+  file: prompts/coco_unseen_labels.txt
+  per_image_file: data/processed/coco2017/val/coco_unseen_dynamic_labels.json
+  values: []
+
+output:
+  dir: results/raw/traditional/coco2017_unseen_refresh_2026
+
+models:
+  - name: yolo_world
+    device: cuda:0
+    strategy: default
+    output_name: yolo_world_coco_unseen.json
+  - name: grounding_dino
+    device: cuda:0
+    strategy: default
+    output_name: grounding_dino_coco_unseen.json
+  - name: owl_vit
+    device: cuda:0
+    strategy: default
+    output_name: owl_vit_coco_unseen.json
+
+force: false

@@ -1,0 +1,118 @@
+{
+ "image": "000000425226.jpg",
+ "model": "qwen/qwen3-vl-235b-a22b-instruct",
+ "labels": [
+  "microwave",
+  "refrigerator",
+  "vase",
+  "clock",
+  "scissors",
+  "sink",
+  "teddy bear"
+ ],
+ "detections": [
+  {
+   "box_2d": [
+    137.28,
+    35.84,
+    381.12,
+    616.96
+   ],
+   "label": "refrigerator",
+   "score": 0.98
+  },
+  {
+   "box_2d": [
+    12.96,
+    186.88,
+    89.28,
+    254.72
+   ],
+   "label": "microwave",
+   "score": 0.95
+  },
+  {
+   "box_2d": [
+    168.0,
+    0.0,
+    216.0,
+    62.72
+   ],
+   "label": "vase",
+   "score": 0.92
+  },
+  {
+   "box_2d": [
+    418.08,
+    330.88,
+    456.96,
+    433.28
+   ],
+   "label": "scissors",
+   "score": 0.88
+  },
+  {
+   "box_2d": [
+    89.28,
+    245.12,
+    105.12,
+    253.44
+   ],
+   "label": "sink",
+   "score": 0.91
+  }
+ ],
+ "latency_sec": 15.731629999994766,
+ "usage": {
+  "prompt_tokens": 391,
+  "completion_tokens": 217,
+  "total_tokens": 608
+ },
+ "raw_response": {
+  "id": "gen-1783413800-8AfuM82rOSViJcfu34Hm",
+  "object": "chat.completion",
+  "created": 1783413800,
+  "model": "qwen/qwen3-vl-235b-a22b-instruct",
+  "provider": "DeepInfra",
+  "system_fingerprint": null,
+  "service_tier": null,
+  "choices": [
+   {
+    "index": 0,
+    "logprobs": null,
+    "finish_reason": "stop",
+    "native_finish_reason": "stop",
+    "message": {
+     "role": "assistant",
+     "content": "```json\n[\n\t{\"box_2d\": [286, 56, 794, 964], \"label\": \"refrigerator\", \"confidence\": 0.98},\n\t{\"box_2d\": [27, 292, 186, 398], \"label\": \"microwave\", \"confidence\": 0.95},\n\t{\"box_2d\": [350, 0, 450, 98], \"label\": \"vase\", \"confidence\": 0.92},\n\t{\"box_2d\": [871, 517, 952, 677], \"label\": \"scissors\", \"confidence\": 0.88},\n\t{\"box_2d\": [186, 383, 219, 396], \"label\": \"sink\", \"confidence\": 0.91}\n]\n```",
+     "refusal": null,
+     "reasoning": null
+    }
+   }
+  ],
+  "usage": {
+   "prompt_tokens": 391,
+   "completion_tokens": 217,
+   "total_tokens": 608,
+   "cost": 0.00026916,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00026916,
+    "upstream_inference_prompt_cost": 7.82e-05,
+    "upstream_inference_completions_cost": 0.00019096
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   }
+  }
+ },
+ "ts": "2026-07-07T08:43:34.447245+00:00"
+}

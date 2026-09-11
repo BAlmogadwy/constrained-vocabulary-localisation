@@ -1,0 +1,178 @@
+{
+ "image": "000000316666.jpg",
+ "model": "qwen/qwen3-vl-235b-a22b-instruct",
+ "labels": [
+  "book",
+  "clock",
+  "vase",
+  "hair drier",
+  "refrigerator",
+  "scissors",
+  "teddy bear"
+ ],
+ "detections": [
+  {
+   "box_2d": [
+    58.88,
+    125.76,
+    69.76,
+    178.56
+   ],
+   "label": "book",
+   "score": 0.95
+  },
+  {
+   "box_2d": [
+    69.76,
+    125.76,
+    78.72,
+    178.56
+   ],
+   "label": "book",
+   "score": 0.95
+  },
+  {
+   "box_2d": [
+    48.0,
+    238.08,
+    55.68,
+    290.4
+   ],
+   "label": "book",
+   "score": 0.95
+  },
+  {
+   "box_2d": [
+    55.68,
+    238.08,
+    62.72,
+    290.4
+   ],
+   "label": "book",
+   "score": 0.95
+  },
+  {
+   "box_2d": [
+    62.72,
+    238.08,
+    69.76,
+    290.4
+   ],
+   "label": "book",
+   "score": 0.95
+  },
+  {
+   "box_2d": [
+    69.76,
+    238.08,
+    78.72,
+    290.4
+   ],
+   "label": "book",
+   "score": 0.95
+  },
+  {
+   "box_2d": [
+    100.48,
+    169.44,
+    119.68,
+    199.68
+   ],
+   "label": "clock",
+   "score": 0.95
+  },
+  {
+   "box_2d": [
+    291.2,
+    290.4,
+    336.0,
+    352.8
+   ],
+   "label": "vase",
+   "score": 0.95
+  },
+  {
+   "box_2d": [
+    323.84,
+    290.4,
+    353.92,
+    346.08
+   ],
+   "label": "vase",
+   "score": 0.95
+  },
+  {
+   "box_2d": [
+    132.48,
+    264.0,
+    154.88,
+    283.2
+   ],
+   "label": "vase",
+   "score": 0.95
+  },
+  {
+   "box_2d": [
+    364.8,
+    263.04,
+    394.88,
+    290.4
+   ],
+   "label": "vase",
+   "score": 0.95
+  }
+ ],
+ "latency_sec": 9.191341100013233,
+ "usage": {
+  "prompt_tokens": 393,
+  "completion_tokens": 467,
+  "total_tokens": 860
+ },
+ "raw_response": {
+  "id": "gen-1783412781-2PG8IYosE4W22wAHwPQv",
+  "object": "chat.completion",
+  "created": 1783412781,
+  "model": "qwen/qwen3-vl-235b-a22b-instruct",
+  "provider": "Venice",
+  "system_fingerprint": null,
+  "service_tier": null,
+  "choices": [
+   {
+    "index": 0,
+    "logprobs": null,
+    "finish_reason": "stop",
+    "native_finish_reason": "stop",
+    "message": {
+     "role": "assistant",
+     "content": "```json\n[\n\t{\"bbox_2d\": [92, 262, 109, 372], \"label\": \"book\", \"confidence\": 0.95},\n\t{\"bbox_2d\": [109, 262, 123, 372], \"label\": \"book\", \"confidence\": 0.95},\n\t{\"bbox_2d\": [75, 496, 87, 605], \"label\": \"book\", \"confidence\": 0.95},\n\t{\"bbox_2d\": [87, 496, 98, 605], \"label\": \"book\", \"confidence\": 0.95},\n\t{\"bbox_2d\": [98, 496, 109, 605], \"label\": \"book\", \"confidence\": 0.95},\n\t{\"bbox_2d\": [109, 496, 123, 605], \"label\": \"book\", \"confidence\": 0.95},\n\t{\"bbox_2d\": [157, 353, 187, 416], \"label\": \"clock\", \"confidence\": 0.95},\n\t{\"bbox_2d\": [455, 605, 525, 735], \"label\": \"vase\", \"confidence\": 0.95},\n\t{\"bbox_2d\": [506, 605, 553, 721], \"label\": \"vase\", \"confidence\": 0.95},\n\t{\"bbox_2d\": [207, 550, 242, 590], \"label\": \"vase\", \"confidence\": 0.95},\n\t{\"bbox_2d\": [570, 548, 617, 605], \"label\": \"vase\", \"confidence\": 0.95}\n]\n```",
+     "refusal": null,
+     "reasoning": null
+    }
+   }
+  ],
+  "usage": {
+   "prompt_tokens": 393,
+   "completion_tokens": 467,
+   "total_tokens": 860,
+   "cost": 0.00096983,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00096983,
+    "upstream_inference_prompt_cost": 8.253e-05,
+    "upstream_inference_completions_cost": 0.0008873
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   }
+  }
+ },
+ "ts": "2026-07-07T08:26:28.577443+00:00"
+}

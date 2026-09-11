@@ -1,0 +1,90 @@
+{
+  "model": "gemini-2.5-flash",
+  "strategy": "single_query",
+  "image": "/home/maxim/PycharmProjects/zero-shot-detection-benchmark/data/raw/coco2017/val2017/000000055528.jpg",
+  "labels": [
+    "book",
+    "clock",
+    "toothbrush",
+    "hair drier",
+    "oven",
+    "refrigerator",
+    "teddy bear"
+  ],
+  "detections": [
+    {
+      "box_2d": [
+        188,
+        796,
+        219,
+        829
+      ],
+      "label": "clock"
+    },
+    {
+      "box_2d": [
+        168,
+        699,
+        455,
+        747
+      ],
+      "label": "toothbrush"
+    },
+    {
+      "box_2d": [
+        874,
+        802,
+        995,
+        919
+      ],
+      "label": "clock"
+    },
+    {
+      "box_2d": [
+        894,
+        230,
+        999,
+        532
+      ],
+      "label": "book"
+    },
+    {
+      "box_2d": [
+        912,
+        537,
+        989,
+        743
+      ],
+      "label": "clock"
+    },
+    {
+      "box_2d": [
+        159,
+        894,
+        219,
+        974
+      ],
+      "label": "clock"
+    },
+    {
+      "box_2d": [
+        909,
+        876,
+        995,
+        989
+      ],
+      "label": "clock"
+    },
+    {
+      "box_2d": [
+        629,
+        742,
+        679,
+        824
+      ],
+      "label": "clock"
+    }
+  ],
+  "latency_sec": 3.969899188959971,
+  "raw_response": "```json\n[\n  {\"box_2d\": [188, 796, 219, 829], \"label\": \"clock\"},\n  {\"box_2d\": [168, 699, 455, 747], \"label\": \"toothbrush\"},\n  {\"box_2d\": [874, 802, 995, 919], \"label\": \"clock\"},\n  {\"box_2d\": [894, 230, 999, 532], \"label\": \"book\"},\n  {\"box_2d\": [912, 537, 989, 743], \"label\": \"clock\"},\n  {\"box_2d\": [159, 894, 219, 974], \"label\": \"clock\"},\n  {\"box_2d\": [909, 876, 995, 989], \"label\": \"clock\"},\n  {\"box_2d\": [629, 742, 679, 824], \"label\": \"clock\"}\n]\n```"
+}

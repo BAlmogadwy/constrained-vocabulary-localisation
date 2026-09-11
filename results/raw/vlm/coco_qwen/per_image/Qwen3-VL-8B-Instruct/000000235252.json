@@ -1,0 +1,50 @@
+{
+  "model": "Qwen3-VL-8B-Instruct",
+  "strategy": "single_query",
+  "image": "/home/maxim/PycharmProjects/zero-shot-detection-benchmark/data/raw/coco2017/val2017/000000235252.jpg",
+  "labels": [
+    "microwave",
+    "oven",
+    "toaster",
+    "sink",
+    "refrigerator",
+    "book",
+    "clock",
+    "vase",
+    "scissors",
+    "teddy bear",
+    "hair drier",
+    "toothbrush"
+  ],
+  "detections": [
+    {
+      "box_2d": [
+        377.0,
+        367.0,
+        547.0,
+        681.0
+      ],
+      "label": "giraffe"
+    },
+    {
+      "box_2d": [
+        536.0,
+        364.0,
+        668.0,
+        662.0
+      ],
+      "label": "giraffe"
+    },
+    {
+      "box_2d": [
+        408.0,
+        379.0,
+        547.0,
+        676.0
+      ],
+      "label": "giraffe"
+    }
+  ],
+  "latency_sec": 8.102081042990903,
+  "raw_response": "user\nYou are an object detection assistant. Given the image and the list of target classes, return detections as JSON.\nTarget classes: microwave, oven, toaster, sink, refrigerator, book, clock, vase, scissors, teddy bear, hair drier, toothbrush.\nOutput format: [{\"box_2d\":[x1,y1,x2,y2],\"label\":\"class_name\"}...]\nUse pixel coordinates relative to the input image. Return JSON only.\nassistant\n```json\n[\n    {\"box_2d\": [377, 367, 547, 681],\"label\":\"giraffe\"},\n    {\"box_2d\": [536, 364, 668, 662],\"label\":\"giraffe\"},\n    {\"box_2d\": [408, 379, 547, 676],\"label\":\"giraffe\"}\n]\n```"
+}

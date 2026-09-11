@@ -1,0 +1,104 @@
+{
+  "model": "Llama-3.2-11B-Vision-Instruct",
+  "strategy": "single_query",
+  "labels": [
+    "microwave",
+    "toaster",
+    "oven",
+    "sink",
+    "refrigerator",
+    "book",
+    "clock",
+    "vase",
+    "scissors",
+    "teddy bear",
+    "hair drier",
+    "toothbrush"
+  ],
+  "image": "/home/maxim/PycharmProjects/zero-shot-detection-benchmark/data/raw/coco2017/val2017/000000000139.jpg",
+  "result": {
+    "detections": [
+      {
+        "box_2d": [
+          22,
+          104,
+          86,
+          189
+        ],
+        "label": "microwave"
+      },
+      {
+        "box_2d": [
+          30,
+          104,
+          104,
+          184
+        ],
+        "label": "oven"
+      },
+      {
+        "box_2d": [
+          38,
+          100,
+          155,
+          189
+        ],
+        "label": "refrigerator"
+      },
+      {
+        "box_2d": [
+          53,
+          189,
+          100,
+          214
+        ],
+        "label": "book"
+      },
+      {
+        "box_2d": [
+          4,
+          104,
+          86,
+          147
+        ],
+        "label": "clock"
+      },
+      {
+        "box_2d": [
+          20,
+          189,
+          92,
+          236
+        ],
+        "label": "teddy bear"
+      }
+    ],
+    "latency_sec": 19.22201242891606,
+    "raw_response": {
+      "microwave": "[{\"box_2d\":[292,0,384,0],\"label\":\"microwave\"}]",
+      "microwave_norm": "[{\"box_norm\":[0.034,0.245,0.134,0.444],\"label\":\"microwave\"}]",
+      "toaster": "[{\"box_2d\":[0,0,0,0],\"label\":\"toaster\"}]",
+      "toaster_norm": "[{\"box_norm\":[0.000,0.000,0.000,0.000],\"label\":\"toaster\"}]",
+      "oven": "[{\"box_2d\":[0,0,0,0],\"label\":\"oven\"}]",
+      "oven_norm": "[{\"box_norm\":[0.047,0.245,0.163,0.433],\"label\":\"oven\"}]",
+      "sink": "[]",
+      "sink_norm": "[{\"box_norm\":[0.000,0.000,0.000,0.000],\"label\":\"sink\"}]",
+      "refrigerator": "[{\"box_2d\":[0,0,0,0],\"label\":\"refrigerator\"}]",
+      "refrigerator_norm": "[{\"box_norm\":[0.059,0.234,0.242,0.444],\"label\":\"refrigerator\"}]",
+      "book": "[{\"box_2d\":[0,0,0,0],\"label\":\"book\"}]",
+      "book_norm": "[{\"box_norm\":[0.083,0.444,0.157,0.503],\"label\":\"book\"}]",
+      "clock": "[{\"box_2d\":[292,0,340,0],\"label\":\"clock\"}]",
+      "clock_norm": "[{\"box_norm\":[0.006,0.245,0.134,0.345],\"label\":\"clock\"}]",
+      "vase": "[{\"box_2d\":[0,0,0,0],\"label\":\"vase\"}]",
+      "vase_norm": "[{\"box_norm\":[0.000,0.000,0.000,0.000],\"label\":\"vase\"}]",
+      "scissors": "[{\"box_2d\":[0,0,0,0],\"label\":\"scissors\"}]",
+      "scissors_norm": "[{\"box_norm\":[0.000,0.000,0.000,0.000],\"label\":\"scissors\"}]",
+      "teddy bear": "[{\"box_2d\":[0,0,0,0],\"label\":\"teddy bear\"}]",
+      "teddy bear_norm": "[{\"box_norm\":[0.032,0.444,0.144,0.555],\"label\":\"teddy bear\"}]",
+      "hair drier": "[]",
+      "hair drier_norm": "[{\"box_norm\":[0.000,0.000,0.000,0.000],\"label\":\"hair drier\"}]",
+      "toothbrush": "[]",
+      "toothbrush_norm": "[{\"box_norm\":[0.000,0.000,0.000,0.000],\"label\":\"toothbrush\"}]"
+    }
+  }
+}

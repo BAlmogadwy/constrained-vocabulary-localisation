@@ -1,0 +1,24 @@
+dataset:
+  images_dir: data/subsets/coco2017_val_unseen_901/images
+  limit: null
+
+labels:
+  per_image_file: data/processed/coco2017/val/coco_unseen_dynamic_labels.json
+  file: prompts/coco_unseen_labels.txt
+  values: []
+
+output:
+  dir: results/raw/vlm/coco_unseen_refresh_2026
+
+models:
+  - name: gpt-5.5
+    prompt_strategy: single_query
+    output_name: gpt55_coco_unseen.json
+  - name: claude-opus-4.8
+    prompt_strategy: single_query
+    output_name: claude_opus_48_coco_unseen.json
+  - name: gemini-3.1-pro
+    prompt_strategy: single_query
+    output_name: gemini_31_pro_coco_unseen.json
+
+force: false

@@ -1,0 +1,88 @@
+{
+ "image": "000000452793.jpg",
+ "model": "qwen/qwen3-vl-235b-a22b-instruct",
+ "labels": [
+  "refrigerator",
+  "sink",
+  "clock",
+  "hair drier",
+  "microwave",
+  "teddy bear",
+  "toothbrush"
+ ],
+ "detections": [
+  {
+   "box_2d": [
+    378.88,
+    39.711,
+    638.72,
+    426.146
+   ],
+   "label": "refrigerator",
+   "score": 0.99
+  },
+  {
+   "box_2d": [
+    254.72,
+    205.387,
+    364.8,
+    225.883
+   ],
+   "label": "sink",
+   "score": 0.98
+  }
+ ],
+ "latency_sec": 4.301529400006984,
+ "usage": {
+  "prompt_tokens": 354,
+  "completion_tokens": 92,
+  "total_tokens": 446
+ },
+ "raw_response": {
+  "id": "gen-1783414109-RAI2BiNOhQF85mN8zGeO",
+  "object": "chat.completion",
+  "created": 1783414109,
+  "model": "qwen/qwen3-vl-235b-a22b-instruct",
+  "provider": "Parasail",
+  "system_fingerprint": null,
+  "service_tier": null,
+  "choices": [
+   {
+    "index": 0,
+    "logprobs": null,
+    "finish_reason": "stop",
+    "native_finish_reason": "stop",
+    "message": {
+     "role": "assistant",
+     "content": "```json\n[\n\t{\"bbox_2d\": [592, 93, 998, 998], \"label\": \"refrigerator\", \"confidence\": 0.99},\n\t{\"bbox_2d\": [398, 481, 570, 529], \"label\": \"sink\", \"confidence\": 0.98}\n]\n```",
+     "refusal": null,
+     "reasoning": null
+    }
+   }
+  ],
+  "usage": {
+   "prompt_tokens": 354,
+   "completion_tokens": 92,
+   "total_tokens": 446,
+   "cost": 0.00024914,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00024914,
+    "upstream_inference_prompt_cost": 7.434e-05,
+    "upstream_inference_completions_cost": 0.0001748
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   }
+  }
+ },
+ "ts": "2026-07-07T08:48:31.827712+00:00"
+}

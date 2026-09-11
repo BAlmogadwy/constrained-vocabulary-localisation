@@ -1,0 +1,45 @@
+{
+  "model": "Llama-3.2-11B-Vision-Instruct",
+  "strategy": "single_query",
+  "image": "/home/maxim/PycharmProjects/zero-shot-detection-benchmark/data/subsets/lvis_v1_val_unseen/images/000000284817.jpg",
+  "labels": [
+    "spatula",
+    "hair_dryer",
+    "microscope",
+    "musical_instrument",
+    "stapler_(stapling_machine)"
+  ],
+  "detections": [
+    {
+      "box_2d": [
+        155,
+        103,
+        220,
+        184
+      ],
+      "label": "spatula"
+    },
+    {
+      "box_2d": [
+        150,
+        100,
+        259,
+        185
+      ],
+      "label": "stapler_(stapling_machine)"
+    }
+  ],
+  "latency_sec": 6.449607784976251,
+  "raw_response": {
+    "spatula": "[{\"box_2d\":[0,0,0,0],\"label\":\"spatula\"}]",
+    "spatula_norm": "[{\"box_norm\":[0.242,0.242,0.343,0.433],\"label\":\"spatula\"}]",
+    "hair_dryer": "[]",
+    "hair_dryer_norm": "[{\"box_norm\":[0.000,0.000,0.000,0.000],\"label\":\"hair_dryer\"}]",
+    "microscope": "[]",
+    "microscope_norm": "[{\"box_norm\":[0.000,0.000,0.000,0.000],\"label\":\"microscope\"}]",
+    "musical_instrument": "[]",
+    "musical_instrument_norm": "[{\"box_norm\":[0.000,0.000,0.000,0.000],\"label\":\"musical_instrument\"}]",
+    "stapler_(stapling_machine)": "[]",
+    "stapler_(stapling_machine)_norm": "[{\"box_norm\":[0.235,0.235,0.405,0.435],\"label\":\"stapler_(stapling_machine)\"}]"
+  }
+}

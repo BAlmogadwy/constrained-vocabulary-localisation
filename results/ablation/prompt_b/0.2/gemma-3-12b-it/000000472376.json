@@ -1,0 +1,30 @@
+{
+  "model": "gemma-3-12b-it",
+  "strategy": "iterative",
+  "image": "/home/maxim/PycharmProjects/zero-shot-detection-benchmark/data/subsets/lvis_v1_val_unseen/images/000000472376.jpg",
+  "labels": [
+    "musical_instrument",
+    "blender",
+    "hair_dryer",
+    "sewing_machine",
+    "stapler_(stapling_machine)"
+  ],
+  "detections": [
+    {
+      "box_2d": [
+        461,
+        333,
+        553,
+        516
+      ],
+      "label": "musical_instrument"
+    }
+  ],
+  "latency_sec": 18.0633498840034,
+  "raw_response": {
+    "identification": "musical_instrument",
+    "localization": {
+      "musical_instrument": "```json\n[{\"box_2d\":[461,333,553,516],\"label\":\"musical_instrument\"}]\n```"
+    }
+  }
+}

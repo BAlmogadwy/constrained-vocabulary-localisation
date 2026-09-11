@@ -1,0 +1,63 @@
+{
+  "model": "gemini-2.5-flash",
+  "strategy": "single_query",
+  "image": "/home/maxim/PycharmProjects/zero-shot-detection-benchmark/data/raw/coco2017/val2017/000000177489.jpg",
+  "labels": [
+    "microwave",
+    "oven",
+    "toaster",
+    "sink",
+    "refrigerator",
+    "book",
+    "clock",
+    "vase",
+    "scissors",
+    "teddy bear",
+    "hair drier",
+    "toothbrush"
+  ],
+  "detections": [
+    {
+      "name": "oven",
+      "bbox_2d": [
+        363,
+        856,
+        386,
+        924
+      ],
+      "label": "oven"
+    },
+    {
+      "name": "sink",
+      "bbox": [
+        374,
+        696,
+        396,
+        750
+      ],
+      "label": "sink"
+    },
+    {
+      "name": "book",
+      "bbox": [
+        439,
+        529,
+        474,
+        571
+      ],
+      "label": "book"
+    },
+    {
+      "name": "vase",
+      "bbox": [
+        419,
+        730,
+        472,
+        755
+      ],
+      "label": "vase"
+    }
+  ],
+  "latency_sec": 3.8525330550037324,
+  "raw_response": "```json\n[\n  {\"name\": \"oven\", \"bbox_2d\": [363, 856, 386, 924], \"label\": \"oven\"},\n  {\"name\": \"sink\", \"bbox\": [374, 696, 396, 750], \"label\": \"sink\"},\n  {\"name\": \"book\", \"bbox\": [439, 529, 474, 571], \"label\": \"book\"},\n  {\"name\": \"vase\", \"bbox\": [419, 730, 472, 755], \"label\": \"vase\"}\n]\n```"
+}

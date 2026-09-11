@@ -1,0 +1,106 @@
+{
+  "model": "llava-v1.6-mistral-7b-hf",
+  "strategy": "single_query",
+  "image": "/home/maxim/PycharmProjects/zero-shot-detection-benchmark/data/subsets/lvis_v1_val_unseen/images/000000450359.jpg",
+  "labels": [
+    "blender",
+    "hair_dryer",
+    "lawn_mower",
+    "microscope",
+    "stapler_(stapling_machine)"
+  ],
+  "detections": [
+    {
+      "box_2d": [
+        0.0,
+        0.192,
+        0.183,
+        0.508
+      ],
+      "label": "person"
+    },
+    {
+      "box_2d": [
+        0.0,
+        0.192,
+        0.183,
+        0.508
+      ],
+      "label": "man"
+    },
+    {
+      "box_2d": [
+        0.237,
+        0.165,
+        0.411,
+        0.4
+      ],
+      "label": "person"
+    },
+    {
+      "box_2d": [
+        0.237,
+        0.165,
+        0.411,
+        0.4
+      ],
+      "label": "girl"
+    },
+    {
+      "box_2d": [
+        0.453,
+        0.121,
+        0.653,
+        0.4
+      ],
+      "label": "person"
+    },
+    {
+      "box_2d": [
+        0.453,
+        0.121,
+        0.653,
+        0.4
+      ],
+      "label": "woman"
+    },
+    {
+      "box_2d": [
+        0.691,
+        0.121,
+        0.905,
+        0.4
+      ],
+      "label": "person"
+    },
+    {
+      "box_2d": [
+        0.691,
+        0.121,
+        0.905,
+        0.4
+      ],
+      "label": "woman"
+    },
+    {
+      "box_2d": [
+        0.781,
+        0.423,
+        0.998,
+        0.875
+      ],
+      "label": "person"
+    },
+    {
+      "box_2d": [
+        0.781,
+        0.423,
+        0.998,
+        0.875
+      ],
+      "label": "boy"
+    }
+  ],
+  "latency_sec": 14.11218252684921,
+  "raw_response": "USER:  \nDetect the following objects in the image: blender, hair_dryer, lawn_mower, microscope, stapler_(stapling_machine). For each detected object, provide JSON entries in the form [{\"box_2d\": [x1, y1, x2, y2], \"label\": \"class_name\"}]. Return only JSON. ASSISTANT: ```json\n[\n  {\"box_2d\": [0.000,0.192,0.183,0.508], \"label\": \"person\"},\n  {\"box_2d\": [0.000,0.192,0.183,0.508], \"label\": \"man\"},\n  {\"box_2d\": [0.237,0.165,0.411,0.400], \"label\": \"person\"},\n  {\"box_2d\": [0.237,0.165,0.411,0.400], \"label\": \"girl\"},\n  {\"box_2d\": [0.453,0.121,0.653,0.400], \"label\": \"person\"},\n  {\"box_2d\": [0.453,0.121,0.653,0.400], \"label\": \"woman\"},\n  {\"box_2d\": [0.691,0.121,0.905,0.400], \"label\": \"person\"},\n  {\"box_2d\": [0.691,0.121,0.905,0.400], \"label\": \"woman\"},\n  {\"box_2d\": [0.781,0.423,0.998,0.875], \"label\": \"person\"},\n  {\"box_2d\": [0.781,0.423,0.998,0.875], \"label\": \"boy\"}\n]\n``` "
+}

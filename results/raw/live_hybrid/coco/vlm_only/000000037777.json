@@ -1,0 +1,248 @@
+{
+ "image": "000000037777.jpg",
+ "model": "qwen/qwen3-vl-235b-a22b-instruct",
+ "labels": [
+  "oven",
+  "refrigerator",
+  "sink",
+  "book",
+  "hair drier",
+  "microwave",
+  "vase"
+ ],
+ "detections": [
+  {
+   "box_2d": [
+    140.096,
+    134.32,
+    194.304,
+    191.82
+   ],
+   "label": "oven",
+   "score": 0.98
+  },
+  {
+   "box_2d": [
+    299.2,
+    83.26,
+    351.648,
+    229.31
+   ],
+   "label": "refrigerator",
+   "score": 0.99
+  },
+  {
+   "box_2d": [
+    264.0,
+    135.7,
+    297.792,
+    145.13
+   ],
+   "label": "sink",
+   "score": 0.97
+  },
+  {
+   "box_2d": [
+    336.512,
+    55.2,
+    351.648,
+    75.44
+   ],
+   "label": "book",
+   "score": 0.95
+  },
+  {
+   "box_2d": [
+    184.8,
+    121.44,
+    193.6,
+    134.32
+   ],
+   "label": "hair drier",
+   "score": 0.89
+  },
+  {
+   "box_2d": [
+    193.6,
+    121.44,
+    202.4,
+    134.32
+   ],
+   "label": "hair drier",
+   "score": 0.88
+  },
+  {
+   "box_2d": [
+    202.4,
+    121.44,
+    211.2,
+    134.32
+   ],
+   "label": "hair drier",
+   "score": 0.87
+  },
+  {
+   "box_2d": [
+    211.2,
+    121.44,
+    220.0,
+    134.32
+   ],
+   "label": "hair drier",
+   "score": 0.86
+  },
+  {
+   "box_2d": [
+    220.0,
+    121.44,
+    228.8,
+    134.32
+   ],
+   "label": "hair drier",
+   "score": 0.85
+  },
+  {
+   "box_2d": [
+    228.8,
+    121.44,
+    237.6,
+    134.32
+   ],
+   "label": "hair drier",
+   "score": 0.84
+  },
+  {
+   "box_2d": [
+    237.6,
+    121.44,
+    246.4,
+    134.32
+   ],
+   "label": "hair drier",
+   "score": 0.83
+  },
+  {
+   "box_2d": [
+    246.4,
+    121.44,
+    255.2,
+    134.32
+   ],
+   "label": "hair drier",
+   "score": 0.82
+  },
+  {
+   "box_2d": [
+    255.2,
+    121.44,
+    264.0,
+    134.32
+   ],
+   "label": "hair drier",
+   "score": 0.81
+  },
+  {
+   "box_2d": [
+    264.0,
+    121.44,
+    272.8,
+    134.32
+   ],
+   "label": "hair drier",
+   "score": 0.8
+  },
+  {
+   "box_2d": [
+    272.8,
+    121.44,
+    281.6,
+    134.32
+   ],
+   "label": "hair drier",
+   "score": 0.79
+  },
+  {
+   "box_2d": [
+    281.6,
+    121.44,
+    290.4,
+    134.32
+   ],
+   "label": "hair drier",
+   "score": 0.78
+  },
+  {
+   "box_2d": [
+    290.4,
+    121.44,
+    299.2,
+    134.32
+   ],
+   "label": "hair drier",
+   "score": 0.77
+  },
+  {
+   "box_2d": [
+    299.2,
+    121.44,
+    308.0,
+    134.32
+   ],
+   "label": "hair drier",
+   "score": 0.76
+  }
+ ],
+ "latency_sec": 11.464635699987411,
+ "usage": {
+  "prompt_tokens": 168,
+  "completion_tokens": 800,
+  "total_tokens": 968
+ },
+ "raw_response": {
+  "id": "gen-1783410361-INMAXtA84K3akLLkImL3",
+  "object": "chat.completion",
+  "created": 1783410361,
+  "model": "qwen/qwen3-vl-235b-a22b-instruct",
+  "provider": "Parasail",
+  "system_fingerprint": null,
+  "service_tier": null,
+  "choices": [
+   {
+    "index": 0,
+    "logprobs": null,
+    "finish_reason": "length",
+    "native_finish_reason": "length",
+    "message": {
+     "role": "assistant",
+     "content": "```json\n[\n\t{\"box_2d\": [398, 584, 552, 834], \"label\": \"oven\", \"confidence\": 0.98},\n\t{\"box_2d\": [850, 362, 999, 997], \"label\": \"refrigerator\", \"confidence\": 0.99},\n\t{\"box_2d\": [750, 590, 846, 631], \"label\": \"sink\", \"confidence\": 0.97},\n\t{\"box_2d\": [956, 240, 999, 328], \"label\": \"book\", \"confidence\": 0.95},\n\t{\"box_2d\": [525, 528, 550, 584], \"label\": \"hair drier\", \"confidence\": 0.89},\n\t{\"bbox_2d\": [550, 528, 575, 584], \"label\": \"hair drier\", \"confidence\": 0.88},\n\t{\"bbox_2d\": [575, 528, 600, 584], \"label\": \"hair drier\", \"confidence\": 0.87},\n\t{\"bbox_2d\": [600, 528, 625, 584], \"label\": \"hair drier\", \"confidence\": 0.86},\n\t{\"bbox_2d\": [625, 528, 650, 584], \"label\": \"hair drier\", \"confidence\": 0.85},\n\t{\"bbox_2d\": [650, 528, 675, 584], \"label\": \"hair drier\", \"confidence\": 0.84},\n\t{\"bbox_2d\": [675, 528, 700, 584], \"label\": \"hair drier\", \"confidence\": 0.83},\n\t{\"bbox_2d\": [700, 528, 725, 584], \"label\": \"hair drier\", \"confidence\": 0.82},\n\t{\"bbox_2d\": [725, 528, 750, 584], \"label\": \"hair drier\", \"confidence\": 0.81},\n\t{\"bbox_2d\": [750, 528, 775, 584], \"label\": \"hair drier\", \"confidence\": 0.80},\n\t{\"bbox_2d\": [775, 528, 800, 584], \"label\": \"hair drier\", \"confidence\": 0.79},\n\t{\"bbox_2d\": [800, 528, 825, 584], \"label\": \"hair drier\", \"confidence\": 0.78},\n\t{\"bbox_2d\": [825, 528, 850, 584], \"label\": \"hair drier\", \"confidence\": 0.77},\n\t{\"bbox_2d\": [850, 528, 875, 584], \"label\": \"hair drier\", \"confidence\": 0.76},\n\t{\"bbox_2d\": [87",
+     "refusal": null,
+     "reasoning": null
+    }
+   }
+  ],
+  "usage": {
+   "prompt_tokens": 168,
+   "completion_tokens": 800,
+   "total_tokens": 968,
+   "cost": 0.00155528,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00155528,
+    "upstream_inference_prompt_cost": 3.528e-05,
+    "upstream_inference_completions_cost": 0.00152
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   }
+  }
+ },
+ "ts": "2026-07-07T07:46:11.450022+00:00"
+}

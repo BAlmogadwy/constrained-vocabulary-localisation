@@ -1,0 +1,146 @@
+{
+  "model": "gpt-5",
+  "strategy": "single_query",
+  "image": "/home/maxim/PycharmProjects/zero-shot-detection-benchmark/data/raw/coco2017/val2017/000000309938.jpg",
+  "labels": [
+    "book",
+    "clock",
+    "hair drier",
+    "microwave",
+    "oven",
+    "toaster",
+    "toothbrush"
+  ],
+  "detections": [
+    {
+      "box_2d": [
+        70,
+        295,
+        360,
+        375
+      ],
+      "label": "book",
+      "confidence": 0.91
+    },
+    {
+      "box_2d": [
+        460,
+        270,
+        615,
+        350
+      ],
+      "label": "book",
+      "confidence": 0.88
+    },
+    {
+      "box_2d": [
+        550,
+        160,
+        635,
+        245
+      ],
+      "label": "book",
+      "confidence": 0.8
+    },
+    {
+      "box_2d": [
+        400,
+        220,
+        520,
+        275
+      ],
+      "label": "book",
+      "confidence": 0.76
+    },
+    {
+      "box_2d": [
+        510,
+        330,
+        600,
+        380
+      ],
+      "label": "book",
+      "confidence": 0.73
+    }
+  ],
+  "latency_sec": 43.21749353200721,
+  "raw_response": {
+    "id": "resp_07ba1ddc3c7b710300691c2a911eb8819585bee11532cce03d",
+    "created_at": 1763453585.0,
+    "error": null,
+    "incomplete_details": null,
+    "instructions": null,
+    "metadata": {},
+    "model": "gpt-5-2025-08-07",
+    "object": "response",
+    "output": [
+      {
+        "id": "rs_07ba1ddc3c7b710300691c2a91acc0819581c8aa104073bae8",
+        "summary": [],
+        "type": "reasoning",
+        "content": null,
+        "encrypted_content": null,
+        "status": null
+      },
+      {
+        "id": "msg_07ba1ddc3c7b710300691c2ab60a7c8195b5b75ee82dd7dc01",
+        "content": [
+          {
+            "annotations": [],
+            "text": "[\n  {\"box_2d\": [70, 295, 360, 375], \"label\": \"book\", \"confidence\": 0.91},\n  {\"box_2d\": [460, 270, 615, 350], \"label\": \"book\", \"confidence\": 0.88},\n  {\"box_2d\": [550, 160, 635, 245], \"label\": \"book\", \"confidence\": 0.80},\n  {\"box_2d\": [400, 220, 520, 275], \"label\": \"book\", \"confidence\": 0.76},\n  {\"box_2d\": [510, 330, 600, 380], \"label\": \"book\", \"confidence\": 0.73}\n]",
+            "type": "output_text",
+            "logprobs": []
+          }
+        ],
+        "role": "assistant",
+        "status": "completed",
+        "type": "message"
+      }
+    ],
+    "parallel_tool_calls": true,
+    "temperature": 1.0,
+    "tool_choice": "auto",
+    "tools": [],
+    "top_p": 1.0,
+    "background": false,
+    "conversation": null,
+    "max_output_tokens": 16192,
+    "max_tool_calls": null,
+    "previous_response_id": null,
+    "prompt": null,
+    "prompt_cache_key": null,
+    "prompt_cache_retention": null,
+    "reasoning": {
+      "effort": "medium",
+      "generate_summary": null,
+      "summary": null
+    },
+    "safety_identifier": null,
+    "service_tier": "default",
+    "status": "completed",
+    "text": {
+      "format": {
+        "type": "text"
+      },
+      "verbosity": "medium"
+    },
+    "top_logprobs": 0,
+    "truncation": "disabled",
+    "usage": {
+      "input_tokens": 432,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 1389,
+      "output_tokens_details": {
+        "reasoning_tokens": 1216
+      },
+      "total_tokens": 1821
+    },
+    "user": null,
+    "billing": {
+      "payer": "developer"
+    },
+    "store": true
+  }
+}

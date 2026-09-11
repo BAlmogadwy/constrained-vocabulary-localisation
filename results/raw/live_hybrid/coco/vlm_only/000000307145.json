@@ -1,0 +1,98 @@
+{
+ "image": "000000307145.jpg",
+ "model": "qwen/qwen3-vl-235b-a22b-instruct",
+ "labels": [
+  "oven",
+  "sink",
+  "hair drier",
+  "refrigerator",
+  "scissors",
+  "toothbrush",
+  "vase"
+ ],
+ "detections": [
+  {
+   "box_2d": [
+    245.52,
+    69.498,
+    332.64,
+    103.059
+   ],
+   "label": "oven",
+   "score": 0.95
+  },
+  {
+   "box_2d": [
+    134.64,
+    10.098,
+    176.22,
+    84.348
+   ],
+   "label": "oven",
+   "score": 0.92
+  },
+  {
+   "box_2d": [
+    146.52,
+    78.705,
+    225.72,
+    108.405
+   ],
+   "label": "sink",
+   "score": 0.98
+  }
+ ],
+ "latency_sec": 6.975110599989421,
+ "usage": {
+  "prompt_tokens": 200,
+  "completion_tokens": 174,
+  "total_tokens": 374
+ },
+ "raw_response": {
+  "id": "gen-1783412684-8utejqwcjPwzcGTZphgB",
+  "object": "chat.completion",
+  "created": 1783412684,
+  "model": "qwen/qwen3-vl-235b-a22b-instruct",
+  "provider": "Parasail",
+  "system_fingerprint": null,
+  "service_tier": null,
+  "choices": [
+   {
+    "index": 0,
+    "logprobs": null,
+    "finish_reason": "stop",
+    "native_finish_reason": "stop",
+    "message": {
+     "role": "assistant",
+     "content": "```json\n[\n\t{\"box_2d\": [620, 234, 840, 347], \"label\": \"oven\", \"confidence\": 0.95},\n\t{\"bbox_2d\": [340, 34, 445, 284], \"label\": \"oven\", \"confidence\": 0.92},\n\t{\"bbox_2d\": [370, 265, 570, 365], \"label\": \"sink\", \"confidence\": 0.98},\n\t{\"bbox_2d\": [470, 384, 860, 956], \"label\": \"table\", \"confidence\": 0.96}\n]\n```",
+     "refusal": null,
+     "reasoning": null
+    }
+   }
+  ],
+  "usage": {
+   "prompt_tokens": 200,
+   "completion_tokens": 174,
+   "total_tokens": 374,
+   "cost": 0.0003726,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0003726,
+    "upstream_inference_prompt_cost": 4.2e-05,
+    "upstream_inference_completions_cost": 0.0003306
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   }
+  }
+ },
+ "ts": "2026-07-07T08:24:46.514061+00:00"
+}

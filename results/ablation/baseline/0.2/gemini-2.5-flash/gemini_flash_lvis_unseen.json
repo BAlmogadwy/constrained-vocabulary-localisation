@@ -1,0 +1,2648 @@
+{
+  "model": "gemini-2.5-flash",
+  "strategy": "single_query",
+  "labels": [
+    "microwave",
+    "oven",
+    "toaster",
+    "sink",
+    "refrigerator",
+    "book",
+    "clock",
+    "vase",
+    "scissors",
+    "teddy bear",
+    "hair drier",
+    "toothbrush"
+  ],
+  "per_image_labels": true,
+  "per_image_labels_file": "/home/maxim/PycharmProjects/zero-shot-detection-benchmark/data/processed/lvis_v1/val/lvis_unseen_dynamic_labels.json",
+  "images_dir": "/home/maxim/PycharmProjects/zero-shot-detection-benchmark/data/subsets/lvis_v1_val_unseen/images",
+  "num_images": 99,
+  "results": [
+    {
+      "image": "000000528984.jpg",
+      "detections": [
+        {
+          "box_2d": [
+            96,
+            695,
+            178,
+            882
+          ],
+          "label": "snowboard"
+        },
+        {
+          "box_2d": [
+            275,
+            772,
+            369,
+            804
+          ],
+          "label": "snowboard"
+        },
+        {
+          "box_2d": [
+            498,
+            492,
+            532,
+            510
+          ],
+          "label": "snowboard"
+        },
+        {
+          "box_2d": [
+            757,
+            902,
+            792,
+            923
+          ],
+          "label": "snowboard"
+        }
+      ],
+      "latency_sec": 11.080564955016598,
+      "raw_response": "```json\n[\n  {\"box_2d\": [96, 695, 178, 882], \"label\": \"snowboard\"},\n  {\"box_2d\": [275, 772, 369, 804], \"label\": \"snowboard\"},\n  {\"box_2d\": [498, 492, 532, 510], \"label\": \"snowboard\"},\n  {\"box_2d\": [757, 902, 792, 923], \"label\": \"snowboard\"}\n]\n```",
+      "labels_used": [
+        "snowboard",
+        "coffee_maker",
+        "lawn_mower",
+        "microscope",
+        "sewing_machine"
+      ]
+    },
+    {
+      "image": "000000359762.jpg",
+      "detections": [
+        {
+          "box_2d": [
+            0,
+            497,
+            185,
+            762
+          ],
+          "label": "spatula"
+        }
+      ],
+      "latency_sec": 1.7009093119995669,
+      "raw_response": "[{\"box_2d\": [0, 497, 185, 762], \"label\": \"spatula\"}]",
+      "labels_used": [
+        "spatula",
+        "coffee_maker",
+        "hair_dryer",
+        "lawn_mower",
+        "snowboard"
+      ]
+    },
+    {
+      "image": "000000549508.jpg",
+      "detections": [
+        {
+          "box_2d": [
+            299,
+            299,
+            431,
+            493
+          ],
+          "label": "snowboard"
+        }
+      ],
+      "latency_sec": 2.328485145000741,
+      "raw_response": "```json\n[\n  {\"box_2d\": [299, 299, 431, 493], \"label\": \"snowboard\"}\n]\n```",
+      "labels_used": [
+        "snowboard",
+        "blender",
+        "musical_instrument",
+        "sewing_machine",
+        "spatula"
+      ]
+    },
+    {
+      "image": "000000565767.jpg",
+      "detections": [
+        {
+          "box_2d": [
+            852,
+            319,
+            950,
+            503
+          ],
+          "label": "snowboard"
+        }
+      ],
+      "latency_sec": 2.2228585309349,
+      "raw_response": "```json\n[\n  {\"box_2d\": [852, 319, 950, 503], \"label\": \"snowboard\"}\n]\n```",
+      "labels_used": [
+        "snowboard",
+        "blender",
+        "hair_dryer",
+        "sewing_machine",
+        "stapler_(stapling_machine)"
+      ]
+    },
+    {
+      "image": "000000147913.jpg",
+      "detections": [
+        {
+          "box_2d": [
+            471,
+            149,
+            732,
+            781
+          ],
+          "label": "snowboard"
+        }
+      ],
+      "latency_sec": 1.4473195880418643,
+      "raw_response": "[{\"box_2d\": [471, 149, 732, 781], \"label\": \"snowboard\"}]",
+      "labels_used": [
+        "snowboard",
+        "coffee_maker",
+        "hair_dryer",
+        "microscope",
+        "musical_instrument"
+      ]
+    },
+    {
+      "image": "000000330420.jpg",
+      "detections": [
+        {
+          "box_2d": [
+            277,
+            0,
+            1000,
+            755
+          ],
+          "label": "blender"
+        }
+      ],
+      "latency_sec": 2.2361489180475473,
+      "raw_response": "```json\n[\n  {\"box_2d\": [277, 0, 1000, 755], \"label\": \"blender\"}\n]\n```",
+      "labels_used": [
+        "blender",
+        "lawn_mower",
+        "microscope",
+        "musical_instrument",
+        "stapler_(stapling_machine)"
+      ]
+    },
+    {
+      "image": "000000390704.jpg",
+      "detections": [
+        {
+          "box_2d": [
+            582,
+            0,
+            1000,
+            260
+          ],
+          "label": "snowboard"
+        },
+        {
+          "box_2d": [
+            662,
+            444,
+            706,
+            804
+          ],
+          "label": "snowboard"
+        }
+      ],
+      "latency_sec": 1.8723230060422793,
+      "raw_response": "[{\"box_2d\": [582, 0, 1000, 260], \"label\": \"snowboard\"}, {\"box_2d\": [662, 444, 706, 804], \"label\": \"snowboard\"}]",
+      "labels_used": [
+        "snowboard",
+        "coffee_maker",
+        "musical_instrument",
+        "sewing_machine",
+        "spatula"
+      ]
+    },
+    {
+      "image": "000000357202.jpg",
+      "detections": [
+        {
+          "box_2d": [
+            277,
+            126,
+            361,
+            219
+          ],
+          "label": "snowboard"
+        }
+      ],
+      "latency_sec": 1.7733334630029276,
+      "raw_response": "```json\n[\n  {\"box_2d\": [277, 126, 361, 219], \"label\": \"snowboard\"}\n]\n```",
+      "labels_used": [
+        "snowboard",
+        "coffee_maker",
+        "hair_dryer",
+        "lawn_mower",
+        "stapler_(stapling_machine)"
+      ]
+    },
+    {
+      "image": "000000304827.jpg",
+      "detections": [
+        {
+          "box_2d": [
+            423,
+            429,
+            574,
+            492
+          ],
+          "label": "coffee_maker"
+        }
+      ],
+      "latency_sec": 2.1770792439347133,
+      "raw_response": "```json\n[\n  {\"box_2d\": [423, 429, 574, 492], \"label\": \"coffee_maker\"}\n]\n```",
+      "labels_used": [
+        "coffee_maker",
+        "blender",
+        "lawn_mower",
+        "microscope",
+        "snowboard"
+      ]
+    },
+    {
+      "image": "000000397269.jpg",
+      "detections": [
+        {
+          "box_2d": [
+            347,
+            630,
+            966,
+            998
+          ],
+          "label": "spatula"
+        }
+      ],
+      "latency_sec": 2.1823776460951194,
+      "raw_response": "```json\n[\n  {\"box_2d\": [347, 630, 966, 998], \"label\": \"spatula\"}\n]\n```",
+      "labels_used": [
+        "spatula",
+        "coffee_maker",
+        "hair_dryer",
+        "microscope",
+        "snowboard"
+      ]
+    },
+    {
+      "image": "000000189694.jpg",
+      "detections": [
+        {
+          "box_2d": [
+            510,
+            592,
+            762,
+            730
+          ],
+          "label": "coffee_maker"
+        }
+      ],
+      "latency_sec": 2.678795362007804,
+      "raw_response": "[{\"box_2d\": [510, 592, 762, 730], \"label\": \"coffee_maker\"}]",
+      "labels_used": [
+        "coffee_maker",
+        "hair_dryer",
+        "lawn_mower",
+        "musical_instrument",
+        "snowboard"
+      ]
+    },
+    {
+      "image": "000000359073.jpg",
+      "detections": [
+        {
+          "box_2d": [
+            772,
+            617,
+            831,
+            650
+          ],
+          "label": "snowboard"
+        },
+        {
+          "box_2d": [
+            669,
+            685,
+            736,
+            712
+          ],
+          "label": "snowboard"
+        },
+        {
+          "box_2d": [
+            689,
+            903,
+            725,
+            917
+          ],
+          "label": "snowboard"
+        }
+      ],
+      "latency_sec": 5.797612030059099,
+      "raw_response": "```json\n[\n  {\"box_2d\": [772, 617, 831, 650], \"label\": \"snowboard\"},\n  {\"box_2d\": [669, 685, 736, 712], \"label\": \"snowboard\"},\n  {\"box_2d\": [689, 903, 725, 917], \"label\": \"snowboard\"}\n]\n```",
+      "labels_used": [
+        "snowboard",
+        "lawn_mower",
+        "musical_instrument",
+        "sewing_machine",
+        "stapler_(stapling_machine)"
+      ]
+    },
+    {
+      "image": "000000083682.jpg",
+      "detections": [
+        {
+          "box_2d": [
+            784,
+            281,
+            903,
+            650
+          ],
+          "label": "snowboard"
+        }
+      ],
+      "latency_sec": 2.117672304972075,
+      "raw_response": "```json\n[\n  {\"box_2d\": [784, 281, 903, 650], \"label\": \"snowboard\"}\n]\n```",
+      "labels_used": [
+        "snowboard",
+        "blender",
+        "hair_dryer",
+        "sewing_machine",
+        "spatula"
+      ]
+    },
+    {
+      "image": "000000430711.jpg",
+      "detections": [
+        {
+          "box_2d": [
+            0,
+            169,
+            153,
+            492
+          ],
+          "label": "blender"
+        },
+        {
+          "box_2d": [
+            253,
+            0,
+            831,
+            997
+          ],
+          "label": "blender"
+        }
+      ],
+      "latency_sec": 3.4766178730642423,
+      "raw_response": "[\n  {\"box_2d\": [0, 169, 153, 492], \"label\": \"blender\"},\n  {\"box_2d\": [253, 0, 831, 997], \"label\": \"blender\"}\n]",
+      "labels_used": [
+        "blender",
+        "hair_dryer",
+        "microscope",
+        "musical_instrument",
+        "spatula"
+      ]
+    },
+    {
+      "image": "000000401766.jpg",
+      "detections": [
+        {
+          "box_2d": [
+            14,
+            15,
+            147,
+            151
+          ],
+          "label": "coffee_maker"
+        },
+        {
+          "box_2d": [
+            18,
+            856,
+            101,
+            915
+          ],
+          "label": "spatula"
+        }
+      ],
+      "latency_sec": 2.2725489910226315,
+      "raw_response": "```json\n[\n  {\"box_2d\": [14, 15, 147, 151], \"label\": \"coffee_maker\"},\n  {\"box_2d\": [18, 856, 101, 915], \"label\": \"spatula\"}\n]\n```",
+      "labels_used": [
+        "coffee_maker",
+        "spatula",
+        "hair_dryer",
+        "lawn_mower",
+        "snowboard",
+        "stapler_(stapling_machine)"
+      ]
+    },
+    {
+      "image": "000000058554.jpg",
+      "detections": [
+        {
+          "box_2d": [
+            33,
+            222,
+            985,
+            694
+          ],
+          "label": "blender"
+        }
+      ],
+      "latency_sec": 1.5957718369318172,
+      "raw_response": "```json\n[\n  {\"box_2d\": [33, 222, 985, 694], \"label\": \"blender\"}\n]\n```",
+      "labels_used": [
+        "blender",
+        "coffee_maker",
+        "lawn_mower",
+        "snowboard",
+        "spatula"
+      ]
+    },
+    {
+      "image": "000000500579.jpg",
+      "detections": [
+        {
+          "box_2d": [
+            637,
+            296,
+            693,
+            471
+          ],
+          "label": "snowboard"
+        }
+      ],
+      "latency_sec": 1.9315084499539807,
+      "raw_response": "[\n  {\"box_2d\": [637, 296, 693, 471], \"label\": \"snowboard\"}\n]",
+      "labels_used": [
+        "snowboard",
+        "coffee_maker",
+        "hair_dryer",
+        "sewing_machine",
+        "spatula"
+      ]
+    },
+    {
+      "image": "000000341865.jpg",
+      "detections": [
+        {
+          "box_2d": [
+            0,
+            566,
+            252,
+            903
+          ],
+          "label": "hair_dryer"
+        }
+      ],
+      "latency_sec": 2.0408137149643153,
+      "raw_response": "[\n  {\"box_2d\": [0, 566, 252, 903], \"label\": \"hair_dryer\"}\n]",
+      "labels_used": [
+        "hair_dryer",
+        "blender",
+        "microscope",
+        "musical_instrument",
+        "sewing_machine"
+      ]
+    },
+    {
+      "image": "000000407349.jpg",
+      "detections": [
+        {
+          "box_2d": [
+            174,
+            405,
+            247,
+            486
+          ],
+          "label": "coffee_maker"
+        },
+        {
+          "box_2d": [
+            673,
+            395,
+            746,
+            488
+          ],
+          "label": "coffee_maker"
+        }
+      ],
+      "latency_sec": 2.7220054080244154,
+      "raw_response": "```json\n[\n  {\"box_2d\": [174, 405, 247, 486], \"label\": \"coffee_maker\"},\n  {\"box_2d\": [673, 395, 746, 488], \"label\": \"coffee_maker\"}\n]\n```",
+      "labels_used": [
+        "coffee_maker",
+        "hair_dryer",
+        "lawn_mower",
+        "snowboard",
+        "spatula"
+      ]
+    },
+    {
+      "image": "000000546959.jpg",
+      "detections": [
+        {
+          "box_2d": [
+            203,
+            192,
+            946,
+            361
+          ],
+          "label": "snowboard"
+        },
+        {
+          "box_2d": [
+            215,
+            335,
+            986,
+            483
+          ],
+          "label": "snowboard"
+        },
+        {
+          "box_2d": [
+            270,
+            452,
+            932,
+            705
+          ],
+          "label": "snowboard"
+        },
+        {
+          "box_2d": [
+            187,
+            705,
+            578,
+            792
+          ],
+          "label": "snowboard"
+        },
+        {
+          "box_2d": [
+            140,
+            942,
+            383,
+            1000
+          ],
+          "label": "snowboard"
+        }
+      ],
+      "latency_sec": 3.5082908200565726,
+      "raw_response": "```json\n[\n  {\"box_2d\": [203, 192, 946, 361], \"label\": \"snowboard\"},\n  {\"box_2d\": [215, 335, 986, 483], \"label\": \"snowboard\"},\n  {\"box_2d\": [270, 452, 932, 705], \"label\": \"snowboard\"},\n  {\"box_2d\": [187, 705, 578, 792], \"label\": \"snowboard\"},\n  {\"box_2d\": [140, 942, 383, 1000], \"label\": \"snowboard\"}\n]\n```",
+      "labels_used": [
+        "snowboard",
+        "blender",
+        "coffee_maker",
+        "hair_dryer",
+        "stapler_(stapling_machine)"
+      ]
+    },
+    {
+      "image": "000000305813.jpg",
+      "detections": [
+        {
+          "box_2d": [
+            245,
+            396,
+            363,
+            458
+          ],
+          "label": "blender"
+        }
+      ],
+      "latency_sec": 1.9222601189976558,
+      "raw_response": "[{\"box_2d\": [245, 396, 363, 458], \"label\": \"blender\"}]",
+      "labels_used": [
+        "blender",
+        "hair_dryer",
+        "musical_instrument",
+        "snowboard",
+        "stapler_(stapling_machine)"
+      ]
+    },
+    {
+      "image": "000000025452.jpg",
+      "detections": [
+        {
+          "box_2d": [
+            170,
+            396,
+            255,
+            501
+          ],
+          "label": "snowboard"
+        }
+      ],
+      "latency_sec": 3.4942594720050693,
+      "raw_response": "[\n  {\"box_2d\": [170, 396, 255, 501], \"label\": \"snowboard\"}\n]",
+      "labels_used": [
+        "snowboard",
+        "microscope",
+        "musical_instrument",
+        "sewing_machine",
+        "stapler_(stapling_machine)"
+      ]
+    },
+    {
+      "image": "000000343282.jpg",
+      "detections": [
+        {
+          "box_2d": [
+            795,
+            631,
+            836,
+            687
+          ],
+          "label": "snowboard"
+        }
+      ],
+      "latency_sec": 2.458915864932351,
+      "raw_response": "[{\"box_2d\": [795, 631, 836, 687], \"label\": \"snowboard\"}]",
+      "labels_used": [
+        "snowboard",
+        "coffee_maker",
+        "hair_dryer",
+        "microscope",
+        "sewing_machine"
+      ]
+    },
+    {
+      "image": "000000093959.jpg",
+      "detections": [
+        {
+          "box_2d": [
+            411,
+            198,
+            489,
+            287
+          ],
+          "label": "coffee_maker"
+        }
+      ],
+      "latency_sec": 1.7888604720355943,
+      "raw_response": "[{\"box_2d\": [411, 198, 489, 287], \"label\": \"coffee_maker\"}]",
+      "labels_used": [
+        "coffee_maker",
+        "blender",
+        "musical_instrument",
+        "snowboard",
+        "spatula"
+      ]
+    },
+    {
+      "image": "000000459210.jpg",
+      "detections": [
+        {
+          "box_2d": [
+            673,
+            142,
+            856,
+            907
+          ],
+          "label": "snowboard"
+        }
+      ],
+      "latency_sec": 2.027697425102815,
+      "raw_response": "```json\n[\n  {\"box_2d\": [673, 142, 856, 907], \"label\": \"snowboard\"}\n]\n```",
+      "labels_used": [
+        "snowboard",
+        "coffee_maker",
+        "hair_dryer",
+        "microscope",
+        "spatula"
+      ]
+    },
+    {
+      "image": "000000231153.jpg",
+      "detections": [
+        {
+          "box_2d": [
+            336,
+            362,
+            508,
+            737
+          ],
+          "label": "snowboard"
+        }
+      ],
+      "latency_sec": 1.942940138047561,
+      "raw_response": "[{\"box_2d\": [336, 362, 508, 737], \"label\": \"snowboard\"}]",
+      "labels_used": [
+        "snowboard",
+        "microscope",
+        "sewing_machine",
+        "spatula",
+        "stapler_(stapling_machine)"
+      ]
+    },
+    {
+      "image": "000000152915.jpg",
+      "detections": [
+        {
+          "box_2d": [
+            453,
+            638,
+            718,
+            735
+          ],
+          "label": "snowboard"
+        }
+      ],
+      "latency_sec": 2.8418332600267604,
+      "raw_response": "[{\"box_2d\": [453, 638, 718, 735], \"label\": \"snowboard\"}]",
+      "labels_used": [
+        "snowboard",
+        "coffee_maker",
+        "hair_dryer",
+        "sewing_machine",
+        "spatula"
+      ]
+    },
+    {
+      "image": "000000308735.jpg",
+      "detections": [
+        {
+          "box_2d": [
+            18,
+            836,
+            114,
+            924
+          ],
+          "label": "spatula"
+        }
+      ],
+      "latency_sec": 2.4858287549577653,
+      "raw_response": "```json\n[\n  {\"box_2d\": [18, 836, 114, 924], \"label\": \"spatula\"}\n]\n```",
+      "labels_used": [
+        "spatula",
+        "blender",
+        "microscope",
+        "snowboard",
+        "stapler_(stapling_machine)"
+      ]
+    },
+    {
+      "image": "000000456695.jpg",
+      "detections": [
+        {
+          "box_2d": [
+            140,
+            318,
+            792,
+            532
+          ],
+          "label": "blender"
+        }
+      ],
+      "latency_sec": 1.652157276053913,
+      "raw_response": "[{\"box_2d\": [140, 318, 792, 532], \"label\": \"blender\"}]",
+      "labels_used": [
+        "blender",
+        "lawn_mower",
+        "snowboard",
+        "spatula",
+        "stapler_(stapling_machine)"
+      ]
+    },
+    {
+      "image": "000000257815.jpg",
+      "detections": [
+        {
+          "box_2d": [
+            399,
+            319,
+            563,
+            407
+          ],
+          "label": "blender"
+        }
+      ],
+      "latency_sec": 2.1274894209345803,
+      "raw_response": "```json\n[\n  {\"box_2d\": [399, 319, 563, 407], \"label\": \"blender\"}\n]\n```",
+      "labels_used": [
+        "blender",
+        "coffee_maker",
+        "lawn_mower",
+        "microscope",
+        "sewing_machine"
+      ]
+    },
+    {
+      "image": "000000186276.jpg",
+      "detections": [
+        {
+          "box_2d": [
+            588,
+            336,
+            822,
+            510
+          ],
+          "label": "hair_dryer"
+        }
+      ],
+      "latency_sec": 1.887946296017617,
+      "raw_response": "[{\"box_2d\": [588, 336, 822, 510], \"label\": \"hair_dryer\"}]",
+      "labels_used": [
+        "hair_dryer",
+        "coffee_maker",
+        "microscope",
+        "sewing_machine",
+        "stapler_(stapling_machine)"
+      ]
+    },
+    {
+      "image": "000000058928.jpg",
+      "detections": [
+        {
+          "box_2d": [
+            504,
+            185,
+            579,
+            235
+          ],
+          "label": "coffee_maker"
+        }
+      ],
+      "latency_sec": 2.090603118063882,
+      "raw_response": "```json\n[\n  {\"box_2d\": [504, 185, 579, 235], \"label\": \"coffee_maker\"}\n]\n```",
+      "labels_used": [
+        "coffee_maker",
+        "lawn_mower",
+        "musical_instrument",
+        "sewing_machine",
+        "stapler_(stapling_machine)"
+      ]
+    },
+    {
+      "image": "000000518487.jpg",
+      "detections": [
+        {
+          "box_2d": [
+            57,
+            292,
+            928,
+            915
+          ],
+          "label": "blender"
+        }
+      ],
+      "latency_sec": 1.4902005610056221,
+      "raw_response": "```json\n[\n  {\"box_2d\": [57, 292, 928, 915], \"label\": \"blender\"}\n]\n```",
+      "labels_used": [
+        "blender",
+        "hair_dryer",
+        "lawn_mower",
+        "microscope",
+        "sewing_machine"
+      ]
+    },
+    {
+      "image": "000000062937.jpg",
+      "detections": [
+        {
+          "box_2d": [
+            172,
+            521,
+            219,
+            605
+          ],
+          "label": "spatula"
+        }
+      ],
+      "latency_sec": 3.294418597011827,
+      "raw_response": "```json\n[\n  {\"box_2d\": [172, 521, 219, 605], \"label\": \"spatula\"}\n]\n```",
+      "labels_used": [
+        "spatula",
+        "blender",
+        "coffee_maker",
+        "hair_dryer",
+        "sewing_machine"
+      ]
+    },
+    {
+      "image": "000000409403.jpg",
+      "detections": [
+        {
+          "box_2d": [
+            386,
+            680,
+            482,
+            722
+          ],
+          "label": "coffee_maker"
+        },
+        {
+          "box_2d": [
+            390,
+            43,
+            804,
+            258
+          ],
+          "label": "blender"
+        }
+      ],
+      "latency_sec": 1.9734202349791303,
+      "raw_response": "```json\n[\n  {\"box_2d\": [386, 680, 482, 722], \"label\": \"coffee_maker\"},\n  {\"box_2d\": [390, 43, 804, 258], \"label\": \"blender\"}\n]\n```",
+      "labels_used": [
+        "blender",
+        "coffee_maker",
+        "lawn_mower",
+        "microscope",
+        "snowboard",
+        "spatula"
+      ]
+    },
+    {
+      "image": "000000050158.jpg",
+      "detections": [
+        {
+          "box_2d": [
+            852,
+            558,
+            950,
+            829
+          ],
+          "label": "snowboard"
+        }
+      ],
+      "latency_sec": 2.20095897000283,
+      "raw_response": "```json\n[\n  {\"box_2d\": [852, 558, 950, 829], \"label\": \"snowboard\"}\n]\n```",
+      "labels_used": [
+        "snowboard",
+        "blender",
+        "microscope",
+        "sewing_machine",
+        "spatula"
+      ]
+    },
+    {
+      "image": "000000016344.jpg",
+      "detections": [
+        {
+          "box_2d": [
+            389,
+            429,
+            737,
+            663
+          ],
+          "label": "snowboard"
+        }
+      ],
+      "latency_sec": 1.8012339289998636,
+      "raw_response": "[{\"box_2d\": [389, 429, 737, 663], \"label\": \"snowboard\"}]",
+      "labels_used": [
+        "snowboard",
+        "blender",
+        "lawn_mower",
+        "musical_instrument",
+        "stapler_(stapling_machine)"
+      ]
+    },
+    {
+      "image": "000000182118.jpg",
+      "detections": [],
+      "latency_sec": 1.9084966561058536,
+      "raw_response": "[]",
+      "labels_used": [
+        "stapler_(stapling_machine)",
+        "lawn_mower",
+        "microscope",
+        "musical_instrument",
+        "spatula"
+      ]
+    },
+    {
+      "image": "000000530384.jpg",
+      "detections": [
+        {
+          "box_2d": [
+            450,
+            439,
+            521,
+            506
+          ],
+          "label": "blender"
+        }
+      ],
+      "latency_sec": 4.056123320013285,
+      "raw_response": "[\n  {\"box_2d\": [450, 439, 521, 506], \"label\": \"blender\"}\n]",
+      "labels_used": [
+        "blender",
+        "coffee_maker",
+        "lawn_mower",
+        "sewing_machine",
+        "spatula"
+      ]
+    },
+    {
+      "image": "000000082143.jpg",
+      "detections": [
+        {
+          "box_2d": [
+            33,
+            335,
+            230,
+            375
+          ],
+          "label": "snowboard"
+        },
+        {
+          "box_2d": [
+            190,
+            238,
+            320,
+            318
+          ],
+          "label": "snowboard"
+        }
+      ],
+      "latency_sec": 4.471825788030401,
+      "raw_response": "```json\n[\n  {\"box_2d\": [33, 335, 230, 375], \"label\": \"snowboard\"},\n  {\"box_2d\": [190, 238, 320, 318], \"label\": \"snowboard\"}\n]\n```",
+      "labels_used": [
+        "snowboard",
+        "coffee_maker",
+        "hair_dryer",
+        "sewing_machine",
+        "stapler_(stapling_machine)"
+      ]
+    },
+    {
+      "image": "000000284817.jpg",
+      "detections": [
+        {
+          "box_2d": [
+            483,
+            318,
+            579,
+            439
+          ],
+          "label": "spatula"
+        },
+        {
+          "box_2d": [
+            737,
+            359,
+            834,
+            421
+          ],
+          "label": "spatula"
+        }
+      ],
+      "latency_sec": 2.8594047450460494,
+      "raw_response": "[\n  {\"box_2d\": [483, 318, 579, 439], \"label\": \"spatula\"},\n  {\"box_2d\": [737, 359, 834, 421], \"label\": \"spatula\"}\n]",
+      "labels_used": [
+        "spatula",
+        "hair_dryer",
+        "microscope",
+        "musical_instrument",
+        "stapler_(stapling_machine)"
+      ]
+    },
+    {
+      "image": "000000518321.jpg",
+      "detections": [
+        {
+          "box_2d": [
+            66,
+            421,
+            191,
+            513
+          ],
+          "label": "coffee_maker"
+        }
+      ],
+      "latency_sec": 1.9850267269648612,
+      "raw_response": "[{\"box_2d\": [66, 421, 191, 513], \"label\": \"coffee_maker\"}]",
+      "labels_used": [
+        "coffee_maker",
+        "blender",
+        "lawn_mower",
+        "sewing_machine",
+        "spatula"
+      ]
+    },
+    {
+      "image": "000000452687.jpg",
+      "detections": [
+        {
+          "box_2d": [
+            188,
+            0,
+            892,
+            939
+          ],
+          "label": "snowboard"
+        }
+      ],
+      "latency_sec": 2.261396914953366,
+      "raw_response": "[\n  {\"box_2d\": [188, 0, 892, 939], \"label\": \"snowboard\"}\n]",
+      "labels_used": [
+        "snowboard",
+        "blender",
+        "coffee_maker",
+        "hair_dryer",
+        "stapler_(stapling_machine)"
+      ]
+    },
+    {
+      "image": "000000535355.jpg",
+      "detections": [
+        {
+          "box_2d": [
+            267,
+            44,
+            480,
+            137
+          ],
+          "label": "spatula"
+        }
+      ],
+      "latency_sec": 2.1287807599874213,
+      "raw_response": "```json\n[\n  {\"box_2d\": [267, 44, 480, 137], \"label\": \"spatula\"}\n]\n```",
+      "labels_used": [
+        "spatula",
+        "lawn_mower",
+        "musical_instrument",
+        "sewing_machine",
+        "stapler_(stapling_machine)"
+      ]
+    },
+    {
+      "image": "000000015062.jpg",
+      "detections": [
+        {
+          "box_2d": [
+            784,
+            539,
+            999,
+            860
+          ],
+          "label": "snowboard"
+        }
+      ],
+      "latency_sec": 1.7510475490707904,
+      "raw_response": "[{\"box_2d\": [784, 539, 999, 860], \"label\": \"snowboard\"}]",
+      "labels_used": [
+        "snowboard",
+        "coffee_maker",
+        "musical_instrument",
+        "sewing_machine",
+        "stapler_(stapling_machine)"
+      ]
+    },
+    {
+      "image": "000000568810.jpg",
+      "detections": [
+        {
+          "box_2d": [
+            0,
+            0,
+            992,
+            1000
+          ],
+          "label": "snowboard"
+        },
+        {
+          "box_2d": [
+            715,
+            712,
+            992,
+            1000
+          ],
+          "label": "snowboard"
+        }
+      ],
+      "latency_sec": 2.7179857989540324,
+      "raw_response": "```json\n[\n  {\"box_2d\": [0, 0, 992, 1000], \"label\": \"snowboard\"},\n  {\"box_2d\": [715, 712, 992, 1000], \"label\": \"snowboard\"}\n]\n```",
+      "labels_used": [
+        "snowboard",
+        "coffee_maker",
+        "lawn_mower",
+        "spatula",
+        "stapler_(stapling_machine)"
+      ]
+    },
+    {
+      "image": "000000435894.jpg",
+      "detections": [
+        {
+          "box_2d": [
+            420,
+            451,
+            831,
+            584
+          ],
+          "label": "snowboard"
+        }
+      ],
+      "latency_sec": 1.9018842730438337,
+      "raw_response": "[{\"box_2d\": [420, 451, 831, 584], \"label\": \"snowboard\"}]",
+      "labels_used": [
+        "snowboard",
+        "blender",
+        "coffee_maker",
+        "lawn_mower",
+        "stapler_(stapling_machine)"
+      ]
+    },
+    {
+      "image": "000000211905.jpg",
+      "detections": [
+        {
+          "box_2d": [
+            0,
+            109,
+            509,
+            260
+          ],
+          "label": "microscope"
+        }
+      ],
+      "latency_sec": 1.9934472889872268,
+      "raw_response": "[\n  {\"box_2d\": [0, 109, 509, 260], \"label\": \"microscope\"}\n]",
+      "labels_used": [
+        "microscope",
+        "stapler_(stapling_machine)",
+        "blender",
+        "hair_dryer",
+        "musical_instrument",
+        "sewing_machine"
+      ]
+    },
+    {
+      "image": "000000047873.jpg",
+      "detections": [
+        {
+          "box_2d": [
+            415,
+            309,
+            584,
+            532
+          ],
+          "label": "coffee_maker"
+        }
+      ],
+      "latency_sec": 2.2955894990591332,
+      "raw_response": "```json\n[\n  {\"box_2d\": [415, 309, 584, 532], \"label\": \"coffee_maker\"}\n]\n```",
+      "labels_used": [
+        "coffee_maker",
+        "hair_dryer",
+        "lawn_mower",
+        "musical_instrument",
+        "snowboard"
+      ]
+    },
+    {
+      "image": "000000573795.jpg",
+      "detections": [
+        {
+          "box_2d": [
+            87,
+            856,
+            960,
+            961
+          ],
+          "label": "snowboard"
+        },
+        {
+          "box_2d": [
+            503,
+            762,
+            574,
+            843
+          ],
+          "label": "snowboard"
+        }
+      ],
+      "latency_sec": 2.470244169002399,
+      "raw_response": "```json\n[\n  {\"box_2d\": [87, 856, 960, 961], \"label\": \"snowboard\"},\n  {\"box_2d\": [503, 762, 574, 843], \"label\": \"snowboard\"}\n]\n```",
+      "labels_used": [
+        "snowboard",
+        "blender",
+        "hair_dryer",
+        "microscope",
+        "stapler_(stapling_machine)"
+      ]
+    },
+    {
+      "image": "000000195525.jpg",
+      "detections": [
+        {
+          "box_2d": [
+            70,
+            506,
+            558,
+            831
+          ],
+          "label": "hair_dryer"
+        }
+      ],
+      "latency_sec": 1.8345585430506617,
+      "raw_response": "```json\n[\n  {\"box_2d\": [70, 506, 558, 831], \"label\": \"hair_dryer\"}\n]\n```",
+      "labels_used": [
+        "hair_dryer",
+        "coffee_maker",
+        "lawn_mower",
+        "musical_instrument",
+        "spatula"
+      ]
+    },
+    {
+      "image": "000000169646.jpg",
+      "detections": [
+        {
+          "box_2d": [
+            18,
+            599,
+            137,
+            680
+          ],
+          "label": "spatula"
+        },
+        {
+          "box_2d": [
+            14,
+            570,
+            214,
+            608
+          ],
+          "label": "spatula"
+        },
+        {
+          "box_2d": [
+            13,
+            679,
+            116,
+            762
+          ],
+          "label": "spatula"
+        },
+        {
+          "box_2d": [
+            174,
+            624,
+            281,
+            666
+          ],
+          "label": "spatula"
+        },
+        {
+          "box_2d": [
+            174,
+            570,
+            277,
+            600
+          ],
+          "label": "spatula"
+        },
+        {
+          "box_2d": [
+            198,
+            595,
+            303,
+            622
+          ],
+          "label": "spatula"
+        },
+        {
+          "box_2d": [
+            11,
+            313,
+            172,
+            350
+          ],
+          "label": "spatula"
+        },
+        {
+          "box_2d": [
+            11,
+            350,
+            150,
+            388
+          ],
+          "label": "spatula"
+        },
+        {
+          "box_2d": [
+            142,
+            358,
+            260,
+            393
+          ],
+          "label": "spatula"
+        },
+        {
+          "box_2d": [
+            11,
+            448,
+            80,
+            483
+          ],
+          "label": "spatula"
+        },
+        {
+          "box_2d": [
+            130,
+            257,
+            240,
+            290
+          ],
+          "label": "spatula"
+        }
+      ],
+      "latency_sec": 3.5015886939363554,
+      "raw_response": "[\n  {\"box_2d\": [18, 599, 137, 680], \"label\": \"spatula\"},\n  {\"box_2d\": [14, 570, 214, 608], \"label\": \"spatula\"},\n  {\"box_2d\": [13, 679, 116, 762], \"label\": \"spatula\"},\n  {\"box_2d\": [174, 624, 281, 666], \"label\": \"spatula\"},\n  {\"box_2d\": [174, 570, 277, 600], \"label\": \"spatula\"},\n  {\"box_2d\": [198, 595, 303, 622], \"label\": \"spatula\"},\n  {\"box_2d\": [11, 313, 172, 350], \"label\": \"spatula\"},\n  {\"box_2d\": [11, 350, 150, 388], \"label\": \"spatula\"},\n  {\"box_2d\": [142, 358, 260, 393], \"label\": \"spatula\"},\n  {\"box_2d\": [11, 448, 80, 483], \"label\": \"spatula\"},\n  {\"box_2d\": [130, 257, 240, 290], \"label\": \"spatula\"}\n]",
+      "labels_used": [
+        "spatula",
+        "coffee_maker",
+        "hair_dryer",
+        "musical_instrument",
+        "stapler_(stapling_machine)"
+      ]
+    },
+    {
+      "image": "000000533159.jpg",
+      "detections": [
+        {
+          "box_2d": [
+            531,
+            355,
+            638,
+            632
+          ],
+          "label": "snowboard"
+        }
+      ],
+      "latency_sec": 1.8077493300661445,
+      "raw_response": "```json\n[\n  {\"box_2d\": [531, 355, 638, 632], \"label\": \"snowboard\"}\n]\n```",
+      "labels_used": [
+        "snowboard",
+        "hair_dryer",
+        "lawn_mower",
+        "microscope",
+        "musical_instrument"
+      ]
+    },
+    {
+      "image": "000000254599.jpg",
+      "detections": [
+        {
+          "box_2d": [
+            202,
+            302,
+            258,
+            397
+          ],
+          "label": "snowboard"
+        }
+      ],
+      "latency_sec": 3.2964643980376422,
+      "raw_response": "```json\n[\n  {\"box_2d\": [202, 302, 258, 397], \"label\": \"snowboard\"}\n]\n```",
+      "labels_used": [
+        "snowboard",
+        "blender",
+        "coffee_maker",
+        "hair_dryer",
+        "spatula"
+      ]
+    },
+    {
+      "image": "000000491168.jpg",
+      "detections": [
+        {
+          "box_2d": [
+            245,
+            372,
+            396,
+            447
+          ],
+          "label": "snowboard"
+        }
+      ],
+      "latency_sec": 1.5447798180393875,
+      "raw_response": "[\n  {\"box_2d\": [245, 372, 396, 447], \"label\": \"snowboard\"}\n]",
+      "labels_used": [
+        "snowboard",
+        "coffee_maker",
+        "lawn_mower",
+        "microscope",
+        "sewing_machine"
+      ]
+    },
+    {
+      "image": "000000075863.jpg",
+      "detections": [
+        {
+          "box_2d": [
+            94,
+            95,
+            668,
+            230
+          ],
+          "label": "coffee_maker"
+        }
+      ],
+      "latency_sec": 2.127530998084694,
+      "raw_response": "```json\n[\n  {\"box_2d\": [94, 95, 668, 230], \"label\": \"coffee_maker\"}\n]\n```",
+      "labels_used": [
+        "coffee_maker",
+        "hair_dryer",
+        "lawn_mower",
+        "microscope",
+        "stapler_(stapling_machine)"
+      ]
+    },
+    {
+      "image": "000000394957.jpg",
+      "detections": [],
+      "latency_sec": 1.5685849339934066,
+      "raw_response": "[]",
+      "labels_used": [
+        "hair_dryer",
+        "coffee_maker",
+        "sewing_machine",
+        "snowboard",
+        "stapler_(stapling_machine)"
+      ]
+    },
+    {
+      "image": "000000329502.jpg",
+      "detections": [
+        {
+          "box_2d": [
+            136,
+            502,
+            940,
+            706
+          ],
+          "label": "snowboard"
+        },
+        {
+          "box_2d": [
+            0,
+            313,
+            203,
+            381
+          ],
+          "label": "musical_instrument"
+        }
+      ],
+      "latency_sec": 2.3273246100870892,
+      "raw_response": "```json\n[\n  {\"box_2d\": [136, 502, 940, 706], \"label\": \"snowboard\"},\n  {\"box_2d\": [0, 313, 203, 381], \"label\": \"musical_instrument\"}\n]\n```",
+      "labels_used": [
+        "snowboard",
+        "coffee_maker",
+        "musical_instrument",
+        "sewing_machine",
+        "spatula"
+      ]
+    },
+    {
+      "image": "000000028802.jpg",
+      "detections": [
+        {
+          "box_2d": [
+            431,
+            672,
+            537,
+            706
+          ],
+          "label": "blender"
+        }
+      ],
+      "latency_sec": 1.6813887889729813,
+      "raw_response": "```json\n[\n  {\"box_2d\": [431, 672, 537, 706], \"label\": \"blender\"}\n]\n```",
+      "labels_used": [
+        "blender",
+        "lawn_mower",
+        "musical_instrument",
+        "snowboard",
+        "stapler_(stapling_machine)"
+      ]
+    },
+    {
+      "image": "000000369575.jpg",
+      "detections": [
+        {
+          "box_2d": [
+            461,
+            461,
+            622,
+            574
+          ],
+          "label": "spatula"
+        },
+        {
+          "box_2d": [
+            672,
+            76,
+            737,
+            129
+          ],
+          "label": "lawn_mower"
+        }
+      ],
+      "latency_sec": 3.1125791920349,
+      "raw_response": "```json\n[\n  {\"box_2d\": [461, 461, 622, 574], \"label\": \"spatula\"},\n  {\"box_2d\": [672, 76, 737, 129], \"label\": \"lawn_mower\"}\n]\n```",
+      "labels_used": [
+        "spatula",
+        "hair_dryer",
+        "lawn_mower",
+        "sewing_machine",
+        "snowboard"
+      ]
+    },
+    {
+      "image": "000000535889.jpg",
+      "detections": [
+        {
+          "box_2d": [
+            647,
+            932,
+            775,
+            984
+          ],
+          "label": "coffee_maker"
+        }
+      ],
+      "latency_sec": 3.2351353770354763,
+      "raw_response": "```json\n[\n  {\"box_2d\": [647, 932, 775, 984], \"label\": \"coffee_maker\"}\n]\n```",
+      "labels_used": [
+        "coffee_maker",
+        "hair_dryer",
+        "microscope",
+        "snowboard",
+        "stapler_(stapling_machine)"
+      ]
+    },
+    {
+      "image": "000000538092.jpg",
+      "detections": [
+        {
+          "box_2d": [
+            0,
+            0,
+            997,
+            335
+          ],
+          "label": "coffee_maker"
+        }
+      ],
+      "latency_sec": 2.2925878260284662,
+      "raw_response": "[\n  {\"box_2d\": [0, 0, 997, 335], \"label\": \"coffee_maker\"}\n]",
+      "labels_used": [
+        "coffee_maker",
+        "hair_dryer",
+        "musical_instrument",
+        "sewing_machine",
+        "snowboard"
+      ]
+    },
+    {
+      "image": "000000363581.jpg",
+      "detections": [
+        {
+          "box_2d": [
+            587,
+            192,
+            756,
+            626
+          ],
+          "label": "spatula"
+        }
+      ],
+      "latency_sec": 2.049586088047363,
+      "raw_response": "```json\n[\n  {\"box_2d\": [587, 192, 756, 626], \"label\": \"spatula\"}\n]\n```",
+      "labels_used": [
+        "spatula",
+        "hair_dryer",
+        "lawn_mower",
+        "microscope",
+        "musical_instrument"
+      ]
+    },
+    {
+      "image": "000000294360.jpg",
+      "detections": [
+        {
+          "box_2d": [
+            584,
+            185,
+            755,
+            506
+          ],
+          "label": "snowboard"
+        }
+      ],
+      "latency_sec": 1.6980598269728944,
+      "raw_response": "```json\n[\n  {\"box_2d\": [584, 185, 755, 506], \"label\": \"snowboard\"}\n]\n```",
+      "labels_used": [
+        "snowboard",
+        "hair_dryer",
+        "musical_instrument",
+        "sewing_machine",
+        "spatula"
+      ]
+    },
+    {
+      "image": "000000209027.jpg",
+      "detections": [
+        {
+          "box_2d": [
+            336,
+            541,
+            755,
+            796
+          ],
+          "label": "hair_dryer"
+        }
+      ],
+      "latency_sec": 1.835361496079713,
+      "raw_response": "```json\n[\n  {\"box_2d\": [336, 541, 755, 796], \"label\": \"hair_dryer\"}\n]\n```",
+      "labels_used": [
+        "hair_dryer",
+        "blender",
+        "musical_instrument",
+        "snowboard",
+        "stapler_(stapling_machine)"
+      ]
+    },
+    {
+      "image": "000000451532.jpg",
+      "detections": [
+        {
+          "box_2d": [
+            787,
+            469,
+            903,
+            532
+          ],
+          "label": "snowboard"
+        },
+        {
+          "box_2d": [
+            792,
+            299,
+            955,
+            396
+          ],
+          "label": "snowboard"
+        }
+      ],
+      "latency_sec": 1.9574768260354176,
+      "raw_response": "```json\n[\n  {\"box_2d\": [787, 469, 903, 532], \"label\": \"snowboard\"},\n  {\"box_2d\": [792, 299, 955, 396], \"label\": \"snowboard\"}\n]\n```",
+      "labels_used": [
+        "snowboard",
+        "blender",
+        "hair_dryer",
+        "microscope",
+        "musical_instrument"
+      ]
+    },
+    {
+      "image": "000000505636.jpg",
+      "detections": [
+        {
+          "box_2d": [
+            37,
+            166,
+            523,
+            699
+          ],
+          "label": "snowboard"
+        }
+      ],
+      "latency_sec": 1.8639530730433762,
+      "raw_response": "[{\"box_2d\": [37, 166, 523, 699], \"label\": \"snowboard\"}]",
+      "labels_used": [
+        "snowboard",
+        "blender",
+        "hair_dryer",
+        "musical_instrument",
+        "stapler_(stapling_machine)"
+      ]
+    },
+    {
+      "image": "000000545944.jpg",
+      "detections": [
+        {
+          "box_2d": [
+            198,
+            348,
+            337,
+            440
+          ],
+          "label": "hair_dryer"
+        }
+      ],
+      "latency_sec": 2.30564154102467,
+      "raw_response": "[\n  {\"box_2d\": [198, 348, 337, 440], \"label\": \"hair_dryer\"}\n]",
+      "labels_used": [
+        "hair_dryer",
+        "lawn_mower",
+        "snowboard",
+        "spatula",
+        "stapler_(stapling_machine)"
+      ]
+    },
+    {
+      "image": "000000252525.jpg",
+      "detections": [
+        {
+          "box_2d": [
+            360,
+            782,
+            474,
+            850
+          ],
+          "label": "coffee_maker"
+        }
+      ],
+      "latency_sec": 1.96821846999228,
+      "raw_response": "[\n  {\"box_2d\": [360, 782, 474, 850], \"label\": \"coffee_maker\"}\n]",
+      "labels_used": [
+        "coffee_maker",
+        "blender",
+        "hair_dryer",
+        "spatula",
+        "stapler_(stapling_machine)"
+      ]
+    },
+    {
+      "image": "000000228659.jpg",
+      "detections": [
+        {
+          "box_2d": [
+            725,
+            654,
+            768,
+            984
+          ],
+          "label": "snowboard"
+        },
+        {
+          "box_2d": [
+            750,
+            129,
+            794,
+            401
+          ],
+          "label": "snowboard"
+        },
+        {
+          "box_2d": [
+            664,
+            517,
+            705,
+            742
+          ],
+          "label": "snowboard"
+        }
+      ],
+      "latency_sec": 2.372407870949246,
+      "raw_response": "```json\n[\n  {\"box_2d\": [725, 654, 768, 984], \"label\": \"snowboard\"},\n  {\"box_2d\": [750, 129, 794, 401], \"label\": \"snowboard\"},\n  {\"box_2d\": [664, 517, 705, 742], \"label\": \"snowboard\"}\n]\n```",
+      "labels_used": [
+        "snowboard",
+        "musical_instrument",
+        "sewing_machine",
+        "spatula",
+        "stapler_(stapling_machine)"
+      ]
+    },
+    {
+      "image": "000000263647.jpg",
+      "detections": [
+        {
+          "box_2d": [
+            136,
+            482,
+            464,
+            925
+          ],
+          "label": "snowboard"
+        }
+      ],
+      "latency_sec": 1.667369587928988,
+      "raw_response": "```json\n[\n  {\"box_2d\": [136, 482, 464, 925], \"label\": \"snowboard\"}\n]\n```",
+      "labels_used": [
+        "snowboard",
+        "lawn_mower",
+        "microscope",
+        "musical_instrument",
+        "spatula"
+      ]
+    },
+    {
+      "image": "000000370899.jpg",
+      "detections": [
+        {
+          "box_2d": [
+            693,
+            425,
+            748,
+            478
+          ],
+          "label": "sewing_machine"
+        }
+      ],
+      "latency_sec": 3.9405590820824727,
+      "raw_response": "```json\n[\n  {\"box_2d\": [693, 425, 748, 478], \"label\": \"sewing_machine\"}\n]\n```",
+      "labels_used": [
+        "sewing_machine",
+        "lawn_mower",
+        "musical_instrument",
+        "snowboard",
+        "spatula"
+      ]
+    },
+    {
+      "image": "000000323592.jpg",
+      "detections": [
+        {
+          "box_2d": [
+            188,
+            258,
+            345,
+            386
+          ],
+          "label": "spatula"
+        },
+        {
+          "box_2d": [
+            198,
+            258,
+            345,
+            386
+          ],
+          "label": "spatula"
+        }
+      ],
+      "latency_sec": 2.2049024699954316,
+      "raw_response": "```json\n[\n  {\"box_2d\": [188, 258, 345, 386], \"label\": \"spatula\"},\n  {\"box_2d\": [198, 258, 345, 386], \"label\": \"spatula\"}\n]\n```",
+      "labels_used": [
+        "spatula",
+        "lawn_mower",
+        "sewing_machine",
+        "snowboard",
+        "stapler_(stapling_machine)"
+      ]
+    },
+    {
+      "image": "000000561168.jpg",
+      "detections": [
+        {
+          "box_2d": [
+            685,
+            858,
+            749,
+            907
+          ],
+          "label": "spatula"
+        }
+      ],
+      "latency_sec": 2.590577465016395,
+      "raw_response": "```json\n[\n  {\"box_2d\": [685, 858, 749, 907], \"label\": \"spatula\"}\n]\n```",
+      "labels_used": [
+        "spatula",
+        "blender",
+        "hair_dryer",
+        "sewing_machine",
+        "stapler_(stapling_machine)"
+      ]
+    },
+    {
+      "image": "000000162902.jpg",
+      "detections": [
+        {
+          "box_2d": [
+            352,
+            194,
+            894,
+            258
+          ],
+          "label": "snowboard"
+        },
+        {
+          "box_2d": [
+            352,
+            350,
+            930,
+            446
+          ],
+          "label": "snowboard"
+        },
+        {
+          "box_2d": [
+            400,
+            642,
+            955,
+            736
+          ],
+          "label": "snowboard"
+        },
+        {
+          "box_2d": [
+            414,
+            520,
+            958,
+            620
+          ],
+          "label": "snowboard"
+        },
+        {
+          "box_2d": [
+            426,
+            804,
+            617,
+            852
+          ],
+          "label": "snowboard"
+        },
+        {
+          "box_2d": [
+            486,
+            966,
+            517,
+            984
+          ],
+          "label": "snowboard"
+        }
+      ],
+      "latency_sec": 2.8400456560775638,
+      "raw_response": "```json\n[\n  {\"box_2d\": [352, 194, 894, 258], \"label\": \"snowboard\"},\n  {\"box_2d\": [352, 350, 930, 446], \"label\": \"snowboard\"},\n  {\"box_2d\": [400, 642, 955, 736], \"label\": \"snowboard\"},\n  {\"box_2d\": [414, 520, 958, 620], \"label\": \"snowboard\"},\n  {\"box_2d\": [426, 804, 617, 852], \"label\": \"snowboard\"},\n  {\"box_2d\": [486, 966, 517, 984], \"label\": \"snowboard\"}\n]\n```",
+      "labels_used": [
+        "snowboard",
+        "blender",
+        "musical_instrument",
+        "spatula",
+        "stapler_(stapling_machine)"
+      ]
+    },
+    {
+      "image": "000000472376.jpg",
+      "detections": [
+        {
+          "box_2d": [
+            334,
+            372,
+            663,
+            476
+          ],
+          "label": "musical_instrument"
+        },
+        {
+          "box_2d": [
+            515,
+            532,
+            825,
+            616
+          ],
+          "label": "musical_instrument"
+        },
+        {
+          "box_2d": [
+            791,
+            552,
+            966,
+            731
+          ],
+          "label": "musical_instrument"
+        }
+      ],
+      "latency_sec": 4.730770254042,
+      "raw_response": "```json\n[\n  {\"box_2d\": [334, 372, 663, 476], \"label\": \"musical_instrument\"},\n  {\"box_2d\": [515, 532, 825, 616], \"label\": \"musical_instrument\"},\n  {\"box_2d\": [791, 552, 966, 731], \"label\": \"musical_instrument\"}\n]\n```",
+      "labels_used": [
+        "musical_instrument",
+        "blender",
+        "hair_dryer",
+        "sewing_machine",
+        "stapler_(stapling_machine)"
+      ]
+    },
+    {
+      "image": "000000273607.jpg",
+      "detections": [
+        {
+          "box_2d": [
+            44,
+            46,
+            321,
+            194
+          ],
+          "label": "blender"
+        }
+      ],
+      "latency_sec": 1.8239130859728903,
+      "raw_response": "```json\n[\n  {\"box_2d\": [44, 46, 321, 194], \"label\": \"blender\"}\n]\n```",
+      "labels_used": [
+        "blender",
+        "coffee_maker",
+        "microscope",
+        "sewing_machine",
+        "snowboard"
+      ]
+    },
+    {
+      "image": "000000550481.jpg",
+      "detections": [
+        {
+          "box_2d": [
+            443,
+            442,
+            715,
+            580
+          ],
+          "label": "microscope"
+        }
+      ],
+      "latency_sec": 2.23078888701275,
+      "raw_response": "```json\n[\n  {\"box_2d\": [443, 442, 715, 580], \"label\": \"microscope\"}\n]\n```",
+      "labels_used": [
+        "microscope",
+        "lawn_mower",
+        "snowboard",
+        "spatula",
+        "stapler_(stapling_machine)"
+      ]
+    },
+    {
+      "image": "000000511430.jpg",
+      "detections": [
+        {
+          "box_2d": [
+            0,
+            0,
+            856,
+            997
+          ],
+          "label": "blender"
+        }
+      ],
+      "latency_sec": 3.1781418269965798,
+      "raw_response": "```json\n[\n  {\"box_2d\": [0, 0, 856, 997], \"label\": \"blender\"}\n]\n```",
+      "labels_used": [
+        "blender",
+        "hair_dryer",
+        "sewing_machine",
+        "spatula",
+        "stapler_(stapling_machine)"
+      ]
+    },
+    {
+      "image": "000000320875.jpg",
+      "detections": [
+        {
+          "box_2d": [
+            538,
+            166,
+            866,
+            285
+          ],
+          "label": "blender"
+        }
+      ],
+      "latency_sec": 1.8607083350652829,
+      "raw_response": "```json\n[\n  {\"box_2d\": [538, 166, 866, 285], \"label\": \"blender\"}\n]\n```",
+      "labels_used": [
+        "blender",
+        "hair_dryer",
+        "lawn_mower",
+        "musical_instrument",
+        "sewing_machine"
+      ]
+    },
+    {
+      "image": "000000102757.jpg",
+      "detections": [
+        {
+          "box_2d": [
+            342,
+            804,
+            558,
+            891
+          ],
+          "label": "blender"
+        }
+      ],
+      "latency_sec": 1.854215656989254,
+      "raw_response": "[{\"box_2d\": [342, 804, 558, 891], \"label\": \"blender\"}]",
+      "labels_used": [
+        "blender",
+        "coffee_maker",
+        "musical_instrument",
+        "sewing_machine",
+        "stapler_(stapling_machine)"
+      ]
+    },
+    {
+      "image": "000000107167.jpg",
+      "detections": [
+        {
+          "box_2d": [
+            140,
+            219,
+            563,
+            715
+          ],
+          "label": "blender"
+        }
+      ],
+      "latency_sec": 1.3429825510829687,
+      "raw_response": "```json\n[\n  {\"box_2d\": [140, 219, 563, 715], \"label\": \"blender\"}\n]\n```",
+      "labels_used": [
+        "blender",
+        "hair_dryer",
+        "musical_instrument",
+        "sewing_machine",
+        "stapler_(stapling_machine)"
+      ]
+    },
+    {
+      "image": "000000037035.jpg",
+      "detections": [
+        {
+          "box_2d": [
+            471,
+            804,
+            583,
+            882
+          ],
+          "label": "blender"
+        }
+      ],
+      "latency_sec": 1.995866175973788,
+      "raw_response": "```json\n[\n  {\"box_2d\": [471, 804, 583, 882], \"label\": \"blender\"}\n]\n```",
+      "labels_used": [
+        "blender",
+        "hair_dryer",
+        "microscope",
+        "snowboard",
+        "stapler_(stapling_machine)"
+      ]
+    },
+    {
+      "image": "000000349695.jpg",
+      "detections": [
+        {
+          "box_2d": [
+            565,
+            459,
+            619,
+            543
+          ],
+          "label": "coffee_maker"
+        }
+      ],
+      "latency_sec": 2.927010081941262,
+      "raw_response": "```json\n[\n  {\"box_2d\": [565, 459, 619, 543], \"label\": \"coffee_maker\"}\n]\n```",
+      "labels_used": [
+        "coffee_maker",
+        "blender",
+        "hair_dryer",
+        "sewing_machine",
+        "snowboard"
+      ]
+    },
+    {
+      "image": "000000574537.jpg",
+      "detections": [
+        {
+          "box_2d": [
+            662,
+            245,
+            975,
+            600
+          ],
+          "label": "snowboard"
+        }
+      ],
+      "latency_sec": 1.8972420979989693,
+      "raw_response": "[{\"box_2d\": [662, 245, 975, 600], \"label\": \"snowboard\"}]",
+      "labels_used": [
+        "snowboard",
+        "blender",
+        "coffee_maker",
+        "hair_dryer",
+        "stapler_(stapling_machine)"
+      ]
+    },
+    {
+      "image": "000000031113.jpg",
+      "detections": [
+        {
+          "box_2d": [
+            402,
+            375,
+            502,
+            458
+          ],
+          "label": "hair_dryer"
+        }
+      ],
+      "latency_sec": 1.8179835549090058,
+      "raw_response": "[{\"box_2d\": [402, 375, 502, 458], \"label\": \"hair_dryer\"}]",
+      "labels_used": [
+        "hair_dryer",
+        "coffee_maker",
+        "lawn_mower",
+        "microscope",
+        "sewing_machine"
+      ]
+    },
+    {
+      "image": "000000074103.jpg",
+      "detections": [
+        {
+          "box_2d": [
+            206,
+            204,
+            676,
+            755
+          ],
+          "label": "snowboard"
+        }
+      ],
+      "latency_sec": 3.089305088040419,
+      "raw_response": "```json\n[\n  {\"box_2d\": [206, 204, 676, 755], \"label\": \"snowboard\"}\n]\n```",
+      "labels_used": [
+        "snowboard",
+        "blender",
+        "microscope",
+        "musical_instrument",
+        "spatula"
+      ]
+    },
+    {
+      "image": "000000141017.jpg",
+      "detections": [
+        {
+          "box_2d": [
+            390,
+            401,
+            480,
+            442
+          ],
+          "label": "coffee_maker"
+        }
+      ],
+      "latency_sec": 2.512748969020322,
+      "raw_response": "[{\"box_2d\": [390, 401, 480, 442], \"label\": \"coffee_maker\"}]",
+      "labels_used": [
+        "blender",
+        "coffee_maker",
+        "microscope",
+        "musical_instrument",
+        "snowboard"
+      ]
+    },
+    {
+      "image": "000000409624.jpg",
+      "detections": [
+        {
+          "box_2d": [
+            824,
+            40,
+            955,
+            661
+          ],
+          "label": "snowboard"
+        }
+      ],
+      "latency_sec": 2.0469532649731264,
+      "raw_response": "[{\"box_2d\": [824, 40, 955, 661], \"label\": \"snowboard\"}]",
+      "labels_used": [
+        "snowboard",
+        "coffee_maker",
+        "hair_dryer",
+        "microscope",
+        "stapler_(stapling_machine)"
+      ]
+    },
+    {
+      "image": "000000040426.jpg",
+      "detections": [
+        {
+          "box_2d": [
+            0,
+            0,
+            750,
+            529
+          ],
+          "label": "blender"
+        }
+      ],
+      "latency_sec": 5.722822048002854,
+      "raw_response": "```json\n[\n  {\"box_2d\": [0, 0, 750, 529], \"label\": \"blender\"}\n]\n```",
+      "labels_used": [
+        "blender",
+        "hair_dryer",
+        "microscope",
+        "sewing_machine",
+        "spatula"
+      ]
+    },
+    {
+      "image": "000000078060.jpg",
+      "detections": [
+        {
+          "box_2d": [
+            562,
+            53,
+            642,
+            153
+          ],
+          "label": "snowboard"
+        }
+      ],
+      "latency_sec": 5.661879147985019,
+      "raw_response": "[\n  {\"box_2d\": [562, 53, 642, 153], \"label\": \"snowboard\"}\n]",
+      "labels_used": [
+        "snowboard",
+        "hair_dryer",
+        "lawn_mower",
+        "musical_instrument",
+        "sewing_machine"
+      ]
+    },
+    {
+      "image": "000000197807.jpg",
+      "detections": [
+        {
+          "box_2d": [
+            128,
+            171,
+            915,
+            344
+          ],
+          "label": "snowboard"
+        }
+      ],
+      "latency_sec": 2.160244560102001,
+      "raw_response": "```json\n[\n  {\"box_2d\": [128, 171, 915, 344], \"label\": \"snowboard\"}\n]\n```",
+      "labels_used": [
+        "snowboard",
+        "blender",
+        "coffee_maker",
+        "sewing_machine",
+        "stapler_(stapling_machine)"
+      ]
+    },
+    {
+      "image": "000000460339.jpg",
+      "detections": [
+        {
+          "box_2d": [
+            183,
+            192,
+            297,
+            762
+          ],
+          "label": "snowboard"
+        }
+      ],
+      "latency_sec": 2.8144572959281504,
+      "raw_response": "```json\n[\n  {\"box_2d\": [183, 192, 297, 762], \"label\": \"snowboard\"}\n]\n```",
+      "labels_used": [
+        "snowboard",
+        "blender",
+        "coffee_maker",
+        "microscope",
+        "stapler_(stapling_machine)"
+      ]
+    },
+    {
+      "image": "000000423116.jpg",
+      "detections": [
+        {
+          "box_2d": [
+            108,
+            14,
+            181,
+            75
+          ],
+          "label": "spatula"
+        }
+      ],
+      "latency_sec": 2.7567655800376087,
+      "raw_response": "[\n  {\"box_2d\": [108, 14, 181, 75], \"label\": \"spatula\"}\n]",
+      "labels_used": [
+        "spatula",
+        "coffee_maker",
+        "lawn_mower",
+        "musical_instrument",
+        "snowboard"
+      ]
+    },
+    {
+      "image": "000000102630.jpg",
+      "detections": [
+        {
+          "box_2d": [
+            433,
+            391,
+            504,
+            442
+          ],
+          "label": "snowboard"
+        }
+      ],
+      "latency_sec": 2.5700880710501224,
+      "raw_response": "[{\"box_2d\": [433, 391, 504, 442], \"label\": \"snowboard\"}]",
+      "labels_used": [
+        "snowboard",
+        "coffee_maker",
+        "lawn_mower",
+        "musical_instrument",
+        "stapler_(stapling_machine)"
+      ]
+    },
+    {
+      "image": "000000029875.jpg",
+      "detections": [],
+      "latency_sec": 5.877991886925884,
+      "raw_response": "```json\n[\n  {\"box_2d\": [30, 39, 90, 100], \"spatula\"}\n]\n```",
+      "labels_used": [
+        "spatula",
+        "hair_dryer",
+        "lawn_mower",
+        "musical_instrument",
+        "snowboard"
+      ]
+    },
+    {
+      "image": "000000273371.jpg",
+      "detections": [
+        {
+          "box_2d": [
+            447,
+            696,
+            617,
+            856
+          ],
+          "label": "coffee_maker"
+        }
+      ],
+      "latency_sec": 1.982924729003571,
+      "raw_response": "```json\n[\n  {\"box_2d\": [447, 696, 617, 856], \"label\": \"coffee_maker\"}\n]\n```",
+      "labels_used": [
+        "coffee_maker",
+        "hair_dryer",
+        "sewing_machine",
+        "snowboard",
+        "spatula"
+      ]
+    },
+    {
+      "image": "000000065484.jpg",
+      "detections": [
+        {
+          "box_2d": [
+            351,
+            181,
+            495,
+            333
+          ],
+          "label": "spatula"
+        }
+      ],
+      "latency_sec": 3.9757896510418504,
+      "raw_response": "```json\n[\n  {\"box_2d\": [351, 181, 495, 333], \"label\": \"spatula\"}\n]\n```",
+      "labels_used": [
+        "spatula",
+        "blender",
+        "coffee_maker",
+        "hair_dryer",
+        "stapler_(stapling_machine)"
+      ]
+    },
+    {
+      "image": "000000495681.jpg",
+      "detections": [
+        {
+          "box_2d": [
+            0,
+            440,
+            137,
+            545
+          ],
+          "label": "coffee_maker"
+        }
+      ],
+      "latency_sec": 4.210117861977778,
+      "raw_response": "```json\n[\n  {\"box_2d\": [0, 440, 137, 545], \"label\": \"coffee_maker\"}\n]\n```",
+      "labels_used": [
+        "coffee_maker",
+        "blender",
+        "sewing_machine",
+        "snowboard",
+        "spatula"
+      ]
+    }
+  ],
+  "summary": {
+    "wall_time_sec": 257.22479246999137,
+    "total_latency_sec": 256.1114566222532,
+    "avg_latency_sec": 2.5869844103257895
+  }
+}

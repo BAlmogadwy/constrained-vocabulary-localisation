@@ -1,0 +1,30 @@
+{
+  "model": "gemma-3-12b-it",
+  "strategy": "iterative",
+  "image": "/home/maxim/PycharmProjects/zero-shot-detection-benchmark/data/subsets/lvis_v1_val_unseen/images/000000550481.jpg",
+  "labels": [
+    "microscope",
+    "lawn_mower",
+    "snowboard",
+    "spatula",
+    "stapler_(stapling_machine)"
+  ],
+  "detections": [
+    {
+      "box_2d": [
+        438,
+        351,
+        478,
+        411
+      ],
+      "label": "microscope"
+    }
+  ],
+  "latency_sec": 18.05464383494109,
+  "raw_response": {
+    "identification": "microscope",
+    "localization": {
+      "microscope": "```json\n[{\"box_2d\":[438,351,478,411],\"label\":\"microscope\"}]\n```"
+    }
+  }
+}

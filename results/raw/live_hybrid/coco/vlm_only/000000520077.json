@@ -1,0 +1,208 @@
+{
+ "image": "000000520077.jpg",
+ "model": "qwen/qwen3-vl-235b-a22b-instruct",
+ "labels": [
+  "book",
+  "clock",
+  "hair drier",
+  "sink",
+  "toaster",
+  "toothbrush",
+  "vase"
+ ],
+ "detections": [
+  {
+   "box_2d": [
+    121.6,
+    38.003,
+    440.96,
+    77.287
+   ],
+   "label": "book",
+   "score": 0.99
+  },
+  {
+   "box_2d": [
+    121.6,
+    64.05,
+    440.96,
+    102.48
+   ],
+   "label": "book",
+   "score": 0.99
+  },
+  {
+   "box_2d": [
+    121.6,
+    90.524,
+    440.96,
+    128.1
+   ],
+   "label": "book",
+   "score": 0.99
+  },
+  {
+   "box_2d": [
+    121.6,
+    116.998,
+    440.96,
+    154.574
+   ],
+   "label": "book",
+   "score": 0.99
+  },
+  {
+   "box_2d": [
+    121.6,
+    143.472,
+    440.96,
+    181.048
+   ],
+   "label": "book",
+   "score": 0.99
+  },
+  {
+   "box_2d": [
+    121.6,
+    169.946,
+    440.96,
+    207.522
+   ],
+   "label": "book",
+   "score": 0.99
+  },
+  {
+   "box_2d": [
+    121.6,
+    196.42,
+    440.96,
+    233.996
+   ],
+   "label": "book",
+   "score": 0.99
+  },
+  {
+   "box_2d": [
+    121.6,
+    222.894,
+    440.96,
+    260.47
+   ],
+   "label": "book",
+   "score": 0.99
+  },
+  {
+   "box_2d": [
+    121.6,
+    249.368,
+    440.96,
+    286.944
+   ],
+   "label": "book",
+   "score": 0.99
+  },
+  {
+   "box_2d": [
+    121.6,
+    275.842,
+    440.96,
+    313.418
+   ],
+   "label": "book",
+   "score": 0.99
+  },
+  {
+   "box_2d": [
+    121.6,
+    302.316,
+    440.96,
+    339.892
+   ],
+   "label": "book",
+   "score": 0.99
+  },
+  {
+   "box_2d": [
+    121.6,
+    328.79,
+    440.96,
+    366.366
+   ],
+   "label": "book",
+   "score": 0.99
+  },
+  {
+   "box_2d": [
+    432.0,
+    266.448,
+    586.88,
+    408.639
+   ],
+   "label": "book",
+   "score": 0.99
+  },
+  {
+   "box_2d": [
+    432.0,
+    0.0,
+    505.6,
+    184.037
+   ],
+   "label": "book",
+   "score": 0.99
+  }
+ ],
+ "latency_sec": 12.2603853999899,
+ "usage": {
+  "prompt_tokens": 352,
+  "completion_tokens": 592,
+  "total_tokens": 944
+ },
+ "raw_response": {
+  "id": "gen-1783414787-zSy0KhnVq1KbpzFgSy5C",
+  "object": "chat.completion",
+  "created": 1783414787,
+  "model": "qwen/qwen3-vl-235b-a22b-instruct",
+  "provider": "Venice",
+  "system_fingerprint": null,
+  "service_tier": null,
+  "choices": [
+   {
+    "index": 0,
+    "logprobs": null,
+    "finish_reason": "stop",
+    "native_finish_reason": "stop",
+    "message": {
+     "role": "assistant",
+     "content": "```json\n[\n\t{\"bbox_2d\": [190, 89, 689, 181], \"label\": \"book\", \"confidence\": 0.99},\n\t{\"bbox_2d\": [190, 150, 689, 240], \"label\": \"book\", \"confidence\": 0.99},\n\t{\"bbox_2d\": [190, 212, 689, 300], \"label\": \"book\", \"confidence\": 0.99},\n\t{\"bbox_2d\": [190, 274, 689, 362], \"label\": \"book\", \"confidence\": 0.99},\n\t{\"bbox_2d\": [190, 336, 689, 424], \"label\": \"book\", \"confidence\": 0.99},\n\t{\"bbox_2d\": [190, 398, 689, 486], \"label\": \"book\", \"confidence\": 0.99},\n\t{\"bbox_2d\": [190, 460, 689, 548], \"label\": \"book\", \"confidence\": 0.99},\n\t{\"bbox_2d\": [190, 522, 689, 610], \"label\": \"book\", \"confidence\": 0.99},\n\t{\"bbox_2d\": [190, 584, 689, 672], \"label\": \"book\", \"confidence\": 0.99},\n\t{\"bbox_2d\": [190, 646, 689, 734], \"label\": \"book\", \"confidence\": 0.99},\n\t{\"bbox_2d\": [190, 708, 689, 796], \"label\": \"book\", \"confidence\": 0.99},\n\t{\"bbox_2d\": [190, 770, 689, 858], \"label\": \"book\", \"confidence\": 0.99},\n\t{\"bbox_2d\": [675, 624, 917, 957], \"label\": \"book\", \"confidence\": 0.99},\n\t{\"bbox_2d\": [675, 0, 790, 431], \"label\": \"book\", \"confidence\": 0.99}\n]\n```",
+     "refusal": null,
+     "reasoning": null
+    }
+   }
+  ],
+  "usage": {
+   "prompt_tokens": 352,
+   "completion_tokens": 592,
+   "total_tokens": 944,
+   "cost": 0.00119696,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 16,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00119696,
+    "upstream_inference_prompt_cost": 7.216e-05,
+    "upstream_inference_completions_cost": 0.0011248
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   }
+  }
+ },
+ "ts": "2026-07-07T08:59:57.778775+00:00"
+}

@@ -1,0 +1,293 @@
+{
+  "model": "Qwen3-VL-8B-Instruct",
+  "strategy": "single_query",
+  "image": "/home/maxim/PycharmProjects/zero-shot-detection-benchmark/data/raw/coco2017/val2017/000000153529.jpg",
+  "labels": [
+    "microwave",
+    "oven",
+    "toaster",
+    "sink",
+    "refrigerator",
+    "book",
+    "clock",
+    "vase",
+    "scissors",
+    "teddy bear",
+    "hair drier",
+    "toothbrush"
+  ],
+  "detections": [
+    {
+      "box_2d": [
+        597.0,
+        73.0,
+        887.0,
+        908.0
+      ],
+      "label": "person"
+    },
+    {
+      "box_2d": [
+        395.0,
+        144.0,
+        500.0,
+        398.0
+      ],
+      "label": "person"
+    },
+    {
+      "box_2d": [
+        273.0,
+        127.0,
+        405.0,
+        438.0
+      ],
+      "label": "person"
+    },
+    {
+      "box_2d": [
+        244.0,
+        172.0,
+        305.0,
+        408.0
+      ],
+      "label": "person"
+    },
+    {
+      "box_2d": [
+        0.0,
+        158.0,
+        120.0,
+        638.0
+      ],
+      "label": "person"
+    },
+    {
+      "box_2d": [
+        334.0,
+        638.0,
+        595.0,
+        991.0
+      ],
+      "label": "luggage"
+    },
+    {
+      "box_2d": [
+        468.0,
+        293.0,
+        580.0,
+        412.0
+      ],
+      "label": "luggage"
+    },
+    {
+      "box_2d": [
+        153.0,
+        398.0,
+        273.0,
+        462.0
+      ],
+      "label": "luggage"
+    },
+    {
+      "box_2d": [
+        210.0,
+        372.0,
+        305.0,
+        444.0
+      ],
+      "label": "luggage"
+    },
+    {
+      "box_2d": [
+        153.0,
+        672.0,
+        347.0,
+        888.0
+      ],
+      "label": "luggage"
+    },
+    {
+      "box_2d": [
+        305.0,
+        552.0,
+        355.0,
+        738.0
+      ],
+      "label": "luggage"
+    },
+    {
+      "box_2d": [
+        347.0,
+        338.0,
+        370.0,
+        412.0
+      ],
+      "label": "luggage"
+    },
+    {
+      "box_2d": [
+        353.0,
+        438.0,
+        613.0,
+        693.0
+      ],
+      "label": "luggage"
+    },
+    {
+      "box_2d": [
+        0.0,
+        252.0,
+        127.0,
+        438.0
+      ],
+      "label": "handbag"
+    },
+    {
+      "box_2d": [
+        233.0,
+        248.0,
+        273.0,
+        312.0
+      ],
+      "label": "handbag"
+    },
+    {
+      "box_2d": [
+        273.0,
+        172.0,
+        305.0,
+        222.0
+      ],
+      "label": "handbag"
+    },
+    {
+      "box_2d": [
+        620.0,
+        402.0,
+        637.0,
+        462.0
+      ],
+      "label": "handbag"
+    },
+    {
+      "box_2d": [
+        353.0,
+        438.0,
+        613.0,
+        693.0
+      ],
+      "label": "handbag"
+    },
+    {
+      "box_2d": [
+        153.0,
+        672.0,
+        347.0,
+        888.0
+      ],
+      "label": "handbag"
+    },
+    {
+      "box_2d": [
+        305.0,
+        552.0,
+        355.0,
+        738.0
+      ],
+      "label": "handbag"
+    },
+    {
+      "box_2d": [
+        347.0,
+        338.0,
+        370.0,
+        412.0
+      ],
+      "label": "handbag"
+    },
+    {
+      "box_2d": [
+        210.0,
+        372.0,
+        305.0,
+        444.0
+      ],
+      "label": "handbag"
+    },
+    {
+      "box_2d": [
+        153.0,
+        398.0,
+        273.0,
+        462.0
+      ],
+      "label": "handbag"
+    },
+    {
+      "box_2d": [
+        468.0,
+        293.0,
+        580.0,
+        412.0
+      ],
+      "label": "handbag"
+    },
+    {
+      "box_2d": [
+        395.0,
+        144.0,
+        500.0,
+        398.0
+      ],
+      "label": "handbag"
+    },
+    {
+      "box_2d": [
+        273.0,
+        127.0,
+        405.0,
+        438.0
+      ],
+      "label": "handbag"
+    },
+    {
+      "box_2d": [
+        0.0,
+        158.0,
+        120.0,
+        638.0
+      ],
+      "label": "handbag"
+    },
+    {
+      "box_2d": [
+        597.0,
+        73.0,
+        887.0,
+        908.0
+      ],
+      "label": "handbag"
+    },
+    {
+      "box_2d": [
+        334.0,
+        638.0,
+        595.0,
+        991.0
+      ],
+      "label": "handbag"
+    },
+    {
+      "box_2d": [
+        244.0,
+        172.0,
+        305.0,
+        408.0
+      ],
+      "label": "handbag"
+    }
+  ],
+  "latency_sec": 303.67902252299245,
+  "raw_response": "user\nYou are an object detection assistant. Given the image and the list of target classes, return detections as JSON.\nTarget classes: microwave, oven, toaster, sink, refrigerator, book, clock, vase, scissors, teddy bear, hair drier, toothbrush.\nOutput format: [{\"box_2d\":[x1,y1,x2,y2],\"label\":\"class_name\"}...]\nUse pixel coordinates relative to the input image. Return JSON only.\nassistant\n```json\n[\n\t{\"box_2d\": [597, 73, 887, 908], \"label\": \"person\"},\n\t{\"bbox_2d\": [395, 144, 500, 398], \"label\": \"person\"},\n\t{\"bbox_2d\": [273, 127, 405, 438], \"label\": \"person\"},\n\t{\"bbox_2d\": [244, 172, 305, 408], \"label\": \"person\"},\n\t{\"bbox_2d\": [0, 158, 120, 638], \"label\": \"person\"},\n\t{\"bbox_2d\": [334, 638, 595, 991], \"label\": \"luggage\"},\n\t{\"bbox_2d\": [468, 293, 580, 412], \"label\": \"luggage\"},\n\t{\"bbox_2d\": [153, 398, 273, 462], \"label\": \"luggage\"},\n\t{\"bbox_2d\": [210, 372, 305, 444], \"label\": \"luggage\"},\n\t{\"bbox_2d\": [153, 672, 347, 888], \"label\": \"luggage\"},\n\t{\"bbox_2d\": [305, 552, 355, 738], \"label\": \"luggage\"},\n\t{\"bbox_2d\": [347, 338, 370, 412], \"label\": \"luggage\"},\n\t{\"bbox_2d\": [353, 438, 613, 693], \"label\": \"luggage\"},\n\t{\"bbox_2d\": [0, 252, 127, 438], \"label\": \"handbag\"},\n\t{\"bbox_2d\": [233, 248, 273, 312], \"label\": \"handbag\"},\n\t{\"bbox_2d\": [273, 172, 305, 222], \"label\": \"handbag\"},\n\t{\"bbox_2d\": [620, 402, 637, 462], \"label\": \"handbag\"},\n\t{\"bbox_2d\": [273, 172, 305, 222], \"label\": \"handbag\"},\n\t{\"bbox_2d\": [233, 248, 273, 312], \"label\": \"handbag\"},\n\t{\"bbox_2d\": [0, 252, 127, 438], \"label\": \"handbag\"},\n\t{\"bbox_2d\": [620, 402, 637, 462], \"label\": \"handbag\"},\n\t{\"bbox_2d\": [353, 438, 613, 693], \"label\": \"handbag\"},\n\t{\"bbox_2d\": [153, 672, 347, 888], \"label\": \"handbag\"},\n\t{\"bbox_2d\": [305, 552, 355, 738], \"label\": \"handbag\"},\n\t{\"bbox_2d\": [347, 338, 370, 412], \"label\": \"handbag\"},\n\t{\"bbox_2d\": [210, 372, 305, 444], \"label\": \"handbag\"},\n\t{\"bbox_2d\": [153, 398, 273, 462], \"label\": \"handbag\"},\n\t{\"bbox_2d\": [468, 293, 580, 412], \"label\": \"handbag\"},\n\t{\"bbox_2d\": [395, 144, 500, 398], \"label\": \"handbag\"},\n\t{\"bbox_2d\": [273, 127, 405, 438], \"label\": \"handbag\"},\n\t{\"bbox_2d\": [0, 158, 120, 638], \"label\": \"handbag\"},\n\t{\"bbox_2d\": [597, 73, 887, 908], \"label\": \"handbag\"},\n\t{\"bbox_2d\": [334, 638, 595, 991], \"label\": \"handbag\"},\n\t{\"bbox_2d\": [244, 172, 305, 408], \"label\": \"handbag\"},\n\t{\"bbox_2d\": [273, 172, 305, 222], \"label\": \"handbag\"},\n\t{\"bbox_2d\": [233, 248, 273, 312], \"label\": \"handbag\"},\n\t{\"bbox_2d\": [0, 252, 127, 438], \"label\": \"handbag\"},\n\t{\"bbox_2d\": [620, 402, 637, 462], \"label\": \"handbag\"},\n\t{\"bbox_2d\": [353, 438, 613, 693], \"label\": \"handbag\"},\n\t{\"bbox_2d\": [153, 672, 347, 888], \"label\": \"handbag\"},\n\t{\"bbox_2d\": [305, 552, 355, 738], \"label\": \"handbag\"},\n\t{\"bbox_2d\": [347, 338, 370, 412], \"label\": \"handbag\"},\n\t{\"bbox_2d\": [210, 372, 305, 444], \"label\": \"handbag\"},\n\t{\"bbox_2d\": [153, 398, 273, 462], \"label\": \"handbag\"},\n\t{\"bbox_2d\": [468, 293, 580, 412], \"label\": \"handbag\"},\n\t{\"bbox_2d\": [395, 144, 500, 398], \"label\": \"handbag\"},\n\t{\"bbox_2d\": [273, 127, 405, 438], \"label\": \"handbag\"},\n\t{\"bbox_2d\": [0, 158, 120, 638], \"label\": \"handbag\"},\n\t{\"bbox_2d\": [597, 73, 887, 908], \"label\": \"handbag\"},\n\t{\"bbox_2d\": [334, 638, 595, 991], \"label\": \"handbag\"},\n\t{\"bbox_2d\": [244, 172, 305, 408], \"label\": \"handbag\"},\n\t{\"bbox_2d\": [273, 172, 305, 222], \"label\": \"handbag\"},\n\t{\"bbox_2d\": [233, 248, 273, 312], \"label\": \"handbag\"},\n\t{\"bbox_2d\": [0, 252, 127, 438], \"label\": \"handbag\"},\n\t{\"bbox_2d\": [620, 402, 637, 462], \"label\": \"handbag\"},\n\t{\"bbox_2d\": [353, 438, 613, 693], \"label\": \"handbag\"},\n\t{\"bbox_2d\": [153, 672, 347, 888], \"label\": \"handbag\"},\n\t{\"bbox_2d\": [305, 552, 355, 738], \"label\": \"handbag\"},\n\t{\"bbox_2d\": [347, 338, 370, 412], \"label\": \"handbag\"},\n\t{\"bbox_2d\": [210, 372, 305, 444], \"label\": \"handbag\"},\n\t{\"bbox_2d\": [153, 398, 273, 462], \"label\": \"handbag\"},\n\t{\"bbox_2d\": [468, 293, 580, 412], \"label\": \"handbag\"},\n\t{\"bbox_2d\": [395, 144, 500, 398], \"label\": \"handbag\"},\n\t{\"bbox_2d\": [273, 127, 405, 438], \"label\": \"handbag\"},\n\t{\"bbox_2d\": [0, 158, 120, 638], \"label\": \"handbag\"},\n\t{\"bbox_2d\": [597, 73, 887, 908], \"label\": \"handbag\"},\n\t{\"bbox_2d\": [334, 638, 595, 991], \"label\": \"handbag\"},\n\t{\"bbox_2d\": [244, 172, 305, 408], \"label\": \"handbag\"},\n\t{\"bbox_2d\": [273, 172, 305, 222], \"label\": \"handbag\"},\n\t{\"bbox_2d\": [233, 248, 273, 312], \"label\": \"handbag\"},\n\t{\"bbox_2d\": [0, 252, 127, 438], \"label\": \"handbag\"},\n\t{\"bbox_2d\": [620, 402, 637, 462], \"label\": \"handbag\"},\n\t{\"bbox_2d\": [353, 438, 613, 693], \"label\": \"handbag\"},\n\t{\"bbox_2d\": [153, 672, 347, 888], \"label\": \"handbag\"},\n\t{\"bbox_2d\": [305, 552, 355, 738], \"label\": \"handbag\"},\n\t{\"bbox_2d\": [347, 338, 370, 412], \"label\": \"handbag\"},\n\t{\"bbox_2d\": [210, 372, 305, 444], \"label\": \"handbag\"},\n\t{\"bbox_2d\": [153, 398, 273, 462], \"label\": \"handbag\"},\n\t{\"bbox_2d\": [468, 293, 580, 412], \"label\": \"handbag\"},\n\t{\"bbox_2d\": [395, 144, 500, 398], \"label\": \"handbag\"},\n\t{\"bbox_2d\": [273, 127, 405, 438], \"label\": \"handbag\"},\n\t{\"bbox_2d\": [0, 158, 120, 638], \"label\": \"handbag\"},\n\t{\"bbox_2d\": [597, 73, 887, 908], \"label\": \"handbag\"},\n\t{\"bbox_2d\": [334, 638, 595, 991], \"label\": \"handbag\"},\n\t{\"bbox_2d\": [244, 172, 305, 408], \"label\": \"handbag\"},\n\t{\"bbox_2d\": [273, 172, 305, 222], \"label\": \"handbag\"},\n\t{\"bbox_2d\": [233, 248, 273, 312], \"label\": \"handbag\"},\n\t{\"bbox_2d\": [0, 252, 127, 438], \"label\": \"handbag\"},\n\t{\"bbox_2d\": [620, 402, 637, 462], \"label\": \"handbag\"},\n\t{\"bbox_2d\": [353, 438, 613, 693], \"label\": \"handbag\"},\n\t{\"bbox_2d\": [153, 672, 347, 888], \"label\": \"handbag\"},\n\t{\"bbox_2d\": [305, 552, 355, 738], \"label\": \"handbag\"},\n\t{\"bbox_2d\": [347, 338, 370, 412], \"label\": \"handbag\"},\n\t{\"bbox_2d\": [210, 372, 305, 444], \"label\": \"handbag\"},\n\t{\"bbox_2d\": [153, 398, 273, 462], \"label\": \"handbag\"},\n\t{\"bbox_2d\": [468, 293, 580, 412], \"label\": \"handbag\"},\n\t{\"bbox_2d\": [395, 144, 500, 398], \"label\": \"handbag\"},\n\t{\"bbox_2d\": [273, 127, 405, 438], \"label\": \"handbag\"},\n\t{\"bbox_2d\": [0, 158, 120, 638], \"label\": \"handbag\"},\n\t{\"bbox_2d\": [597, 73, 887, 908], \"label\": \"handbag\"},\n\t{\"bbox_2d\": [334, 638, 595, 991], \"label\": \"handbag\"},\n\t{\"bbox_2d\": [244, 172, 305, 408], \"label\": \"handbag\"},\n\t{\"bbox_2d\": [273, 172, 305, 222], \"label\": \"handbag\"},\n\t{\"bbox_2d\": [233, 248, 273, 312], \"label\": \"handbag\"},\n\t{\"bbox_2d\": [0, 252, 127, 438], \"label\": \"handbag\"},\n\t{\"bbox_2d\": [620, 402, 637, 462], \"label\": \"handbag\"},\n\t{\"bbox_2d\": [353, 438, 613, 693], \"label\": \"handbag\"},\n\t{\"bbox_2d\": [153, 672, 347, 888], \"label\": \"handbag\"},\n\t{\"bbox_2d\": [305, 552, 355, 738], \"label\": \"handbag\"},\n\t{\"bbox_2d\": [347, 338, 370, 412], \"label\": \"handbag\"},\n\t{\"bbox_2d\": [210, 372, 305, 444], \"label\": \"handbag\"},\n\t{\"bbox_2d\": [153, 398, 273, 462], \"label\": \"handbag\"},\n\t{\"bbox_2d\": [468, 293, 580, 412], \"label\": \"handbag\"},\n\t{\"bbox_2d\": [395, 144, 500, 398], \"label\": \"handbag\"},\n\t{\"bbox_2d\": [273, 127, 405, 438], \"label\": \"handbag\"},\n\t{\"bbox_2d\": [0, 158, 120, 638], \"label\": \"handbag\"},\n\t{\"bbox_2d\": [597, 73, 887, 908], \"label\": \"handbag\"},\n\t{\"bbox_2d\": [334, 638, 595, 991], \"label\": \"handbag\"},\n\t{\"bbox_2d\": [244, 172, 305, 408], \"label\": \"handbag\"},\n\t{\"bbox_2d\": [273, 172, 305, 222], \"label\": \"handbag\"},\n\t{\"bbox_2d\": [233, 248, 273, 312], \"label\": \"handbag\"},\n\t{\"bbox_2d\": [0, 252, 127, 438], \"label\": \"handbag\"},\n\t{\"bbox_2d\": [620, 402, 637, 462], \"label\": \"handbag\"},\n\t{\"bbox_2d\": [353, 438, 613, 693], \"label\": \"handbag\"},\n\t{\"bbox_2d\": [153, 672, 347, 888], \"label\": \"handbag\"},\n\t{\"bbox_2d\": [305, 552, 355, 738], \"label\": \"handbag\"},\n\t{\"bbox_2d\": [347, 338, 370, 412], \"label\": \"handbag\"},\n\t{\"bbox_2d\": [210, 372, 305, 444], \"label\": \"handbag\"},\n\t{\"bbox_2d\": [153, 398, 273, 462], \"label\": \"handbag\"},\n\t{\"bbox_2d\": [468, 293, 580, 412], \"label\": \"handbag\"},\n\t{\"bbox_2d\": [395, 144, 500, 398], \"label\": \"handbag\"},\n\t{\"bbox_2d\": [273, 127, 405, 438], \"label\": \"handbag\"},\n\t{\"bbox_2d\": [0, 158, 120, 638], \"label\": \"handbag\"},\n\t{\"bbox_2d\": [597, 73, 887, 908], \"label\": \"handbag\"},\n\t{\"bbox_2d\": [334, 638, 595, 991], \"label\": \"handbag\"},\n\t{\"bbox_2d\": [244, 172, 305, 408], \"label\": \"handbag\"},\n\t{\"bbox_2d\": [273, 172, 305, 222], \"label\": \"handbag\"},\n\t{\"bbox_2d\": [233, 248, 273, 312], \"label\": \"handbag\"},\n\t{\"bbox_2d\": [0, 252, 127, 438], \"label\": \"handbag\"},\n\t{\"bbox_2d\": [620, 402, 637, 462], \"label\": \"handbag\"},\n\t{\"bbox_2d\": [353, 438, 613, 693], \"label\": \"handbag\"},\n\t{\"bbox_2d\": [153, 672, 347, 888], \"label\": \"handbag\"},\n\t{\"bbox_2d\": [305, 552, 355, 738], \"label\": \"handbag\"},\n\t{\"bbox_2d\": [347, 338, 370, 412], \"label\": \"handbag\"},\n\t{\"bbox_2d\": [210, 372, 305, 444], \"label\": \"handbag\"},\n\t{\"bbox_2d\": [153, 398, 273, 462], \"label\": \"handbag\"},\n\t{\"bbox_2d\": [468, 293, 580, 412], \"label\": \"handbag\"},\n\t{\"bbox_2d\": [395, 144, 500, 398], \"label\": \"handbag\"},\n\t{\"bbox_2d\": [273, 127, 405, 438], \"label\": \"handbag\"},\n\t{\"bbox_2d\": [0, 158, 120, 638], \"label\": \"handbag\"},\n\t{\"bbox_2d\": [597, 73, 887, 908], \"label\": \"handbag\"},\n\t{\"bbox_2d\": [334, 638, 595, 991], \"label\": \"handbag\"},\n\t{\"bbox_2d\": [244, 172, 305, 408], \"label\": \"handbag\"},\n\t{\"bbox_2d\": [273, 172, 305, 222], \"label\": \"handbag\"},\n\t{\"bbox_2d\": [233, 248, 273, 312], \"label\": \"handbag\"},\n\t{\"bbox_2d\": [0, 252, 127, 438], \"label\": \"handbag\"},\n\t{\"bbox_2d\": [620, 402, 637, 462], \"label\": \"handbag\"},\n\t{\"bbox_2d\": [353, 438, 613, 693], \"label\": \"handbag\"},\n\t{\"bbox_2d\": [153, 672, 347, 888], \"label\": \"handbag\"},\n\t{\"bbox_2d\": [305, 552, 355, 738], \"label\": \"handbag\"},\n\t{\"bbox_2d\": [347, 338, 370, 412], \"label\": \"handbag\"},\n\t{\"bbox_2d\": [210, 372, 305, 444], \"label\": \"handbag\"},\n\t{\"bbox_2d\": [153, 398, 273, 462], \"label\": \"handbag\"},\n\t{\"bbox_2d\": [468, 293, 580, 412], \"label\": \"handbag\"},\n\t{\"bbox_2d\": [395, 144, 500, 398], \"label\": \"handbag\"},\n\t{\"bbox_2d\": [273, 127, 405, 438], \"label\": \"handbag\"},\n\t{\"bbox_2d\": [0, 158, 120, 638], \"label\": \"handbag\"},\n\t{\"bbox_2d\": [597, 73, 887, 908], \"label\": \"handbag\"},\n\t{\"bbox_2d\": [334, 638, 595, 991], \"label\": \"handbag\"},\n\t{\"bbox_2d\": [244, 172, 305, 408], \"label\": \"handbag\"},\n\t{\"bbox_2d\": [273, 172, 305, 222], \"label\": \"handbag\"},\n\t{\"bbox_2d\": [233, 248, 273, 312], \"label\": \"handbag\"},\n\t{\"bbox_2d\": [0, 252, 127, 438], \"label\": \"handbag\"},\n\t{\"bbox_2d\": [620, 402, 637, 462], \"label\": \"handbag\"},\n\t{\"bbox_2d\": [353, 438, 613, 693], \"label\": \"handbag\"},\n\t{\"bbox_2d\": [153, 672, 347, 888], \"label\": \"handbag\"},\n\t{\"bbox_2d\": [305, 552, 355, 738], \"label\": \"handbag\"},\n\t{\"bbox_2d\": [347, 338, 370, 412], \"label\": \"handbag\"},\n\t{\"bbox_2d\": [210, 372, 305, 444], \"label\": \"handbag\"},\n\t{\"bbox_2d\": [153, 398, 273, 462], \"label\": \"handbag\"},\n\t{\"bbox_2d\": [468, 293, 580, 412], \"label\": \"handbag\"},\n\t{\"bbox_2d\": [395, 144, 500, 398], \"label\": \"handbag\"},\n\t{\"bbox_2d\": [273, 127, 405, 438], \"label\": \"handbag\"},\n\t{\"bbox_2d\": [0, 158, 120, 638], \"label\": \"handbag\"},\n\t{\"bbox_2d\": [597, 73, 887, 908], \"label\": \"handbag\"},\n\t{\"bbox_2d\": [334, 638, 595, 991], \"label\": \"handbag\"},\n\t{\"bbox_2d\": [244, 172, 305, 408], \"label\": \"handbag\"},\n\t{\"bbox_2d\": [273, 172, 305, 222], \"label\": \"handbag\"},\n\t{\"bbox_2d\": [233, 248, 273, 312], \"label\": \"handbag\"},\n\t{\"bbox_2d\": [0, 252, 127, 438], \"label\": \"handbag\"},\n\t{\"bbox_2d\": [620, 402, 637, 462], \"label\": \"handbag\"},\n\t{\"bbox_2d\": [353, 438, 613, 693], \"label\": \"handbag\"},\n\t{\"bbox_2d\": [153, 672, 347, 888], \"label\": \"handbag\"},\n\t{\"bbox_2d\": [305, 552, 355, 738], \"label\": \"handbag\"},\n\t{\"bbox_2d\": [347, 338, 370, 412], \"label\": \"handbag\"},\n\t{\"bbox_2d\": [210, 372, 305, 444], \"label\": \"handbag\"},\n\t{\"bbox_2d\": [153, 398, 273, 462], \"label\": \"handbag\"},\n\t{\"bbox_2d\": [468, 293, 580, 412], \"label\": \"handbag\"},\n\t{\"bbox_2d\": [395, 144, 500, 398], \"label\": \"handbag\"},\n\t{\"bbox_2d\": [273, 127, 405, 438], \"label\": \"handbag\"},\n\t{\"bbox_2d\": [0, 158, 120, 638], \"label\": \"handbag\"},\n\t{\"bbox_2d\": [597, 73, 887, 908], \"label\": \"handbag\"},\n\t{\"bbox_2d\": [334, 638, 595, 991], \"label\": \"handbag\"},\n\t{\"bbox_2d\": [244, 172, 305, 408], \"label\": \"handbag\"},\n\t{\"bbox_2d\": [273, 172, 305, 222], \"label\": \"handbag\"},\n\t{\"bbox_2d\": [233, 248, 273, 312], \"label\": \"handbag\"},\n\t{\"bbox_2d\": [0, 252, 127, 438], \"label\": \"handbag\"},\n\t{\"bbox_2d\": [620, 402, 637, 462], \"label\": \"handbag\"},\n\t{\"bbox_2d\": [353, 438, 613, 693], \"label\": \"handbag\"},\n\t{\"bbox_2d\": [153, 672, 347, 888], \"label\": \"handbag\"},\n\t{\"bbox_2d\": [305, 552, 355, 738], \"label\": \"handbag\"},\n\t{\"bbox_2d\": [347, 338, 370, 412], \"label\": \"handbag\"},\n\t{\"bbox_2d\": [210, 372, 305, 444], \"label\": \"handbag\"},\n\t{\"bbox_2d\": [153, 398, 273, 462], \"label\": \"handbag\"},\n\t{\"bbox_2d\": [468, 293, 580, 412], \"label\": \"handbag\"},\n\t{\"bbox_2d\": [395, 144, 500, 398], \"label\": \"handbag\"},\n\t{\"bbox_2d\": [273, 127, 405, 438], \"label\": \"handbag\"},\n\t{\"bbox_2d\": [0, 158, 120, 638], \"label\": \"handbag\"},\n\t{\"bbox_2d\": [597, 73, 887, 908], \"label\": \"handbag\"},\n\t{\"bbox_2d\": [334, 638, 595, 991], \"label\": \"handbag\"},\n\t{\"bbox_2d\": [244, 172, 305, 408], \"label\": \"handbag\"},\n\t{\"bbox_2d\": [273, 172, 305, 222], \"label\": \"handbag\"},\n\t{\"bbox_2d\": [233, 248, 273, 312], \"label\": \"handbag\"},\n\t{\"bbox_2d\": [0, 252, 127, 438], \"label\": \"handbag\"},\n\t{\"bbox_2d\": [620, 402, 637, 462], \"label\": \"handbag\"},\n\t{\"bbox_2d\": [353, 438, 613, 693], \"label\": \"handbag\"},\n\t{\"bbox_2d\": [153, 672, 347, 888], \"label\": \"handbag\"},\n\t{\"bbox_2d\": [305, 552, 355, 738], \"label\": \"handbag\"},\n\t{\"bbox_2d\": [347, 338, 370, 412], \"label\": \"handbag\"},\n\t{\"bbox_2d\": [210, 372, 305, 444], \"label\": \"handbag\"},\n\t{\"bbox_2d\": [153, 398, 273, 462], \"label\": \"handbag\"},\n\t{\"bbox_2d\": [468, 293, 580, 412], \"label\": \"handbag\"},\n\t{\"bbox_2d\": [395, 144, 500, 398], \"label\": \"handbag\"},\n\t{\"bbox_2d\": [273, 127, 405, 438], \"label\": \"handbag\"},\n\t{\"bbox_2d\": [0, 158, 120, 638], \"label\": \"handbag\"},\n\t{\"bbox_2d\": [597, 73, 887, 908], \"label\": \"handbag\"},\n\t{\"bbox_2d\": [334, 638, 595, 991], \"label\": \"handbag\"},\n\t{\"bbox_2d\": [244, 172, 305, 408], \"label\": \"handbag\"},\n\t{\"bbox_2d\": [273, 172, 305, 222], \"label\": \"handbag\"},\n\t{\"bbox_2d\": [233, 248, 273, 312], \"label\": \"handbag\"},\n\t{\"bbox_2d\": [0, 252, 127, 438], \"label\": \"handbag\"},\n\t{\"bbox_2d\": [620, 402, 637, 462], \"label\": \"handbag\"},\n\t{\"bbox_2d\": [353, 438, 613, 693], \"label\": \"handbag\"},\n\t{\"bbox_2d\": [153, 672, 347, 888], \"label\": \"handbag\"},\n\t{\"bbox_2d\": [305, 552, 355, 738], \"label\": \"handbag\"},\n\t{\"bbox_2d\": [347, 338, 370, 412], \"label\": \"handbag\"},\n\t{\"bbox_2d\": [210, 372, 305, 444], \"label\": \"handbag\"},\n\t{\"bbox_2d\": [153, 398, 273, 462], \"label\": \"handbag\"},\n\t{\"bbox_2d\": [468, 293, 580, 412], \"label\": \"handbag\"},\n\t{\"bbox_2d\": [395, 144, 500, 398], \"label\": \"handbag\"},\n\t{\"bbox_2d\": [273, 127, 405, 438], \"label\": \"handbag\"},\n\t{\"bbox_2d\": [0, 158, 120, 638], \"label\": \"handbag\"},\n\t{\"bbox_2d\": [597, 73, 887, 908], \"label\": \"handbag\"},\n\t{\"bbox_2d\": [334, 638, 595, 991], \"label\": \"handbag\"},\n\t{\"bbox_2d\": [244, 172, 305, 408], \"label\": \"handbag\"},\n\t{\"bbox_2d\": [273, 172, 305, 222], \"label\": \"handbag\"},\n\t{\"bbox_2d\": [233, 248, 273, 312], \"label\": \"handbag\"},\n\t{\"bbox_2d\": [0, 252, 127, 438], \"label\": \"handbag\"},\n\t{\"bbox_2d\": [620, 402, 637, 462], \"label\": \"handbag\"},\n\t{\"bbox_2d\": [353, 438, 613, 693], \"label\": \"handbag\"},\n\t{\"bbox_2d\": [153, 672, 347, 888], \"label\": \"handbag\"},\n\t{\"bbox_2d\": [305, 552, 355, 738], \"label\": \"handbag\"},\n\t{\"bbox_2d\": [347, 338, 370, 412], \"label\": \"handbag\"},\n\t{\"bbox_2d\": [210, 372, 305, 444], \"label\": \"handbag\"},\n\t{\"bbox_2d\": [153, 398, 273, 462], \"label\": \"handbag\"},\n\t{\"bbox_2d\": [468, 293, 580, 412], \"label\": \"handbag\"},\n\t{\"bbox_2d\": [395, 144, 500, 398], \"label\": \"handbag\"},\n\t{\"bbox_2d\": [273, 127, 405, 438], \"label\": \"handbag\"},\n\t{\"bbox_2d\": [0, 158, 120, 638], \"label\": \"handbag\"},\n\t{\"bbox_2d\": [597, 73, 887, 908], \"label\": \"handbag\"},\n\t{\"bbox_2d\": [334, 638, 595, 991], \"label\": \"handbag\"},\n\t{\"bbox_2d\": [244, 172, 305, 408], \"label\": \"handbag\"},\n\t{\"bbox_2d\": [273, 172, 305, 222], \"label\": \"handbag\"},\n\t{\"bbox_2d\": [233, 248, 273, 312], \"label\": \"handbag\"},\n\t{\"bbox_2d\": [0, 252, 127, 438], \"label\": \"handbag\"},\n\t{\"bbox_2d\": [620, 402, 637, 462], \"label\": \"handbag\"},\n\t{\"bbox_2d\": [353, 438, 613, 693], \"label\": \"handbag\"},\n\t{\"bbox_2d\": [153, 672, 347, 888], \"label\": \"handbag\"},\n\t{\"bbox_2d\": [305, 552, 355, 738], \"label\": \"handbag\"},\n\t{\"bbox_2d\": [347, 338, 370, 412], \"label\": \"handbag\"},\n\t{\"bbox_2d\": [210, 372, 305, 444], \"label\": \"handbag\"},\n\t{\"bbox_2d\": [153, 398, 273, 462], \"label\": \"handbag\"},\n\t{\"bbox_2d\": [468, 293, 580, 412], \"label\": \"handbag\"},\n\t{\"bbox_2d\": [395, 144, 500, 398], \"label\": \"handbag\"},\n\t{\"bbox_2d\": [273, 127, 405, 438], \"label\": \"handbag\"},\n\t{\"bbox_2d\": [0, 158, 120, 638], \"label\": \"handbag\"},\n\t{\"bbox_2d\": [597, 73, 887, 908], \"label\": \"handbag\"},\n\t{\"bbox_2d\": [334, 638, 595, 991], \"label\": \"handbag\"},\n\t{\"bbox_2d\": [244, 172, 305, 408], \"label\": \"handbag\"},\n\t{\"bbox_2d\": [273, 172, 305, 222], \"label\": \"handbag\"},\n\t{\"bbox_2d\": [233, 248, 273, 312], \"label\": \"handbag\"},\n\t{\"bbox_2d\": [0, 252, 127, 438], \"label\": \"handbag\"},\n\t{\"bbox_2d\": [620, 402, 637, 462], \"label\": \"handbag\"},\n\t{\"bbox_2d\": [353, 438, 613, 693], \"label\": \"handbag\"},\n\t{\"bbox_2d\": [153, 672, 347, 888], \"label\": \"handbag\"},\n\t{\"bbox_2d\": [305, 552, 355, 738], \"label\": \"handbag\"},\n\t{\"bbox_2d\": [347, 338, 370, 412], \"label\": \"handbag\"},\n\t{\"bbox_2d\": [210, 372, 305, 444], \"label\": \"handbag\"},\n\t{\"bbox_2d\": [153, 398, 273, 462], \"label\": \"handbag\"},\n\t{\"bbox_2d\": [468, 293, 580, 412], \"label\": \"handbag\"},\n\t{\"bbox_2d\": [395, 144, 500, 398], \"label\": \"handbag\"},\n\t{\"bbox_2d\": [273, 127, 405, 438], \"label\": \"handbag\"},\n\t{\"bbox_2d\": [0, 158, 120, 638], \"label\": \"handbag\"},\n\t{\"bbox_2d\": [597, 73, 887, 908], \"label\": \"handbag\"},\n\t{\"bbox_2d\": [334, 638, 595, 991], \"label\": \"handbag\"},\n\t{\"bbox_2d\": [244, 172, 305, 408], \"label\": \"handbag\"},\n\t{\"bbox_2d\": [273, 172, 305, 222], \"label\": \"handbag\"},\n\t{\"bbox_2d\": [233, 248, 273, 312], \"label\": \"handbag\"},\n\t{\"bbox_2d\": [0, 252, 127, 438], \"label\": \"handbag\"},\n\t{\"bbox_2d\": [620, 402, 637, 462], \"label\": \"handbag\"},\n\t{\"bbox_2d\": [353, 438, 613, 693], \"label\": \"handbag\"},\n\t{\"bbox_2d\": [153, 672, 347, 888], \"label\": \"handbag\"},\n\t{\"bbox_2d\": [305, 552, 355, 738], \"label\": \"handbag\"},\n\t{\"bbox_2d\": [347, 338, 370, 412], \"label\": \"handbag\"},\n\t{\"bbox_2d\": [210, 372, 305, 444], \"label\": \"handbag\"},\n\t{\"bbox_2d\": [153, 398, 273, 462], \"label\": \"handbag\"},\n\t{\"bbox_2d\": [468, 293, 580, 412], \"label\": \"handbag\"},\n\t{\"bbox_2d\": [395, 144, 500, 398], \"label\": \"handbag\"},\n\t{\"bbox_2d\": [273, 127, 405, 438], \"label\": \"handbag\"},\n\t{\"bbox_2d\": [0, 158, 120, 638], \"label\": \"handbag\"},\n\t{\"bbox_2d\": [597, 73, 887, 908], \"label\": \"handbag\"},\n\t{\"bbox_2d\": [334, 638, 595, 991], \"label\": \"handbag\"},\n\t{\"bbox_2d\": [244, 172, 305, 408], \"label\": \"handbag\"},\n\t{\"bbox_2d\": [273, 172, 305, 222], \"label\": \"handbag\"},\n\t{\"bbox_2d\": [233, 248, 273, 312], \"label\": \"handbag\"},\n\t{\"bbox_2d\": [0, 252, 127, 438], \"label\": \"handbag\"},\n\t{\"bbox_2d\": [620, 402, 637, 462], \"label\": \"handbag\"},\n\t{\"bbox_2d\": [353, 438, 613, 693], \"label\": \"handbag\"},\n\t{\"bbox_2d\": [153, 672, 347, 888], \"label\": \"handbag\"},\n\t{\"bbox_2d\": [305, 552, 355, 738], \"label\": \"handbag\"},\n\t{\"bbox_2d\": [347, 338, 370, 412], \"label\": \"handbag\"},\n\t{\"bbox_2d\": [210, 372, 305, 444], \"label\": \"handbag\"},\n\t{\"bbox_2d\": [153, 398, 273, 462], \"label\": \"handbag\"},\n\t{\"bbox_2d\": [468, 293, 580, 412], \"label\": \"handbag\"},\n\t{\"bbox_2d\": [395, 144, 500, 398], \"label\": \"handbag\"},\n\t{\"bbox_2d\": [273, 127, 405, 438], \"label\": \"handbag\"},\n\t{\"bbox_2d\": [0, 158, 120, 638], \"label\": \"handbag\"},\n\t{\"bbox_2d\": [597, 73, 887, 908], \"label\": \"handbag\"},\n\t{\"bbox_2d\": [334, 638, 595, 991], \"label\": \"handbag\"},\n\t{\"bbox_2d\": [244, 172, 305, 408], \"label\": \"handbag\"},\n\t{\"bbox_2d\": [273, 172, 305, 222], \"label\": \"handbag\"},\n\t{\"bbox_2d\": [233, 248, 273, 312], \"label\": \"handbag\"},\n\t{\"bbox_2d\": [0, 252, 127, 438], \"label\": \"handbag\"},\n\t{\"bbox_2d\": [620, 402, 637, 462], \"label\": \"handbag\"},\n\t{\"bbox_2d\": [353, 438, 613, 693], \"label\": \"handbag\"},\n\t{\"bbox_2d\": [153, 672, 347, 888], \"label\": \"handbag\"},\n\t{\"bbox_2d\": [305, 552, 355, 738], \"label\": \"handbag\"},\n\t{\"bbox_2d\": [347, 338, 370, 412], \"label\": \"handbag\"},\n\t{\"bbox_2d\": [210, 372, 305, 444], \"label\": \"handbag\"},\n\t{\"bbox_2d\": [153, 398, 273, 462], \"label\": \"handbag\"},\n\t{\"bbox_2d\": [468, 293, 580, 412], \"label\": \"handbag\"},\n\t{\"bbox_2d\": [395, 144, 500, 398], \"label\": \"handbag\"},\n\t{\"bbox_2d\": [273, 127, 405, 438], \"label\": \"handbag\"},\n\t{\"bbox_2d\": [0, 158, 120, 638], \"label\": \"handbag\"},\n\t{\"bbox_2d\": [597, 73, 887, 908], \"label\": \"handbag\"},\n\t{\"bbox_2d\": [334, 638, 595, 991], \"label\": \"handbag\"},\n\t{\"bbox_2d\": [244, 172, 305, 408], \"label\": \"handbag\"},\n\t{\"bbox_2d\": [273, 172, 305, 222], \"label\": \"handbag\"},\n\t{\"bbox_2d\": [233, 248, 273, 312], \"label\": \"handbag\"},\n\t{\"bbox_2d\": [0, 252, 127, 438], \"label\": \"handbag\"},\n\t{\"bbox_2d\": [620, 402, 637, 462], \"label\": \"handbag\"},\n\t{\"bbox_2d\": [353, 438, 613, 693], \"label\": \"handbag\"},\n\t{\"bbox_2d\": [153, 672, 347, 888], \"label\": \"handbag\"},\n\t{\"bbox_2d\": [305, 552, 355, 738], \"label\": \"handbag\"},\n\t{\"bbox_2d\": [347, 338, 370, 412], \"label\": \"handbag\"},\n\t{\"bbox_2d\": [210, 372, 305, 444], \"label\": \"handbag\"},\n\t{\"bbox_2d\": [153, 398, 273, 462], \"label\": \"handbag\"},\n\t{\"bbox_2d\": [468, 293, 580, 412], \"label\": \"handbag\"},\n\t{\"bbox_2d\": [395, 144, 500, 398], \"label\": \"handbag\"},\n\t{\"bbox_2d\": [273, 127, 405, 438], \"label\": \"handbag\"},\n\t{\"bbox_2d\": [0, 158, 120, 638], \"label\": \"handbag\"},\n\t{\"bbox_2d\": [597, 73, 887, 908], \"label\": \"handbag\"},\n\t{\"bbox_2d\": [334, 638, 595, 991], \"label\": \"handbag\"},\n\t{\"bbox_2d\": [244, 172, 305, 408], \"label\": \"handbag\"},\n\t{\"bbox_2d\": [273, 172, 305, 222], \"label\": \"handbag\"},\n\t{\"bbox_2d\": [233, 248, 273, 312], \"label\": \"handbag\"},\n\t{\"bbox_2d\": [0, 252, 127, 438], \"label\": \"handbag\"},\n\t{\"bbox_2d\": [620, 402, 637, 462], \"label\": \"handbag\"},\n\t{\"bbox_2d\": [353, 438, 613, 693], \"label\": \"handbag\"},\n\t{\"bbox_2d\": [153, 672, 347, 888], \"label\": \"handbag\"},\n\t{\"bbox_2d\": [305, 552, 355, 738], \"label\": \"handbag\"},\n\t{\"bbox_2d\": [347, 338, 370, 412], \"label\": \"handbag\"},\n\t{\"bbox_2d\": [210, 372, 305, 444], \"label\": \"handbag\"},\n\t{\"bbox_2d\": [153, 398, 273, 462], \"label\": \"handbag\"},\n\t{\"bbox_2d\": [468, 293, 580, 412], \"label\": \"handbag\"},\n\t{\"bbox_2d\": [395, 144, 500, 398], \"label\": \"handbag\"},\n\t{\"bbox_2d\": [273, 127, 405, 438], \"label\": \"handbag\"},\n\t{\"bbox_2d\": [0, 158, 120, 638], \"label\": \"handbag\"},\n\t{\"bbox_2d\": [597, 73, 887, 908], \"label\": \"handbag\"},\n\t{\"bbox_2d\": [334, 638, 595, 991], \"label\": \"handbag\"},\n\t{\"bbox_2d\": [244, 172, 305, 408], \"label\": \"handbag\"},\n\t{\"bbox_2d\": [273, 172, 305, 222], \"label\": \"handbag\"},\n\t{\"bbox_2d\": [233, 248, 273, 312], \"label\": \"handbag\"},\n\t{\"bbox_2d\": [0, 252, 127, 438], \"label\": \"handbag\"},\n\t{\"bbox_2d\": [620, 402, 637, 462], \"label\": \"handbag\"},\n\t{\"bbox_2d\": [353, 438, 613, 693], \"label\": \"handbag\"},\n\t{\"bbox_2d\": [153, 672, 347, 888], \"label\": \"handbag\"},\n\t{\"bbox_2d\": [305, 552, 355, 738], \"label\": \"handbag\"},\n\t{\"bbox_2d\": [347, 338, 370, 412], \"label\": \"handbag\"},\n\t{\"bbox_2d\": [210, 372, 305, 444], \"label\": \"handbag\"},\n\t{\"bbox_2d\": [153, 398, 273, 462], \"label\": \"handbag\"},\n\t{\"bbox_2d\": [468, 293, 580, 412], \"label\": \"handbag\"},\n\t{\"bbox_2d\": [395, 144, 500, 398], \"label\": \"handbag\"},\n\t{\"bbox_2d\": [273, 127, 405, 438], \"label\": \"handbag\"},\n\t{\"bbox_2d\": [0, 158, 120, 638], \"label\": \"handbag\"},\n\t{\"bbox_2d\": [597, 73, 887, 908], \"label\": \"handbag\"},\n\t{\"bbox_2d\": [334, 638, 595, 991], \"label\": \"handbag\"},\n\t{\"bbox_2d\": [244, 172, 305, 408], \"label\": \"handbag\"},\n\t{\"bbox_2d\": [273, 172, 305, 222], \"label\": \"handbag\"},\n\t{\"bbox_2d\": [233, 248, 273, 312], \"label\": \"handbag\"},\n\t{\"bbox_2d\": [0, 252, 127, 438], \"label\": \"handbag\"},\n\t{\"bbox_2d\": [620, 402, 637, 462], \"label\": \"handbag\"},\n\t{\"bbox_2d\": [353, 438, 613, 693], \"label\": \"handbag\"},\n\t{\"bbox_2d\": [153, 672, 347, 888], \"label\": \"handbag\"},\n\t{\"bbox_2d\": [305, 552, 355, 738], \"label\": \"handbag\"},\n\t{\"bbox_2d\": [347, 338, 370, 412], \"label\": \"handbag\"},\n\t{\"bbox_2d\": [210, 372, 305, 444], \"label\": \"handbag\"},\n\t{\"bbox_2d\": [153, 398, 273, 462], \"label\": \"handbag\"},\n\t{\"bbox_2d\": [468, 293, 580, 412], \"label\": \"handbag\"},\n\t{\"bbox_2d\": [395, 144, 500, 398], \"label\": \"handbag\"},\n\t{\"bbox_2d\": [273, 127, 405, 438], \"label\": \"handbag\"},\n\t{\"bbox_2d\": [0, 158, 120, 638], \"label\": \"handbag\"},\n\t{\"bbox_2d\": [597, 73, 887, 908], \"label\": \"handbag\"},\n\t{\"bbox_2d\": [334, 638, 595, 991], \"label\": \"handbag\"},\n\t{\"bbox_2d\": [244, 172, 305, 408], \"label\": \"handbag\"},\n\t{\"bbox_2d\": [273, 172, 305, 222], \"label\": \"handbag\"},\n\t{\"bbox_2d\": [233, 248, 273, 312], \"label\": \"handbag\"},\n\t{\"bbox_2d\": [0, 252, 127, 438], \"label\": \"handbag\"},\n\t{\"bbox_2d\": [620, 402, 637, 462], \"label\": \"handbag\"},\n\t{\"bbox_2d\": [353, 438, 613, 693], \"label\": \"handbag\"},\n\t{\"bbox_2d\": [153, 672, 347, 888], \"label\": \"handbag\"},\n\t{\"bbox_2d\": [305, 552, 355, 738], \"label\": \"handbag\"},\n\t{\"bbox_2d\": [347, 338, 370, 412], \"label\": \"handbag\"},\n\t{\"bbox_2d\": [210, 372, 305, 444], \"label\": \"handbag\"},\n\t{\"bbox_2d\": [153, 398, 273, 462], \"label\": \"handbag\"},\n\t{\"bbox_2d\": [468, 293, 580, 412], \"label\": \"handbag\"},\n\t{\"bbox_2d\": [395, 144, 500, 398], \"label\": \"handbag\"},\n\t{\"bbox_2d\": [273, 127, 405, 438], \"label\": \"handbag\"},\n\t{\"bbox_2d\": [0, 158, 120, 638], \"label\": \"handbag\"},\n\t{\"bbox_2d\": [597, 73, 887, 908], \"label\": \"handbag\"},\n\t{\"bbox_2d\": [334, 638, 595, 991], \"label\": \"handbag\"},\n\t{\"bbox_2d\": [244, 172, 305, 408], \"label\": \"handbag\"},\n\t{\"bbox_2d\": [273, 172, 305, 222], \"label\": \"handbag\"},\n\t{\"bbox_2d\": [233, 248, 273, 312], \"label\": \"handbag\"},\n\t{\"bbox_2d\": [0, 252, 127, 438], \"label\": \"handbag\"},\n\t{\"bbox_2d\": [620, 402, 637, 462], \"label\": \"handbag\"},\n\t{\"bbox_2d\": [353, 438, 613, 693], \"label\": \"handbag\"},\n\t{\"bbox_2d\": [153, 672, 347, 888], \"label\": \"handbag\"},\n\t{\"bbox_2d\": [305, 552, 355, 738], \"label\": \"handbag\"},\n\t{\"bbox_2d\": [347, 338, 370, 412], \"label\": \"handbag\"},\n\t{\"bbox_2d\": [210, 372, 305, 444], \"label\": \"handbag\"},\n\t{\"bbox_2d\": [153, 398, 273, 462], \"label\": \"handbag\"},\n\t{\"bbox_2d\": [468, 293, 580, 412], \"label\": \"handbag\"},\n\t{\"bbox_2d\": [395, 144, 500, 398], \"label\": \"handbag\"},\n\t{\"bbox_2d\": [273, 127, 405, 438], \"label\": \"handbag\"},\n\t{\"bbox_2d\": [0, 158, 120, 638], \"label\": \"handbag\"},\n\t{\"bbox_2d\": [597, 73, 887, 908], \"label\": \"handbag\"},\n\t{\"bbox_2d\": [334, 638, 595, 991], \"label\": \"handbag\"},\n\t{\"bbox_2d\": [244, 172, 305, 408], \"label\": \"handbag\"},\n\t{\"bbox_2d\": [273, 172, 305, 222], \"label\": \"handbag\"},\n\t{\"bbox_2d\": [233, 248, 273, 312], \"label\": \"handbag\"},\n\t{\"bbox_2d\": [0, 252, 127, 438], \"label\": \"handbag\"},\n\t{\"bbox_2d\": [620, 402, 637, 462], \"label\": \"handbag\"},\n\t{\"bbox_2d\": [353, 438, 613, 693], \"label\": \"handbag\"},\n\t{\"bbox_2d\": [153, 672, 347, 888], \"label\": \"handbag\"},\n\t{\"bbox_2d\": [305, 552, 355, 738], \"label\": \"handbag\"},\n\t{\"bbox_2d\": [347, 338, 370, 412], \"label\": \"handbag\"},\n\t{\"bbox_2d\": [210, 372, 305, 444], \"label\": \"handbag\"},\n\t{\"bbox_2d\": [153, 398, 273, 462], \"label\": \"handbag\"},\n\t{\"bbox_2d\": [468, 293, 580, 412], \"label\": \"handbag\"},\n\t{\"bbox_2d\": [395, 144, 500, 398], \"label\": \"handbag\"},\n\t{\"bbox_2d\": [273, 127, 405, 438], \"label\": \"handbag\"},\n\t{\"bbox_2d\": [0, 158, 120, 638], \"label\": \"handbag\"},\n\t{\"bbox_2d\": [597, 73, 887, 908], \"label\": \"handbag\"},\n\t{\"bbox_2d\": [334, 638, 595, 991], \"label\": \"handbag\"},\n\t{\"bbox_2d\": [244, 172, 305, 408], \"label\": \"handbag\"},\n\t{\"bbox_2d\": [273, 172, 305, 222], \"label\": \"handbag\"},\n\t{\"bbox_2d\": [233, 248, 273, 312], \"label\": \"handbag\"},\n\t{\"bbox_2d\": [0, 252, 127, 438], \"label\": \"handbag\"},\n\t{\"bbox_2d\": [620, 402, 637, 462], \"label\": \"handbag\"},\n\t{\"bbox_2d\": [353, 43"
+}

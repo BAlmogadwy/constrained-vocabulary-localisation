@@ -1,0 +1,109 @@
+{
+ "image": "000000397354.jpg",
+ "model": "qwen/qwen3-vl-235b-a22b-instruct",
+ "labels": [
+  "microwave",
+  "oven",
+  "refrigerator",
+  "sink",
+  "scissors",
+  "toaster",
+  "toothbrush",
+  "vase"
+ ],
+ "detections": [
+  {
+   "box_2d": [
+    473.6,
+    159.84,
+    592.0,
+    338.88
+   ],
+   "label": "refrigerator",
+   "score": 0.98
+  },
+  {
+   "box_2d": [
+    44.8,
+    231.84,
+    128.0,
+    291.84
+   ],
+   "label": "microwave",
+   "score": 0.95
+  },
+  {
+   "box_2d": [
+    83.2,
+    269.76,
+    128.0,
+    372.96
+   ],
+   "label": "toaster",
+   "score": 0.92
+  },
+  {
+   "box_2d": [
+    222.72,
+    264.96,
+    240.64,
+    277.92
+   ],
+   "label": "sink",
+   "score": 0.89
+  }
+ ],
+ "latency_sec": 7.485866499991971,
+ "usage": {
+  "prompt_tokens": 392,
+  "completion_tokens": 178,
+  "total_tokens": 570
+ },
+ "raw_response": {
+  "id": "gen-1783413554-SbbnZ5ueBuK5OuL61rPs",
+  "object": "chat.completion",
+  "created": 1783413554,
+  "model": "qwen/qwen3-vl-235b-a22b-instruct",
+  "provider": "Novita",
+  "system_fingerprint": null,
+  "service_tier": null,
+  "choices": [
+   {
+    "index": 0,
+    "logprobs": null,
+    "finish_reason": "stop",
+    "native_finish_reason": "stop",
+    "message": {
+     "role": "assistant",
+     "content": "```json\n[\n\t{\"bbox_2d\": [740, 333, 925, 706], \"label\": \"refrigerator\", \"confidence\": 0.98},\n\t{\"bbox_2d\": [70, 483, 200, 608], \"label\": \"microwave\", \"confidence\": 0.95},\n\t{\"bbox_2d\": [130, 562, 200, 777], \"label\": \"toaster\", \"confidence\": 0.92},\n\t{\"bbox_2d\": [348, 552, 376, 579], \"label\": \"sink\", \"confidence\": 0.89}\n]\n```",
+     "refusal": null,
+     "reasoning": null
+    }
+   }
+  ],
+  "usage": {
+   "prompt_tokens": 392,
+   "completion_tokens": 178,
+   "total_tokens": 570,
+   "cost": 0.0003846,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0003846,
+    "upstream_inference_prompt_cost": 0.0001176,
+    "upstream_inference_completions_cost": 0.000267
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   }
+  }
+ },
+ "ts": "2026-07-07T08:39:20.187815+00:00"
+}

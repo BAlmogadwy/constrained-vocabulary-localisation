@@ -1,0 +1,140 @@
+{
+  "model": "llava-v1.6-mistral-7b-hf",
+  "strategy": "single_query",
+  "image": "/home/maxim/PycharmProjects/zero-shot-detection-benchmark/data/raw/coco2017/val2017/000000086582.jpg",
+  "labels": [
+    "microwave",
+    "oven",
+    "toaster",
+    "sink",
+    "refrigerator",
+    "book",
+    "clock",
+    "vase",
+    "scissors",
+    "teddy bear",
+    "hair drier",
+    "toothbrush"
+  ],
+  "detections": [
+    {
+      "box_2d": [
+        0.0,
+        0.0,
+        0.258,
+        0.498
+      ],
+      "label": "person"
+    },
+    {
+      "box_2d": [
+        0.138,
+        0.152,
+        0.334,
+        0.487
+      ],
+      "label": "watering can"
+    },
+    {
+      "box_2d": [
+        0.0,
+        0.0,
+        0.258,
+        0.498
+      ],
+      "label": "person holding watering can"
+    },
+    {
+      "box_2d": [
+        0.25,
+        0.258,
+        0.48,
+        0.7
+      ],
+      "label": "potted plant on table"
+    },
+    {
+      "box_2d": [
+        0.25,
+        0.258,
+        0.48,
+        0.7
+      ],
+      "label": "potted plant on table with watering can"
+    },
+    {
+      "box_2d": [
+        0.48,
+        0.258,
+        0.62,
+        0.7
+      ],
+      "label": "potted plant on table with watering can"
+    },
+    {
+      "box_2d": [
+        0.48,
+        0.258,
+        0.62,
+        0.7
+      ],
+      "label": "potted plant on table with watering can and laptop"
+    },
+    {
+      "box_2d": [
+        0.48,
+        0.258,
+        0.62,
+        0.7
+      ],
+      "label": "potted plant on table with laptop"
+    },
+    {
+      "box_2d": [
+        0.602,
+        0.237,
+        0.998,
+        0.931
+      ],
+      "label": "laptop on table with watering can and potted plant"
+    },
+    {
+      "box_2d": [
+        0.602,
+        0.237,
+        0.998,
+        0.931
+      ],
+      "label": "laptop on table with potted plant and watering can"
+    },
+    {
+      "box_2d": [
+        0.0,
+        0.0,
+        0.258,
+        0.498
+      ],
+      "label": "person holding watering can and potted plant"
+    },
+    {
+      "box_2d": [
+        0.0,
+        0.0,
+        0.258,
+        0.498
+      ],
+      "label": "person holding watering can and laptop"
+    },
+    {
+      "box_2d": [
+        0.0,
+        0.0,
+        0.258,
+        0.498
+      ],
+      "label": "person holding watering can and potted plant and laptop"
+    }
+  ],
+  "latency_sec": 8.650502243996016,
+  "raw_response": "USER:  \nDetect the following objects in the image: microwave, oven, toaster, sink, refrigerator, book, clock, vase, scissors, teddy bear, hair drier, toothbrush. For each detected object, provide JSON entries in the form [{\"box_2d\": [x1, y1, x2, y2], \"label\": \"class_name\"}]. Return only JSON. ASSISTANT: ```json\n[\n  {\"box_2d\": [0.000,0.000,0.258,0.498], \"label\": \"person\"},\n  {\"box_2d\": [0.138,0.152,0.334,0.487], \"label\": \"watering can\"},\n  {\"box_2d\": [0.000,0.000,0.258,0.498], \"label\": \"person holding watering can\"},\n  {\"box_2d\": [0.250,0.258,0.480,0.700], \"label\": \"potted plant on table\"},\n  {\"box_2d\": [0.250,0.258,0.480,0.700], \"label\": \"potted plant on table with watering can\"},\n  {\"box_2d\": [0.480,0.258,0.620,0.700], \"label\": \"potted plant on table with watering can\"},\n  {\"box_2d\": [0.480,0.258,0.620,0.700], \"label\": \"potted plant on table with watering can and laptop\"},\n  {\"box_2d\": [0.480,0.258,0.620,0.700], \"label\": \"potted plant on table with laptop\"},\n  {\"box_2d\": [0.602,0.237,0.998,0.931], \"label\": \"laptop on table with watering can and potted plant\"},\n  {\"box_2d\": [0.602,0.237,0.998,0.931], \"label\": \"laptop on table with potted plant and watering can\"},\n  {\"box_2d\": [0.000,0.000,0.258,0.498], \"label\": \"person holding watering can and potted plant\"},\n  {\"box_2d\": [0.000,0.000,0.258,0.498], \"label\": \"person holding watering can and laptop\"},\n  {\"box_2d\": [0.000,0.000,0.258,0.498], \"label\": \"person holding watering can and potted plant and laptop\"}\n]\n``` "
+}

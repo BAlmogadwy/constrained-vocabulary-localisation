@@ -1,0 +1,248 @@
+{
+ "image": "000000367386.jpg",
+ "model": "qwen/qwen3-vl-235b-a22b-instruct",
+ "labels": [
+  "book",
+  "vase",
+  "clock",
+  "oven",
+  "scissors",
+  "toaster",
+  "toothbrush"
+ ],
+ "detections": [
+  {
+   "box_2d": [
+    368.0,
+    396.0,
+    419.2,
+    439.68
+   ],
+   "label": "book",
+   "score": 0.95
+  },
+  {
+   "box_2d": [
+    368.0,
+    392.16,
+    419.2,
+    428.64
+   ],
+   "label": "book",
+   "score": 0.95
+  },
+  {
+   "box_2d": [
+    368.0,
+    387.84,
+    419.2,
+    421.44
+   ],
+   "label": "book",
+   "score": 0.95
+  },
+  {
+   "box_2d": [
+    368.0,
+    384.0,
+    419.2,
+    415.2
+   ],
+   "label": "book",
+   "score": 0.95
+  },
+  {
+   "box_2d": [
+    368.0,
+    380.16,
+    419.2,
+    411.36
+   ],
+   "label": "book",
+   "score": 0.95
+  },
+  {
+   "box_2d": [
+    368.0,
+    375.84,
+    419.2,
+    407.04
+   ],
+   "label": "book",
+   "score": 0.95
+  },
+  {
+   "box_2d": [
+    368.0,
+    372.0,
+    419.2,
+    402.24
+   ],
+   "label": "book",
+   "score": 0.95
+  },
+  {
+   "box_2d": [
+    368.0,
+    368.16,
+    419.2,
+    397.92
+   ],
+   "label": "book",
+   "score": 0.95
+  },
+  {
+   "box_2d": [
+    368.0,
+    363.84,
+    419.2,
+    393.12
+   ],
+   "label": "book",
+   "score": 0.95
+  },
+  {
+   "box_2d": [
+    368.0,
+    360.0,
+    419.2,
+    389.28
+   ],
+   "label": "book",
+   "score": 0.95
+  },
+  {
+   "box_2d": [
+    368.0,
+    356.16,
+    419.2,
+    385.92
+   ],
+   "label": "book",
+   "score": 0.95
+  },
+  {
+   "box_2d": [
+    368.0,
+    351.84,
+    419.2,
+    382.08
+   ],
+   "label": "book",
+   "score": 0.95
+  },
+  {
+   "box_2d": [
+    368.0,
+    348.0,
+    419.2,
+    377.76
+   ],
+   "label": "book",
+   "score": 0.95
+  },
+  {
+   "box_2d": [
+    368.0,
+    344.16,
+    419.2,
+    373.92
+   ],
+   "label": "book",
+   "score": 0.95
+  },
+  {
+   "box_2d": [
+    368.0,
+    339.84,
+    419.2,
+    370.08
+   ],
+   "label": "book",
+   "score": 0.95
+  },
+  {
+   "box_2d": [
+    368.0,
+    336.0,
+    419.2,
+    366.24
+   ],
+   "label": "book",
+   "score": 0.95
+  },
+  {
+   "box_2d": [
+    368.0,
+    332.16,
+    419.2,
+    361.92
+   ],
+   "label": "book",
+   "score": 0.95
+  },
+  {
+   "box_2d": [
+    368.0,
+    327.84,
+    419.2,
+    358.08
+   ],
+   "label": "book",
+   "score": 0.95
+  }
+ ],
+ "latency_sec": 15.554281699995045,
+ "usage": {
+  "prompt_tokens": 390,
+  "completion_tokens": 800,
+  "total_tokens": 1190
+ },
+ "raw_response": {
+  "id": "gen-1783413134-grJCTnniYzuNOibGQ6O3",
+  "object": "chat.completion",
+  "created": 1783413134,
+  "model": "qwen/qwen3-vl-235b-a22b-instruct",
+  "provider": "Alibaba",
+  "system_fingerprint": null,
+  "service_tier": null,
+  "choices": [
+   {
+    "index": 0,
+    "logprobs": null,
+    "finish_reason": "length",
+    "native_finish_reason": "length",
+    "message": {
+     "role": "assistant",
+     "content": "```json\n[\n\t{\"bbox_2d\": [575, 825, 655, 916], \"label\": \"book\", \"confidence\": 0.95},\n\t{\"bbox_2d\": [575, 817, 655, 893], \"label\": \"book\", \"confidence\": 0.95},\n\t{\"bbox_2d\": [575, 808, 655, 878], \"label\": \"book\", \"confidence\": 0.95},\n\t{\"bbox_2d\": [575, 800, 655, 865], \"label\": \"book\", \"confidence\": 0.95},\n\t{\"bbox_2d\": [575, 792, 655, 857], \"label\": \"book\", \"confidence\": 0.95},\n\t{\"bbox_2d\": [575, 783, 655, 848], \"label\": \"book\", \"confidence\": 0.95},\n\t{\"bbox_2d\": [575, 775, 655, 838], \"label\": \"book\", \"confidence\": 0.95},\n\t{\"bbox_2d\": [575, 767, 655, 829], \"label\": \"book\", \"confidence\": 0.95},\n\t{\"bbox_2d\": [575, 758, 655, 819], \"label\": \"book\", \"confidence\": 0.95},\n\t{\"bbox_2d\": [575, 750, 655, 811], \"label\": \"book\", \"confidence\": 0.95},\n\t{\"bbox_2d\": [575, 742, 655, 804], \"label\": \"book\", \"confidence\": 0.95},\n\t{\"bbox_2d\": [575, 733, 655, 796], \"label\": \"book\", \"confidence\": 0.95},\n\t{\"bbox_2d\": [575, 725, 655, 787], \"label\": \"book\", \"confidence\": 0.95},\n\t{\"bbox_2d\": [575, 717, 655, 779], \"label\": \"book\", \"confidence\": 0.95},\n\t{\"bbox_2d\": [575, 708, 655, 771], \"label\": \"book\", \"confidence\": 0.95},\n\t{\"bbox_2d\": [575, 700, 655, 763], \"label\": \"book\", \"confidence\": 0.95},\n\t{\"bbox_2d\": [575, 692, 655, 754], \"label\": \"book\", \"confidence\": 0.95},\n\t{\"bbox_2d\": [575, 683, 655, 746], \"label\": \"book\", \"confidence\": 0.95},\n\t{\"bbox_2d\": [575, 675, 655, 737], \"label\": \"book\", \"confidence\": 0.9",
+     "refusal": null,
+     "reasoning": null
+    }
+   }
+  ],
+  "usage": {
+   "prompt_tokens": 390,
+   "completion_tokens": 800,
+   "total_tokens": 1190,
+   "cost": 0.0009334,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0009334,
+    "upstream_inference_prompt_cost": 0.0001014,
+    "upstream_inference_completions_cost": 0.000832
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   }
+  }
+ },
+ "ts": "2026-07-07T08:32:27.149349+00:00"
+}

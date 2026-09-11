@@ -1,0 +1,50 @@
+{
+  "model": "yolo_world",
+  "strategy": "default",
+  "image": "/home/maxim/PycharmProjects/zero-shot-detection-benchmark/data/subsets/lvis_v1_val_unseen/images/000000226903.jpg",
+  "labels": [
+    "spatula",
+    "blender",
+    "hair_dryer",
+    "sewing_machine",
+    "stapler_(stapling_machine)"
+  ],
+  "result": {
+    "detections": [
+      {
+        "label": "spatula",
+        "score": 0.48914194107055664,
+        "box_2d": [
+          238.30532836914062,
+          255.6697540283203,
+          292.1734924316406,
+          299.78839111328125
+        ],
+        "box": [
+          238.30532836914062,
+          255.6697540283203,
+          292.1734924316406,
+          299.78839111328125
+        ]
+      },
+      {
+        "label": "spatula",
+        "score": 0.4162663519382477,
+        "box_2d": [
+          97.17922973632812,
+          234.90994262695312,
+          217.39227294921875,
+          271.6126708984375
+        ],
+        "box": [
+          97.17922973632812,
+          234.90994262695312,
+          217.39227294921875,
+          271.6126708984375
+        ]
+      }
+    ],
+    "latency_sec": 0.034811229445040226,
+    "raw_response": null
+  }
+}

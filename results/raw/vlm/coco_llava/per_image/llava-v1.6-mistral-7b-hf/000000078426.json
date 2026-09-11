@@ -1,0 +1,140 @@
+{
+  "model": "llava-v1.6-mistral-7b-hf",
+  "strategy": "single_query",
+  "image": "/home/maxim/PycharmProjects/zero-shot-detection-benchmark/data/raw/coco2017/val2017/000000078426.jpg",
+  "labels": [
+    "microwave",
+    "oven",
+    "toaster",
+    "sink",
+    "refrigerator",
+    "book",
+    "clock",
+    "vase",
+    "scissors",
+    "teddy bear",
+    "hair drier",
+    "toothbrush"
+  ],
+  "detections": [
+    {
+      "box_2d": [
+        0.0,
+        0.195,
+        0.256,
+        0.498
+      ],
+      "label": "class_name"
+    },
+    {
+      "box_2d": [
+        0.0,
+        0.195,
+        0.256,
+        0.498
+      ],
+      "label": "cat"
+    },
+    {
+      "box_2d": [
+        0.0,
+        0.195,
+        0.256,
+        0.498
+      ],
+      "label": "gray cat"
+    },
+    {
+      "box_2d": [
+        0.0,
+        0.195,
+        0.256,
+        0.498
+      ],
+      "label": "gray cat on desk"
+    },
+    {
+      "box_2d": [
+        0.0,
+        0.195,
+        0.256,
+        0.498
+      ],
+      "label": "gray cat on black desk"
+    },
+    {
+      "box_2d": [
+        0.0,
+        0.195,
+        0.256,
+        0.498
+      ],
+      "label": "gray cat on desk with papers"
+    },
+    {
+      "box_2d": [
+        0.0,
+        0.195,
+        0.256,
+        0.498
+      ],
+      "label": "gray cat on desk with papers and pen"
+    },
+    {
+      "box_2d": [
+        0.0,
+        0.195,
+        0.256,
+        0.498
+      ],
+      "label": "gray cat on desk with papers and pen and phone"
+    },
+    {
+      "box_2d": [
+        0.0,
+        0.195,
+        0.256,
+        0.498
+      ],
+      "label": "gray cat on desk with papers and pen and phone and cup"
+    },
+    {
+      "box_2d": [
+        0.0,
+        0.195,
+        0.256,
+        0.498
+      ],
+      "label": "gray cat on desk with papers and pen and phone and cup and scissors"
+    },
+    {
+      "box_2d": [
+        0.0,
+        0.195,
+        0.256,
+        0.498
+      ],
+      "label": "gray cat on desk with papers and pen and phone and cup and scissors and teddy bear"
+    },
+    {
+      "box_2d": [
+        0.0,
+        0.195,
+        0.256,
+        0.498
+      ],
+      "label": "gray cat on desk with papers and pen and phone and cup and scissors and teddy bear and hair dryer"
+    },
+    {
+      "box_2d": [
+        0.0,
+        0.195,
+        0.256,
+        0.498
+      ],
+      "label": "gray cat on desk with papers and pen and phone and cup and scissors and teddy bear and hair dryer and toothbrush"
+    }
+  ],
+  "latency_sec": 9.027908453004784,
+  "raw_response": "USER:  \nDetect the following objects in the image: microwave, oven, toaster, sink, refrigerator, book, clock, vase, scissors, teddy bear, hair drier, toothbrush. For each detected object, provide JSON entries in the form [{\"box_2d\": [x1, y1, x2, y2], \"label\": \"class_name\"}]. Return only JSON. ASSISTANT: ```json\n[\n  {\"box_2d\": [0.000,0.195,0.256,0.498], \"label\": \"class_name\"},\n  {\"box_2d\": [0.000,0.195,0.256,0.498], \"label\": \"cat\"},\n  {\"box_2d\": [0.000,0.195,0.256,0.498], \"label\": \"gray cat\"},\n  {\"box_2d\": [0.000,0.195,0.256,0.498], \"label\": \"gray cat on desk\"},\n  {\"box_2d\": [0.000,0.195,0.256,0.498], \"label\": \"gray cat on black desk\"},\n  {\"box_2d\": [0.000,0.195,0.256,0.498], \"label\": \"gray cat on desk with papers\"},\n  {\"box_2d\": [0.000,0.195,0.256,0.498], \"label\": \"gray cat on desk with papers and pen\"},\n  {\"box_2d\": [0.000,0.195,0.256,0.498], \"label\": \"gray cat on desk with papers and pen and phone\"},\n  {\"box_2d\": [0.000,0.195,0.256,0.498], \"label\": \"gray cat on desk with papers and pen and phone and cup\"},\n  {\"box_2d\": [0.000,0.195,0.256,0.498], \"label\": \"gray cat on desk with papers and pen and phone and cup and scissors\"},\n  {\"box_2d\": [0.000,0.195,0.256,0.498], \"label\": \"gray cat on desk with papers and pen and phone and cup and scissors and teddy bear\"},\n  {\"box_2d\": [0.000,0.195,0.256,0.498], \"label\": \"gray cat on desk with papers and pen and phone and cup and scissors and teddy bear and hair dryer\"},\n  {\"box_2d\": [0.000,0.195,0.256,0.498], \"label\": \"gray cat on desk with papers and pen and phone and cup and scissors and teddy bear and hair dryer and toothbrush\"}\n]\n``` "
+}

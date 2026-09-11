@@ -1,0 +1,169 @@
+{
+ "image": "000000530836.jpg",
+ "model": "qwen/qwen3-vl-235b-a22b-instruct",
+ "labels": [
+  "oven",
+  "refrigerator",
+  "sink",
+  "vase",
+  "clock",
+  "microwave",
+  "scissors",
+  "toaster"
+ ],
+ "detections": [
+  {
+   "box_2d": [
+    74.88,
+    244.992,
+    201.6,
+    375.376
+   ],
+   "label": "oven",
+   "score": 0.95
+  },
+  {
+   "box_2d": [
+    201.6,
+    257.056,
+    327.04,
+    375.376
+   ],
+   "label": "oven",
+   "score": 0.95
+  },
+  {
+   "box_2d": [
+    0.0,
+    209.264,
+    62.08,
+    414.352
+   ],
+   "label": "refrigerator",
+   "score": 0.98
+  },
+  {
+   "box_2d": [
+    574.08,
+    212.048,
+    640.0,
+    398.576
+   ],
+   "label": "refrigerator",
+   "score": 0.98
+  },
+  {
+   "box_2d": [
+    327.04,
+    286.288,
+    413.44,
+    314.128
+   ],
+   "label": "sink",
+   "score": 0.92
+  },
+  {
+   "box_2d": [
+    413.44,
+    286.288,
+    496.0,
+    314.128
+   ],
+   "label": "sink",
+   "score": 0.92
+  },
+  {
+   "box_2d": [
+    272.0,
+    293.248,
+    294.4,
+    314.128
+   ],
+   "label": "vase",
+   "score": 0.85
+  },
+  {
+   "box_2d": [
+    272.0,
+    23.664,
+    332.8,
+    87.696
+   ],
+   "label": "clock",
+   "score": 0.78
+  },
+  {
+   "box_2d": [
+    119.68,
+    244.992,
+    161.28,
+    265.872
+   ],
+   "label": "microwave",
+   "score": 0.88
+  },
+  {
+   "box_2d": [
+    355.2,
+    250.096,
+    384.0,
+    265.872
+   ],
+   "label": "toaster",
+   "score": 0.82
+  }
+ ],
+ "latency_sec": 10.578419500001473,
+ "usage": {
+  "prompt_tokens": 371,
+  "completion_tokens": 431,
+  "total_tokens": 802
+ },
+ "raw_response": {
+  "id": "gen-1783414955-pSex0rQSROfr7qJTlFNb",
+  "object": "chat.completion",
+  "created": 1783414955,
+  "model": "qwen/qwen3-vl-235b-a22b-instruct",
+  "provider": "Alibaba",
+  "system_fingerprint": null,
+  "service_tier": null,
+  "choices": [
+   {
+    "index": 0,
+    "logprobs": null,
+    "finish_reason": "stop",
+    "native_finish_reason": "stop",
+    "message": {
+     "role": "assistant",
+     "content": "```json\n[\n\t{\"bbox_2d\": [117, 528, 315, 809], \"label\": \"oven\", \"confidence\": 0.95},\n\t{\"bbox_2d\": [315, 554, 511, 809], \"label\": \"oven\", \"confidence\": 0.95},\n\t{\"bbox_2d\": [0, 451, 97, 893], \"label\": \"refrigerator\", \"confidence\": 0.98},\n\t{\"bbox_2d\": [897, 457, 1000, 859], \"label\": \"refrigerator\", \"confidence\": 0.98},\n\t{\"bbox_2d\": [511, 617, 646, 677], \"label\": \"sink\", \"confidence\": 0.92},\n\t{\"bbox_2d\": [646, 617, 775, 677], \"label\": \"sink\", \"confidence\": 0.92},\n\t{\"bbox_2d\": [425, 632, 460, 677], \"label\": \"vase\", \"confidence\": 0.85},\n\t{\"bbox_2d\": [425, 51, 520, 189], \"label\": \"clock\", \"confidence\": 0.78},\n\t{\"bbox_2d\": [187, 528, 252, 573], \"label\": \"microwave\", \"confidence\": 0.88},\n\t{\"bbox_2d\": [555, 539, 600, 573], \"label\": \"toaster\", \"confidence\": 0.82}\n]\n```",
+     "refusal": null,
+     "reasoning": null
+    }
+   }
+  ],
+  "usage": {
+   "prompt_tokens": 371,
+   "completion_tokens": 431,
+   "total_tokens": 802,
+   "cost": 0.0005447,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0005447,
+    "upstream_inference_prompt_cost": 9.646e-05,
+    "upstream_inference_completions_cost": 0.00044824
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   }
+  }
+ },
+ "ts": "2026-07-07T09:02:43.622585+00:00"
+}

@@ -1,0 +1,33 @@
+{
+  "image": "/home/maxim/PycharmProjects/zero-shot-detection-benchmark/data/subsets/lvis_v1_val_unseen/images/000000299585.jpg",
+  "image_id": 299585,
+  "file_name": "000000299585.jpg",
+  "num_crops": 1,
+  "crops": [
+    {
+      "annotation_id": 104160,
+      "bbox": [
+        215.3,
+        352.71,
+        58.25,
+        30.03
+      ],
+      "category_id": 976,
+      "gt_label": "snowboard",
+      "labels": [
+        "snowboard",
+        "coffee_maker",
+        "hair_dryer",
+        "sewing_machine",
+        "spatula"
+      ],
+      "prediction": null,
+      "normalized_prediction": "",
+      "matched_label": null,
+      "correct": false,
+      "latency_sec": 1.0663147960149217,
+      "raw_response": "I'm sorry, but I cannot perform object detection on the provided image. The image is too small and blurry to identify any objects, including \"snowboard\", \"coffee_maker\", \"hair_dryer\", \"sewing_machine\", or \"spatula\". Please provide a clearer and larger image."
+    }
+  ],
+  "prompt": "You are an object recognition assistant.\n\nYou will see a cropped image that contains exactly one object\nfrom the following LVIS categories (unseen split):\n\n- snowboard\n- coffee_maker\n- hair_dryer\n- sewing_machine\n- spatula\n\nYour task:\n- Return ONLY the best matching category name from this list.\n- Do not output explanations or extra text.\n\nAnswer with a single string: \"class_name\"."
+}

@@ -1,0 +1,176 @@
+{
+  "model": "gpt-5",
+  "strategy": "single_query",
+  "image": "/home/maxim/PycharmProjects/zero-shot-detection-benchmark/data/raw/coco2017/val2017/000000249129.jpg",
+  "labels": [
+    "clock",
+    "teddy bear",
+    "oven",
+    "refrigerator",
+    "scissors",
+    "toaster",
+    "toothbrush"
+  ],
+  "detections": [
+    {
+      "box_2d": [
+        28,
+        70,
+        125,
+        210
+      ],
+      "label": "teddy bear",
+      "confidence": 0.92
+    },
+    {
+      "box_2d": [
+        138,
+        250,
+        206,
+        356
+      ],
+      "label": "teddy bear",
+      "confidence": 0.94
+    },
+    {
+      "box_2d": [
+        255,
+        203,
+        317,
+        285
+      ],
+      "label": "teddy bear",
+      "confidence": 0.9
+    },
+    {
+      "box_2d": [
+        232,
+        286,
+        300,
+        370
+      ],
+      "label": "teddy bear",
+      "confidence": 0.88
+    },
+    {
+      "box_2d": [
+        370,
+        250,
+        435,
+        342
+      ],
+      "label": "teddy bear",
+      "confidence": 0.93
+    },
+    {
+      "box_2d": [
+        500,
+        70,
+        585,
+        230
+      ],
+      "label": "teddy bear",
+      "confidence": 0.95
+    },
+    {
+      "box_2d": [
+        585,
+        290,
+        637,
+        395
+      ],
+      "label": "teddy bear",
+      "confidence": 0.86
+    },
+    {
+      "box_2d": [
+        366,
+        151,
+        386,
+        172
+      ],
+      "label": "clock",
+      "confidence": 0.56
+    }
+  ],
+  "latency_sec": 48.559434922004584,
+  "raw_response": {
+    "id": "resp_02b3c031b397bbff00691c11e189bc8195abe24eae24e243f3",
+    "created_at": 1763447265.0,
+    "error": null,
+    "incomplete_details": null,
+    "instructions": null,
+    "metadata": {},
+    "model": "gpt-5-2025-08-07",
+    "object": "response",
+    "output": [
+      {
+        "id": "rs_02b3c031b397bbff00691c11e21ad88195bfc25f2aead17fc5",
+        "summary": [],
+        "type": "reasoning",
+        "content": null,
+        "encrypted_content": null,
+        "status": null
+      },
+      {
+        "id": "msg_02b3c031b397bbff00691c120a8f84819584fb4132d674fe2c",
+        "content": [
+          {
+            "annotations": [],
+            "text": "[\n  {\"box_2d\": [28, 70, 125, 210], \"label\": \"teddy bear\", \"confidence\": 0.92},\n  {\"box_2d\": [138, 250, 206, 356], \"label\": \"teddy bear\", \"confidence\": 0.94},\n  {\"box_2d\": [255, 203, 317, 285], \"label\": \"teddy bear\", \"confidence\": 0.90},\n  {\"box_2d\": [232, 286, 300, 370], \"label\": \"teddy bear\", \"confidence\": 0.88},\n  {\"box_2d\": [370, 250, 435, 342], \"label\": \"teddy bear\", \"confidence\": 0.93},\n  {\"box_2d\": [500, 70, 585, 230], \"label\": \"teddy bear\", \"confidence\": 0.95},\n  {\"box_2d\": [585, 290, 637, 395], \"label\": \"teddy bear\", \"confidence\": 0.86},\n  {\"box_2d\": [366, 151, 386, 172], \"label\": \"clock\", \"confidence\": 0.56}\n]",
+            "type": "output_text",
+            "logprobs": []
+          }
+        ],
+        "role": "assistant",
+        "status": "completed",
+        "type": "message"
+      }
+    ],
+    "parallel_tool_calls": true,
+    "temperature": 1.0,
+    "tool_choice": "auto",
+    "tools": [],
+    "top_p": 1.0,
+    "background": false,
+    "conversation": null,
+    "max_output_tokens": 16192,
+    "max_tool_calls": null,
+    "previous_response_id": null,
+    "prompt": null,
+    "prompt_cache_key": null,
+    "prompt_cache_retention": null,
+    "reasoning": {
+      "effort": "medium",
+      "generate_summary": null,
+      "summary": null
+    },
+    "safety_identifier": null,
+    "service_tier": "default",
+    "status": "completed",
+    "text": {
+      "format": {
+        "type": "text"
+      },
+      "verbosity": "medium"
+    },
+    "top_logprobs": 0,
+    "truncation": "disabled",
+    "usage": {
+      "input_tokens": 431,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 1822,
+      "output_tokens_details": {
+        "reasoning_tokens": 1536
+      },
+      "total_tokens": 2253
+    },
+    "user": null,
+    "billing": {
+      "payer": "developer"
+    },
+    "store": true
+  }
+}

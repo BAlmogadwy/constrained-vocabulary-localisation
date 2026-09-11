@@ -1,0 +1,31 @@
+dataset:
+  images_dir: data/subsets/lvis_v1_val_unseen/images
+  metadata_file: data/processed/lvis_v1/val/lvis_v1_val_unseen.json
+  limit: null
+
+labels:
+  per_image_file: data/processed/lvis_v1/val/lvis_unseen_dynamic_labels.json
+
+prompt:
+  template: |-
+    You are an object recognition assistant.
+
+    You will see a cropped image that contains exactly one object
+    from the following LVIS categories (unseen split):
+
+    {class_list}
+
+    Your task:
+    - Return ONLY the best matching category name from this list.
+    - Do not output explanations or extra text.
+
+    Answer with a single string: "class_name".
+
+output:
+  dir: results/raw/oracle-box/vlm
+
+models:
+  - name: paligemma2-10b-mix-448
+    output_name: oracle_box_paligemma2_10b.json
+
+force: false

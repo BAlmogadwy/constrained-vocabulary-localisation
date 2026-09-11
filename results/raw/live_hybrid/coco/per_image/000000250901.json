@@ -1,0 +1,192 @@
+{
+ "image": "000000250901.jpg",
+ "labels": [
+  "book",
+  "microwave",
+  "oven",
+  "scissors",
+  "toaster",
+  "toothbrush",
+  "vase"
+ ],
+ "tau": 0.4,
+ "detector": {
+  "detections": [
+   {
+    "label": "book",
+    "box": [
+     48.23020935058594,
+     117.42041015625,
+     148.47117614746094,
+     183.072998046875
+    ],
+    "score": 0.0686340481042862
+   },
+   {
+    "label": "book",
+    "box": [
+     499.68817138671875,
+     173.16378784179688,
+     537.2990112304688,
+     248.73568725585938
+    ],
+    "score": 0.004007834941148758
+   },
+   {
+    "label": "book",
+    "box": [
+     523.64599609375,
+     390.9737548828125,
+     639.609619140625,
+     425.942138671875
+    ],
+    "score": 0.0014046250144019723
+   },
+   {
+    "label": "toaster",
+    "box": [
+     419.660400390625,
+     175.45242309570312,
+     502.033203125,
+     295.1746520996094
+    ],
+    "score": 0.0013789677759632468
+   },
+   {
+    "label": "book",
+    "box": [
+     606.418212890625,
+     73.12637329101562,
+     640.0,
+     129.8852081298828
+    ],
+    "score": 0.0011842827079817653
+   }
+  ],
+  "latency_sec": 0.03405039999051951
+ },
+ "detector_max_score": 0.0686340481042862,
+ "escalated": true,
+ "vlm": {
+  "model": "qwen/qwen3-vl-235b-a22b-instruct",
+  "detections": [
+   {
+    "label": "book",
+    "box": [
+     48.0,
+     110.76,
+     147.84,
+     181.476
+    ],
+    "score": 1.0
+   }
+  ],
+  "latency_sec": 4.268828200001735,
+  "usage": {
+   "prompt_tokens": 350,
+   "completion_tokens": 48,
+   "total_tokens": 398
+  },
+  "raw_response": {
+   "id": "gen-1783409164-aPG1GD0YH04ZbzTlxCH1",
+   "object": "chat.completion",
+   "created": 1783409164,
+   "model": "qwen/qwen3-vl-235b-a22b-instruct",
+   "provider": "Alibaba",
+   "system_fingerprint": null,
+   "service_tier": null,
+   "choices": [
+    {
+     "index": 0,
+     "logprobs": null,
+     "finish_reason": "stop",
+     "native_finish_reason": "stop",
+     "message": {
+      "role": "assistant",
+      "content": "```json\n[\n\t{\"bbox_2d\": [75, 260, 231, 426], \"label\": \"book\", \"confidence\": 0.95}\n]\n```",
+      "refusal": null,
+      "reasoning": null
+     }
+    }
+   ],
+   "usage": {
+    "prompt_tokens": 350,
+    "completion_tokens": 48,
+    "total_tokens": 398,
+    "cost": 0.00014092,
+    "is_byok": false,
+    "prompt_tokens_details": {
+     "cached_tokens": 0,
+     "cache_write_tokens": 0,
+     "audio_tokens": 0,
+     "video_tokens": 0
+    },
+    "cost_details": {
+     "upstream_inference_cost": 0.00014092,
+     "upstream_inference_prompt_cost": 9.1e-05,
+     "upstream_inference_completions_cost": 4.992e-05
+    },
+    "completion_tokens_details": {
+     "reasoning_tokens": 0,
+     "image_tokens": 0,
+     "audio_tokens": 0
+    }
+   }
+  }
+ },
+ "fallback": false,
+ "ts": "2026-07-07T07:26:01.443392+00:00",
+ "fused": [
+  {
+   "label": "book",
+   "box": [
+    48.23020935058594,
+    117.42041015625,
+    148.47117614746094,
+    183.072998046875
+   ],
+   "score": 0.3686340481042862
+  },
+  {
+   "label": "book",
+   "box": [
+    499.68817138671875,
+    173.16378784179688,
+    537.2990112304688,
+    248.73568725585938
+   ],
+   "score": 0.004007834941148758
+  },
+  {
+   "label": "book",
+   "box": [
+    523.64599609375,
+    390.9737548828125,
+    639.609619140625,
+    425.942138671875
+   ],
+   "score": 0.0014046250144019723
+  },
+  {
+   "label": "toaster",
+   "box": [
+    419.660400390625,
+    175.45242309570312,
+    502.033203125,
+    295.1746520996094
+   ],
+   "score": 0.0013789677759632468
+  },
+  {
+   "label": "book",
+   "box": [
+    606.418212890625,
+    73.12637329101562,
+    640.0,
+    129.8852081298828
+   ],
+   "score": 0.0011842827079817653
+  }
+ ],
+ "latency_total_sec": 4.302909199992428
+}

@@ -1,0 +1,108 @@
+{
+ "image": "000000419653.jpg",
+ "model": "qwen/qwen3-vl-235b-a22b-instruct",
+ "labels": [
+  "microwave",
+  "oven",
+  "vase",
+  "book",
+  "hair drier",
+  "scissors",
+  "toothbrush"
+ ],
+ "detections": [
+  {
+   "box_2d": [
+    44.8,
+    135.84,
+    119.68,
+    210.72
+   ],
+   "label": "microwave",
+   "score": 0.99
+  },
+  {
+   "box_2d": [
+    0.0,
+    18.72,
+    48.0,
+    353.76
+   ],
+   "label": "oven",
+   "score": 0.99
+  },
+  {
+   "box_2d": [
+    69.76,
+    66.72,
+    115.84,
+    141.12
+   ],
+   "label": "vase",
+   "score": 0.99
+  },
+  {
+   "box_2d": [
+    375.68,
+    274.08,
+    419.84,
+    342.72
+   ],
+   "label": "book",
+   "score": 0.99
+  }
+ ],
+ "latency_sec": 5.564709099999163,
+ "usage": {
+  "prompt_tokens": 392,
+  "completion_tokens": 172,
+  "total_tokens": 564
+ },
+ "raw_response": {
+  "id": "gen-1783413760-Ye5CWZyA6oh1bdwqdkPx",
+  "object": "chat.completion",
+  "created": 1783413760,
+  "model": "qwen/qwen3-vl-235b-a22b-instruct",
+  "provider": "Novita",
+  "system_fingerprint": null,
+  "service_tier": null,
+  "choices": [
+   {
+    "index": 0,
+    "logprobs": null,
+    "finish_reason": "stop",
+    "native_finish_reason": "stop",
+    "message": {
+     "role": "assistant",
+     "content": "```json\n[\n\t{\"bbox_2d\": [70, 283, 187, 439], \"label\": \"microwave\", \"confidence\": 0.99},\n\t{\"bbox_2d\": [0, 39, 75, 737], \"label\": \"oven\", \"confidence\": 0.99},\n\t{\"bbox_2d\": [109, 139, 181, 294], \"label\": \"vase\", \"confidence\": 0.99},\n\t{\"bbox_2d\": [587, 571, 656, 714], \"label\": \"book\", \"confidence\": 0.99}\n]\n```",
+     "refusal": null,
+     "reasoning": null
+    }
+   }
+  ],
+  "usage": {
+   "prompt_tokens": 392,
+   "completion_tokens": 172,
+   "total_tokens": 564,
+   "cost": 0.0003756,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0003756,
+    "upstream_inference_prompt_cost": 0.0001176,
+    "upstream_inference_completions_cost": 0.000258
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   }
+  }
+ },
+ "ts": "2026-07-07T08:42:44.425547+00:00"
+}

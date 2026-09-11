@@ -1,0 +1,246 @@
+{
+ "image": "000000000294.jpg",
+ "model": "qwen/qwen3-vl-235b-a22b-instruct",
+ "labels": [
+  "spatula",
+  "blender",
+  "musical_instrument",
+  "sewing_machine",
+  "stapler_(stapling_machine)"
+ ],
+ "detections": [
+  {
+   "box_2d": [
+    350.72,
+    336.476,
+    380.8,
+    362.95
+   ],
+   "label": "spatula",
+   "score": 0.99
+  },
+  {
+   "box_2d": [
+    352.64,
+    374.052,
+    373.76,
+    426.146
+   ],
+   "label": "spatula",
+   "score": 0.99
+  },
+  {
+   "box_2d": [
+    371.2,
+    374.052,
+    387.84,
+    426.146
+   ],
+   "label": "spatula",
+   "score": 0.99
+  },
+  {
+   "box_2d": [
+    387.84,
+    374.052,
+    403.2,
+    426.146
+   ],
+   "label": "spatula",
+   "score": 0.99
+  },
+  {
+   "box_2d": [
+    401.28,
+    374.052,
+    416.0,
+    426.146
+   ],
+   "label": "spatula",
+   "score": 0.99
+  },
+  {
+   "box_2d": [
+    414.72,
+    374.052,
+    430.08,
+    426.146
+   ],
+   "label": "spatula",
+   "score": 0.99
+  },
+  {
+   "box_2d": [
+    427.52,
+    374.052,
+    442.24,
+    426.146
+   ],
+   "label": "spatula",
+   "score": 0.99
+  },
+  {
+   "box_2d": [
+    439.68,
+    374.052,
+    453.76,
+    426.146
+   ],
+   "label": "spatula",
+   "score": 0.99
+  },
+  {
+   "box_2d": [
+    451.84,
+    374.052,
+    465.92,
+    426.146
+   ],
+   "label": "spatula",
+   "score": 0.99
+  },
+  {
+   "box_2d": [
+    464.0,
+    374.052,
+    478.08,
+    426.146
+   ],
+   "label": "spatula",
+   "score": 0.99
+  },
+  {
+   "box_2d": [
+    476.16,
+    374.052,
+    490.24,
+    426.146
+   ],
+   "label": "spatula",
+   "score": 0.99
+  },
+  {
+   "box_2d": [
+    487.68,
+    374.052,
+    501.76,
+    426.146
+   ],
+   "label": "spatula",
+   "score": 0.99
+  },
+  {
+   "box_2d": [
+    499.2,
+    374.052,
+    513.28,
+    426.146
+   ],
+   "label": "spatula",
+   "score": 0.99
+  },
+  {
+   "box_2d": [
+    510.72,
+    374.052,
+    524.8,
+    426.146
+   ],
+   "label": "spatula",
+   "score": 0.99
+  },
+  {
+   "box_2d": [
+    524.8,
+    374.052,
+    538.88,
+    426.146
+   ],
+   "label": "spatula",
+   "score": 0.99
+  },
+  {
+   "box_2d": [
+    538.88,
+    374.052,
+    552.96,
+    426.146
+   ],
+   "label": "spatula",
+   "score": 0.99
+  },
+  {
+   "box_2d": [
+    552.96,
+    374.052,
+    567.04,
+    426.146
+   ],
+   "label": "spatula",
+   "score": 0.99
+  },
+  {
+   "box_2d": [
+    567.04,
+    374.052,
+    581.12,
+    426.146
+   ],
+   "label": "spatula",
+   "score": 0.99
+  }
+ ],
+ "latency_sec": 18.039980699992157,
+ "usage": {
+  "prompt_tokens": 355,
+  "completion_tokens": 800,
+  "total_tokens": 1155
+ },
+ "raw_response": {
+  "id": "gen-1783407030-I3k8PakpHor79F2ipeZc",
+  "object": "chat.completion",
+  "created": 1783407030,
+  "model": "qwen/qwen3-vl-235b-a22b-instruct",
+  "provider": "Alibaba",
+  "system_fingerprint": null,
+  "service_tier": null,
+  "choices": [
+   {
+    "index": 0,
+    "logprobs": null,
+    "finish_reason": "length",
+    "native_finish_reason": "length",
+    "message": {
+     "role": "assistant",
+     "content": "```json\n[\n\t{\"bbox_2d\": [548, 788, 595, 850], \"label\": \"spatula\", \"confidence\": 0.99},\n\t{\"bbox_2d\": [551, 876, 584, 998], \"label\": \"spatula\", \"confidence\": 0.99},\n\t{\"bbox_2d\": [580, 876, 606, 998], \"label\": \"spatula\", \"confidence\": 0.99},\n\t{\"bbox_2d\": [606, 876, 630, 998], \"label\": \"spatula\", \"confidence\": 0.99},\n\t{\"bbox_2d\": [627, 876, 650, 998], \"label\": \"spatula\", \"confidence\": 0.99},\n\t{\"bbox_2d\": [648, 876, 672, 998], \"label\": \"spatula\", \"confidence\": 0.99},\n\t{\"bbox_2d\": [668, 876, 691, 998], \"label\": \"spatula\", \"confidence\": 0.99},\n\t{\"bbox_2d\": [687, 876, 709, 998], \"label\": \"spatula\", \"confidence\": 0.99},\n\t{\"bbox_2d\": [706, 876, 728, 998], \"label\": \"spatula\", \"confidence\": 0.99},\n\t{\"bbox_2d\": [725, 876, 747, 998], \"label\": \"spatula\", \"confidence\": 0.99},\n\t{\"bbox_2d\": [744, 876, 766, 998], \"label\": \"spatula\", \"confidence\": 0.99},\n\t{\"bbox_2d\": [762, 876, 784, 998], \"label\": \"spatula\", \"confidence\": 0.99},\n\t{\"bbox_2d\": [780, 876, 802, 998], \"label\": \"spatula\", \"confidence\": 0.99},\n\t{\"bbox_2d\": [798, 876, 820, 998], \"label\": \"spatula\", \"confidence\": 0.99},\n\t{\"bbox_2d\": [820, 876, 842, 998], \"label\": \"spatula\", \"confidence\": 0.99},\n\t{\"bbox_2d\": [842, 876, 864, 998], \"label\": \"spatula\", \"confidence\": 0.99},\n\t{\"bbox_2d\": [864, 876, 886, 998], \"label\": \"spatula\", \"confidence\": 0.99},\n\t{\"bbox_2d\": [886, 876, 908, 998], \"label\": \"spatula\", \"confidence\": 0.99},\n\t{\"bbox_",
+     "refusal": null,
+     "reasoning": null
+    }
+   }
+  ],
+  "usage": {
+   "prompt_tokens": 355,
+   "completion_tokens": 800,
+   "total_tokens": 1155,
+   "cost": 0.0009243,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0009243,
+    "upstream_inference_prompt_cost": 9.23e-05,
+    "upstream_inference_completions_cost": 0.000832
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   }
+  }
+ },
+ "ts": "2026-07-07T06:50:46.855492+00:00"
+}

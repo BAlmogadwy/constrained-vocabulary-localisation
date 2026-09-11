@@ -1,0 +1,152 @@
+{
+ "image": "000000424135.jpg",
+ "labels": [
+  "clock",
+  "hair drier",
+  "microwave",
+  "scissors",
+  "sink",
+  "toaster",
+  "toothbrush"
+ ],
+ "tau": 0.4,
+ "detector": {
+  "detections": [
+   {
+    "label": "clock",
+    "box": [
+     94.86109924316406,
+     26.3489990234375,
+     422.8646240234375,
+     576.5556030273438
+    ],
+    "score": 0.18070298433303833
+   },
+   {
+    "label": "clock",
+    "box": [
+     175.88214111328125,
+     72.625244140625,
+     309.5369873046875,
+     197.91958618164062
+    ],
+    "score": 0.014973309822380543
+   },
+   {
+    "label": "clock",
+    "box": [
+     198.3167724609375,
+     403.51043701171875,
+     369.034423828125,
+     583.3736572265625
+    ],
+    "score": 0.0011576561955735087
+   }
+  ],
+  "latency_sec": 0.041228800007957034
+ },
+ "detector_max_score": 0.18070298433303833,
+ "escalated": true,
+ "vlm": {
+  "model": "qwen/qwen3-vl-235b-a22b-instruct",
+  "detections": [
+   {
+    "label": "clock",
+    "box": [
+     174.72,
+     81.28,
+     307.68,
+     195.84
+    ],
+    "score": 1.0
+   }
+  ],
+  "latency_sec": 4.314645299993572,
+  "usage": {
+   "prompt_tokens": 392,
+   "completion_tokens": 49,
+   "total_tokens": 441
+  },
+  "raw_response": {
+   "id": "gen-1783409648-SMi30g6MVBz5Poy0hE07",
+   "object": "chat.completion",
+   "created": 1783409648,
+   "model": "qwen/qwen3-vl-235b-a22b-instruct",
+   "provider": "Novita",
+   "system_fingerprint": null,
+   "service_tier": null,
+   "choices": [
+    {
+     "index": 0,
+     "logprobs": null,
+     "finish_reason": "stop",
+     "native_finish_reason": "stop",
+     "message": {
+      "role": "assistant",
+      "content": "```json\n[\n\t{\"box_2d\": [364, 127, 641, 306], \"label\": \"clock\", \"confidence\": 0.99}\n]\n```",
+      "refusal": null,
+      "reasoning": null
+     }
+    }
+   ],
+   "usage": {
+    "prompt_tokens": 392,
+    "completion_tokens": 49,
+    "total_tokens": 441,
+    "cost": 0.0001911,
+    "is_byok": false,
+    "prompt_tokens_details": {
+     "cached_tokens": 0,
+     "cache_write_tokens": 0,
+     "audio_tokens": 0,
+     "video_tokens": 0
+    },
+    "cost_details": {
+     "upstream_inference_cost": 0.0001911,
+     "upstream_inference_prompt_cost": 0.0001176,
+     "upstream_inference_completions_cost": 7.35e-05
+    },
+    "completion_tokens_details": {
+     "reasoning_tokens": 0,
+     "image_tokens": 0,
+     "audio_tokens": 0
+    }
+   }
+  }
+ },
+ "fallback": false,
+ "ts": "2026-07-07T07:34:06.076715+00:00",
+ "fused": [
+  {
+   "label": "clock",
+   "box": [
+    94.86109924316406,
+    26.3489990234375,
+    422.8646240234375,
+    576.5556030273438
+   ],
+   "score": 0.18070298433303833
+  },
+  {
+   "label": "clock",
+   "box": [
+    175.88214111328125,
+    72.625244140625,
+    309.5369873046875,
+    197.91958618164062
+   ],
+   "score": 0.31497330982238053
+  },
+  {
+   "label": "clock",
+   "box": [
+    198.3167724609375,
+    403.51043701171875,
+    369.034423828125,
+    583.3736572265625
+   ],
+   "score": 0.0011576561955735087
+  }
+ ],
+ "latency_total_sec": 4.3559462999983225
+}

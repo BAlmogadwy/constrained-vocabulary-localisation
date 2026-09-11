@@ -1,0 +1,258 @@
+{
+  "model": "Qwen3-VL-8B-Instruct",
+  "strategy": "single_query",
+  "experiment": "visual_cot",
+  "prompt_variant": "baseline",
+  "temperature": 0.0,
+  "image": "/home/maxim/PycharmProjects/zero-shot-detection-benchmark/data/subsets/lvis_v1_val_unseen/images/000000258644.jpg",
+  "image_relative": "000000258644.jpg",
+  "labels": [
+    "blender",
+    "coffee_maker",
+    "lawn_mower",
+    "sewing_machine",
+    "snowboard"
+  ],
+  "metadata": {
+    "image": "/home/maxim/PycharmProjects/zero-shot-detection-benchmark/data/subsets/lvis_v1_val_unseen/images/000000258644.jpg",
+    "image_relative": "000000258644.jpg",
+    "image_size": {
+      "width": 428,
+      "height": 640
+    },
+    "labels": [
+      "blender",
+      "coffee_maker",
+      "lawn_mower",
+      "sewing_machine",
+      "snowboard"
+    ],
+    "ground_truth_labels": [
+      "blender",
+      "coffee_maker",
+      "lawn_mower",
+      "sewing_machine",
+      "snowboard"
+    ]
+  },
+  "detections": [
+    {
+      "box_2d": [
+        617.0,
+        467.0,
+        926.0,
+        953.0
+      ],
+      "label": "blender"
+    }
+  ],
+  "latency_sec": 19.171297917957418,
+  "final_detections": [
+    {
+      "box_2d": [
+        617.0,
+        467.0,
+        926.0,
+        953.0
+      ],
+      "label": "blender"
+    }
+  ],
+  "final_latency_sec": 19.171297917957418,
+  "refinement_chain": [
+    {
+      "step": 0,
+      "stage": "baseline",
+      "prompt": "Baseline inference using the configured prompt strategy.",
+      "labels_sent": [
+        "blender",
+        "coffee_maker",
+        "lawn_mower",
+        "sewing_machine",
+        "snowboard"
+      ],
+      "input_images": [
+        "/home/maxim/PycharmProjects/zero-shot-detection-benchmark/data/subsets/lvis_v1_val_unseen/images/000000258644.jpg"
+      ],
+      "annotated_image": "/home/maxim/PycharmProjects/zero-shot-detection-benchmark/data/subsets/lvis_v1_val_unseen/images/000000258644.jpg",
+      "detections": [
+        {
+          "box_2d": [
+            617.0,
+            467.0,
+            926.0,
+            950.0
+          ],
+          "label": "blender"
+        }
+      ],
+      "latency_sec": 3.7558705538976938,
+      "raw_response": "user\nYou are an object detection assistant. Given the image and the list of target classes, return detections as JSON.\nTarget classes: blender, coffee_maker, lawn_mower, sewing_machine, snowboard.\nOutput format: [{\"box_2d\":[x1,y1,x2,y2],\"label\":\"class_name\"}...]\nUse pixel coordinates relative to the input image. Return JSON only.\nassistant\n```json\n[\n\t{\"box_2d\": [617, 467, 926, 950], \"label\": \"blender\"}\n]\n```",
+      "status": "ok",
+      "normalized_boxes": [
+        [
+          0.7296875,
+          1.0,
+          1.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "step": 1,
+      "stage": "refinement",
+      "prompt": "I have drawn your predictions from the previous step in red. Visually inspect the alignment. Are the boxes accurate? If not, provide corrected coordinates for: blender, coffee_maker, lawn_mower, sewing_machine, snowboard. Return JSON only.",
+      "labels_sent": [
+        "blender",
+        "coffee_maker",
+        "lawn_mower",
+        "sewing_machine",
+        "snowboard",
+        "INSTRUCTION: I have drawn your predictions from the previous step in red. Visually inspect the alignment. Are the boxes accurate? If not, provide corrected coordinates for: blender, coffee_maker, lawn_mower, sewing_machine, snowboard. Return JSON only."
+      ],
+      "input_images": [
+        "/home/maxim/PycharmProjects/zero-shot-detection-benchmark/results/visual_cot/lvis_qwen/baseline/0.0/Qwen3-VL-8B-Instruct/debug_images/000000258644/step_1.png"
+      ],
+      "annotated_image": "/home/maxim/PycharmProjects/zero-shot-detection-benchmark/results/visual_cot/lvis_qwen/baseline/0.0/Qwen3-VL-8B-Instruct/debug_images/000000258644/step_1.png",
+      "detections": [
+        {
+          "box_2d": [
+            617.0,
+            467.0,
+            926.0,
+            953.0
+          ],
+          "label": "blender"
+        }
+      ],
+      "latency_sec": 3.810050550964661,
+      "raw_response": "user\nYou are an object detection assistant. Given the image and the list of target classes, return detections as JSON.\nTarget classes: blender, coffee_maker, lawn_mower, sewing_machine, snowboard, INSTRUCTION: I have drawn your predictions from the previous step in red. Visually inspect the alignment. Are the boxes accurate? If not, provide corrected coordinates for: blender, coffee_maker, lawn_mower, sewing_machine, snowboard. Return JSON only..\nOutput format: [{\"box_2d\":[x1,y1,x2,y2],\"label\":\"class_name\"}...]\nUse pixel coordinates relative to the input image. Return JSON only.\nassistant\n```json\n[\n\t{\"box_2d\": [617, 467, 926, 953], \"label\": \"blender\"}\n]\n```",
+      "status": "ok",
+      "normalized_boxes": [
+        [
+          0.7296875,
+          1.0,
+          1.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "step": 2,
+      "stage": "refinement",
+      "prompt": "I have drawn your predictions from the previous step in red. Visually inspect the alignment. Are the boxes accurate? If not, provide corrected coordinates for: blender, coffee_maker, lawn_mower, sewing_machine, snowboard. Return JSON only.",
+      "labels_sent": [
+        "blender",
+        "coffee_maker",
+        "lawn_mower",
+        "sewing_machine",
+        "snowboard",
+        "INSTRUCTION: I have drawn your predictions from the previous step in red. Visually inspect the alignment. Are the boxes accurate? If not, provide corrected coordinates for: blender, coffee_maker, lawn_mower, sewing_machine, snowboard. Return JSON only."
+      ],
+      "input_images": [
+        "/home/maxim/PycharmProjects/zero-shot-detection-benchmark/results/visual_cot/lvis_qwen/baseline/0.0/Qwen3-VL-8B-Instruct/debug_images/000000258644/step_2.png"
+      ],
+      "annotated_image": "/home/maxim/PycharmProjects/zero-shot-detection-benchmark/results/visual_cot/lvis_qwen/baseline/0.0/Qwen3-VL-8B-Instruct/debug_images/000000258644/step_2.png",
+      "detections": [
+        {
+          "box_2d": [
+            617.0,
+            467.0,
+            926.0,
+            953.0
+          ],
+          "label": "blender"
+        }
+      ],
+      "latency_sec": 3.8333319190423936,
+      "raw_response": "user\nYou are an object detection assistant. Given the image and the list of target classes, return detections as JSON.\nTarget classes: blender, coffee_maker, lawn_mower, sewing_machine, snowboard, INSTRUCTION: I have drawn your predictions from the previous step in red. Visually inspect the alignment. Are the boxes accurate? If not, provide corrected coordinates for: blender, coffee_maker, lawn_mower, sewing_machine, snowboard. Return JSON only..\nOutput format: [{\"box_2d\":[x1,y1,x2,y2],\"label\":\"class_name\"}...]\nUse pixel coordinates relative to the input image. Return JSON only.\nassistant\n```json\n[\n\t{\"box_2d\": [617, 467, 926, 953], \"label\": \"blender\"}\n]\n```",
+      "status": "ok",
+      "normalized_boxes": [
+        [
+          0.7296875,
+          1.0,
+          1.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "step": 3,
+      "stage": "refinement",
+      "prompt": "I have drawn your predictions from the previous step in red. Visually inspect the alignment. Are the boxes accurate? If not, provide corrected coordinates for: blender, coffee_maker, lawn_mower, sewing_machine, snowboard. Return JSON only.",
+      "labels_sent": [
+        "blender",
+        "coffee_maker",
+        "lawn_mower",
+        "sewing_machine",
+        "snowboard",
+        "INSTRUCTION: I have drawn your predictions from the previous step in red. Visually inspect the alignment. Are the boxes accurate? If not, provide corrected coordinates for: blender, coffee_maker, lawn_mower, sewing_machine, snowboard. Return JSON only."
+      ],
+      "input_images": [
+        "/home/maxim/PycharmProjects/zero-shot-detection-benchmark/results/visual_cot/lvis_qwen/baseline/0.0/Qwen3-VL-8B-Instruct/debug_images/000000258644/step_3.png"
+      ],
+      "annotated_image": "/home/maxim/PycharmProjects/zero-shot-detection-benchmark/results/visual_cot/lvis_qwen/baseline/0.0/Qwen3-VL-8B-Instruct/debug_images/000000258644/step_3.png",
+      "detections": [
+        {
+          "box_2d": [
+            617.0,
+            467.0,
+            926.0,
+            953.0
+          ],
+          "label": "blender"
+        }
+      ],
+      "latency_sec": 3.8412460669642314,
+      "raw_response": "user\nYou are an object detection assistant. Given the image and the list of target classes, return detections as JSON.\nTarget classes: blender, coffee_maker, lawn_mower, sewing_machine, snowboard, INSTRUCTION: I have drawn your predictions from the previous step in red. Visually inspect the alignment. Are the boxes accurate? If not, provide corrected coordinates for: blender, coffee_maker, lawn_mower, sewing_machine, snowboard. Return JSON only..\nOutput format: [{\"box_2d\":[x1,y1,x2,y2],\"label\":\"class_name\"}...]\nUse pixel coordinates relative to the input image. Return JSON only.\nassistant\n```json\n[\n\t{\"box_2d\": [617, 467, 926, 953], \"label\": \"blender\"}\n]\n```",
+      "status": "ok",
+      "normalized_boxes": [
+        [
+          0.7296875,
+          1.0,
+          1.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "step": 4,
+      "stage": "refinement",
+      "prompt": "I have drawn your predictions from the previous step in red. Visually inspect the alignment. Are the boxes accurate? If not, provide corrected coordinates for: blender, coffee_maker, lawn_mower, sewing_machine, snowboard. Return JSON only.",
+      "labels_sent": [
+        "blender",
+        "coffee_maker",
+        "lawn_mower",
+        "sewing_machine",
+        "snowboard",
+        "INSTRUCTION: I have drawn your predictions from the previous step in red. Visually inspect the alignment. Are the boxes accurate? If not, provide corrected coordinates for: blender, coffee_maker, lawn_mower, sewing_machine, snowboard. Return JSON only."
+      ],
+      "input_images": [
+        "/home/maxim/PycharmProjects/zero-shot-detection-benchmark/results/visual_cot/lvis_qwen/baseline/0.0/Qwen3-VL-8B-Instruct/debug_images/000000258644/step_4.png"
+      ],
+      "annotated_image": "/home/maxim/PycharmProjects/zero-shot-detection-benchmark/results/visual_cot/lvis_qwen/baseline/0.0/Qwen3-VL-8B-Instruct/debug_images/000000258644/step_4.png",
+      "detections": [
+        {
+          "box_2d": [
+            617.0,
+            467.0,
+            926.0,
+            953.0
+          ],
+          "label": "blender"
+        }
+      ],
+      "latency_sec": 3.930798827088438,
+      "raw_response": "user\nYou are an object detection assistant. Given the image and the list of target classes, return detections as JSON.\nTarget classes: blender, coffee_maker, lawn_mower, sewing_machine, snowboard, INSTRUCTION: I have drawn your predictions from the previous step in red. Visually inspect the alignment. Are the boxes accurate? If not, provide corrected coordinates for: blender, coffee_maker, lawn_mower, sewing_machine, snowboard. Return JSON only..\nOutput format: [{\"box_2d\":[x1,y1,x2,y2],\"label\":\"class_name\"}...]\nUse pixel coordinates relative to the input image. Return JSON only.\nassistant\n```json\n[\n\t{\"box_2d\": [617, 467, 926, 953], \"label\": \"blender\"}\n]\n```",
+      "status": "ok",
+      "normalized_boxes": [
+        [
+          0.7296875,
+          1.0,
+          1.0,
+          1.0
+        ]
+      ]
+    }
+  ]
+}

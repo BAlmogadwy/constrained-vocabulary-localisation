@@ -1,0 +1,50 @@
+{
+  "model": "yolo_world",
+  "strategy": "default",
+  "image": "/home/maxim/PycharmProjects/zero-shot-detection-benchmark/data/subsets/lvis_v1_val_unseen/images/000000149184.jpg",
+  "labels": [
+    "coffee_maker",
+    "hair_dryer",
+    "microscope",
+    "musical_instrument",
+    "stapler_(stapling_machine)"
+  ],
+  "result": {
+    "detections": [
+      {
+        "label": "coffee_maker",
+        "score": 0.8991972208023071,
+        "box_2d": [
+          571.4003295898438,
+          191.24639892578125,
+          609.4859008789062,
+          258.16943359375
+        ],
+        "box": [
+          571.4003295898438,
+          191.24639892578125,
+          609.4859008789062,
+          258.16943359375
+        ]
+      },
+      {
+        "label": "coffee_maker",
+        "score": 0.2884383201599121,
+        "box_2d": [
+          608.329833984375,
+          227.93414306640625,
+          628.347412109375,
+          260.44537353515625
+        ],
+        "box": [
+          608.329833984375,
+          227.93414306640625,
+          628.347412109375,
+          260.44537353515625
+        ]
+      }
+    ],
+    "latency_sec": 0.03747851587831974,
+    "raw_response": null
+  }
+}

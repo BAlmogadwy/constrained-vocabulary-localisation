@@ -1,0 +1,76 @@
+{
+ "image": "000000359073.jpg",
+ "model": "qwen/qwen3-vl-235b-a22b-instruct",
+ "labels": [
+  "snowboard",
+  "lawn_mower",
+  "musical_instrument",
+  "sewing_machine",
+  "stapler_(stapling_machine)"
+ ],
+ "detections": [
+  {
+   "box_2d": [
+    400.0,
+    387.84,
+    411.52,
+    396.0
+   ],
+   "label": "snowboard",
+   "score": 0.95
+  }
+ ],
+ "latency_sec": 3.771918200000073,
+ "usage": {
+  "prompt_tokens": 397,
+  "completion_tokens": 50,
+  "total_tokens": 447
+ },
+ "raw_response": {
+  "id": "gen-1783408073-sCiN7ZV5jJ8xu8XsQVEc",
+  "object": "chat.completion",
+  "created": 1783408073,
+  "model": "qwen/qwen3-vl-235b-a22b-instruct",
+  "provider": "Parasail",
+  "system_fingerprint": null,
+  "service_tier": null,
+  "choices": [
+   {
+    "index": 0,
+    "logprobs": null,
+    "finish_reason": "stop",
+    "native_finish_reason": "stop",
+    "message": {
+     "role": "assistant",
+     "content": "```json\n[\n\t{\"box_2d\": [625, 808, 643, 825], \"label\": \"snowboard\", \"confidence\": 0.95}\n]\n```",
+     "refusal": null,
+     "reasoning": null
+    }
+   }
+  ],
+  "usage": {
+   "prompt_tokens": 397,
+   "completion_tokens": 50,
+   "total_tokens": 447,
+   "cost": 0.00017837,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00017837,
+    "upstream_inference_prompt_cost": 8.337e-05,
+    "upstream_inference_completions_cost": 9.5e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   }
+  }
+ },
+ "ts": "2026-07-07T07:07:54.212916+00:00"
+}

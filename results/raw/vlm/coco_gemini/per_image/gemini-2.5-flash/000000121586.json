@@ -1,0 +1,108 @@
+{
+  "model": "gemini-2.5-flash",
+  "strategy": "single_query",
+  "image": "/home/maxim/PycharmProjects/zero-shot-detection-benchmark/data/raw/coco2017/val2017/000000121586.jpg",
+  "labels": [
+    "book",
+    "clock",
+    "hair drier",
+    "microwave",
+    "teddy bear",
+    "toaster",
+    "vase"
+  ],
+  "detections": [
+    {
+      "box_2d": [
+        647,
+        447,
+        831,
+        597
+      ],
+      "label": "book"
+    },
+    {
+      "box_2d": [
+        890,
+        56,
+        946,
+        134
+      ],
+      "label": "book"
+    },
+    {
+      "box_2d": [
+        870,
+        140,
+        938,
+        237
+      ],
+      "label": "book"
+    },
+    {
+      "box_2d": [
+        750,
+        310,
+        783,
+        429
+      ],
+      "label": "book"
+    },
+    {
+      "box_2d": [
+        858,
+        246,
+        929,
+        335
+      ],
+      "label": "book"
+    },
+    {
+      "box_2d": [
+        858,
+        340,
+        920,
+        429
+      ],
+      "label": "book"
+    },
+    {
+      "box_2d": [
+        785,
+        878,
+        907,
+        940
+      ],
+      "label": "book"
+    },
+    {
+      "box_2d": [
+        852,
+        477,
+        998,
+        606
+      ],
+      "label": "book"
+    },
+    {
+      "box_2d": [
+        835,
+        955,
+        953,
+        999
+      ],
+      "label": "book"
+    },
+    {
+      "box_2d": [
+        631,
+        785,
+        715,
+        999
+      ],
+      "label": "book"
+    }
+  ],
+  "latency_sec": 3.139668919960968,
+  "raw_response": "```json\n[\n  {\"box_2d\": [647, 447, 831, 597], \"label\": \"book\"},\n  {\"box_2d\": [890, 56, 946, 134], \"label\": \"book\"},\n  {\"box_2d\": [870, 140, 938, 237], \"label\": \"book\"},\n  {\"box_2d\": [750, 310, 783, 429], \"label\": \"book\"},\n  {\"box_2d\": [858, 246, 929, 335], \"label\": \"book\"},\n  {\"box_2d\": [858, 340, 920, 429], \"label\": \"book\"},\n  {\"box_2d\": [785, 878, 907, 940], \"label\": \"book\"},\n  {\"box_2d\": [852, 477, 998, 606], \"label\": \"book\"},\n  {\"box_2d\": [835, 955, 953, 999], \"label\": \"book\"},\n  {\"box_2d\": [631, 785, 715, 999], \"label\": \"book\"}\n]\n```"
+}

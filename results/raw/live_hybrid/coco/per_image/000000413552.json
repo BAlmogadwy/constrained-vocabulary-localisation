@@ -1,0 +1,272 @@
+{
+ "image": "000000413552.jpg",
+ "labels": [
+  "toothbrush",
+  "clock",
+  "hair drier",
+  "scissors",
+  "sink",
+  "teddy bear",
+  "vase"
+ ],
+ "tau": 0.4,
+ "detector": {
+  "detections": [
+   {
+    "label": "toothbrush",
+    "box": [
+     175.2441864013672,
+     184.71661376953125,
+     225.41709899902344,
+     204.81826782226562
+    ],
+    "score": 0.0643954798579216
+   },
+   {
+    "label": "toothbrush",
+    "box": [
+     204.67080688476562,
+     185.21932983398438,
+     225.44674682617188,
+     204.60073852539062
+    ],
+    "score": 0.02214418165385723
+   },
+   {
+    "label": "teddy bear",
+    "box": [
+     279.33441162109375,
+     314.85784912109375,
+     425.1187744140625,
+     478.37860107421875
+    ],
+    "score": 0.004366273060441017
+   },
+   {
+    "label": "vase",
+    "box": [
+     186.14749145507812,
+     0.0,
+     226.35415649414062,
+     41.934024810791016
+    ],
+    "score": 0.003651261795312166
+   },
+   {
+    "label": "sink",
+    "box": [
+     26.86639404296875,
+     547.9959716796875,
+     426.0,
+     640.0
+    ],
+    "score": 0.00333967711776495
+   },
+   {
+    "label": "sink",
+    "box": [
+     420.37933349609375,
+     279.5195617675781,
+     426.0,
+     342.5614929199219
+    ],
+    "score": 0.002943025203421712
+   },
+   {
+    "label": "teddy bear",
+    "box": [
+     76.47169494628906,
+     25.1441650390625,
+     424.8642578125,
+     622.704833984375
+    ],
+    "score": 0.0018470435170456767
+   },
+   {
+    "label": "clock",
+    "box": [
+     420.35906982421875,
+     279.0906982421875,
+     426.0,
+     342.3194580078125
+    ],
+    "score": 0.001276909257285297
+   },
+   {
+    "label": "toothbrush",
+    "box": [
+     164.56524658203125,
+     0.058795928955078125,
+     233.0819091796875,
+     42.27030944824219
+    ],
+    "score": 0.0012196602765470743
+   }
+  ],
+  "latency_sec": 0.03818880001199432
+ },
+ "detector_max_score": 0.0643954798579216,
+ "escalated": true,
+ "vlm": {
+  "model": "qwen/qwen3-vl-235b-a22b-instruct",
+  "detections": [
+   {
+    "label": "toothbrush",
+    "box": [
+     201.924,
+     183.68,
+     227.058,
+     211.2
+    ],
+    "score": 1.0
+   }
+  ],
+  "latency_sec": 2.985316699996474,
+  "usage": {
+   "prompt_tokens": 354,
+   "completion_tokens": 51,
+   "total_tokens": 405
+  },
+  "raw_response": {
+   "id": "gen-1783409626-FWNZaOSJ2qHeHOLaXGzN",
+   "object": "chat.completion",
+   "created": 1783409626,
+   "model": "qwen/qwen3-vl-235b-a22b-instruct",
+   "provider": "Parasail",
+   "system_fingerprint": null,
+   "service_tier": null,
+   "choices": [
+    {
+     "index": 0,
+     "logprobs": null,
+     "finish_reason": "stop",
+     "native_finish_reason": "stop",
+     "message": {
+      "role": "assistant",
+      "content": "```json\n[\n\t{\"box_2d\": [474, 287, 533, 330], \"label\": \"toothbrush\", \"confidence\": 0.95}\n]\n```",
+      "refusal": null,
+      "reasoning": null
+     }
+    }
+   ],
+   "usage": {
+    "prompt_tokens": 354,
+    "completion_tokens": 51,
+    "total_tokens": 405,
+    "cost": 0.00017124,
+    "is_byok": false,
+    "prompt_tokens_details": {
+     "cached_tokens": 0,
+     "cache_write_tokens": 0,
+     "audio_tokens": 0,
+     "video_tokens": 0
+    },
+    "cost_details": {
+     "upstream_inference_cost": 0.00017124,
+     "upstream_inference_prompt_cost": 7.434e-05,
+     "upstream_inference_completions_cost": 9.69e-05
+    },
+    "completion_tokens_details": {
+     "reasoning_tokens": 0,
+     "image_tokens": 0,
+     "audio_tokens": 0
+    }
+   }
+  }
+ },
+ "fallback": false,
+ "ts": "2026-07-07T07:33:43.881004+00:00",
+ "fused": [
+  {
+   "label": "toothbrush",
+   "box": [
+    175.2441864013672,
+    184.71661376953125,
+    225.41709899902344,
+    204.81826782226562
+   ],
+   "score": 0.0643954798579216
+  },
+  {
+   "label": "toothbrush",
+   "box": [
+    204.67080688476562,
+    185.21932983398438,
+    225.44674682617188,
+    204.60073852539062
+   ],
+   "score": 0.3221441816538572
+  },
+  {
+   "label": "teddy bear",
+   "box": [
+    279.33441162109375,
+    314.85784912109375,
+    425.1187744140625,
+    478.37860107421875
+   ],
+   "score": 0.004366273060441017
+  },
+  {
+   "label": "vase",
+   "box": [
+    186.14749145507812,
+    0.0,
+    226.35415649414062,
+    41.934024810791016
+   ],
+   "score": 0.003651261795312166
+  },
+  {
+   "label": "sink",
+   "box": [
+    26.86639404296875,
+    547.9959716796875,
+    426.0,
+    640.0
+   ],
+   "score": 0.00333967711776495
+  },
+  {
+   "label": "sink",
+   "box": [
+    420.37933349609375,
+    279.5195617675781,
+    426.0,
+    342.5614929199219
+   ],
+   "score": 0.002943025203421712
+  },
+  {
+   "label": "teddy bear",
+   "box": [
+    76.47169494628906,
+    25.1441650390625,
+    424.8642578125,
+    622.704833984375
+   ],
+   "score": 0.0018470435170456767
+  },
+  {
+   "label": "clock",
+   "box": [
+    420.35906982421875,
+    279.0906982421875,
+    426.0,
+    342.3194580078125
+   ],
+   "score": 0.001276909257285297
+  },
+  {
+   "label": "toothbrush",
+   "box": [
+    164.56524658203125,
+    0.058795928955078125,
+    233.0819091796875,
+    42.27030944824219
+   ],
+   "score": 0.0012196602765470743
+  }
+ ],
+ "latency_total_sec": 3.0235612000105903
+}

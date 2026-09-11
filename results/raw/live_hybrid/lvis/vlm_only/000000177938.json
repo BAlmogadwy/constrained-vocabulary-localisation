@@ -1,0 +1,76 @@
+{
+ "image": "000000177938.jpg",
+ "model": "qwen/qwen3-vl-235b-a22b-instruct",
+ "labels": [
+  "lawn_mower",
+  "blender",
+  "musical_instrument",
+  "sewing_machine",
+  "snowboard"
+ ],
+ "detections": [
+  {
+   "box_2d": [
+    116.16,
+    295.68,
+    221.76,
+    327.68
+   ],
+   "label": "lawn_mower",
+   "score": 0.95
+  }
+ ],
+ "latency_sec": 4.0381464999954915,
+ "usage": {
+  "prompt_tokens": 391,
+  "completion_tokens": 52,
+  "total_tokens": 443
+ },
+ "raw_response": {
+  "id": "gen-1783407574-xFUp9FP9MK3kATBEbsQb",
+  "object": "chat.completion",
+  "created": 1783407574,
+  "model": "qwen/qwen3-vl-235b-a22b-instruct",
+  "provider": "Novita",
+  "system_fingerprint": null,
+  "service_tier": null,
+  "choices": [
+   {
+    "index": 0,
+    "logprobs": null,
+    "finish_reason": "stop",
+    "native_finish_reason": "stop",
+    "message": {
+     "role": "assistant",
+     "content": "```json\n[\n\t{\"bbox_2d\": [242, 462, 462, 512], \"label\": \"lawn_mower\", \"confidence\": 0.95}\n]\n```",
+     "refusal": null,
+     "reasoning": null
+    }
+   }
+  ],
+  "usage": {
+   "prompt_tokens": 391,
+   "completion_tokens": 52,
+   "total_tokens": 443,
+   "cost": 0.0001953,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0001953,
+    "upstream_inference_prompt_cost": 0.0001173,
+    "upstream_inference_completions_cost": 7.8e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   }
+  }
+ },
+ "ts": "2026-07-07T06:59:36.941565+00:00"
+}

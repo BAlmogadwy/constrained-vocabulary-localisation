@@ -1,0 +1,50 @@
+{
+  "model": "grounding_dino",
+  "strategy": "default",
+  "image": "/home/maxim/PycharmProjects/zero-shot-detection-benchmark/data/subsets/lvis_v1_val_unseen/images/000000117784.jpg",
+  "labels": [
+    "coffee_maker",
+    "lawn_mower",
+    "musical_instrument",
+    "spatula",
+    "stapler_(stapling_machine)"
+  ],
+  "result": {
+    "detections": [
+      {
+        "label": "coffee_maker",
+        "score": 0.3946594297885895,
+        "box_2d": [
+          230.54176330566406,
+          212.67039489746094,
+          276.1038818359375,
+          283.6505432128906
+        ],
+        "box": [
+          230.54176330566406,
+          212.67039489746094,
+          276.1038818359375,
+          283.6505432128906
+        ]
+      },
+      {
+        "label": "coffee_maker",
+        "score": 0.30026277899742126,
+        "box_2d": [
+          295.6079406738281,
+          173.53009033203125,
+          419.1280822753906,
+          287.0705261230469
+        ],
+        "box": [
+          295.6079406738281,
+          173.53009033203125,
+          419.1280822753906,
+          287.0705261230469
+        ]
+      }
+    ],
+    "latency_sec": 0.2762123588472605,
+    "raw_response": null
+  }
+}

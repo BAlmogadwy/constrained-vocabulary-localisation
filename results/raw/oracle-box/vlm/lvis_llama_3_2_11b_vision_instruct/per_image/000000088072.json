@@ -1,0 +1,41 @@
+{
+  "image": "/home/maxim/PycharmProjects/zero-shot-detection-benchmark/data/subsets/lvis_v1_val_unseen/images/000000088072.jpg",
+  "image_id": 88072,
+  "file_name": "000000088072.jpg",
+  "num_crops": 1,
+  "crops": [
+    {
+      "annotation_id": 64665,
+      "bbox": [
+        104.06,
+        468.03,
+        304.66,
+        33.22
+      ],
+      "category_id": 976,
+      "gt_label": "snowboard",
+      "labels": [
+        "snowboard",
+        "blender",
+        "microscope",
+        "musical_instrument",
+        "spatula"
+      ],
+      "prediction": "blender",
+      "normalized_prediction": "blender",
+      "matched_label": "blender",
+      "correct": false,
+      "latency_sec": 5.003296660986962,
+      "raw_response": {
+        "snowboard": "[]",
+        "snowboard_norm": "{\"box_norm\":[0.0,0.0,0.0,0.0],\"label\":\"snowboard\"}",
+        "blender": "[{ \"box_2d\": [ 0, 0, 305, 34 ], \"label\": \"blender\" }]",
+        "microscope": "[{ \"box_2d\": [ 0, 0, 305, 34 ], \"label\": \"microscope\" }]",
+        "musical_instrument": "[{ \"box_2d\": [ 0, 0, 305, 34 ], \"label\": \"musical_instrument\" }]",
+        "spatula": "[]",
+        "spatula_norm": "{\"box_norm\": [0.15, 0.03, 0.28, 0.14], \"label\": \"spatula\"}"
+      }
+    }
+  ],
+  "prompt": "You are an object recognition assistant.\n\nYou will see a cropped image that contains exactly one object\nfrom the following LVIS categories (unseen split):\n\n- snowboard\n- blender\n- microscope\n- musical_instrument\n- spatula\n\nYour task:\n- Return ONLY the best matching category name from this list.\n- Do not output explanations or extra text.\n\nAnswer with a single string: \"class_name\"."
+}

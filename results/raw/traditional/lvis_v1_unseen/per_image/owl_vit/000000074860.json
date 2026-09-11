@@ -1,0 +1,34 @@
+{
+  "model": "owl_vit",
+  "strategy": "default",
+  "image": "/home/maxim/PycharmProjects/zero-shot-detection-benchmark/data/subsets/lvis_v1_val_unseen/images/000000074860.jpg",
+  "labels": [
+    "snowboard",
+    "hair_dryer",
+    "lawn_mower",
+    "musical_instrument",
+    "sewing_machine"
+  ],
+  "result": {
+    "detections": [
+      {
+        "label": "snowboard",
+        "score": 0.35295113921165466,
+        "box_2d": [
+          116.6630859375,
+          304.6266174316406,
+          242.7943115234375,
+          334.7428894042969
+        ],
+        "box": [
+          116.6630859375,
+          304.6266174316406,
+          242.7943115234375,
+          334.7428894042969
+        ]
+      }
+    ],
+    "latency_sec": 0.08329675253480673,
+    "raw_response": null
+  }
+}

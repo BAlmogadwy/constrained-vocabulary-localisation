@@ -1,0 +1,311 @@
+{
+ "image": "000000211905.jpg",
+ "labels": [
+  "microscope",
+  "stapler_(stapling_machine)",
+  "blender",
+  "hair_dryer",
+  "musical_instrument",
+  "sewing_machine"
+ ],
+ "tau": 0.4,
+ "detector": {
+  "detections": [
+   {
+    "label": "blender",
+    "box": [
+     73.48394775390625,
+     0.31011962890625,
+     311.74078369140625,
+     297.99267578125
+    ],
+    "score": 0.35654377937316895
+   },
+   {
+    "label": "microscope",
+    "box": [
+     73.2864990234375,
+     0.33087158203125,
+     311.928466796875,
+     297.630859375
+    ],
+    "score": 0.34687137603759766
+   },
+   {
+    "label": "stapler_(stapling_machine)",
+    "box": [
+     331.74627685546875,
+     227.53369140625,
+     586.8043823242188,
+     318.78839111328125
+    ],
+    "score": 0.05391982942819595
+   },
+   {
+    "label": "stapler_(stapling_machine)",
+    "box": [
+     490.26165771484375,
+     57.273590087890625,
+     565.2183227539062,
+     89.00906372070312
+    ],
+    "score": 0.042621999979019165
+   },
+   {
+    "label": "blender",
+    "box": [
+     0.0,
+     0.21600341796875,
+     69.08586120605469,
+     267.89697265625
+    ],
+    "score": 0.02655949257314205
+   },
+   {
+    "label": "musical_instrument",
+    "box": [
+     0.73065185546875,
+     310.5352783203125,
+     519.62109375,
+     395.6429443359375
+    ],
+    "score": 0.023617539554834366
+   },
+   {
+    "label": "stapler_(stapling_machine)",
+    "box": [
+     3.25604248046875,
+     311.35211181640625,
+     522.267333984375,
+     395.24798583984375
+    ],
+    "score": 0.011189067736268044
+   },
+   {
+    "label": "blender",
+    "box": [
+     21.5438232421875,
+     0.88677978515625,
+     466.5660400390625,
+     388.499755859375
+    ],
+    "score": 0.002336929552257061
+   },
+   {
+    "label": "microscope",
+    "box": [
+     71.13865661621094,
+     0.5608978271484375,
+     171.1594696044922,
+     228.45176696777344
+    ],
+    "score": 0.0017965176375582814
+   },
+   {
+    "label": "stapler_(stapling_machine)",
+    "box": [
+     544.1005859375,
+     35.977294921875,
+     613.7119140625,
+     92.4580078125
+    ],
+    "score": 0.0017691490938887
+   },
+   {
+    "label": "blender",
+    "box": [
+     70.98486328125,
+     0.7683563232421875,
+     171.85848999023438,
+     227.58547973632812
+    ],
+    "score": 0.0010130304144695401
+   }
+  ],
+  "latency_sec": 0.27884879999328405
+ },
+ "detector_max_score": 0.35654377937316895,
+ "escalated": true,
+ "vlm": {
+  "model": "qwen/qwen3-vl-235b-a22b-instruct",
+  "detections": [
+   {
+    "label": "microscope",
+    "box": [
+     69.76,
+     0.0,
+     171.52,
+     215.635
+    ],
+    "score": 1.0
+   }
+  ],
+  "latency_sec": 3.923144100001082,
+  "usage": {
+   "prompt_tokens": 359,
+   "completion_tokens": 48,
+   "total_tokens": 407
+  },
+  "raw_response": {
+   "id": "gen-1783406758-WXPPMt5wTZQeWAeU8QVO",
+   "object": "chat.completion",
+   "created": 1783406758,
+   "model": "qwen/qwen3-vl-235b-a22b-instruct",
+   "provider": "Venice",
+   "system_fingerprint": null,
+   "service_tier": null,
+   "choices": [
+    {
+     "index": 0,
+     "logprobs": null,
+     "finish_reason": "stop",
+     "native_finish_reason": "stop",
+     "message": {
+      "role": "assistant",
+      "content": "```json\n[\n\t{\"bbox_2d\": [109, 0, 268, 505], \"label\": \"microscope\", \"confidence\": 0.98}\n]\n```",
+      "refusal": null,
+      "reasoning": null
+     }
+    }
+   ],
+   "usage": {
+    "prompt_tokens": 359,
+    "completion_tokens": 48,
+    "total_tokens": 407,
+    "cost": 0.00016659,
+    "is_byok": false,
+    "prompt_tokens_details": {
+     "cached_tokens": 0,
+     "cache_write_tokens": 0,
+     "audio_tokens": 0,
+     "video_tokens": 0
+    },
+    "cost_details": {
+     "upstream_inference_cost": 0.00016659,
+     "upstream_inference_prompt_cost": 7.539e-05,
+     "upstream_inference_completions_cost": 9.12e-05
+    },
+    "completion_tokens_details": {
+     "reasoning_tokens": 0,
+     "image_tokens": 0,
+     "audio_tokens": 0
+    }
+   }
+  }
+ },
+ "fallback": false,
+ "ts": "2026-07-07T06:45:56.320919+00:00",
+ "fused": [
+  {
+   "label": "blender",
+   "box": [
+    73.48394775390625,
+    0.31011962890625,
+    311.74078369140625,
+    297.99267578125
+   ],
+   "score": 0.35654377937316895
+  },
+  {
+   "label": "microscope",
+   "box": [
+    73.2864990234375,
+    0.33087158203125,
+    311.928466796875,
+    297.630859375
+   ],
+   "score": 0.34687137603759766
+  },
+  {
+   "label": "stapler_(stapling_machine)",
+   "box": [
+    331.74627685546875,
+    227.53369140625,
+    586.8043823242188,
+    318.78839111328125
+   ],
+   "score": 0.05391982942819595
+  },
+  {
+   "label": "stapler_(stapling_machine)",
+   "box": [
+    490.26165771484375,
+    57.273590087890625,
+    565.2183227539062,
+    89.00906372070312
+   ],
+   "score": 0.042621999979019165
+  },
+  {
+   "label": "blender",
+   "box": [
+    0.0,
+    0.21600341796875,
+    69.08586120605469,
+    267.89697265625
+   ],
+   "score": 0.02655949257314205
+  },
+  {
+   "label": "musical_instrument",
+   "box": [
+    0.73065185546875,
+    310.5352783203125,
+    519.62109375,
+    395.6429443359375
+   ],
+   "score": 0.023617539554834366
+  },
+  {
+   "label": "stapler_(stapling_machine)",
+   "box": [
+    3.25604248046875,
+    311.35211181640625,
+    522.267333984375,
+    395.24798583984375
+   ],
+   "score": 0.011189067736268044
+  },
+  {
+   "label": "blender",
+   "box": [
+    21.5438232421875,
+    0.88677978515625,
+    466.5660400390625,
+    388.499755859375
+   ],
+   "score": 0.002336929552257061
+  },
+  {
+   "label": "microscope",
+   "box": [
+    71.13865661621094,
+    0.5608978271484375,
+    171.1594696044922,
+    228.45176696777344
+   ],
+   "score": 0.30179651763755827
+  },
+  {
+   "label": "stapler_(stapling_machine)",
+   "box": [
+    544.1005859375,
+    35.977294921875,
+    613.7119140625,
+    92.4580078125
+   ],
+   "score": 0.0017691490938887
+  },
+  {
+   "label": "blender",
+   "box": [
+    70.98486328125,
+    0.7683563232421875,
+    171.85848999023438,
+    227.58547973632812
+   ],
+   "score": 0.0010130304144695401
+  }
+ ],
+ "latency_total_sec": 4.202024099999107
+}

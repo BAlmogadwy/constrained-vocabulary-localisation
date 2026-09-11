@@ -1,0 +1,72 @@
+{
+  "model": "gemini-2.5-flash",
+  "strategy": "single_query",
+  "image": "/home/maxim/PycharmProjects/zero-shot-detection-benchmark/data/raw/coco2017/val2017/000000175364.jpg",
+  "labels": [
+    "oven",
+    "sink",
+    "toaster",
+    "book",
+    "hair drier",
+    "teddy bear",
+    "vase"
+  ],
+  "detections": [
+    {
+      "box_2d": [
+        251,
+        198,
+        321,
+        326
+      ],
+      "label": "oven"
+    },
+    {
+      "box_2d": [
+        419,
+        494,
+        532,
+        574
+      ],
+      "label": "sink"
+    },
+    {
+      "box_2d": [
+        510,
+        694,
+        761,
+        951
+      ],
+      "label": "oven"
+    },
+    {
+      "box_2d": [
+        232,
+        814,
+        318,
+        929
+      ],
+      "label": "oven"
+    },
+    {
+      "box_2d": [
+        486,
+        203,
+        935,
+        437
+      ],
+      "label": "oven"
+    },
+    {
+      "box_2d": [
+        468,
+        110,
+        571,
+        201
+      ],
+      "label": "toaster"
+    }
+  ],
+  "latency_sec": 4.144403159967624,
+  "raw_response": "```json\n[\n  {\"box_2d\": [251, 198, 321, 326], \"label\": \"oven\"},\n  {\"box_2d\": [419, 494, 532, 574], \"label\": \"sink\"},\n  {\"box_2d\": [510, 694, 761, 951], \"label\": \"oven\"},\n  {\"box_2d\": [232, 814, 318, 929], \"label\": \"oven\"},\n  {\"box_2d\": [486, 203, 935, 437], \"label\": \"oven\"},\n  {\"box_2d\": [468, 110, 571, 201], \"label\": \"toaster\"}\n]\n```"
+}

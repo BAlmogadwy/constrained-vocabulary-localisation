@@ -1,0 +1,76 @@
+{
+ "image": "000000308735.jpg",
+ "model": "qwen/qwen3-vl-235b-a22b-instruct",
+ "labels": [
+  "spatula",
+  "blender",
+  "microscope",
+  "snowboard",
+  "stapler_(stapling_machine)"
+ ],
+ "detections": [
+  {
+   "box_2d": [
+    0.0,
+    104.682,
+    44.8,
+    161.564
+   ],
+   "label": "spatula",
+   "score": 0.95
+  }
+ ],
+ "latency_sec": 2.998663000005763,
+ "usage": {
+  "prompt_tokens": 393,
+  "completion_tokens": 48,
+  "total_tokens": 441
+ },
+ "raw_response": {
+  "id": "gen-1783407934-iwbU2sPHg4Cj2I3tHCJS",
+  "object": "chat.completion",
+  "created": 1783407934,
+  "model": "qwen/qwen3-vl-235b-a22b-instruct",
+  "provider": "Parasail",
+  "system_fingerprint": null,
+  "service_tier": null,
+  "choices": [
+   {
+    "index": 0,
+    "logprobs": null,
+    "finish_reason": "stop",
+    "native_finish_reason": "stop",
+    "message": {
+     "role": "assistant",
+     "content": "```json\n[\n\t{\"bbox_2d\": [0, 219, 70, 338], \"label\": \"spatula\", \"confidence\": 0.95}\n]\n```",
+     "refusal": null,
+     "reasoning": null
+    }
+   }
+  ],
+  "usage": {
+   "prompt_tokens": 393,
+   "completion_tokens": 48,
+   "total_tokens": 441,
+   "cost": 0.00017373,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00017373,
+    "upstream_inference_prompt_cost": 8.253e-05,
+    "upstream_inference_completions_cost": 9.12e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   }
+  }
+ },
+ "ts": "2026-07-07T07:05:35.269085+00:00"
+}

@@ -1,0 +1,78 @@
+{
+ "image": "000000571313.jpg",
+ "model": "qwen/qwen3-vl-235b-a22b-instruct",
+ "labels": [
+  "microwave",
+  "refrigerator",
+  "book",
+  "scissors",
+  "teddy bear",
+  "toaster",
+  "vase"
+ ],
+ "detections": [
+  {
+   "box_2d": [
+    200.16,
+    172.8,
+    326.88,
+    336.64
+   ],
+   "label": "refrigerator",
+   "score": 0.95
+  }
+ ],
+ "latency_sec": 2.3719421999994665,
+ "usage": {
+  "prompt_tokens": 391,
+  "completion_tokens": 51,
+  "total_tokens": 442
+ },
+ "raw_response": {
+  "id": "gen-1783415337-Ic81fVwrNZjfSaImTiNd",
+  "object": "chat.completion",
+  "created": 1783415337,
+  "model": "qwen/qwen3-vl-235b-a22b-instruct",
+  "provider": "Parasail",
+  "system_fingerprint": null,
+  "service_tier": null,
+  "choices": [
+   {
+    "index": 0,
+    "logprobs": null,
+    "finish_reason": "stop",
+    "native_finish_reason": "stop",
+    "message": {
+     "role": "assistant",
+     "content": "```json\n[\n\t{\"bbox_2d\": [417, 270, 681, 526], \"label\": \"refrigerator\", \"confidence\": 0.95}\n]\n```",
+     "refusal": null,
+     "reasoning": null
+    }
+   }
+  ],
+  "usage": {
+   "prompt_tokens": 391,
+   "completion_tokens": 51,
+   "total_tokens": 442,
+   "cost": 0.00017901,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00017901,
+    "upstream_inference_prompt_cost": 8.211e-05,
+    "upstream_inference_completions_cost": 9.69e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   }
+  }
+ },
+ "ts": "2026-07-07T09:08:57.778566+00:00"
+}

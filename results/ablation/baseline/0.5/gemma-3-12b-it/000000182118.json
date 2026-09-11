@@ -1,0 +1,25 @@
+{
+  "model": "gemma-3-12b-it",
+  "strategy": "single_query",
+  "image": "/home/maxim/PycharmProjects/zero-shot-detection-benchmark/data/subsets/lvis_v1_val_unseen/images/000000182118.jpg",
+  "labels": [
+    "stapler_(stapling_machine)",
+    "lawn_mower",
+    "microscope",
+    "musical_instrument",
+    "spatula"
+  ],
+  "detections": [
+    {
+      "box_2d": [
+        780,
+        330,
+        820,
+        370
+      ],
+      "label": "stapler_(stapling_machine)"
+    }
+  ],
+  "latency_sec": 14.37448394508101,
+  "raw_response": "```json\n[\n  {\"box_2d\":[780,330,820,370],\"label\":\"stapler_(stapling_machine)\"}\n]\n```"
+}

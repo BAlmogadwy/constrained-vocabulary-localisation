@@ -1,0 +1,113 @@
+{
+  "model": "Qwen3-VL-8B-Instruct",
+  "strategy": "single_query",
+  "image": "/home/maxim/PycharmProjects/zero-shot-detection-benchmark/data/raw/coco2017/val2017/000000109900.jpg",
+  "labels": [
+    "microwave",
+    "oven",
+    "toaster",
+    "sink",
+    "refrigerator",
+    "book",
+    "clock",
+    "vase",
+    "scissors",
+    "teddy bear",
+    "hair drier",
+    "toothbrush"
+  ],
+  "detections": [
+    {
+      "box_2d": [
+        283.0,
+        395.0,
+        362.0,
+        695.0
+      ],
+      "label": "person"
+    },
+    {
+      "box_2d": [
+        357.0,
+        395.0,
+        447.0,
+        716.0
+      ],
+      "label": "person"
+    },
+    {
+      "box_2d": [
+        457.0,
+        395.0,
+        502.0,
+        557.0
+      ],
+      "label": "person"
+    },
+    {
+      "box_2d": [
+        416.0,
+        416.0,
+        455.0,
+        595.0
+      ],
+      "label": "person"
+    },
+    {
+      "box_2d": [
+        33.0,
+        368.0,
+        118.0,
+        735.0
+      ],
+      "label": "person"
+    },
+    {
+      "box_2d": [
+        96.0,
+        368.0,
+        191.0,
+        788.0
+      ],
+      "label": "person"
+    },
+    {
+      "box_2d": [
+        191.0,
+        405.0,
+        225.0,
+        531.0
+      ],
+      "label": "person"
+    },
+    {
+      "box_2d": [
+        767.0,
+        412.0,
+        823.0,
+        458.0
+      ],
+      "label": "person"
+    },
+    {
+      "box_2d": [
+        582.0,
+        355.0,
+        972.0,
+        633.0
+      ],
+      "label": "car"
+    },
+    {
+      "box_2d": [
+        175.0,
+        292.0,
+        607.0,
+        492.0
+      ],
+      "label": "airplane"
+    }
+  ],
+  "latency_sec": 9.379566202987917,
+  "raw_response": "user\nYou are an object detection assistant. Given the image and the list of target classes, return detections as JSON.\nTarget classes: microwave, oven, toaster, sink, refrigerator, book, clock, vase, scissors, teddy bear, hair drier, toothbrush.\nOutput format: [{\"box_2d\":[x1,y1,x2,y2],\"label\":\"class_name\"}...]\nUse pixel coordinates relative to the input image. Return JSON only.\nassistant\n```json\n[\n\t{\"box_2d\": [283, 395, 362, 695],\"label\":\"person\"},\n\t{\"bbox_2d\": [357, 395, 447, 716],\"label\":\"person\"},\n\t{\"bbox_2d\": [457, 395, 502, 557],\"label\":\"person\"},\n\t{\"bbox_2d\": [416, 416, 455, 595],\"label\":\"person\"},\n\t{\"bbox_2d\": [33, 368, 118, 735],\"label\":\"person\"},\n\t{\"bbox_2d\": [96, 368, 191, 788],\"label\":\"person\"},\n\t{\"bbox_2d\": [191, 405, 225, 531],\"label\":\"person\"},\n\t{\"bbox_2d\": [767, 412, 823, 458],\"label\":\"person\"},\n\t{\"bbox_2d\": [582, 355, 972, 633],\"label\":\"car\"},\n\t{\"bbox_2d\": [175, 292, 607, 492],\"label\":\"airplane\"}\n]\n```"
+}

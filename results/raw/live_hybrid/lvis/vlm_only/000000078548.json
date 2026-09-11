@@ -1,0 +1,76 @@
+{
+ "image": "000000078548.jpg",
+ "model": "qwen/qwen3-vl-235b-a22b-instruct",
+ "labels": [
+  "sewing_machine",
+  "blender",
+  "coffee_maker",
+  "musical_instrument",
+  "snowboard"
+ ],
+ "detections": [
+  {
+   "box_2d": [
+    76.504,
+    165.76,
+    340.6,
+    584.32
+   ],
+   "label": "sewing_machine",
+   "score": 0.98
+  }
+ ],
+ "latency_sec": 3.385698300000513,
+ "usage": {
+  "prompt_tokens": 410,
+  "completion_tokens": 45,
+  "total_tokens": 455
+ },
+ "raw_response": {
+  "id": "gen-1783407282-bcJp7LDfRFkj0P7qGgAt",
+  "object": "chat.completion",
+  "created": 1783407282,
+  "model": "qwen/qwen3-vl-235b-a22b-instruct",
+  "provider": "DeepInfra",
+  "system_fingerprint": null,
+  "service_tier": null,
+  "choices": [
+   {
+    "index": 0,
+    "logprobs": null,
+    "finish_reason": "stop",
+    "native_finish_reason": "stop",
+    "message": {
+     "role": "assistant",
+     "content": "[{\"box_2d\": [146, 259, 650, 913], \"label\": \"sewing_machine\", \"confidence\": 0.98}]",
+     "refusal": null,
+     "reasoning": null
+    }
+   }
+  ],
+  "usage": {
+   "prompt_tokens": 410,
+   "completion_tokens": 45,
+   "total_tokens": 455,
+   "cost": 0.0001216,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0001216,
+    "upstream_inference_prompt_cost": 8.2e-05,
+    "upstream_inference_completions_cost": 3.96e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   }
+  }
+ },
+ "ts": "2026-07-07T06:54:44.208998+00:00"
+}

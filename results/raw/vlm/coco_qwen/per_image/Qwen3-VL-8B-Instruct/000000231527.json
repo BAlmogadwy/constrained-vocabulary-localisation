@@ -1,0 +1,86 @@
+{
+  "model": "Qwen3-VL-8B-Instruct",
+  "strategy": "single_query",
+  "image": "/home/maxim/PycharmProjects/zero-shot-detection-benchmark/data/raw/coco2017/val2017/000000231527.jpg",
+  "labels": [
+    "microwave",
+    "oven",
+    "toaster",
+    "sink",
+    "refrigerator",
+    "book",
+    "clock",
+    "vase",
+    "scissors",
+    "teddy bear",
+    "hair drier",
+    "toothbrush"
+  ],
+  "detections": [
+    {
+      "box_2d": [
+        0.0,
+        567.0,
+        357.0,
+        807.0
+      ],
+      "label": "orange"
+    },
+    {
+      "box_2d": [
+        719.0,
+        733.0,
+        1000.0,
+        989.0
+      ],
+      "label": "orange"
+    },
+    {
+      "box_2d": [
+        769.0,
+        220.0,
+        1000.0,
+        427.0
+      ],
+      "label": "orange"
+    },
+    {
+      "box_2d": [
+        595.0,
+        182.0,
+        864.0,
+        362.0
+      ],
+      "label": "orange"
+    },
+    {
+      "box_2d": [
+        874.0,
+        163.0,
+        1000.0,
+        242.0
+      ],
+      "label": "orange"
+    },
+    {
+      "box_2d": [
+        174.0,
+        255.0,
+        479.0,
+        533.0
+      ],
+      "label": "vase"
+    },
+    {
+      "box_2d": [
+        374.0,
+        453.0,
+        662.0,
+        725.0
+      ],
+      "label": "vase"
+    }
+  ],
+  "latency_sec": 10.822303142995224,
+  "raw_response": "user\nYou are an object detection assistant. Given the image and the list of target classes, return detections as JSON.\nTarget classes: microwave, oven, toaster, sink, refrigerator, book, clock, vase, scissors, teddy bear, hair drier, toothbrush.\nOutput format: [{\"box_2d\":[x1,y1,x2,y2],\"label\":\"class_name\"}...]\nUse pixel coordinates relative to the input image. Return JSON only.\nassistant\n```json\n[\n\t{\"box_2d\": [0, 567, 357, 807], \"label\": \"orange\"},\n\t{\"box_2d\": [719, 733, 1000, 989], \"label\": \"orange\"},\n\t{\"box_2d\": [769, 220, 1000, 427], \"label\": \"orange\"},\n\t{\"box_2d\": [595, 182, 864, 362], \"label\": \"orange\"},\n\t{\"box_2d\": [874, 163, 1000, 242], \"label\": \"orange\"},\n\t{\"bbox_2d\": [174, 255, 479, 533], \"label\": \"vase\"},\n\t{\"bbox_2d\": [374, 453, 662, 725], \"label\": \"vase\"}\n]\n```"
+}

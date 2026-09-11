@@ -1,0 +1,130 @@
+{
+ "image": "000000091615.jpg",
+ "model": "qwen/qwen3-vl-235b-a22b-instruct",
+ "labels": [
+  "book",
+  "microwave",
+  "oven",
+  "sink",
+  "vase",
+  "hair drier",
+  "refrigerator",
+  "teddy bear",
+  "toaster"
+ ],
+ "detections": [
+  {
+   "box_2d": [
+    478.08,
+    36.55,
+    625.92,
+    121.55
+   ],
+   "label": "microwave",
+   "score": 0.99
+  },
+  {
+   "box_2d": [
+    449.92,
+    142.8,
+    615.04,
+    374.425
+   ],
+   "label": "oven",
+   "score": 0.99
+  },
+  {
+   "box_2d": [
+    79.36,
+    242.675,
+    233.6,
+    323.85
+   ],
+   "label": "sink",
+   "score": 0.99
+  },
+  {
+   "box_2d": [
+    267.52,
+    133.45,
+    285.44,
+    161.075
+   ],
+   "label": "vase",
+   "score": 0.99
+  },
+  {
+   "box_2d": [
+    256.64,
+    214.625,
+    343.04,
+    384.625
+   ],
+   "label": "refrigerator",
+   "score": 0.99
+  },
+  {
+   "box_2d": [
+    378.88,
+    138.55,
+    409.6,
+    183.175
+   ],
+   "label": "toaster",
+   "score": 0.99
+  }
+ ],
+ "latency_sec": 6.684150300003239,
+ "usage": {
+  "prompt_tokens": 357,
+  "completion_tokens": 263,
+  "total_tokens": 620
+ },
+ "raw_response": {
+  "id": "gen-1783410699-jESPK3qlaMpDIbKb73FT",
+  "object": "chat.completion",
+  "created": 1783410699,
+  "model": "qwen/qwen3-vl-235b-a22b-instruct",
+  "provider": "Parasail",
+  "system_fingerprint": null,
+  "service_tier": null,
+  "choices": [
+   {
+    "index": 0,
+    "logprobs": null,
+    "finish_reason": "stop",
+    "native_finish_reason": "stop",
+    "message": {
+     "role": "assistant",
+     "content": "```json\n[\n\t{\"bbox_2d\": [747, 86, 978, 286], \"label\": \"microwave\", \"confidence\": 0.99},\n\t{\"bbox_2d\": [703, 336, 961, 881], \"label\": \"oven\", \"confidence\": 0.99},\n\t{\"bbox_2d\": [124, 571, 365, 762], \"label\": \"sink\", \"confidence\": 0.99},\n\t{\"bbox_2d\": [418, 314, 446, 379], \"label\": \"vase\", \"confidence\": 0.99},\n\t{\"bbox_2d\": [401, 505, 536, 905], \"label\": \"refrigerator\", \"confidence\": 0.99},\n\t{\"bbox_2d\": [592, 326, 640, 431], \"label\": \"toaster\", \"confidence\": 0.99}\n]\n```",
+     "refusal": null,
+     "reasoning": null
+    }
+   }
+  ],
+  "usage": {
+   "prompt_tokens": 357,
+   "completion_tokens": 263,
+   "total_tokens": 620,
+   "cost": 0.00057291,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 16,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00057291,
+    "upstream_inference_prompt_cost": 7.321e-05,
+    "upstream_inference_completions_cost": 0.0004997
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   }
+  }
+ },
+ "ts": "2026-07-07T07:51:44.305521+00:00"
+}

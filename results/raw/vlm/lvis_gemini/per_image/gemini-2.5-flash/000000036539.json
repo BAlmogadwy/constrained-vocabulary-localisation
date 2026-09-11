@@ -1,0 +1,25 @@
+{
+  "model": "gemini-2.5-flash",
+  "strategy": "single_query",
+  "image": "/home/maxim/PycharmProjects/zero-shot-detection-benchmark/data/subsets/lvis_v1_val_unseen/images/000000036539.jpg",
+  "labels": [
+    "snowboard",
+    "lawn_mower",
+    "musical_instrument",
+    "spatula",
+    "stapler_(stapling_machine)"
+  ],
+  "detections": [
+    {
+      "box_2d": [
+        296,
+        781,
+        822,
+        866
+      ],
+      "class_name": "snowboard"
+    }
+  ],
+  "latency_sec": 5.119157733395696,
+  "raw_response": "[\n  {\"box_2d\": [296, 781, 822, 866], \"class_name\": \"snowboard\"}\n]"
+}

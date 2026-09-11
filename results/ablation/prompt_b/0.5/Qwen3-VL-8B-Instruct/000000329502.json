@@ -1,0 +1,43 @@
+{
+  "model": "Qwen3-VL-8B-Instruct",
+  "strategy": "iterative",
+  "image": "/home/maxim/PycharmProjects/zero-shot-detection-benchmark/data/subsets/lvis_v1_val_unseen/images/000000329502.jpg",
+  "labels": [
+    "snowboard",
+    "coffee_maker",
+    "musical_instrument",
+    "sewing_machine",
+    "spatula"
+  ],
+  "detections": [
+    {
+      "box_2d": [
+        0.0,
+        317.0,
+        194.0,
+        416.0
+      ],
+      "label": "musical_instrument"
+    },
+    {
+      "box_2d": [
+        0.0,
+        773.0,
+        930.0,
+        968.0
+      ],
+      "label": "snowboard"
+    }
+  ],
+  "latency_sec": 23.511134414933622,
+  "raw_response": {
+    "identification": "user\nYou are assisting with object localization. From the target class list, return only the classes that are visible in the image.\nTarget classes: snowboard, coffee_maker, musical_instrument, sewing_machine, spatula.\nRespond with comma-separated class names using the provided spelling.\nassistant\nsnowboard",
+    "localization": {
+      "coffee_maker": "user\nProvide bounding boxes for objects labeled 'coffee_maker'. Return JSON in the format [{\"box_2d\":[x1,y1,x2,y2],\"label\":\"coffee_maker\"}...]. Use pixel coordinates relative to the input image. Return [] if not visible.\nassistant\n[]",
+      "musical_instrument": "user\nProvide bounding boxes for objects labeled 'musical_instrument'. Return JSON in the format [{\"box_2d\":[x1,y1,x2,y2],\"label\":\"musical_instrument\"}...]. Use pixel coordinates relative to the input image. Return [] if not visible.\nassistant\n```json\n[\n\t{\"box_2d\":[0, 317, 194, 416],\"label\":\"musical_instrument\"}\n]\n```",
+      "sewing_machine": "user\nProvide bounding boxes for objects labeled 'sewing_machine'. Return JSON in the format [{\"box_2d\":[x1,y1,x2,y2],\"label\":\"sewing_machine\"}...]. Use pixel coordinates relative to the input image. Return [] if not visible.\nassistant\n[]",
+      "spatula": "user\nProvide bounding boxes for objects labeled 'spatula'. Return JSON in the format [{\"box_2d\":[x1,y1,x2,y2],\"label\":\"spatula\"}...]. Use pixel coordinates relative to the input image. Return [] if not visible.\nassistant\n[]",
+      "snowboard": "user\nProvide bounding boxes for objects labeled 'snowboard'. Return JSON in the format [{\"box_2d\":[x1,y1,x2,y2],\"label\":\"snowboard\"}...]. Use pixel coordinates relative to the input image. Return [] if not visible.\nassistant\n```json\n[\n\t{\"box_2d\":[0, 773, 930, 968],\"label\":\"snowboard\"}\n]\n```"
+    }
+  }
+}

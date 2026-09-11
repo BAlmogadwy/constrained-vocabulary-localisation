@@ -1,0 +1,63 @@
+{
+  "model": "gemini-2.5-flash",
+  "strategy": "single_query",
+  "image": "/home/maxim/PycharmProjects/zero-shot-detection-benchmark/data/raw/coco2017/val2017/000000094185.jpg",
+  "labels": [
+    "teddy bear",
+    "book",
+    "hair drier",
+    "microwave",
+    "sink",
+    "toaster",
+    "toothbrush"
+  ],
+  "detections": [
+    {
+      "box_2d": [
+        441,
+        461,
+        746,
+        882
+      ],
+      "label": "teddy bear"
+    },
+    {
+      "box_2d": [
+        503,
+        270,
+        680,
+        343
+      ],
+      "label": "teddy bear"
+    },
+    {
+      "box_2d": [
+        577,
+        663,
+        676,
+        706
+      ],
+      "label": "teddy bear"
+    },
+    {
+      "box_2d": [
+        570,
+        744,
+        630,
+        779
+      ],
+      "label": "teddy bear"
+    },
+    {
+      "box_2d": [
+        830,
+        937,
+        887,
+        969
+      ],
+      "label": "teddy bear"
+    }
+  ],
+  "latency_sec": 7.69209674600279,
+  "raw_response": "```json\n[\n  {\"box_2d\": [441, 461, 746, 882], \"label\": \"teddy bear\"},\n  {\"box_2d\": [503, 270, 680, 343], \"label\": \"teddy bear\"},\n  {\"box_2d\": [577, 663, 676, 706], \"label\": \"teddy bear\"},\n  {\"box_2d\": [570, 744, 630, 779], \"label\": \"teddy bear\"},\n  {\"box_2d\": [830, 937, 887, 969], \"label\": \"teddy bear\"}\n]\n```"
+}

@@ -1,0 +1,99 @@
+{
+  "model": "gemini-2.5-flash",
+  "strategy": "single_query",
+  "image": "/home/maxim/PycharmProjects/zero-shot-detection-benchmark/data/raw/coco2017/val2017/000000031248.jpg",
+  "labels": [
+    "book",
+    "microwave",
+    "oven",
+    "refrigerator",
+    "sink",
+    "toaster",
+    "toothbrush"
+  ],
+  "detections": [
+    {
+      "box_2d": [
+        62,
+        102,
+        303,
+        300
+      ],
+      "label": "book"
+    },
+    {
+      "box_2d": [
+        63,
+        102,
+        210,
+        303
+      ],
+      "label": "book"
+    },
+    {
+      "box_2d": [
+        211,
+        104,
+        330,
+        299
+      ],
+      "label": "book"
+    },
+    {
+      "box_2d": [
+        334,
+        102,
+        451,
+        303
+      ],
+      "label": "book"
+    },
+    {
+      "box_2d": [
+        463,
+        104,
+        570,
+        246
+      ],
+      "label": "book"
+    },
+    {
+      "box_2d": [
+        151,
+        745,
+        242,
+        903
+      ],
+      "label": "book"
+    },
+    {
+      "box_2d": [
+        243,
+        746,
+        350,
+        905
+      ],
+      "label": "book"
+    },
+    {
+      "box_2d": [
+        355,
+        745,
+        457,
+        903
+      ],
+      "label": "book"
+    },
+    {
+      "box_2d": [
+        466,
+        743,
+        566,
+        892
+      ],
+      "label": "book"
+    }
+  ],
+  "latency_sec": 5.011025249026716,
+  "raw_response": "```json\n[\n  {\"box_2d\": [62, 102, 303, 300], \"label\": \"book\"},\n  {\"box_2d\": [63, 102, 210, 303], \"label\": \"book\"},\n  {\"box_2d\": [211, 104, 330, 299], \"label\": \"book\"},\n  {\"box_2d\": [334, 102, 451, 303], \"label\": \"book\"},\n  {\"box_2d\": [463, 104, 570, 246], \"label\": \"book\"},\n  {\"box_2d\": [151, 745, 242, 903], \"label\": \"book\"},\n  {\"box_2d\": [243, 746, 350, 905], \"label\": \"book\"},\n  {\"box_2d\": [355, 745, 457, 903], \"label\": \"book\"},\n  {\"box_2d\": [466, 743, 566, 892], \"label\": \"book\"}\n]\n```"
+}

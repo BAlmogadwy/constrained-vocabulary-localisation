@@ -1,0 +1,74 @@
+{
+  "image": "/home/maxim/PycharmProjects/zero-shot-detection-benchmark/data/subsets/lvis_v1_val_unseen/images/000000455528.jpg",
+  "image_id": 455528,
+  "file_name": "000000455528.jpg",
+  "num_crops": 2,
+  "crops": [
+    {
+      "annotation_id": 52107,
+      "bbox": [
+        250.26,
+        218.68,
+        210.83,
+        38.4
+      ],
+      "category_id": 976,
+      "gt_label": "snowboard",
+      "labels": [
+        "snowboard",
+        "blender",
+        "coffee_maker",
+        "hair_dryer",
+        "stapler_(stapling_machine)"
+      ],
+      "prediction": "snowboard",
+      "normalized_prediction": "snowboard",
+      "matched_label": "snowboard",
+      "correct": true,
+      "latency_sec": 5.58310165599687,
+      "raw_response": {
+        "snowboard": "[{\"box_2d\":[0,0,212,40],\"label\":\"snowboard\"}]",
+        "blender": "[]",
+        "blender_norm": "[{\"box_norm\":[0.04,0.04,0.56,0.98],\"label\":\"blender\"}]",
+        "coffee_maker": "[]",
+        "coffee_maker_norm": "[{\"box_norm\":[0.000000,0.000000,0.500000,0.500000],\"label\":\"coffee_maker\"}]",
+        "hair_dryer": "[]",
+        "hair_dryer_norm": "[{\"box_norm\":[0.0,0.0,0.0,0.0],\"label\":\"hair_dryer\"}]",
+        "stapler_(stapling_machine)": "[]",
+        "stapler_(stapling_machine)_norm": "[{\"box_norm\":[0.0,0.0,0.5,0.5],\"label\":\"stapler_(stapling_machine)\"}]"
+      }
+    },
+    {
+      "annotation_id": 52108,
+      "bbox": [
+        21.37,
+        228.14,
+        113.15,
+        8.01
+      ],
+      "category_id": 976,
+      "gt_label": "snowboard",
+      "labels": [
+        "snowboard",
+        "blender",
+        "coffee_maker",
+        "hair_dryer",
+        "stapler_(stapling_machine)"
+      ],
+      "prediction": "snowboard",
+      "normalized_prediction": "snowboard",
+      "matched_label": "snowboard",
+      "correct": true,
+      "latency_sec": 4.7045565959997475,
+      "raw_response": {
+        "snowboard": "[{\"box_2d\":[0,0,114,9],\"label\":\"snowboard\"}]",
+        "blender": "[{ \"box_2d\": [ 0, 0, 114, 9], \"label\": \"blender\"}]",
+        "coffee_maker": "[{ \"box_2d\": [ 0, 0, 114, 9], \"label\": \"coffee_maker\" }]",
+        "hair_dryer": "[]",
+        "hair_dryer_norm": "[{\"box_norm\":[0.000000,0.000000,0.111111,0.222222],\"label\":\"hair_dryer\"}]",
+        "stapler_(stapling_machine)": "[{ \"box_2d\": [ 0, 0, 114, 9 ], \"label\": \"stapler_(stapling_machine)\" }]"
+      }
+    }
+  ],
+  "prompt": "You are an object recognition assistant.\n\nYou will see a cropped image that contains exactly one object\nfrom the following LVIS categories (unseen split):\n\n- snowboard\n- blender\n- coffee_maker\n- hair_dryer\n- stapler_(stapling_machine)\n\nYour task:\n- Return ONLY the best matching category name from this list.\n- Do not output explanations or extra text.\n\nAnswer with a single string: \"class_name\"."
+}

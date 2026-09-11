@@ -1,0 +1,90 @@
+{
+  "image": "/home/maxim/PycharmProjects/zero-shot-detection-benchmark/data/subsets/lvis_v1_val_unseen/images/000000295265.jpg",
+  "image_id": 295265,
+  "file_name": "000000295265.jpg",
+  "num_crops": 3,
+  "crops": [
+    {
+      "annotation_id": 157047,
+      "bbox": [
+        263.01,
+        142.48,
+        20.6,
+        5.12
+      ],
+      "category_id": 976,
+      "gt_label": "snowboard",
+      "labels": [
+        "snowboard",
+        "hair_dryer",
+        "musical_instrument",
+        "spatula",
+        "stapler_(stapling_machine)"
+      ],
+      "prediction": "stapler_(stapling_machine)",
+      "normalized_prediction": "stapler (stapling machine)",
+      "matched_label": "stapler_(stapling_machine)",
+      "correct": false,
+      "latency_sec": 14.412654907995602,
+      "raw_response": {
+        "prediction": "stapler_(stapling_machine)",
+        "raw_response": "stapler_(stapling_machine)"
+      }
+    },
+    {
+      "annotation_id": 157048,
+      "bbox": [
+        398.21,
+        257.35,
+        38.15,
+        18.55
+      ],
+      "category_id": 976,
+      "gt_label": "snowboard",
+      "labels": [
+        "snowboard",
+        "hair_dryer",
+        "musical_instrument",
+        "spatula",
+        "stapler_(stapling_machine)"
+      ],
+      "prediction": "stapler_(stapling_machine)",
+      "normalized_prediction": "stapler (stapling machine)",
+      "matched_label": "stapler_(stapling_machine)",
+      "correct": false,
+      "latency_sec": 14.419804068980739,
+      "raw_response": {
+        "prediction": "stapler_(stapling_machine)",
+        "raw_response": "stapler_(stapling_machine)"
+      }
+    },
+    {
+      "annotation_id": 157049,
+      "bbox": [
+        126.35,
+        93.8,
+        28.49,
+        11.5
+      ],
+      "category_id": 976,
+      "gt_label": "snowboard",
+      "labels": [
+        "snowboard",
+        "hair_dryer",
+        "musical_instrument",
+        "spatula",
+        "stapler_(stapling_machine)"
+      ],
+      "prediction": "stapler_(stapling_machine)",
+      "normalized_prediction": "stapler (stapling machine)",
+      "matched_label": "stapler_(stapling_machine)",
+      "correct": false,
+      "latency_sec": 14.421816651010886,
+      "raw_response": {
+        "prediction": "stapler_(stapling_machine)",
+        "raw_response": "stapler_(stapling_machine)"
+      }
+    }
+  ],
+  "prompt": "You are an object recognition assistant.\n\nYou will see a cropped image that contains exactly one object\nfrom the following LVIS categories (unseen split):\n\n- snowboard\n- hair_dryer\n- musical_instrument\n- spatula\n- stapler_(stapling_machine)\n\nYour task:\n- Return ONLY the best matching category name from this list.\n- Do not output explanations or extra text.\n\nAnswer with a single string: \"class_name\"."
+}

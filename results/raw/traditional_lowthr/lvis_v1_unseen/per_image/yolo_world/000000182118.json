@@ -1,0 +1,66 @@
+{
+  "model": "yolo_world",
+  "strategy": "default",
+  "image": "C:\\Users\\user\\zeroshot\\zero-shot-detection-benchmark\\data\\subsets\\lvis_v1_val_unseen\\images\\000000182118.jpg",
+  "labels": [
+    "stapler_(stapling_machine)",
+    "lawn_mower",
+    "microscope",
+    "musical_instrument",
+    "spatula"
+  ],
+  "result": {
+    "detections": [
+      {
+        "label": "stapler_(stapling_machine)",
+        "score": 0.006216665264219046,
+        "box_2d": [
+          92.81780242919922,
+          244.7837371826172,
+          137.34109497070312,
+          263.72369384765625
+        ],
+        "box": [
+          92.81780242919922,
+          244.7837371826172,
+          137.34109497070312,
+          263.72369384765625
+        ]
+      },
+      {
+        "label": "stapler_(stapling_machine)",
+        "score": 0.003927519544959068,
+        "box_2d": [
+          0.00826716423034668,
+          241.2688446044922,
+          16.490936279296875,
+          270.99395751953125
+        ],
+        "box": [
+          0.00826716423034668,
+          241.2688446044922,
+          16.490936279296875,
+          270.99395751953125
+        ]
+      },
+      {
+        "label": "musical_instrument",
+        "score": 0.0018051500665023923,
+        "box_2d": [
+          355.6618957519531,
+          377.0818786621094,
+          375.0,
+          495.1602783203125
+        ],
+        "box": [
+          355.6618957519531,
+          377.0818786621094,
+          375.0,
+          495.1602783203125
+        ]
+      }
+    ],
+    "latency_sec": 0.03941330000088783,
+    "raw_response": null
+  }
+}

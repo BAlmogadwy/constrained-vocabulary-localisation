@@ -1,0 +1,78 @@
+{
+ "image": "000000405970.jpg",
+ "model": "qwen/qwen3-vl-235b-a22b-instruct",
+ "labels": [
+  "book",
+  "hair drier",
+  "oven",
+  "scissors",
+  "teddy bear",
+  "toothbrush",
+  "vase"
+ ],
+ "detections": [
+  {
+   "box_2d": [
+    352.64,
+    256.2,
+    399.36,
+    276.696
+   ],
+   "label": "book",
+   "score": 0.99
+  }
+ ],
+ "latency_sec": 5.430148299987195,
+ "usage": {
+  "prompt_tokens": 354,
+  "completion_tokens": 43,
+  "total_tokens": 397
+ },
+ "raw_response": {
+  "id": "gen-1783413623-IeyiJa4Ar9U53qhK4gXZ",
+  "object": "chat.completion",
+  "created": 1783413623,
+  "model": "qwen/qwen3-vl-235b-a22b-instruct",
+  "provider": "DeepInfra",
+  "system_fingerprint": null,
+  "service_tier": null,
+  "choices": [
+   {
+    "index": 0,
+    "logprobs": null,
+    "finish_reason": "stop",
+    "native_finish_reason": "stop",
+    "message": {
+     "role": "assistant",
+     "content": "[{\"box_2d\": [551, 600, 624, 648], \"label\": \"book\", \"confidence\": 0.99}]",
+     "refusal": null,
+     "reasoning": null
+    }
+   }
+  ],
+  "usage": {
+   "prompt_tokens": 354,
+   "completion_tokens": 43,
+   "total_tokens": 397,
+   "cost": 0.00010864,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00010864,
+    "upstream_inference_prompt_cost": 7.08e-05,
+    "upstream_inference_completions_cost": 3.784e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   }
+  }
+ },
+ "ts": "2026-07-07T08:40:24.575076+00:00"
+}

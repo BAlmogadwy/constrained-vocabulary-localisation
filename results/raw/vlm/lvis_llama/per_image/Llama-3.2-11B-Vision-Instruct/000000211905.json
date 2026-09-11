@@ -1,0 +1,48 @@
+{
+  "model": "Llama-3.2-11B-Vision-Instruct",
+  "strategy": "single_query",
+  "image": "/home/maxim/PycharmProjects/zero-shot-detection-benchmark/data/subsets/lvis_v1_val_unseen/images/000000211905.jpg",
+  "labels": [
+    "microscope",
+    "stapler_(stapling_machine)",
+    "blender",
+    "hair_dryer",
+    "musical_instrument",
+    "sewing_machine"
+  ],
+  "detections": [
+    {
+      "box_2d": [
+        86,
+        61,
+        221,
+        184
+      ],
+      "label": "microscope"
+    },
+    {
+      "box_2d": [
+        8,
+        105,
+        158,
+        173
+      ],
+      "label": "stapler_(stapling_machine)"
+    }
+  ],
+  "latency_sec": 17.87897607218474,
+  "raw_response": {
+    "microscope": "[{\"box_2d\":[0,0,0,0],\"label\":\"microscope\"}]",
+    "microscope_norm": "[{\"box_norm\":[0.134,0.142,0.345,0.432],\"label\":\"microscope\"}]",
+    "stapler_(stapling_machine)": "[]",
+    "stapler_(stapling_machine)_norm": "[{\"box_norm\":[0.013,0.245,0.247,0.405],\"label\":\"stapler_(stapling_machine)\"}]",
+    "blender": "[]",
+    "blender_norm": "[{\"box_norm\":[0.0,0.0,0.0,0.0],\"label\":\"blender\"}]",
+    "hair_dryer": "[]",
+    "hair_dryer_norm": "[{\"box_norm\":[0.000,0.000,0.000,0.000],\"label\":\"hair_dryer\"}]",
+    "musical_instrument": "[]",
+    "musical_instrument_norm": "[{\"box_norm\":[0.000,0.000,0.000,0.000],\"label\":\"musical_instrument\"}]",
+    "sewing_machine": "[]",
+    "sewing_machine_norm": "[{\"box_norm\":[0.0,0.0,0.0,0.0],\"label\":\"sewing_machine\"}]"
+  }
+}

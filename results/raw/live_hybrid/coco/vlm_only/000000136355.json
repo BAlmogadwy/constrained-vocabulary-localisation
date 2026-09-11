@@ -1,0 +1,168 @@
+{
+ "image": "000000136355.jpg",
+ "model": "qwen/qwen3-vl-235b-a22b-instruct",
+ "labels": [
+  "refrigerator",
+  "vase",
+  "book",
+  "clock",
+  "hair drier",
+  "scissors",
+  "sink"
+ ],
+ "detections": [
+  {
+   "box_2d": [
+    593.92,
+    74.298,
+    640.0,
+    426.146
+   ],
+   "label": "refrigerator",
+   "score": 0.98
+  },
+  {
+   "box_2d": [
+    211.2,
+    239.974,
+    252.8,
+    298.9
+   ],
+   "label": "vase",
+   "score": 0.95
+  },
+  {
+   "box_2d": [
+    332.8,
+    146.461,
+    375.68,
+    183.183
+   ],
+   "label": "vase",
+   "score": 0.93
+  },
+  {
+   "box_2d": [
+    519.04,
+    114.009,
+    568.32,
+    152.439
+   ],
+   "label": "vase",
+   "score": 0.92
+  },
+  {
+   "box_2d": [
+    247.68,
+    271.572,
+    288.0,
+    311.283
+   ],
+   "label": "book",
+   "score": 0.91
+  },
+  {
+   "box_2d": [
+    552.96,
+    248.087,
+    599.04,
+    268.583
+   ],
+   "label": "book",
+   "score": 0.89
+  },
+  {
+   "box_2d": [
+    199.68,
+    18.361,
+    250.88,
+    71.309
+   ],
+   "label": "clock",
+   "score": 0.87
+  },
+  {
+   "box_2d": [
+    559.36,
+    230.58,
+    599.04,
+    248.941
+   ],
+   "label": "hair drier",
+   "score": 0.85
+  },
+  {
+   "box_2d": [
+    480.0,
+    245.952,
+    531.2,
+    263.459
+   ],
+   "label": "scissors",
+   "score": 0.83
+  },
+  {
+   "box_2d": [
+    480.0,
+    245.952,
+    531.2,
+    263.459
+   ],
+   "label": "sink",
+   "score": 0.83
+  }
+ ],
+ "latency_sec": 9.327340100004221,
+ "usage": {
+  "prompt_tokens": 351,
+  "completion_tokens": 435,
+  "total_tokens": 786
+ },
+ "raw_response": {
+  "id": "gen-1783411129-0kta6OVya8ayeBV3TP1j",
+  "object": "chat.completion",
+  "created": 1783411129,
+  "model": "qwen/qwen3-vl-235b-a22b-instruct",
+  "provider": "Venice",
+  "system_fingerprint": null,
+  "service_tier": null,
+  "choices": [
+   {
+    "index": 0,
+    "logprobs": null,
+    "finish_reason": "stop",
+    "native_finish_reason": "stop",
+    "message": {
+     "role": "assistant",
+     "content": "```json\n[\n\t{\"bbox_2d\": [928, 174, 1000, 998], \"label\": \"refrigerator\", \"confidence\": 0.98},\n\t{\"bbox_2d\": [330, 562, 395, 700], \"label\": \"vase\", \"confidence\": 0.95},\n\t{\"bbox_2d\": [520, 343, 587, 429], \"label\": \"vase\", \"confidence\": 0.93},\n\t{\"bbox_2d\": [811, 267, 888, 357], \"label\": \"vase\", \"confidence\": 0.92},\n\t{\"bbox_2d\": [387, 636, 450, 729], \"label\": \"book\", \"confidence\": 0.91},\n\t{\"bbox_2d\": [864, 581, 936, 629], \"label\": \"book\", \"confidence\": 0.89},\n\t{\"bbox_2d\": [312, 43, 392, 167], \"label\": \"clock\", \"confidence\": 0.87},\n\t{\"bbox_2d\": [874, 540, 936, 583], \"label\": \"hair drier\", \"confidence\": 0.85},\n\t{\"bbox_2d\": [750, 576, 830, 617], \"label\": \"scissors\", \"confidence\": 0.83},\n\t{\"bbox_2d\": [750, 576, 830, 617], \"label\": \"sink\", \"confidence\": 0.83}\n]\n```",
+     "refusal": null,
+     "reasoning": null
+    }
+   }
+  ],
+  "usage": {
+   "prompt_tokens": 351,
+   "completion_tokens": 435,
+   "total_tokens": 786,
+   "cost": 0.00090021,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00090021,
+    "upstream_inference_prompt_cost": 7.371e-05,
+    "upstream_inference_completions_cost": 0.0008265
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   }
+  }
+ },
+ "ts": "2026-07-07T07:58:57.278837+00:00"
+}

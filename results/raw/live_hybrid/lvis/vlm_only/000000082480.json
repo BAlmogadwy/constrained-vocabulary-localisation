@@ -1,0 +1,86 @@
+{
+ "image": "000000082480.jpg",
+ "model": "qwen/qwen3-vl-235b-a22b-instruct",
+ "labels": [
+  "hair_dryer",
+  "coffee_maker",
+  "microscope",
+  "snowboard",
+  "stapler_(stapling_machine)"
+ ],
+ "detections": [
+  {
+   "box_2d": [
+    291.2,
+    221.904,
+    538.24,
+    344.034
+   ],
+   "label": "hair_dryer",
+   "score": 0.98
+  },
+  {
+   "box_2d": [
+    107.52,
+    120.06,
+    234.24,
+    189.198
+   ],
+   "label": "hair_dryer",
+   "score": 0.95
+  }
+ ],
+ "latency_sec": 4.046772800007602,
+ "usage": {
+  "prompt_tokens": 356,
+  "completion_tokens": 97,
+  "total_tokens": 453
+ },
+ "raw_response": {
+  "id": "gen-1783407298-x5Rr5oFZN1Sb3rabJ3ZO",
+  "object": "chat.completion",
+  "created": 1783407298,
+  "model": "qwen/qwen3-vl-235b-a22b-instruct",
+  "provider": "Alibaba",
+  "system_fingerprint": null,
+  "service_tier": null,
+  "choices": [
+   {
+    "index": 0,
+    "logprobs": null,
+    "finish_reason": "stop",
+    "native_finish_reason": "stop",
+    "message": {
+     "role": "assistant",
+     "content": "```json\n[\n\t{\"box_2d\": [455, 536, 841, 831], \"label\": \"hair_dryer\", \"confidence\": 0.98},\n\t{\"box_2d\": [168, 290, 366, 457], \"label\": \"hair_dryer\", \"confidence\": 0.95}\n]\n```",
+     "refusal": null,
+     "reasoning": null
+    }
+   }
+  ],
+  "usage": {
+   "prompt_tokens": 356,
+   "completion_tokens": 97,
+   "total_tokens": 453,
+   "cost": 0.00019344,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00019344,
+    "upstream_inference_prompt_cost": 9.256e-05,
+    "upstream_inference_completions_cost": 0.00010088
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   }
+  }
+ },
+ "ts": "2026-07-07T06:55:00.064372+00:00"
+}

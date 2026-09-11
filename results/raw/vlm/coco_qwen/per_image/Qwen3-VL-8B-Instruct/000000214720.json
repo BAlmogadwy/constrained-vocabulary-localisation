@@ -1,0 +1,239 @@
+{
+  "model": "Qwen3-VL-8B-Instruct",
+  "strategy": "single_query",
+  "image": "/home/maxim/PycharmProjects/zero-shot-detection-benchmark/data/raw/coco2017/val2017/000000214720.jpg",
+  "labels": [
+    "microwave",
+    "oven",
+    "toaster",
+    "sink",
+    "refrigerator",
+    "book",
+    "clock",
+    "vase",
+    "scissors",
+    "teddy bear",
+    "hair drier",
+    "toothbrush"
+  ],
+  "detections": [
+    {
+      "box_2d": [
+        0.0,
+        393.0,
+        151.0,
+        478.0
+      ],
+      "label": "book"
+    },
+    {
+      "box_2d": [
+        0.0,
+        573.0,
+        151.0,
+        623.0
+      ],
+      "label": "book"
+    },
+    {
+      "box_2d": [
+        0.0,
+        500.0,
+        151.0,
+        573.0
+      ],
+      "label": "book"
+    },
+    {
+      "box_2d": [
+        0.0,
+        478.0,
+        151.0,
+        500.0
+      ],
+      "label": "book"
+    },
+    {
+      "box_2d": [
+        0.0,
+        452.0,
+        151.0,
+        478.0
+      ],
+      "label": "book"
+    },
+    {
+      "box_2d": [
+        0.0,
+        428.0,
+        151.0,
+        452.0
+      ],
+      "label": "book"
+    },
+    {
+      "box_2d": [
+        0.0,
+        401.0,
+        151.0,
+        428.0
+      ],
+      "label": "book"
+    },
+    {
+      "box_2d": [
+        0.0,
+        375.0,
+        151.0,
+        401.0
+      ],
+      "label": "book"
+    },
+    {
+      "box_2d": [
+        0.0,
+        351.0,
+        151.0,
+        375.0
+      ],
+      "label": "book"
+    },
+    {
+      "box_2d": [
+        0.0,
+        325.0,
+        151.0,
+        351.0
+      ],
+      "label": "book"
+    },
+    {
+      "box_2d": [
+        0.0,
+        301.0,
+        151.0,
+        325.0
+      ],
+      "label": "book"
+    },
+    {
+      "box_2d": [
+        0.0,
+        275.0,
+        151.0,
+        301.0
+      ],
+      "label": "book"
+    },
+    {
+      "box_2d": [
+        0.0,
+        251.0,
+        151.0,
+        275.0
+      ],
+      "label": "book"
+    },
+    {
+      "box_2d": [
+        0.0,
+        225.0,
+        151.0,
+        251.0
+      ],
+      "label": "book"
+    },
+    {
+      "box_2d": [
+        0.0,
+        201.0,
+        151.0,
+        225.0
+      ],
+      "label": "book"
+    },
+    {
+      "box_2d": [
+        0.0,
+        175.0,
+        151.0,
+        201.0
+      ],
+      "label": "book"
+    },
+    {
+      "box_2d": [
+        0.0,
+        151.0,
+        151.0,
+        175.0
+      ],
+      "label": "book"
+    },
+    {
+      "box_2d": [
+        0.0,
+        125.0,
+        151.0,
+        151.0
+      ],
+      "label": "book"
+    },
+    {
+      "box_2d": [
+        0.0,
+        101.0,
+        151.0,
+        125.0
+      ],
+      "label": "book"
+    },
+    {
+      "box_2d": [
+        0.0,
+        75.0,
+        151.0,
+        101.0
+      ],
+      "label": "book"
+    },
+    {
+      "box_2d": [
+        0.0,
+        51.0,
+        151.0,
+        75.0
+      ],
+      "label": "book"
+    },
+    {
+      "box_2d": [
+        0.0,
+        27.0,
+        151.0,
+        51.0
+      ],
+      "label": "book"
+    },
+    {
+      "box_2d": [
+        0.0,
+        1.0,
+        151.0,
+        27.0
+      ],
+      "label": "book"
+    },
+    {
+      "box_2d": [
+        0.0,
+        0.0,
+        151.0,
+        1.0
+      ],
+      "label": "book"
+    }
+  ],
+  "latency_sec": 311.2598342519923,
+  "raw_response": "user\nYou are an object detection assistant. Given the image and the list of target classes, return detections as JSON.\nTarget classes: microwave, oven, toaster, sink, refrigerator, book, clock, vase, scissors, teddy bear, hair drier, toothbrush.\nOutput format: [{\"box_2d\":[x1,y1,x2,y2],\"label\":\"class_name\"}...]\nUse pixel coordinates relative to the input image. Return JSON only.\nassistant\n```json\n[\n\t{\"box_2d\": [0, 393, 151, 478], \"label\": \"book\"},\n\t{\"box_2d\": [0, 573, 151, 623], \"label\": \"book\"},\n\t{\"box_2d\": [0, 500, 151, 573], \"label\": \"book\"},\n\t{\"box_2d\": [0, 478, 151, 500], \"label\": \"book\"},\n\t{\"box_2d\": [0, 452, 151, 478], \"label\": \"book\"},\n\t{\"box_2d\": [0, 428, 151, 452], \"label\": \"book\"},\n\t{\"box_2d\": [0, 401, 151, 428], \"label\": \"book\"},\n\t{\"box_2d\": [0, 375, 151, 401], \"label\": \"book\"},\n\t{\"box_2d\": [0, 351, 151, 375], \"label\": \"book\"},\n\t{\"box_2d\": [0, 325, 151, 351], \"label\": \"book\"},\n\t{\"box_2d\": [0, 301, 151, 325], \"label\": \"book\"},\n\t{\"box_2d\": [0, 275, 151, 301], \"label\": \"book\"},\n\t{\"box_2d\": [0, 251, 151, 275], \"label\": \"book\"},\n\t{\"box_2d\": [0, 225, 151, 251], \"label\": \"book\"},\n\t{\"box_2d\": [0, 201, 151, 225], \"label\": \"book\"},\n\t{\"box_2d\": [0, 175, 151, 201], \"label\": \"book\"},\n\t{\"box_2d\": [0, 151, 151, 175], \"label\": \"book\"},\n\t{\"box_2d\": [0, 125, 151, 151], \"label\": \"book\"},\n\t{\"box_2d\": [0, 101, 151, 125], \"label\": \"book\"},\n\t{\"box_2d\": [0, 75, 151, 101], \"label\": \"book\"},\n\t{\"box_2d\": [0, 51, 151, 75], \"label\": \"book\"},\n\t{\"box_2d\": [0, 27, 151, 51], \"label\": \"book\"},\n\t{\"box_2d\": [0, 1, 151, 27], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0, 151, 1], \"label\": \"book\"},\n\t{\"box_2d\": [0, 0"
+}

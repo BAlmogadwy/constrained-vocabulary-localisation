@@ -1,0 +1,188 @@
+{
+ "image": "000000377670.jpg",
+ "model": "qwen/qwen3-vl-235b-a22b-instruct",
+ "labels": [
+  "teddy bear",
+  "book",
+  "clock",
+  "microwave",
+  "scissors",
+  "sink",
+  "toaster"
+ ],
+ "detections": [
+  {
+   "box_2d": [
+    202.592,
+    217.6,
+    294.635,
+    483.84
+   ],
+   "label": "teddy bear",
+   "score": 0.99
+  },
+  {
+   "box_2d": [
+    270.772,
+    263.68,
+    457.293,
+    547.84
+   ],
+   "label": "teddy bear",
+   "score": 0.99
+  },
+  {
+   "box_2d": [
+    0.0,
+    414.08,
+    102.27,
+    540.8
+   ],
+   "label": "teddy bear",
+   "score": 0.99
+  },
+  {
+   "box_2d": [
+    37.986,
+    305.28,
+    150.97,
+    504.96
+   ],
+   "label": "teddy bear",
+   "score": 0.99
+  },
+  {
+   "box_2d": [
+    97.4,
+    67.84,
+    134.899,
+    129.28
+   ],
+   "label": "teddy bear",
+   "score": 0.99
+  },
+  {
+   "box_2d": [
+    125.646,
+    69.76,
+    168.015,
+    129.28
+   ],
+   "label": "teddy bear",
+   "score": 0.99
+  },
+  {
+   "box_2d": [
+    165.093,
+    72.32,
+    231.325,
+    129.28
+   ],
+   "label": "teddy bear",
+   "score": 0.99
+  },
+  {
+   "box_2d": [
+    216.715,
+    57.6,
+    247.396,
+    103.68
+   ],
+   "label": "teddy bear",
+   "score": 0.99
+  },
+  {
+   "box_2d": [
+    245.448,
+    55.68,
+    283.434,
+    103.68
+   ],
+   "label": "teddy bear",
+   "score": 0.99
+  },
+  {
+   "box_2d": [
+    245.448,
+    100.48,
+    337.491,
+    168.32
+   ],
+   "label": "teddy bear",
+   "score": 0.99
+  },
+  {
+   "box_2d": [
+    133.925,
+    107.52,
+    231.325,
+    186.88
+   ],
+   "label": "teddy bear",
+   "score": 0.99
+  },
+  {
+   "box_2d": [
+    158.275,
+    57.6,
+    194.8,
+    87.68
+   ],
+   "label": "teddy bear",
+   "score": 0.99
+  }
+ ],
+ "latency_sec": 20.007635000001756,
+ "usage": {
+  "prompt_tokens": 391,
+  "completion_tokens": 529,
+  "total_tokens": 920
+ },
+ "raw_response": {
+  "id": "gen-1783413285-xCQyOvGnkZP52LsyJNXr",
+  "object": "chat.completion",
+  "created": 1783413285,
+  "model": "qwen/qwen3-vl-235b-a22b-instruct",
+  "provider": "Novita",
+  "system_fingerprint": null,
+  "service_tier": null,
+  "choices": [
+   {
+    "index": 0,
+    "logprobs": null,
+    "finish_reason": "stop",
+    "native_finish_reason": "stop",
+    "message": {
+     "role": "assistant",
+     "content": "```json\n[\n\t{\"box_2d\": [416, 340, 605, 756], \"label\": \"teddy bear\", \"confidence\": 0.99},\n\t{\"box_2d\": [556, 412, 939, 856], \"label\": \"teddy bear\", \"confidence\": 0.99},\n\t{\"bbox_2d\": [0, 647, 210, 845], \"label\": \"teddy bear\", \"confidence\": 0.99},\n\t{\"bbox_2d\": [78, 477, 310, 789], \"label\": \"teddy bear\", \"confidence\": 0.99},\n\t{\"bbox_2d\": [200, 106, 277, 202], \"label\": \"teddy bear\", \"confidence\": 0.99},\n\t{\"bbox_2d\": [258, 109, 345, 202], \"label\": \"teddy bear\", \"confidence\": 0.99},\n\t{\"bbox_2d\": [339, 113, 475, 202], \"label\": \"teddy bear\", \"confidence\": 0.99},\n\t{\"bbox_2d\": [445, 90, 508, 162], \"label\": \"teddy bear\", \"confidence\": 0.99},\n\t{\"bbox_2d\": [504, 87, 582, 162], \"label\": \"teddy bear\", \"confidence\": 0.99},\n\t{\"bbox_2d\": [504, 157, 693, 263], \"label\": \"teddy bear\", \"confidence\": 0.99},\n\t{\"bbox_2d\": [275, 168, 475, 292], \"label\": \"teddy bear\", \"confidence\": 0.99},\n\t{\"bbox_2d\": [325, 90, 400, 137], \"label\": \"teddy bear\", \"confidence\": 0.99}\n]\n```",
+     "refusal": null,
+     "reasoning": null
+    }
+   }
+  ],
+  "usage": {
+   "prompt_tokens": 391,
+   "completion_tokens": 529,
+   "total_tokens": 920,
+   "cost": 0.0009108,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0009108,
+    "upstream_inference_prompt_cost": 0.0001173,
+    "upstream_inference_completions_cost": 0.0007935
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   }
+  }
+ },
+ "ts": "2026-07-07T08:35:02.290258+00:00"
+}

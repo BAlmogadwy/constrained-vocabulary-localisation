@@ -1,0 +1,67 @@
+{
+ "image": "000000436738.jpg",
+ "model": "qwen/qwen3-vl-235b-a22b-instruct",
+ "labels": [
+  "book",
+  "hair drier",
+  "microwave",
+  "oven",
+  "scissors",
+  "teddy bear",
+  "toothbrush"
+ ],
+ "detections": [],
+ "latency_sec": 2.578425400002743,
+ "usage": {
+  "prompt_tokens": 334,
+  "completion_tokens": 2,
+  "total_tokens": 336
+ },
+ "raw_response": {
+  "id": "gen-1783413932-mpSyj3loiP1AmohVGscj",
+  "object": "chat.completion",
+  "created": 1783413932,
+  "model": "qwen/qwen3-vl-235b-a22b-instruct",
+  "provider": "Novita",
+  "system_fingerprint": null,
+  "service_tier": null,
+  "choices": [
+   {
+    "index": 0,
+    "logprobs": null,
+    "finish_reason": "stop",
+    "native_finish_reason": "stop",
+    "message": {
+     "role": "assistant",
+     "content": "[]",
+     "refusal": null,
+     "reasoning": null
+    }
+   }
+  ],
+  "usage": {
+   "prompt_tokens": 334,
+   "completion_tokens": 2,
+   "total_tokens": 336,
+   "cost": 0.0001032,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0001032,
+    "upstream_inference_prompt_cost": 0.0001002,
+    "upstream_inference_completions_cost": 3e-06
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   }
+  }
+ },
+ "ts": "2026-07-07T08:45:33.019277+00:00"
+}

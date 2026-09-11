@@ -1,0 +1,36 @@
+{
+  "model": "grounding_dino",
+  "strategy": "default",
+  "image": "/home/maxim/PycharmProjects/zero-shot-detection-benchmark/data/raw/coco2017/val2017/000000138819.jpg",
+  "labels": [
+    "sink",
+    "clock",
+    "hair drier",
+    "refrigerator",
+    "teddy bear",
+    "toothbrush",
+    "vase"
+  ],
+  "result": {
+    "detections": [
+      {
+        "label": "sink",
+        "score": 0.5751954317092896,
+        "box_2d": [
+          123.14352416992188,
+          23.259937286376953,
+          465.72509765625,
+          224.26699829101562
+        ],
+        "box": [
+          123.14352416992188,
+          23.259937286376953,
+          465.72509765625,
+          224.26699829101562
+        ]
+      }
+    ],
+    "latency_sec": 0.10296422600004007,
+    "raw_response": null
+  }
+}

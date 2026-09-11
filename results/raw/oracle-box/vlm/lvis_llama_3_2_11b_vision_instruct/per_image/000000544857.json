@@ -1,0 +1,39 @@
+{
+  "image": "/home/maxim/PycharmProjects/zero-shot-detection-benchmark/data/subsets/lvis_v1_val_unseen/images/000000544857.jpg",
+  "image_id": 544857,
+  "file_name": "000000544857.jpg",
+  "num_crops": 1,
+  "crops": [
+    {
+      "annotation_id": 69827,
+      "bbox": [
+        209.75,
+        371.89,
+        167.54,
+        12.3
+      ],
+      "category_id": 976,
+      "gt_label": "snowboard",
+      "labels": [
+        "snowboard",
+        "microscope",
+        "musical_instrument",
+        "spatula",
+        "stapler_(stapling_machine)"
+      ],
+      "prediction": "snowboard",
+      "normalized_prediction": "snowboard",
+      "matched_label": "snowboard",
+      "correct": true,
+      "latency_sec": 3.795030884008156,
+      "raw_response": {
+        "snowboard": "[{\"box_2d\":[0,0,169,14],\"label\":\"snowboard\"}]",
+        "microscope": "[{\"box_2d\":[0,0,169,14],\"label\":\"microscope\"}]",
+        "musical_instrument": "[{\"box_2d\":[0,0,169,14],\"label\":\"musical_instrument\"}]",
+        "spatula": "[{\"box_2d\":[0,0,169,14],\"label\":\"spatula\"}]",
+        "stapler_(stapling_machine)": "[{\"box_2d\":[0,0,169,14],\"label\":\"stapler_(stapling_machine)\"}]"
+      }
+    }
+  ],
+  "prompt": "You are an object recognition assistant.\n\nYou will see a cropped image that contains exactly one object\nfrom the following LVIS categories (unseen split):\n\n- snowboard\n- microscope\n- musical_instrument\n- spatula\n- stapler_(stapling_machine)\n\nYour task:\n- Return ONLY the best matching category name from this list.\n- Do not output explanations or extra text.\n\nAnswer with a single string: \"class_name\"."
+}

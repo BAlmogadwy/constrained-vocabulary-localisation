@@ -1,0 +1,116 @@
+{
+ "image": "000000067218.jpg",
+ "model": "qwen/qwen3-vl-235b-a22b-instruct",
+ "labels": [
+  "snowboard",
+  "hair_dryer",
+  "microscope",
+  "musical_instrument",
+  "sewing_machine"
+ ],
+ "detections": [
+  {
+   "box_2d": [
+    393.6,
+    386.224,
+    519.04,
+    477.044
+   ],
+   "label": "snowboard",
+   "score": 0.98
+  },
+  {
+   "box_2d": [
+    332.16,
+    332.21,
+    535.04,
+    359.456
+   ],
+   "label": "snowboard",
+   "score": 0.97
+  },
+  {
+   "box_2d": [
+    97.92,
+    289.19,
+    231.68,
+    327.43
+   ],
+   "label": "snowboard",
+   "score": 0.96
+  },
+  {
+   "box_2d": [
+    243.2,
+    332.21,
+    282.24,
+    359.456
+   ],
+   "label": "snowboard",
+   "score": 0.95
+  },
+  {
+   "box_2d": [
+    330.24,
+    245.214,
+    396.8,
+    263.856
+   ],
+   "label": "snowboard",
+   "score": 0.94
+  }
+ ],
+ "latency_sec": 7.820692900000722,
+ "usage": {
+  "prompt_tokens": 392,
+  "completion_tokens": 222,
+  "total_tokens": 614
+ },
+ "raw_response": {
+  "id": "gen-1783407226-8jv50smcRPMzxFuDvkWl",
+  "object": "chat.completion",
+  "created": 1783407226,
+  "model": "qwen/qwen3-vl-235b-a22b-instruct",
+  "provider": "Parasail",
+  "system_fingerprint": null,
+  "service_tier": null,
+  "choices": [
+   {
+    "index": 0,
+    "logprobs": null,
+    "finish_reason": "stop",
+    "native_finish_reason": "stop",
+    "message": {
+     "role": "assistant",
+     "content": "```json\n[\n\t{\"bbox_2d\": [615, 808, 811, 998], \"label\": \"snowboard\", \"confidence\": 0.98},\n\t{\"bbox_2d\": [519, 695, 836, 752], \"label\": \"snowboard\", \"confidence\": 0.97},\n\t{\"bbox_2d\": [153, 605, 362, 685], \"label\": \"snowboard\", \"confidence\": 0.96},\n\t{\"bbox_2d\": [380, 695, 441, 752], \"label\": \"snowboard\", \"confidence\": 0.95},\n\t{\"bbox_2d\": [516, 513, 620, 552], \"label\": \"snowboard\", \"confidence\": 0.94}\n]\n```",
+     "refusal": null,
+     "reasoning": null
+    }
+   }
+  ],
+  "usage": {
+   "prompt_tokens": 392,
+   "completion_tokens": 222,
+   "total_tokens": 614,
+   "cost": 0.00050236,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 16,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00050236,
+    "upstream_inference_prompt_cost": 8.056e-05,
+    "upstream_inference_completions_cost": 0.0004218
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   }
+  }
+ },
+ "ts": "2026-07-07T06:53:52.137038+00:00"
+}

@@ -1,0 +1,128 @@
+{
+ "image": "000000294783.jpg",
+ "model": "qwen/qwen3-vl-235b-a22b-instruct",
+ "labels": [
+  "book",
+  "clock",
+  "microwave",
+  "refrigerator",
+  "teddy bear",
+  "toaster",
+  "toothbrush"
+ ],
+ "detections": [
+  {
+   "box_2d": [
+    524.8,
+    216.996,
+    564.48,
+    242.676
+   ],
+   "label": "book",
+   "score": 0.95
+  },
+  {
+   "box_2d": [
+    524.8,
+    276.06,
+    639.36,
+    318.86
+   ],
+   "label": "book",
+   "score": 0.95
+  },
+  {
+   "box_2d": [
+    524.8,
+    247.812,
+    639.36,
+    277.344
+   ],
+   "label": "book",
+   "score": 0.95
+  },
+  {
+   "box_2d": [
+    524.8,
+    216.996,
+    564.48,
+    242.676
+   ],
+   "label": "book",
+   "score": 0.95
+  },
+  {
+   "box_2d": [
+    524.8,
+    276.06,
+    639.36,
+    318.86
+   ],
+   "label": "book",
+   "score": 0.95
+  },
+  {
+   "box_2d": [
+    524.8,
+    247.812,
+    639.36,
+    277.344
+   ],
+   "label": "book",
+   "score": 0.95
+  }
+ ],
+ "latency_sec": 9.176369100008742,
+ "usage": {
+  "prompt_tokens": 352,
+  "completion_tokens": 259,
+  "total_tokens": 611
+ },
+ "raw_response": {
+  "id": "gen-1783412588-IrBkZr3w7iN0qNZvxeiP",
+  "object": "chat.completion",
+  "created": 1783412588,
+  "model": "qwen/qwen3-vl-235b-a22b-instruct",
+  "provider": "Parasail",
+  "system_fingerprint": null,
+  "service_tier": null,
+  "choices": [
+   {
+    "index": 0,
+    "logprobs": null,
+    "finish_reason": "stop",
+    "native_finish_reason": "stop",
+    "message": {
+     "role": "assistant",
+     "content": "```json\n[\n\t{\"bbox_2d\": [820, 507, 882, 567], \"label\": \"book\", \"confidence\": 0.95},\n\t{\"bbox_2d\": [820, 645, 999, 745], \"label\": \"book\", \"confidence\": 0.95},\n\t{\"bbox_2d\": [820, 579, 999, 648], \"label\": \"book\", \"confidence\": 0.95},\n\t{\"bbox_2d\": [820, 507, 882, 567], \"label\": \"book\", \"confidence\": 0.95},\n\t{\"bbox_2d\": [820, 645, 999, 745], \"label\": \"book\", \"confidence\": 0.95},\n\t{\"bbox_2d\": [820, 579, 999, 648], \"label\": \"book\", \"confidence\": 0.95}\n]\n```",
+     "refusal": null,
+     "reasoning": null
+    }
+   }
+  ],
+  "usage": {
+   "prompt_tokens": 352,
+   "completion_tokens": 259,
+   "total_tokens": 611,
+   "cost": 0.00056602,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00056602,
+    "upstream_inference_prompt_cost": 7.392e-05,
+    "upstream_inference_completions_cost": 0.0004921
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   }
+  }
+ },
+ "ts": "2026-07-07T08:23:13.760210+00:00"
+}

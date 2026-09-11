@@ -1,0 +1,50 @@
+{
+  "model": "yolo_world",
+  "strategy": "default",
+  "image": "C:\\Users\\user\\zeroshot\\zero-shot-detection-benchmark\\data\\subsets\\lvis_v1_val_unseen\\images\\000000031113.jpg",
+  "labels": [
+    "hair_dryer",
+    "coffee_maker",
+    "lawn_mower",
+    "microscope",
+    "sewing_machine"
+  ],
+  "result": {
+    "detections": [
+      {
+        "label": "hair_dryer",
+        "score": 0.012834703549742699,
+        "box_2d": [
+          141.6700897216797,
+          182.69679260253906,
+          172.43270874023438,
+          253.101806640625
+        ],
+        "box": [
+          141.6700897216797,
+          182.69679260253906,
+          172.43270874023438,
+          253.101806640625
+        ]
+      },
+      {
+        "label": "microscope",
+        "score": 0.001110575278289616,
+        "box_2d": [
+          141.12879943847656,
+          182.83828735351562,
+          173.0073699951172,
+          253.64088439941406
+        ],
+        "box": [
+          141.12879943847656,
+          182.83828735351562,
+          173.0073699951172,
+          253.64088439941406
+        ]
+      }
+    ],
+    "latency_sec": 0.03913039999861212,
+    "raw_response": null
+  }
+}

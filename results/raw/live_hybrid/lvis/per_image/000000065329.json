@@ -1,0 +1,350 @@
+{
+ "image": "000000065329.jpg",
+ "labels": [
+  "stapler_(stapling_machine)",
+  "blender",
+  "lawn_mower",
+  "sewing_machine",
+  "snowboard"
+ ],
+ "tau": 0.4,
+ "detector": {
+  "detections": [
+   {
+    "label": "stapler_(stapling_machine)",
+    "box": [
+     17.58594512939453,
+     165.69866943359375,
+     58.04906463623047,
+     189.9305419921875
+    ],
+    "score": 0.04412154108285904
+   },
+   {
+    "label": "stapler_(stapling_machine)",
+    "box": [
+     0.0,
+     196.33383178710938,
+     50.21866226196289,
+     222.97384643554688
+    ],
+    "score": 0.006278842221945524
+   },
+   {
+    "label": "stapler_(stapling_machine)",
+    "box": [
+     0.47355079650878906,
+     180.60025024414062,
+     19.961193084716797,
+     198.29803466796875
+    ],
+    "score": 0.005520157981663942
+   },
+   {
+    "label": "stapler_(stapling_machine)",
+    "box": [
+     0.2713966369628906,
+     180.29879760742188,
+     44.114166259765625,
+     217.17926025390625
+    ],
+    "score": 0.004890860989689827
+   },
+   {
+    "label": "stapler_(stapling_machine)",
+    "box": [
+     553.7622680664062,
+     123.29742431640625,
+     640.0,
+     339.4837951660156
+    ],
+    "score": 0.004326055757701397
+   },
+   {
+    "label": "stapler_(stapling_machine)",
+    "box": [
+     37.057029724121094,
+     147.1903533935547,
+     62.32652282714844,
+     177.47731018066406
+    ],
+    "score": 0.003557040821760893
+   },
+   {
+    "label": "blender",
+    "box": [
+     553.0877075195312,
+     126.9150390625,
+     640.0,
+     339.2630310058594
+    ],
+    "score": 0.0020803825464099646
+   },
+   {
+    "label": "stapler_(stapling_machine)",
+    "box": [
+     24.61725616455078,
+     176.80917358398438,
+     56.036521911621094,
+     196.44754028320312
+    ],
+    "score": 0.0019951502326875925
+   },
+   {
+    "label": "stapler_(stapling_machine)",
+    "box": [
+     56.872047424316406,
+     130.33486938476562,
+     90.40192413330078,
+     164.83370971679688
+    ],
+    "score": 0.0017175634857267141
+   },
+   {
+    "label": "blender",
+    "box": [
+     117.10015106201172,
+     61.153717041015625,
+     154.4493408203125,
+     177.59005737304688
+    ],
+    "score": 0.001495387521572411
+   },
+   {
+    "label": "stapler_(stapling_machine)",
+    "box": [
+     402.17926025390625,
+     141.57369995117188,
+     427.33978271484375,
+     194.222412109375
+    ],
+    "score": 0.0014025510754436255
+   },
+   {
+    "label": "sewing_machine",
+    "box": [
+     0.0,
+     99.604248046875,
+     587.478759765625,
+     479.95562744140625
+    ],
+    "score": 0.0010578169021755457
+   },
+   {
+    "label": "sewing_machine",
+    "box": [
+     0.3525390625,
+     321.861572265625,
+     572.8634033203125,
+     480.0
+    ],
+    "score": 0.0010468822438269854
+   }
+  ],
+  "latency_sec": 0.2767824000038672
+ },
+ "detector_max_score": 0.04412154108285904,
+ "escalated": true,
+ "vlm": {
+  "model": "qwen/qwen3-vl-235b-a22b-instruct",
+  "detections": [
+   {
+    "label": "stapler_(stapling_machine)",
+    "box": [
+     553.6,
+     128.16,
+     640.0,
+     315.84
+    ],
+    "score": 1.0
+   }
+  ],
+  "latency_sec": 2.8426685000013094,
+  "usage": {
+   "prompt_tokens": 395,
+   "completion_tokens": 57,
+   "total_tokens": 452
+  },
+  "raw_response": {
+   "id": "gen-1783406590-rsRzywyHeBFZTOgCdSLT",
+   "object": "chat.completion",
+   "created": 1783406590,
+   "model": "qwen/qwen3-vl-235b-a22b-instruct",
+   "provider": "Alibaba",
+   "system_fingerprint": null,
+   "service_tier": null,
+   "choices": [
+    {
+     "index": 0,
+     "logprobs": null,
+     "finish_reason": "stop",
+     "native_finish_reason": "stop",
+     "message": {
+      "role": "assistant",
+      "content": "```json\n[\n\t{\"bbox_2d\": [865, 267, 1000, 658], \"label\": \"stapler_(stapling_machine)\", \"confidence\": 0.95}\n]\n```",
+      "refusal": null,
+      "reasoning": null
+     }
+    }
+   ],
+   "usage": {
+    "prompt_tokens": 395,
+    "completion_tokens": 57,
+    "total_tokens": 452,
+    "cost": 0.00016198,
+    "is_byok": false,
+    "prompt_tokens_details": {
+     "cached_tokens": 0,
+     "cache_write_tokens": 0,
+     "audio_tokens": 0,
+     "video_tokens": 0
+    },
+    "cost_details": {
+     "upstream_inference_cost": 0.00016198,
+     "upstream_inference_prompt_cost": 0.0001027,
+     "upstream_inference_completions_cost": 5.928e-05
+    },
+    "completion_tokens_details": {
+     "reasoning_tokens": 0,
+     "image_tokens": 0,
+     "audio_tokens": 0
+    }
+   }
+  }
+ },
+ "fallback": false,
+ "ts": "2026-07-07T06:43:08.569581+00:00",
+ "fused": [
+  {
+   "label": "stapler_(stapling_machine)",
+   "box": [
+    17.58594512939453,
+    165.69866943359375,
+    58.04906463623047,
+    189.9305419921875
+   ],
+   "score": 0.04412154108285904
+  },
+  {
+   "label": "stapler_(stapling_machine)",
+   "box": [
+    0.0,
+    196.33383178710938,
+    50.21866226196289,
+    222.97384643554688
+   ],
+   "score": 0.006278842221945524
+  },
+  {
+   "label": "stapler_(stapling_machine)",
+   "box": [
+    0.47355079650878906,
+    180.60025024414062,
+    19.961193084716797,
+    198.29803466796875
+   ],
+   "score": 0.005520157981663942
+  },
+  {
+   "label": "stapler_(stapling_machine)",
+   "box": [
+    0.2713966369628906,
+    180.29879760742188,
+    44.114166259765625,
+    217.17926025390625
+   ],
+   "score": 0.004890860989689827
+  },
+  {
+   "label": "stapler_(stapling_machine)",
+   "box": [
+    553.7622680664062,
+    123.29742431640625,
+    640.0,
+    339.4837951660156
+   ],
+   "score": 0.3043260557577014
+  },
+  {
+   "label": "stapler_(stapling_machine)",
+   "box": [
+    37.057029724121094,
+    147.1903533935547,
+    62.32652282714844,
+    177.47731018066406
+   ],
+   "score": 0.003557040821760893
+  },
+  {
+   "label": "blender",
+   "box": [
+    553.0877075195312,
+    126.9150390625,
+    640.0,
+    339.2630310058594
+   ],
+   "score": 0.0020803825464099646
+  },
+  {
+   "label": "stapler_(stapling_machine)",
+   "box": [
+    24.61725616455078,
+    176.80917358398438,
+    56.036521911621094,
+    196.44754028320312
+   ],
+   "score": 0.0019951502326875925
+  },
+  {
+   "label": "stapler_(stapling_machine)",
+   "box": [
+    56.872047424316406,
+    130.33486938476562,
+    90.40192413330078,
+    164.83370971679688
+   ],
+   "score": 0.0017175634857267141
+  },
+  {
+   "label": "blender",
+   "box": [
+    117.10015106201172,
+    61.153717041015625,
+    154.4493408203125,
+    177.59005737304688
+   ],
+   "score": 0.001495387521572411
+  },
+  {
+   "label": "stapler_(stapling_machine)",
+   "box": [
+    402.17926025390625,
+    141.57369995117188,
+    427.33978271484375,
+    194.222412109375
+   ],
+   "score": 0.0014025510754436255
+  },
+  {
+   "label": "sewing_machine",
+   "box": [
+    0.0,
+    99.604248046875,
+    587.478759765625,
+    479.95562744140625
+   ],
+   "score": 0.0010578169021755457
+  },
+  {
+   "label": "sewing_machine",
+   "box": [
+    0.3525390625,
+    321.861572265625,
+    572.8634033203125,
+    480.0
+   ],
+   "score": 0.0010468822438269854
+  }
+ ],
+ "latency_total_sec": 3.1194843999983277
+}

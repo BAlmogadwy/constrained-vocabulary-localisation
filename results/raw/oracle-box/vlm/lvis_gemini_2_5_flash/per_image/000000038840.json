@@ -1,0 +1,57 @@
+{
+  "image": "/home/maxim/PycharmProjects/zero-shot-detection-benchmark/data/subsets/lvis_v1_val_unseen/images/000000038840.jpg",
+  "image_id": 38840,
+  "file_name": "000000038840.jpg",
+  "num_crops": 2,
+  "crops": [
+    {
+      "annotation_id": 130519,
+      "bbox": [
+        261.72,
+        364.53,
+        201.72,
+        113.47
+      ],
+      "category_id": 976,
+      "gt_label": "snowboard",
+      "labels": [
+        "snowboard",
+        "blender",
+        "coffee_maker",
+        "lawn_mower",
+        "microscope"
+      ],
+      "prediction": "snowboard",
+      "normalized_prediction": "snowboard",
+      "matched_label": "snowboard",
+      "correct": true,
+      "latency_sec": 1.3749008380109444,
+      "raw_response": "[{\"box_2d\": [75, 597, 502, 994], \"label\": \"snowboard\"}]"
+    },
+    {
+      "annotation_id": 130520,
+      "bbox": [
+        44.82,
+        198.38,
+        34.55,
+        8.76
+      ],
+      "category_id": 976,
+      "gt_label": "snowboard",
+      "labels": [
+        "snowboard",
+        "blender",
+        "coffee_maker",
+        "lawn_mower",
+        "microscope"
+      ],
+      "prediction": null,
+      "normalized_prediction": "",
+      "matched_label": null,
+      "correct": false,
+      "latency_sec": 3.1016709440154955,
+      "raw_response": "[]"
+    }
+  ],
+  "prompt": "You are an object recognition assistant.\n\nYou will see a cropped image that contains exactly one object\nfrom the following LVIS categories (unseen split):\n\n- snowboard\n- blender\n- coffee_maker\n- lawn_mower\n- microscope\n\nYour task:\n- Return ONLY the best matching category name from this list.\n- Do not output explanations or extra text.\n\nAnswer with a single string: \"class_name\"."
+}

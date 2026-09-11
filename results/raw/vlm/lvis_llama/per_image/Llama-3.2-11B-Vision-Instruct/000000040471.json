@@ -1,0 +1,54 @@
+{
+  "model": "Llama-3.2-11B-Vision-Instruct",
+  "strategy": "single_query",
+  "image": "/home/maxim/PycharmProjects/zero-shot-detection-benchmark/data/subsets/lvis_v1_val_unseen/images/000000040471.jpg",
+  "labels": [
+    "spatula",
+    "coffee_maker",
+    "musical_instrument",
+    "sewing_machine",
+    "snowboard"
+  ],
+  "detections": [
+    {
+      "box_2d": [
+        20,
+        285,
+        61,
+        355
+      ],
+      "label": "spatula"
+    },
+    {
+      "box_2d": [
+        21,
+        288,
+        90,
+        352
+      ],
+      "label": "coffee_maker"
+    },
+    {
+      "box_2d": [
+        2,
+        138,
+        62,
+        202
+      ],
+      "label": "musical_instrument"
+    }
+  ],
+  "latency_sec": 16.001726859249175,
+  "raw_response": {
+    "spatula": "[{\"box_2d\":[0,0,0,0],\"label\":\"spatula\"}]",
+    "spatula_norm": "[{\"box_norm\":[0.047,0.445,0.143,0.555],\"label\":\"spatula\"}]",
+    "coffee_maker": "[{\"box_2d\":[0,0,0,0],\"label\":\"coffee_maker\"}]",
+    "coffee_maker_norm": "[{\"box_norm\":[0.05,0.45,0.21,0.55],\"label\":\"coffee_maker\"}]",
+    "musical_instrument": "[]",
+    "musical_instrument_norm": "[{\"box_norm\":[0.005,0.215,0.145,0.315],\"label\":\"musical_instrument\"}]",
+    "sewing_machine": "[]",
+    "sewing_machine_norm": "[{\"box_norm\":[0.000,0.000,0.000,0.000],\"label\":\"sewing_machine\"}]",
+    "snowboard": "[]",
+    "snowboard_norm": "[{\"box_norm\":[0.000,0.000,0.000,0.000],\"label\":\"snowboard\"}]"
+  }
+}

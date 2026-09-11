@@ -1,0 +1,25 @@
+{
+  "model": "gemini-2.5-flash",
+  "strategy": "single_query",
+  "image": "/home/maxim/PycharmProjects/zero-shot-detection-benchmark/data/subsets/lvis_v1_val_unseen/images/000000341865.jpg",
+  "labels": [
+    "hair_dryer",
+    "blender",
+    "microscope",
+    "musical_instrument",
+    "sewing_machine"
+  ],
+  "detections": [
+    {
+      "box_2d": [
+        0,
+        566,
+        252,
+        903
+      ],
+      "label": "hair_dryer"
+    }
+  ],
+  "latency_sec": 2.0408137149643153,
+  "raw_response": "[\n  {\"box_2d\": [0, 566, 252, 903], \"label\": \"hair_dryer\"}\n]"
+}

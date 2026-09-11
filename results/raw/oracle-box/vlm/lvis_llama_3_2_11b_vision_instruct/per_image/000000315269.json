@@ -1,0 +1,77 @@
+{
+  "image": "/home/maxim/PycharmProjects/zero-shot-detection-benchmark/data/subsets/lvis_v1_val_unseen/images/000000315269.jpg",
+  "image_id": 315269,
+  "file_name": "000000315269.jpg",
+  "num_crops": 2,
+  "crops": [
+    {
+      "annotation_id": 128280,
+      "bbox": [
+        164.07,
+        16.07,
+        69.7,
+        56.66
+      ],
+      "category_id": 976,
+      "gt_label": "snowboard",
+      "labels": [
+        "snowboard",
+        "blender",
+        "coffee_maker",
+        "sewing_machine",
+        "spatula"
+      ],
+      "prediction": "snowboard",
+      "normalized_prediction": "snowboard",
+      "matched_label": "snowboard",
+      "correct": true,
+      "latency_sec": 5.4377866739814635,
+      "raw_response": {
+        "snowboard": "[{\"box_2d\":[0,0,70,57],\"label\":\"snowboard\"}]",
+        "blender": "[]",
+        "blender_norm": "[{\"box_norm\":[0.0,0.0,0.0,0.0],\"label\":\"blender\"}]",
+        "coffee_maker": "[]",
+        "coffee_maker_norm": "[{\"box_norm\":[0.0,0.0,0.0,0.0],\"label\":\"coffee_maker\"}]",
+        "sewing_machine": "[]",
+        "sewing_machine_norm": "[{\"box_norm\":[0.0,0.0,0.0,0.0],\"label\":\"sewing_machine\"}]",
+        "spatula": "[]",
+        "spatula_norm": "[{\"box_norm\":[0.000000,0.000000,0.999999,0.999999],\"label\":\"spatula\"}]"
+      }
+    },
+    {
+      "annotation_id": 128281,
+      "bbox": [
+        100.89,
+        134.67,
+        131.81,
+        18.63
+      ],
+      "category_id": 976,
+      "gt_label": "snowboard",
+      "labels": [
+        "snowboard",
+        "blender",
+        "coffee_maker",
+        "sewing_machine",
+        "spatula"
+      ],
+      "prediction": "snowboard",
+      "normalized_prediction": "snowboard",
+      "matched_label": "snowboard",
+      "correct": true,
+      "latency_sec": 15.696081228990806,
+      "raw_response": {
+        "snowboard": "[{\"box_2d\":[0,0,133,20],\"label\":\"snowboard\"}]",
+        "blender": "[]",
+        "blender_norm": "[{\"box_norm\":[0.0,0.0,0.0,0.0],\"label\":\"blender\"}]",
+        "coffee_maker": "[]",
+        "coffee_maker_norm": "[{\"box_norm\":[0.0,0.0,0.0,0.0],\"label\":\"coffee_maker\"}]",
+        "sewing_machine": "[]",
+        "sewing_machine_norm": "[\n\n  {\n    \"box_norm\": [0.0, 0.0, 0.0, 0.0],\n    \"label\": \"sewing_machine\"\n  },\n  {\n    \"box_norm\": [0.0, 0.0, 0.0, 0.0],\n    \"label\": \"sewing_machine\"\n  },\n  {\n    \"box_norm\": [0.0, 0.0, 0.0, 0.0],\n    \"label\": \"sewing_machine\"\n  },\n  {\n    \"box_norm\": [0.0, 0.0, 0.0, 0.0],\n    \"label\": \"sewing_machine\"\n  },\n  {\n    \"box_norm\": [0.0, 0.0, 0.0, 0.0],\n    \"label\": \"sewing_machine\"\n  },\n  {\n    \"box_norm\": [0.0, 0.0, 0.0, 0.0],\n    \"label\": \"sewing_machine\"\n  },\n  {\n    \"box_norm\": [0.0, 0.0, 0.0, 0.0],\n    \"label\": \"sewing_machine\"\n  },\n  {\n    \"box_norm\": [0.0, 0.0, 0.0, 0.0],\n    \"label\": \"sewing_machine\"\n  },\n  {\n    \"box_norm\": [0.0, 0.0, 0.0, 0.0],\n    \"label\": \"sewing_machine\"\n  },\n  {\n    \"box_norm\": [0.0, 0.0, 0.0, 0.0],\n    \"label\": \"sewing_machine\"\n  },\n  {\n    \"box_norm\": [0.0, 0.0, 0.0, 0.0],\n    \"label\": \"sewing_machine\"\n  },\n  {\n    \"box_norm\": [0.0, 0.0, 0.0, 0.0],\n    \"label\": \"sewing_machine\"\n  },\n  {\n    \"box_norm\": [0.0, 0.0, 0.0, 0.0],\n    \"label\": \"sewing_machine\"\n  },\n  {\n    \"box_norm\": [0.0, 0.0",
+        "spatula": "[]",
+        "spatula_norm": "[{\"box_norm\":[0.0,0.0,0.0,0.0],\"label\":\"None\"}]"
+      }
+    }
+  ],
+  "prompt": "You are an object recognition assistant.\n\nYou will see a cropped image that contains exactly one object\nfrom the following LVIS categories (unseen split):\n\n- snowboard\n- blender\n- coffee_maker\n- sewing_machine\n- spatula\n\nYour task:\n- Return ONLY the best matching category name from this list.\n- Do not output explanations or extra text.\n\nAnswer with a single string: \"class_name\"."
+}

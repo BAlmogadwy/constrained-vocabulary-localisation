@@ -1,0 +1,68 @@
+{
+  "model": "llava-v1.6-mistral-7b-hf",
+  "strategy": "single_query",
+  "image": "/home/maxim/PycharmProjects/zero-shot-detection-benchmark/data/raw/coco2017/val2017/000000137576.jpg",
+  "labels": [
+    "microwave",
+    "oven",
+    "toaster",
+    "sink",
+    "refrigerator",
+    "book",
+    "clock",
+    "vase",
+    "scissors",
+    "teddy bear",
+    "hair drier",
+    "toothbrush"
+  ],
+  "detections": [
+    {
+      "box_2d": [
+        0.0,
+        0.298,
+        0.203,
+        0.708
+      ],
+      "label": "class_name"
+    },
+    {
+      "box_2d": [
+        0.197,
+        0.323,
+        0.389,
+        0.692
+      ],
+      "label": "class_name"
+    },
+    {
+      "box_2d": [
+        0.381,
+        0.352,
+        0.552,
+        0.621
+      ],
+      "label": "class_name"
+    },
+    {
+      "box_2d": [
+        0.555,
+        0.352,
+        0.703,
+        0.621
+      ],
+      "label": "class_name"
+    },
+    {
+      "box_2d": [
+        0.733,
+        0.194,
+        0.998,
+        0.721
+      ],
+      "label": "class_name"
+    }
+  ],
+  "latency_sec": 3.2954841039900202,
+  "raw_response": "USER:  \nDetect the following objects in the image: microwave, oven, toaster, sink, refrigerator, book, clock, vase, scissors, teddy bear, hair drier, toothbrush. For each detected object, provide JSON entries in the form [{\"box_2d\": [x1, y1, x2, y2], \"label\": \"class_name\"}]. Return only JSON. ASSISTANT: ```json\n[\n  {\"box_2d\": [0.000,0.298,0.203,0.708], \"label\": \"class_name\"},\n  {\"box_2d\": [0.197,0.323,0.389,0.692], \"label\": \"class_name\"},\n  {\"box_2d\": [0.381,0.352,0.552,0.621], \"label\": \"class_name\"},\n  {\"box_2d\": [0.555,0.352,0.703,0.621], \"label\": \"class_name\"},\n  {\"box_2d\": [0.733,0.194,0.998,0.721], \"label\": \"class_name\"}\n]\n``` "
+}

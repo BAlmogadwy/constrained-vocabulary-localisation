@@ -1,0 +1,158 @@
+{
+  "model": "gpt-5",
+  "strategy": "single_query",
+  "image": "/home/maxim/PycharmProjects/zero-shot-detection-benchmark/data/raw/coco2017/val2017/000000000139.jpg",
+  "labels": [
+    "book",
+    "clock",
+    "microwave",
+    "refrigerator",
+    "vase",
+    "oven",
+    "scissors",
+    "sink",
+    "teddy bear"
+  ],
+  "detections": [
+    {
+      "box_2d": [
+        468,
+        112,
+        498,
+        142
+      ],
+      "label": "clock",
+      "confidence": 0.88
+    },
+    {
+      "box_2d": [
+        485,
+        175,
+        548,
+        355
+      ],
+      "label": "refrigerator",
+      "confidence": 0.91
+    },
+    {
+      "box_2d": [
+        515,
+        285,
+        575,
+        400
+      ],
+      "label": "vase",
+      "confidence": 0.93
+    },
+    {
+      "box_2d": [
+        245,
+        250,
+        270,
+        315
+      ],
+      "label": "vase",
+      "confidence": 0.86
+    },
+    {
+      "box_2d": [
+        350,
+        235,
+        375,
+        270
+      ],
+      "label": "vase",
+      "confidence": 0.78
+    },
+    {
+      "box_2d": [
+        410,
+        235,
+        460,
+        275
+      ],
+      "label": "sink",
+      "confidence": 0.58
+    }
+  ],
+  "latency_sec": 97.16824579700187,
+  "raw_response": {
+    "id": "resp_0526ee1a7cebedc900691baf1563088198875e7ae9ea1826f1",
+    "created_at": 1763421973.0,
+    "error": null,
+    "incomplete_details": null,
+    "instructions": null,
+    "metadata": {},
+    "model": "gpt-5-2025-08-07",
+    "object": "response",
+    "output": [
+      {
+        "id": "rs_0526ee1a7cebedc900691baf16e0b081988dd650e0ad4b95bc",
+        "summary": [],
+        "type": "reasoning",
+        "content": null,
+        "encrypted_content": null,
+        "status": null
+      },
+      {
+        "id": "msg_0526ee1a7cebedc900691baf6f27088198946fcef4a680d748",
+        "content": [
+          {
+            "annotations": [],
+            "text": "[\n  {\"box_2d\": [468, 112, 498, 142], \"label\": \"clock\", \"confidence\": 0.88},\n  {\"box_2d\": [485, 175, 548, 355], \"label\": \"refrigerator\", \"confidence\": 0.91},\n  {\"box_2d\": [515, 285, 575, 400], \"label\": \"vase\", \"confidence\": 0.93},\n  {\"box_2d\": [245, 250, 270, 315], \"label\": \"vase\", \"confidence\": 0.86},\n  {\"box_2d\": [350, 235, 375, 270], \"label\": \"vase\", \"confidence\": 0.78},\n  {\"box_2d\": [410, 235, 460, 275], \"label\": \"sink\", \"confidence\": 0.58}\n]",
+            "type": "output_text",
+            "logprobs": []
+          }
+        ],
+        "role": "assistant",
+        "status": "completed",
+        "type": "message"
+      }
+    ],
+    "parallel_tool_calls": true,
+    "temperature": 1.0,
+    "tool_choice": "auto",
+    "tools": [],
+    "top_p": 1.0,
+    "background": false,
+    "conversation": null,
+    "max_output_tokens": 16192,
+    "max_tool_calls": null,
+    "previous_response_id": null,
+    "prompt": null,
+    "prompt_cache_key": null,
+    "prompt_cache_retention": null,
+    "reasoning": {
+      "effort": "medium",
+      "generate_summary": null,
+      "summary": null
+    },
+    "safety_identifier": null,
+    "service_tier": "default",
+    "status": "completed",
+    "text": {
+      "format": {
+        "type": "text"
+      },
+      "verbosity": "medium"
+    },
+    "top_logprobs": 0,
+    "truncation": "disabled",
+    "usage": {
+      "input_tokens": 435,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 3347,
+      "output_tokens_details": {
+        "reasoning_tokens": 3136
+      },
+      "total_tokens": 3782
+    },
+    "user": null,
+    "billing": {
+      "payer": "developer"
+    },
+    "store": true
+  }
+}

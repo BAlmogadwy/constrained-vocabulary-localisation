@@ -1,0 +1,76 @@
+{
+ "image": "000000198788.jpg",
+ "model": "qwen/qwen3-vl-235b-a22b-instruct",
+ "labels": [
+  "spatula",
+  "coffee_maker",
+  "hair_dryer",
+  "musical_instrument",
+  "snowboard"
+ ],
+ "detections": [
+  {
+   "box_2d": [
+    316.8,
+    346.724,
+    382.72,
+    362.096
+   ],
+   "label": "spatula",
+   "score": 0.99
+  }
+ ],
+ "latency_sec": 3.2489793000131613,
+ "usage": {
+  "prompt_tokens": 353,
+  "completion_tokens": 51,
+  "total_tokens": 404
+ },
+ "raw_response": {
+  "id": "gen-1783407665-852izeu0xCb8NgkidtQ5",
+  "object": "chat.completion",
+  "created": 1783407665,
+  "model": "qwen/qwen3-vl-235b-a22b-instruct",
+  "provider": "Alibaba",
+  "system_fingerprint": null,
+  "service_tier": null,
+  "choices": [
+   {
+    "index": 0,
+    "logprobs": null,
+    "finish_reason": "stop",
+    "native_finish_reason": "stop",
+    "message": {
+     "role": "assistant",
+     "content": "```json\n[\n\t{\"box_2d\": [495, 812, 598, 848], \"label\": \"spatula\", \"confidence\": 0.99}\n]\n```",
+     "refusal": null,
+     "reasoning": null
+    }
+   }
+  ],
+  "usage": {
+   "prompt_tokens": 353,
+   "completion_tokens": 51,
+   "total_tokens": 404,
+   "cost": 0.00014482,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00014482,
+    "upstream_inference_prompt_cost": 9.178e-05,
+    "upstream_inference_completions_cost": 5.304e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   }
+  }
+ },
+ "ts": "2026-07-07T07:01:06.914550+00:00"
+}

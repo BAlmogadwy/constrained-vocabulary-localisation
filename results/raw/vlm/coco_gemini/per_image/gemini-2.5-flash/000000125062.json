@@ -1,0 +1,117 @@
+{
+  "model": "gemini-2.5-flash",
+  "strategy": "single_query",
+  "image": "/home/maxim/PycharmProjects/zero-shot-detection-benchmark/data/raw/coco2017/val2017/000000125062.jpg",
+  "labels": [
+    "book",
+    "teddy bear",
+    "microwave",
+    "refrigerator",
+    "scissors",
+    "sink",
+    "toothbrush"
+  ],
+  "detections": [
+    {
+      "box_2d": [
+        0,
+        0,
+        339,
+        333
+      ],
+      "label": "book"
+    },
+    {
+      "box_2d": [
+        343,
+        0,
+        715,
+        292
+      ],
+      "label": "teddy bear"
+    },
+    {
+      "box_2d": [
+        410,
+        137,
+        792,
+        467
+      ],
+      "label": "teddy bear"
+    },
+    {
+      "box_2d": [
+        447,
+        360,
+        911,
+        679
+      ],
+      "label": "teddy bear"
+    },
+    {
+      "box_2d": [
+        499,
+        584,
+        964,
+        988
+      ],
+      "label": "teddy bear"
+    },
+    {
+      "box_2d": [
+        238,
+        0,
+        375,
+        206
+      ],
+      "label": "book"
+    },
+    {
+      "box_2d": [
+        26,
+        360,
+        460,
+        492
+      ],
+      "label": "book"
+    },
+    {
+      "box_2d": [
+        0,
+        608,
+        550,
+        795
+      ],
+      "label": "book"
+    },
+    {
+      "box_2d": [
+        0,
+        740,
+        560,
+        960
+      ],
+      "label": "book"
+    },
+    {
+      "box_2d": [
+        27,
+        477,
+        470,
+        631
+      ],
+      "label": "book"
+    },
+    {
+      "box_2d": [
+        108,
+        237,
+        431,
+        355
+      ],
+      "label": "book"
+    }
+  ],
+  "latency_sec": 7.113210375013296,
+  "raw_response": "```json\n[\n  {\"box_2d\": [0, 0, 339, 333], \"label\": \"book\"},\n  {\"box_2d\": [343, 0, 715, 292], \"label\": \"teddy bear\"},\n  {\"box_2d\": [410, 137, 792, 467], \"label\": \"teddy bear\"},\n  {\"box_2d\": [447, 360, 911, 679], \"label\": \"teddy bear\"},\n  {\"box_2d\": [499, 584, 964, 988], \"label\": \"teddy bear\"},\n  {\"box_2d\": [238, 0, 375, 206], \"label\": \"book\"},\n  {\"box_2d\": [26, 360, 460, 492], \"label\": \"book\"},\n  {\"box_2d\": [0, 608, 550, 795], \"label\": \"book\"},\n  {\"box_2d\": [0, 740, 560, 960], \"label\": \"book\"},\n  {\"box_2d\": [27, 477, 470, 631], \"label\": \"book\"},\n  {\"box_2d\": [108, 237, 431, 355], \"label\": \"book\"}\n]\n```"
+}

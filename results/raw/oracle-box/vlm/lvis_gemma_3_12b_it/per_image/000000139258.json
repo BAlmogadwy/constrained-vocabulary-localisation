@@ -1,0 +1,63 @@
+{
+  "image": "/home/maxim/PycharmProjects/zero-shot-detection-benchmark/data/subsets/lvis_v1_val_unseen/images/000000139258.jpg",
+  "image_id": 139258,
+  "file_name": "000000139258.jpg",
+  "num_crops": 2,
+  "crops": [
+    {
+      "annotation_id": 157174,
+      "bbox": [
+        453.08,
+        165.64,
+        24.4,
+        43.48
+      ],
+      "category_id": 534,
+      "gt_label": "hair_dryer",
+      "labels": [
+        "hair_dryer",
+        "coffee_maker",
+        "snowboard",
+        "spatula",
+        "stapler_(stapling_machine)"
+      ],
+      "prediction": "hair_dryer",
+      "normalized_prediction": "hair dryer",
+      "matched_label": "hair_dryer",
+      "correct": true,
+      "latency_sec": 14.410744890017668,
+      "raw_response": {
+        "prediction": "hair_dryer",
+        "raw_response": "hair_dryer"
+      }
+    },
+    {
+      "annotation_id": 157175,
+      "bbox": [
+        383.91,
+        178.57,
+        24.46,
+        77.14
+      ],
+      "category_id": 534,
+      "gt_label": "hair_dryer",
+      "labels": [
+        "hair_dryer",
+        "coffee_maker",
+        "snowboard",
+        "spatula",
+        "stapler_(stapling_machine)"
+      ],
+      "prediction": "hair_dryer",
+      "normalized_prediction": "hair dryer",
+      "matched_label": "hair_dryer",
+      "correct": true,
+      "latency_sec": 14.411097514996072,
+      "raw_response": {
+        "prediction": "hair_dryer",
+        "raw_response": "hair_dryer"
+      }
+    }
+  ],
+  "prompt": "You are an object recognition assistant.\n\nYou will see a cropped image that contains exactly one object\nfrom the following LVIS categories (unseen split):\n\n- hair_dryer\n- coffee_maker\n- snowboard\n- spatula\n- stapler_(stapling_machine)\n\nYour task:\n- Return ONLY the best matching category name from this list.\n- Do not output explanations or extra text.\n\nAnswer with a single string: \"class_name\"."
+}

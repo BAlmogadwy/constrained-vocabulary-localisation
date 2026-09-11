@@ -1,0 +1,25 @@
+{
+  "model": "gemini-2.5-flash",
+  "strategy": "single_query",
+  "image": "/home/maxim/PycharmProjects/zero-shot-detection-benchmark/data/subsets/lvis_v1_val_unseen/images/000000517911.jpg",
+  "labels": [
+    "coffee_maker",
+    "hair_dryer",
+    "lawn_mower",
+    "microscope",
+    "snowboard"
+  ],
+  "detections": [
+    {
+      "box_2d": [
+        468,
+        706,
+        680,
+        893
+      ],
+      "label": "coffee_maker"
+    }
+  ],
+  "latency_sec": 2.291177316568792,
+  "raw_response": "```json\n[\n  {\"box_2d\": [468, 706, 680, 893], \"label\": \"coffee_maker\"}\n]\n```"
+}

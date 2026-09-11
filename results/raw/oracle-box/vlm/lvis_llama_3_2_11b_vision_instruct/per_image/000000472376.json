@@ -1,0 +1,110 @@
+{
+  "image": "/home/maxim/PycharmProjects/zero-shot-detection-benchmark/data/subsets/lvis_v1_val_unseen/images/000000472376.jpg",
+  "image_id": 472376,
+  "file_name": "000000472376.jpg",
+  "num_crops": 3,
+  "crops": [
+    {
+      "annotation_id": 54325,
+      "bbox": [
+        535.54,
+        232.88,
+        19.06,
+        21.79
+      ],
+      "category_id": 711,
+      "gt_label": "musical_instrument",
+      "labels": [
+        "musical_instrument",
+        "blender",
+        "hair_dryer",
+        "sewing_machine",
+        "stapler_(stapling_machine)"
+      ],
+      "prediction": "musical_instrument",
+      "normalized_prediction": "musical instrument",
+      "matched_label": "musical_instrument",
+      "correct": true,
+      "latency_sec": 4.264197712007444,
+      "raw_response": {
+        "musical_instrument": "[{\"box_2d\":[0,0,20,23],\"label\":\"musical_instrument\"}]",
+        "blender": "[{\"box_2d\":[0,0,20,23],\"label\":\"blender\"}]",
+        "hair_dryer": "[{\"box_2d\":[0,0,23,20],\"label\":\"hair_dryer\"}]",
+        "sewing_machine": "[]",
+        "sewing_machine_norm": "[{\"box_norm\":[0.0,0.0,0.5,0.5],\"label\":\"sewing_machine\"}]",
+        "stapler_(stapling_machine)": "[{\"box_2d\":[0,0,23,20],\"label\":\"stapler_(stapling_machine)\"}]"
+      }
+    },
+    {
+      "annotation_id": 54326,
+      "bbox": [
+        348.3,
+        386.6,
+        151.73,
+        93.4
+      ],
+      "category_id": 711,
+      "gt_label": "musical_instrument",
+      "labels": [
+        "musical_instrument",
+        "blender",
+        "hair_dryer",
+        "sewing_machine",
+        "stapler_(stapling_machine)"
+      ],
+      "prediction": "musical_instrument",
+      "normalized_prediction": "musical instrument",
+      "matched_label": "musical_instrument",
+      "correct": true,
+      "latency_sec": 5.997957937011961,
+      "raw_response": {
+        "musical_instrument": "[]",
+        "musical_instrument_norm": "[{\"box_norm\":[0.0,0.0,0.5,0.5],\"label\":\"musical_instrument\"}]",
+        "blender": "[]",
+        "blender_norm": "[{\"box_norm\":[0.0,0.0,0.5,0.5],\"label\":\"blender\"}]",
+        "hair_dryer": "[]",
+        "hair_dryer_norm": "[{\"box_norm\":[0.0,0.0,0.0,0.0],\"label\":\"hair_dryer\"}]",
+        "sewing_machine": "[]",
+        "sewing_machine_norm": "[{\"box_norm\":[0.0,0.0,0.5,0.5],\"label\":\"sewing_machine\"}]",
+        "stapler_(stapling_machine)": "[]",
+        "stapler_(stapling_machine)_norm": "[{\"box_norm\":[0.0,0.0,0.5,0.5],\"label\":\"stapler_(stapling_machine)\"}]"
+      }
+    },
+    {
+      "annotation_id": 54327,
+      "bbox": [
+        236.49,
+        160.98,
+        71.52,
+        157.06
+      ],
+      "category_id": 711,
+      "gt_label": "musical_instrument",
+      "labels": [
+        "musical_instrument",
+        "blender",
+        "hair_dryer",
+        "sewing_machine",
+        "stapler_(stapling_machine)"
+      ],
+      "prediction": "musical_instrument",
+      "normalized_prediction": "musical instrument",
+      "matched_label": "musical_instrument",
+      "correct": true,
+      "latency_sec": 5.988105283002369,
+      "raw_response": {
+        "musical_instrument": "[]",
+        "musical_instrument_norm": "[{\"box_norm\":[0.0,0.0,0.5,0.5],\"label\":\"musical_instrument\"}]",
+        "blender": "[]",
+        "blender_norm": "[{\"box_norm\":[0.0,0.0,0.0,0.0],\"label\":\"blender\"}]",
+        "hair_dryer": "[]",
+        "hair_dryer_norm": "[{\"box_norm\":[0.0,0.0,0.0,0.0],\"label\":\"hair_dryer\"}]",
+        "sewing_machine": "[]",
+        "sewing_machine_norm": "[{\"box_norm\":[0.0,0.0,0.0,0.0],\"label\":\"sewing_machine\"}]",
+        "stapler_(stapling_machine)": "[]",
+        "stapler_(stapling_machine)_norm": "[{\"box_norm\":[0.0,0.0,0.0,0.0],\"label\":\"stapler_(stapling_machine)\"}]"
+      }
+    }
+  ],
+  "prompt": "You are an object recognition assistant.\n\nYou will see a cropped image that contains exactly one object\nfrom the following LVIS categories (unseen split):\n\n- musical_instrument\n- blender\n- hair_dryer\n- sewing_machine\n- stapler_(stapling_machine)\n\nYour task:\n- Return ONLY the best matching category name from this list.\n- Do not output explanations or extra text.\n\nAnswer with a single string: \"class_name\"."
+}

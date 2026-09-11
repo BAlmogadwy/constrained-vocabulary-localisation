@@ -1,0 +1,99 @@
+{
+  "model": "gemini-2.5-flash",
+  "strategy": "single_query",
+  "image": "/home/maxim/PycharmProjects/zero-shot-detection-benchmark/data/raw/coco2017/val2017/000000183049.jpg",
+  "labels": [
+    "book",
+    "clock",
+    "microwave",
+    "refrigerator",
+    "scissors",
+    "toaster",
+    "vase"
+  ],
+  "detections": [
+    {
+      "box_2d": [
+        267,
+        131,
+        335,
+        345
+      ],
+      "label": "book"
+    },
+    {
+      "box_2d": [
+        432,
+        150,
+        526,
+        348
+      ],
+      "label": "book"
+    },
+    {
+      "box_2d": [
+        604,
+        175,
+        706,
+        346
+      ],
+      "label": "book"
+    },
+    {
+      "box_2d": [
+        432,
+        443,
+        526,
+        638
+      ],
+      "label": "book"
+    },
+    {
+      "box_2d": [
+        465,
+        0,
+        627,
+        239
+      ],
+      "label": "book"
+    },
+    {
+      "box_2d": [
+        483,
+        227,
+        635,
+        449
+      ],
+      "label": "book"
+    },
+    {
+      "box_2d": [
+        721,
+        747,
+        831,
+        804
+      ],
+      "label": "clock"
+    },
+    {
+      "box_2d": [
+        655,
+        0,
+        870,
+        771
+      ],
+      "label": "book"
+    },
+    {
+      "box_2d": [
+        418,
+        410,
+        651,
+        852
+      ],
+      "label": "book"
+    }
+  ],
+  "latency_sec": 7.10059371299576,
+  "raw_response": "```json\n[\n  {\"box_2d\": [267, 131, 335, 345], \"label\": \"book\"},\n  {\"box_2d\": [432, 150, 526, 348], \"label\": \"book\"},\n  {\"box_2d\": [604, 175, 706, 346], \"label\": \"book\"},\n  {\"box_2d\": [432, 443, 526, 638], \"label\": \"book\"},\n  {\"box_2d\": [465, 0, 627, 239], \"label\": \"book\"},\n  {\"box_2d\": [483, 227, 635, 449], \"label\": \"book\"},\n  {\"box_2d\": [721, 747, 831, 804], \"label\": \"clock\"},\n  {\"box_2d\": [655, 0, 870, 771], \"label\": \"book\"},\n  {\"box_2d\": [418, 410, 651, 852], \"label\": \"book\"}\n]\n```"
+}

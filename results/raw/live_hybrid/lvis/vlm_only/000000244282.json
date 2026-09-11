@@ -1,0 +1,126 @@
+{
+ "image": "000000244282.jpg",
+ "model": "qwen/qwen3-vl-235b-a22b-instruct",
+ "labels": [
+  "snowboard",
+  "blender",
+  "coffee_maker",
+  "hair_dryer",
+  "microscope"
+ ],
+ "detections": [
+  {
+   "box_2d": [
+    380.16,
+    223.55,
+    414.08,
+    268.175
+   ],
+   "label": "snowboard",
+   "score": 0.98
+  },
+  {
+   "box_2d": [
+    318.72,
+    217.6,
+    357.76,
+    229.5
+   ],
+   "label": "snowboard",
+   "score": 0.97
+  },
+  {
+   "box_2d": [
+    268.16,
+    227.8,
+    320.0,
+    242.675
+   ],
+   "label": "snowboard",
+   "score": 0.96
+  },
+  {
+   "box_2d": [
+    222.72,
+    233.75,
+    279.68,
+    257.125
+   ],
+   "label": "snowboard",
+   "score": 0.95
+  },
+  {
+   "box_2d": [
+    158.72,
+    252.875,
+    217.6,
+    278.375
+   ],
+   "label": "snowboard",
+   "score": 0.94
+  },
+  {
+   "box_2d": [
+    116.48,
+    299.625,
+    133.76,
+    314.5
+   ],
+   "label": "snowboard",
+   "score": 0.93
+  }
+ ],
+ "latency_sec": 14.035918699999456,
+ "usage": {
+  "prompt_tokens": 350,
+  "completion_tokens": 265,
+  "total_tokens": 615
+ },
+ "raw_response": {
+  "id": "gen-1783407790-VLWzpB6eUxzhWAFXzfV4",
+  "object": "chat.completion",
+  "created": 1783407790,
+  "model": "qwen/qwen3-vl-235b-a22b-instruct",
+  "provider": "Parasail",
+  "system_fingerprint": null,
+  "service_tier": null,
+  "choices": [
+   {
+    "index": 0,
+    "logprobs": null,
+    "finish_reason": "stop",
+    "native_finish_reason": "stop",
+    "message": {
+     "role": "assistant",
+     "content": "```json\n[\n\t{\"bbox_2d\": [594, 526, 647, 631], \"label\": \"snowboard\", \"confidence\": 0.98},\n\t{\"bbox_2d\": [498, 512, 559, 540], \"label\": \"snowboard\", \"confidence\": 0.97},\n\t{\"bbox_2d\": [419, 536, 500, 571], \"label\": \"snowboard\", \"confidence\": 0.96},\n\t{\"bbox_2d\": [348, 550, 437, 605], \"label\": \"snowboard\", \"confidence\": 0.95},\n\t{\"bbox_2d\": [248, 595, 340, 655], \"label\": \"snowboard\", \"confidence\": 0.94},\n\t{\"bbox_2d\": [182, 705, 209, 740], \"label\": \"snowboard\", \"confidence\": 0.93}\n]\n```",
+     "refusal": null,
+     "reasoning": null
+    }
+   }
+  ],
+  "usage": {
+   "prompt_tokens": 350,
+   "completion_tokens": 265,
+   "total_tokens": 615,
+   "cost": 0.00057524,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 16,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00057524,
+    "upstream_inference_prompt_cost": 7.174e-05,
+    "upstream_inference_completions_cost": 0.0005035
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   }
+  }
+ },
+ "ts": "2026-07-07T07:03:21.841622+00:00"
+}

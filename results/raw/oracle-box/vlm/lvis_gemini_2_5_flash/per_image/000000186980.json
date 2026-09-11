@@ -1,0 +1,59 @@
+{
+  "image": "/home/maxim/PycharmProjects/zero-shot-detection-benchmark/data/raw/coco2017/val2017/000000186980.jpg",
+  "image_id": 186980,
+  "file_name": "000000186980.jpg",
+  "num_crops": 2,
+  "crops": [
+    {
+      "annotation_id": 23532,
+      "bbox": [
+        406.52,
+        209.86,
+        50.48,
+        53.06
+      ],
+      "category_id": 284,
+      "gt_label": "coffee_maker",
+      "labels": [
+        "blender",
+        "coffee_maker",
+        "lawn_mower",
+        "microscope",
+        "musical_instrument",
+        "sewing_machine"
+      ],
+      "prediction": "coffee_maker",
+      "normalized_prediction": "coffee maker",
+      "matched_label": "coffee_maker",
+      "correct": true,
+      "latency_sec": 0.9770705109986011,
+      "raw_response": "[{\"box_2d\": [108, 381, 792, 917], \"label\": \"coffee_maker\"}]"
+    },
+    {
+      "annotation_id": 23548,
+      "bbox": [
+        156.37,
+        190.58,
+        28.02,
+        61.0
+      ],
+      "category_id": 112,
+      "gt_label": "blender",
+      "labels": [
+        "blender",
+        "coffee_maker",
+        "lawn_mower",
+        "microscope",
+        "musical_instrument",
+        "sewing_machine"
+      ],
+      "prediction": null,
+      "normalized_prediction": "",
+      "matched_label": null,
+      "correct": false,
+      "latency_sec": 1.6187816860037856,
+      "raw_response": "I am sorry, but the image provided is extremely blurry and pixelated. I cannot discern any distinct objects within it, let alone specific items like a blender, coffee maker, lawn mower, microscope, musical instrument, or sewing machine. Therefore, I cannot provide any bounding box detections."
+    }
+  ],
+  "prompt": "You are an object recognition assistant.\n\nYou will see a cropped image that contains exactly one object\nfrom the following LVIS categories (unseen split):\n\n- blender\n- coffee_maker\n- lawn_mower\n- microscope\n- musical_instrument\n- sewing_machine\n\nYour task:\n- Return ONLY the best matching category name from this list.\n- Do not output explanations or extra text.\n\nAnswer with a single string: \"class_name\"."
+}

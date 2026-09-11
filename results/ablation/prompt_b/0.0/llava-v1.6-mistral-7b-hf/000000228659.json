@@ -1,0 +1,20 @@
+{
+  "model": "llava-v1.6-mistral-7b-hf",
+  "strategy": "iterative",
+  "image": "/home/maxim/PycharmProjects/zero-shot-detection-benchmark/data/subsets/lvis_v1_val_unseen/images/000000228659.jpg",
+  "labels": [
+    "snowboard",
+    "musical_instrument",
+    "sewing_machine",
+    "spatula",
+    "stapler_(stapling_machine)"
+  ],
+  "detections": [],
+  "latency_sec": 2.6361060820054263,
+  "raw_response": {
+    "identification": "USER:  \nList all objects you can detect in this image. Respond with comma-separated names only. ASSISTANT: snow, trees, skis, snowboard, helmet, goggles, jacket, pants ",
+    "localization": {
+      "snowboard": "USER:  \nWhere is the 'snowboard' in the image? Provide the bounding box as JSON in the form {\"box_2d\": [x1, y1, x2, y2], \"label\": \"name\"}. Return only JSON. ASSISTANT: ```json\n{\n  \"box_2d\": [\n    {\"box_2d\": [0.183,0.199,0.333,0.759], \"label\": \"snowboarder\"},\n    {\"box_2d\": [0.583,0.199,0.703,0.703], \"label\": \"snowboarder\"},\n    {\"box_2d\": [0.733,0.169,0.903,0.759], \"label\": \"snowboarder\"}\n  ]\n}\n``` "
+    }
+  }
+}

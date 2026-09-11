@@ -1,0 +1,57 @@
+{
+  "image": "/home/maxim/PycharmProjects/zero-shot-detection-benchmark/data/subsets/lvis_v1_val_unseen/images/000000539920.jpg",
+  "image_id": 539920,
+  "file_name": "000000539920.jpg",
+  "num_crops": 2,
+  "crops": [
+    {
+      "annotation_id": 140985,
+      "bbox": [
+        0.0,
+        230.51,
+        32.62,
+        39.14
+      ],
+      "category_id": 993,
+      "gt_label": "spatula",
+      "labels": [
+        "spatula",
+        "blender",
+        "hair_dryer",
+        "sewing_machine",
+        "stapler_(stapling_machine)"
+      ],
+      "prediction": null,
+      "normalized_prediction": "",
+      "matched_label": null,
+      "correct": false,
+      "latency_sec": 1.6332926460017916,
+      "raw_response": "[]"
+    },
+    {
+      "annotation_id": 140986,
+      "bbox": [
+        34.14,
+        233.52,
+        25.67,
+        31.4
+      ],
+      "category_id": 993,
+      "gt_label": "spatula",
+      "labels": [
+        "spatula",
+        "blender",
+        "hair_dryer",
+        "sewing_machine",
+        "stapler_(stapling_machine)"
+      ],
+      "prediction": null,
+      "normalized_prediction": "",
+      "matched_label": null,
+      "correct": false,
+      "latency_sec": 1.1879565849958453,
+      "raw_response": "I am sorry, but I cannot detect any objects in the provided image. The image appears to be a solid black or very dark blue color with no discernible features. Please provide a clear image to perform object detection."
+    }
+  ],
+  "prompt": "You are an object recognition assistant.\n\nYou will see a cropped image that contains exactly one object\nfrom the following LVIS categories (unseen split):\n\n- spatula\n- blender\n- hair_dryer\n- sewing_machine\n- stapler_(stapling_machine)\n\nYour task:\n- Return ONLY the best matching category name from this list.\n- Do not output explanations or extra text.\n\nAnswer with a single string: \"class_name\"."
+}

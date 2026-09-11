@@ -1,0 +1,99 @@
+{
+ "image": "000000134290.jpg",
+ "labels": [
+  "hair_dryer",
+  "blender",
+  "microscope",
+  "musical_instrument",
+  "snowboard"
+ ],
+ "tau": 0.4,
+ "detector": {
+  "detections": [],
+  "latency_sec": 0.03964560000167694
+ },
+ "detector_max_score": 0.0,
+ "escalated": true,
+ "vlm": {
+  "model": "qwen/qwen3-vl-235b-a22b-instruct",
+  "detections": [
+   {
+    "label": "hair_dryer",
+    "box": [
+     122.4,
+     189.44,
+     212.5,
+     408.96
+    ],
+    "score": 1.0
+   }
+  ],
+  "latency_sec": 8.584494599999744,
+  "usage": {
+   "prompt_tokens": 351,
+   "completion_tokens": 52,
+   "total_tokens": 403
+  },
+  "raw_response": {
+   "id": "gen-1783406656-wIslLNyAJrysACT7Cujh",
+   "object": "chat.completion",
+   "created": 1783406656,
+   "model": "qwen/qwen3-vl-235b-a22b-instruct",
+   "provider": "Parasail",
+   "system_fingerprint": null,
+   "service_tier": null,
+   "choices": [
+    {
+     "index": 0,
+     "logprobs": null,
+     "finish_reason": "stop",
+     "native_finish_reason": "stop",
+     "message": {
+      "role": "assistant",
+      "content": "```json\n[\n\t{\"box_2d\": [288, 296, 500, 639], \"label\": \"hair_dryer\", \"confidence\": 0.98}\n]\n```",
+      "refusal": null,
+      "reasoning": null
+     }
+    }
+   ],
+   "usage": {
+    "prompt_tokens": 351,
+    "completion_tokens": 52,
+    "total_tokens": 403,
+    "cost": 0.00017251,
+    "is_byok": false,
+    "prompt_tokens_details": {
+     "cached_tokens": 0,
+     "cache_write_tokens": 0,
+     "audio_tokens": 0,
+     "video_tokens": 0
+    },
+    "cost_details": {
+     "upstream_inference_cost": 0.00017251,
+     "upstream_inference_prompt_cost": 7.371e-05,
+     "upstream_inference_completions_cost": 9.88e-05
+    },
+    "completion_tokens_details": {
+     "reasoning_tokens": 0,
+     "image_tokens": 0,
+     "audio_tokens": 0
+    }
+   }
+  }
+ },
+ "fallback": false,
+ "ts": "2026-07-07T06:44:13.614498+00:00",
+ "fused": [
+  {
+   "label": "hair_dryer",
+   "box": [
+    122.4,
+    189.44,
+    212.5,
+    408.96
+   ],
+   "score": 0.4
+  }
+ ],
+ "latency_total_sec": 8.624145400011912
+}

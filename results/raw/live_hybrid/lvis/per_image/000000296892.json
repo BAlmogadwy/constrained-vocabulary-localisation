@@ -1,0 +1,230 @@
+{
+ "image": "000000296892.jpg",
+ "labels": [
+  "blender",
+  "hair_dryer",
+  "musical_instrument",
+  "snowboard",
+  "stapler_(stapling_machine)"
+ ],
+ "tau": 0.4,
+ "detector": {
+  "detections": [
+   {
+    "label": "blender",
+    "box": [
+     0.027618408203125,
+     0.0,
+     141.15985107421875,
+     240.3026580810547
+    ],
+    "score": 0.3256993889808655
+   },
+   {
+    "label": "blender",
+    "box": [
+     328.22625732421875,
+     53.221588134765625,
+     632.0706176757812,
+     374.96044921875
+    ],
+    "score": 0.26985546946525574
+   },
+   {
+    "label": "blender",
+    "box": [
+     141.25320434570312,
+     1.4622802734375,
+     320.7439270019531,
+     285.3155517578125
+    ],
+    "score": 0.009024717845022678
+   },
+   {
+    "label": "blender",
+    "box": [
+     143.237060546875,
+     0.774200439453125,
+     320.5059814453125,
+     82.83265686035156
+    ],
+    "score": 0.0032350143883377314
+   },
+   {
+    "label": "blender",
+    "box": [
+     47.415435791015625,
+     2.1450958251953125,
+     140.03102111816406,
+     133.4922637939453
+    ],
+    "score": 0.0025253465864807367
+   },
+   {
+    "label": "blender",
+    "box": [
+     0.0,
+     22.721328735351562,
+     36.08839416503906,
+     220.58824157714844
+    ],
+    "score": 0.0017434542533010244
+   },
+   {
+    "label": "blender",
+    "box": [
+     163.409912109375,
+     189.16424560546875,
+     291.2259521484375,
+     373.46771240234375
+    ],
+    "score": 0.0011632938403636217
+   }
+  ],
+  "latency_sec": 0.04811909999989439
+ },
+ "detector_max_score": 0.3256993889808655,
+ "escalated": true,
+ "vlm": {
+  "model": "qwen/qwen3-vl-235b-a22b-instruct",
+  "detections": [
+   {
+    "label": "blender",
+    "box": [
+     0.0,
+     0.0,
+     140.8,
+     237.839
+    ],
+    "score": 1.0
+   }
+  ],
+  "latency_sec": 2.529894499995862,
+  "usage": {
+   "prompt_tokens": 357,
+   "completion_tokens": 46,
+   "total_tokens": 403
+  },
+  "raw_response": {
+   "id": "gen-1783406805-vO6k5TasbiuWHSNqVkDc",
+   "object": "chat.completion",
+   "created": 1783406805,
+   "model": "qwen/qwen3-vl-235b-a22b-instruct",
+   "provider": "Alibaba",
+   "system_fingerprint": null,
+   "service_tier": null,
+   "choices": [
+    {
+     "index": 0,
+     "logprobs": null,
+     "finish_reason": "stop",
+     "native_finish_reason": "stop",
+     "message": {
+      "role": "assistant",
+      "content": "```json\n[\n\t{\"box_2d\": [0, 0, 220, 557], \"label\": \"blender\", \"confidence\": 0.98}\n]\n```",
+      "refusal": null,
+      "reasoning": null
+     }
+    }
+   ],
+   "usage": {
+    "prompt_tokens": 357,
+    "completion_tokens": 46,
+    "total_tokens": 403,
+    "cost": 0.00014066,
+    "is_byok": false,
+    "prompt_tokens_details": {
+     "cached_tokens": 0,
+     "cache_write_tokens": 0,
+     "audio_tokens": 0,
+     "video_tokens": 0
+    },
+    "cost_details": {
+     "upstream_inference_cost": 0.00014066,
+     "upstream_inference_prompt_cost": 9.282e-05,
+     "upstream_inference_completions_cost": 4.784e-05
+    },
+    "completion_tokens_details": {
+     "reasoning_tokens": 0,
+     "image_tokens": 0,
+     "audio_tokens": 0
+    }
+   }
+  }
+ },
+ "fallback": false,
+ "ts": "2026-07-07T06:46:43.963830+00:00",
+ "fused": [
+  {
+   "label": "blender",
+   "box": [
+    0.027618408203125,
+    0.0,
+    141.15985107421875,
+    240.3026580810547
+   ],
+   "score": 0.6256993889808655
+  },
+  {
+   "label": "blender",
+   "box": [
+    328.22625732421875,
+    53.221588134765625,
+    632.0706176757812,
+    374.96044921875
+   ],
+   "score": 0.26985546946525574
+  },
+  {
+   "label": "blender",
+   "box": [
+    141.25320434570312,
+    1.4622802734375,
+    320.7439270019531,
+    285.3155517578125
+   ],
+   "score": 0.009024717845022678
+  },
+  {
+   "label": "blender",
+   "box": [
+    143.237060546875,
+    0.774200439453125,
+    320.5059814453125,
+    82.83265686035156
+   ],
+   "score": 0.0032350143883377314
+  },
+  {
+   "label": "blender",
+   "box": [
+    47.415435791015625,
+    2.1450958251953125,
+    140.03102111816406,
+    133.4922637939453
+   ],
+   "score": 0.0025253465864807367
+  },
+  {
+   "label": "blender",
+   "box": [
+    0.0,
+    22.721328735351562,
+    36.08839416503906,
+    220.58824157714844
+   ],
+   "score": 0.0017434542533010244
+  },
+  {
+   "label": "blender",
+   "box": [
+    163.409912109375,
+    189.16424560546875,
+    291.2259521484375,
+    373.46771240234375
+   ],
+   "score": 0.0011632938403636217
+  }
+ ],
+ "latency_total_sec": 2.5780287999950815
+}

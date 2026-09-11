@@ -1,0 +1,76 @@
+{
+ "image": "000000182118.jpg",
+ "model": "qwen/qwen3-vl-235b-a22b-instruct",
+ "labels": [
+  "stapler_(stapling_machine)",
+  "lawn_mower",
+  "microscope",
+  "musical_instrument",
+  "spatula"
+ ],
+ "detections": [
+  {
+   "box_2d": [
+    88.5,
+    250.0,
+    135.0,
+    267.5
+   ],
+   "label": "stapler_(stapling_machine)",
+   "score": 0.95
+  }
+ ],
+ "latency_sec": 4.332817300004535,
+ "usage": {
+  "prompt_tokens": 288,
+  "completion_tokens": 56,
+  "total_tokens": 344
+ },
+ "raw_response": {
+  "id": "gen-1783407590-UsaI9xe7luLqC9hafaPc",
+  "object": "chat.completion",
+  "created": 1783407590,
+  "model": "qwen/qwen3-vl-235b-a22b-instruct",
+  "provider": "Parasail",
+  "system_fingerprint": null,
+  "service_tier": null,
+  "choices": [
+   {
+    "index": 0,
+    "logprobs": null,
+    "finish_reason": "stop",
+    "native_finish_reason": "stop",
+    "message": {
+     "role": "assistant",
+     "content": "```json\n[\n\t{\"box_2d\": [236, 500, 360, 535], \"label\": \"stapler_(stapling_machine)\", \"confidence\": 0.95}\n]\n```",
+     "refusal": null,
+     "reasoning": null
+    }
+   }
+  ],
+  "usage": {
+   "prompt_tokens": 288,
+   "completion_tokens": 56,
+   "total_tokens": 344,
+   "cost": 0.00016688,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00016688,
+    "upstream_inference_prompt_cost": 6.048e-05,
+    "upstream_inference_completions_cost": 0.0001064
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   }
+  }
+ },
+ "ts": "2026-07-07T06:59:52.027359+00:00"
+}

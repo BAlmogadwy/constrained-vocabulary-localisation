@@ -1,0 +1,57 @@
+{
+  "image": "/home/maxim/PycharmProjects/zero-shot-detection-benchmark/data/subsets/lvis_v1_val_unseen/images/000000212525.jpg",
+  "image_id": 212525,
+  "file_name": "000000212525.jpg",
+  "num_crops": 2,
+  "crops": [
+    {
+      "annotation_id": 83159,
+      "bbox": [
+        295.19,
+        349.17,
+        50.65,
+        55.65
+      ],
+      "category_id": 534,
+      "gt_label": "hair_dryer",
+      "labels": [
+        "hair_dryer",
+        "coffee_maker",
+        "lawn_mower",
+        "sewing_machine",
+        "stapler_(stapling_machine)"
+      ],
+      "prediction": null,
+      "normalized_prediction": "",
+      "matched_label": null,
+      "correct": false,
+      "latency_sec": 1.2395896810048725,
+      "raw_response": "I am sorry, but I cannot perform object detection on the provided image as it is too blurry and indistinct. I cannot confidently identify any of the requested objects."
+    },
+    {
+      "annotation_id": 83160,
+      "bbox": [
+        293.13,
+        339.33,
+        28.95,
+        48.28
+      ],
+      "category_id": 534,
+      "gt_label": "hair_dryer",
+      "labels": [
+        "hair_dryer",
+        "coffee_maker",
+        "lawn_mower",
+        "sewing_machine",
+        "stapler_(stapling_machine)"
+      ],
+      "prediction": null,
+      "normalized_prediction": "",
+      "matched_label": null,
+      "correct": false,
+      "latency_sec": 1.377220825990662,
+      "raw_response": "I apologize, but the provided image is too blurry and pixelated to identify any objects, including a hair_dryer, coffee_maker, lawn_mower, sewing_machine, or stapler_(stapling_machine). I am unable to generate bounding box detections for such a low-resolution image."
+    }
+  ],
+  "prompt": "You are an object recognition assistant.\n\nYou will see a cropped image that contains exactly one object\nfrom the following LVIS categories (unseen split):\n\n- hair_dryer\n- coffee_maker\n- lawn_mower\n- sewing_machine\n- stapler_(stapling_machine)\n\nYour task:\n- Return ONLY the best matching category name from this list.\n- Do not output explanations or extra text.\n\nAnswer with a single string: \"class_name\"."
+}

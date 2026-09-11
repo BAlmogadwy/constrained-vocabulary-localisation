@@ -1,0 +1,43 @@
+# Score-floor audit: identical to lvis_unseen_traditional.yaml except detector
+# thresholds are lowered to ~0.001 (set in the detector Config defaults) and the
+# output is written to a SEPARATE root so compute_metrics does not merge it with
+# the thresholded baseline. Per-image candidate labels are the exact ones used in
+# the original run (reconstructed into lvis_unseen_dynamic_labels.json), so the
+# ONLY variable changed vs. baseline is the confidence floor.
+dataset:
+  images_dir: data/subsets/lvis_v1_val_unseen/images
+  limit: null
+
+labels:
+  # Global fallback list (10 unseen categories). Never triggered because every
+  # image is covered by per_image_file; provided so load_labels does not require
+  # the (missing) prompts/coco_unseen_labels.txt.
+  values:
+    - blender
+    - coffee_maker
+    - hair_dryer
+    - lawn_mower
+    - microscope
+    - musical_instrument
+    - sewing_machine
+    - snowboard
+    - spatula
+    - stapler_(stapling_machine)
+  per_image_file: data/processed/lvis_v1/val/lvis_unseen_dynamic_labels.json
+
+output:
+  dir: results/raw/traditional_lowthr/lvis_v1_unseen
+
+models:
+  - name: yolo_world
+    device: cuda:0
+    strategy: default
+    output_name: yolo_world_lvis_unseen.json
+  - name: grounding_dino
+    device: cuda:0
+    strategy: default
+    output_name: grounding_dino_lvis_unseen.json
+  - name: owl_vit
+    device: cuda:0
+    strategy: default
+    output_name: owl_vit_lvis_unseen.json

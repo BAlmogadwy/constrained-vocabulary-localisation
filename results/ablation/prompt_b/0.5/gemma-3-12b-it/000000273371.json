@@ -1,0 +1,31 @@
+{
+  "model": "gemma-3-12b-it",
+  "strategy": "iterative",
+  "image": "/home/maxim/PycharmProjects/zero-shot-detection-benchmark/data/subsets/lvis_v1_val_unseen/images/000000273371.jpg",
+  "labels": [
+    "coffee_maker",
+    "hair_dryer",
+    "sewing_machine",
+    "snowboard",
+    "spatula"
+  ],
+  "detections": [
+    {
+      "box_2d": [
+        738,
+        550,
+        823,
+        658
+      ],
+      "label": "coffee_maker"
+    }
+  ],
+  "latency_sec": 32.43950435996521,
+  "raw_response": {
+    "identification": "coffee_maker, spatula",
+    "localization": {
+      "coffee_maker": "```json\n[{\"box_2d\":[738,550,823,658],\"label\":\"coffee_maker\"}]\n```",
+      "spatula": "Here's the JSON output for the bounding boxes of \"spatula\" in the image:\n\n```json\n[]\n```\n\n**Reasoning:**\n\nI have carefully examined the image and can confirm that there are no spatulas visible within the frame. Therefore, an empty list is returned."
+    }
+  }
+}

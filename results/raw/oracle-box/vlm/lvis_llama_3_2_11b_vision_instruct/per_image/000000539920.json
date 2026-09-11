@@ -1,0 +1,70 @@
+{
+  "image": "/home/maxim/PycharmProjects/zero-shot-detection-benchmark/data/subsets/lvis_v1_val_unseen/images/000000539920.jpg",
+  "image_id": 539920,
+  "file_name": "000000539920.jpg",
+  "num_crops": 2,
+  "crops": [
+    {
+      "annotation_id": 140985,
+      "bbox": [
+        0.0,
+        230.51,
+        32.62,
+        39.14
+      ],
+      "category_id": 993,
+      "gt_label": "spatula",
+      "labels": [
+        "spatula",
+        "blender",
+        "hair_dryer",
+        "sewing_machine",
+        "stapler_(stapling_machine)"
+      ],
+      "prediction": "spatula",
+      "normalized_prediction": "spatula",
+      "matched_label": "spatula",
+      "correct": true,
+      "latency_sec": 4.260267770005157,
+      "raw_response": {
+        "spatula": "[{\"box_2d\":[0,0,33,33],\"label\":\"spatula\"}]",
+        "blender": "[{\"box_2d\":[0,0,33,33],\"label\":\"blender\"}]",
+        "hair_dryer": "[{\"box_2d\":[0,0,33,33],\"label\":\"hair_dryer\"}]",
+        "sewing_machine": "[{\"box_2d\":[0,0,33,33],\"label\":\"sewing_machine\"}]",
+        "stapler_(stapling_machine)": "[]",
+        "stapler_(stapling_machine)_norm": "[{\"box_norm\":[0.0,0.0,0.0,0.0],\"label\":\"stapler_(stapling_machine)\"}]"
+      }
+    },
+    {
+      "annotation_id": 140986,
+      "bbox": [
+        34.14,
+        233.52,
+        25.67,
+        31.4
+      ],
+      "category_id": 993,
+      "gt_label": "spatula",
+      "labels": [
+        "spatula",
+        "blender",
+        "hair_dryer",
+        "sewing_machine",
+        "stapler_(stapling_machine)"
+      ],
+      "prediction": "spatula",
+      "normalized_prediction": "spatula",
+      "matched_label": "spatula",
+      "correct": true,
+      "latency_sec": 3.813822385011008,
+      "raw_response": {
+        "spatula": "[{\"box_2d\":[0,0,26,32],\"label\":\"spatula\"}]",
+        "blender": "[{\"box_2d\":[0,0,26,32],\"label\":\"blender\"}]",
+        "hair_dryer": "[{\"box_2d\":[0,0,26,32],\"label\":\"hair_dryer\"}]",
+        "sewing_machine": "[{\"box_2d\":[0,0,26,32],\"label\":\"sewing_machine\"}]",
+        "stapler_(stapling_machine)": "[{\"box_2d\":[0,0,26,32],\"label\":\"stapler_(stapling_machine)\"}]"
+      }
+    }
+  ],
+  "prompt": "You are an object recognition assistant.\n\nYou will see a cropped image that contains exactly one object\nfrom the following LVIS categories (unseen split):\n\n- spatula\n- blender\n- hair_dryer\n- sewing_machine\n- stapler_(stapling_machine)\n\nYour task:\n- Return ONLY the best matching category name from this list.\n- Do not output explanations or extra text.\n\nAnswer with a single string: \"class_name\"."
+}

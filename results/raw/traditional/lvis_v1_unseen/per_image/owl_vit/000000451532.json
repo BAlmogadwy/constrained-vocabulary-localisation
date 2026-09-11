@@ -1,0 +1,50 @@
+{
+  "model": "owl_vit",
+  "strategy": "default",
+  "image": "/home/maxim/PycharmProjects/zero-shot-detection-benchmark/data/subsets/lvis_v1_val_unseen/images/000000451532.jpg",
+  "labels": [
+    "snowboard",
+    "blender",
+    "hair_dryer",
+    "microscope",
+    "musical_instrument"
+  ],
+  "result": {
+    "detections": [
+      {
+        "label": "snowboard",
+        "score": 0.3643043041229248,
+        "box_2d": [
+          301.593017578125,
+          309.6701965332031,
+          334.6584777832031,
+          345.8818664550781
+        ],
+        "box": [
+          301.593017578125,
+          309.6701965332031,
+          334.6584777832031,
+          345.8818664550781
+        ]
+      },
+      {
+        "label": "snowboard",
+        "score": 0.4644758105278015,
+        "box_2d": [
+          197.9890594482422,
+          332.1883850097656,
+          263.6858825683594,
+          363.08660888671875
+        ],
+        "box": [
+          197.9890594482422,
+          332.1883850097656,
+          263.6858825683594,
+          363.08660888671875
+        ]
+      }
+    ],
+    "latency_sec": 0.07790705934166908,
+    "raw_response": null
+  }
+}

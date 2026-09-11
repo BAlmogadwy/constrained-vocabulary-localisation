@@ -1,0 +1,152 @@
+{
+ "image": "000000455267.jpg",
+ "labels": [
+  "oven",
+  "book",
+  "clock",
+  "hair drier",
+  "sink",
+  "teddy bear",
+  "toaster"
+ ],
+ "tau": 0.4,
+ "detector": {
+  "detections": [
+   {
+    "label": "oven",
+    "box": [
+     0.0,
+     35.10028076171875,
+     629.7213134765625,
+     476.03009033203125
+    ],
+    "score": 0.18506592512130737
+   },
+   {
+    "label": "sink",
+    "box": [
+     0.0,
+     40.79365539550781,
+     638.1290893554688,
+     474.00372314453125
+    ],
+    "score": 0.17574721574783325
+   },
+   {
+    "label": "book",
+    "box": [
+     2.0535125732421875,
+     0.021062850952148438,
+     167.90777587890625,
+     12.440902709960938
+    ],
+    "score": 0.0013872452545911074
+   }
+  ],
+  "latency_sec": 0.060097700014011934
+ },
+ "detector_max_score": 0.18506592512130737,
+ "escalated": true,
+ "vlm": {
+  "model": "qwen/qwen3-vl-235b-a22b-instruct",
+  "detections": [
+   {
+    "label": "oven",
+    "box": [
+     0.0,
+     48.0,
+     531.2,
+     479.04
+    ],
+    "score": 1.0
+   }
+  ],
+  "latency_sec": 3.816234899990377,
+  "usage": {
+   "prompt_tokens": 393,
+   "completion_tokens": 47,
+   "total_tokens": 440
+  },
+  "raw_response": {
+   "id": "gen-1783409697-VoMfKrkXHv6jT40i6zxp",
+   "object": "chat.completion",
+   "created": 1783409697,
+   "model": "qwen/qwen3-vl-235b-a22b-instruct",
+   "provider": "Alibaba",
+   "system_fingerprint": null,
+   "service_tier": null,
+   "choices": [
+    {
+     "index": 0,
+     "logprobs": null,
+     "finish_reason": "stop",
+     "native_finish_reason": "stop",
+     "message": {
+      "role": "assistant",
+      "content": "```json\n[\n\t{\"bbox_2d\": [0, 100, 830, 998], \"label\": \"oven\", \"confidence\": 0.98}\n]\n```",
+      "refusal": null,
+      "reasoning": null
+     }
+    }
+   ],
+   "usage": {
+    "prompt_tokens": 393,
+    "completion_tokens": 47,
+    "total_tokens": 440,
+    "cost": 0.00015106,
+    "is_byok": false,
+    "prompt_tokens_details": {
+     "cached_tokens": 0,
+     "cache_write_tokens": 0,
+     "audio_tokens": 0,
+     "video_tokens": 0
+    },
+    "cost_details": {
+     "upstream_inference_cost": 0.00015106,
+     "upstream_inference_prompt_cost": 0.00010218,
+     "upstream_inference_completions_cost": 4.888e-05
+    },
+    "completion_tokens_details": {
+     "reasoning_tokens": 0,
+     "image_tokens": 0,
+     "audio_tokens": 0
+    }
+   }
+  }
+ },
+ "fallback": false,
+ "ts": "2026-07-07T07:34:55.226102+00:00",
+ "fused": [
+  {
+   "label": "oven",
+   "box": [
+    0.0,
+    35.10028076171875,
+    629.7213134765625,
+    476.03009033203125
+   ],
+   "score": 0.48506592512130736
+  },
+  {
+   "label": "sink",
+   "box": [
+    0.0,
+    40.79365539550781,
+    638.1290893554688,
+    474.00372314453125
+   ],
+   "score": 0.17574721574783325
+  },
+  {
+   "label": "book",
+   "box": [
+    2.0535125732421875,
+    0.021062850952148438,
+    167.90777587890625,
+    12.440902709960938
+   ],
+   "score": 0.0013872452545911074
+  }
+ ],
+ "latency_total_sec": 3.8763537000049837
+}

@@ -1,0 +1,170 @@
+{
+ "image": "000000304817.jpg",
+ "labels": [
+  "snowboard",
+  "coffee_maker",
+  "musical_instrument",
+  "spatula",
+  "stapler_(stapling_machine)"
+ ],
+ "tau": 0.4,
+ "detector": {
+  "detections": [
+   {
+    "label": "snowboard",
+    "box": [
+     101.7974853515625,
+     211.31956481933594,
+     589.7078857421875,
+     428.9146728515625
+    ],
+    "score": 0.10414595156908035
+   },
+   {
+    "label": "stapler_(stapling_machine)",
+    "box": [
+     100.73785400390625,
+     211.7144317626953,
+     589.4278564453125,
+     429.48333740234375
+    ],
+    "score": 0.0359073132276535
+   },
+   {
+    "label": "stapler_(stapling_machine)",
+    "box": [
+     331.892578125,
+     279.3834533691406,
+     403.5941162109375,
+     444.8174743652344
+    ],
+    "score": 0.008032761514186859
+   },
+   {
+    "label": "snowboard",
+    "box": [
+     329.838134765625,
+     212.11395263671875,
+     589.7191162109375,
+     347.98150634765625
+    ],
+    "score": 0.0013644029386341572
+   }
+  ],
+  "latency_sec": 0.04878159999498166
+ },
+ "detector_max_score": 0.10414595156908035,
+ "escalated": true,
+ "vlm": {
+  "model": "qwen/qwen3-vl-235b-a22b-instruct",
+  "detections": [
+   {
+    "label": "snowboard",
+    "box": [
+     144.0,
+     210.72,
+     592.0,
+     420.96
+    ],
+    "score": 1.0
+   }
+  ],
+  "latency_sec": 2.8826661000057356,
+  "usage": {
+   "prompt_tokens": 396,
+   "completion_tokens": 50,
+   "total_tokens": 446
+  },
+  "raw_response": {
+   "id": "gen-1783406813-FKxaOQTOoj29uxJICUKC",
+   "object": "chat.completion",
+   "created": 1783406813,
+   "model": "qwen/qwen3-vl-235b-a22b-instruct",
+   "provider": "Parasail",
+   "system_fingerprint": null,
+   "service_tier": null,
+   "choices": [
+    {
+     "index": 0,
+     "logprobs": null,
+     "finish_reason": "stop",
+     "native_finish_reason": "stop",
+     "message": {
+      "role": "assistant",
+      "content": "```json\n[\n\t{\"bbox_2d\": [225, 439, 925, 877], \"label\": \"snowboard\", \"confidence\": 0.99}\n]\n```",
+      "refusal": null,
+      "reasoning": null
+     }
+    }
+   ],
+   "usage": {
+    "prompt_tokens": 396,
+    "completion_tokens": 50,
+    "total_tokens": 446,
+    "cost": 0.00017816,
+    "is_byok": false,
+    "prompt_tokens_details": {
+     "cached_tokens": 0,
+     "cache_write_tokens": 0,
+     "audio_tokens": 0,
+     "video_tokens": 0
+    },
+    "cost_details": {
+     "upstream_inference_cost": 0.00017816,
+     "upstream_inference_prompt_cost": 8.316e-05,
+     "upstream_inference_completions_cost": 9.5e-05
+    },
+    "completion_tokens_details": {
+     "reasoning_tokens": 0,
+     "image_tokens": 0,
+     "audio_tokens": 0
+    }
+   }
+  }
+ },
+ "fallback": false,
+ "ts": "2026-07-07T06:46:52.158646+00:00",
+ "fused": [
+  {
+   "label": "snowboard",
+   "box": [
+    101.7974853515625,
+    211.31956481933594,
+    589.7078857421875,
+    428.9146728515625
+   ],
+   "score": 0.40414595156908034
+  },
+  {
+   "label": "stapler_(stapling_machine)",
+   "box": [
+    100.73785400390625,
+    211.7144317626953,
+    589.4278564453125,
+    429.48333740234375
+   ],
+   "score": 0.0359073132276535
+  },
+  {
+   "label": "stapler_(stapling_machine)",
+   "box": [
+    331.892578125,
+    279.3834533691406,
+    403.5941162109375,
+    444.8174743652344
+   ],
+   "score": 0.008032761514186859
+  },
+  {
+   "label": "snowboard",
+   "box": [
+    329.838134765625,
+    212.11395263671875,
+    589.7191162109375,
+    347.98150634765625
+   ],
+   "score": 0.0013644029386341572
+  }
+ ],
+ "latency_total_sec": 2.9314696000074036
+}

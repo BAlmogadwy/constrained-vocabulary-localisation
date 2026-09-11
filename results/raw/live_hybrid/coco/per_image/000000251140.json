@@ -1,0 +1,232 @@
+{
+ "image": "000000251140.jpg",
+ "labels": [
+  "book",
+  "clock",
+  "microwave",
+  "refrigerator",
+  "sink",
+  "teddy bear",
+  "toaster"
+ ],
+ "tau": 0.4,
+ "detector": {
+  "detections": [
+   {
+    "label": "clock",
+    "box": [
+     224.2790985107422,
+     227.4024658203125,
+     242.82638549804688,
+     245.8994598388672
+    ],
+    "score": 0.04365947097539902
+   },
+   {
+    "label": "sink",
+    "box": [
+     253.22442626953125,
+     278.8904724121094,
+     308.3625183105469,
+     297.9190673828125
+    ],
+    "score": 0.03642494976520538
+   },
+   {
+    "label": "book",
+    "box": [
+     5.997014045715332,
+     50.33946228027344,
+     363.113037109375,
+     475.9352722167969
+    ],
+    "score": 0.014481811784207821
+   },
+   {
+    "label": "book",
+    "box": [
+     197.7499542236328,
+     346.0091552734375,
+     263.944580078125,
+     374.1554260253906
+    ],
+    "score": 0.008871975354850292
+   },
+   {
+    "label": "clock",
+    "box": [
+     182.96096801757812,
+     209.40789794921875,
+     215.2858428955078,
+     321.52398681640625
+    ],
+    "score": 0.003467532340437174
+   },
+   {
+    "label": "book",
+    "box": [
+     228.49798583984375,
+     425.94866943359375,
+     264.0381774902344,
+     459.2131042480469
+    ],
+    "score": 0.0023563022259622812
+   },
+   {
+    "label": "sink",
+    "box": [
+     278.4701232910156,
+     298.8825378417969,
+     353.879150390625,
+     326.6351318359375
+    ],
+    "score": 0.0012288514990359545
+   }
+  ],
+  "latency_sec": 0.29553699999814853
+ },
+ "detector_max_score": 0.04365947097539902,
+ "escalated": true,
+ "vlm": {
+  "model": "qwen/qwen3-vl-235b-a22b-instruct",
+  "detections": [
+   {
+    "label": "book",
+    "box": [
+     10.5,
+     52.5,
+     351.75,
+     471.5
+    ],
+    "score": 1.0
+   }
+  ],
+  "latency_sec": 2.9113571000052616,
+  "usage": {
+   "prompt_tokens": 283,
+   "completion_tokens": 48,
+   "total_tokens": 331
+  },
+  "raw_response": {
+   "id": "gen-1783409167-XMal2RCG1u2cosXZI89G",
+   "object": "chat.completion",
+   "created": 1783409167,
+   "model": "qwen/qwen3-vl-235b-a22b-instruct",
+   "provider": "Venice",
+   "system_fingerprint": null,
+   "service_tier": null,
+   "choices": [
+    {
+     "index": 0,
+     "logprobs": null,
+     "finish_reason": "stop",
+     "native_finish_reason": "stop",
+     "message": {
+      "role": "assistant",
+      "content": "```json\n[\n\t{\"box_2d\": [28, 105, 938, 943], \"label\": \"book\", \"confidence\": 0.99}\n]\n```",
+      "refusal": null,
+      "reasoning": null
+     }
+    }
+   ],
+   "usage": {
+    "prompt_tokens": 283,
+    "completion_tokens": 48,
+    "total_tokens": 331,
+    "cost": 0.00015063,
+    "is_byok": false,
+    "prompt_tokens_details": {
+     "cached_tokens": 0,
+     "cache_write_tokens": 0,
+     "audio_tokens": 0,
+     "video_tokens": 0
+    },
+    "cost_details": {
+     "upstream_inference_cost": 0.00015063,
+     "upstream_inference_prompt_cost": 5.943e-05,
+     "upstream_inference_completions_cost": 9.12e-05
+    },
+    "completion_tokens_details": {
+     "reasoning_tokens": 0,
+     "image_tokens": 0,
+     "audio_tokens": 0
+    }
+   }
+  }
+ },
+ "fallback": false,
+ "ts": "2026-07-07T07:26:06.001758+00:00",
+ "fused": [
+  {
+   "label": "clock",
+   "box": [
+    224.2790985107422,
+    227.4024658203125,
+    242.82638549804688,
+    245.8994598388672
+   ],
+   "score": 0.04365947097539902
+  },
+  {
+   "label": "sink",
+   "box": [
+    253.22442626953125,
+    278.8904724121094,
+    308.3625183105469,
+    297.9190673828125
+   ],
+   "score": 0.03642494976520538
+  },
+  {
+   "label": "book",
+   "box": [
+    5.997014045715332,
+    50.33946228027344,
+    363.113037109375,
+    475.9352722167969
+   ],
+   "score": 0.3144818117842078
+  },
+  {
+   "label": "book",
+   "box": [
+    197.7499542236328,
+    346.0091552734375,
+    263.944580078125,
+    374.1554260253906
+   ],
+   "score": 0.008871975354850292
+  },
+  {
+   "label": "clock",
+   "box": [
+    182.96096801757812,
+    209.40789794921875,
+    215.2858428955078,
+    321.52398681640625
+   ],
+   "score": 0.003467532340437174
+  },
+  {
+   "label": "book",
+   "box": [
+    228.49798583984375,
+    425.94866943359375,
+    264.0381774902344,
+    459.2131042480469
+   ],
+   "score": 0.0023563022259622812
+  },
+  {
+   "label": "sink",
+   "box": [
+    278.4701232910156,
+    298.8825378417969,
+    353.879150390625,
+    326.6351318359375
+   ],
+   "score": 0.0012288514990359545
+  }
+ ],
+ "latency_total_sec": 3.2069487999979174
+}

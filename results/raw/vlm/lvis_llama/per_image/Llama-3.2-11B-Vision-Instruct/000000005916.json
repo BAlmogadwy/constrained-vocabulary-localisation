@@ -1,0 +1,71 @@
+{
+  "model": "Llama-3.2-11B-Vision-Instruct",
+  "strategy": "single_query",
+  "image": "/home/maxim/PycharmProjects/zero-shot-detection-benchmark/data/subsets/lvis_v1_val_unseen/images/000000005916.jpg",
+  "labels": [
+    "snowboard",
+    "blender",
+    "lawn_mower",
+    "musical_instrument",
+    "sewing_machine"
+  ],
+  "detections": [
+    {
+      "box_2d": [
+        0,
+        0,
+        378,
+        500
+      ],
+      "label": "snowboard"
+    },
+    {
+      "box_2d": [
+        93,
+        122,
+        130,
+        172
+      ],
+      "label": "blender"
+    },
+    {
+      "box_2d": [
+        0,
+        0,
+        378,
+        500
+      ],
+      "label": "lawn_mower"
+    },
+    {
+      "box_2d": [
+        0,
+        0,
+        378,
+        500
+      ],
+      "label": "snowboard"
+    },
+    {
+      "box_2d": [
+        0,
+        0,
+        378,
+        500
+      ],
+      "label": "sewing_machine"
+    }
+  ],
+  "latency_sec": 11.822658169083297,
+  "raw_response": {
+    "snowboard": "[{\"box_2d\":[0,0,378,500],\"label\":\"snowboard\"}]",
+    "blender": "[]",
+    "blender_norm": "[{\"box_norm\":[0.245,0.244,0.345,0.344],\"label\":\"blender\"}]",
+    "lawn_mower": "[]",
+    "lawn_mower_norm": "[{\"box_norm\":[0.000,0.000,0.999,0.999],\"label\":\"lawn_mower\"}]",
+    "musical_instrument": "[]",
+    "musical_instrument_norm": "[{\"box_norm\":[0.0,0.0,1.0,1.0],\"label\":\"snowboard\"}]",
+    "sewing_machine": "[]",
+    "sewing_machine_norm": "[{\"box_norm\":[0.0,0.0,1.0,1.0],\"label\":\"sewing_machine\"}]"
+  }
+}

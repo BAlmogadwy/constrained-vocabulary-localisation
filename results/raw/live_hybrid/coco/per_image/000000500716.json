@@ -1,0 +1,192 @@
+{
+ "image": "000000500716.jpg",
+ "labels": [
+  "scissors",
+  "book",
+  "clock",
+  "microwave",
+  "teddy bear",
+  "toaster",
+  "vase"
+ ],
+ "tau": 0.4,
+ "detector": {
+  "detections": [
+   {
+    "label": "teddy bear",
+    "box": [
+     0.0,
+     0.049114227294921875,
+     424.1482238769531,
+     499.68280029296875
+    ],
+    "score": 0.2952316999435425
+   },
+   {
+    "label": "scissors",
+    "box": [
+     0.3142356872558594,
+     46.216678619384766,
+     169.58370971679688,
+     297.97686767578125
+    ],
+    "score": 0.23184862732887268
+   },
+   {
+    "label": "book",
+    "box": [
+     397.50360107421875,
+     216.58387756347656,
+     438.6415100097656,
+     252.22401428222656
+    ],
+    "score": 0.007150990888476372
+   },
+   {
+    "label": "scissors",
+    "box": [
+     0.8291959762573242,
+     6.573724746704102,
+     204.5632781982422,
+     498.5316162109375
+    ],
+    "score": 0.001369384117424488
+   },
+   {
+    "label": "book",
+    "box": [
+     0.4436492919921875,
+     445.4925537109375,
+     445.0,
+     500.0
+    ],
+    "score": 0.0010470509296283126
+   }
+  ],
+  "latency_sec": 0.042136999996728264
+ },
+ "detector_max_score": 0.2952316999435425,
+ "escalated": true,
+ "vlm": {
+  "model": "qwen/qwen3-vl-235b-a22b-instruct",
+  "detections": [
+   {
+    "label": "scissors",
+    "box": [
+     0.0,
+     47.5,
+     169.99,
+     296.5
+    ],
+    "score": 1.0
+   }
+  ],
+  "latency_sec": 3.3338666999916313,
+  "usage": {
+   "prompt_tokens": 315,
+   "completion_tokens": 47,
+   "total_tokens": 362
+  },
+  "raw_response": {
+   "id": "gen-1783409824-D2goZiJXCsAOlAVb5WH5",
+   "object": "chat.completion",
+   "created": 1783409824,
+   "model": "qwen/qwen3-vl-235b-a22b-instruct",
+   "provider": "Venice",
+   "system_fingerprint": null,
+   "service_tier": null,
+   "choices": [
+    {
+     "index": 0,
+     "logprobs": null,
+     "finish_reason": "stop",
+     "native_finish_reason": "stop",
+     "message": {
+      "role": "assistant",
+      "content": "```json\n[\n\t{\"box_2d\": [0, 95, 382, 593], \"label\": \"scissors\", \"confidence\": 0.95}\n]\n```",
+      "refusal": null,
+      "reasoning": null
+     }
+    }
+   ],
+   "usage": {
+    "prompt_tokens": 315,
+    "completion_tokens": 47,
+    "total_tokens": 362,
+    "cost": 0.00015545,
+    "is_byok": false,
+    "prompt_tokens_details": {
+     "cached_tokens": 0,
+     "cache_write_tokens": 0,
+     "audio_tokens": 0,
+     "video_tokens": 0
+    },
+    "cost_details": {
+     "upstream_inference_cost": 0.00015545,
+     "upstream_inference_prompt_cost": 6.615e-05,
+     "upstream_inference_completions_cost": 8.93e-05
+    },
+    "completion_tokens_details": {
+     "reasoning_tokens": 0,
+     "image_tokens": 0,
+     "audio_tokens": 0
+    }
+   }
+  }
+ },
+ "fallback": false,
+ "ts": "2026-07-07T07:37:02.450940+00:00",
+ "fused": [
+  {
+   "label": "teddy bear",
+   "box": [
+    0.0,
+    0.049114227294921875,
+    424.1482238769531,
+    499.68280029296875
+   ],
+   "score": 0.2952316999435425
+  },
+  {
+   "label": "scissors",
+   "box": [
+    0.3142356872558594,
+    46.216678619384766,
+    169.58370971679688,
+    297.97686767578125
+   ],
+   "score": 0.5318486273288727
+  },
+  {
+   "label": "book",
+   "box": [
+    397.50360107421875,
+    216.58387756347656,
+    438.6415100097656,
+    252.22401428222656
+   ],
+   "score": 0.007150990888476372
+  },
+  {
+   "label": "scissors",
+   "box": [
+    0.8291959762573242,
+    6.573724746704102,
+    204.5632781982422,
+    498.5316162109375
+   ],
+   "score": 0.001369384117424488
+  },
+  {
+   "label": "book",
+   "box": [
+    0.4436492919921875,
+    445.4925537109375,
+    445.0,
+    500.0
+   ],
+   "score": 0.0010470509296283126
+  }
+ ],
+ "latency_total_sec": 3.376017199989292
+}

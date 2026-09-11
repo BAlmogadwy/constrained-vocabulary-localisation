@@ -1,0 +1,45 @@
+{
+  "model": "Llama-3.2-11B-Vision-Instruct",
+  "strategy": "single_query",
+  "image": "/home/maxim/PycharmProjects/zero-shot-detection-benchmark/data/subsets/lvis_v1_val_unseen/images/000000303520.jpg",
+  "labels": [
+    "coffee_maker",
+    "microscope",
+    "musical_instrument",
+    "sewing_machine",
+    "snowboard"
+  ],
+  "detections": [
+    {
+      "box_2d": [
+        28,
+        118,
+        149,
+        214
+      ],
+      "label": "coffee_maker"
+    },
+    {
+      "box_2d": [
+        17,
+        113,
+        86,
+        160
+      ],
+      "label": "snowboard"
+    }
+  ],
+  "latency_sec": 14.019052444957197,
+  "raw_response": {
+    "coffee_maker": "[]",
+    "coffee_maker_norm": "[{\"box_norm\":[0.043,0.245,0.233,0.445],\"label\":\"coffee_maker\"}]",
+    "microscope": "[]",
+    "microscope_norm": "[{\"box_norm\":[0.0,0.0,0.0,0.0],\"label\":\"microscope\"}]",
+    "musical_instrument": "[]",
+    "musical_instrument_norm": "[{\"box_norm\":[0.000000,0.000000,0.000000,0.000000],\"label\":\"None\"}]",
+    "sewing_machine": "[]",
+    "sewing_machine_norm": "[{\"box_norm\":[0.000,0.000,0.000,0.000],\"label\":\"sewing_machine\"}]",
+    "snowboard": "[]",
+    "snowboard_norm": "[{\"box_norm\":[0.027,0.235,0.134,0.333],\"label\":\"snowboard\"}]"
+  }
+}

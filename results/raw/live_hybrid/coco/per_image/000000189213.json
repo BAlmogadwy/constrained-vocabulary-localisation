@@ -1,0 +1,212 @@
+{
+ "image": "000000189213.jpg",
+ "labels": [
+  "refrigerator",
+  "book",
+  "microwave",
+  "sink",
+  "teddy bear",
+  "toaster",
+  "toothbrush"
+ ],
+ "tau": 0.4,
+ "detector": {
+  "detections": [
+   {
+    "label": "sink",
+    "box": [
+     126.3273696899414,
+     177.77464294433594,
+     181.54156494140625,
+     240.4275665283203
+    ],
+    "score": 0.019237587228417397
+   },
+   {
+    "label": "refrigerator",
+    "box": [
+     225.35719299316406,
+     48.14718246459961,
+     322.1639099121094,
+     198.24488830566406
+    ],
+    "score": 0.018778981640934944
+   },
+   {
+    "label": "sink",
+    "box": [
+     379.9111328125,
+     171.84205627441406,
+     406.0635986328125,
+     191.09597778320312
+    ],
+    "score": 0.005244412925094366
+   },
+   {
+    "label": "sink",
+    "box": [
+     374.9255676269531,
+     187.57723999023438,
+     449.2179260253906,
+     232.083984375
+    ],
+    "score": 0.0039528231136500835
+   },
+   {
+    "label": "sink",
+    "box": [
+     144.24049377441406,
+     157.27041625976562,
+     204.70550537109375,
+     190.42745971679688
+    ],
+    "score": 0.0024876666720956564
+   },
+   {
+    "label": "book",
+    "box": [
+     269.14984130859375,
+     226.3028106689453,
+     298.311279296875,
+     297.9772644042969
+    ],
+    "score": 0.0010392253752797842
+   }
+  ],
+  "latency_sec": 0.034841300002881326
+ },
+ "detector_max_score": 0.019237587228417397,
+ "escalated": true,
+ "vlm": {
+  "model": "qwen/qwen3-vl-235b-a22b-instruct",
+  "detections": [
+   {
+    "label": "refrigerator",
+    "box": [
+     224.0,
+     47.625,
+     319.5,
+     192.0
+    ],
+    "score": 1.0
+   }
+  ],
+  "latency_sec": 4.479891099996166,
+  "usage": {
+   "prompt_tokens": 284,
+   "completion_tokens": 51,
+   "total_tokens": 335
+  },
+  "raw_response": {
+   "id": "gen-1783409013-3hpOtgVlhNfuDcm09c5J",
+   "object": "chat.completion",
+   "created": 1783409013,
+   "model": "qwen/qwen3-vl-235b-a22b-instruct",
+   "provider": "Parasail",
+   "system_fingerprint": null,
+   "service_tier": null,
+   "choices": [
+    {
+     "index": 0,
+     "logprobs": null,
+     "finish_reason": "stop",
+     "native_finish_reason": "stop",
+     "message": {
+      "role": "assistant",
+      "content": "```json\n[\n\t{\"box_2d\": [448, 127, 639, 512], \"label\": \"refrigerator\", \"confidence\": 0.95}\n]\n```",
+      "refusal": null,
+      "reasoning": null
+     }
+    }
+   ],
+   "usage": {
+    "prompt_tokens": 284,
+    "completion_tokens": 51,
+    "total_tokens": 335,
+    "cost": 0.00015654,
+    "is_byok": false,
+    "prompt_tokens_details": {
+     "cached_tokens": 0,
+     "cache_write_tokens": 0,
+     "audio_tokens": 0,
+     "video_tokens": 0
+    },
+    "cost_details": {
+     "upstream_inference_cost": 0.00015654,
+     "upstream_inference_prompt_cost": 5.964e-05,
+     "upstream_inference_completions_cost": 9.69e-05
+    },
+    "completion_tokens_details": {
+     "reasoning_tokens": 0,
+     "image_tokens": 0,
+     "audio_tokens": 0
+    }
+   }
+  }
+ },
+ "fallback": false,
+ "ts": "2026-07-07T07:23:30.575385+00:00",
+ "fused": [
+  {
+   "label": "sink",
+   "box": [
+    126.3273696899414,
+    177.77464294433594,
+    181.54156494140625,
+    240.4275665283203
+   ],
+   "score": 0.019237587228417397
+  },
+  {
+   "label": "refrigerator",
+   "box": [
+    225.35719299316406,
+    48.14718246459961,
+    322.1639099121094,
+    198.24488830566406
+   ],
+   "score": 0.31877898164093493
+  },
+  {
+   "label": "sink",
+   "box": [
+    379.9111328125,
+    171.84205627441406,
+    406.0635986328125,
+    191.09597778320312
+   ],
+   "score": 0.005244412925094366
+  },
+  {
+   "label": "sink",
+   "box": [
+    374.9255676269531,
+    187.57723999023438,
+    449.2179260253906,
+    232.083984375
+   ],
+   "score": 0.0039528231136500835
+  },
+  {
+   "label": "sink",
+   "box": [
+    144.24049377441406,
+    157.27041625976562,
+    204.70550537109375,
+    190.42745971679688
+   ],
+   "score": 0.0024876666720956564
+  },
+  {
+   "label": "book",
+   "box": [
+    269.14984130859375,
+    226.3028106689453,
+    298.311279296875,
+    297.9772644042969
+   ],
+   "score": 0.0010392253752797842
+  }
+ ],
+ "latency_total_sec": 4.514792400004808
+}

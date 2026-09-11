@@ -1,0 +1,230 @@
+{
+ "image": "000000029875.jpg",
+ "labels": [
+  "spatula",
+  "hair_dryer",
+  "lawn_mower",
+  "musical_instrument",
+  "snowboard"
+ ],
+ "tau": 0.4,
+ "detector": {
+  "detections": [
+   {
+    "label": "snowboard",
+    "box": [
+     104.62265014648438,
+     0.06427764892578125,
+     278.8773193359375,
+     496.19122314453125
+    ],
+    "score": 0.018145538866519928
+   },
+   {
+    "label": "hair_dryer",
+    "box": [
+     103.17134857177734,
+     0.7693290710449219,
+     277.4243469238281,
+     493.22698974609375
+    ],
+    "score": 0.0056646764278411865
+   },
+   {
+    "label": "musical_instrument",
+    "box": [
+     120.35681915283203,
+     0.13184547424316406,
+     276.128662109375,
+     160.68678283691406
+    ],
+    "score": 0.0035190714988857508
+   },
+   {
+    "label": "spatula",
+    "box": [
+     222.7816619873047,
+     323.0650939941406,
+     273.8887939453125,
+     492.9098205566406
+    ],
+    "score": 0.001834626542404294
+   },
+   {
+    "label": "musical_instrument",
+    "box": [
+     222.40469360351562,
+     323.05181884765625,
+     273.5619812011719,
+     492.8436279296875
+    ],
+    "score": 0.0012471588561311364
+   },
+   {
+    "label": "snowboard",
+    "box": [
+     118.5914535522461,
+     0.0232696533203125,
+     275.99993896484375,
+     164.6452178955078
+    ],
+    "score": 0.001055578119121492
+   },
+   {
+    "label": "snowboard",
+    "box": [
+     205.26376342773438,
+     195.84979248046875,
+     281.6424865722656,
+     491.9307861328125
+    ],
+    "score": 0.0010417829034850001
+   }
+  ],
+  "latency_sec": 0.12842989999626298
+ },
+ "detector_max_score": 0.018145538866519928,
+ "escalated": true,
+ "vlm": {
+  "model": "qwen/qwen3-vl-235b-a22b-instruct",
+  "detections": [
+   {
+    "label": "spatula",
+    "box": [
+     221.25,
+     323.5,
+     273.0,
+     491.0
+    ],
+    "score": 1.0
+   }
+  ],
+  "latency_sec": 5.511984199998551,
+  "usage": {
+   "prompt_tokens": 286,
+   "completion_tokens": 51,
+   "total_tokens": 337
+  },
+  "raw_response": {
+   "id": "gen-1783406491-5QRtFsCYV5Pl7MqYUNId",
+   "object": "chat.completion",
+   "created": 1783406491,
+   "model": "qwen/qwen3-vl-235b-a22b-instruct",
+   "provider": "Alibaba",
+   "system_fingerprint": null,
+   "service_tier": null,
+   "choices": [
+    {
+     "index": 0,
+     "logprobs": null,
+     "finish_reason": "stop",
+     "native_finish_reason": "stop",
+     "message": {
+      "role": "assistant",
+      "content": "```json\n[\n\t{\"box_2d\": [590, 647, 728, 982], \"label\": \"spatula\", \"confidence\": 0.95}\n]\n```",
+      "refusal": null,
+      "reasoning": null
+     }
+    }
+   ],
+   "usage": {
+    "prompt_tokens": 286,
+    "completion_tokens": 51,
+    "total_tokens": 337,
+    "cost": 0.0001274,
+    "is_byok": false,
+    "prompt_tokens_details": {
+     "cached_tokens": 0,
+     "cache_write_tokens": 0,
+     "audio_tokens": 0,
+     "video_tokens": 0
+    },
+    "cost_details": {
+     "upstream_inference_cost": 0.0001274,
+     "upstream_inference_prompt_cost": 7.436e-05,
+     "upstream_inference_completions_cost": 5.304e-05
+    },
+    "completion_tokens_details": {
+     "reasoning_tokens": 0,
+     "image_tokens": 0,
+     "audio_tokens": 0
+    }
+   }
+  }
+ },
+ "fallback": false,
+ "ts": "2026-07-07T06:41:27.624861+00:00",
+ "fused": [
+  {
+   "label": "snowboard",
+   "box": [
+    104.62265014648438,
+    0.06427764892578125,
+    278.8773193359375,
+    496.19122314453125
+   ],
+   "score": 0.018145538866519928
+  },
+  {
+   "label": "hair_dryer",
+   "box": [
+    103.17134857177734,
+    0.7693290710449219,
+    277.4243469238281,
+    493.22698974609375
+   ],
+   "score": 0.0056646764278411865
+  },
+  {
+   "label": "musical_instrument",
+   "box": [
+    120.35681915283203,
+    0.13184547424316406,
+    276.128662109375,
+    160.68678283691406
+   ],
+   "score": 0.0035190714988857508
+  },
+  {
+   "label": "spatula",
+   "box": [
+    222.7816619873047,
+    323.0650939941406,
+    273.8887939453125,
+    492.9098205566406
+   ],
+   "score": 0.3018346265424043
+  },
+  {
+   "label": "musical_instrument",
+   "box": [
+    222.40469360351562,
+    323.05181884765625,
+    273.5619812011719,
+    492.8436279296875
+   ],
+   "score": 0.0012471588561311364
+  },
+  {
+   "label": "snowboard",
+   "box": [
+    118.5914535522461,
+    0.0232696533203125,
+    275.99993896484375,
+    164.6452178955078
+   ],
+   "score": 0.001055578119121492
+  },
+  {
+   "label": "snowboard",
+   "box": [
+    205.26376342773438,
+    195.84979248046875,
+    281.6424865722656,
+    491.9307861328125
+   ],
+   "score": 0.0010417829034850001
+  }
+ ],
+ "latency_total_sec": 5.640431299994816
+}

@@ -1,0 +1,27 @@
+{
+  "model": "paligemma2-10b-mix-448",
+  "strategy": "single_query",
+  "image": "/home/maxim/PycharmProjects/zero-shot-detection-benchmark/data/subsets/lvis_v1_val_unseen/images/000000254599.jpg",
+  "labels": [
+    "snowboard",
+    "blender",
+    "coffee_maker",
+    "hair_dryer",
+    "spatula"
+  ],
+  "detections": [],
+  "latency_sec": 1.7486811610870063,
+  "raw_response": {
+    "attempts": [
+      {
+        "prompt": "Detect the following objects in the image: snowboard, blender, coffee_maker, hair_dryer, spatula. Return JSON only in the format [{\"box_2d\":[x1,y1,x2,y2],\"label\":\"class_name\"}] using integer pixel coordinates.",
+        "output": "<start_of_turn>system\nYou are an object detection assistant. Return JSON only in the format [{\"box_2d\":[x1,y1,x2,y2],\"label\":\"class_name\"}] using integer pixel coordinates.\n<end_of_turn>\n<start_of_turn>user\n\nDetect the following objects in the image: snowboard, blender, coffee_maker, hair_dryer, spatula. Return JSON only in the format [{\"box_2d\":[x1,y1,x2,y2],\"label\":\"class_name\"}] using integer pixel coordinates.\n<end_of_turn>\n<start_of_turn>model\n\nThe above text describes the image."
+      },
+      {
+        "prompt": "Detect the following objects in the image: snowboard, blender, coffee_maker, hair_dryer, spatula. Return JSON only in the format [{\"box_2d\":[x1,y1,x2,y2],\"label\":\"class_name\"}] using integer pixel coordinates. Your entire reply must be a valid JSON array that starts with '[' and ends with ']'. If no objects are detected, respond with []. Do not include any words outside the JSON.",
+        "output": "<start_of_turn>system\nYou are an object detection assistant. Return JSON only in the format [{\"box_2d\":[x1,y1,x2,y2],\"label\":\"class_name\"}] using integer pixel coordinates.\n<end_of_turn>\n<start_of_turn>user\n\nDetect the following objects in the image: snowboard, blender, coffee_maker, hair_dryer, spatula. Return JSON only in the format [{\"box_2d\":[x1,y1,x2,y2],\"label\":\"class_name\"}] using integer pixel coordinates. Your entire reply must be a valid JSON array that starts with '[' and ends with ']'. If no objects are detected, respond with []. Do not include any words outside the JSON.\n<end_of_turn>\n<start_of_turn>model\n\nThe text does not describe the image in a way that allows me to create a caption without additional information. Therefore, I am unable to provide a descriptive caption that includes all the relevant information from the text, but does not include any additional details or embellishments."
+      }
+    ],
+    "final_output": "<start_of_turn>system\nYou are an object detection assistant. Return JSON only in the format [{\"box_2d\":[x1,y1,x2,y2],\"label\":\"class_name\"}] using integer pixel coordinates.\n<end_of_turn>\n<start_of_turn>user\n\nDetect the following objects in the image: snowboard, blender, coffee_maker, hair_dryer, spatula. Return JSON only in the format [{\"box_2d\":[x1,y1,x2,y2],\"label\":\"class_name\"}] using integer pixel coordinates. Your entire reply must be a valid JSON array that starts with '[' and ends with ']'. If no objects are detected, respond with []. Do not include any words outside the JSON.\n<end_of_turn>\n<start_of_turn>model\n\nThe text does not describe the image in a way that allows me to create a caption without additional information. Therefore, I am unable to provide a descriptive caption that includes all the relevant information from the text, but does not include any additional details or embellishments."
+  }
+}

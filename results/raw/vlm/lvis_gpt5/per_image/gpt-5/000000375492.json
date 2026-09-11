@@ -1,0 +1,124 @@
+{
+  "model": "gpt-5",
+  "strategy": "single_query",
+  "image": "/home/maxim/PycharmProjects/zero-shot-detection-benchmark/data/subsets/lvis_v1_val_unseen/images/000000375492.jpg",
+  "labels": [
+    "snowboard",
+    "blender",
+    "hair_dryer",
+    "lawn_mower",
+    "stapler_(stapling_machine)"
+  ],
+  "detections": [
+    {
+      "box_2d": [
+        205,
+        100,
+        250,
+        360
+      ],
+      "label": "snowboard",
+      "confidence": 0.92
+    },
+    {
+      "box_2d": [
+        247,
+        60,
+        296,
+        360
+      ],
+      "label": "snowboard",
+      "confidence": 0.94
+    },
+    {
+      "box_2d": [
+        295,
+        75,
+        345,
+        360
+      ],
+      "label": "snowboard",
+      "confidence": 0.93
+    }
+  ],
+  "latency_sec": 25.222720311954618,
+  "raw_response": {
+    "id": "resp_09f4e449c65bdaa000690baad5ab10819aba2ae2a232e182aa",
+    "created_at": 1762372309.0,
+    "error": null,
+    "incomplete_details": null,
+    "instructions": null,
+    "metadata": {},
+    "model": "gpt-5-2025-08-07",
+    "object": "response",
+    "output": [
+      {
+        "id": "rs_09f4e449c65bdaa000690baad6969c819abed6f482998f47bf",
+        "summary": [],
+        "type": "reasoning",
+        "content": null,
+        "encrypted_content": null,
+        "status": null
+      },
+      {
+        "id": "msg_09f4e449c65bdaa000690baaebb7e4819a8cdd5a8c45ce39b1",
+        "content": [
+          {
+            "annotations": [],
+            "text": "[\n  {\"box_2d\": [205, 100, 250, 360], \"label\": \"snowboard\", \"confidence\": 0.92},\n  {\"box_2d\": [247, 60, 296, 360], \"label\": \"snowboard\", \"confidence\": 0.94},\n  {\"box_2d\": [295, 75, 345, 360], \"label\": \"snowboard\", \"confidence\": 0.93}\n]",
+            "type": "output_text",
+            "logprobs": []
+          }
+        ],
+        "role": "assistant",
+        "status": "completed",
+        "type": "message"
+      }
+    ],
+    "parallel_tool_calls": true,
+    "temperature": 1.0,
+    "tool_choice": "auto",
+    "tools": [],
+    "top_p": 1.0,
+    "background": false,
+    "conversation": null,
+    "max_output_tokens": 16192,
+    "max_tool_calls": null,
+    "previous_response_id": null,
+    "prompt": null,
+    "prompt_cache_key": null,
+    "reasoning": {
+      "effort": "medium",
+      "generate_summary": null,
+      "summary": null
+    },
+    "safety_identifier": null,
+    "service_tier": "default",
+    "status": "completed",
+    "text": {
+      "format": {
+        "type": "text"
+      },
+      "verbosity": "medium"
+    },
+    "top_logprobs": 0,
+    "truncation": "disabled",
+    "usage": {
+      "input_tokens": 296,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 1198,
+      "output_tokens_details": {
+        "reasoning_tokens": 1088
+      },
+      "total_tokens": 1494
+    },
+    "user": null,
+    "billing": {
+      "payer": "developer"
+    },
+    "prompt_cache_retention": null,
+    "store": true
+  }
+}

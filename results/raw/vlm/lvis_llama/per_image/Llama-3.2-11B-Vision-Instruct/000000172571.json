@@ -1,0 +1,54 @@
+{
+  "model": "Llama-3.2-11B-Vision-Instruct",
+  "strategy": "single_query",
+  "image": "/home/maxim/PycharmProjects/zero-shot-detection-benchmark/data/subsets/lvis_v1_val_unseen/images/000000172571.jpg",
+  "labels": [
+    "spatula",
+    "blender",
+    "coffee_maker",
+    "lawn_mower",
+    "microscope"
+  ],
+  "detections": [
+    {
+      "box_2d": [
+        7,
+        80,
+        157,
+        160
+      ],
+      "label": "spatula"
+    },
+    {
+      "box_2d": [
+        0,
+        0,
+        639,
+        361
+      ],
+      "label": "pizza"
+    },
+    {
+      "box_2d": [
+        0,
+        0,
+        639,
+        361
+      ],
+      "label": "pizza"
+    }
+  ],
+  "latency_sec": 14.807315050624311,
+  "raw_response": {
+    "spatula": "[{\"box_2d\":[0,0,0,0],\"label\":\"spatula\"}]",
+    "spatula_norm": "[{\"box_norm\":[0.011,0.221,0.246,0.442],\"label\":\"spatula\"}]",
+    "blender": "[]",
+    "blender_norm": "[{\"box_norm\":[0.000,0.000,0.999,0.999],\"label\":\"pizza\"}]",
+    "coffee_maker": "[]",
+    "coffee_maker_norm": "[{\"box_norm\":[0.0,0.0,0.0,0.0],\"label\":\"coffee_maker\"}]",
+    "lawn_mower": "[]",
+    "lawn_mower_norm": "[{\"box_norm\":[0.000,0.000,0.999,0.999],\"label\":\"pizza\"}]",
+    "microscope": "[]",
+    "microscope_norm": "[{\"box_norm\":[0.0,0.0,0.0,0.0],\"label\":\"microscope\"}]"
+  }
+}

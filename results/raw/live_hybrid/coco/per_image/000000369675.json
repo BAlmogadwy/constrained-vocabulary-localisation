@@ -1,0 +1,121 @@
+{
+ "image": "000000369675.jpg",
+ "labels": [
+  "clock",
+  "microwave",
+  "oven",
+  "scissors",
+  "sink",
+  "teddy bear",
+  "toaster"
+ ],
+ "tau": 0.4,
+ "detector": {
+  "detections": [
+   {
+    "label": "clock",
+    "box": [
+     608.0858154296875,
+     127.36543273925781,
+     623.2852783203125,
+     142.12513732910156
+    ],
+    "score": 0.22446440160274506
+   },
+   {
+    "label": "oven",
+    "box": [
+     0.1776123046875,
+     85.704345703125,
+     634.607666015625,
+     408.84527587890625
+    ],
+    "score": 0.004095837008208036
+   }
+  ],
+  "latency_sec": 0.03687129999161698
+ },
+ "detector_max_score": 0.22446440160274506,
+ "escalated": true,
+ "vlm": {
+  "model": "qwen/qwen3-vl-235b-a22b-instruct",
+  "detections": [],
+  "latency_sec": 3.877214299995103,
+  "usage": {
+   "prompt_tokens": 351,
+   "completion_tokens": 2,
+   "total_tokens": 353
+  },
+  "raw_response": {
+   "id": "gen-1783409498-wgV2CU6yxreAUKr59Eed",
+   "object": "chat.completion",
+   "created": 1783409498,
+   "model": "qwen/qwen3-vl-235b-a22b-instruct",
+   "provider": "Novita",
+   "system_fingerprint": null,
+   "service_tier": null,
+   "choices": [
+    {
+     "index": 0,
+     "logprobs": null,
+     "finish_reason": "stop",
+     "native_finish_reason": "stop",
+     "message": {
+      "role": "assistant",
+      "content": "[]",
+      "refusal": null,
+      "reasoning": null
+     }
+    }
+   ],
+   "usage": {
+    "prompt_tokens": 351,
+    "completion_tokens": 2,
+    "total_tokens": 353,
+    "cost": 0.0001083,
+    "is_byok": false,
+    "prompt_tokens_details": {
+     "cached_tokens": 0,
+     "cache_write_tokens": 0,
+     "audio_tokens": 0,
+     "video_tokens": 0
+    },
+    "cost_details": {
+     "upstream_inference_cost": 0.0001083,
+     "upstream_inference_prompt_cost": 0.0001053,
+     "upstream_inference_completions_cost": 3e-06
+    },
+    "completion_tokens_details": {
+     "reasoning_tokens": 0,
+     "image_tokens": 0,
+     "audio_tokens": 0
+    }
+   }
+  }
+ },
+ "fallback": false,
+ "ts": "2026-07-07T07:31:35.803861+00:00",
+ "fused": [
+  {
+   "label": "clock",
+   "box": [
+    608.0858154296875,
+    127.36543273925781,
+    623.2852783203125,
+    142.12513732910156
+   ],
+   "score": 0.22446440160274506
+  },
+  {
+   "label": "oven",
+   "box": [
+    0.1776123046875,
+    85.704345703125,
+    634.607666015625,
+    408.84527587890625
+   ],
+   "score": 0.004095837008208036
+  }
+ ],
+ "latency_total_sec": 3.9140980999945896
+}

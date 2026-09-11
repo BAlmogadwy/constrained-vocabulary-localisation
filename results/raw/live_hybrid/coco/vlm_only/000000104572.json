@@ -1,0 +1,118 @@
+{
+ "image": "000000104572.jpg",
+ "model": "qwen/qwen3-vl-235b-a22b-instruct",
+ "labels": [
+  "sink",
+  "book",
+  "hair drier",
+  "microwave",
+  "oven",
+  "scissors",
+  "vase"
+ ],
+ "detections": [
+  {
+   "box_2d": [
+    90.88,
+    292.462,
+    233.6,
+    367.044
+   ],
+   "label": "sink",
+   "score": 0.98
+  },
+  {
+   "box_2d": [
+    0.0,
+    360.34,
+    83.84,
+    419.0
+   ],
+   "label": "sink",
+   "score": 0.97
+  },
+  {
+   "box_2d": [
+    373.12,
+    201.539,
+    417.92,
+    223.327
+   ],
+   "label": "sink",
+   "score": 0.96
+  },
+  {
+   "box_2d": [
+    405.76,
+    195.673,
+    440.32,
+    212.433
+   ],
+   "label": "sink",
+   "score": 0.95
+  },
+  {
+   "box_2d": [
+    424.96,
+    191.483,
+    444.16,
+    203.634
+   ],
+   "label": "sink",
+   "score": 0.94
+  }
+ ],
+ "latency_sec": 7.216534100007266,
+ "usage": {
+  "prompt_tokens": 351,
+  "completion_tokens": 216,
+  "total_tokens": 567
+ },
+ "raw_response": {
+  "id": "gen-1783410799-LBs7jOJqARMvDxhilNJe",
+  "object": "chat.completion",
+  "created": 1783410799,
+  "model": "qwen/qwen3-vl-235b-a22b-instruct",
+  "provider": "Venice",
+  "system_fingerprint": null,
+  "service_tier": null,
+  "choices": [
+   {
+    "index": 0,
+    "logprobs": null,
+    "finish_reason": "stop",
+    "native_finish_reason": "stop",
+    "message": {
+     "role": "assistant",
+     "content": "```json\n[\n\t{\"bbox_2d\": [142, 698, 365, 876], \"label\": \"sink\", \"confidence\": 0.98},\n\t{\"bbox_2d\": [0, 860, 131, 1000], \"label\": \"sink\", \"confidence\": 0.97},\n\t{\"bbox_2d\": [583, 481, 653, 533], \"label\": \"sink\", \"confidence\": 0.96},\n\t{\"bbox_2d\": [634, 467, 688, 507], \"label\": \"sink\", \"confidence\": 0.95},\n\t{\"bbox_2d\": [664, 457, 694, 486], \"label\": \"sink\", \"confidence\": 0.94}\n]\n```",
+     "refusal": null,
+     "reasoning": null
+    }
+   }
+  ],
+  "usage": {
+   "prompt_tokens": 351,
+   "completion_tokens": 216,
+   "total_tokens": 567,
+   "cost": 0.00048411,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00048411,
+    "upstream_inference_prompt_cost": 7.371e-05,
+    "upstream_inference_completions_cost": 0.0004104
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   }
+  }
+ },
+ "ts": "2026-07-07T07:53:24.330222+00:00"
+}

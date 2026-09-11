@@ -1,0 +1,141 @@
+{
+ "image": "000000238410.jpg",
+ "labels": [
+  "clock",
+  "hair drier",
+  "oven",
+  "sink",
+  "teddy bear",
+  "toothbrush",
+  "vase"
+ ],
+ "tau": 0.4,
+ "detector": {
+  "detections": [
+   {
+    "label": "vase",
+    "box": [
+     299.39727783203125,
+     156.19552612304688,
+     353.4132080078125,
+     184.69338989257812
+    ],
+    "score": 0.00444759801030159
+   },
+   {
+    "label": "vase",
+    "box": [
+     321.42193603515625,
+     145.20199584960938,
+     329.09051513671875,
+     157.7742919921875
+    ],
+    "score": 0.0015033981762826443
+   },
+   {
+    "label": "vase",
+    "box": [
+     329.5194091796875,
+     269.79290771484375,
+     344.5445556640625,
+     310.8453369140625
+    ],
+    "score": 0.0014394267927855253
+   }
+  ],
+  "latency_sec": 0.03909849999763537
+ },
+ "detector_max_score": 0.00444759801030159,
+ "escalated": true,
+ "vlm": {
+  "model": "qwen/qwen3-vl-235b-a22b-instruct",
+  "detections": [],
+  "latency_sec": 3.7593002999929013,
+  "usage": {
+   "prompt_tokens": 394,
+   "completion_tokens": 6,
+   "total_tokens": 400
+  },
+  "raw_response": {
+   "id": "gen-1783409139-oxAYhIaxqYOS80ePvgFb",
+   "object": "chat.completion",
+   "created": 1783409139,
+   "model": "qwen/qwen3-vl-235b-a22b-instruct",
+   "provider": "Parasail",
+   "system_fingerprint": null,
+   "service_tier": null,
+   "choices": [
+    {
+     "index": 0,
+     "logprobs": null,
+     "finish_reason": "stop",
+     "native_finish_reason": "stop",
+     "message": {
+      "role": "assistant",
+      "content": "```json\n[]\n```",
+      "refusal": null,
+      "reasoning": null
+     }
+    }
+   ],
+   "usage": {
+    "prompt_tokens": 394,
+    "completion_tokens": 6,
+    "total_tokens": 400,
+    "cost": 9.414e-05,
+    "is_byok": false,
+    "prompt_tokens_details": {
+     "cached_tokens": 0,
+     "cache_write_tokens": 0,
+     "audio_tokens": 0,
+     "video_tokens": 0
+    },
+    "cost_details": {
+     "upstream_inference_cost": 9.414e-05,
+     "upstream_inference_prompt_cost": 8.274e-05,
+     "upstream_inference_completions_cost": 1.14e-05
+    },
+    "completion_tokens_details": {
+     "reasoning_tokens": 0,
+     "image_tokens": 0,
+     "audio_tokens": 0
+    }
+   }
+  }
+ },
+ "fallback": false,
+ "ts": "2026-07-07T07:25:36.911495+00:00",
+ "fused": [
+  {
+   "label": "vase",
+   "box": [
+    299.39727783203125,
+    156.19552612304688,
+    353.4132080078125,
+    184.69338989257812
+   ],
+   "score": 0.00444759801030159
+  },
+  {
+   "label": "vase",
+   "box": [
+    321.42193603515625,
+    145.20199584960938,
+    329.09051513671875,
+    157.7742919921875
+   ],
+   "score": 0.0015033981762826443
+  },
+  {
+   "label": "vase",
+   "box": [
+    329.5194091796875,
+    269.79290771484375,
+    344.5445556640625,
+    310.8453369140625
+   ],
+   "score": 0.0014394267927855253
+  }
+ ],
+ "latency_total_sec": 3.7984159999905387
+}

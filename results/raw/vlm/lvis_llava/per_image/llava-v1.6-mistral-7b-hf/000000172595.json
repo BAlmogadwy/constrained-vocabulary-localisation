@@ -1,0 +1,196 @@
+{
+  "model": "llava-v1.6-mistral-7b-hf",
+  "strategy": "single_query",
+  "image": "/home/maxim/PycharmProjects/zero-shot-detection-benchmark/data/subsets/lvis_v1_val_unseen/images/000000172595.jpg",
+  "labels": [
+    "stapler_(stapling_machine)",
+    "coffee_maker",
+    "musical_instrument",
+    "snowboard",
+    "spatula"
+  ],
+  "detections": [
+    {
+      "box_2d": [
+        0.039,
+        0.123,
+        0.303,
+        0.667
+      ],
+      "label": "class_name"
+    },
+    {
+      "box_2d": [
+        0.039,
+        0.123,
+        0.303,
+        0.667
+      ],
+      "label": "purple_chair"
+    },
+    {
+      "box_2d": [
+        0.303,
+        0.123,
+        0.503,
+        0.429
+      ],
+      "label": "laptop"
+    },
+    {
+      "box_2d": [
+        0.503,
+        0.123,
+        0.733,
+        0.429
+      ],
+      "label": "monitor"
+    },
+    {
+      "box_2d": [
+        0.303,
+        0.123,
+        0.503,
+        0.429
+      ],
+      "label": "laptop_on_desk"
+    },
+    {
+      "box_2d": [
+        0.503,
+        0.123,
+        0.733,
+        0.429
+      ],
+      "label": "monitor_on_desk"
+    },
+    {
+      "box_2d": [
+        0.303,
+        0.123,
+        0.503,
+        0.429
+      ],
+      "label": "laptop_on_desk_in_office"
+    },
+    {
+      "box_2d": [
+        0.503,
+        0.123,
+        0.733,
+        0.429
+      ],
+      "label": "monitor_on_desk_in_office"
+    },
+    {
+      "box_2d": [
+        0.303,
+        0.123,
+        0.503,
+        0.429
+      ],
+      "label": "laptop_on_desk_in_office_room"
+    },
+    {
+      "box_2d": [
+        0.503,
+        0.123,
+        0.733,
+        0.429
+      ],
+      "label": "monitor_on_desk_in_office_room"
+    },
+    {
+      "box_2d": [
+        0.303,
+        0.123,
+        0.503,
+        0.429
+      ],
+      "label": "laptop_on_desk_in_office_room_with_keyboard"
+    },
+    {
+      "box_2d": [
+        0.503,
+        0.123,
+        0.733,
+        0.429
+      ],
+      "label": "monitor_on_desk_in_office_room_with_keyboard"
+    },
+    {
+      "box_2d": [
+        0.303,
+        0.123,
+        0.503,
+        0.429
+      ],
+      "label": "laptop_on_desk_in_office_room_with_keyboard_and_mouse"
+    },
+    {
+      "box_2d": [
+        0.503,
+        0.123,
+        0.733,
+        0.429
+      ],
+      "label": "monitor_on_desk_in_office_room_with_keyboard_and_mouse"
+    },
+    {
+      "box_2d": [
+        0.303,
+        0.123,
+        0.503,
+        0.429
+      ],
+      "label": "laptop_on_desk_in_office_room_with_keyboard_and_mouse_and_backpack"
+    },
+    {
+      "box_2d": [
+        0.503,
+        0.123,
+        0.733,
+        0.429
+      ],
+      "label": "monitor_on_desk_in_office_room_with_keyboard_and_mouse_and_backpack"
+    },
+    {
+      "box_2d": [
+        0.303,
+        0.123,
+        0.503,
+        0.429
+      ],
+      "label": "laptop_on_desk_in_office_room_with_keyboard_and_mouse_and_backpack_and_stapler"
+    },
+    {
+      "box_2d": [
+        0.503,
+        0.123,
+        0.733,
+        0.429
+      ],
+      "label": "monitor_on_desk_in_office_room_with_keyboard_and_mouse_and_backpack_and_stapler"
+    },
+    {
+      "box_2d": [
+        0.303,
+        0.123,
+        0.503,
+        0.429
+      ],
+      "label": "laptop_on_desk_in_office_room_with_keyboard_and_mouse_and_backpack_and_stapler_and_coffee_maker"
+    },
+    {
+      "box_2d": [
+        0.503,
+        0.123,
+        0.733,
+        0.429
+      ],
+      "label": "monitor_on_desk_in_office_room_with_keyboard_and_mouse_and_backpack_and_stapler_and_coffee_maker"
+    }
+  ],
+  "latency_sec": 38.2824508138001,
+  "raw_response": "USER:  \nDetect the following objects in the image: stapler_(stapling_machine), coffee_maker, musical_instrument, snowboard, spatula. For each detected object, provide JSON entries in the form [{\"box_2d\": [x1, y1, x2, y2], \"label\": \"class_name\"}]. Return only JSON. ASSISTANT: ```json\n[\n  {\"box_2d\": [0.039,0.123,0.303,0.667], \"label\": \"class_name\"},\n  {\"box_2d\": [0.039,0.123,0.303,0.667], \"label\": \"purple_chair\"},\n  {\"box_2d\": [0.303,0.123,0.503,0.429], \"label\": \"laptop\"},\n  {\"box_2d\": [0.503,0.123,0.733,0.429], \"label\": \"monitor\"},\n  {\"box_2d\": [0.303,0.123,0.503,0.429], \"label\": \"laptop_on_desk\"},\n  {\"box_2d\": [0.503,0.123,0.733,0.429], \"label\": \"monitor_on_desk\"},\n  {\"box_2d\": [0.303,0.123,0.503,0.429], \"label\": \"laptop_on_desk_in_office\"},\n  {\"box_2d\": [0.503,0.123,0.733,0.429], \"label\": \"monitor_on_desk_in_office\"},\n  {\"box_2d\": [0.303,0.123,0.503,0.429], \"label\": \"laptop_on_desk_in_office_room\"},\n  {\"box_2d\": [0.503,0.123,0.733,0.429], \"label\": \"monitor_on_desk_in_office_room\"},\n  {\"box_2d\": [0.303,0.123,0.503,0.429], \"label\": \"laptop_on_desk_in_office_room_with_keyboard\"},\n  {\"box_2d\": [0.503,0.123,0.733,0.429], \"label\": \"monitor_on_desk_in_office_room_with_keyboard\"},\n  {\"box_2d\": [0.303,0.123,0.503,0.429], \"label\": \"laptop_on_desk_in_office_room_with_keyboard_and_mouse\"},\n  {\"box_2d\": [0.503,0.123,0.733,0.429], \"label\": \"monitor_on_desk_in_office_room_with_keyboard_and_mouse\"},\n  {\"box_2d\": [0.303,0.123,0.503,0.429], \"label\": \"laptop_on_desk_in_office_room_with_keyboard_and_mouse_and_backpack\"},\n  {\"box_2d\": [0.503,0.123,0.733,0.429], \"label\": \"monitor_on_desk_in_office_room_with_keyboard_and_mouse_and_backpack\"},\n  {\"box_2d\": [0.303,0.123,0.503,0.429], \"label\": \"laptop_on_desk_in_office_room_with_keyboard_and_mouse_and_backpack_and_stapler\"},\n  {\"box_2d\": [0.503,0.123,0.733,0.429], \"label\": \"monitor_on_desk_in_office_room_with_keyboard_and_mouse_and_backpack_and_stapler\"},\n  {\"box_2d\": [0.303,0.123,0.503,0.429], \"label\": \"laptop_on_desk_in_office_room_with_keyboard_and_mouse_and_backpack_and_stapler_and_coffee_maker\"},\n  {\"box_2d\": [0.503,0.123,0.733,0.429], \"label\": \"monitor_on_desk_in_office_room_with_keyboard_and_mouse_and_backpack_and_stapler_and_coffee_maker\"}\n]\n``` "
+}

@@ -1,0 +1,40 @@
+{
+  "model": "gemma-3-12b-it",
+  "strategy": "iterative",
+  "image": "/home/maxim/PycharmProjects/zero-shot-detection-benchmark/data/subsets/lvis_v1_val_unseen/images/000000065484.jpg",
+  "labels": [
+    "spatula",
+    "blender",
+    "coffee_maker",
+    "hair_dryer",
+    "stapler_(stapling_machine)"
+  ],
+  "detections": [
+    {
+      "box_2d": [
+        421,
+        256,
+        483,
+        343
+      ],
+      "label": "spatula"
+    },
+    {
+      "box_2d": [
+        78,
+        123,
+        246,
+        286
+      ],
+      "label": "coffee_maker"
+    }
+  ],
+  "latency_sec": 32.41877718293108,
+  "raw_response": {
+    "identification": "spatula, coffee_maker",
+    "localization": {
+      "spatula": "```json\n[{\"box_2d\":[421,256,483,343],\"label\":\"spatula\"}]\n```",
+      "coffee_maker": "```json\n[{\"box_2d\":[78,123,246,286],\"label\":\"coffee_maker\"}]\n```"
+    }
+  }
+}

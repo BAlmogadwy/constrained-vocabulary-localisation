@@ -1,0 +1,50 @@
+{
+  "model": "owl_vit",
+  "strategy": "default",
+  "image": "/home/maxim/PycharmProjects/zero-shot-detection-benchmark/data/subsets/lvis_v1_val_unseen/images/000000262869.jpg",
+  "labels": [
+    "snowboard",
+    "microscope",
+    "musical_instrument",
+    "spatula",
+    "stapler_(stapling_machine)"
+  ],
+  "result": {
+    "detections": [
+      {
+        "label": "snowboard",
+        "score": 0.6096484065055847,
+        "box_2d": [
+          169.71824645996094,
+          230.99154663085938,
+          375.85797119140625,
+          485.22357177734375
+        ],
+        "box": [
+          169.71824645996094,
+          230.99154663085938,
+          375.85797119140625,
+          485.22357177734375
+        ]
+      },
+      {
+        "label": "snowboard",
+        "score": 0.5323094129562378,
+        "box_2d": [
+          326.5758972167969,
+          538.598388671875,
+          481.4598083496094,
+          596.495849609375
+        ],
+        "box": [
+          326.5758972167969,
+          538.598388671875,
+          481.4598083496094,
+          596.495849609375
+        ]
+      }
+    ],
+    "latency_sec": 0.08163211774080992,
+    "raw_response": null
+  }
+}

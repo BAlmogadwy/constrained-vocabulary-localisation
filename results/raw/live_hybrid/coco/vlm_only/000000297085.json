@@ -1,0 +1,108 @@
+{
+ "image": "000000297085.jpg",
+ "model": "qwen/qwen3-vl-235b-a22b-instruct",
+ "labels": [
+  "teddy bear",
+  "hair drier",
+  "oven",
+  "refrigerator",
+  "scissors",
+  "sink",
+  "vase"
+ ],
+ "detections": [
+  {
+   "box_2d": [
+    166.5,
+    115.875,
+    199.0,
+    167.25
+   ],
+   "label": "teddy bear",
+   "score": 0.95
+  },
+  {
+   "box_2d": [
+    269.0,
+    123.0,
+    297.5,
+    167.25
+   ],
+   "label": "teddy bear",
+   "score": 0.94
+  },
+  {
+   "box_2d": [
+    297.5,
+    123.0,
+    326.5,
+    167.25
+   ],
+   "label": "teddy bear",
+   "score": 0.93
+  },
+  {
+   "box_2d": [
+    210.5,
+    93.75,
+    274.0,
+    211.875
+   ],
+   "label": "teddy bear",
+   "score": 0.96
+  }
+ ],
+ "latency_sec": 6.662674999999581,
+ "usage": {
+  "prompt_tokens": 285,
+  "completion_tokens": 183,
+  "total_tokens": 468
+ },
+ "raw_response": {
+  "id": "gen-1783412610-lU0LavrVwHFQ3q21AHRa",
+  "object": "chat.completion",
+  "created": 1783412610,
+  "model": "qwen/qwen3-vl-235b-a22b-instruct",
+  "provider": "Parasail",
+  "system_fingerprint": null,
+  "service_tier": null,
+  "choices": [
+   {
+    "index": 0,
+    "logprobs": null,
+    "finish_reason": "stop",
+    "native_finish_reason": "stop",
+    "message": {
+     "role": "assistant",
+     "content": "```json\n[\n\t{\"bbox_2d\": [333, 309, 398, 446], \"label\": \"teddy bear\", \"confidence\": 0.95},\n\t{\"bbox_2d\": [538, 328, 595, 446], \"label\": \"teddy bear\", \"confidence\": 0.94},\n\t{\"bbox_2d\": [595, 328, 653, 446], \"label\": \"teddy bear\", \"confidence\": 0.93},\n\t{\"bbox_2d\": [421, 250, 548, 565], \"label\": \"teddy bear\", \"confidence\": 0.96}\n]\n```",
+     "refusal": null,
+     "reasoning": null
+    }
+   }
+  ],
+  "usage": {
+   "prompt_tokens": 285,
+   "completion_tokens": 183,
+   "total_tokens": 468,
+   "cost": 0.00040755,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00040755,
+    "upstream_inference_prompt_cost": 5.985e-05,
+    "upstream_inference_completions_cost": 0.0003477
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   }
+  }
+ },
+ "ts": "2026-07-07T08:23:35.244676+00:00"
+}

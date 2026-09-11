@@ -1,0 +1,38 @@
+dataset:
+  images_dir: data/raw/coco2017/val2017
+  limit: 10 # For quick testing
+
+labels:
+  file: prompts/coco_unseen_labels.txt
+  values:
+    - microwave
+    - toaster
+
+output:
+  dir: results/raw/vlm/coco2017_val
+
+models:
+  - name: gpt-5
+    prompt_strategy: single_query
+    output_name: gpt5_coco_val.json
+  - name: claude-haiku-4.5
+    prompt_strategy: single_query
+    output_name: claude_haiku_coco_val.json
+  - name: gemini-2.5-flash
+    prompt_strategy: single_query
+    output_name: gemini_flash_coco_val.json
+  - name: llava-v1.6-mistral-7b-hf
+    prompt_strategy: single_query
+    output_name: llava_v16_mistral_coco_val.json
+  - name: qwen2.5-vl-72b
+    prompt_strategy: single_query
+    output_name: qwen25_coco_val.json
+  - name: Qwen3-VL-8B-Instruct
+    prompt_strategy: single_query
+    output_name: qwen3_coco_val.json
+  - name: llama-3.2-vision-11b
+    prompt_strategy: single_query
+    output_name: llama_vision_coco_val.json
+  - name: gemma-3
+    prompt_strategy: single_query
+    output_name: gemma3_coco_val.json

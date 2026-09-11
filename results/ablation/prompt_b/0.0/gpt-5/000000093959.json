@@ -1,0 +1,84 @@
+{
+  "model": "gpt-5",
+  "strategy": "iterative",
+  "image": "/home/maxim/PycharmProjects/zero-shot-detection-benchmark/data/subsets/lvis_v1_val_unseen/images/000000093959.jpg",
+  "labels": [
+    "coffee_maker",
+    "blender",
+    "musical_instrument",
+    "snowboard",
+    "spatula"
+  ],
+  "detections": [],
+  "latency_sec": 6.368463862105273,
+  "raw_response": {
+    "identification": {
+      "id": "resp_08b225138f5c857000692b95989f8c819b889c5b9edc35df9c",
+      "created_at": 1764464024.0,
+      "error": null,
+      "incomplete_details": {
+        "reason": "max_output_tokens"
+      },
+      "instructions": null,
+      "metadata": {},
+      "model": "gpt-5-2025-08-07",
+      "object": "response",
+      "output": [
+        {
+          "id": "rs_08b225138f5c857000692b9599393c819b87d82298721a0a53",
+          "summary": [],
+          "type": "reasoning",
+          "content": null,
+          "encrypted_content": null,
+          "status": null
+        }
+      ],
+      "parallel_tool_calls": true,
+      "temperature": 1.0,
+      "tool_choice": "auto",
+      "tools": [],
+      "top_p": 1.0,
+      "background": false,
+      "conversation": null,
+      "max_output_tokens": 256,
+      "max_tool_calls": null,
+      "previous_response_id": null,
+      "prompt": null,
+      "prompt_cache_key": null,
+      "reasoning": {
+        "effort": "medium",
+        "generate_summary": null,
+        "summary": null
+      },
+      "safety_identifier": null,
+      "service_tier": "default",
+      "status": "incomplete",
+      "text": {
+        "format": {
+          "type": "text"
+        },
+        "verbosity": "medium"
+      },
+      "top_logprobs": 0,
+      "truncation": "disabled",
+      "usage": {
+        "input_tokens": 372,
+        "input_tokens_details": {
+          "cached_tokens": 0
+        },
+        "output_tokens": 256,
+        "output_tokens_details": {
+          "reasoning_tokens": 256
+        },
+        "total_tokens": 628
+      },
+      "user": null,
+      "billing": {
+        "payer": "developer"
+      },
+      "prompt_cache_retention": null,
+      "store": true
+    },
+    "localization": []
+  }
+}

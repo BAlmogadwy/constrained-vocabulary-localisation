@@ -1,0 +1,73 @@
+{
+  "image": "/home/maxim/PycharmProjects/zero-shot-detection-benchmark/data/subsets/lvis_v1_val_unseen/images/000000451532.jpg",
+  "image_id": 451532,
+  "file_name": "000000451532.jpg",
+  "num_crops": 2,
+  "crops": [
+    {
+      "annotation_id": 76144,
+      "bbox": [
+        310.62,
+        309.01,
+        22.94,
+        37.67
+      ],
+      "category_id": 976,
+      "gt_label": "snowboard",
+      "labels": [
+        "snowboard",
+        "blender",
+        "hair_dryer",
+        "microscope",
+        "musical_instrument"
+      ],
+      "prediction": "snowboard",
+      "normalized_prediction": "snowboard",
+      "matched_label": "snowboard",
+      "correct": true,
+      "latency_sec": 3.6743780770048033,
+      "raw_response": {
+        "snowboard": "[{\"box_2d\":[0,0,38,24],\"label\":\"snowboard\"}]",
+        "blender": "[{\"box_2d\":[0,0,38,24],\"label\":\"blender\"}]",
+        "hair_dryer": "[{\"box_2d\":[0,0,38,24],\"label\":\"hair_dryer\"}]",
+        "microscope": "[{\"box_2d\":[0,0,38,24],\"label\":\"microscope\"}]",
+        "musical_instrument": "[{\"box_2d\":[0,0,38,24],\"label\":\"musical_instrument\"}]"
+      }
+    },
+    {
+      "annotation_id": 76145,
+      "bbox": [
+        196.79,
+        336.05,
+        63.74,
+        28.17
+      ],
+      "category_id": 976,
+      "gt_label": "snowboard",
+      "labels": [
+        "snowboard",
+        "blender",
+        "hair_dryer",
+        "microscope",
+        "musical_instrument"
+      ],
+      "prediction": "snowboard",
+      "normalized_prediction": "snowboard",
+      "matched_label": "snowboard",
+      "correct": true,
+      "latency_sec": 5.352042020007502,
+      "raw_response": {
+        "snowboard": "[{\"box_2d\":[1,1,29,28],\"label\":\"snowboard\"}]",
+        "blender": "[]",
+        "blender_norm": "[{\"box_norm\":[0.0,0.0,0.5,0.5],\"label\":\"blender\"}]",
+        "hair_dryer": "[]",
+        "hair_dryer_norm": "[{\"box_norm\":[0.0,0.0,0.0,0.0],\"label\":\"hair_dryer\"}]",
+        "microscope": "[]",
+        "microscope_norm": "[{\"box_norm\":[0.0,0.0,0.0,0.0],\"label\":\"microscope\"}]",
+        "musical_instrument": "[]",
+        "musical_instrument_norm": "[{\"box_norm\":[0.0,0.0,0.5,0.5],\"label\":\"snowboard\"}]"
+      }
+    }
+  ],
+  "prompt": "You are an object recognition assistant.\n\nYou will see a cropped image that contains exactly one object\nfrom the following LVIS categories (unseen split):\n\n- snowboard\n- blender\n- hair_dryer\n- microscope\n- musical_instrument\n\nYour task:\n- Return ONLY the best matching category name from this list.\n- Do not output explanations or extra text.\n\nAnswer with a single string: \"class_name\"."
+}

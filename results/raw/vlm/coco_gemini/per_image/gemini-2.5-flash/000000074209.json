@@ -1,0 +1,262 @@
+{
+  "model": "gemini-2.5-flash",
+  "strategy": "single_query",
+  "image": "/home/maxim/PycharmProjects/zero-shot-detection-benchmark/data/raw/coco2017/val2017/000000074209.jpg",
+  "labels": [
+    "clock",
+    "oven",
+    "refrigerator",
+    "sink",
+    "book",
+    "hair drier",
+    "scissors",
+    "teddy bear"
+  ],
+  "detections": [
+    {
+      "box_2d": [
+        820,
+        159,
+        999,
+        493
+      ],
+      "label": "teddy bear"
+    },
+    {
+      "box_2d": [
+        318,
+        59,
+        452,
+        172
+      ],
+      "label": "refrigerator"
+    },
+    {
+      "box_2d": [
+        267,
+        850,
+        379,
+        915
+      ],
+      "label": "clock"
+    },
+    {
+      "box_2d": [
+        794,
+        888,
+        908,
+        998
+      ],
+      "label": "book"
+    },
+    {
+      "box_2d": [
+        496,
+        319,
+        558,
+        439
+      ],
+      "label": "oven"
+    },
+    {
+      "box_2d": [
+        495,
+        321,
+        558,
+        438
+      ],
+      "label": "hair drier"
+    },
+    {
+      "box_2d": [
+        632,
+        646,
+        1000,
+        912
+      ],
+      "label": "scissors"
+    },
+    {
+      "box_2d": [
+        479,
+        3,
+        659,
+        192
+      ],
+      "label": "teddy bear"
+    },
+    {
+      "box_2d": [
+        750,
+        328,
+        999,
+        497
+      ],
+      "label": "hair drier"
+    },
+    {
+      "box_2d": [
+        376,
+        38,
+        532,
+        172
+      ],
+      "label": "refrigerator"
+    },
+    {
+      "box_2d": [
+        550,
+        396,
+        607,
+        521
+      ],
+      "label": "sink"
+    },
+    {
+      "box_2d": [
+        632,
+        775,
+        960,
+        912
+      ],
+      "label": "book"
+    },
+    {
+      "box_2d": [
+        705,
+        496,
+        999,
+        638
+      ],
+      "label": "hair drier"
+    },
+    {
+      "box_2d": [
+        705,
+        496,
+        999,
+        638
+      ],
+      "label": "book"
+    },
+    {
+      "box_2d": [
+        535,
+        508,
+        584,
+        626
+      ],
+      "label": "sink"
+    },
+    {
+      "box_2d": [
+        284,
+        850,
+        377,
+        915
+      ],
+      "label": "hair drier"
+    },
+    {
+      "box_2d": [
+        632,
+        646,
+        1000,
+        912
+      ],
+      "label": "teddy bear"
+    },
+    {
+      "box_2d": [
+        704,
+        496,
+        999,
+        638
+      ],
+      "label": "teddy bear"
+    },
+    {
+      "box_2d": [
+        206,
+        508,
+        524,
+        676
+      ],
+      "label": "refrigerator"
+    },
+    {
+      "box_2d": [
+        632,
+        775,
+        960,
+        912
+      ],
+      "label": "hair drier"
+    },
+    {
+      "box_2d": [
+        284,
+        850,
+        377,
+        915
+      ],
+      "label": "book"
+    },
+    {
+      "box_2d": [
+        750,
+        328,
+        999,
+        497
+      ],
+      "label": "teddy bear"
+    },
+    {
+      "box_2d": [
+        750,
+        328,
+        999,
+        497
+      ],
+      "label": "book"
+    },
+    {
+      "box_2d": [
+        267,
+        850,
+        379,
+        915
+      ],
+      "label": "teddy bear"
+    },
+    {
+      "box_2d": [
+        532,
+        274,
+        632,
+        629
+      ],
+      "label": "sink"
+    },
+    {
+      "box_2d": [
+        181,
+        0,
+        563,
+        173
+      ],
+      "label": "refrigerator"
+    },
+    {
+      "box_2d": [
+        267,
+        850,
+        379,
+        915
+      ],
+      "label": "scissors"
+    }
+  ],
+  "latency_sec": 8.812556581979152,
+  "raw_response": "```json\n[\n  {\"box_2d\": [820, 159, 999, 493], \"label\": \"teddy bear\"},\n  {\"box_2d\": [318, 59, 452, 172], \"label\": \"refrigerator\"},\n  {\"box_2d\": [267, 850, 379, 915], \"label\": \"clock\"},\n  {\"box_2d\": [794, 888, 908, 998], \"label\": \"book\"},\n  {\"box_2d\": [496, 319, 558, 439], \"label\": \"oven\"},\n  {\"box_2d\": [495, 321, 558, 438], \"label\": \"hair drier\"},\n  {\"box_2d\": [632, 646, 1000, 912], \"label\": \"scissors\"},\n  {\"box_2d\": [479, 3, 659, 192], \"label\": \"teddy bear\"},\n  {\"box_2d\": [750, 328, 999, 497], \"label\": \"hair drier\"},\n  {\"box_2d\": [376, 38, 532, 172], \"label\": \"refrigerator\"},\n  {\"box_2d\": [550, 396, 607, 521], \"label\": \"sink\"},\n  {\"box_2d\": [632, 775, 960, 912], \"label\": \"book\"},\n  {\"box_2d\": [705, 496, 999, 638], \"label\": \"hair drier\"},\n  {\"box_2d\": [705, 496, 999, 638], \"label\": \"book\"},\n  {\"box_2d\": [535, 508, 584, 626], \"label\": \"sink\"},\n  {\"box_2d\": [284, 850, 377, 915], \"label\": \"hair drier\"},\n  {\"box_2d\": [632, 646, 1000, 912], \"label\": \"teddy bear\"},\n  {\"box_2d\": [704, 496, 999, 638], \"label\": \"teddy bear\"},\n  {\"box_2d\": [206, 508, 524, 676], \"label\": \"refrigerator\"},\n  {\"box_2d\": [632, 775, 960, 912], \"label\": \"hair drier\"},\n  {\"box_2d\": [284, 850, 377, 915], \"label\": \"book\"},\n  {\"box_2d\": [750, 328, 999, 497], \"label\": \"teddy bear\"},\n  {\"box_2d\": [750, 328, 999, 497], \"label\": \"book\"},\n  {\"box_2d\": [267, 850, 379, 915], \"label\": \"teddy bear\"},\n  {\"box_2d\": [532, 274, 632, 629], \"label\": \"sink\"},\n  {\"box_2d\": [181, 0, 563, 173], \"label\": \"refrigerator\"},\n  {\"box_2d\": [267, 850, 379, 915], \"label\": \"scissors\"}\n]\n```"
+}

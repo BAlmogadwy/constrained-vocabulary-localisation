@@ -1,0 +1,148 @@
+{
+ "image": "000000249129.jpg",
+ "model": "qwen/qwen3-vl-235b-a22b-instruct",
+ "labels": [
+  "clock",
+  "teddy bear",
+  "oven",
+  "refrigerator",
+  "scissors",
+  "toaster",
+  "toothbrush"
+ ],
+ "detections": [
+  {
+   "box_2d": [
+    339.2,
+    92.659,
+    364.8,
+    116.998
+   ],
+   "label": "clock",
+   "score": 0.95
+  },
+  {
+   "box_2d": [
+    0.0,
+    44.835,
+    74.88,
+    173.789
+   ],
+   "label": "teddy bear",
+   "score": 0.98
+  },
+  {
+   "box_2d": [
+    102.4,
+    156.709,
+    188.8,
+    282.674
+   ],
+   "label": "teddy bear",
+   "score": 0.97
+  },
+  {
+   "box_2d": [
+    200.32,
+    156.709,
+    288.0,
+    213.5
+   ],
+   "label": "teddy bear",
+   "score": 0.96
+  },
+  {
+   "box_2d": [
+    210.56,
+    216.489,
+    300.8,
+    331.352
+   ],
+   "label": "teddy bear",
+   "score": 0.95
+  },
+  {
+   "box_2d": [
+    348.8,
+    170.8,
+    430.08,
+    268.583
+   ],
+   "label": "teddy bear",
+   "score": 0.94
+  },
+  {
+   "box_2d": [
+    402.56,
+    61.061,
+    512.0,
+    187.026
+   ],
+   "label": "teddy bear",
+   "score": 0.93
+  },
+  {
+   "box_2d": [
+    550.4,
+    192.15,
+    640.0,
+    323.239
+   ],
+   "label": "teddy bear",
+   "score": 0.92
+  }
+ ],
+ "latency_sec": 12.394204800002626,
+ "usage": {
+  "prompt_tokens": 352,
+  "completion_tokens": 356,
+  "total_tokens": 708
+ },
+ "raw_response": {
+  "id": "gen-1783412236-ijK5IYCeHCSS8dZBGbJC",
+  "object": "chat.completion",
+  "created": 1783412236,
+  "model": "qwen/qwen3-vl-235b-a22b-instruct",
+  "provider": "Alibaba",
+  "system_fingerprint": null,
+  "service_tier": null,
+  "choices": [
+   {
+    "index": 0,
+    "logprobs": null,
+    "finish_reason": "stop",
+    "native_finish_reason": "stop",
+    "message": {
+     "role": "assistant",
+     "content": "```json\n[\n\t{\"bbox_2d\": [530, 217, 570, 274], \"label\": \"clock\", \"confidence\": 0.95},\n\t{\"bbox_2d\": [0, 105, 117, 407], \"label\": \"teddy bear\", \"confidence\": 0.98},\n\t{\"bbox_2d\": [160, 367, 295, 662], \"label\": \"teddy bear\", \"confidence\": 0.97},\n\t{\"bbox_2d\": [313, 367, 450, 500], \"label\": \"teddy bear\", \"confidence\": 0.96},\n\t{\"bbox_2d\": [329, 507, 470, 776], \"label\": \"teddy bear\", \"confidence\": 0.95},\n\t{\"bbox_2d\": [545, 400, 672, 629], \"label\": \"teddy bear\", \"confidence\": 0.94},\n\t{\"bbox_2d\": [629, 143, 800, 438], \"label\": \"teddy bear\", \"confidence\": 0.93},\n\t{\"bbox_2d\": [860, 450, 1000, 757], \"label\": \"teddy bear\", \"confidence\": 0.92}\n]\n```",
+     "refusal": null,
+     "reasoning": null
+    }
+   }
+  ],
+  "usage": {
+   "prompt_tokens": 352,
+   "completion_tokens": 356,
+   "total_tokens": 708,
+   "cost": 0.00046176,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00046176,
+    "upstream_inference_prompt_cost": 9.152e-05,
+    "upstream_inference_completions_cost": 0.00037024
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   }
+  }
+ },
+ "ts": "2026-07-07T08:17:25.789113+00:00"
+}

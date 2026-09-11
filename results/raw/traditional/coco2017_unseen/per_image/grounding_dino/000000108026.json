@@ -1,0 +1,41 @@
+{
+  "model": "grounding_dino",
+  "strategy": "default",
+  "image": "/home/maxim/PycharmProjects/zero-shot-detection-benchmark/data/raw/coco2017/val2017/000000108026.jpg",
+  "labels": [
+    "microwave",
+    "oven",
+    "toaster",
+    "sink",
+    "refrigerator",
+    "book",
+    "clock",
+    "vase",
+    "scissors",
+    "teddy bear",
+    "hair drier",
+    "toothbrush"
+  ],
+  "result": {
+    "detections": [
+      {
+        "label": "sink",
+        "score": 0.3941207528114319,
+        "box_2d": [
+          211.22604370117188,
+          39.87644577026367,
+          346.8920593261719,
+          92.36319732666016
+        ],
+        "box": [
+          211.22604370117188,
+          39.87644577026367,
+          346.8920593261719,
+          92.36319732666016
+        ]
+      }
+    ],
+    "latency_sec": 0.11422735899941472,
+    "raw_response": null
+  }
+}

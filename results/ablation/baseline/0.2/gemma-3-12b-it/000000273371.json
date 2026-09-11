@@ -1,0 +1,25 @@
+{
+  "model": "gemma-3-12b-it",
+  "strategy": "single_query",
+  "image": "/home/maxim/PycharmProjects/zero-shot-detection-benchmark/data/subsets/lvis_v1_val_unseen/images/000000273371.jpg",
+  "labels": [
+    "coffee_maker",
+    "hair_dryer",
+    "sewing_machine",
+    "snowboard",
+    "spatula"
+  ],
+  "detections": [
+    {
+      "box_2d": [
+        688,
+        360,
+        768,
+        435
+      ],
+      "label": "coffee_maker"
+    }
+  ],
+  "latency_sec": 14.36515982192941,
+  "raw_response": "```json\n[\n  {\"box_2d\":[688,360,768,435],\"label\":\"coffee_maker\"}\n]\n```"
+}

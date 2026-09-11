@@ -1,0 +1,77 @@
+{
+  "model": "Qwen3-VL-8B-Instruct",
+  "strategy": "single_query",
+  "image": "/home/maxim/PycharmProjects/zero-shot-detection-benchmark/data/raw/coco2017/val2017/000000289417.jpg",
+  "labels": [
+    "microwave",
+    "oven",
+    "toaster",
+    "sink",
+    "refrigerator",
+    "book",
+    "clock",
+    "vase",
+    "scissors",
+    "teddy bear",
+    "hair drier",
+    "toothbrush"
+  ],
+  "detections": [
+    {
+      "box_2d": [
+        548.0,
+        76.0,
+        762.0,
+        556.0
+      ],
+      "label": "person"
+    },
+    {
+      "box_2d": [
+        863.0,
+        127.0,
+        923.0,
+        266.0
+      ],
+      "label": "person"
+    },
+    {
+      "box_2d": [
+        913.0,
+        64.0,
+        962.0,
+        234.0
+      ],
+      "label": "person"
+    },
+    {
+      "box_2d": [
+        523.0,
+        133.0,
+        585.0,
+        253.0
+      ],
+      "label": "person"
+    },
+    {
+      "box_2d": [
+        401.0,
+        13.0,
+        500.0,
+        266.0
+      ],
+      "label": "person"
+    },
+    {
+      "box_2d": [
+        477.0,
+        13.0,
+        585.0,
+        247.0
+      ],
+      "label": "person"
+    }
+  ],
+  "latency_sec": 8.461646235009539,
+  "raw_response": "user\nYou are an object detection assistant. Given the image and the list of target classes, return detections as JSON.\nTarget classes: microwave, oven, toaster, sink, refrigerator, book, clock, vase, scissors, teddy bear, hair drier, toothbrush.\nOutput format: [{\"box_2d\":[x1,y1,x2,y2],\"label\":\"class_name\"}...]\nUse pixel coordinates relative to the input image. Return JSON only.\nassistant\n```json\n[\n    {\"box_2d\": [548, 76, 762, 556], \"label\": \"person\"},\n    {\"bbox_2d\": [863, 127, 923, 266], \"label\": \"person\"},\n    {\"bbox_2d\": [913, 64, 962, 234], \"label\": \"person\"},\n    {\"bbox_2d\": [523, 133, 585, 253], \"label\": \"person\"},\n    {\"bbox_2d\": [401, 13, 500, 266], \"label\": \"person\"},\n    {\"bbox_2d\": [477, 13, 585, 247], \"label\": \"person\"}\n]\n```"
+}

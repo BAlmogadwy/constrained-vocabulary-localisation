@@ -1,0 +1,54 @@
+{
+  "model": "Llama-3.2-11B-Vision-Instruct",
+  "strategy": "single_query",
+  "image": "/home/maxim/PycharmProjects/zero-shot-detection-benchmark/data/subsets/lvis_v1_val_unseen/images/000000058554.jpg",
+  "labels": [
+    "blender",
+    "coffee_maker",
+    "lawn_mower",
+    "snowboard",
+    "spatula"
+  ],
+  "detections": [
+    {
+      "box_2d": [
+        80,
+        80,
+        320,
+        320
+      ],
+      "label": "blender"
+    },
+    {
+      "box_2d": [
+        32,
+        32,
+        352,
+        352
+      ],
+      "label": "coffee_maker"
+    },
+    {
+      "box_2d": [
+        38,
+        211,
+        218,
+        346
+      ],
+      "label": "spatula"
+    }
+  ],
+  "latency_sec": 6.303980033961125,
+  "raw_response": {
+    "blender": "[{\"box_2d\":[0,0,0,0],\"label\":\"blender\"}]",
+    "blender_norm": "[{\"box_norm\":[0.125,0.125,0.5,0.5],\"label\":\"blender\"}]",
+    "coffee_maker": "[]",
+    "coffee_maker_norm": "[{\"box_norm\":[0.05,0.05,0.55,0.55],\"label\":\"coffee_maker\"}]",
+    "lawn_mower": "[]",
+    "lawn_mower_norm": "[{\"box_norm\":[0.0,0.0,0.0,0.0],\"label\":\"lawn_mower\"}]",
+    "snowboard": "[]",
+    "snowboard_norm": "[{\"box_norm\":[0.0,0.0,0.0,0.0],\"label\":\"snowboard\"}]",
+    "spatula": "[]",
+    "spatula_norm": "[{\"box_norm\":[0.06,0.33,0.34,0.54],\"label\":\"spatula\"}]"
+  }
+}

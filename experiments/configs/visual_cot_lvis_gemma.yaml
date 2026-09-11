@@ -1,0 +1,29 @@
+dataset:
+  images_dir: data/subsets/lvis_v1_val_unseen/images
+  limit: null
+
+labels:
+  per_image_file: data/processed/lvis_v1/val/lvis_unseen_dynamic_labels.json
+  file: prompts/coco_unseen_labels.txt
+  values: []
+
+output:
+  dir: results/visual_cot/lvis_gemma
+
+models:
+  - name: gemma-3-12b-it
+    prompt_strategy: single_query
+    output_name: gemma3_visual_cot.json
+
+ablation:
+  subset_cache: data/subsets/lvis/ablation_100_ids.json
+  subset_size: 100
+  subset_seed: 1337
+  temperatures: [0.0, 0.2, 0.5]
+  prompt_variants:
+    baseline:
+      prompt_strategy: single_query
+    prompt_b:
+      prompt_strategy: iterative
+
+force: false

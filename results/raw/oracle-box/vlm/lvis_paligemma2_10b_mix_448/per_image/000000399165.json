@@ -1,0 +1,153 @@
+{
+  "image": "/home/maxim/PycharmProjects/zero-shot-detection-benchmark/data/subsets/lvis_v1_val_unseen/images/000000399165.jpg",
+  "image_id": 399165,
+  "file_name": "000000399165.jpg",
+  "num_crops": 4,
+  "crops": [
+    {
+      "annotation_id": 108744,
+      "bbox": [
+        520.46,
+        161.14,
+        54.76,
+        235.76
+      ],
+      "category_id": 976,
+      "gt_label": "snowboard",
+      "labels": [
+        "snowboard",
+        "blender",
+        "microscope",
+        "sewing_machine",
+        "spatula"
+      ],
+      "prediction": null,
+      "normalized_prediction": "",
+      "matched_label": null,
+      "correct": false,
+      "latency_sec": 0.7535710359807126,
+      "raw_response": {
+        "attempts": [
+          {
+            "prompt": "Detect the following objects in the image: snowboard, blender, microscope, sewing_machine, spatula. Return JSON only in the format [{\"box_2d\":[x1,y1,x2,y2],\"label\":\"class_name\"}] using integer pixel coordinates.",
+            "output": "<start_of_turn>system\nYou are an object detection assistant. Return JSON only in the format [{\"box_2d\":[x1,y1,x2,y2],\"label\":\"class_name\"}] using integer pixel coordinates.\n<end_of_turn>\n<start_of_turn>user\n\nDetect the following objects in the image: snowboard, blender, microscope, sewing_machine, spatula. Return JSON only in the format [{\"box_2d\":[x1,y1,x2,y2],\"label\":\"class_name\"}] using integer pixel coordinates.\n<end_of_turn>\n<start_of_turn>model\n\nSnowboarding."
+          },
+          {
+            "prompt": "Detect the following objects in the image: snowboard, blender, microscope, sewing_machine, spatula. Return JSON only in the format [{\"box_2d\":[x1,y1,x2,y2],\"label\":\"class_name\"}] using integer pixel coordinates. Your entire reply must be a valid JSON array that starts with '[' and ends with ']'. If no objects are detected, respond with []. Do not include any words outside the JSON.",
+            "output": "<start_of_turn>system\nYou are an object detection assistant. Return JSON only in the format [{\"box_2d\":[x1,y1,x2,y2],\"label\":\"class_name\"}] using integer pixel coordinates.\n<end_of_turn>\n<start_of_turn>user\n\nDetect the following objects in the image: snowboard, blender, microscope, sewing_machine, spatula. Return JSON only in the format [{\"box_2d\":[x1,y1,x2,y2],\"label\":\"class_name\"}] using integer pixel coordinates. Your entire reply must be a valid JSON array that starts with '[' and ends with ']'. If no objects are detected, respond with []. Do not include any words outside the JSON.\n<end_of_turn>\n<start_of_turn>model\n\nSorry, as a base VLM I am not trained to answer this question."
+          }
+        ],
+        "final_output": "<start_of_turn>system\nYou are an object detection assistant. Return JSON only in the format [{\"box_2d\":[x1,y1,x2,y2],\"label\":\"class_name\"}] using integer pixel coordinates.\n<end_of_turn>\n<start_of_turn>user\n\nDetect the following objects in the image: snowboard, blender, microscope, sewing_machine, spatula. Return JSON only in the format [{\"box_2d\":[x1,y1,x2,y2],\"label\":\"class_name\"}] using integer pixel coordinates. Your entire reply must be a valid JSON array that starts with '[' and ends with ']'. If no objects are detected, respond with []. Do not include any words outside the JSON.\n<end_of_turn>\n<start_of_turn>model\n\nSorry, as a base VLM I am not trained to answer this question."
+      }
+    },
+    {
+      "annotation_id": 108745,
+      "bbox": [
+        272.12,
+        359.63,
+        37.14,
+        55.06
+      ],
+      "category_id": 976,
+      "gt_label": "snowboard",
+      "labels": [
+        "snowboard",
+        "blender",
+        "microscope",
+        "sewing_machine",
+        "spatula"
+      ],
+      "prediction": null,
+      "normalized_prediction": "",
+      "matched_label": null,
+      "correct": false,
+      "latency_sec": 1.0723279310041107,
+      "raw_response": {
+        "attempts": [
+          {
+            "prompt": "Detect the following objects in the image: snowboard, blender, microscope, sewing_machine, spatula. Return JSON only in the format [{\"box_2d\":[x1,y1,x2,y2],\"label\":\"class_name\"}] using integer pixel coordinates.",
+            "output": "<start_of_turn>system\nYou are an object detection assistant. Return JSON only in the format [{\"box_2d\":[x1,y1,x2,y2],\"label\":\"class_name\"}] using integer pixel coordinates.\n<end_of_turn>\n<start_of_turn>user\n\nDetect the following objects in the image: snowboard, blender, microscope, sewing_machine, spatula. Return JSON only in the format [{\"box_2d\":[x1,y1,x2,y2],\"label\":\"class_name\"}] using integer pixel coordinates.\n<end_of_turn>\n<start_of_turn>model\n\nSorry, as a base VLM I am not trained to answer this question."
+          },
+          {
+            "prompt": "Detect the following objects in the image: snowboard, blender, microscope, sewing_machine, spatula. Return JSON only in the format [{\"box_2d\":[x1,y1,x2,y2],\"label\":\"class_name\"}] using integer pixel coordinates. Your entire reply must be a valid JSON array that starts with '[' and ends with ']'. If no objects are detected, respond with []. Do not include any words outside the JSON.",
+            "output": "<start_of_turn>system\nYou are an object detection assistant. Return JSON only in the format [{\"box_2d\":[x1,y1,x2,y2],\"label\":\"class_name\"}] using integer pixel coordinates.\n<end_of_turn>\n<start_of_turn>user\n\nDetect the following objects in the image: snowboard, blender, microscope, sewing_machine, spatula. Return JSON only in the format [{\"box_2d\":[x1,y1,x2,y2],\"label\":\"class_name\"}] using integer pixel coordinates. Your entire reply must be a valid JSON array that starts with '[' and ends with ']'. If no objects are detected, respond with []. Do not include any words outside the JSON.\n<end_of_turn>\n<start_of_turn>model\n\nSorry, as a base VLM I am not trained to answer this question."
+          }
+        ],
+        "final_output": "<start_of_turn>system\nYou are an object detection assistant. Return JSON only in the format [{\"box_2d\":[x1,y1,x2,y2],\"label\":\"class_name\"}] using integer pixel coordinates.\n<end_of_turn>\n<start_of_turn>user\n\nDetect the following objects in the image: snowboard, blender, microscope, sewing_machine, spatula. Return JSON only in the format [{\"box_2d\":[x1,y1,x2,y2],\"label\":\"class_name\"}] using integer pixel coordinates. Your entire reply must be a valid JSON array that starts with '[' and ends with ']'. If no objects are detected, respond with []. Do not include any words outside the JSON.\n<end_of_turn>\n<start_of_turn>model\n\nSorry, as a base VLM I am not trained to answer this question."
+      }
+    },
+    {
+      "annotation_id": 108746,
+      "bbox": [
+        430.49,
+        385.2,
+        42.49,
+        41.44
+      ],
+      "category_id": 976,
+      "gt_label": "snowboard",
+      "labels": [
+        "snowboard",
+        "blender",
+        "microscope",
+        "sewing_machine",
+        "spatula"
+      ],
+      "prediction": null,
+      "normalized_prediction": "",
+      "matched_label": null,
+      "correct": false,
+      "latency_sec": 1.084119445993565,
+      "raw_response": {
+        "attempts": [
+          {
+            "prompt": "Detect the following objects in the image: snowboard, blender, microscope, sewing_machine, spatula. Return JSON only in the format [{\"box_2d\":[x1,y1,x2,y2],\"label\":\"class_name\"}] using integer pixel coordinates.",
+            "output": "<start_of_turn>system\nYou are an object detection assistant. Return JSON only in the format [{\"box_2d\":[x1,y1,x2,y2],\"label\":\"class_name\"}] using integer pixel coordinates.\n<end_of_turn>\n<start_of_turn>user\n\nDetect the following objects in the image: snowboard, blender, microscope, sewing_machine, spatula. Return JSON only in the format [{\"box_2d\":[x1,y1,x2,y2],\"label\":\"class_name\"}] using integer pixel coordinates.\n<end_of_turn>\n<start_of_turn>model\n\nSorry, as a base VLM I am not trained to answer this question."
+          },
+          {
+            "prompt": "Detect the following objects in the image: snowboard, blender, microscope, sewing_machine, spatula. Return JSON only in the format [{\"box_2d\":[x1,y1,x2,y2],\"label\":\"class_name\"}] using integer pixel coordinates. Your entire reply must be a valid JSON array that starts with '[' and ends with ']'. If no objects are detected, respond with []. Do not include any words outside the JSON.",
+            "output": "<start_of_turn>system\nYou are an object detection assistant. Return JSON only in the format [{\"box_2d\":[x1,y1,x2,y2],\"label\":\"class_name\"}] using integer pixel coordinates.\n<end_of_turn>\n<start_of_turn>user\n\nDetect the following objects in the image: snowboard, blender, microscope, sewing_machine, spatula. Return JSON only in the format [{\"box_2d\":[x1,y1,x2,y2],\"label\":\"class_name\"}] using integer pixel coordinates. Your entire reply must be a valid JSON array that starts with '[' and ends with ']'. If no objects are detected, respond with []. Do not include any words outside the JSON.\n<end_of_turn>\n<start_of_turn>model\n\nSorry, as a base VLM I am not trained to answer this question."
+          }
+        ],
+        "final_output": "<start_of_turn>system\nYou are an object detection assistant. Return JSON only in the format [{\"box_2d\":[x1,y1,x2,y2],\"label\":\"class_name\"}] using integer pixel coordinates.\n<end_of_turn>\n<start_of_turn>user\n\nDetect the following objects in the image: snowboard, blender, microscope, sewing_machine, spatula. Return JSON only in the format [{\"box_2d\":[x1,y1,x2,y2],\"label\":\"class_name\"}] using integer pixel coordinates. Your entire reply must be a valid JSON array that starts with '[' and ends with ']'. If no objects are detected, respond with []. Do not include any words outside the JSON.\n<end_of_turn>\n<start_of_turn>model\n\nSorry, as a base VLM I am not trained to answer this question."
+      }
+    },
+    {
+      "annotation_id": 108747,
+      "bbox": [
+        219.67,
+        360.47,
+        18.37,
+        45.42
+      ],
+      "category_id": 976,
+      "gt_label": "snowboard",
+      "labels": [
+        "snowboard",
+        "blender",
+        "microscope",
+        "sewing_machine",
+        "spatula"
+      ],
+      "prediction": null,
+      "normalized_prediction": "",
+      "matched_label": null,
+      "correct": false,
+      "latency_sec": 1.0719616629939992,
+      "raw_response": {
+        "attempts": [
+          {
+            "prompt": "Detect the following objects in the image: snowboard, blender, microscope, sewing_machine, spatula. Return JSON only in the format [{\"box_2d\":[x1,y1,x2,y2],\"label\":\"class_name\"}] using integer pixel coordinates.",
+            "output": "<start_of_turn>system\nYou are an object detection assistant. Return JSON only in the format [{\"box_2d\":[x1,y1,x2,y2],\"label\":\"class_name\"}] using integer pixel coordinates.\n<end_of_turn>\n<start_of_turn>user\n\nDetect the following objects in the image: snowboard, blender, microscope, sewing_machine, spatula. Return JSON only in the format [{\"box_2d\":[x1,y1,x2,y2],\"label\":\"class_name\"}] using integer pixel coordinates.\n<end_of_turn>\n<start_of_turn>model\n\nSorry, as a base VLM I am not trained to answer this question."
+          },
+          {
+            "prompt": "Detect the following objects in the image: snowboard, blender, microscope, sewing_machine, spatula. Return JSON only in the format [{\"box_2d\":[x1,y1,x2,y2],\"label\":\"class_name\"}] using integer pixel coordinates. Your entire reply must be a valid JSON array that starts with '[' and ends with ']'. If no objects are detected, respond with []. Do not include any words outside the JSON.",
+            "output": "<start_of_turn>system\nYou are an object detection assistant. Return JSON only in the format [{\"box_2d\":[x1,y1,x2,y2],\"label\":\"class_name\"}] using integer pixel coordinates.\n<end_of_turn>\n<start_of_turn>user\n\nDetect the following objects in the image: snowboard, blender, microscope, sewing_machine, spatula. Return JSON only in the format [{\"box_2d\":[x1,y1,x2,y2],\"label\":\"class_name\"}] using integer pixel coordinates. Your entire reply must be a valid JSON array that starts with '[' and ends with ']'. If no objects are detected, respond with []. Do not include any words outside the JSON.\n<end_of_turn>\n<start_of_turn>model\n\nSorry, as a base VLM I am not trained to answer this question."
+          }
+        ],
+        "final_output": "<start_of_turn>system\nYou are an object detection assistant. Return JSON only in the format [{\"box_2d\":[x1,y1,x2,y2],\"label\":\"class_name\"}] using integer pixel coordinates.\n<end_of_turn>\n<start_of_turn>user\n\nDetect the following objects in the image: snowboard, blender, microscope, sewing_machine, spatula. Return JSON only in the format [{\"box_2d\":[x1,y1,x2,y2],\"label\":\"class_name\"}] using integer pixel coordinates. Your entire reply must be a valid JSON array that starts with '[' and ends with ']'. If no objects are detected, respond with []. Do not include any words outside the JSON.\n<end_of_turn>\n<start_of_turn>model\n\nSorry, as a base VLM I am not trained to answer this question."
+      }
+    }
+  ],
+  "prompt": "You are an object recognition assistant.\n\nYou will see a cropped image that contains exactly one object\nfrom the following LVIS categories (unseen split):\n\n- snowboard\n- blender\n- microscope\n- sewing_machine\n- spatula\n\nYour task:\n- Return ONLY the best matching category name from this list.\n- Do not output explanations or extra text.\n\nAnswer with a single string: \"class_name\"."
+}

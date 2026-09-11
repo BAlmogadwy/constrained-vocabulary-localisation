@@ -1,0 +1,88 @@
+{
+ "image": "000000092091.jpg",
+ "model": "qwen/qwen3-vl-235b-a22b-instruct",
+ "labels": [
+  "teddy bear",
+  "toothbrush",
+  "refrigerator",
+  "scissors",
+  "sink",
+  "toaster",
+  "vase"
+ ],
+ "detections": [
+  {
+   "box_2d": [
+    428.8,
+    242.88,
+    638.72,
+    384.0
+   ],
+   "label": "teddy bear",
+   "score": 0.99
+  },
+  {
+   "box_2d": [
+    382.08,
+    247.2,
+    455.04,
+    308.64
+   ],
+   "label": "toothbrush",
+   "score": 0.99
+  }
+ ],
+ "latency_sec": 5.039054799999576,
+ "usage": {
+  "prompt_tokens": 392,
+  "completion_tokens": 95,
+  "total_tokens": 487
+ },
+ "raw_response": {
+  "id": "gen-1783410706-Y6NwPJhGXFGqbZMOHSVT",
+  "object": "chat.completion",
+  "created": 1783410706,
+  "model": "qwen/qwen3-vl-235b-a22b-instruct",
+  "provider": "Novita",
+  "system_fingerprint": null,
+  "service_tier": null,
+  "choices": [
+   {
+    "index": 0,
+    "logprobs": null,
+    "finish_reason": "stop",
+    "native_finish_reason": "stop",
+    "message": {
+     "role": "assistant",
+     "content": "```json\n[\n\t{\"bbox_2d\": [670, 506, 998, 800], \"label\": \"teddy bear\", \"confidence\": 0.99},\n\t{\"bbox_2d\": [597, 515, 711, 643], \"label\": \"toothbrush\", \"confidence\": 0.99}\n]\n```",
+     "refusal": null,
+     "reasoning": null
+    }
+   }
+  ],
+  "usage": {
+   "prompt_tokens": 392,
+   "completion_tokens": 95,
+   "total_tokens": 487,
+   "cost": 0.0002601,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0002601,
+    "upstream_inference_prompt_cost": 0.0001176,
+    "upstream_inference_completions_cost": 0.0001425
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   }
+  }
+ },
+ "ts": "2026-07-07T07:51:49.343973+00:00"
+}

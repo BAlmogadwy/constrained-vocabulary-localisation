@@ -1,0 +1,50 @@
+{
+  "model": "yolo_world",
+  "strategy": "default",
+  "image": "/home/maxim/PycharmProjects/zero-shot-detection-benchmark/data/subsets/lvis_v1_val_unseen/images/000000320875.jpg",
+  "labels": [
+    "blender",
+    "hair_dryer",
+    "lawn_mower",
+    "musical_instrument",
+    "sewing_machine"
+  ],
+  "result": {
+    "detections": [
+      {
+        "label": "blender",
+        "score": 0.7124863862991333,
+        "box_2d": [
+          105.30909729003906,
+          182.05990600585938,
+          181.9846649169922,
+          304.30810546875
+        ],
+        "box": [
+          105.30909729003906,
+          182.05990600585938,
+          181.9846649169922,
+          304.30810546875
+        ]
+      },
+      {
+        "label": "blender",
+        "score": 0.3324420154094696,
+        "box_2d": [
+          412.487548828125,
+          124.40631103515625,
+          435.25567626953125,
+          165.042724609375
+        ],
+        "box": [
+          412.487548828125,
+          124.40631103515625,
+          435.25567626953125,
+          165.042724609375
+        ]
+      }
+    ],
+    "latency_sec": 0.09626674745231867,
+    "raw_response": null
+  }
+}

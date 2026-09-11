@@ -1,0 +1,268 @@
+{
+ "image": "000000366884.jpg",
+ "model": "qwen/qwen3-vl-235b-a22b-instruct",
+ "labels": [
+  "book",
+  "hair drier",
+  "refrigerator",
+  "sink",
+  "toaster",
+  "toothbrush",
+  "vase"
+ ],
+ "detections": [
+  {
+   "box_2d": [
+    0.0,
+    158.88,
+    23.68,
+    172.8
+   ],
+   "label": "book",
+   "score": 0.95
+  },
+  {
+   "box_2d": [
+    0.0,
+    172.8,
+    23.68,
+    182.88
+   ],
+   "label": "book",
+   "score": 0.95
+  },
+  {
+   "box_2d": [
+    0.0,
+    182.88,
+    23.68,
+    192.0
+   ],
+   "label": "book",
+   "score": 0.95
+  },
+  {
+   "box_2d": [
+    0.0,
+    192.0,
+    23.68,
+    201.12
+   ],
+   "label": "book",
+   "score": 0.95
+  },
+  {
+   "box_2d": [
+    0.0,
+    201.12,
+    23.68,
+    210.24
+   ],
+   "label": "book",
+   "score": 0.95
+  },
+  {
+   "box_2d": [
+    0.0,
+    210.24,
+    23.68,
+    219.36
+   ],
+   "label": "book",
+   "score": 0.95
+  },
+  {
+   "box_2d": [
+    0.0,
+    219.36,
+    23.68,
+    228.48
+   ],
+   "label": "book",
+   "score": 0.95
+  },
+  {
+   "box_2d": [
+    0.0,
+    228.48,
+    23.68,
+    237.6
+   ],
+   "label": "book",
+   "score": 0.95
+  },
+  {
+   "box_2d": [
+    0.0,
+    237.6,
+    23.68,
+    246.72
+   ],
+   "label": "book",
+   "score": 0.95
+  },
+  {
+   "box_2d": [
+    0.0,
+    246.72,
+    23.68,
+    255.84
+   ],
+   "label": "book",
+   "score": 0.95
+  },
+  {
+   "box_2d": [
+    0.0,
+    255.84,
+    23.68,
+    264.96
+   ],
+   "label": "book",
+   "score": 0.95
+  },
+  {
+   "box_2d": [
+    0.0,
+    264.96,
+    23.68,
+    274.08
+   ],
+   "label": "book",
+   "score": 0.95
+  },
+  {
+   "box_2d": [
+    0.0,
+    274.08,
+    23.68,
+    283.2
+   ],
+   "label": "book",
+   "score": 0.95
+  },
+  {
+   "box_2d": [
+    0.0,
+    283.2,
+    23.68,
+    292.32
+   ],
+   "label": "book",
+   "score": 0.95
+  },
+  {
+   "box_2d": [
+    0.0,
+    292.32,
+    23.68,
+    301.44
+   ],
+   "label": "book",
+   "score": 0.95
+  },
+  {
+   "box_2d": [
+    0.0,
+    301.44,
+    23.68,
+    310.56
+   ],
+   "label": "book",
+   "score": 0.95
+  },
+  {
+   "box_2d": [
+    0.0,
+    310.56,
+    23.68,
+    319.68
+   ],
+   "label": "book",
+   "score": 0.95
+  },
+  {
+   "box_2d": [
+    0.0,
+    319.68,
+    23.68,
+    328.8
+   ],
+   "label": "book",
+   "score": 0.95
+  },
+  {
+   "box_2d": [
+    0.0,
+    328.8,
+    23.68,
+    337.92
+   ],
+   "label": "book",
+   "score": 0.95
+  },
+  {
+   "box_2d": [
+    0.0,
+    337.92,
+    23.68,
+    347.04
+   ],
+   "label": "book",
+   "score": 0.95
+  }
+ ],
+ "latency_sec": 18.500408799998695,
+ "usage": {
+  "prompt_tokens": 392,
+  "completion_tokens": 800,
+  "total_tokens": 1192
+ },
+ "raw_response": {
+  "id": "gen-1783413112-FoxIhitpwrBwD1zGGkPq",
+  "object": "chat.completion",
+  "created": 1783413112,
+  "model": "qwen/qwen3-vl-235b-a22b-instruct",
+  "provider": "Alibaba",
+  "system_fingerprint": null,
+  "service_tier": null,
+  "choices": [
+   {
+    "index": 0,
+    "logprobs": null,
+    "finish_reason": "length",
+    "native_finish_reason": "length",
+    "message": {
+     "role": "assistant",
+     "content": "```json\n[\n\t{\"bbox_2d\": [0, 331, 37, 360], \"label\": \"book\", \"confidence\": 0.95},\n\t{\"bbox_2d\": [0, 360, 37, 381], \"label\": \"book\", \"confidence\": 0.95},\n\t{\"bbox_2d\": [0, 381, 37, 400], \"label\": \"book\", \"confidence\": 0.95},\n\t{\"bbox_2d\": [0, 400, 37, 419], \"label\": \"book\", \"confidence\": 0.95},\n\t{\"bbox_2d\": [0, 419, 37, 438], \"label\": \"book\", \"confidence\": 0.95},\n\t{\"bbox_2d\": [0, 438, 37, 457], \"label\": \"book\", \"confidence\": 0.95},\n\t{\"bbox_2d\": [0, 457, 37, 476], \"label\": \"book\", \"confidence\": 0.95},\n\t{\"bbox_2d\": [0, 476, 37, 495], \"label\": \"book\", \"confidence\": 0.95},\n\t{\"bbox_2d\": [0, 495, 37, 514], \"label\": \"book\", \"confidence\": 0.95},\n\t{\"bbox_2d\": [0, 514, 37, 533], \"label\": \"book\", \"confidence\": 0.95},\n\t{\"bbox_2d\": [0, 533, 37, 552], \"label\": \"book\", \"confidence\": 0.95},\n\t{\"bbox_2d\": [0, 552, 37, 571], \"label\": \"book\", \"confidence\": 0.95},\n\t{\"bbox_2d\": [0, 571, 37, 590], \"label\": \"book\", \"confidence\": 0.95},\n\t{\"bbox_2d\": [0, 590, 37, 609], \"label\": \"book\", \"confidence\": 0.95},\n\t{\"bbox_2d\": [0, 609, 37, 628], \"label\": \"book\", \"confidence\": 0.95},\n\t{\"bbox_2d\": [0, 628, 37, 647], \"label\": \"book\", \"confidence\": 0.95},\n\t{\"bbox_2d\": [0, 647, 37, 666], \"label\": \"book\", \"confidence\": 0.95},\n\t{\"bbox_2d\": [0, 666, 37, 685], \"label\": \"book\", \"confidence\": 0.95},\n\t{\"bbox_2d\": [0, 685, 37, 704], \"label\": \"book\", \"confidence\": 0.95},\n\t{\"bbox_2d\": [0, 704, 37, 723], \"label\": \"book\", \"confidence\": 0.95},\n\t{\"bbox_2d\": [0, 723, ",
+     "refusal": null,
+     "reasoning": null
+    }
+   }
+  ],
+  "usage": {
+   "prompt_tokens": 392,
+   "completion_tokens": 800,
+   "total_tokens": 1192,
+   "cost": 0.00093392,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00093392,
+    "upstream_inference_prompt_cost": 0.00010192,
+    "upstream_inference_completions_cost": 0.000832
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   }
+  }
+ },
+ "ts": "2026-07-07T08:32:08.583944+00:00"
+}

@@ -1,0 +1,214 @@
+{
+  "model": "llava-v1.6-mistral-7b-hf",
+  "strategy": "single_query",
+  "image": "/home/maxim/PycharmProjects/zero-shot-detection-benchmark/data/subsets/lvis_v1_val_unseen/images/000000330420.jpg",
+  "labels": [
+    "blender",
+    "lawn_mower",
+    "microscope",
+    "musical_instrument",
+    "stapler_(stapling_machine)"
+  ],
+  "detections": [
+    {
+      "box_2d": [
+        0.0,
+        0.0,
+        0.256,
+        0.256
+      ],
+      "label": "onion"
+    },
+    {
+      "box_2d": [
+        0.0,
+        0.0,
+        0.256,
+        0.256
+      ],
+      "label": "purple_onion"
+    },
+    {
+      "box_2d": [
+        0.0,
+        0.0,
+        0.256,
+        0.256
+      ],
+      "label": "red_onion"
+    },
+    {
+      "box_2d": [
+        0.0,
+        0.0,
+        0.256,
+        0.256
+      ],
+      "label": "onion_on_board"
+    },
+    {
+      "box_2d": [
+        0.0,
+        0.0,
+        0.256,
+        0.256
+      ],
+      "label": "purple_onion_on_board"
+    },
+    {
+      "box_2d": [
+        0.0,
+        0.0,
+        0.256,
+        0.256
+      ],
+      "label": "red_onion_on_board"
+    },
+    {
+      "box_2d": [
+        0.0,
+        0.0,
+        0.256,
+        0.256
+      ],
+      "label": "onion_on_board_purple"
+    },
+    {
+      "box_2d": [
+        0.0,
+        0.0,
+        0.256,
+        0.256
+      ],
+      "label": "onion_on_board_red"
+    },
+    {
+      "box_2d": [
+        0.0,
+        0.0,
+        0.256,
+        0.256
+      ],
+      "label": "onion_on_board_purple_red"
+    },
+    {
+      "box_2d": [
+        0.0,
+        0.0,
+        0.256,
+        0.256
+      ],
+      "label": "onion_on_board_red_purple"
+    },
+    {
+      "box_2d": [
+        0.0,
+        0.0,
+        0.256,
+        0.256
+      ],
+      "label": "onion_on_board_red_purple_red"
+    },
+    {
+      "box_2d": [
+        0.0,
+        0.0,
+        0.256,
+        0.256
+      ],
+      "label": "onion_on_board_red_purple_red_red"
+    },
+    {
+      "box_2d": [
+        0.0,
+        0.0,
+        0.256,
+        0.256
+      ],
+      "label": "onion_on_board_red_purple_red_red_red"
+    },
+    {
+      "box_2d": [
+        0.0,
+        0.0,
+        0.256,
+        0.256
+      ],
+      "label": "onion_on_board_red_purple_red_red_red_red"
+    },
+    {
+      "box_2d": [
+        0.0,
+        0.0,
+        0.256,
+        0.256
+      ],
+      "label": "onion_on_board_red_purple_red_red_red_red_red"
+    },
+    {
+      "box_2d": [
+        0.0,
+        0.0,
+        0.256,
+        0.256
+      ],
+      "label": "onion_on_board_red_purple_red_red_red_red_red_red"
+    },
+    {
+      "box_2d": [
+        0.0,
+        0.0,
+        0.256,
+        0.256
+      ],
+      "label": "onion_on_board_red_purple_red_red_red_red_red_red_red"
+    },
+    {
+      "box_2d": [
+        0.0,
+        0.0,
+        0.256,
+        0.256
+      ],
+      "label": "onion_on_board_red_purple_red_red_red_red_red_red_red_red"
+    },
+    {
+      "box_2d": [
+        0.0,
+        0.0,
+        0.256,
+        0.256
+      ],
+      "label": "onion_on_board_red_purple_red_red_red_red_red_red_red_red_red"
+    },
+    {
+      "box_2d": [
+        0.0,
+        0.0,
+        0.256,
+        0.256
+      ],
+      "label": "onion_on_board_red_purple_red_red_red_red_red_red_red_red_red_red"
+    },
+    {
+      "box_2d": [
+        0.0,
+        0.0,
+        0.256,
+        0.256
+      ],
+      "label": "onion_on_board_red_purple_red_red_red_red_red_red_red_red_red_red_red"
+    },
+    {
+      "box_2d": [
+        0.0,
+        0.0,
+        0.256,
+        0.256
+      ],
+      "label": "onion_on_board_red_purple_red_red_red_red_red_red_red_red_red_red_red_red"
+    }
+  ],
+  "latency_sec": 245.1253228179412,
+  "raw_response": "USER:  \nDetect the following objects in the image: blender, lawn_mower, microscope, musical_instrument, stapler_(stapling_machine). For each detected object, provide JSON entries in the form [{\"box_2d\": [x1, y1, x2, y2], \"label\": \"class_name\"}]. Return only JSON. ASSISTANT: ```json\n[\n  {\n    \"box_2d\": [\n     0.000,\n     0.000,\n     0.256,\n     0.256\n    ],\n    \"label\": \"onion\"\n  },\n  {\n    \"box_2d\": [\n     0.000,\n     0.000,\n     0.256,\n     0.256\n    ],\n    \"label\": \"purple_onion\"\n  },\n  {\n    \"box_2d\": [\n     0.000,\n     0.000,\n     0.256,\n     0.256\n    ],\n    \"label\": \"red_onion\"\n  },\n  {\n    \"box_2d\": [\n     0.000,\n     0.000,\n     0.256,\n     0.256\n    ],\n    \"label\": \"onion_on_board\"\n  },\n  {\n    \"box_2d\": [\n     0.000,\n     0.000,\n     0.256,\n     0.256\n    ],\n    \"label\": \"purple_onion_on_board\"\n  },\n  {\n    \"box_2d\": [\n     0.000,\n     0.000,\n     0.256,\n     0.256\n    ],\n    \"label\": \"red_onion_on_board\"\n  },\n  {\n    \"box_2d\": [\n     0.000,\n     0.000,\n     0.256,\n     0.256\n    ],\n    \"label\": \"onion_on_board_purple\"\n  },\n  {\n    \"box_2d\": [\n     0.000,\n     0.000,\n     0.256,\n     0.256\n    ],\n    \"label\": \"onion_on_board_red\"\n  },\n  {\n    \"box_2d\": [\n     0.000,\n     0.000,\n     0.256,\n     0.256\n    ],\n    \"label\": \"onion_on_board_purple_red\"\n  },\n  {\n    \"box_2d\": [\n     0.000,\n     0.000,\n     0.256,\n     0.256\n    ],\n    \"label\": \"onion_on_board_red_purple\"\n  },\n  {\n    \"box_2d\": [\n     0.000,\n     0.000,\n     0.256,\n     0.256\n    ],\n    \"label\": \"onion_on_board_red_purple_red\"\n  },\n  {\n    \"box_2d\": [\n     0.000,\n     0.000,\n     0.256,\n     0.256\n    ],\n    \"label\": \"onion_on_board_red_purple_red_red\"\n  },\n  {\n    \"box_2d\": [\n     0.000,\n     0.000,\n     0.256,\n     0.256\n    ],\n    \"label\": \"onion_on_board_red_purple_red_red_red\"\n  },\n  {\n    \"box_2d\": [\n     0.000,\n     0.000,\n     0.256,\n     0.256\n    ],\n    \"label\": \"onion_on_board_red_purple_red_red_red_red\"\n  },\n  {\n    \"box_2d\": [\n     0.000,\n     0.000,\n     0.256,\n     0.256\n    ],\n    \"label\": \"onion_on_board_red_purple_red_red_red_red_red\"\n  },\n  {\n    \"box_2d\": [\n     0.000,\n     0.000,\n     0.256,\n     0.256\n    ],\n    \"label\": \"onion_on_board_red_purple_red_red_red_red_red_red\"\n  },\n  {\n    \"box_2d\": [\n     0.000,\n     0.000,\n     0.256,\n     0.256\n    ],\n    \"label\": \"onion_on_board_red_purple_red_red_red_red_red_red_red\"\n  },\n  {\n    \"box_2d\": [\n     0.000,\n     0.000,\n     0.256,\n     0.256\n    ],\n    \"label\": \"onion_on_board_red_purple_red_red_red_red_red_red_red_red\"\n  },\n  {\n    \"box_2d\": [\n     0.000,\n     0.000,\n     0.256,\n     0.256\n    ],\n    \"label\": \"onion_on_board_red_purple_red_red_red_red_red_red_red_red_red\"\n  },\n  {\n    \"box_2d\": [\n     0.000,\n     0.000,\n     0.256,\n     0.256\n    ],\n    \"label\": \"onion_on_board_red_purple_red_red_red_red_red_red_red_red_red_red\"\n  },\n  {\n    \"box_2d\": [\n     0.000,\n     0.000,\n     0.256,\n     0.256\n    ],\n    \"label\": \"onion_on_board_red_purple_red_red_red_red_red_red_red_red_red_red_red\"\n  },\n  {\n    \"box_2d\": [\n     0.000,\n     0.000,\n     0.256,\n     0.256\n    ],\n    \"label\": \"onion_on_board_red_purple_red_red_red_red_red_red_red_red_red_red_red_red\"\n  },\n  {\n    \"box_2d\": [\n     0.000,\n     0.000,\n     0.256,\n     0.256\n    ],\n    \"label\": \"onion_on_board_red_purple_red_red_red_red_red_red_red_red_red_red_red_red\"\n  },\n  {\n    \"box_2d\": [\n     0.000,\n     0.000,\n     0.256,\n     0.256\n    ],\n    \"label\": \"onion_on_board_red_purple_red_red_red_red_red_red_red_red_red_red_red_red\"\n  },\n  {\n    \"box_2d\": [\n     0.000,\n     0.000,\n     0.256,\n     0.256\n    ],\n    \"label\": \"onion_on_board_red_purple_red_red_red_red_red_red_red_red_red_red_red_red\"\n  },\n  {\n    \"box_2d\": [\n     0.000,\n     0.000,\n     0.256,\n     0.256\n    ],\n    \"label\": \"onion_on_board_red_purple_red_red_red_red_red_red_red_red_red_red_red_red\"\n  },\n  {\n    \"box_2d\": [\n     0.000,\n     0.000,\n     0.256,\n     0.256\n    ],\n    \"label\": \"onion_on_board_red_purple_red_red_red_red_red_red_red_red_red_red_red_red\"\n  },\n  {\n    \"box_2d\": [\n     0.000,\n     0.000,\n     0.256,\n     0.256\n    ],\n    \"label\": \"onion_on_board_red_purple_red_red_red_red_red_red_red_red_red_red_red_red\"\n  },\n  {\n    \"box_2d\": [\n     0.000,\n     0.000,\n     0.256,\n     0.256\n    ],\n    \"label\": \"onion_on_board_red_purple_red_red_red_red_red_red_red_red_red_red_red_red\"\n  },\n  {\n    \"box_2d\": [\n     0.000,\n     0.000,\n     0.256,\n     0.256\n    ],\n    \"label\": \"onion_on_board_red_purple_red_red_red_red_red_red_red_red_red_red_red_red\"\n  },\n  {\n    \"box_2d\": [\n     0.000,\n     0.000,\n     0.256,\n     0.256\n    ],\n    \"label\": \"onion_on_board_red_purple_red_red_red_red_red_red_red_red_red_red_red_red\"\n  },\n  {\n    \"box_2d\": [\n     0.000,\n     0.000,\n     0.256,\n     0.256\n    ],\n    \"label\": \"onion_on_board_red_purple_red_red_red_red_red_red_red_red_red_red_red_red\"\n  },\n  {\n    \"box_2d\": [\n     0.000,\n     0.000,\n     0.256,\n     0.256\n    ],\n    \"label\": \"onion_on_board_red_purple_red_red_red_red_red_red_red_red_red_red_red_red\"\n  },\n  {\n    \"box_2d\": [\n     0.000,\n     0.000,\n     0.256,\n     0.256\n    ],\n    \"label\": \"onion_on_board_red_purple_red_red_red_red_red_red_red_red_red_red_red_red\"\n  },\n  {\n    \"box_2d\": [\n     0.000,\n     0.000,\n     0.256,\n     0.256\n    ],\n    \"label\": \"onion_on_board_red_purple_red_red_red_red_red_red_red_red_red_red_red_red\"\n  },\n  {\n    \"box_2d\": [\n     0.000,\n     0.000,\n     0.256,\n     0.256\n    ],\n    \"label\": \"onion_on_board_red_purple_red_red_red_red_red_red_red_red_red_red_red_red\"\n  },\n  {\n    \"box_2d\": [\n     0.000,\n     0.000,\n     0.256,\n     0.256\n    ],\n    \"label\": \"onion_on_board_red_purple_red_red_red_red_red_red_red_red_red_red_red_red\"\n  },\n  {\n    \"box_2d\": [\n     0.000,\n     0.000,\n     0.256,\n     0.256\n    ],\n    \"label\": \"onion_on_board_red_purple_red_red_red_red_red_red_red_red_red_red_red_red\"\n  },\n  {\n    \"box_2d\": [\n     0.000,\n     0.000,\n     0.256,\n     0.256\n    ],\n    \"label\": \"onion_on_board_red_purple_red_red_red_red_red_red_red_red_red_red_red_red\"\n  },\n  {\n    \"box_2d\": [\n     0.000,\n     0.000,\n     0.256,\n     0.256\n    ],\n    \"label\": \"onion_on_board_red_purple_red_red_red_red_red_red_red_red_red_red_red_red\"\n  },\n  {\n    \"box_2d\": [\n     0.000,\n     0.000,\n     0.256,\n     0.256\n    ],\n    \"label\": \"onion_on_board_red_purple_red_red_red_red_red_red_red_red_red_red_red_red\"\n  },\n  {\n    \"box_2d\": [\n     0.000,\n     0.000,\n     0.256,\n     0.256\n    ],\n    \"label\": \"onion_on_board_red_purple_red_red_red_red_red_red_red_red_red_red_red_red\"\n  },\n  {\n    \"box_2d\": [\n     0.000,\n     0.000,\n     0.256,\n     0.256\n    ],\n    \"label\": \"onion_on_board_red_purple_red_red_red_red_red_red_red_red_red_red_red_red\"\n  },\n  {\n    \"box_2d\": [\n     0.000,\n     0.000,\n     0.256,\n     0.256\n    ],\n    \"label\": \"onion_on_board_red_purple_red_red_red_red_red_red_red_red_red_red_red_red\"\n  },\n  {\n    \"box_2d\": [\n     0.000,\n     0.000,\n     0.256,\n     0.256\n    ],\n    \"label\": \"onion_on_board_red_purple_red_red_red_red_red_red_red_red_red_red_red_red\"\n  },\n  {\n    \"box_2d\": [\n     0.000,\n     0.000,\n     0.256,\n     0.256\n    ],\n    \"label\": \"onion_on_board_red_purple_red_red_red_red_red_red_red_red_red_red_red_red\"\n  },\n  {\n    \"box_2d\": [\n     0.000,\n     0.000,\n     0.256,\n     0.256\n    ],\n    \"label\": \"onion_on_board_red_purple_red_red_red_red_red_red_red_red_red_red_red_red\"\n  },\n  {\n    \"box_2d\": [\n     0.000,\n     0.000,\n     0.256,\n     0.256\n    ],\n    \"label\": \"onion_on_board_red_purple_red_red_red_red_red_red_red_red_red_red_red_red\"\n  },\n  {\n    \"box_2d\": [\n     0.000,\n     0.000,\n     0.256,\n     0.256\n    ],\n    \"label\": \"onion_on_board_red_purple_red_red_red_red_red_red_red_red_red_red_red_red\"\n  },\n  {\n    \"box_2d\": [\n     0.000,\n     0.000,\n     0.256,\n     0.256\n    ],\n    \"label\": \"onion_on_board_red_purple_red_red_red_red_red_red_red_red_red_red_red_red\"\n  },\n  {\n    \"box_2d\": [\n     0.000,\n     0.000,\n     0.256,\n     0.256\n    ],\n    \"label\": \"onion_on_board_red_purple_red_red_red_red_red_red_red_red_red_red_red_red\"\n  },\n  {\n    \"box_2d\": [\n     0.000,\n     0.000,\n     0.256,\n     0.256\n    ],\n    \"label\": \"onion_on_board_red_purple_red_red_red_red_red_red_red_red_red_red_red_red\"\n  },\n  {\n    \"box_2d\": [\n     0.000,\n     0.000,\n     0.256,\n     0.256\n    ],\n    \"label\": \"onion_on_board_red_purple_red_red_red_red_red_red_red_red_red_red_red_red\"\n  },\n  {\n    \"box_2d\": [\n     0.000,\n     0.000,\n     0.256,\n     0.256\n    ],\n    \"label\": \"onion_on_board_red_purple_red_red_red_red_red_red_red_red_red_red_red_red\"\n  },\n  {\n    \"box_2d\": [\n     0.000,\n     0.000,\n     0.256,\n     0.256\n    ],\n    \"label\": \"onion_on_board_red_purple_red_red_red_red_red_red_red_red_red_red_red_red\"\n  },\n  {\n    \"box_2d\": [\n     0.000,\n     0.000,\n     0.256,\n     0.256\n    ],\n    \"label\": \"onion_on_board_red_purple_red_red_red_red_red_red_red_red_red_red_red_red\"\n  },\n  {\n    \"box_2d\": [\n     0.000,\n     0.000,\n     0.256,\n     0.256\n    ],\n    \"label\": \"onion_on_board_red_purple_red_red_red_red_red_red_red_red_red_red_red_red\"\n  },\n  {\n    \"box_2d\": [\n     0.000,\n     0.000,\n     0.256,\n     0.256\n    ],\n    \"label\": \"onion_on_board_red_purple_red_red_red_red_red_red_red_red_red_red_red_red\"\n  },\n  {\n    \"box_2d\": [\n     0.000,\n     0.000,\n     0.256,\n     0.256\n    ],\n    \"label\": \"onion_on_board_red_purple_red_red_red_red_red_red_red_red_red_red_red_red\"\n  },\n  {\n    \"box_2d\": [\n     0.000,\n     0.000,\n     0.256,\n     0.256\n    ],\n    \"label\": \"onion_on_board_red_purple_red_red_red_red_red_red_red_red_red_red_red_red\"\n  },\n  {\n    \"box_2d\": [\n     0.000,\n     0.000,\n     0.256,\n     0.256\n    ],\n    \"label\": \"onion_on_board_red_purple_red_red_red_red_red_red_red_red_red_red_red_red\"\n  },\n  {\n    \"box_2d\": [\n     0.000,\n     0.000,\n     0.256,\n     0.256\n    ],\n    \"label\": \"onion_on_board_red_purple_red_red_red_red_red_red_red_red_red_red_red_red\"\n  },\n  {\n    \"box_2d\": [\n     0.000,\n     0.000,\n     0.256,\n     0.256\n    ],\n    \"label\": \"onion_on_board_red_purple_red_red_red_red_red_red_red_red_red_red_red_red\"\n  },\n  {\n    \"box_2d\": [\n     0.000,\n     0.000,\n     0.256,\n     0.256\n    ],\n    \"label\": \"onion_on_board_red_purple_red_red_red_red_red_red_red_red_red_red_red_red\"\n  },\n  {\n    \"box_2d\": [\n     0.000,\n     0.000,\n     0.256,\n     0.256\n    ],\n    \"label\": \"onion_on_board_red_purple_red_red_red_red_red_red_red_red_red_red_red_red\"\n  },\n  {\n    \"box_2d\": [\n     0.000,\n     0.000,\n     0.256,\n     0.256\n    ],\n    \"label\": \"onion_on_board_red_purple_red_red_red_red_red_red_red_red_red_red_red_red\"\n  },\n  {\n    \"box_2d\": [\n     0.000,\n     0.000,\n     0.256,\n     0.256\n    ],\n    \"label\": \"onion_on_board_red_purple_red_red_red_red_red_red_red_red_red_red_red_red\"\n  },\n  {\n    \"box_2d\": [\n     0.000,\n     0.000,\n     0.256,\n     0.256\n    ],\n    \"label\": \"onion_on_board_red_purple_red_red_red_red_red_red_red_red_red_red_red_red\"\n  },\n  {\n    \"box_2d\": [\n     0.000,\n     0.000,\n     0.256,\n     0.256\n    ],\n    \"label\": \"onion_on_board_red_purple_red_red_red_red_red_red_red_red_red_red_red_red\"\n  },\n  {\n    \"box_2d\": [\n     0.000,\n     0.000,\n     0.256,\n     0.256\n    ],\n    \"label\": \"onion_on_board_red_purple_red_red_red_red_red_red_red_red_red_red_red_red\"\n  },\n  {\n    \"box_2d\": [\n     0.000,\n     0.000,\n     0.256,\n     0.256\n    ],\n    \"label\": \"onion_on_board_red_purple_red_red_red_red_red_red_red_red_red_red_red_red\"\n  },\n  {\n    \"box_2d\": [\n     0.000,\n     0.000,\n     0.256,\n     0.256\n    ],\n    \"label\": \"onion_on_board_red_purple_red_red_red_red_red_red_red_red_red_red_red_red\"\n  },\n  {\n    \"box_2d\": [\n     0.000,\n     0.000,\n     0.256,\n     0.256\n    ],\n    \"label\": \"onion_on_board_red_purple_red_red_red_red_red_red_red_red_red_red_red_red\"\n  },\n  {\n    \"box_2d\": [\n     0.000,\n     0.000,\n     0.256,\n     0.256\n    ],\n    \"label\": \"onion_on_board_red_purple_red_red_red_red_red_red_red_red_red_red_red_red\"\n  },\n  {\n    \"box_2d\": [\n     0.000,\n     0.000,\n     0.256,\n     0.256\n    ],\n    \"label\": \"onion_on_board_red_purple_red_red_red_red_red_red_red_red_red_red_red_red\"\n  },\n  {\n    \"box_2d\": [\n     0.000,\n     0.000,\n     0.256,\n     0.256\n    ],\n    \"label\": \"onion_on_board_red_purple_red_red_red_red_red_red_red_red_red_red_red_red\"\n  },\n  {\n    \"box_2d\": [\n     0.000,\n     0.000,\n     0.256,\n     0.256\n    ],\n    \"label\": \"onion_on_board_red_purple_red_red_red_red_red_red_red_red_red_red_red_red\"\n  },\n  {\n    \"box_2d\": [\n     0.000,\n     0.000,\n     0.256,\n     0.256\n    ],\n    \"label\": \"onion_on_board_red_purple_red_red_red_red_red_red_red_red_red_red_red_red\"\n  },\n  {\n    \"box_2d\": [\n     0.000,\n     0.000,\n     0.256,\n     0.256\n    ],\n    \"label\": \"onion_on_board_red_purple_red_red_red_red_red_red_red_red_red_red_red_red\"\n  },\n  {\n    \"box_2d\": [\n     0.000,\n     0.000,\n     0.256,\n     0.256\n    ],\n    \"label\": \"onion_on_board_red_purple_red_red_red_red_red_red_red_red_red_red_red_red\"\n  },\n  {\n    \"box_2d\": [\n     0.000,\n     0.000,\n     0.256,\n     0.256\n    ],\n    \"label\": \"onion_on_board_red_purple_red_red_red_red_red_red_red_red_red_red_red_red\"\n  },\n  {\n    \"box_2d\": [\n     0.000,\n     0.000,\n     0.256,\n     0.256\n    ],\n    \"label\": \"onion_on_board_red_purple_red_red_red_red_red_red_red_red_red_red_red_red\"\n  },\n  {\n    \"box_2d\": [\n     0.000,\n     0.000,\n     0.256,\n     0.256\n    ],\n    \"label\": \"onion_on_board_red_purple_red_red_red_red_red_red_red_red_red_red_red_red\"\n  },\n  {\n    \"box_2d\": [\n     0.000,\n     0.000,\n     0.256,\n     0.256\n    ],\n    \"label\": \"onion_on_board_red_purple_red_red_red_red_red_red_red_red_red_red_red_red\"\n  },\n  {\n    \"box_2d\": [\n     0.000,\n     0.000,\n     0.256,\n     0.256\n    ],\n    \"label\": \"onion_on_board_red_purple_red_red_red_red_red_red_red_red_red_red_red_red\"\n  },\n  {\n    \"box_2d\": [\n     0.000,\n     0.000,\n     0.256,\n     0.256\n    ],\n    \"label\": \"onion_on_board_red_purple_red_red_red_red_red_red_red_red_red_red_red_red\"\n  },\n  {\n    \"box_2d\": [\n     0.000,\n     0.000,\n     0.256,\n     0.256\n    ],\n    \"label\": \"onion_on_board_red_purple_red_red_red_red_red_red_red_red_red_red_red_red\"\n  },\n  {\n    \"box_2d\": [\n     0.000,\n     0.000,\n     0.256,\n     0.256\n    ],\n    \"label\": \"onion_on_board_red_purple_red_red_red_red_red_red_red_red_red_red_red_red\"\n  },\n  {\n    \"box_2d\": [\n     0.000,\n     0.000,\n     0.256,\n     0.256\n    ],\n    \"label\": \"onion_on_board_red_purple_red_red_red_red_red_red_red_red_red_red_red_red\"\n  },\n  {\n    \"box_2d\": [\n     0.000,\n     0.000,\n     0.256,\n     0.256\n    ],\n    \"label\": \"onion_on_board_red_purple_red_red_red_red_red_red_red_red_red_red_red_red\"\n  },\n  {\n    \"box_2d\": [\n     0.000,\n     0.000,\n     0.256,\n     0.256\n    ],\n    \"label\": \"onion_on_board_red_purple_red_red_red_red_red_red_red_red_red_red_red_red\"\n  },\n  {\n    \"box_2d\": [\n     0.000,\n     0.000,\n     0.256,\n     0.256\n    ],\n    \"label\": \"onion_on_board_red_purple_red_red_red_red_red_red_red_red_red_red_red_red\"\n  },\n  {\n    \"box_2d\": [\n     0.000,\n     0.000,\n     0.256,\n     0.256\n    ],\n    \"label\": \"onion_on_board_red_purple_red_red_red_red_red_red_red_red_red_red_red_red\"\n  },\n  {\n    \"box_2d\": [\n     0.000,\n     0.000,\n     0.256,\n     0.256\n    ],\n    \"label\": \"onion_on_board_red_purple_red_red_red_red_red_red_red_red_red_red_red_red\"\n  },\n  {\n    \"box_2d\": [\n     0.000,\n     0.000,\n     0.256,\n     0.256\n    ],\n    \"label\": \"onion_on_board_red_purple_red_red_red_red_red_red_red_red_red_red_red_red\"\n  },\n  {\n    \"box_2d\": [\n     0.000,\n     0.000,\n     0.256,\n     0.256\n    ],\n    \"label\": \"onion_on_board_red_purple_red_red_red_red_red_red_red_red_red_red_red_red\"\n  },\n  {\n    \"box_2d\": [\n     0.000,\n     0.000,\n     0.256,\n     0.256\n    ],\n    \"label\": \"onion_on_board_red_purple_red_red_red_red_red_red_red_red_red_red_red_red\"\n  },\n  {\n    \"box_2d\": [\n     0.000,\n     0.000,\n     0.256,\n     0.256\n    ],\n    \"label\": \"onion_on_board_red_purple_red_red_red_red_red_red_red_red_red_red_red_red\"\n  },\n  {\n    \"box_2d\": [\n     0.000,\n     0.000,\n     0.256,\n     0.256\n    ],\n    \"label\": \"onion_on_board_red_purple_red_red_red_red_red_red_red_red_red_red_red_red\"\n  },\n  {\n    \"box_2d\": [\n     0.000,\n     0.000,\n     0.256,\n     0.256\n    ],\n    \"label\": \"onion_on_board_red_purple_red_red_red_red_red_red_red_red_red_red_red_red\"\n  },\n  {\n    \"box_2d\": [\n     0.000,\n     0.000,\n     0.256,\n     0.256\n    ],\n    \"label\": \"onion_on_board_red_purple_red_red_red_red_red_red_red_red_red_red_red_red\"\n  },\n  {\n    \"box_2d\": [\n     0.000,\n     0.000,\n     0.256,\n     0.256\n    ],\n    \"label\": \"onion_on_board_red_purple_red_red_red_red_red_red_red_red_red_red_red_red\"\n  },\n  {\n    \"box_2d\": [\n     0.000,\n     0.000,\n     0.256,\n     0.256\n    ],\n    \"label\": \"onion_on_board_red_purple_red_red_red_red_red_red_red_red_red_red_red_red\"\n  },\n  {\n    \"box_2d\": [\n     0.000,\n     0.000,\n     0.256,\n     0.256\n    ],\n    \"label\": \"onion_on_board_red_purple_red_red_red_red_red_red_red_red_red_red_red_red\"\n  },\n  {\n    \"box_2d\": [\n     0.000,\n     0.000,\n     0.256,\n     0.256\n    ],\n    \"label\": \"onion_on_board_red_purple_red_red_red_red_red_red_red_red_red_red_red_red\"\n  },\n  {\n    \"box_2d\": [\n     0.000,\n     0.000,\n     0.256,\n     0.256\n    ],\n    \"label\": \"onion_on_board_red_purple_red_red_red_red_red_red_red_red_red_red_red_red\"\n  },\n  {\n    \"box_2d\": [\n     0.000,\n     0.000,\n     0.256,\n     0.256\n    ],\n    \"label\": \"onion_on_board_red_purple_red_red_red_red_red_red_red_red_red_red_red_red\"\n  },\n  {\n    \"box_2d\": [\n     0.000,\n     0.000,\n     0.256,\n     0.256\n    ],\n    \"label\": \"onion_on_board_red_purple_red_red_red_red_red_red_red_red_red_red_red_red\"\n  },\n  {\n    \"box_2d\": [\n     0.000,\n     0.000,\n     0.256,\n     0.256\n    ],\n    \"label\": \"onion_on_board_red_purple_red_red_red_red_red_red_red_red_red_red_red_red\"\n  },\n  {\n    \"box_2d\": [\n     0.000,\n     0.000,\n     0.256,\n     0.256\n    ],\n    \"label\": \"onion_on_board_red_purple_red_red_red_red_red_red_red_red_red_red_red_red\"\n  },\n  {\n    \"box_2d\": [\n     0.000,\n     0.000,\n     0.256,\n     0.256\n    ],\n    \"label\": \"onion_on_board_red_purple_red_red_red_red_red_red_red_red_red_red_red_red\"\n  },\n  {\n    \"box_2d\": [\n     0.000,\n     0.000,\n     0.256,\n     0.256\n    ],\n    \"label\": \"onion_on_board_red_purple_red_red_red_red_red_red_red_red_red_red_red_red\"\n  },\n  {\n    \"box_2d\": [\n     0.000,\n     0.000,\n     0.256,\n     0.256\n    ],\n    \"label\": \"onion_on_board_red_purple_red_red_red_red_red_red_red_red_red_red_red_red\"\n  },\n  {\n    \"box_2d\": [\n     0.000,\n     0.000,\n     0.256,\n     0.256\n    ],\n    \"label\": \"onion_on_board_red_purple_red_red_red_red_red_red_red_red_red_red_red_red\"\n  },\n  {\n    \"box_2d\": [\n     0.000,\n     0.000,\n     0.256,\n     0.256\n    ],\n    \"label\": \"onion_on_board_red_purple_red_red_red_red_red_red_red_red_red_red_red_red\"\n  },\n  {\n    \"box_2d\": [\n     0.000,\n     0.000,\n     0.256,\n     0.256\n    ],\n    \"label\": \"onion_on_board_red_purple_red_red_red_red_red_red_red_red_red_red_red_red\"\n  },\n  {\n    \"box_2d\": [\n     0.000,\n     0.000,\n     0.256,\n     0.256\n    ],\n    \"label\": \"onion_on_board_red_purple_red_red_red_red_red_red_red_red_red_red_red_red\"\n  },\n  {\n    \"box_2d\": [\n     0.000,\n     0.000,\n     0.256,\n     0.256\n    ],\n    \"label\": \"onion_on_board_red_purple_red_red_red_red_red_red_red_red_red_red_red_red\"\n  },\n  {\n    \"box_2d\": [\n     0.000,\n     0.000,\n     0.256,\n     0.256\n    ],\n    \"label\": \"onion_on_board_red_purple_red_red_red_red_red_red_red_red_red_red_red_red\"\n  },\n  {\n    \"box_2d\": [\n     0.000,\n     0.000,\n     0.256,\n     0.256\n    ],\n    \"label\": \"onion_on_board_red_purple_red_red_red_red_red_red_red_red_red_red_red_red\"\n  },\n  {\n    \"box_2d\": [\n     0.000,\n     0.000,\n     0.256,\n     0.256\n    ],\n    \"label\": \"onion_on_board_red_purple_red_red_red_red_red_red_red_red_red_red_red_red\"\n  },\n  {\n    \"box_2d\": [\n     0.000,\n     0.000,\n     0.256,\n     0.256\n    ],\n    \"label\": \"onion_on_board_red_purple_red_red_red_red_red_red_red_red_red_red_red_red\"\n  },\n  {\n    \"box_2d\": [\n     0.000,\n     0.000,\n     0.256,\n     0.256\n    ],\n    \"label\": \"onion_on_board_red_purple_red_red_red_red_red_red_red_red_red_red_red_red\"\n  },\n  {\n    \"box_2d\": [\n     0.000,\n     0.000,\n     0.256,\n     0.256\n    ],\n    \"label\": \"onion_on_board_red_purple_red_red_red_red_red_red_red_red_red_red_red_red\"\n  },\n  {\n    \"box_2d\": [\n     0.000,\n     0.000,\n     0.256,\n     0.256\n    ],\n    \"label\": \"onion_on_board_red_purple_red_red_red_red_red_red_red_red_red_red_red_red\"\n  },\n  {\n    \"box_2d\": [\n     0.000,\n     0.000,\n     0.256,\n     0.256\n    ],\n    \"label\": \"onion_on_board_red_purple_red_red_red_red_red_red_red_red_red_red_red_red\"\n  },\n  {\n    \"box_2d\": [\n     0.000,\n     0.000,\n     0.256,\n     0.256\n    ],\n    \"label\": \"onion_on_board_red_purple_red_red_red_red_red_red_red_red_red_red_red_red\"\n  },\n  {\n    \"box_2d\": [\n     0.000,\n     0.000,\n     0.256,\n     0.256\n    ],\n    \"label\": \"onion_on_board_red_purple_red_red_red_red_red_red_red_red_red_red_red_red\"\n  },\n  {\n    \"box_2d\": [\n     0.000,\n     0.000,\n     0.256,\n     0.256\n    ],\n    \"label\": \"onion_on_board_red_purple_red_red_red_red_red_red_red_red_red_red_red_red\"\n  },\n  {\n    \"box_2d\": [\n     0.000,\n     0.000,\n     0.256,\n     0.256\n    ],\n    \"label\": \"onion_on_board_red_purple_red_red_red_red_red_red_red_red_red_red_red_red\"\n  },\n  {\n    \"box_2d\": [\n     0.000,\n     0.000,\n     0.256,\n     0.256\n    ],\n    \"label\": \"onion_on_board_red_purple_red_red_red_red_red_red_red_red_red_red_red_red\"\n  },\n  {\n    \"box_2d\": [\n     0.000,\n     0.000,\n     0.256,\n     0.256\n    ],\n    \"label\": \"onion_on_board_red_purple_red_red_red_red_red_red_red_red_red_red_red_red\"\n  },\n  {\n    \"box_2d\": [\n     0.000,\n     0.000,\n     0.256,\n     0.256\n    ],\n    \"label\": \"onion_on_board_red_purple_red_red_red_red_red_red_red_red_red_red_red_red\"\n  },\n  {\n    \"box_2d\": [\n     0.000,\n     0.000,\n     0.256,\n     0.256\n    ],\n    \"label\": \"onion_on_board_red_purple_red_red_red_red_red_red_red_red_red_red_red_red\"\n  },\n  {\n    \"box_2d\": [\n     0.000,\n     0.000,\n     0.256,\n     0.256\n    ],\n    \"label\": \"onion_on_board_red_purple_red_red_red_red_red_red_red_red_red_red_red_red\"\n  },\n  {\n    \"box_2d\": [\n     0.000,\n     0.000,\n     0.256,\n     0.256\n    ],\n    \"label\": \"onion_on_board_red_purple_red_red_red_red_red_red_red_red_red_red_red_red\"\n  },\n  {\n    \"box_2d\": [\n     0.000,\n     0.000,\n     0.256,\n     0.256\n    ],\n    \"label\": \"onion_on_board_red_purple_red_red_red_red_red_red_red_red_red_red_red_red\"\n  },\n  {\n    \"box_2d\": [\n     0.000,\n     0.000,\n     0.256,\n     0.256\n    ],\n    \"label\": \"onion_on_board_red_purple_red_red_red_red_red_red_red_red_red_red_red_red\"\n  },\n  {\n    \"box_2d\": [\n     0.000,\n     0.000,\n     0.256,\n     0.256\n    ],\n    \"label\": \"onion_on_board_red_purple_red_red_red_red_red_red_red_red_red_red_red_red\"\n  },\n  {\n    \"box_2d\": [\n     0.000,\n     0.000,\n     0.256,\n     0.256\n    ],\n    \"label\": \"onion_on_board_red_purple_red_red_red_red_red_red_red_red_red_red_red_red\"\n  },\n  {\n    \"box_2d\": [\n     0.000,\n     0.000,\n     0.256,\n     0.256\n    ],\n    \"label\": \"onion_on_board_red_purple_red_red_red_red_red_red_red_red_red_red_red_red\"\n  },\n  {\n    \"box_2d\": [\n     0.000,\n     0.000,\n     0.256,\n     0.256\n    ],\n    \"label\": \"onion_on_board_red_purple_red_red_red_red_red_red_red_red_red_red_red_red\"\n  },\n  {\n    \"box_2d\": [\n     0.000,\n     0.000,\n     0.256,\n     0.256\n    ],\n    \"label\": \"onion_on_board_red_purple_red_red_red_red_red_red_red_red_red_red_red_red\"\n  },\n  {\n    \"box_2d\": [\n     0.000,\n     0.000,\n     0.256,\n     0.256\n    ],\n    \"label\": \"onion_on_board_red_purple_red_red_red_red_red_red_red_red_red_red_red_red\"\n  },\n  {\n    \"box_2d\": [\n     0.000,\n     0.000,\n     0.256,\n     0.256\n    ],\n    \"label\": \"onion_on_board_red_purple_red_red_red_red_red_red_red_red_red_red_red_red\"\n  },\n  {\n    \"box_2d\": [\n     0.000,\n     0.000,\n     0.256,\n     0.256\n    ],\n    \"label\": \"onion_on_board_red_purple_red_red_red_red_red_red_red_red_red_red_red_red\"\n  },\n  {\n    \"box_2d\": [\n     0.000,\n     0.000,\n     0.256,\n     0.256\n    ],\n    \"label\": \"onion_on_board_red_purple_red_red_red_red_red_red_red_red_red_red_red_red\"\n  },\n  {\n    \"box_2d\": [\n     0.000,\n     0.000,\n     0.256,\n     0.256\n    ],\n    \"label\": \"onion_on_board_red_purple_red_red_red_red_red_red_red_red_red_red_red_red\"\n  },\n  {\n    \"box_2d\": [\n     0.000,\n     0.000,\n     0.256,\n     0.256\n    ],\n    \"label\": \"onion_on_board_red_purple_red_red_red_red_red_red_red_red_red_red_red_red\"\n  },\n  {\n    \"box_2d\": [\n     0.000,\n     0.000,\n     0.256,\n     0.256\n    ],\n    \"label\": \"onion_on_board_red_purple_red_red_red_red_red_red_red_red_red_red_red_red\"\n  },\n  {\n    \"box_2d\": [\n     0.000,\n     0.000,\n     0.256,\n     0.256\n    ],\n    \"label\": \"onion_on_board_red_purple_red_red_red_red_red_red_red_red_red_red_red_red\"\n  },\n  {\n    \"box_2d\": [\n     0.000,\n     0.000,\n     0.256,\n     0.256\n    ],\n    \"label\": \"onion_on_board_red_purple_red_red_red_red_red_red_red_red_red_red_red_red\"\n  },\n  {\n    \"box_2d\": [\n     0.000,\n     0.000,\n     0.256,\n     0.256\n    ],\n    \"label\": \"onion_on_board_red_purple_red_red_red_red_red_red_red_red_red_red_red_red\"\n  },\n  {\n    \"box_2d\": [\n     0.000,\n     0.000,\n     0.256,\n     0.256\n    ],\n    \"label\": \"onion_on_board_red_purple_red_red_red_red_red_red_red_red_red_red_red_red\"\n  },\n  {\n    \"box_2d\": [\n     0.000,\n     0.000,\n     0.256,\n     0.256\n    ],\n    \"label\": \"onion_on_board_red_purple_red_red_red_red_red_red_red_red_red_red_red_red\"\n  },\n  {\n    \"box_2d\": [\n     0.000,\n     0.000,\n     0.256,\n     0.256\n    ],\n    \"label\": \"onion_on_board_red_purple_red_red_red_red_red_red_red_red_red_red_red_red\"\n  },\n  {\n    \"box_2d\": [\n     0.000,\n     0.000,\n     0.256,\n     0.256\n    ],\n    \"label\": \"onion_on_board_red_purple_red_red_red_red_red_red_red_red_red_red_red_red\"\n  },\n  {\n    \"box_2d\": [\n     0.000,\n     0.000,\n     0.256,\n     0.256\n    ],\n    \"label\": \"onion_on_board_red_purple_red_red_red_red_red_red_red_red_red_red_red_red\"\n  },\n  {\n    \"box_2d\": [\n     0.000,\n     0.000,\n     0.256,\n     0.256\n    ],\n    \"label\": \"onion_on_board_red_purple_red_red_red_red_red_red_red_red_red_red_red_red\"\n  },\n  {\n    \"box_2d\": [\n     0.000,\n     0.000,\n     0.256,\n     0.256\n    ],\n    \"label\": \"onion_on_board_red_purple_red_red_red_red_red_red_red_red_red_red_red_red\"\n  },\n  {\n    \"box_2d\": [\n     0.000,\n     0.000,\n     0.256,\n     0.256\n    ],\n    \"label\": \"onion_on_board_red_purple_red_red_red_red_red_red_red_red_red_red_red_red\"\n  },\n  {\n    \"box_2d\": [\n     0.000,\n     0.000,\n     0.256,\n     0.256\n    ],\n    \"label\": \"onion_on_board_red_purple_red_red_red_red_red_red_red_red_red_red_red_red\"\n  },\n  {\n    \"box_2d\": [\n     0.000,\n     0.000,\n     0.256,\n     0.256\n    ],\n    \"label\": \"onion_on_board_red_purple_red_red_red_red_red_red_red_red_red_red_red_red\"\n  },\n  {\n    \"box_2d\": [\n     0.000,\n     0.000,\n     0.256,\n     0.256\n    ],\n    \"label\": \"onion_on_board_red_purple_red_red_red_red_red_red_red_red_red_red_red_red\"\n  },\n  {\n    \"box_2d\": [\n     0.000,\n     0.000,\n     0.256,\n     0.256\n    ],\n    \"label\": \"onion_on_board_red_purple_red_red_red_red_red_red_red_red_red_red_red_red\"\n  },\n  {\n    \"box_2d\": [\n     0.000,\n     0.000,\n     0.256,\n     0.256\n    ],\n    \"label\": \"onion_on_board_red_purple_red_red_red_red_red_red_red_red_red_red_red_red\"\n  },\n  {\n    \"box_2d\": [\n     0.000,\n     0.000,\n     0.256,\n     0.256\n    ],\n    \"label\": \"onion_on_board_red_purple_red_red_red_red_red_red_red_red_red_red_red_red\"\n  },\n  {\n    \"box_2d\": [\n     0.000,\n     0.000,\n     0.256,\n     0.256\n    ],\n    \"label\": \"onion_on_board_red_purple_red_red_red_red_red_red_red_red_red_red_red_red\"\n  },\n  {\n    \"box_2d\": [\n     0.000,\n     0.000,\n     0.256,\n     0.256\n    ],\n    \"label\": \"onion_on_board_red_purple_red_red_red_red_red_red_red_red_red_red_red_red\"\n  },\n  {\n    \"box_2d\": [\n     0.000,\n     0.000,\n     0.256,\n     0.256\n    ],\n    \"label\": \"onion_on_board_red_purple_red_red_red_red_red_red_red_red_red_red_red_red\"\n  },\n  {\n    \"box_2d\": [\n     0.000,\n     0.000,\n     0.256,\n     0.256\n    ],\n    \"label\": \"onion_on_board_red_purple_red_red_red_red_red_red_red_red_red_red_red_red\"\n  },\n  {\n    \"box_2d\": [\n     0.000,\n     0.000,\n     0.256,\n     0.256\n    ],\n    \"label\": \"onion_on_board_red_purple_red_red_red_red_red_red_red_red_red_red_red_red\"\n  },\n  {\n    \"box_2d\": [\n     0.000,\n     0.000,\n     0.256,\n     0.256\n    ],\n    \"label\": \"onion_on_board_red_purple_red_red_red_red_red_red_red_red_red_red_red_red\"\n  },\n  {\n    \"box_2d\": [\n     0.000,\n     0.000,\n     0.256,\n     0.256\n    ],\n    \"label\": \"onion_on_board_red_purple_red_red_red_red_red_red_red_red_red_red_red_red\"\n  },\n  {\n    \"box_2d\": [\n     0.000,\n     0.000,\n     0.256,\n     0.256\n    ],\n    \"label\": \"onion_on_board_red_purple_red_red_red_red_red_red_red_red_red_red_red_red\"\n  },\n  {\n    \"box_2d\": [\n     0.000,\n     0.000,\n     0.256,\n     0.256\n    ],\n    \"label\": \"onion_on_board_red_purple_red_red_red_red_red_red_red_red_red_red_red_red\"\n  },\n  {\n    \"box_2d\": [\n     0.000,\n     0.000,\n     0.256,\n     0.256\n    ],\n    \"label\": \"onion_on_board_red_purple_red_red_red_red_red_red_red_red_red_red_red_red\"\n  },\n  {\n    \"box_2d\": [\n     0.000,\n     0.000,\n     0.256,\n     0.256\n    ],\n    \"label\": \"onion_on_board_red_purple_red_red_red_red_red_red_red_red_red_red_red_red\"\n  },\n  {\n    \"box_2d\": [\n     0.000,\n     0.000,\n     0.256,\n     0.256\n    ],\n    \"label\": \"onion_on_board_red_purple_red_red_red_red_red_red_red_red_red_red_red_red\"\n  },\n  {\n    \"box_2d\": [\n     0.000,\n     0.000,\n     0.256,\n     0.256\n    ],\n    \"label\": \"onion_on_board_red_purple_red_red_red_red_red_red_red_red_red_red_red_red\"\n  },\n  {\n    \"box_2d\": [\n     0.000,\n     0.000,\n     0.256,\n     0.256\n    ],\n    \"label\": \"onion_on_board_red_purple_red_red_red_red_red_red_red_red_red_red_red_red\"\n  },\n  {\n    \"box_2d\": [\n     0.000,\n     0.000,\n     0.256,\n     0.256\n    ],\n    \"label\": \"onion_on_board_red_purple_red_red_red_red_red_red_red_red_red_red_red_red\"\n  },\n  {\n    \"box_2d\": [\n     0.000,\n     0.000,\n     0.256"
+}

@@ -1,0 +1,23 @@
+{
+  "model": "Qwen3-VL-8B-Instruct",
+  "strategy": "iterative",
+  "image": "/home/maxim/PycharmProjects/zero-shot-detection-benchmark/data/subsets/lvis_v1_val_unseen/images/000000031113.jpg",
+  "labels": [
+    "hair_dryer",
+    "coffee_maker",
+    "lawn_mower",
+    "microscope",
+    "sewing_machine"
+  ],
+  "detections": [],
+  "latency_sec": 12.06183806899935,
+  "raw_response": {
+    "identification": "user\nYou are assisting with object localization. From the target class list, return only the classes that are visible in the image.\nTarget classes: hair_dryer, coffee_maker, lawn_mower, microscope, sewing_machine.\nRespond with comma-separated class names using the provided spelling.\nassistant\nnone",
+    "localization": {
+      "coffee_maker": "user\nProvide bounding boxes for objects labeled 'coffee_maker'. Return JSON in the format [{\"box_2d\":[x1,y1,x2,y2],\"label\":\"coffee_maker\"}...]. Use pixel coordinates relative to the input image. Return [] if not visible.\nassistant\n[]",
+      "lawn_mower": "user\nProvide bounding boxes for objects labeled 'lawn_mower'. Return JSON in the format [{\"box_2d\":[x1,y1,x2,y2],\"label\":\"lawn_mower\"}...]. Use pixel coordinates relative to the input image. Return [] if not visible.\nassistant\n[]",
+      "microscope": "user\nProvide bounding boxes for objects labeled 'microscope'. Return JSON in the format [{\"box_2d\":[x1,y1,x2,y2],\"label\":\"microscope\"}...]. Use pixel coordinates relative to the input image. Return [] if not visible.\nassistant\n[]",
+      "sewing_machine": "user\nProvide bounding boxes for objects labeled 'sewing_machine'. Return JSON in the format [{\"box_2d\":[x1,y1,x2,y2],\"label\":\"sewing_machine\"}...]. Use pixel coordinates relative to the input image. Return [] if not visible.\nassistant\n[]"
+    }
+  }
+}

@@ -1,0 +1,170 @@
+{
+ "image": "000000500474.jpg",
+ "labels": [
+  "spatula",
+  "blender",
+  "microscope",
+  "sewing_machine",
+  "stapler_(stapling_machine)"
+ ],
+ "tau": 0.4,
+ "detector": {
+  "detections": [
+   {
+    "label": "spatula",
+    "box": [
+     0.050262451171875,
+     15.966377258300781,
+     327.7759704589844,
+     103.56273651123047
+    ],
+    "score": 0.3187984228134155
+   },
+   {
+    "label": "spatula",
+    "box": [
+     0.14288330078125,
+     0.888031005859375,
+     634.7344360351562,
+     111.27793884277344
+    ],
+    "score": 0.045188263058662415
+   },
+   {
+    "label": "spatula",
+    "box": [
+     0.43701171875,
+     0.27764892578125,
+     638.0262451171875,
+     382.40618896484375
+    ],
+    "score": 0.00308584189042449
+   },
+   {
+    "label": "spatula",
+    "box": [
+     0.0,
+     3.78125,
+     331.90484619140625,
+     201.958251953125
+    ],
+    "score": 0.002601367188617587
+   }
+  ],
+  "latency_sec": 0.03535740000370424
+ },
+ "detector_max_score": 0.3187984228134155,
+ "escalated": true,
+ "vlm": {
+  "model": "qwen/qwen3-vl-235b-a22b-instruct",
+  "detections": [
+   {
+    "label": "spatula",
+    "box": [
+     0.0,
+     15.703,
+     327.68,
+     99.963
+    ],
+    "score": 1.0
+   }
+  ],
+  "latency_sec": 5.171738399993046,
+  "usage": {
+   "prompt_tokens": 333,
+   "completion_tokens": 48,
+   "total_tokens": 381
+  },
+  "raw_response": {
+   "id": "gen-1783406962-YjTTERITS4Vi2FH5LYIP",
+   "object": "chat.completion",
+   "created": 1783406962,
+   "model": "qwen/qwen3-vl-235b-a22b-instruct",
+   "provider": "DeepInfra",
+   "system_fingerprint": null,
+   "service_tier": null,
+   "choices": [
+    {
+     "index": 0,
+     "logprobs": null,
+     "finish_reason": "stop",
+     "native_finish_reason": "stop",
+     "message": {
+      "role": "assistant",
+      "content": "```json\n[\n\t{\"bbox_2d\": [0, 41, 512, 261], \"label\": \"spatula\", \"confidence\": 0.95}\n]\n```",
+      "refusal": null,
+      "reasoning": null
+     }
+    }
+   ],
+   "usage": {
+    "prompt_tokens": 333,
+    "completion_tokens": 48,
+    "total_tokens": 381,
+    "cost": 0.00010884,
+    "is_byok": false,
+    "prompt_tokens_details": {
+     "cached_tokens": 0,
+     "cache_write_tokens": 0,
+     "audio_tokens": 0,
+     "video_tokens": 0
+    },
+    "cost_details": {
+     "upstream_inference_cost": 0.00010884,
+     "upstream_inference_prompt_cost": 6.66e-05,
+     "upstream_inference_completions_cost": 4.224e-05
+    },
+    "completion_tokens_details": {
+     "reasoning_tokens": 0,
+     "image_tokens": 0,
+     "audio_tokens": 0
+    }
+   }
+  }
+ },
+ "fallback": false,
+ "ts": "2026-07-07T06:49:19.889239+00:00",
+ "fused": [
+  {
+   "label": "spatula",
+   "box": [
+    0.050262451171875,
+    15.966377258300781,
+    327.7759704589844,
+    103.56273651123047
+   ],
+   "score": 0.6187984228134156
+  },
+  {
+   "label": "spatula",
+   "box": [
+    0.14288330078125,
+    0.888031005859375,
+    634.7344360351562,
+    111.27793884277344
+   ],
+   "score": 0.045188263058662415
+  },
+  {
+   "label": "spatula",
+   "box": [
+    0.43701171875,
+    0.27764892578125,
+    638.0262451171875,
+    382.40618896484375
+   ],
+   "score": 0.00308584189042449
+  },
+  {
+   "label": "spatula",
+   "box": [
+    0.0,
+    3.78125,
+    331.90484619140625,
+    201.958251953125
+   ],
+   "score": 0.002601367188617587
+  }
+ ],
+ "latency_total_sec": 5.207109499999206
+}

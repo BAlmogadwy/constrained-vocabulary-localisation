@@ -1,0 +1,25 @@
+dataset:
+  images_dir: data/subsets/lvis_v1_val_unseen/images
+  limit: null
+
+labels:
+  file: prompts/coco_unseen_labels.txt
+  per_image_file: data/processed/lvis_v1/val/lvis_unseen_dynamic_labels.json
+  values: []
+
+output:
+  dir: results/raw/traditional/lvis_v1_unseen
+
+models:
+  - name: yolo_world
+    device: cuda:0
+    strategy: default
+    output_name: yolo_world_lvis_unseen.json
+  - name: grounding_dino
+    device: cuda:0
+    strategy: default
+    output_name: grounding_dino_lvis_unseen.json
+  - name: owl_vit
+    device: cuda:0
+    strategy: default
+    output_name: owl_vit_lvis_unseen.json

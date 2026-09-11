@@ -1,0 +1,14 @@
+dataset:
+  images_dir: data/raw/coco2017/val2017
+  limit: null
+labels:
+  per_image_file: data/processed/coco2017/val/coco_unseen_dynamic_labels.json
+  file: prompts/coco_unseen_labels.txt
+  values: []
+output:
+  dir: results/raw/vlm/coco_qwen
+models:
+- name: Qwen3-VL-8B-Instruct
+  prompt_strategy: single_query
+  output_name: qwen3_coco_unseen.json
+force: false

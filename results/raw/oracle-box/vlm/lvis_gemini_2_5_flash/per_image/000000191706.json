@@ -1,0 +1,59 @@
+{
+  "image": "/home/maxim/PycharmProjects/zero-shot-detection-benchmark/data/subsets/lvis_v1_val_unseen/images/000000191706.jpg",
+  "image_id": 191706,
+  "file_name": "000000191706.jpg",
+  "num_crops": 2,
+  "crops": [
+    {
+      "annotation_id": 122152,
+      "bbox": [
+        415.6,
+        523.36,
+        64.4,
+        54.75
+      ],
+      "category_id": 993,
+      "gt_label": "spatula",
+      "labels": [
+        "blender",
+        "spatula",
+        "coffee_maker",
+        "hair_dryer",
+        "lawn_mower",
+        "stapler_(stapling_machine)"
+      ],
+      "prediction": null,
+      "normalized_prediction": "",
+      "matched_label": null,
+      "correct": false,
+      "latency_sec": 1.2260711599956267,
+      "raw_response": "I am sorry, but I cannot perform object detection on the image provided. The image is not accessible to me."
+    },
+    {
+      "annotation_id": 122155,
+      "bbox": [
+        187.89,
+        97.76,
+        190.34,
+        373.73
+      ],
+      "category_id": 112,
+      "gt_label": "blender",
+      "labels": [
+        "blender",
+        "spatula",
+        "coffee_maker",
+        "hair_dryer",
+        "lawn_mower",
+        "stapler_(stapling_machine)"
+      ],
+      "prediction": "blender",
+      "normalized_prediction": "blender",
+      "matched_label": "blender",
+      "correct": true,
+      "latency_sec": 2.7211519339762162,
+      "raw_response": "```json\n[\n  {\"box_2d\": [0, 0, 995, 990], \"label\": \"blender\"}\n]\n```"
+    }
+  ],
+  "prompt": "You are an object recognition assistant.\n\nYou will see a cropped image that contains exactly one object\nfrom the following LVIS categories (unseen split):\n\n- blender\n- spatula\n- coffee_maker\n- hair_dryer\n- lawn_mower\n- stapler_(stapling_machine)\n\nYour task:\n- Return ONLY the best matching category name from this list.\n- Do not output explanations or extra text.\n\nAnswer with a single string: \"class_name\"."
+}

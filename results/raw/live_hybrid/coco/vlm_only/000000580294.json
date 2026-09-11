@@ -1,0 +1,178 @@
+{
+ "image": "000000580294.jpg",
+ "model": "qwen/qwen3-vl-235b-a22b-instruct",
+ "labels": [
+  "oven",
+  "sink",
+  "toothbrush",
+  "book",
+  "refrigerator",
+  "teddy bear",
+  "toaster"
+ ],
+ "detections": [
+  {
+   "box_2d": [
+    0.0,
+    223.272,
+    442.24,
+    437.241
+   ],
+   "label": "oven",
+   "score": 0.95
+  },
+  {
+   "box_2d": [
+    414.08,
+    141.76,
+    485.12,
+    193.591
+   ],
+   "label": "sink",
+   "score": 0.92
+  },
+  {
+   "box_2d": [
+    497.92,
+    181.63,
+    508.8,
+    217.513
+   ],
+   "label": "toothbrush",
+   "score": 0.88
+  },
+  {
+   "box_2d": [
+    508.8,
+    181.63,
+    517.12,
+    217.513
+   ],
+   "label": "toothbrush",
+   "score": 0.87
+  },
+  {
+   "box_2d": [
+    517.12,
+    181.63,
+    524.8,
+    217.513
+   ],
+   "label": "toothbrush",
+   "score": 0.86
+  },
+  {
+   "box_2d": [
+    524.16,
+    181.63,
+    531.84,
+    217.513
+   ],
+   "label": "toothbrush",
+   "score": 0.85
+  },
+  {
+   "box_2d": [
+    505.6,
+    181.63,
+    512.0,
+    217.513
+   ],
+   "label": "toothbrush",
+   "score": 0.84
+  },
+  {
+   "box_2d": [
+    300.8,
+    147.519,
+    371.2,
+    181.63
+   ],
+   "label": "book",
+   "score": 0.89
+  },
+  {
+   "box_2d": [
+    492.8,
+    174.985,
+    639.36,
+    442.114
+   ],
+   "label": "refrigerator",
+   "score": 0.91
+  },
+  {
+   "box_2d": [
+    448.0,
+    171.884,
+    497.92,
+    210.425
+   ],
+   "label": "teddy bear",
+   "score": 0.83
+  },
+  {
+   "box_2d": [
+    369.92,
+    121.825,
+    421.12,
+    180.744
+   ],
+   "label": "toaster",
+   "score": 0.87
+  }
+ ],
+ "latency_sec": 9.709257800001069,
+ "usage": {
+  "prompt_tokens": 372,
+  "completion_tokens": 482,
+  "total_tokens": 854
+ },
+ "raw_response": {
+  "id": "gen-1783415426-HKMpyxpaNO35ZHeXgcaO",
+  "object": "chat.completion",
+  "created": 1783415426,
+  "model": "qwen/qwen3-vl-235b-a22b-instruct",
+  "provider": "Venice",
+  "system_fingerprint": null,
+  "service_tier": null,
+  "choices": [
+   {
+    "index": 0,
+    "logprobs": null,
+    "finish_reason": "stop",
+    "native_finish_reason": "stop",
+    "message": {
+     "role": "assistant",
+     "content": "```json\n[\n\t{\"bbox_2d\": [0, 504, 691, 987], \"label\": \"oven\", \"confidence\": 0.95},\n\t{\"bbox_2d\": [647, 320, 758, 437], \"label\": \"sink\", \"confidence\": 0.92},\n\t{\"bbox_2d\": [778, 410, 795, 491], \"label\": \"toothbrush\", \"confidence\": 0.88},\n\t{\"bbox_2d\": [795, 410, 808, 491], \"label\": \"toothbrush\", \"confidence\": 0.87},\n\t{\"bbox_2d\": [808, 410, 820, 491], \"label\": \"toothbrush\", \"confidence\": 0.86},\n\t{\"bbox_2d\": [819, 410, 831, 491], \"label\": \"toothbrush\", \"confidence\": 0.85},\n\t{\"bbox_2d\": [790, 410, 800, 491], \"label\": \"toothbrush\", \"confidence\": 0.84},\n\t{\"bbox_2d\": [470, 333, 580, 410], \"label\": \"book\", \"confidence\": 0.89},\n\t{\"bbox_2d\": [770, 395, 999, 998], \"label\": \"refrigerator\", \"confidence\": 0.91},\n\t{\"bbox_2d\": [700, 388, 778, 475], \"label\": \"teddy bear\", \"confidence\": 0.83},\n\t{\"bbox_2d\": [578, 275, 658, 408], \"label\": \"toaster\", \"confidence\": 0.87}\n]\n```",
+     "refusal": null,
+     "reasoning": null
+    }
+   }
+  ],
+  "usage": {
+   "prompt_tokens": 372,
+   "completion_tokens": 482,
+   "total_tokens": 854,
+   "cost": 0.00099392,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00099392,
+    "upstream_inference_prompt_cost": 7.812e-05,
+    "upstream_inference_completions_cost": 0.0009158
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   }
+  }
+ },
+ "ts": "2026-07-07T09:10:33.801031+00:00"
+}

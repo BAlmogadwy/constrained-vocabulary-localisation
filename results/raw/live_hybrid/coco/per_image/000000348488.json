@@ -1,0 +1,232 @@
+{
+ "image": "000000348488.jpg",
+ "labels": [
+  "vase",
+  "clock",
+  "hair drier",
+  "oven",
+  "refrigerator",
+  "scissors",
+  "sink"
+ ],
+ "tau": 0.4,
+ "detector": {
+  "detections": [
+   {
+    "label": "vase",
+    "box": [
+     23.20013427734375,
+     0.0,
+     639.6782836914062,
+     480.0
+    ],
+    "score": 0.14027798175811768
+   },
+   {
+    "label": "clock",
+    "box": [
+     14.64288330078125,
+     0.0,
+     633.2047119140625,
+     478.47052001953125
+    ],
+    "score": 0.09758292138576508
+   },
+   {
+    "label": "vase",
+    "box": [
+     26.56475830078125,
+     96.732177734375,
+     294.4910583496094,
+     382.88287353515625
+    ],
+    "score": 0.004740927368402481
+   },
+   {
+    "label": "vase",
+    "box": [
+     337.484375,
+     85.9547119140625,
+     473.2001953125,
+     300.678955078125
+    ],
+    "score": 0.0035974837373942137
+   },
+   {
+    "label": "scissors",
+    "box": [
+     188.40777587890625,
+     336.69659423828125,
+     271.05908203125,
+     453.98028564453125
+    ],
+    "score": 0.0035088846925646067
+   },
+   {
+    "label": "scissors",
+    "box": [
+     29.3504638671875,
+     97.73416137695312,
+     294.6221618652344,
+     387.9045715332031
+    ],
+    "score": 0.0015898409765213728
+   },
+   {
+    "label": "scissors",
+    "box": [
+     433.6796875,
+     88.1595458984375,
+     586.98046875,
+     333.845703125
+    ],
+    "score": 0.001308363862335682
+   }
+  ],
+  "latency_sec": 0.03735610000148881
+ },
+ "detector_max_score": 0.14027798175811768,
+ "escalated": true,
+ "vlm": {
+  "model": "qwen/qwen3-vl-235b-a22b-instruct",
+  "detections": [
+   {
+    "label": "vase",
+    "box": [
+     19.84,
+     0.0,
+     609.92,
+     479.04
+    ],
+    "score": 1.0
+   }
+  ],
+  "latency_sec": 3.076977700009593,
+  "usage": {
+   "prompt_tokens": 391,
+   "completion_tokens": 47,
+   "total_tokens": 438
+  },
+  "raw_response": {
+   "id": "gen-1783409370-UvlmOkSIt8XxhOQQdY50",
+   "object": "chat.completion",
+   "created": 1783409370,
+   "model": "qwen/qwen3-vl-235b-a22b-instruct",
+   "provider": "Alibaba",
+   "system_fingerprint": null,
+   "service_tier": null,
+   "choices": [
+    {
+     "index": 0,
+     "logprobs": null,
+     "finish_reason": "stop",
+     "native_finish_reason": "stop",
+     "message": {
+      "role": "assistant",
+      "content": "```json\n[\n\t{\"box_2d\": [31, 0, 953, 998], \"label\": \"vase\", \"confidence\": 0.99}\n]\n```",
+      "refusal": null,
+      "reasoning": null
+     }
+    }
+   ],
+   "usage": {
+    "prompt_tokens": 391,
+    "completion_tokens": 47,
+    "total_tokens": 438,
+    "cost": 0.00015054,
+    "is_byok": false,
+    "prompt_tokens_details": {
+     "cached_tokens": 0,
+     "cache_write_tokens": 0,
+     "audio_tokens": 0,
+     "video_tokens": 0
+    },
+    "cost_details": {
+     "upstream_inference_cost": 0.00015054,
+     "upstream_inference_prompt_cost": 0.00010166,
+     "upstream_inference_completions_cost": 4.888e-05
+    },
+    "completion_tokens_details": {
+     "reasoning_tokens": 0,
+     "image_tokens": 0,
+     "audio_tokens": 0
+    }
+   }
+  }
+ },
+ "fallback": false,
+ "ts": "2026-07-07T07:29:28.817050+00:00",
+ "fused": [
+  {
+   "label": "vase",
+   "box": [
+    23.20013427734375,
+    0.0,
+    639.6782836914062,
+    480.0
+   ],
+   "score": 0.44027798175811766
+  },
+  {
+   "label": "clock",
+   "box": [
+    14.64288330078125,
+    0.0,
+    633.2047119140625,
+    478.47052001953125
+   ],
+   "score": 0.09758292138576508
+  },
+  {
+   "label": "vase",
+   "box": [
+    26.56475830078125,
+    96.732177734375,
+    294.4910583496094,
+    382.88287353515625
+   ],
+   "score": 0.004740927368402481
+  },
+  {
+   "label": "vase",
+   "box": [
+    337.484375,
+    85.9547119140625,
+    473.2001953125,
+    300.678955078125
+   ],
+   "score": 0.0035974837373942137
+  },
+  {
+   "label": "scissors",
+   "box": [
+    188.40777587890625,
+    336.69659423828125,
+    271.05908203125,
+    453.98028564453125
+   ],
+   "score": 0.0035088846925646067
+  },
+  {
+   "label": "scissors",
+   "box": [
+    29.3504638671875,
+    97.73416137695312,
+    294.6221618652344,
+    387.9045715332031
+   ],
+   "score": 0.0015898409765213728
+  },
+  {
+   "label": "scissors",
+   "box": [
+    433.6796875,
+    88.1595458984375,
+    586.98046875,
+    333.845703125
+   ],
+   "score": 0.001308363862335682
+  }
+ ],
+ "latency_total_sec": 3.1143739000108326
+}

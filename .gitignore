@@ -1,0 +1,26 @@
+*.pth
+*.bin
+*.pt
+models/*/weights/
+
+
+# raw dataset downloads (regenerable via data/download_datasets.py)
+data/raw/
+*.zip
+# near-zero-floor detector outputs too large for GitHub (regenerable via
+# experiments/configs/*_lowthr.yaml + experiments/run_traditional.py --force)
+results/raw/traditional_lowthr/*/grounding_dino_*
+results/raw/traditional_lowthr/*/owl_vit_*
+results/raw/traditional_lowthr/*/per_image/grounding_dino/
+results/raw/traditional_lowthr/*/per_image/owl_vit/
+results/raw/traditional_lowthr_filtered*/
+results/raw/vlm_pixel/
+__pycache__/
+*.pyc
+.env
+
+# superseded manuscript sources (archived outside the repo)
+paper/
+
+# dataset images are NOT redistributed (obtain via data/download_datasets.py)
+data/subsets/**/images/

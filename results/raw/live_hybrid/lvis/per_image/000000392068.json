@@ -1,0 +1,210 @@
+{
+ "image": "000000392068.jpg",
+ "labels": [
+  "spatula",
+  "hair_dryer",
+  "lawn_mower",
+  "sewing_machine",
+  "stapler_(stapling_machine)"
+ ],
+ "tau": 0.4,
+ "detector": {
+  "detections": [
+   {
+    "label": "spatula",
+    "box": [
+     182.5882568359375,
+     157.186767578125,
+     337.9007568359375,
+     295.6709899902344
+    ],
+    "score": 0.22475092113018036
+   },
+   {
+    "label": "spatula",
+    "box": [
+     0.0,
+     243.508056640625,
+     19.16537857055664,
+     376.2772216796875
+    ],
+    "score": 0.051681485027074814
+   },
+   {
+    "label": "spatula",
+    "box": [
+     183.31195068359375,
+     157.02662658691406,
+     268.33758544921875,
+     246.5719757080078
+    ],
+    "score": 0.025439975783228874
+   },
+   {
+    "label": "spatula",
+    "box": [
+     0.0,
+     268.8171081542969,
+     37.81807327270508,
+     387.4425354003906
+    ],
+    "score": 0.003954394720494747
+   },
+   {
+    "label": "spatula",
+    "box": [
+     1.0478515625,
+     231.40029907226562,
+     639.038330078125,
+     480.0
+    ],
+    "score": 0.003114094724878669
+   },
+   {
+    "label": "spatula",
+    "box": [
+     206.30458068847656,
+     235.36447143554688,
+     337.996337890625,
+     292.3161926269531
+    ],
+    "score": 0.0011783509980887175
+   }
+  ],
+  "latency_sec": 0.08411440000054426
+ },
+ "detector_max_score": 0.22475092113018036,
+ "escalated": true,
+ "vlm": {
+  "model": "qwen/qwen3-vl-235b-a22b-instruct",
+  "detections": [
+   {
+    "label": "spatula",
+    "box": [
+     183.04,
+     156.0,
+     340.48,
+     291.36
+    ],
+    "score": 1.0
+   }
+  ],
+  "latency_sec": 3.5474951999931363,
+  "usage": {
+   "prompt_tokens": 398,
+   "completion_tokens": 51,
+   "total_tokens": 449
+  },
+  "raw_response": {
+   "id": "gen-1783406873-8ODAHVgPevgbPOHpVbjd",
+   "object": "chat.completion",
+   "created": 1783406873,
+   "model": "qwen/qwen3-vl-235b-a22b-instruct",
+   "provider": "Venice",
+   "system_fingerprint": null,
+   "service_tier": null,
+   "choices": [
+    {
+     "index": 0,
+     "logprobs": null,
+     "finish_reason": "stop",
+     "native_finish_reason": "stop",
+     "message": {
+      "role": "assistant",
+      "content": "```json\n[\n\t{\"bbox_2d\": [286, 325, 532, 607], \"label\": \"spatula\", \"confidence\": 0.95}\n]\n```",
+      "refusal": null,
+      "reasoning": null
+     }
+    }
+   ],
+   "usage": {
+    "prompt_tokens": 398,
+    "completion_tokens": 51,
+    "total_tokens": 449,
+    "cost": 0.00018048,
+    "is_byok": false,
+    "prompt_tokens_details": {
+     "cached_tokens": 0,
+     "cache_write_tokens": 0,
+     "audio_tokens": 0,
+     "video_tokens": 0
+    },
+    "cost_details": {
+     "upstream_inference_cost": 0.00018048,
+     "upstream_inference_prompt_cost": 8.358e-05,
+     "upstream_inference_completions_cost": 9.69e-05
+    },
+    "completion_tokens_details": {
+     "reasoning_tokens": 0,
+     "image_tokens": 0,
+     "audio_tokens": 0
+    }
+   }
+  }
+ },
+ "fallback": false,
+ "ts": "2026-07-07T06:47:50.886739+00:00",
+ "fused": [
+  {
+   "label": "spatula",
+   "box": [
+    182.5882568359375,
+    157.186767578125,
+    337.9007568359375,
+    295.6709899902344
+   ],
+   "score": 0.5247509211301804
+  },
+  {
+   "label": "spatula",
+   "box": [
+    0.0,
+    243.508056640625,
+    19.16537857055664,
+    376.2772216796875
+   ],
+   "score": 0.051681485027074814
+  },
+  {
+   "label": "spatula",
+   "box": [
+    183.31195068359375,
+    157.02662658691406,
+    268.33758544921875,
+    246.5719757080078
+   ],
+   "score": 0.025439975783228874
+  },
+  {
+   "label": "spatula",
+   "box": [
+    0.0,
+    268.8171081542969,
+    37.81807327270508,
+    387.4425354003906
+   ],
+   "score": 0.003954394720494747
+  },
+  {
+   "label": "spatula",
+   "box": [
+    1.0478515625,
+    231.40029907226562,
+    639.038330078125,
+    480.0
+   ],
+   "score": 0.003114094724878669
+  },
+  {
+   "label": "spatula",
+   "box": [
+    206.30458068847656,
+    235.36447143554688,
+    337.996337890625,
+    292.3161926269531
+   ],
+   "score": 0.0011783509980887175
+  }
+ ],
+ "latency_total_sec": 3.631641900006798
+}

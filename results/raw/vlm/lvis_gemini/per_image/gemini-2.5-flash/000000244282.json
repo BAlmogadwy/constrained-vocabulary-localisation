@@ -1,0 +1,70 @@
+{
+  "model": "gemini-2.5-flash",
+  "strategy": "single_query",
+  "image": "/home/maxim/PycharmProjects/zero-shot-detection-benchmark/data/subsets/lvis_v1_val_unseen/images/000000244282.jpg",
+  "labels": [
+    "snowboard",
+    "blender",
+    "coffee_maker",
+    "hair_dryer",
+    "microscope"
+  ],
+  "detections": [
+    {
+      "box_2d": [
+        594,
+        243,
+        653,
+        344
+      ],
+      "label": "snowboard"
+    },
+    {
+      "box_2d": [
+        530,
+        329,
+        602,
+        437
+      ],
+      "label": "snowboard"
+    },
+    {
+      "box_2d": [
+        502,
+        396,
+        569,
+        503
+      ],
+      "label": "snowboard"
+    },
+    {
+      "box_2d": [
+        492,
+        497,
+        539,
+        555
+      ],
+      "label": "snowboard"
+    },
+    {
+      "box_2d": [
+        492,
+        80,
+        786,
+        689
+      ],
+      "label": "snowboard"
+    },
+    {
+      "box_2d": [
+        522,
+        589,
+        576,
+        631
+      ],
+      "label": "snowboard"
+    }
+  ],
+  "latency_sec": 3.948366668075323,
+  "raw_response": "```json\n[\n  {\"box_2d\": [594, 243, 653, 344], \"label\": \"snowboard\"},\n  {\"box_2d\": [530, 329, 602, 437], \"label\": \"snowboard\"},\n  {\"box_2d\": [502, 396, 569, 503], \"label\": \"snowboard\"},\n  {\"box_2d\": [492, 497, 539, 555], \"label\": \"snowboard\"},\n  {\"box_2d\": [492, 80, 786, 689], \"label\": \"snowboard\"},\n  {\"box_2d\": [522, 589, 576, 631], \"label\": \"snowboard\"}\n]\n```"
+}

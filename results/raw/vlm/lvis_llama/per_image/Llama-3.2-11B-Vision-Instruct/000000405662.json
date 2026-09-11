@@ -1,0 +1,72 @@
+{
+  "model": "Llama-3.2-11B-Vision-Instruct",
+  "strategy": "single_query",
+  "image": "/home/maxim/PycharmProjects/zero-shot-detection-benchmark/data/subsets/lvis_v1_val_unseen/images/000000405662.jpg",
+  "labels": [
+    "blender",
+    "coffee_maker",
+    "lawn_mower",
+    "microscope",
+    "sewing_machine"
+  ],
+  "detections": [
+    {
+      "box_2d": [
+        56,
+        92,
+        190,
+        284
+      ],
+      "label": "blender"
+    },
+    {
+      "box_2d": [
+        105,
+        156,
+        190,
+        284
+      ],
+      "label": "coffee_maker"
+    },
+    {
+      "box_2d": [
+        0,
+        0,
+        214,
+        320
+      ],
+      "label": "lawn_mower"
+    },
+    {
+      "box_2d": [
+        0,
+        0,
+        427,
+        639
+      ],
+      "label": "microscope"
+    },
+    {
+      "box_2d": [
+        0,
+        0,
+        427,
+        639
+      ],
+      "label": "sewing_machine"
+    }
+  ],
+  "latency_sec": 14.74414945114404,
+  "raw_response": {
+    "blender": "[{\"box_2d\":[0,0,0,0],\"label\":\"blender\"}]",
+    "blender_norm": "[{\"box_norm\":[0.131,0.144,0.444,0.444],\"label\":\"blender\"}]",
+    "coffee_maker": "[]",
+    "coffee_maker_norm": "[{\"box_norm\":[0.247,0.243,0.444,0.444],\"label\":\"coffee_maker\"}]",
+    "lawn_mower": "[]",
+    "lawn_mower_norm": "[{\"box_norm\":[0.000,0.000,0.500,0.500],\"label\":\"lawn_mower\"}]",
+    "microscope": "[]",
+    "microscope_norm": "[{\"box_norm\":[0.000,0.000,0.999,0.999],\"label\":\"microscope\"}]",
+    "sewing_machine": "[]",
+    "sewing_machine_norm": "[{\"box_norm\":[0.000,0.000,0.999,0.999],\"label\":\"sewing_machine\"}]"
+  }
+}

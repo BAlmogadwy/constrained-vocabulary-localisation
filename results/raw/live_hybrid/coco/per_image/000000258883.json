@@ -1,0 +1,242 @@
+{
+ "image": "000000258883.jpg",
+ "labels": [
+  "clock",
+  "microwave",
+  "oven",
+  "scissors",
+  "toaster",
+  "toothbrush",
+  "vase"
+ ],
+ "tau": 0.4,
+ "detector": {
+  "detections": [
+   {
+    "label": "oven",
+    "box": [
+     0.0,
+     19.29437255859375,
+     425.4591064453125,
+     633.8361206054688
+    ],
+    "score": 0.007111014798283577
+   },
+   {
+    "label": "oven",
+    "box": [
+     2.162353515625,
+     387.30999755859375,
+     343.77435302734375,
+     603.1838989257812
+    ],
+    "score": 0.003522189799696207
+   },
+   {
+    "label": "toaster",
+    "box": [
+     12.68682861328125,
+     300.4814453125,
+     309.28997802734375,
+     417.01708984375
+    ],
+    "score": 0.0033130066003650427
+   },
+   {
+    "label": "toaster",
+    "box": [
+     1.716949462890625,
+     387.29034423828125,
+     342.8180847167969,
+     603.8531494140625
+    ],
+    "score": 0.003012897679582238
+   },
+   {
+    "label": "vase",
+    "box": [
+     220.97329711914062,
+     162.04180908203125,
+     350.7359924316406,
+     241.68402099609375
+    ],
+    "score": 0.0017007249407470226
+   },
+   {
+    "label": "toaster",
+    "box": [
+     319.42132568359375,
+     342.08477783203125,
+     426.0,
+     465.31451416015625
+    ],
+    "score": 0.001699193031527102
+   },
+   {
+    "label": "oven",
+    "box": [
+     319.5004577636719,
+     342.10748291015625,
+     425.8869323730469,
+     465.07647705078125
+    ],
+    "score": 0.0016055942978709936
+   }
+  ],
+  "latency_sec": 0.039187799993669614
+ },
+ "detector_max_score": 0.007111014798283577,
+ "escalated": true,
+ "vlm": {
+  "model": "qwen/qwen3-vl-235b-a22b-instruct",
+  "detections": [
+   {
+    "label": "clock",
+    "box": [
+     53.676,
+     148.48,
+     87.33,
+     193.28
+    ],
+    "score": 1.0
+   }
+  ],
+  "latency_sec": 2.107259800002794,
+  "usage": {
+   "prompt_tokens": 350,
+   "completion_tokens": 49,
+   "total_tokens": 399
+  },
+  "raw_response": {
+   "id": "gen-1783409199-37glncRye5rS5iWw9eJw",
+   "object": "chat.completion",
+   "created": 1783409199,
+   "model": "qwen/qwen3-vl-235b-a22b-instruct",
+   "provider": "Alibaba",
+   "system_fingerprint": null,
+   "service_tier": null,
+   "choices": [
+    {
+     "index": 0,
+     "logprobs": null,
+     "finish_reason": "stop",
+     "native_finish_reason": "stop",
+     "message": {
+      "role": "assistant",
+      "content": "```json\n[\n\t{\"box_2d\": [126, 232, 205, 302], \"label\": \"clock\", \"confidence\": 0.98}\n]\n```",
+      "refusal": null,
+      "reasoning": null
+     }
+    }
+   ],
+   "usage": {
+    "prompt_tokens": 350,
+    "completion_tokens": 49,
+    "total_tokens": 399,
+    "cost": 0.00014196,
+    "is_byok": false,
+    "prompt_tokens_details": {
+     "cached_tokens": 0,
+     "cache_write_tokens": 0,
+     "audio_tokens": 0,
+     "video_tokens": 0
+    },
+    "cost_details": {
+     "upstream_inference_cost": 0.00014196,
+     "upstream_inference_prompt_cost": 9.1e-05,
+     "upstream_inference_completions_cost": 5.096e-05
+    },
+    "completion_tokens_details": {
+     "reasoning_tokens": 0,
+     "image_tokens": 0,
+     "audio_tokens": 0
+    }
+   }
+  }
+ },
+ "fallback": false,
+ "ts": "2026-07-07T07:26:38.232160+00:00",
+ "fused": [
+  {
+   "label": "oven",
+   "box": [
+    0.0,
+    19.29437255859375,
+    425.4591064453125,
+    633.8361206054688
+   ],
+   "score": 0.007111014798283577
+  },
+  {
+   "label": "oven",
+   "box": [
+    2.162353515625,
+    387.30999755859375,
+    343.77435302734375,
+    603.1838989257812
+   ],
+   "score": 0.003522189799696207
+  },
+  {
+   "label": "toaster",
+   "box": [
+    12.68682861328125,
+    300.4814453125,
+    309.28997802734375,
+    417.01708984375
+   ],
+   "score": 0.0033130066003650427
+  },
+  {
+   "label": "toaster",
+   "box": [
+    1.716949462890625,
+    387.29034423828125,
+    342.8180847167969,
+    603.8531494140625
+   ],
+   "score": 0.003012897679582238
+  },
+  {
+   "label": "vase",
+   "box": [
+    220.97329711914062,
+    162.04180908203125,
+    350.7359924316406,
+    241.68402099609375
+   ],
+   "score": 0.0017007249407470226
+  },
+  {
+   "label": "toaster",
+   "box": [
+    319.42132568359375,
+    342.08477783203125,
+    426.0,
+    465.31451416015625
+   ],
+   "score": 0.001699193031527102
+  },
+  {
+   "label": "oven",
+   "box": [
+    319.5004577636719,
+    342.10748291015625,
+    425.8869323730469,
+    465.07647705078125
+   ],
+   "score": 0.0016055942978709936
+  },
+  {
+   "label": "clock",
+   "box": [
+    53.676,
+    148.48,
+    87.33,
+    193.28
+   ],
+   "score": 0.4
+  }
+ ],
+ "latency_total_sec": 2.146471999993082
+}

@@ -1,0 +1,73 @@
+{
+  "image": "/home/maxim/PycharmProjects/zero-shot-detection-benchmark/data/subsets/lvis_v1_val_unseen/images/000000188545.jpg",
+  "image_id": 188545,
+  "file_name": "000000188545.jpg",
+  "num_crops": 2,
+  "crops": [
+    {
+      "annotation_id": 217990,
+      "bbox": [
+        413.3,
+        373.09,
+        37.11,
+        5.01
+      ],
+      "category_id": 976,
+      "gt_label": "snowboard",
+      "labels": [
+        "snowboard",
+        "microscope",
+        "musical_instrument",
+        "sewing_machine",
+        "spatula"
+      ],
+      "prediction": "snowboard",
+      "normalized_prediction": "snowboard",
+      "matched_label": "snowboard",
+      "correct": true,
+      "latency_sec": 4.845790502004093,
+      "raw_response": {
+        "snowboard": "[{ \"box_2d\": [ 0, 0, 38, 6 ], \"label\": \"snowboard\" }]",
+        "microscope": "[{ \"box_2d\": [ 0, 0, 38, 6 ], \"label\": \"microscope\" }]",
+        "musical_instrument": "[{ \"box_2d\": [ 0, 0, 38, 6 ], \"label\": \"musical_instrument\" }]",
+        "sewing_machine": "[{ \"box_2d\": [ 1, 1, 6, 6 ], \"label\": \"sewing_machine\" }]",
+        "spatula": "[{ \"box_2d\": [ 0, 0, 6, 6], \"label\": \"spatula\"}]"
+      }
+    },
+    {
+      "annotation_id": 217991,
+      "bbox": [
+        354.62,
+        183.18,
+        126.34,
+        95.61
+      ],
+      "category_id": 976,
+      "gt_label": "snowboard",
+      "labels": [
+        "snowboard",
+        "microscope",
+        "musical_instrument",
+        "sewing_machine",
+        "spatula"
+      ],
+      "prediction": "snowboard",
+      "normalized_prediction": "snowboard",
+      "matched_label": "snowboard",
+      "correct": true,
+      "latency_sec": 5.90740734199062,
+      "raw_response": {
+        "snowboard": "[{\"box_2d\":[0,0,127,96],\"label\":\"snowboard\"}]",
+        "microscope": "[]",
+        "microscope_norm": "[{\"box_norm\":[0.0,0.0,0.0,0.0],\"label\":\"microscope\"}]",
+        "musical_instrument": "[]",
+        "musical_instrument_norm": "[{\"box_norm\":[0.0,0.0,0.0,0.0],\"label\":\"musical_instrument\"}]",
+        "sewing_machine": "[]",
+        "sewing_machine_norm": "[{\"box_norm\":[0.0,0.0,0.0,0.0],\"label\":\"sewing_machine\"}]",
+        "spatula": "[]",
+        "spatula_norm": "[{\"box_norm\":[0.0,0.0,0.0,0.0],\"label\":\"spatula\"}]"
+      }
+    }
+  ],
+  "prompt": "You are an object recognition assistant.\n\nYou will see a cropped image that contains exactly one object\nfrom the following LVIS categories (unseen split):\n\n- snowboard\n- microscope\n- musical_instrument\n- sewing_machine\n- spatula\n\nYour task:\n- Return ONLY the best matching category name from this list.\n- Do not output explanations or extra text.\n\nAnswer with a single string: \"class_name\"."
+}

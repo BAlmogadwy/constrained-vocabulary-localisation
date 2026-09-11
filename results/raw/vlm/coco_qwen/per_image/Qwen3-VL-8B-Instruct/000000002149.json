@@ -1,0 +1,95 @@
+{
+  "model": "Qwen3-VL-8B-Instruct",
+  "strategy": "single_query",
+  "image": "/home/maxim/PycharmProjects/zero-shot-detection-benchmark/data/raw/coco2017/val2017/000000002149.jpg",
+  "labels": [
+    "microwave",
+    "oven",
+    "toaster",
+    "sink",
+    "refrigerator",
+    "book",
+    "clock",
+    "vase",
+    "scissors",
+    "teddy bear",
+    "hair drier",
+    "toothbrush"
+  ],
+  "detections": [
+    {
+      "box_2d": [
+        0.0,
+        555.0,
+        387.0,
+        933.0
+      ],
+      "label": "apple"
+    },
+    {
+      "box_2d": [
+        151.0,
+        224.0,
+        530.0,
+        762.0
+      ],
+      "label": "apple"
+    },
+    {
+      "box_2d": [
+        527.0,
+        164.0,
+        915.0,
+        752.0
+      ],
+      "label": "apple"
+    },
+    {
+      "box_2d": [
+        120.0,
+        174.0,
+        382.0,
+        555.0
+      ],
+      "label": "apple"
+    },
+    {
+      "box_2d": [
+        362.0,
+        714.0,
+        689.0,
+        933.0
+      ],
+      "label": "apple"
+    },
+    {
+      "box_2d": [
+        696.0,
+        702.0,
+        1000.0,
+        926.0
+      ],
+      "label": "apple"
+    },
+    {
+      "box_2d": [
+        497.0,
+        526.0,
+        689.0,
+        762.0
+      ],
+      "label": "apple"
+    },
+    {
+      "box_2d": [
+        857.0,
+        602.0,
+        988.0,
+        752.0
+      ],
+      "label": "apple"
+    }
+  ],
+  "latency_sec": 11.350945835991297,
+  "raw_response": "user\nYou are an object detection assistant. Given the image and the list of target classes, return detections as JSON.\nTarget classes: microwave, oven, toaster, sink, refrigerator, book, clock, vase, scissors, teddy bear, hair drier, toothbrush.\nOutput format: [{\"box_2d\":[x1,y1,x2,y2],\"label\":\"class_name\"}...]\nUse pixel coordinates relative to the input image. Return JSON only.\nassistant\n```json\n[\n\t{\"box_2d\": [0, 555, 387, 933], \"label\": \"apple\"},\n\t{\"bbox_2d\": [151, 224, 530, 762], \"label\": \"apple\"},\n\t{\"bbox_2d\": [527, 164, 915, 752], \"label\": \"apple\"},\n\t{\"bbox_2d\": [120, 174, 382, 555], \"label\": \"apple\"},\n\t{\"bbox_2d\": [362, 714, 689, 933], \"label\": \"apple\"},\n\t{\"bbox_2d\": [696, 702, 1000, 926], \"label\": \"apple\"},\n\t{\"bbox_2d\": [497, 526, 689, 762], \"label\": \"apple\"},\n\t{\"bbox_2d\": [857, 602, 988, 752], \"label\": \"apple\"}\n]\n```"
+}

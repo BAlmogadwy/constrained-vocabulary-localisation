@@ -1,0 +1,30 @@
+{
+  "model": "gemma-3-12b-it",
+  "strategy": "iterative",
+  "image": "/home/maxim/PycharmProjects/zero-shot-detection-benchmark/data/subsets/lvis_v1_val_unseen/images/000000394957.jpg",
+  "labels": [
+    "hair_dryer",
+    "coffee_maker",
+    "sewing_machine",
+    "snowboard",
+    "stapler_(stapling_machine)"
+  ],
+  "detections": [
+    {
+      "box_2d": [
+        781,
+        321,
+        853,
+        385
+      ],
+      "label": "hair_dryer"
+    }
+  ],
+  "latency_sec": 18.051200760994107,
+  "raw_response": {
+    "identification": "hair_dryer",
+    "localization": {
+      "hair_dryer": "Here's the JSON output for the bounding box of the 'hair_dryer' in the image:\n\n```json\n[{\"box_2d\":[781,321,853,385],\"label\":\"hair_dryer\"}]\n```"
+    }
+  }
+}

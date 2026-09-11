@@ -1,0 +1,192 @@
+{
+ "image": "000000264535.jpg",
+ "labels": [
+  "book",
+  "hair drier",
+  "oven",
+  "teddy bear",
+  "toaster",
+  "toothbrush",
+  "vase"
+ ],
+ "tau": 0.4,
+ "detector": {
+  "detections": [
+   {
+    "label": "book",
+    "box": [
+     465.2933349609375,
+     260.274658203125,
+     501.9087829589844,
+     302.49615478515625
+    ],
+    "score": 0.13376666605472565
+   },
+   {
+    "label": "book",
+    "box": [
+     501.6888122558594,
+     293.5651550292969,
+     549.6583862304688,
+     314.2703857421875
+    ],
+    "score": 0.09065274894237518
+   },
+   {
+    "label": "book",
+    "box": [
+     464.1509704589844,
+     259.438232421875,
+     525.6325073242188,
+     321.373046875
+    ],
+    "score": 0.027020756155252457
+   },
+   {
+    "label": "book",
+    "box": [
+     461.8454895019531,
+     293.1772766113281,
+     549.8909912109375,
+     320.75128173828125
+    ],
+    "score": 0.02596862055361271
+   },
+   {
+    "label": "book",
+    "box": [
+     475.7079162597656,
+     304.18499755859375,
+     523.7437133789062,
+     322.404296875
+    ],
+    "score": 0.002438062336295843
+   }
+  ],
+  "latency_sec": 0.05044820001057815
+ },
+ "detector_max_score": 0.13376666605472565,
+ "escalated": true,
+ "vlm": {
+  "model": "qwen/qwen3-vl-235b-a22b-instruct",
+  "detections": [
+   {
+    "label": "book",
+    "box": [
+     493.884,
+     296.208,
+     549.576,
+     318.852
+    ],
+    "score": 1.0
+   }
+  ],
+  "latency_sec": 3.2896535000036238,
+  "usage": {
+   "prompt_tokens": 455,
+   "completion_tokens": 43,
+   "total_tokens": 498
+  },
+  "raw_response": {
+   "id": "gen-1783409213-SEL8Zblht0xDrTTgHGRu",
+   "object": "chat.completion",
+   "created": 1783409213,
+   "model": "qwen/qwen3-vl-235b-a22b-instruct",
+   "provider": "DeepInfra",
+   "system_fingerprint": null,
+   "service_tier": null,
+   "choices": [
+    {
+     "index": 0,
+     "logprobs": null,
+     "finish_reason": "stop",
+     "native_finish_reason": "stop",
+     "message": {
+      "role": "assistant",
+      "content": "[{\"box_2d\": [807, 484, 898, 521], \"label\": \"book\", \"confidence\": 0.95}]",
+      "refusal": null,
+      "reasoning": null
+     }
+    }
+   ],
+   "usage": {
+    "prompt_tokens": 455,
+    "completion_tokens": 43,
+    "total_tokens": 498,
+    "cost": 0.00012884,
+    "is_byok": false,
+    "prompt_tokens_details": {
+     "cached_tokens": 0,
+     "cache_write_tokens": 0,
+     "audio_tokens": 0,
+     "video_tokens": 0
+    },
+    "cost_details": {
+     "upstream_inference_cost": 0.00012884,
+     "upstream_inference_prompt_cost": 9.1e-05,
+     "upstream_inference_completions_cost": 3.784e-05
+    },
+    "completion_tokens_details": {
+     "reasoning_tokens": 0,
+     "image_tokens": 0,
+     "audio_tokens": 0
+    }
+   }
+  }
+ },
+ "fallback": false,
+ "ts": "2026-07-07T07:26:50.958464+00:00",
+ "fused": [
+  {
+   "label": "book",
+   "box": [
+    465.2933349609375,
+    260.274658203125,
+    501.9087829589844,
+    302.49615478515625
+   ],
+   "score": 0.13376666605472565
+  },
+  {
+   "label": "book",
+   "box": [
+    501.6888122558594,
+    293.5651550292969,
+    549.6583862304688,
+    314.2703857421875
+   ],
+   "score": 0.39065274894237517
+  },
+  {
+   "label": "book",
+   "box": [
+    464.1509704589844,
+    259.438232421875,
+    525.6325073242188,
+    321.373046875
+   ],
+   "score": 0.027020756155252457
+  },
+  {
+   "label": "book",
+   "box": [
+    461.8454895019531,
+    293.1772766113281,
+    549.8909912109375,
+    320.75128173828125
+   ],
+   "score": 0.02596862055361271
+  },
+  {
+   "label": "book",
+   "box": [
+    475.7079162597656,
+    304.18499755859375,
+    523.7437133789062,
+    322.404296875
+   ],
+   "score": 0.002438062336295843
+  }
+ ],
+ "latency_total_sec": 3.3401238000078592
+}

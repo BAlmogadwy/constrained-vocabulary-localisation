@@ -1,0 +1,250 @@
+{
+ "image": "000000026552.jpg",
+ "labels": [
+  "snowboard",
+  "blender",
+  "coffee_maker",
+  "hair_dryer",
+  "spatula"
+ ],
+ "tau": 0.4,
+ "detector": {
+  "detections": [
+   {
+    "label": "snowboard",
+    "box": [
+     244.06875610351562,
+     286.880859375,
+     392.1473693847656,
+     299.5751953125
+    ],
+    "score": 0.1913377046585083
+   },
+   {
+    "label": "snowboard",
+    "box": [
+     245.81655883789062,
+     285.82427978515625,
+     432.9859924316406,
+     315.75946044921875
+    ],
+    "score": 0.15775321424007416
+   },
+   {
+    "label": "snowboard",
+    "box": [
+     140.562744140625,
+     271.5621337890625,
+     433.5269775390625,
+     382.0118408203125
+    ],
+    "score": 0.028086252510547638
+   },
+   {
+    "label": "snowboard",
+    "box": [
+     141.893310546875,
+     272.10052490234375,
+     432.2174072265625,
+     301.12799072265625
+    ],
+    "score": 0.010366645641624928
+   },
+   {
+    "label": "snowboard",
+    "box": [
+     147.47412109375,
+     270.7281188964844,
+     277.83441162109375,
+     294.1034240722656
+    ],
+    "score": 0.00817968137562275
+   },
+   {
+    "label": "snowboard",
+    "box": [
+     325.42919921875,
+     276.1866455078125,
+     391.7550048828125,
+     299.6318359375
+    ],
+    "score": 0.004545457661151886
+   },
+   {
+    "label": "snowboard",
+    "box": [
+     246.55999755859375,
+     261.6841735839844,
+     393.0338134765625,
+     300.9580993652344
+    ],
+    "score": 0.004407994914799929
+   },
+   {
+    "label": "snowboard",
+    "box": [
+     632.1964721679688,
+     358.781982421875,
+     640.0,
+     399.891357421875
+    ],
+    "score": 0.001156084705144167
+   }
+  ],
+  "latency_sec": 0.03713370001059957
+ },
+ "detector_max_score": 0.1913377046585083,
+ "escalated": true,
+ "vlm": {
+  "model": "qwen/qwen3-vl-235b-a22b-instruct",
+  "detections": [
+   {
+    "label": "snowboard",
+    "box": [
+     240.64,
+     287.976,
+     393.6,
+     300.33
+    ],
+    "score": 1.0
+   }
+  ],
+  "latency_sec": 1.7645472000003792,
+  "usage": {
+   "prompt_tokens": 351,
+   "completion_tokens": 50,
+   "total_tokens": 401
+  },
+  "raw_response": {
+   "id": "gen-1783406484-UimvjCBS0EfaG5aa3biw",
+   "object": "chat.completion",
+   "created": 1783406484,
+   "model": "qwen/qwen3-vl-235b-a22b-instruct",
+   "provider": "Alibaba",
+   "system_fingerprint": null,
+   "service_tier": null,
+   "choices": [
+    {
+     "index": 0,
+     "logprobs": null,
+     "finish_reason": "stop",
+     "native_finish_reason": "stop",
+     "message": {
+      "role": "assistant",
+      "content": "```json\n[\n\t{\"bbox_2d\": [376, 676, 615, 705], \"label\": \"snowboard\", \"confidence\": 0.99}\n]\n```",
+      "refusal": null,
+      "reasoning": null
+     }
+    }
+   ],
+   "usage": {
+    "prompt_tokens": 351,
+    "completion_tokens": 50,
+    "total_tokens": 401,
+    "cost": 0.00014326,
+    "is_byok": false,
+    "prompt_tokens_details": {
+     "cached_tokens": 0,
+     "cache_write_tokens": 0,
+     "audio_tokens": 0,
+     "video_tokens": 0
+    },
+    "cost_details": {
+     "upstream_inference_cost": 0.00014326,
+     "upstream_inference_prompt_cost": 9.126e-05,
+     "upstream_inference_completions_cost": 5.2e-05
+    },
+    "completion_tokens_details": {
+     "reasoning_tokens": 0,
+     "image_tokens": 0,
+     "audio_tokens": 0
+    }
+   }
+  }
+ },
+ "fallback": false,
+ "ts": "2026-07-07T06:41:23.276626+00:00",
+ "fused": [
+  {
+   "label": "snowboard",
+   "box": [
+    244.06875610351562,
+    286.880859375,
+    392.1473693847656,
+    299.5751953125
+   ],
+   "score": 0.4913377046585083
+  },
+  {
+   "label": "snowboard",
+   "box": [
+    245.81655883789062,
+    285.82427978515625,
+    432.9859924316406,
+    315.75946044921875
+   ],
+   "score": 0.15775321424007416
+  },
+  {
+   "label": "snowboard",
+   "box": [
+    140.562744140625,
+    271.5621337890625,
+    433.5269775390625,
+    382.0118408203125
+   ],
+   "score": 0.028086252510547638
+  },
+  {
+   "label": "snowboard",
+   "box": [
+    141.893310546875,
+    272.10052490234375,
+    432.2174072265625,
+    301.12799072265625
+   ],
+   "score": 0.010366645641624928
+  },
+  {
+   "label": "snowboard",
+   "box": [
+    147.47412109375,
+    270.7281188964844,
+    277.83441162109375,
+    294.1034240722656
+   ],
+   "score": 0.00817968137562275
+  },
+  {
+   "label": "snowboard",
+   "box": [
+    325.42919921875,
+    276.1866455078125,
+    391.7550048828125,
+    299.6318359375
+   ],
+   "score": 0.004545457661151886
+  },
+  {
+   "label": "snowboard",
+   "box": [
+    246.55999755859375,
+    261.6841735839844,
+    393.0338134765625,
+    300.9580993652344
+   ],
+   "score": 0.004407994914799929
+  },
+  {
+   "label": "snowboard",
+   "box": [
+    632.1964721679688,
+    358.781982421875,
+    640.0,
+    399.891357421875
+   ],
+   "score": 0.001156084705144167
+  }
+ ],
+ "latency_total_sec": 1.8017037000099663
+}

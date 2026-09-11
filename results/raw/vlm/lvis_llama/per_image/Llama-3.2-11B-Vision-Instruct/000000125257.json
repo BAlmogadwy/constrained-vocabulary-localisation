@@ -1,0 +1,35 @@
+{
+  "model": "Llama-3.2-11B-Vision-Instruct",
+  "strategy": "single_query",
+  "image": "/home/maxim/PycharmProjects/zero-shot-detection-benchmark/data/subsets/lvis_v1_val_unseen/images/000000125257.jpg",
+  "labels": [
+    "snowboard",
+    "microscope",
+    "musical_instrument",
+    "sewing_machine",
+    "spatula"
+  ],
+  "detections": [
+    {
+      "box_2d": [
+        0,
+        0,
+        640,
+        480
+      ],
+      "label": "snowboard"
+    }
+  ],
+  "latency_sec": 9.41016399487853,
+  "raw_response": {
+    "snowboard": "[{\"box_2d\":[0,0,640,480],\"label\":\"snowboard\"}]",
+    "microscope": "[]",
+    "microscope_norm": "[]",
+    "musical_instrument": "[]",
+    "musical_instrument_norm": "[]",
+    "sewing_machine": "[]",
+    "sewing_machine_norm": "[]",
+    "spatula": "[]",
+    "spatula_norm": "[{\"box_norm\":[0.0,0.0,0.0,0.0],\"label\":\"spatula\"}]"
+  }
+}

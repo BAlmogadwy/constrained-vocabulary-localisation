@@ -1,0 +1,59 @@
+{
+  "image": "/home/maxim/PycharmProjects/zero-shot-detection-benchmark/data/subsets/lvis_v1_val_unseen/images/000000211905.jpg",
+  "image_id": 211905,
+  "file_name": "000000211905.jpg",
+  "num_crops": 2,
+  "crops": [
+    {
+      "annotation_id": 236575,
+      "bbox": [
+        491.29,
+        56.93,
+        73.82,
+        31.86
+      ],
+      "category_id": 1006,
+      "gt_label": "stapler_(stapling_machine)",
+      "labels": [
+        "microscope",
+        "stapler_(stapling_machine)",
+        "blender",
+        "hair_dryer",
+        "musical_instrument",
+        "sewing_machine"
+      ],
+      "prediction": null,
+      "normalized_prediction": "",
+      "matched_label": null,
+      "correct": false,
+      "latency_sec": 1.6072068590146955,
+      "raw_response": "I'm sorry, but I cannot perform the requested object detection. The provided image is extremely blurry and lacks sufficient detail to identify any of the specified objects (microscope, stapler, blender, hair dryer, musical instrument, sewing machine) with confidence or accuracy. The \"crops\" provided are identical in quality and do not offer any additional clarity."
+    },
+    {
+      "annotation_id": 236576,
+      "bbox": [
+        71.7,
+        0.0,
+        99.23,
+        220.07
+      ],
+      "category_id": 686,
+      "gt_label": "microscope",
+      "labels": [
+        "microscope",
+        "stapler_(stapling_machine)",
+        "blender",
+        "hair_dryer",
+        "musical_instrument",
+        "sewing_machine"
+      ],
+      "prediction": "microscope",
+      "normalized_prediction": "microscope",
+      "matched_label": "microscope",
+      "correct": true,
+      "latency_sec": 1.7217327329854015,
+      "raw_response": "```json\n[\n  {\"box_2d\": [0, 137, 747, 999], \"label\": \"microscope\"}\n]\n```"
+    }
+  ],
+  "prompt": "You are an object recognition assistant.\n\nYou will see a cropped image that contains exactly one object\nfrom the following LVIS categories (unseen split):\n\n- microscope\n- stapler_(stapling_machine)\n- blender\n- hair_dryer\n- musical_instrument\n- sewing_machine\n\nYour task:\n- Return ONLY the best matching category name from this list.\n- Do not output explanations or extra text.\n\nAnswer with a single string: \"class_name\"."
+}

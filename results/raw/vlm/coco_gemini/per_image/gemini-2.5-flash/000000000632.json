@@ -1,0 +1,126 @@
+{
+  "model": "gemini-2.5-flash",
+  "strategy": "single_query",
+  "image": "/home/maxim/PycharmProjects/zero-shot-detection-benchmark/data/raw/coco2017/val2017/000000000632.jpg",
+  "labels": [
+    "book",
+    "clock",
+    "microwave",
+    "oven",
+    "refrigerator",
+    "sink",
+    "teddy bear"
+  ],
+  "detections": [
+    {
+      "box_2d": [
+        746,
+        126,
+        786,
+        145
+      ],
+      "label": "book"
+    },
+    {
+      "box_2d": [
+        788,
+        126,
+        819,
+        142
+      ],
+      "label": "book"
+    },
+    {
+      "box_2d": [
+        739,
+        219,
+        810,
+        235
+      ],
+      "label": "book"
+    },
+    {
+      "box_2d": [
+        669,
+        273,
+        735,
+        292
+      ],
+      "label": "book"
+    },
+    {
+      "box_2d": [
+        806,
+        329,
+        856,
+        348
+      ],
+      "label": "book"
+    },
+    {
+      "box_2d": [
+        668,
+        381,
+        715,
+        401
+      ],
+      "label": "book"
+    },
+    {
+      "box_2d": [
+        791,
+        442,
+        853,
+        466
+      ],
+      "label": "book"
+    },
+    {
+      "box_2d": [
+        671,
+        489,
+        719,
+        511
+      ],
+      "label": "book"
+    },
+    {
+      "box_2d": [
+        733,
+        545,
+        779,
+        563
+      ],
+      "label": "book"
+    },
+    {
+      "box_2d": [
+        785,
+        545,
+        843,
+        567
+      ],
+      "label": "book"
+    },
+    {
+      "box_2d": [
+        670,
+        600,
+        720,
+        620
+      ],
+      "label": "book"
+    },
+    {
+      "box_2d": [
+        725,
+        600,
+        770,
+        617
+      ],
+      "label": "book"
+    }
+  ],
+  "latency_sec": 7.378744425950572,
+  "raw_response": "```json\n[\n  {\"box_2d\": [746, 126, 786, 145], \"label\": \"book\"},\n  {\"box_2d\": [788, 126, 819, 142], \"label\": \"book\"},\n  {\"box_2d\": [739, 219, 810, 235], \"label\": \"book\"},\n  {\"box_2d\": [669, 273, 735, 292], \"label\": \"book\"},\n  {\"box_2d\": [806, 329, 856, 348], \"label\": \"book\"},\n  {\"box_2d\": [668, 381, 715, 401], \"label\": \"book\"},\n  {\"box_2d\": [791, 442, 853, 466], \"label\": \"book\"},\n  {\"box_2d\": [671, 489, 719, 511], \"label\": \"book\"},\n  {\"box_2d\": [733, 545, 779, 563], \"label\": \"book\"},\n  {\"box_2d\": [785, 545, 843, 567], \"label\": \"book\"},\n  {\"box_2d\": [670, 600, 720, 620], \"label\": \"book\"},\n  {\"box_2d\": [725, 600, 770, 617], \"label\": \"book\"}\n]\n```"
+}

@@ -1,0 +1,27 @@
+{
+  "model": "Qwen3-VL-8B-Instruct",
+  "strategy": "single_query",
+  "image": "/home/maxim/PycharmProjects/zero-shot-detection-benchmark/data/raw/coco2017/val2017/000000058029.jpg",
+  "labels": [
+    "sink",
+    "book",
+    "oven",
+    "scissors",
+    "toaster",
+    "toothbrush",
+    "vase"
+  ],
+  "detections": [
+    {
+      "box_2d": [
+        477.0,
+        875.0,
+        700.0,
+        1000.0
+      ],
+      "label": "sink"
+    }
+  ],
+  "latency_sec": 5.738083136006026,
+  "raw_response": "user\nYou are an object detection assistant. Given the image and the list of target classes, return detections as JSON.\nTarget classes: sink, book, oven, scissors, toaster, toothbrush, vase.\nOutput format: [{\"box_2d\":[x1,y1,x2,y2],\"label\":\"class_name\"}...]\nUse pixel coordinates relative to the input image. Return JSON only.\nassistant\n```json\n[\n\t{\"box_2d\":[477, 875, 700, 1000],\"label\":\"sink\"}\n]\n```"
+}

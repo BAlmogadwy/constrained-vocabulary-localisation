@@ -1,0 +1,198 @@
+{
+ "image": "000000091406.jpg",
+ "model": "qwen/qwen3-vl-235b-a22b-instruct",
+ "labels": [
+  "book",
+  "refrigerator",
+  "scissors",
+  "sink",
+  "teddy bear",
+  "toothbrush",
+  "vase"
+ ],
+ "detections": [
+  {
+   "box_2d": [
+    147.84,
+    27.56,
+    213.76,
+    74.624
+   ],
+   "label": "book",
+   "score": 0.95
+  },
+  {
+   "box_2d": [
+    581.76,
+    147.552,
+    639.36,
+    190.8
+   ],
+   "label": "book",
+   "score": 0.93
+  },
+  {
+   "box_2d": [
+    581.76,
+    190.8,
+    639.36,
+    212.0
+   ],
+   "label": "book",
+   "score": 0.92
+  },
+  {
+   "box_2d": [
+    581.76,
+    212.0,
+    639.36,
+    233.2
+   ],
+   "label": "book",
+   "score": 0.91
+  },
+  {
+   "box_2d": [
+    581.76,
+    233.2,
+    639.36,
+    254.4
+   ],
+   "label": "book",
+   "score": 0.9
+  },
+  {
+   "box_2d": [
+    581.76,
+    254.4,
+    639.36,
+    275.6
+   ],
+   "label": "book",
+   "score": 0.89
+  },
+  {
+   "box_2d": [
+    581.76,
+    275.6,
+    639.36,
+    296.8
+   ],
+   "label": "book",
+   "score": 0.88
+  },
+  {
+   "box_2d": [
+    581.76,
+    296.8,
+    639.36,
+    318.0
+   ],
+   "label": "book",
+   "score": 0.87
+  },
+  {
+   "box_2d": [
+    581.76,
+    318.0,
+    639.36,
+    339.2
+   ],
+   "label": "book",
+   "score": 0.86
+  },
+  {
+   "box_2d": [
+    581.76,
+    339.2,
+    639.36,
+    360.4
+   ],
+   "label": "book",
+   "score": 0.85
+  },
+  {
+   "box_2d": [
+    581.76,
+    360.4,
+    639.36,
+    381.6
+   ],
+   "label": "book",
+   "score": 0.84
+  },
+  {
+   "box_2d": [
+    581.76,
+    381.6,
+    639.36,
+    402.8
+   ],
+   "label": "book",
+   "score": 0.83
+  },
+  {
+   "box_2d": [
+    581.76,
+    402.8,
+    639.36,
+    424.0
+   ],
+   "label": "book",
+   "score": 0.82
+  }
+ ],
+ "latency_sec": 19.90543830000388,
+ "usage": {
+  "prompt_tokens": 352,
+  "completion_tokens": 800,
+  "total_tokens": 1152
+ },
+ "raw_response": {
+  "id": "gen-1783410673-LdINORA81s9e9MsSa1iK",
+  "object": "chat.completion",
+  "created": 1783410673,
+  "model": "qwen/qwen3-vl-235b-a22b-instruct",
+  "provider": "DeepInfra",
+  "system_fingerprint": null,
+  "service_tier": null,
+  "choices": [
+   {
+    "index": 0,
+    "logprobs": null,
+    "finish_reason": "length",
+    "native_finish_reason": "length",
+    "message": {
+     "role": "assistant",
+     "content": "```json\n[\n\t{\"bbox_2d\": [231, 65, 334, 176], \"label\": \"book\", \"confidence\": 0.95},\n\t{\"bbox_2d\": [909, 348, 999, 450], \"label\": \"book\", \"confidence\": 0.93},\n\t{\"bbox_2d\": [909, 450, 999, 500], \"label\": \"book\", \"confidence\": 0.92},\n\t{\"bbox_2d\": [909, 500, 999, 550], \"label\": \"book\", \"confidence\": 0.91},\n\t{\"bbox_2d\": [909, 550, 999, 600], \"label\": \"book\", \"confidence\": 0.90},\n\t{\"bbox_2d\": [909, 600, 999, 650], \"label\": \"book\", \"confidence\": 0.89},\n\t{\"bbox_2d\": [909, 650, 999, 700], \"label\": \"book\", \"confidence\": 0.88},\n\t{\"bbox_2d\": [909, 700, 999, 750], \"label\": \"book\", \"confidence\": 0.87},\n\t{\"bbox_2d\": [909, 750, 999, 800], \"label\": \"book\", \"confidence\": 0.86},\n\t{\"bbox_2d\": [909, 800, 999, 850], \"label\": \"book\", \"confidence\": 0.85},\n\t{\"bbox_2d\": [909, 850, 999, 900], \"label\": \"book\", \"confidence\": 0.84},\n\t{\"bbox_2d\": [909, 900, 999, 950], \"label\": \"book\", \"confidence\": 0.83},\n\t{\"bbox_2d\": [909, 950, 999, 1000], \"label\": \"book\", \"confidence\": 0.82},\n\t{\"bbox_2d\": [909, 1000, 999, 1050], \"label\": \"book\", \"confidence\": 0.81},\n\t{\"bbox_2d\": [909, 1050, 999, 1100], \"label\": \"book\", \"confidence\": 0.80},\n\t{\"bbox_2d\": [909, 1100, 999, 1150], \"label\": \"book\", \"confidence\": 0.79},\n\t{\"bbox_2d\": [909, 1150, 999, 1200], \"label\": \"book\", \"confidence\": 0.78},\n\t{\"bbox_2d\": [909, 1200, 999, 1250], \"label\": \"book\", \"confidence\": 0.77},\n\t{\"bbox_2d\": [909, 1250, 999, 1300], \"",
+     "refusal": null,
+     "reasoning": null
+    }
+   }
+  ],
+  "usage": {
+   "prompt_tokens": 352,
+   "completion_tokens": 800,
+   "total_tokens": 1152,
+   "cost": 0.0007744,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.0007744,
+    "upstream_inference_prompt_cost": 7.04e-05,
+    "upstream_inference_completions_cost": 0.000704
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   }
+  }
+ },
+ "ts": "2026-07-07T07:51:31.915792+00:00"
+}

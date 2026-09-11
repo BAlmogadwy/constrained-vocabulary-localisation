@@ -1,0 +1,222 @@
+{
+ "image": "000000491366.jpg",
+ "labels": [
+  "clock",
+  "microwave",
+  "oven",
+  "scissors",
+  "teddy bear",
+  "toothbrush",
+  "vase"
+ ],
+ "tau": 0.4,
+ "detector": {
+  "detections": [
+   {
+    "label": "microwave",
+    "box": [
+     408.7567443847656,
+     115.82467651367188,
+     500.0,
+     275.29437255859375
+    ],
+    "score": 0.02503528632223606
+   },
+   {
+    "label": "vase",
+    "box": [
+     416.1705017089844,
+     186.4491729736328,
+     457.0176086425781,
+     243.70758056640625
+    ],
+    "score": 0.006840365938842297
+   },
+   {
+    "label": "clock",
+    "box": [
+     191.64927673339844,
+     150.43661499023438,
+     230.59738159179688,
+     186.36630249023438
+    ],
+    "score": 0.004180727060884237
+   },
+   {
+    "label": "clock",
+    "box": [
+     153.17201232910156,
+     158.05430603027344,
+     198.0295867919922,
+     208.07156372070312
+    ],
+    "score": 0.003929662052541971
+   },
+   {
+    "label": "vase",
+    "box": [
+     399.5775146484375,
+     150.9931640625,
+     431.720458984375,
+     224.18060302734375
+    ],
+    "score": 0.0018502313178032637
+   },
+   {
+    "label": "teddy bear",
+    "box": [
+     247.6856231689453,
+     255.8429412841797,
+     273.9740295410156,
+     272.32659912109375
+    ],
+    "score": 0.0010887666139751673
+   }
+  ],
+  "latency_sec": 0.038122300000395626
+ },
+ "detector_max_score": 0.02503528632223606,
+ "escalated": true,
+ "vlm": {
+  "model": "qwen/qwen3-vl-235b-a22b-instruct",
+  "detections": [
+   {
+    "label": "clock",
+    "box": [
+     152.5,
+     163.5,
+     187.5,
+     199.5
+    ],
+    "score": 1.0
+   },
+   {
+    "label": "clock",
+    "box": [
+     194.5,
+     153.0,
+     225.5,
+     183.75
+    ],
+    "score": 1.0
+   }
+  ],
+  "latency_sec": 3.3087506000010762,
+  "usage": {
+   "prompt_tokens": 284,
+   "completion_tokens": 91,
+   "total_tokens": 375
+  },
+  "raw_response": {
+   "id": "gen-1783409812-GbTMySf7uNbSbGeH6WZr",
+   "object": "chat.completion",
+   "created": 1783409812,
+   "model": "qwen/qwen3-vl-235b-a22b-instruct",
+   "provider": "Alibaba",
+   "system_fingerprint": null,
+   "service_tier": null,
+   "choices": [
+    {
+     "index": 0,
+     "logprobs": null,
+     "finish_reason": "stop",
+     "native_finish_reason": "stop",
+     "message": {
+      "role": "assistant",
+      "content": "```json\n[\n\t{\"bbox_2d\": [305, 436, 375, 532], \"label\": \"clock\", \"confidence\": 0.98},\n\t{\"bbox_2d\": [389, 408, 451, 490], \"label\": \"clock\", \"confidence\": 0.98}\n]\n```",
+      "refusal": null,
+      "reasoning": null
+     }
+    }
+   ],
+   "usage": {
+    "prompt_tokens": 284,
+    "completion_tokens": 91,
+    "total_tokens": 375,
+    "cost": 0.00016848,
+    "is_byok": false,
+    "prompt_tokens_details": {
+     "cached_tokens": 0,
+     "cache_write_tokens": 0,
+     "audio_tokens": 0,
+     "video_tokens": 0
+    },
+    "cost_details": {
+     "upstream_inference_cost": 0.00016848,
+     "upstream_inference_prompt_cost": 7.384e-05,
+     "upstream_inference_completions_cost": 9.464e-05
+    },
+    "completion_tokens_details": {
+     "reasoning_tokens": 0,
+     "image_tokens": 0,
+     "audio_tokens": 0
+    }
+   }
+  }
+ },
+ "fallback": false,
+ "ts": "2026-07-07T07:36:50.292469+00:00",
+ "fused": [
+  {
+   "label": "microwave",
+   "box": [
+    408.7567443847656,
+    115.82467651367188,
+    500.0,
+    275.29437255859375
+   ],
+   "score": 0.02503528632223606
+  },
+  {
+   "label": "vase",
+   "box": [
+    416.1705017089844,
+    186.4491729736328,
+    457.0176086425781,
+    243.70758056640625
+   ],
+   "score": 0.006840365938842297
+  },
+  {
+   "label": "clock",
+   "box": [
+    191.64927673339844,
+    150.43661499023438,
+    230.59738159179688,
+    186.36630249023438
+   ],
+   "score": 0.3041807270608842
+  },
+  {
+   "label": "clock",
+   "box": [
+    153.17201232910156,
+    158.05430603027344,
+    198.0295867919922,
+    208.07156372070312
+   ],
+   "score": 0.30392966205254196
+  },
+  {
+   "label": "vase",
+   "box": [
+    399.5775146484375,
+    150.9931640625,
+    431.720458984375,
+    224.18060302734375
+   ],
+   "score": 0.0018502313178032637
+  },
+  {
+   "label": "teddy bear",
+   "box": [
+    247.6856231689453,
+    255.8429412841797,
+    273.9740295410156,
+    272.32659912109375
+   ],
+   "score": 0.0010887666139751673
+  }
+ ],
+ "latency_total_sec": 3.3469172000041
+}

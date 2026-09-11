@@ -1,0 +1,121 @@
+{
+ "image": "000000293474.jpg",
+ "labels": [
+  "book",
+  "hair drier",
+  "microwave",
+  "scissors",
+  "sink",
+  "teddy bear",
+  "toothbrush"
+ ],
+ "tau": 0.4,
+ "detector": {
+  "detections": [
+   {
+    "label": "book",
+    "box": [
+     403.6986389160156,
+     43.8842658996582,
+     417.063232421875,
+     53.08464813232422
+    ],
+    "score": 0.004012827295809984
+   },
+   {
+    "label": "teddy bear",
+    "box": [
+     422.430908203125,
+     16.704463958740234,
+     472.68896484375,
+     119.49700927734375
+    ],
+    "score": 0.0010143467225134373
+   }
+  ],
+  "latency_sec": 0.03936690000409726
+ },
+ "detector_max_score": 0.004012827295809984,
+ "escalated": true,
+ "vlm": {
+  "model": "qwen/qwen3-vl-235b-a22b-instruct",
+  "detections": [],
+  "latency_sec": 4.403552599993418,
+  "usage": {
+   "prompt_tokens": 254,
+   "completion_tokens": 6,
+   "total_tokens": 260
+  },
+  "raw_response": {
+   "id": "gen-1783409268-MZ2vOkxGF8jxhV3JEFfs",
+   "object": "chat.completion",
+   "created": 1783409268,
+   "model": "qwen/qwen3-vl-235b-a22b-instruct",
+   "provider": "Alibaba",
+   "system_fingerprint": null,
+   "service_tier": null,
+   "choices": [
+    {
+     "index": 0,
+     "logprobs": null,
+     "finish_reason": "stop",
+     "native_finish_reason": "stop",
+     "message": {
+      "role": "assistant",
+      "content": "```json\n[]\n```",
+      "refusal": null,
+      "reasoning": null
+     }
+    }
+   ],
+   "usage": {
+    "prompt_tokens": 254,
+    "completion_tokens": 6,
+    "total_tokens": 260,
+    "cost": 7.228e-05,
+    "is_byok": false,
+    "prompt_tokens_details": {
+     "cached_tokens": 0,
+     "cache_write_tokens": 0,
+     "audio_tokens": 0,
+     "video_tokens": 0
+    },
+    "cost_details": {
+     "upstream_inference_cost": 7.228e-05,
+     "upstream_inference_prompt_cost": 6.604e-05,
+     "upstream_inference_completions_cost": 6.24e-06
+    },
+    "completion_tokens_details": {
+     "reasoning_tokens": 0,
+     "image_tokens": 0,
+     "audio_tokens": 0
+    }
+   }
+  }
+ },
+ "fallback": false,
+ "ts": "2026-07-07T07:27:44.739429+00:00",
+ "fused": [
+  {
+   "label": "book",
+   "box": [
+    403.6986389160156,
+    43.8842658996582,
+    417.063232421875,
+    53.08464813232422
+   ],
+   "score": 0.004012827295809984
+  },
+  {
+   "label": "teddy bear",
+   "box": [
+    422.430908203125,
+    16.704463958740234,
+    472.68896484375,
+    119.49700927734375
+   ],
+   "score": 0.0010143467225134373
+  }
+ ],
+ "latency_total_sec": 4.442927499985672
+}

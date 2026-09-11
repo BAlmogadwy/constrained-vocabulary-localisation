@@ -1,0 +1,79 @@
+{
+  "model": "gemini-2.5-flash",
+  "strategy": "single_query",
+  "image": "/home/maxim/PycharmProjects/zero-shot-detection-benchmark/data/subsets/lvis_v1_val_unseen/images/000000169646.jpg",
+  "labels": [
+    "spatula",
+    "coffee_maker",
+    "hair_dryer",
+    "musical_instrument",
+    "stapler_(stapling_machine)"
+  ],
+  "detections": [
+    {
+      "box_2d": [
+        198,
+        281,
+        252,
+        321
+      ],
+      "label": "spatula"
+    },
+    {
+      "box_2d": [
+        188,
+        356,
+        281,
+        383
+      ],
+      "label": "spatula"
+    },
+    {
+      "box_2d": [
+        180,
+        574,
+        280,
+        597
+      ],
+      "label": "spatula"
+    },
+    {
+      "box_2d": [
+        116,
+        574,
+        280,
+        600
+      ],
+      "label": "spatula"
+    },
+    {
+      "box_2d": [
+        118,
+        629,
+        237,
+        650
+      ],
+      "label": "spatula"
+    },
+    {
+      "box_2d": [
+        118,
+        658,
+        240,
+        679
+      ],
+      "label": "spatula"
+    },
+    {
+      "box_2d": [
+        116,
+        241,
+        235,
+        271
+      ],
+      "label": "spatula"
+    }
+  ],
+  "latency_sec": 4.592543877079152,
+  "raw_response": "[{\"box_2d\": [198, 281, 252, 321], \"label\": \"spatula\"}, {\"box_2d\": [188, 356, 281, 383], \"label\": \"spatula\"}, {\"box_2d\": [180, 574, 280, 597], \"label\": \"spatula\"}, {\"box_2d\": [116, 574, 280, 600], \"label\": \"spatula\"}, {\"box_2d\": [118, 629, 237, 650], \"label\": \"spatula\"}, {\"box_2d\": [118, 658, 240, 679], \"label\": \"spatula\"}, {\"box_2d\": [116, 241, 235, 271], \"label\": \"spatula\"}]"
+}

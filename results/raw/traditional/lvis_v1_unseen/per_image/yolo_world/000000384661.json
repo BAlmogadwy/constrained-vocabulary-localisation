@@ -1,0 +1,35 @@
+{
+  "model": "yolo_world",
+  "strategy": "default",
+  "image": "/home/maxim/PycharmProjects/zero-shot-detection-benchmark/data/subsets/lvis_v1_val_unseen/images/000000384661.jpg",
+  "labels": [
+    "blender",
+    "spatula",
+    "microscope",
+    "musical_instrument",
+    "sewing_machine",
+    "stapler_(stapling_machine)"
+  ],
+  "result": {
+    "detections": [
+      {
+        "label": "spatula",
+        "score": 0.280244380235672,
+        "box_2d": [
+          320.43951416015625,
+          41.505027770996094,
+          361.91302490234375,
+          87.47929382324219
+        ],
+        "box": [
+          320.43951416015625,
+          41.505027770996094,
+          361.91302490234375,
+          87.47929382324219
+        ]
+      }
+    ],
+    "latency_sec": 0.035898017697036266,
+    "raw_response": null
+  }
+}

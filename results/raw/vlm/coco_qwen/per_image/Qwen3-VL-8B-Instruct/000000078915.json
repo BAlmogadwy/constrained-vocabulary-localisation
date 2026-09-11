@@ -1,0 +1,122 @@
+{
+  "model": "Qwen3-VL-8B-Instruct",
+  "strategy": "single_query",
+  "image": "/home/maxim/PycharmProjects/zero-shot-detection-benchmark/data/raw/coco2017/val2017/000000078915.jpg",
+  "labels": [
+    "microwave",
+    "oven",
+    "toaster",
+    "sink",
+    "refrigerator",
+    "book",
+    "clock",
+    "vase",
+    "scissors",
+    "teddy bear",
+    "hair drier",
+    "toothbrush"
+  ],
+  "detections": [
+    {
+      "box_2d": [
+        267.0,
+        621.0,
+        620.0,
+        1000.0
+      ],
+      "label": "person"
+    },
+    {
+      "box_2d": [
+        538.0,
+        168.0,
+        620.0,
+        292.0
+      ],
+      "label": "person"
+    },
+    {
+      "box_2d": [
+        655.0,
+        16.0,
+        767.0,
+        138.0
+      ],
+      "label": "person"
+    },
+    {
+      "box_2d": [
+        752.0,
+        22.0,
+        863.0,
+        138.0
+      ],
+      "label": "person"
+    },
+    {
+      "box_2d": [
+        506.0,
+        12.0,
+        655.0,
+        122.0
+      ],
+      "label": "person"
+    },
+    {
+      "box_2d": [
+        962.0,
+        107.0,
+        1000.0,
+        312.0
+      ],
+      "label": "person"
+    },
+    {
+      "box_2d": [
+        202.0,
+        0.0,
+        405.0,
+        78.0
+      ],
+      "label": "person"
+    },
+    {
+      "box_2d": [
+        83.0,
+        0.0,
+        227.0,
+        67.0
+      ],
+      "label": "person"
+    },
+    {
+      "box_2d": [
+        405.0,
+        0.0,
+        542.0,
+        87.0
+      ],
+      "label": "person"
+    },
+    {
+      "box_2d": [
+        317.0,
+        464.0,
+        452.0,
+        641.0
+      ],
+      "label": "racket"
+    },
+    {
+      "box_2d": [
+        281.0,
+        464.0,
+        323.0,
+        497.0
+      ],
+      "label": "sports ball"
+    }
+  ],
+  "latency_sec": 14.236290336993989,
+  "raw_response": "user\nYou are an object detection assistant. Given the image and the list of target classes, return detections as JSON.\nTarget classes: microwave, oven, toaster, sink, refrigerator, book, clock, vase, scissors, teddy bear, hair drier, toothbrush.\nOutput format: [{\"box_2d\":[x1,y1,x2,y2],\"label\":\"class_name\"}...]\nUse pixel coordinates relative to the input image. Return JSON only.\nassistant\n```json\n[\n\t{\"box_2d\": [267, 621, 620, 1000], \"label\": \"person\"},\n\t{\"bbox_2d\": [538, 168, 620, 292], \"label\": \"person\"},\n\t{\"bbox_2d\": [655, 16, 767, 138], \"label\": \"person\"},\n\t{\"bbox_2d\": [752, 22, 863, 138], \"label\": \"person\"},\n\t{\"bbox_2d\": [506, 12, 655, 122], \"label\": \"person\"},\n\t{\"bbox_2d\": [962, 107, 1000, 312], \"label\": \"person\"},\n\t{\"bbox_2d\": [202, 0, 405, 78], \"label\": \"person\"},\n\t{\"bbox_2d\": [83, 0, 227, 67], \"label\": \"person\"},\n\t{\"bbox_2d\": [405, 0, 542, 87], \"label\": \"person\"},\n\t{\"bbox_2d\": [317, 464, 452, 641], \"label\": \"racket\"},\n\t{\"bbox_2d\": [281, 464, 323, 497], \"label\": \"sports ball\"}\n]\n```"
+}

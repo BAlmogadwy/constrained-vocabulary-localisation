@@ -1,0 +1,27 @@
+{
+  "model": "gemini-2.5-flash",
+  "strategy": "single_query",
+  "image": "/home/maxim/PycharmProjects/zero-shot-detection-benchmark/data/raw/coco2017/val2017/000000085329.jpg",
+  "labels": [
+    "microwave",
+    "oven",
+    "toaster",
+    "sink",
+    "refrigerator",
+    "book",
+    "clock",
+    "vase",
+    "scissors",
+    "teddy bear",
+    "hair drier",
+    "toothbrush"
+  ],
+  "result": {
+    "detections": [],
+    "latency_sec": 0.7290383389918134,
+    "raw_response": {
+      "error": "prompt_feedback {\n  block_reason: PROHIBITED_CONTENT\n}\nusage_metadata {\n  prompt_token_count: 343\n  total_token_count: 343\n}\nmodel_version: \"gemini-2.5-flash\"\n",
+      "traceback": "Traceback (most recent call last):\n  File \"/home/maxim/PycharmProjects/zero-shot-detection-benchmark/experiments/run_vlm.py\", line 189, in main\n    prediction = detector.predict(\n                 ^^^^^^^^^^^^^^^^^\n  File \"/home/maxim/PycharmProjects/zero-shot-detection-benchmark/models/vlm/gemini_detector.py\", line 40, in predict\n    return self._predict_single_query(image_path, classes)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/maxim/PycharmProjects/zero-shot-detection-benchmark/models/vlm/gemini_detector.py\", line 55, in _predict_single_query\n    response.resolve()\n  File \"/home/maxim/PycharmProjects/zero-shot-detection-benchmark/.venv/lib/python3.12/site-packages/google/generativeai/types/generation_types.py\", line 691, in resolve\n    for _ in self:\n             ^^^^\n  File \"/home/maxim/PycharmProjects/zero-shot-detection-benchmark/.venv/lib/python3.12/site-packages/google/generativeai/types/generation_types.py\", line 663, in __iter__\n    raise self._error\ngoogle.generativeai.types.generation_types.BlockedPromptException: prompt_feedback {\n  block_reason: PROHIBITED_CONTENT\n}\nusage_metadata {\n  prompt_token_count: 343\n  total_token_count: 343\n}\nmodel_version: \"gemini-2.5-flash\"\n\n"
+    }
+  }
+}

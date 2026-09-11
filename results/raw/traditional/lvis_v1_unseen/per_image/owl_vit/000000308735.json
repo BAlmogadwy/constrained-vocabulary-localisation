@@ -1,0 +1,50 @@
+{
+  "model": "owl_vit",
+  "strategy": "default",
+  "image": "/home/maxim/PycharmProjects/zero-shot-detection-benchmark/data/subsets/lvis_v1_val_unseen/images/000000308735.jpg",
+  "labels": [
+    "spatula",
+    "blender",
+    "microscope",
+    "snowboard",
+    "stapler_(stapling_machine)"
+  ],
+  "result": {
+    "detections": [
+      {
+        "label": "spatula",
+        "score": 0.29562196135520935,
+        "box_2d": [
+          537.0808715820312,
+          1.4028996229171753,
+          632.0325317382812,
+          52.68717575073242
+        ],
+        "box": [
+          537.0808715820312,
+          1.4028996229171753,
+          632.0325317382812,
+          52.68717575073242
+        ]
+      },
+      {
+        "label": "spatula",
+        "score": 0.2863115072250366,
+        "box_2d": [
+          396.21826171875,
+          27.997474670410156,
+          470.2779541015625,
+          82.0666732788086
+        ],
+        "box": [
+          396.21826171875,
+          27.997474670410156,
+          470.2779541015625,
+          82.0666732788086
+        ]
+      }
+    ],
+    "latency_sec": 0.08628167025744915,
+    "raw_response": null
+  }
+}

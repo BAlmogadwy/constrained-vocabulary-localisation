@@ -1,0 +1,129 @@
+{
+ "image": "000000565776.jpg",
+ "model": "qwen/qwen3-vl-235b-a22b-instruct",
+ "labels": [
+  "oven",
+  "refrigerator",
+  "sink",
+  "vase",
+  "book",
+  "hair drier",
+  "scissors",
+  "toaster"
+ ],
+ "detections": [
+  {
+   "box_2d": [
+    288.0,
+    210.5,
+    357.12,
+    302.699
+   ],
+   "label": "oven",
+   "score": 0.99
+  },
+  {
+   "box_2d": [
+    464.0,
+    120.406,
+    561.92,
+    222.709
+   ],
+   "label": "refrigerator",
+   "score": 0.99
+  },
+  {
+   "box_2d": [
+    89.6,
+    223.551,
+    176.0,
+    246.706
+   ],
+   "label": "sink",
+   "score": 0.98
+  },
+  {
+   "box_2d": [
+    496.0,
+    220.604,
+    553.6,
+    230.708
+   ],
+   "label": "sink",
+   "score": 0.97
+  },
+  {
+   "box_2d": [
+    128.0,
+    192.397,
+    145.28,
+    221.446
+   ],
+   "label": "vase",
+   "score": 0.96
+  },
+  {
+   "box_2d": [
+    74.88,
+    116.196,
+    123.52,
+    157.454
+   ],
+   "label": "book",
+   "score": 0.95
+  }
+ ],
+ "latency_sec": 7.188653499993961,
+ "usage": {
+  "prompt_tokens": 353,
+  "completion_tokens": 262,
+  "total_tokens": 615
+ },
+ "raw_response": {
+  "id": "gen-1783415283-qJZjmoTYRUtZ5YtCqiFw",
+  "object": "chat.completion",
+  "created": 1783415283,
+  "model": "qwen/qwen3-vl-235b-a22b-instruct",
+  "provider": "Parasail",
+  "system_fingerprint": null,
+  "service_tier": null,
+  "choices": [
+   {
+    "index": 0,
+    "logprobs": null,
+    "finish_reason": "stop",
+    "native_finish_reason": "stop",
+    "message": {
+     "role": "assistant",
+     "content": "```json\n[\n\t{\"bbox_2d\": [450, 500, 558, 719], \"label\": \"oven\", \"confidence\": 0.99},\n\t{\"bbox_2d\": [725, 286, 878, 529], \"label\": \"refrigerator\", \"confidence\": 0.99},\n\t{\"bbox_2d\": [140, 531, 275, 586], \"label\": \"sink\", \"confidence\": 0.98},\n\t{\"bbox_2d\": [775, 524, 865, 548], \"label\": \"sink\", \"confidence\": 0.97},\n\t{\"bbox_2d\": [200, 457, 227, 526], \"label\": \"vase\", \"confidence\": 0.96},\n\t{\"bbox_2d\": [117, 276, 193, 374], \"label\": \"book\", \"confidence\": 0.95}\n]\n```",
+     "refusal": null,
+     "reasoning": null
+    }
+   }
+  ],
+  "usage": {
+   "prompt_tokens": 353,
+   "completion_tokens": 262,
+   "total_tokens": 615,
+   "cost": 0.00057193,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00057193,
+    "upstream_inference_prompt_cost": 7.413e-05,
+    "upstream_inference_completions_cost": 0.0004978
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   }
+  }
+ },
+ "ts": "2026-07-07T09:08:07.928943+00:00"
+}

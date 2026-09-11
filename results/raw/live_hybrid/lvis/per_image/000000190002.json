@@ -1,0 +1,239 @@
+{
+ "image": "000000190002.jpg",
+ "labels": [
+  "coffee_maker",
+  "blender",
+  "microscope",
+  "musical_instrument",
+  "sewing_machine"
+ ],
+ "tau": 0.4,
+ "detector": {
+  "detections": [
+   {
+    "label": "coffee_maker",
+    "box": [
+     378.99542236328125,
+     182.9875946044922,
+     392.9584045410156,
+     205.07745361328125
+    ],
+    "score": 0.15195666253566742
+   },
+   {
+    "label": "coffee_maker",
+    "box": [
+     0.0,
+     114.39596557617188,
+     5.877400875091553,
+     141.5125274658203
+    ],
+    "score": 0.016934921965003014
+   },
+   {
+    "label": "coffee_maker",
+    "box": [
+     375.8461608886719,
+     99.35977172851562,
+     394.04779052734375,
+     117.57819366455078
+    ],
+    "score": 0.013670665211975574
+   },
+   {
+    "label": "coffee_maker",
+    "box": [
+     416.3796081542969,
+     63.2547607421875,
+     435.78619384765625,
+     95.21217346191406
+    ],
+    "score": 0.008644136600196362
+   },
+   {
+    "label": "musical_instrument",
+    "box": [
+     481.1596984863281,
+     199.70254516601562,
+     500.0,
+     269.6611328125
+    ],
+    "score": 0.0032431166619062424
+   },
+   {
+    "label": "coffee_maker",
+    "box": [
+     481.024169921875,
+     225.59962463378906,
+     500.0,
+     334.546142578125
+    ],
+    "score": 0.003230475587770343
+   },
+   {
+    "label": "musical_instrument",
+    "box": [
+     481.3792724609375,
+     235.11614990234375,
+     500.0,
+     266.8133239746094
+    ],
+    "score": 0.00200948235578835
+   },
+   {
+    "label": "coffee_maker",
+    "box": [
+     258.0845642089844,
+     197.22421264648438,
+     267.5358581542969,
+     208.0556640625
+    ],
+    "score": 0.0012552153784781694
+   }
+  ],
+  "latency_sec": 0.037132900004507974
+ },
+ "detector_max_score": 0.15195666253566742,
+ "escalated": true,
+ "vlm": {
+  "model": "qwen/qwen3-vl-235b-a22b-instruct",
+  "detections": [],
+  "latency_sec": 2.488211700008833,
+  "usage": {
+   "prompt_tokens": 249,
+   "completion_tokens": 2,
+   "total_tokens": 251
+  },
+  "raw_response": {
+   "id": "gen-1783406729-C7WE3HujEkddfRwVr2AX",
+   "object": "chat.completion",
+   "created": 1783406729,
+   "model": "qwen/qwen3-vl-235b-a22b-instruct",
+   "provider": "Parasail",
+   "system_fingerprint": null,
+   "service_tier": null,
+   "choices": [
+    {
+     "index": 0,
+     "logprobs": null,
+     "finish_reason": "stop",
+     "native_finish_reason": "stop",
+     "message": {
+      "role": "assistant",
+      "content": "[]",
+      "refusal": null,
+      "reasoning": null
+     }
+    }
+   ],
+   "usage": {
+    "prompt_tokens": 249,
+    "completion_tokens": 2,
+    "total_tokens": 251,
+    "cost": 5.609e-05,
+    "is_byok": false,
+    "prompt_tokens_details": {
+     "cached_tokens": 0,
+     "cache_write_tokens": 0,
+     "audio_tokens": 0,
+     "video_tokens": 0
+    },
+    "cost_details": {
+     "upstream_inference_cost": 5.609e-05,
+     "upstream_inference_prompt_cost": 5.229e-05,
+     "upstream_inference_completions_cost": 3.8e-06
+    },
+    "completion_tokens_details": {
+     "reasoning_tokens": 0,
+     "image_tokens": 0,
+     "audio_tokens": 0
+    }
+   }
+  }
+ },
+ "fallback": false,
+ "ts": "2026-07-07T06:45:27.161673+00:00",
+ "fused": [
+  {
+   "label": "coffee_maker",
+   "box": [
+    378.99542236328125,
+    182.9875946044922,
+    392.9584045410156,
+    205.07745361328125
+   ],
+   "score": 0.15195666253566742
+  },
+  {
+   "label": "coffee_maker",
+   "box": [
+    0.0,
+    114.39596557617188,
+    5.877400875091553,
+    141.5125274658203
+   ],
+   "score": 0.016934921965003014
+  },
+  {
+   "label": "coffee_maker",
+   "box": [
+    375.8461608886719,
+    99.35977172851562,
+    394.04779052734375,
+    117.57819366455078
+   ],
+   "score": 0.013670665211975574
+  },
+  {
+   "label": "coffee_maker",
+   "box": [
+    416.3796081542969,
+    63.2547607421875,
+    435.78619384765625,
+    95.21217346191406
+   ],
+   "score": 0.008644136600196362
+  },
+  {
+   "label": "musical_instrument",
+   "box": [
+    481.1596984863281,
+    199.70254516601562,
+    500.0,
+    269.6611328125
+   ],
+   "score": 0.0032431166619062424
+  },
+  {
+   "label": "coffee_maker",
+   "box": [
+    481.024169921875,
+    225.59962463378906,
+    500.0,
+    334.546142578125
+   ],
+   "score": 0.003230475587770343
+  },
+  {
+   "label": "musical_instrument",
+   "box": [
+    481.3792724609375,
+    235.11614990234375,
+    500.0,
+    266.8133239746094
+   ],
+   "score": 0.00200948235578835
+  },
+  {
+   "label": "coffee_maker",
+   "box": [
+    258.0845642089844,
+    197.22421264648438,
+    267.5358581542969,
+    208.0556640625
+   ],
+   "score": 0.0012552153784781694
+  }
+ ],
+ "latency_total_sec": 2.5253538000251865
+}

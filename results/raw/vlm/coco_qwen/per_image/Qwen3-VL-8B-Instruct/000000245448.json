@@ -1,0 +1,122 @@
+{
+  "model": "Qwen3-VL-8B-Instruct",
+  "strategy": "single_query",
+  "image": "/home/maxim/PycharmProjects/zero-shot-detection-benchmark/data/raw/coco2017/val2017/000000245448.jpg",
+  "labels": [
+    "microwave",
+    "oven",
+    "toaster",
+    "sink",
+    "refrigerator",
+    "book",
+    "clock",
+    "vase",
+    "scissors",
+    "teddy bear",
+    "hair drier",
+    "toothbrush"
+  ],
+  "detections": [
+    {
+      "box_2d": [
+        387.0,
+        382.0,
+        831.0,
+        782.0
+      ],
+      "label": "motorcycle"
+    },
+    {
+      "box_2d": [
+        744.0,
+        382.0,
+        837.0,
+        456.0
+      ],
+      "label": "motorcycle"
+    },
+    {
+      "box_2d": [
+        703.0,
+        382.0,
+        730.0,
+        456.0
+      ],
+      "label": "motorcycle"
+    },
+    {
+      "box_2d": [
+        952.0,
+        405.0,
+        998.0,
+        452.0
+      ],
+      "label": "motorcycle"
+    },
+    {
+      "box_2d": [
+        919.0,
+        405.0,
+        952.0,
+        452.0
+      ],
+      "label": "motorcycle"
+    },
+    {
+      "box_2d": [
+        881.0,
+        405.0,
+        919.0,
+        452.0
+      ],
+      "label": "motorcycle"
+    },
+    {
+      "box_2d": [
+        844.0,
+        405.0,
+        881.0,
+        452.0
+      ],
+      "label": "motorcycle"
+    },
+    {
+      "box_2d": [
+        807.0,
+        405.0,
+        844.0,
+        452.0
+      ],
+      "label": "motorcycle"
+    },
+    {
+      "box_2d": [
+        769.0,
+        405.0,
+        807.0,
+        452.0
+      ],
+      "label": "motorcycle"
+    },
+    {
+      "box_2d": [
+        730.0,
+        405.0,
+        769.0,
+        452.0
+      ],
+      "label": "motorcycle"
+    },
+    {
+      "box_2d": [
+        0.0,
+        366.0,
+        253.0,
+        538.0
+      ],
+      "label": "truck"
+    }
+  ],
+  "latency_sec": 11.732179479004117,
+  "raw_response": "user\nYou are an object detection assistant. Given the image and the list of target classes, return detections as JSON.\nTarget classes: microwave, oven, toaster, sink, refrigerator, book, clock, vase, scissors, teddy bear, hair drier, toothbrush.\nOutput format: [{\"box_2d\":[x1,y1,x2,y2],\"label\":\"class_name\"}...]\nUse pixel coordinates relative to the input image. Return JSON only.\nassistant\n```json\n[\n\t{\"box_2d\": [387, 382, 831, 782],\"label\":\"motorcycle\"},\n\t{\"bbox_2d\": [744, 382, 837, 456],\"label\":\"motorcycle\"},\n\t{\"bbox_2d\": [703, 382, 730, 456],\"label\":\"motorcycle\"},\n\t{\"bbox_2d\": [952, 405, 998, 452],\"label\":\"motorcycle\"},\n\t{\"bbox_2d\": [919, 405, 952, 452],\"label\":\"motorcycle\"},\n\t{\"bbox_2d\": [881, 405, 919, 452],\"label\":\"motorcycle\"},\n\t{\"bbox_2d\": [844, 405, 881, 452],\"label\":\"motorcycle\"},\n\t{\"bbox_2d\": [807, 405, 844, 452],\"label\":\"motorcycle\"},\n\t{\"bbox_2d\": [769, 405, 807, 452],\"label\":\"motorcycle\"},\n\t{\"bbox_2d\": [730, 405, 769, 452],\"label\":\"motorcycle\"},\n\t{\"bbox_2d\": [0, 366, 253, 538],\"label\":\"truck\"}\n]\n```"
+}

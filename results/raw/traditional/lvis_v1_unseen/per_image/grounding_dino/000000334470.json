@@ -1,0 +1,34 @@
+{
+  "model": "grounding_dino",
+  "strategy": "default",
+  "image": "/home/maxim/PycharmProjects/zero-shot-detection-benchmark/data/subsets/lvis_v1_val_unseen/images/000000334470.jpg",
+  "labels": [
+    "stapler_(stapling_machine)",
+    "hair_dryer",
+    "lawn_mower",
+    "musical_instrument",
+    "sewing_machine"
+  ],
+  "result": {
+    "detections": [
+      {
+        "label": "stapler _ ( stapling _ machine ) lawn _ mower",
+        "score": 0.3323195278644562,
+        "box_2d": [
+          0.8121299743652344,
+          204.07595825195312,
+          189.8758544921875,
+          323.7628479003906
+        ],
+        "box": [
+          0.8121299743652344,
+          204.07595825195312,
+          189.8758544921875,
+          323.7628479003906
+        ]
+      }
+    ],
+    "latency_sec": 0.27924260683357716,
+    "raw_response": null
+  }
+}

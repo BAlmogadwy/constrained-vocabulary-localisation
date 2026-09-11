@@ -1,0 +1,124 @@
+{
+  "model": "Qwen3-VL-8B-Instruct",
+  "strategy": "single_query",
+  "image": "/home/maxim/PycharmProjects/zero-shot-detection-benchmark/data/subsets/lvis_v1_val_unseen/images/000000529939.jpg",
+  "labels": [
+    "snowboard",
+    "lawn_mower",
+    "microscope",
+    "sewing_machine",
+    "stapler_(stapling_machine)"
+  ],
+  "detections": [
+    {
+      "box_2d": [
+        0.0,
+        362.0,
+        124.0,
+        742.0
+      ],
+      "label": "snowboard"
+    },
+    {
+      "box_2d": [
+        0.0,
+        405.0,
+        31.0,
+        527.0
+      ],
+      "label": "snowboard"
+    },
+    {
+      "box_2d": [
+        657.0,
+        362.0,
+        744.0,
+        662.0
+      ],
+      "label": "snowboard"
+    },
+    {
+      "box_2d": [
+        828.0,
+        298.0,
+        860.0,
+        658.0
+      ],
+      "label": "snowboard"
+    },
+    {
+      "box_2d": [
+        557.0,
+        342.0,
+        638.0,
+        681.0
+      ],
+      "label": "snowboard"
+    },
+    {
+      "box_2d": [
+        467.0,
+        181.0,
+        557.0,
+        662.0
+      ],
+      "label": "snowboard"
+    },
+    {
+      "box_2d": [
+        413.0,
+        392.0,
+        494.0,
+        681.0
+      ],
+      "label": "snowboard"
+    },
+    {
+      "box_2d": [
+        393.0,
+        183.0,
+        467.0,
+        662.0
+      ],
+      "label": "snowboard"
+    },
+    {
+      "box_2d": [
+        339.0,
+        225.0,
+        402.0,
+        405.0
+      ],
+      "label": "snowboard"
+    },
+    {
+      "box_2d": [
+        339.0,
+        321.0,
+        393.0,
+        405.0
+      ],
+      "label": "snowboard"
+    },
+    {
+      "box_2d": [
+        124.0,
+        305.0,
+        298.0,
+        812.0
+      ],
+      "label": "snowboard"
+    },
+    {
+      "box_2d": [
+        273.0,
+        388.0,
+        402.0,
+        733.0
+      ],
+      "label": "snowboard"
+    }
+  ],
+  "latency_sec": 29.27675984799862,
+  "raw_response": "user\nYou are an object detection assistant. Given the image and the list of target classes, return detections as JSON.\nTarget classes: snowboard, lawn_mower, microscope, sewing_machine, stapler_(stapling_machine).\nOutput format: [{\"box_2d\":[x1,y1,x2,y2],\"label\":\"class_name\"}...]\nUse pixel coordinates relative to the input image. Return JSON only.\nassistant\n```json\n[\n\t{\"box_2d\": [0, 362, 124, 742],\"label\":\"snowboard\"},\n\t{\"box_2d\": [0, 405, 31, 527],\"label\":\"snowboard\"},\n\t{\"box_2d\": [657, 362, 744, 662],\"label\":\"snowboard\"},\n\t{\"box_2d\": [828, 298, 860, 658],\"label\":\"snowboard\"},\n\t{\"box_2d\": [557, 342, 638, 681],\"label\":\"snowboard\"},\n\t{\"box_2d\": [467, 181, 557, 662],\"label\":\"snowboard\"},\n\t{\"box_2d\": [413, 392, 494, 681],\"label\":\"snowboard\"},\n\t{\"box_2d\": [393, 183, 467, 662],\"label\":\"snowboard\"},\n\t{\"box_2d\": [339, 225, 402, 405],\"label\":\"snowboard\"},\n\t{\"box_2d\": [339, 321, 393, 405],\"label\":\"snowboard\"},\n\t{\"box_2d\": [124, 305, 298, 812],\"label\":\"snowboard\"},\n\t{\"box_2d\": [273, 388, 402, 733],\"label\":\"snowboard\"}\n]\n```"
+}

@@ -1,0 +1,44 @@
+{
+  "image": "/home/maxim/PycharmProjects/zero-shot-detection-benchmark/data/subsets/lvis_v1_val_unseen/images/000000332990.jpg",
+  "image_id": 332990,
+  "file_name": "000000332990.jpg",
+  "num_crops": 1,
+  "crops": [
+    {
+      "annotation_id": 127023,
+      "bbox": [
+        311.21,
+        223.54,
+        30.74,
+        11.64
+      ],
+      "category_id": 976,
+      "gt_label": "snowboard",
+      "labels": [
+        "snowboard",
+        "coffee_maker",
+        "hair_dryer",
+        "microscope",
+        "musical_instrument"
+      ],
+      "prediction": "snowboard",
+      "normalized_prediction": "snowboard",
+      "matched_label": "snowboard",
+      "correct": true,
+      "latency_sec": 6.843455481022829,
+      "raw_response": {
+        "snowboard": "[]",
+        "snowboard_norm": "[\n    {\n        \"box_norm\": [0.0, 0.0, 0.5, 0.5],\n        \"label\": \"snowboard\"\n    }\n]",
+        "coffee_maker": "[]",
+        "coffee_maker_norm": "[{\"box_norm\":[0.0,0.0,0.0,0.0],\"label\":\"coffee_maker\"}]",
+        "hair_dryer": "[]",
+        "hair_dryer_norm": "[\n    {\n        \"box_norm\": [0.0, 0.0, 0.5, 0.5],\n        \"label\": \"hair_dryer\"\n    }\n]",
+        "microscope": "[]",
+        "microscope_norm": "[\n    {\n        \"box_norm\": [0.0, 0.0, 0.5, 0.5],\n        \"label\": \"microscope\"\n    }\n]",
+        "musical_instrument": "[]",
+        "musical_instrument_norm": "[\n    {\n        \"box_norm\": [0.0, 0.0, 0.5, 0.5],\n        \"label\": \"musical_instrument\"\n    }\n]"
+      }
+    }
+  ],
+  "prompt": "You are an object recognition assistant.\n\nYou will see a cropped image that contains exactly one object\nfrom the following LVIS categories (unseen split):\n\n- snowboard\n- coffee_maker\n- hair_dryer\n- microscope\n- musical_instrument\n\nYour task:\n- Return ONLY the best matching category name from this list.\n- Do not output explanations or extra text.\n\nAnswer with a single string: \"class_name\"."
+}

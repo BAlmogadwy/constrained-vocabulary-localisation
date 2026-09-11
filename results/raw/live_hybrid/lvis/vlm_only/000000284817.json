@@ -1,0 +1,76 @@
+{
+ "image": "000000284817.jpg",
+ "model": "qwen/qwen3-vl-235b-a22b-instruct",
+ "labels": [
+  "spatula",
+  "hair_dryer",
+  "microscope",
+  "musical_instrument",
+  "stapler_(stapling_machine)"
+ ],
+ "detections": [
+  {
+   "box_2d": [
+    230.4,
+    315.24,
+    269.44,
+    359.118
+   ],
+   "label": "spatula",
+   "score": 0.95
+  }
+ ],
+ "latency_sec": 4.147015499998815,
+ "usage": {
+  "prompt_tokens": 357,
+  "completion_tokens": 51,
+  "total_tokens": 408
+ },
+ "raw_response": {
+  "id": "gen-1783407872-oeb09sNGMwQoBc6QOjts",
+  "object": "chat.completion",
+  "created": 1783407872,
+  "model": "qwen/qwen3-vl-235b-a22b-instruct",
+  "provider": "DeepInfra",
+  "system_fingerprint": null,
+  "service_tier": null,
+  "choices": [
+   {
+    "index": 0,
+    "logprobs": null,
+    "finish_reason": "stop",
+    "native_finish_reason": "stop",
+    "message": {
+     "role": "assistant",
+     "content": "```json\n[\n\t{\"bbox_2d\": [360, 740, 421, 843], \"label\": \"spatula\", \"confidence\": 0.95}\n]\n```",
+     "refusal": null,
+     "reasoning": null
+    }
+   }
+  ],
+  "usage": {
+   "prompt_tokens": 357,
+   "completion_tokens": 51,
+   "total_tokens": 408,
+   "cost": 0.00011628,
+   "is_byok": false,
+   "prompt_tokens_details": {
+    "cached_tokens": 0,
+    "cache_write_tokens": 0,
+    "audio_tokens": 0,
+    "video_tokens": 0
+   },
+   "cost_details": {
+    "upstream_inference_cost": 0.00011628,
+    "upstream_inference_prompt_cost": 7.14e-05,
+    "upstream_inference_completions_cost": 4.488e-05
+   },
+   "completion_tokens_details": {
+    "reasoning_tokens": 0,
+    "image_tokens": 0,
+    "audio_tokens": 0
+   }
+  }
+ },
+ "ts": "2026-07-07T07:04:35.142391+00:00"
+}

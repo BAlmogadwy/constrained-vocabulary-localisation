@@ -1,0 +1,77 @@
+{
+  "model": "llava-v1.6-mistral-7b-hf",
+  "strategy": "single_query",
+  "image": "/home/maxim/PycharmProjects/zero-shot-detection-benchmark/data/raw/coco2017/val2017/000000086483.jpg",
+  "labels": [
+    "microwave",
+    "oven",
+    "toaster",
+    "sink",
+    "refrigerator",
+    "book",
+    "clock",
+    "vase",
+    "scissors",
+    "teddy bear",
+    "hair drier",
+    "toothbrush"
+  ],
+  "detections": [
+    {
+      "box_2d": [
+        0.0,
+        0.0,
+        0.234,
+        0.988
+      ],
+      "label": "building"
+    },
+    {
+      "box_2d": [
+        0.0,
+        0.0,
+        0.234,
+        0.988
+      ],
+      "label": "brick building"
+    },
+    {
+      "box_2d": [
+        0.0,
+        0.0,
+        0.234,
+        0.988
+      ],
+      "label": "red brick building"
+    },
+    {
+      "box_2d": [
+        0.0,
+        0.0,
+        0.234,
+        0.988
+      ],
+      "label": "red brick building with windows"
+    },
+    {
+      "box_2d": [
+        0.0,
+        0.0,
+        0.234,
+        0.988
+      ],
+      "label": "red brick building with white trim"
+    },
+    {
+      "box_2d": [
+        0.0,
+        0.0,
+        0.234,
+        0.988
+      ],
+      "label": "red brick building with white trim and windows"
+    }
+  ],
+  "latency_sec": 3.9027992580013233,
+  "raw_response": "USER:  \nDetect the following objects in the image: microwave, oven, toaster, sink, refrigerator, book, clock, vase, scissors, teddy bear, hair drier, toothbrush. For each detected object, provide JSON entries in the form [{\"box_2d\": [x1, y1, x2, y2], \"label\": \"class_name\"}]. Return only JSON. ASSISTANT: ```json\n[\n  {\"box_2d\": [0.000,0.000,0.234,0.988], \"label\": \"building\"},\n  {\"box_2d\": [0.000,0.000,0.234,0.988], \"label\": \"brick building\"},\n  {\"box_2d\": [0.000,0.000,0.234,0.988], \"label\": \"red brick building\"},\n  {\"box_2d\": [0.000,0.000,0.234,0.988], \"label\": \"red brick building with windows\"},\n  {\"box_2d\": [0.000,0.000,0.234,0.988], \"label\": \"red brick building with white trim\"},\n  {\"box_2d\": [0.000,0.000,0.234,0.988], \"label\": \"red brick building with white trim and windows\"}\n]\n``` "
+}

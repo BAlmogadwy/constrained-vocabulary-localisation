@@ -1,0 +1,57 @@
+{
+  "image": "/home/maxim/PycharmProjects/zero-shot-detection-benchmark/data/subsets/lvis_v1_val_unseen/images/000000407349.jpg",
+  "image_id": 407349,
+  "file_name": "000000407349.jpg",
+  "num_crops": 2,
+  "crops": [
+    {
+      "annotation_id": 119242,
+      "bbox": [
+        112.51,
+        183.85,
+        37.4,
+        50.65
+      ],
+      "category_id": 284,
+      "gt_label": "coffee_maker",
+      "labels": [
+        "coffee_maker",
+        "hair_dryer",
+        "lawn_mower",
+        "snowboard",
+        "spatula"
+      ],
+      "prediction": "coffee_maker",
+      "normalized_prediction": "coffee maker",
+      "matched_label": "coffee_maker",
+      "correct": true,
+      "latency_sec": 1.4114570620004088,
+      "raw_response": "[{\"box_2d\": [0, 0, 997, 1000], \"label\": \"coffee_maker\"}]"
+    },
+    {
+      "annotation_id": 119243,
+      "bbox": [
+        435.77,
+        188.31,
+        36.41,
+        49.56
+      ],
+      "category_id": 284,
+      "gt_label": "coffee_maker",
+      "labels": [
+        "coffee_maker",
+        "hair_dryer",
+        "lawn_mower",
+        "snowboard",
+        "spatula"
+      ],
+      "prediction": "coffee_maker",
+      "normalized_prediction": "coffee maker",
+      "matched_label": "coffee_maker",
+      "correct": true,
+      "latency_sec": 1.257461578992661,
+      "raw_response": "[{\"box_2d\": [0, 0, 966, 994], \"label\": \"coffee_maker\"}]"
+    }
+  ],
+  "prompt": "You are an object recognition assistant.\n\nYou will see a cropped image that contains exactly one object\nfrom the following LVIS categories (unseen split):\n\n- coffee_maker\n- hair_dryer\n- lawn_mower\n- snowboard\n- spatula\n\nYour task:\n- Return ONLY the best matching category name from this list.\n- Do not output explanations or extra text.\n\nAnswer with a single string: \"class_name\"."
+}

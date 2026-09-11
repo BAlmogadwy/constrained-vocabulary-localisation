@@ -1,0 +1,25 @@
+{
+  "model": "gemma-3-12b-it",
+  "strategy": "single_query",
+  "image": "/home/maxim/PycharmProjects/zero-shot-detection-benchmark/data/subsets/lvis_v1_val_unseen/images/000000511430.jpg",
+  "labels": [
+    "blender",
+    "hair_dryer",
+    "sewing_machine",
+    "spatula",
+    "stapler_(stapling_machine)"
+  ],
+  "detections": [
+    {
+      "box_2d": [
+        73,
+        163,
+        226,
+        336
+      ],
+      "label": "blender"
+    }
+  ],
+  "latency_sec": 14.357929458026774,
+  "raw_response": "```json\n[\n  {\"box_2d\":[73, 163, 226, 336], \"label\":\"blender\"}\n]\n```"
+}
