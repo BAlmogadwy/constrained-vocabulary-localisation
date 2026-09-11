@@ -62,4 +62,4 @@ The original scripts are in `analysis_records/historical_scripts/`. Their paths 
 
 Several older preparation reports in `analysis_records/` describe intermediate manuscript versions and may contain obsolete page counts or submission-status notes. They are historical records. Use this guide and the current manuscript for the submission. Proposed controls in `protocol_audit.py` and material listed in `LEGACY_NOTES.md` are not additional evidence for the paper's claims.
 
-Repository visibility is private. Authorised access or a reviewer-accessible archive still needs to be arranged; this guide does not claim that the URL grants access or promise a post-publication release.
+The code and retained evidence are provided through this repository. The full manuscript PDF and its LaTeX source are maintained separately and are not included here.

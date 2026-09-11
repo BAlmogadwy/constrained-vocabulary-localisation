@@ -41,7 +41,7 @@ The `.json` result records are frozen evidence. Optional reruns write to `analys
 
 Source images are not redistributed. Offline evaluation of the retained boxes does not need images. The COCO router replay does need the original COCO 2017 validation annotation file; the reviewer guide explains where to obtain it and how to verify it. The required LVIS subset, candidate lists and saved predictions are included.
 
-This repository is currently private. Its URL alone does not grant reviewer access. The author must arrange authorised access or a reviewer-accessible archive before relying on it in the submission. Post-publication access has not yet been specified.
+The repository provides the code and retained evidence. The full manuscript PDF and its LaTeX source are maintained separately and are not included here.
 
 ## Original model environment
 
